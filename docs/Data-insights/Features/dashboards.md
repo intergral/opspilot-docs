@@ -1,123 +1,109 @@
-# Overview
+# Dashboards
 
-**Dashboards** allow you to visualize your Cloud data with superior, unparalleled depth.
+View and interact with your observability dashboards.
 
-Combine metrics, logs and traces in one place to give you a complete picture of your data.
+Dashboards combine metrics, logs, and trace data in one place to give you a complete picture of your data.
 
-<iframe src="https://player.vimeo.com/video/840492282?h=b7752d4c21" width="640" height="363" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+---
 
+## Using dashboards
 
+Navigate to individual dashboards from the **Dashboards** tab in OpsPilot.
 
+- Use the links in the top right to navigate back to the main dashboards.
+- Click the **star icon** to add a dashboard to your **Favorites** for easier access.
+- Select a timeframe using the **time picker**. Highlighting a specific timeframe on a chart will modify the selected time for all graphs on the dashboard.
+- **Create dashboards** in OpsPilot to tailor your data visualization to meet your specific needs. You must be on the Pro AI plan or higher to create custom dashboards. You can upgrade your plan [here](https://app.opspilot.com).
 
-## Central FusionReactor dashboard
+!!! info
+    Dashboards will continue to evolve — over time we will continue to add new sets of dashboards and improve existing dashboards provisioned to your account. Some dashboards are marked as **experimental**, allowing us to continually roll out new concepts.
 
-**Find it**: **FusionReactor** > **Dashboards**
+---
 
-The central **Dashboard** contains links to all dashboards and can be used to quickly navigate between all dashboards.
+## Dashboard categories
 
-Log dashboards will be added and improved over time, including adding new categories of dashboards, new log views and new filters to gain insight and value from your logs.
+### Metrics dashboards
 
-### Using dashboards
+| Dashboard | Category | Description |
+|---|---|---|
+| Databases | FusionReactor | Observe database activity including throughput, time, total queries and error rate, broken down by database, collection/table, and action. |
+| Instance Map | Infrastructure | Observe instance health based on process CPU, system CPU, or JVM memory usage. |
+| Instances | FusionReactor | Observe throughput, response time, and error count broken down per instance. |
+| Request Performance | FusionReactor | Observe throughput, response time, and error count broken down by application, transaction route, and status code. |
+| Service Changes | Infrastructure | Observe infrastructure-level service change events. |
+| Span Metrics | FusionReactor | Observe span-level metrics from distributed traces. |
+| Status Codes | FusionReactor | Observe HTTP status code breakdown across your applications. |
 
-Navigate to individual dashboards from the new **Dashboard** tab of FusionReactor Cloud. Use the links in the top right to navigate back to the main FusionReactor dashboards.
+### Logs dashboards
 
-![!Screenshot](../../Data-insights/Features/images/Dashboards/GSDashboards.png)
+| Dashboard | Category | Description |
+|---|---|---|
+| FusionReactor Logs | Logs | View and filter logs shipped from the FusionReactor agent. |
+| Log | Logs | General log browser for all ingested log data. |
+| Log Browser | Logs | Browse and search logs with advanced filtering. |
+| Log Errors | Logs | Focus view on error-level log entries. |
+| Log Events | Logs | Observe log event volume and patterns over time. |
 
+### Traces dashboards
 
-The dashboard user interface provides a number of features that you can use to customize the presentation of your data.
+| Dashboard | Category | Description |
+|---|---|---|
+| Show Status Traces | Traces | View traces filtered by status code. |
+| Show Traces | Traces | Browse all ingested trace data. |
+| Trace Lookup | Traces | Look up a specific trace by ID or URL. |
 
-The following image and descriptions highlights all of the dashboards features.
+### Kubernetes dashboards
 
-![!Screenshot](../../Data-insights/Features/images/Dashboards/dbparts.png)
-
-1. **Dashboard title**: When you click the dashboard title you can search for dashboard contained in the current folder.
-
-2. **Star icon**: This feature allows you to place the corresponding dashboard in your favorites view, for easier access.
-
-3. **Share dashboard**: Use this option to share the current dashboard by link or snapshot. You can also export the dashboard definition from the share modal.
-
-4. **Add a new panel**: Use this option to add a panel, dashboard row, or library panel to the current dashboard.
-
-5. **Dashboard settings**: Use this option to change dashboard name, folder, and tags and manage variables and annotation queries. 
-
-6. **Time picker dropdown**: Click to select relative time range options and set custom absolute time ranges. Highlighting a specific timeframe of a chart will modify the timeframe for all graphs on the dashboard.
-
-7. **Zoom out time range**: Click to zoom out the time range. 
-
-8. **Refresh dashboard**: Click to immediately trigger queries and refresh dashboard data.
-
-9. **Refresh dashboard time interval**: Click to select a dashboard auto refresh time interval.
-
-10. **View mode**: Click to display the dashboard on a large screen such as a TV or a kiosk. View mode hides irrelevant information such as navigation menus.
-
-### Build custom dashboards
-
-Transform your raw data into actionable insights by building custom dashboards. Using our intuitive dashboard builder, you can connect to multiple data sources, write targeted queries (LogQL, PromQL, or TraceQL), and arrange visualizations to create a real-time view of your application's health. 
-
-!!! info 
-    [Learn how to create a dashboard →](https://docs.fusionreactor.io/Getting-started/Tutorials/create-dashboard/)
-
-
-## Dashboard index
-
-### FusionReactor dashboards
-
-**Databases** - Observe database activity including throughput, time, total queries and error rate, broken down by database, collection / table and action.
-
-**Instances** - Observe throughput, response time and error count broken down per instance.
-
-**Request Performance** - Observe throughput, response time and error count, broken down by application, txn route and status code.
-
-**System Resource Usage** - Observe the CPU, memory, GC and JIT statistics broken down by instance or application.
-
-**Total System Resource Usage** - Observe the CPU, memory, GC and JIT statistics for your entire application stack.
-
-**Web Applications** - Observe throughput, response time and error count broken down per application.
-
-### Infrastructure dashboards 
-
-**Instance Map** - Observe instance health based on process CPU, system CPU or JVM memory usage. This view is similar to what you would see in the Enterprise Dashboard 
-
-### Log dashboards
-
-For the list of log dashboards see the [log dashboard index](#). 
+| Dashboard | Category | Description |
+|---|---|---|
+| Kubernetes / Compute Resources / Cluster | Kubernetes | Observe CPU and memory usage across the entire cluster. |
+| Kubernetes / Compute Resources / Pod | Kubernetes | Observe CPU and memory usage broken down per pod. |
 
 ### Integration dashboards
 
-**MySQL** - Observe metrics from the [MySQL exporter](/Monitor-your-data/Observability-agent/overview/#exporters).
+| Dashboard | Category | Description |
+|---|---|---|
+| ElasticSearch | Integrations | Observe metrics from your ElasticSearch cluster. |
+| IIS | Integrations | Observe metrics from IIS web server. |
+| Kafka | Integrations | Observe metrics from the Kafka exporter. |
+| MongoDB | Integrations | Observe metrics from MongoDB. |
+| MSSQL | Integrations | Observe metrics from the MSSQL exporter. |
+| MySQL | Integrations | Observe metrics from the MySQL exporter. |
+| NGINX | Integrations | Observe metrics from the NGINX community exporter. |
+| NGINX Pro | Integrations | Observe metrics from the NGINX Pro exporter. |
+| Node Exporter | Integrations | Observe host-level metrics from the Node exporter. |
+| OracleDB | Integrations | Observe metrics from the OracleDB monitor. |
+| Postgres | Integrations | Observe metrics from the Postgres exporter. |
 
-![!Screenshot](../../Data-insights/Features/images/Dashboards/mysql.png)
+### Billing dashboards
 
-**MSSQL** - Observe metrics from the [MSSQL exporter](/Monitor-your-data/Observability-agent/overview/#exporters).
-
-
-**Node exporter** - Observe metrics from the [Node exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
-
-![!Screenshot](../../Data-insights/Features/images/Dashboards/node.png)
-
-**NGINX community** - Observe metrics from the [NGINX exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
-
-![!Screenshot](../../Data-insights/Features/images/Dashboards/nginx.png)
-
-**NGINX pro** - Observe metrics from the [NGINX exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
-
-
-**Kafka** - Observe metrics from the [Kafka exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
-
-![!Screenshot](../../Data-insights/Features/images/Dashboards/Kafka.png)
-
-**OracleDB Monitor**- Observe metrics from the [OracleDB Monitor](/Monitor-your-data/Observability-agent/overview/#exporters)
-
-![!Screenshot](../../Data-insights/Features/images/Dashboards/oracledb.png)
-
+| Dashboard | Category | Description |
+|---|---|---|
+| Data Usage | Billing | Monitor your data ingestion usage against your plan limits. |
 
 ### Experimental dashboards
 
-Some dashboards have been marked as experimental, this allows us to continually roll out new concepts for dashboards.
+Some dashboards are marked as experimental. This allows us to continually roll out new concepts before they are fully production-ready. These dashboards may contain issues as we continue to refine and develop them.
 
-These dashboards may contain issues, as we continue to refine and develop them.
+---
 
-___
+## Build custom dashboards
+
+Transform your raw data into actionable insights by building custom dashboards. Using the dashboard builder, you can connect to multiple data sources, write targeted queries (LogQL, PromQL, or TraceQL), and arrange visualizations to create a real-time view of your application's health.
+
+!!! info
+    [Learn how to create a dashboard →](/Getting-started/Tutorials/create-dashboard/)
+
+## Go deeper with Explore
+
+View all metrics, logs, and traces ingested into your OpsPilot account within [Explore](/Data-insights/Features/explore/). Create new data views and filter data in any way you require, for example:
+
+- Searching for traces using a transaction ID
+- Searching for traces with a specific URL
+- Viewing and processing any metric ingested into your OpsPilot account
+- Creating customized log filters to view ingested log data
+
+---
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

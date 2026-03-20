@@ -1,6 +1,6 @@
 ![!Screenshot](../../images/Anomaly-detection/overview.png)
 
-## Anomaly Detection feature in FusionReactor Cloud
+## Anomaly Detection feature in OpsPilot
 
 <style>
 .badge {
@@ -24,13 +24,13 @@ Enter the RED method.
 This new feature enhances observability by enabling users to track the **probability of anomalies** in critical service metrics, known as RED (Request, Errors and Duration rates). RED not only allows for closer monitoring of these key metrics but also provides notifications when they exceed set thresholds, offering a more proactive approach to service management.
 
 !!! tip "Enable Anomaly Detection"
-    Remember that the Anomaly Detection feature needs to be turned on in your FusionReactor settings. Don't miss out on its ability to proactively identify potential issues!
+    Remember that the Anomaly Detection feature needs to be turned on in your OpsPilot settings. Don't miss out on its ability to proactively identify potential issues!
 
 ### Core metrics: The RED framework
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/920397811?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Enhance Observability with Anomaly Detection in FusionReactor"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/920397811?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Enhance Observability with Anomaly Detection in OpsPilot"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-Central to FusionReactor Cloud's new anomaly detection feature are the RED metrics:
+Central to OpsPilot's new anomaly detection feature are the RED metrics:
 
 | Metric | Description |
 | --- | --- |
@@ -42,7 +42,7 @@ Central to FusionReactor Cloud's new anomaly detection feature are the RED metri
 
 | Function | Description |
 | --- | --- |
-| **Gathering data** | For each service, FusionReactor Cloud conducts three additional Prometheus queries to collect data on RED metrics. |
+| **Gathering data** | For each service, OpsPilot conducts three additional Prometheus queries to collect data on RED metrics. |
 | **Anomaly analysis** | The time series data from these metrics is examined using an 'iforest' algorithm, which excels in calculating the likelihood of anomalies in the latest RED data. |
 | **Data display** | Grafana dashboards are available for users to observe both the RED metrics and their anomaly probabilities. |
 
@@ -51,19 +51,19 @@ Central to FusionReactor Cloud's new anomaly detection feature are the RED metri
 !!! note
     The Anomaly Detection feature is not enabled by default. Ensure you explicitly switch it on in the settings to utilize its benefits.
 
-FusionReactor Cloud allows you to set up alerts for anomalies detected in your system, providing an opportunity to proactively manage and mitigate potential service issues.
+OpsPilot allows you to set up alerts for anomalies detected in your system, providing an opportunity to proactively manage and mitigate potential service issues.
 
 ## Target audience
 
-This documentation is intended for technical users and managers who are involved in the observability of their systems. Users are not required to have domain-specific knowledge in anomaly detection to use FusionReactor Cloud's anomaly detection features effectively, as the system is designed with a focus on user-friendliness and intuitive controls.
+This documentation is intended for technical users and managers who are involved in the observability of their systems. Users are not required to have domain-specific knowledge in anomaly detection to use OpsPilot's anomaly detection features effectively, as the system is designed with a focus on user-friendliness and intuitive controls.
 
 ## Enabling Anomaly Detection
 
 ### Accessing the Anomaly Detection configuration
 
-To enable anomaly detection in FusionReactor Cloud, follow these steps:
+To enable anomaly detection in OpsPilot, follow these steps:
 
-**Step 1**: Use your web browser to navigate to the **Alerting** page in FusionReactor Cloud.
+**Step 1**: Use your web browser to navigate to the **Alerting** page in OpsPilot.
 
 ![!Screenshot](../../images/Anomaly-detection/Step1.png)
 
@@ -72,7 +72,7 @@ To enable anomaly detection in FusionReactor Cloud, follow these steps:
 ![!Screenshot](../../images/Anomaly-detection/Step2.png)
 
 !!! info "Auto-discovery"
-    FR Cloud automatically detects your services and lists them on the Anomaly Detection configuration page.
+    OpsPilot automatically detects your services and lists them on the Anomaly Detection configuration page.
 
 To configure anomaly detection for each service:
 
@@ -97,11 +97,11 @@ Here is an example screenshot illustrating the configuration interface:
 ![!Screenshot](../../images/Anomaly-detection/REDconfigview.png)
 
 !!! note
-    The actual interface may vary slightly, and you should consult the latest version of FR Cloud for the most up-to-date information.
+    The actual interface may vary slightly, and you should consult the latest version of OpsPilot for the most up-to-date information.
 
 ## Configuring Anomaly Detection for services
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/920397837?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Configuring Anomaly Detection in FusionReactor: A Step-by-Step Guide"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/920397837?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Configuring Anomaly Detection in OpsPilot: A Step-by-Step Guide"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Service detection table
 
@@ -146,7 +146,7 @@ Each service within the system allows for separate configuration of its RED metr
 
 ## Custom Detectors
 
-FusionReactor Cloud now features Custom Detectors, enhancing its ability to identify anomalies in your application's performance. This powerful tool allows for tailored monitoring based on your specific needs.
+OpsPilot now features Custom Detectors, enhancing its ability to identify anomalies in your application's performance. This powerful tool allows for tailored monitoring based on your specific needs.
 
 Key points:
 
@@ -164,7 +164,7 @@ Custom Detectors enable precise identification of performance issues, helping ma
 
 ### Adding a Custom Detector
 
-**Step 1**: Navigate to **FusionReactor** > **Alerting** > **Anomaly Detection (Beta)** > **Custom Detector**.
+**Step 1**: Navigate to **OpsPilot** > **Alerting** > **Anomaly Detection (Beta)** > **Custom Detector**.
 
 **Step 2**: Select the **ADD DETECTOR** button and configure the Custom Detector settings as follows:
 
@@ -188,7 +188,7 @@ Custom Detectors enable precise identification of performance issues, helping ma
 
 ### Understanding service-specific metric profiles
 
-Each service you monitor with FR Cloud has its unique profile for Rate, Errors, and Duration metrics. The profile varies based on the duration selected for calculating anomaly probabilities, which can range from an hour to a maximum of one week. For effective anomaly detection, it's essential to tailor the configuration for each service by considering the following:
+Each service you monitor with OpsPilot has its unique profile for Rate, Errors, and Duration metrics. The profile varies based on the duration selected for calculating anomaly probabilities, which can range from an hour to a maximum of one week. For effective anomaly detection, it's essential to tailor the configuration for each service by considering the following:
 
 | Setting | Description |
 | --- | --- |
@@ -206,9 +206,9 @@ To determine the optimal **Threshold** and **For** values, analyze the probabili
 | --- | --- |
 | **Uniform settings aren't always effective** | Services differ in their operational conditions and behavioral patterns, necessitating individualized adjustments in anomaly detection settings. |
 | **Threshold settings** | Set suitable threshold levels for anomaly probabilities to minimize false positives and negatives. |
-| **Need for regular review and modification** | Anomaly detection in FR Cloud is an active process. Regularly reviewing and fine-tuning these settings is vital to align with changes in service behavior and usage patterns. |
+| **Need for regular review and modification** | Anomaly detection in OpsPilot is an active process. Regularly reviewing and fine-tuning these settings is vital to align with changes in service behavior and usage patterns. |
 
-Understanding and addressing these aspects will greatly improve the precision and effectiveness of FR Cloud's anomaly detection capabilities.
+Understanding and addressing these aspects will greatly improve the precision and effectiveness of OpsPilot's anomaly detection capabilities.
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

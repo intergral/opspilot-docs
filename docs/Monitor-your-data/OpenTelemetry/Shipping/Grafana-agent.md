@@ -2,17 +2,17 @@
 
 Grafana Alloy is a vendor-neutral distribution of the OpenTelemetry Collector. It natively supports OpenTelemetry, Prometheus, and Loki formats within a single agent, making it highly versatile.
 
-For FusionReactor users, Alloy is recommended when you need a highly programmable telemetry pipeline using **Alloy Flow** or a **visual dashboard** to monitor your data pipeline's health in real-time.
+For OpsPilot users, Alloy is recommended when you need a highly programmable telemetry pipeline using **Alloy Flow** or a **visual dashboard** to monitor your data pipeline's health in real-time.
 
 ## How it works
 
-Alloy acts as a programmable intermediary. It receives OTLP data from your instrumented applications, processes it for efficiency or security, and exports it to FusionReactor Cloud using the OTLP protocol.
+Alloy acts as a programmable intermediary. It receives OTLP data from your instrumented applications, processes it for efficiency or security, and exports it to OpsPilot using the OTLP protocol.
 
 
 
 ### Prerequisites
 
-* **FusionReactor API Key**: Obtain this from **Account Settings > API Keys**.
+* **OpsPilot API Key**: Obtain this from **Account Settings > API Keys**.
 * **Docker Desktop**: Ensure Docker is installed and running.
 * **Port Availability**: Ensure ports **4317**, **4318**, and **12345** are not in use by other services (like a standard OTel Collector).
 
@@ -42,7 +42,7 @@ otelcol.processor.batch "default" {
   }
 }
 
-// 3. Export data to FusionReactor Cloud
+// 3. Export data to OpsPilot
 otelcol.exporter.otlphttp "fusionreactor" {
   client {
     endpoint = "https://api.fusionreactor.io"
@@ -86,7 +86,7 @@ services:
 
 1. **Start Alloy**: Run `docker-compose up -d` in your terminal.
 2. **Access the UI**: Open your browser to `http://localhost:12345` to see a live graph of your pipeline.
-3. **Send a Test Signal**: Use the `telemetrygen` utility to confirm data is reaching FusionReactor:
+3. **Send a Test Signal**: Use the `telemetrygen` utility to confirm data is reaching OpsPilot:
 ```bash
 docker run --network host ghcr.io/open-telemetry/opentelemetry-collector-contrib/telemetrygen:latest traces --traces 100 --otlp-endpoint localhost:4317 --otlp-insecure
 

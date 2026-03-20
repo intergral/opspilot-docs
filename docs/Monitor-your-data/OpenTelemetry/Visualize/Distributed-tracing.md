@@ -8,7 +8,7 @@
 Distributed tracing is a technique of tracking application requests as they move from frontend devices to backend services and databases. Developers use distributed tracing to troubleshoot applications and optimize application performance. You can pinpoint requests with errors or high latency and quickly diagnose performance issues to gain real-time visibility of the user experience.
 
 
-FusionReactor Cloud is able to provide distributed trace information which is captured and displayed in a graphical format, so you can visualize the entire request flow and quickly identify any issues or bottlenecks.  
+OpsPilot is able to provide distributed trace information which is captured and displayed in a graphical format, so you can visualize the entire request flow and quickly identify any issues or bottlenecks.  
 
 
 
@@ -41,9 +41,9 @@ In order for instances/services to propagate trace information to other services
 
 
 !!! warning "Trace header formats"
-    Not all vendors use the same format for propagating trace information in headers, read below for how to specify which header format to use to ensure that trace information is properly propagated by FusionReactor.
+    Not all vendors use the same format for propagating trace information in headers, read below for how to specify which header format to use to ensure that trace information is properly propagated by OpsPilot.
 
-### Trace propagators supported by FusionReactor
+### Trace propagators supported by OpsPilot
 | Header format | Property value |
 | -- | -- |
 | W3C Trace context | `tracecontext` |

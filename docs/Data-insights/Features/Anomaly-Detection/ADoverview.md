@@ -4,8 +4,6 @@
 
 Anomaly detection is an algorithmic capability designed to recognize instances when a metric displays behavior that diverges from its historical patterns. This process considers trends, seasonal variations, and time-of-day patterns. It is particularly effective for metrics exhibiting robust trends and recurring patterns, which are challenging to monitor using threshold-based alerting systems.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/920397856?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Understanding Anomaly Detection"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
 In monitoring systems, potential anomalies can manifest across various vectors, with the most common examples including:
 
 | Type | Description |
