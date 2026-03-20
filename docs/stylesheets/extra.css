@@ -2,6 +2,15 @@
     width: 300px; /* Set the desired width */
     text-align: center; /* Center the button text */
 }
+
+.md-button:hover,
+.md-button:focus,
+.md-button--primary:hover,
+.md-button--primary:focus {
+    background-color: #212441 !important;
+    border-color: #212441 !important;
+    color: #ffffff !important;
+}
   
   
   
