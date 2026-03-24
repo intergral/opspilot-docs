@@ -20,15 +20,14 @@ Navigate to [app.opspilot.com/auth/register](https://app.opspilot.com/auth/regis
 
 ---
 
-## Step 2 — Install the FusionReactor Agent
+## Step 2 — Send Your First Data
 
-The fastest way to start sending data to OpsPilot is by installing the **FusionReactor Agent** on your server. The agent automatically collects metrics, traces, and logs and ships them to your OpsPilot account.
-
-[Automatic installation](/Monitor-your-data/FR-Agent/Installation/Automatic/){ .md-button .md-button--primary }
-[Manual installation](/Monitor-your-data/FR-Agent/Installation/Manual/){ .md-button .md-button--primary }
+The fastest way to start sending data is through the in-app onboarding, which provides step-by-step instructions tailored to your platform.
 
 !!! tip
-    Not using Java or ColdFusion? You can also send data via **OpenTelemetry** using the [OTel Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/).
+    Each integration in the in-app onboarding includes your endpoint and authorization token pre-filled, so you can copy and run them directly — no need to hunt through Settings.
+
+OpsPilot supports a wide range of integrations across SDKs, cloud providers, technologies, and observability pipelines. Find detailed setup instructions for your specific stack in the [Integrations Hub](/Data-insights/Features/integrations/).
 
 ---
 
