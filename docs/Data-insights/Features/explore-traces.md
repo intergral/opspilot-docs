@@ -2,7 +2,7 @@
 
 Distributed traces enable you to monitor and troubleshoot applications by following the path of requests as they travel through various services. Each trace captures detailed information about a request-such as timing, errors, and service interactions - providing valuable context to help you diagnose performance issues or pinpoint failures.
 
-FusionReactor's **Traces** feature enhances your observability workflow by offering intuitive visualizations of trace data collected by Grafana Tempo. It helps you quickly identify bottlenecks, latency spikes, and service dependencies, giving you actionable insights directly from your distributed traces.
+The **Traces Drilldown** enhances your observability workflow by offering intuitive visualizations of trace data collected by Grafana Tempo. It helps you quickly identify bottlenecks, latency spikes, and service dependencies, giving you actionable insights directly from your distributed traces.
 
 ![!Screenshot](../../Data-insights/Features/images/traces-main.png) 
 

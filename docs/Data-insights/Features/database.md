@@ -1,5 +1,7 @@
 # Database
 
+![Database](../../Data-insights/Features/database.png)
+
 The **Database** page gives you full visibility into how your databases are performing across your entire environment. Use it to pinpoint slow or expensive queries, detect errors before users report them, understand which applications are generating the most database load, and compare performance across multiple instances - all from a single dashboard.
 
 ## Filters

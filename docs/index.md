@@ -1,5 +1,7 @@
 # Get Started with OpsPilot
 
+![Get Started with OpsPilot](images/get-started.png)
+
 From sign-up to your first insights in minutes.
 
 This guide walks you through creating your account, connecting your first data source, and exploring your initial views in OpsPilot.

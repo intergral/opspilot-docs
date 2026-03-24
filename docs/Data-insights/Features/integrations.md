@@ -1,8 +1,12 @@
 # Integrations
 
+![Integrations hub](../../images/integrations.png)
+
 The **Integrations** page lets you connect external tools and services to your OpsPilot workspace.
 
 Navigate to **Integrations** from the left-hand sidebar to browse and manage all available integrations.
+
+
 
 ---
 

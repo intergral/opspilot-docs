@@ -1,9 +1,10 @@
 # Servers
 
+![Servers overview](../../Data-insights/Features/images/Servers/new-servers.png)
 
-The Servers Overview, accessible under the **Explore** tab, provides a visual and intuitive representation of all monitored servers across various environments. This dashboard is designed to enable quick identification of performance issues, health states, and environment status at a glance.
+View and manage your FusionReactor agent servers and instances.
 
-![Screenshot](../../Data-insights/Features/Servers/overview.png)
+Navigate to **Servers** from the left-hand sidebar to see a visual overview of all monitored servers. The System Overview provides quick identification of performance issues, health states, and environment status at a glance.
 
 
 ## Key features

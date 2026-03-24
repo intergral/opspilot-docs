@@ -1,10 +1,9 @@
 # Overview
 
+![!Screenshot](../../Data-insights/Features/images/logs-drilldown.png)
 
+**Logs Drilldown** makes log exploration effortless with an intuitive, no-query interface. It automatically turns your log data into interactive visualizations, enabling engineers of all experience levels to investigate and gain insights-no LogQL required.
 
-FusionReactor’s **Logs Drilldown** makes log exploration effortless with an intuitive, no-query interface. It automatically turns your log data into interactive visualizations, enabling engineers of all experience levels to investigate and gain insights-no LogQL required.
-
-![!Screenshot](../../Data-insights/Features/images/logs-main.png)
 
 
 
@@ -29,7 +28,7 @@ FusionReactor’s **Logs Drilldown** makes log exploration effortless with an in
 
 1. **Open Logs Drilldown**
 
-    * From the FusionReactor Cloud dashboard, go to: **Explore → Logs**
+    * From the OpsPilot sidebar, go to: **Logs Drilldown**
     * This opens the **Overview page** showing time series and log visualizations for all services in your selected Loki data source.
 
     > ⚠️ If no services appear, make sure a Loki data source is connected.

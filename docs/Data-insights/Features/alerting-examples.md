@@ -1,4 +1,4 @@
-The following examples demonstrate how to create common FusionReactor alert rules using the Grafana Ruler-based alerting system. Each example covers the full configuration - query, condition, folder, evaluation group, No Data handling, and notifications.
+The following examples demonstrate how to create common alert rules in OpsPilot using the Grafana Ruler-based alerting system. Each example covers the full configuration - query, condition, folder, evaluation group, No Data handling, and notifications.
 
 Before following these examples, make sure you have:
 
@@ -23,11 +23,11 @@ Each example below covers both options in the notifications step.
 
 ### 1. When any instance goes offline for 5 minutes
 
-This rule monitors all FusionReactor instances on your Cloud license and fires when any of them stops reporting data.
+This rule monitors all instances on your OpsPilot account and fires when any of them stops reporting data.
 
 Offline detection works in two ways: if `app_up` drops to `0`, the alert condition (**IS BELOW 1**) triggers directly. If the instance stops reporting entirely and metrics disappear, the **No Data → Alerting** setting fires the alert. Both cases are covered by this rule.
 
-Because the rule produces one alert instance per time series, each FusionReactor instance is monitored independently. If one instance goes offline, only that instance's alert fires.
+Because the rule produces one alert instance per time series, each instance is monitored independently. If one instance goes offline, only that instance's alert fires.
 
 #### Configuration
 
@@ -39,7 +39,7 @@ Enter a name such as `Any Instance Offline`.
 
 **2. Query and condition**
 
-- Select your FusionReactor data source.
+- Select the **Metrics** data source.
 - Select the `app_up` metric. Leave instance and job filters unset to monitor all instances.
 - Set the alert condition to **IS BELOW 1**. When an instance is online, `app_up` returns `1` - so the condition is false and the alert stays normal. When an instance goes offline, `app_up` drops to `0` or stops reporting entirely, which triggers the alert.
 
@@ -48,7 +48,7 @@ Enter a name such as `Any Instance Offline`.
 
 **3. Folder and evaluation group**
 
-- Select or create a folder (such as, `FusionReactor Alerts`).
+- Select or create a folder (such as, `OpsPilot Alerts`).
 - Select or create an evaluation group with an interval of `1m`.
 - Set the **Pending period** to `5m`. The alert will only fire after the instance has been consistently offline for 5 minutes.
 
@@ -76,7 +76,7 @@ Click **Save rule and exit**.
 
 ### 2. When a single job goes offline for 5 minutes
 
-This rule monitors a specific FusionReactor instance or job and fires when it stops reporting data. Use this for named, business-critical instances where you want a dedicated alert rather than relying on the broad monitoring of Example 1.
+This rule monitors a specific instance or job and fires when it stops reporting data. Use this for named, business-critical instances where you want a dedicated alert rather than relying on the broad monitoring of Example 1.
 
 #### Configuration
 
@@ -88,7 +88,7 @@ Enter a name such as `Instance Offline - [instance name]`.
 
 **2. Query and condition**
 
-- Select your FusionReactor data source.
+- Select the **Metrics** data source.
 - Select the `app_up` metric and filter by the specific **Job** or **Instance** label you want to monitor (such as, `instance = "production-server-01"`).
 - Set the alert condition to **IS BELOW 1**. When the instance is online, `app_up` returns `1` - so the condition is false and the alert stays normal. When the instance goes offline, `app_up` drops to `0` or stops reporting, which triggers the alert.
 
@@ -125,7 +125,7 @@ Click **Save rule and exit**.
 
 ### 3. When any instance is using over 90% CPU for 2 minutes
 
-This rule fires when any FusionReactor instance sustains high system CPU usage, helping you catch runaway processes or capacity issues before they affect users.
+This rule fires when any instance sustains high system CPU usage, helping you catch runaway processes or capacity issues before they affect users.
 
 !!! tip
     You can also use a **less than** threshold for underflow alerts - for example, alert when request volume drops below a baseline. This is useful for high-traffic services where unexpectedly low activity may indicate requests are not reaching the service.
@@ -140,7 +140,7 @@ Enter a name such as `High CPU - Any Instance`.
 
 **2. Query and condition**
 
-- Select your FusionReactor data source.
+- Select the **Metrics** data source.
 - Select the **System CPU usage** metric. Leave instance and job filters unset to monitor all instances.
 - Set the alert condition to **IS ABOVE 90**.
 
@@ -175,7 +175,7 @@ Click **Save rule and exit**.
 
 This rule monitors memory allocation across all instances sharing a specific group label, and fires when any of them sustains high memory usage for an extended period.
 
-Instances can be assigned a group in FusionReactor, which appears as a label on their metrics. Filtering by group lets you scope an alert to a logical subset of your estate - for example, all instances in a production environment or a specific application tier.
+Instances can be assigned a group in OpsPilot, which appears as a label on their metrics. Filtering by group lets you scope an alert to a logical subset of your estate - for example, all instances in a production environment or a specific application tier.
 
 #### Configuration
 
@@ -187,7 +187,7 @@ Enter a name such as `High Memory - [Group Name] Group`.
 
 **2. Query and condition**
 
-- Select your FusionReactor data source.
+- Select the **Metrics** data source.
 - Select the **Allocation memory usage** metric.
 - Filter by the **group** label to target the specific group (such as, `group = testfr`). This scopes the rule to only the instances in that group.
 - Set the alert condition to **IS ABOVE 90**.
@@ -221,7 +221,7 @@ Click **Save rule and exit**.
 
 ## Billing checks
 
-Billing alerts let you monitor your FusionReactor Cloud usage against thresholds before you exceed a plan limit or incur unexpected on-demand charges.
+Billing alerts let you monitor your OpsPilot usage against thresholds before you exceed a plan limit or incur unexpected on-demand charges.
 
 !!! warning "Always filter by `servicename`"
     All billing metrics aggregate usage across **all services** unless you filter by the `servicename` label. Failing to specify a `servicename` will result in aggregated usage data, leading to inaccurate alerts. Always add a `servicename` filter as shown in the examples below.
@@ -251,7 +251,7 @@ Enter a name such as `On-Demand Charges - [Service Name]`.
 
 **2. Query and condition**
 
-- Select your FusionReactor data source.
+- Select the **Metrics** data source.
 - Select the `fr_billing_charges_metered` metric.
 - Filter by `servicename` and specify the target service name. This is required to avoid aggregated data across all services.
 - Set the alert condition to **IS ABOVE** and specify your threshold value (in the units your billing reports use).
@@ -296,7 +296,7 @@ Enter a name such as `Billable Data Usage - [Service Name]`.
 
 **2. Query and condition**
 
-- Select your FusionReactor data source.
+- Select the **Metrics** data source.
 - Select the `fr_billing_usage` metric.
 - Filter by `servicename` and specify the target service name.
 - Set the alert condition to **IS ABOVE** and specify your threshold in bytes. For example, to alert at 80 GB, enter `80000000000`.
@@ -341,7 +341,7 @@ Enter a name such as `Total Billing Charges - [Service Name]`.
 
 **2. Query and condition**
 
-- Select your FusionReactor data source.
+- Select the **Metrics** data source.
 - Select the `fr_billing_charges_total` metric.
 - Filter by `servicename` and specify the target service name.
 - Set the alert condition to **IS ABOVE** and specify your threshold value.

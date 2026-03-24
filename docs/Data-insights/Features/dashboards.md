@@ -1,5 +1,7 @@
 # Dashboards
 
+![Dashboards](../../Data-insights/Features/images/Dashboards/new-dashboards.png)
+
 View and interact with your observability dashboards.
 
 Dashboards combine metrics, logs, and trace data in one place to give you a complete picture of your data.

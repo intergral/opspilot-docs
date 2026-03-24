@@ -1,9 +1,8 @@
 # Overview
 
-FusionReactor’s **Metrics Drilldown**  offers a seamless, query-free way to explore Prometheus-compatible metrics. With just a few clicks, you can uncover related metrics and insights - no need to write a single PromQL query.
-
 ![!Screenshot](../../Data-insights/Features/images/metrics-main.png)
 
+**Metrics Drilldown** offers a seamless, query-free way to explore Prometheus-compatible metrics. With just a few clicks, you can uncover related metrics and insights - no need to write a single PromQL query.
 
 ## Key features
 
@@ -30,8 +29,6 @@ At the top center of the screen, you'll see a welcome panel:
 ### Search & filter metrics
 
 Use search and filters to quickly narrow down the metrics you want to investigate - by system, service, or time frame. This helps you focus on what matters most.
-
-![!Screenshot](../../Data-insights/Features/images/metric-filter.png)
 
 To filter:
 
