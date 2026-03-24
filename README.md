@@ -1,56 +1,43 @@
+# OpsPilot Documentation
 
+This is the repository for [OpsPilot](https://app.opspilot.com) documentation. It contains all the source files used to build the OpsPilot docs site.
 
-# Welcome! 👋
+## About OpsPilot
 
-## Getting Started
+OpsPilot is an AI-powered observability platform built for modern engineering teams. It combines metrics, logs, and traces in one place — giving you full-stack visibility with the intelligence to act on it fast.
 
-This is the repository for FusionReactor documentation. This repository contains all the source code and Markdown source files we use to build our documentation site.
+Key capabilities include:
 
-## About FusionReactor Docs
-
-FusionReactor provides industry-leading Java Application Performance Monitoring (APM) and production debugging tools. Our documentation aims to help developers, DevOps teams, and system administrators make the most of FusionReactor's powerful features to monitor, troubleshoot, and optimize their Java applications.
-
-## Why Open Source?
-
-We believe in the power of community collaboration. By open-sourcing our documentation, we aim to:
-- Leverage community expertise and insights
-- Ensure our documentation stays current and accurate
-- Provide a better experience for FusionReactor users
-- Enable quick fixes and improvements from those who use our docs daily
-
-## How to Contribute
-
-We welcome contributions from the community! Whether you're fixing a typo, improving an explanation, or adding new content, here's how you can help:
-
-- Report documentation issues
-- Submit pull requests for improvements
-- Share your expertise and use cases
-- Suggest new documentation topics
-
-For detailed guidelines on contributing, please see our [Contributing Guide](https://github.com/intergral/frdocs/blob/main/docs/Contribute/how-to-contribute.md).
+- **AI-assisted operations** — the OpsPilot Assistant analyses your telemetry and surfaces actionable insights without requiring deep query expertise
+- **OpenTelemetry-native** — send data from any language or framework using the OTel Collector, Grafana Alloy, or the FusionReactor Agent
+- **Dashboards** — pre-built and custom dashboards combining metrics, logs, and trace data
+- **Alerting & Anomaly Detection** — rule-based and AI-driven alerts across your entire stack
+- **Integrations** — connect your existing tools including Slack, Jira, Kubernetes, and more
 
 ## Running locally
 
-To run the docs locally, you are required to use Docker.
+To run the docs locally:
 
-There are two run commands within the project, one for project owners and one for contributors:
+```bash
+python -m mkdocs serve
+```
 
-### Contributors
-Execute the command:
-`docker build --no-cache -t frdocs-docs ./local-run && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs`
-### Owners
-Execute the command:
-`docker build --no-cache -t frdocs-docs-owner . && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs-owner`
+Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser. The site hot-reloads on file save.
 
+## How to Contribute
+
+Contributions are welcome. You can:
+
+- Report documentation issues
+- Submit pull requests for improvements
+- Suggest new documentation topics
+
+For guidelines, see the [Contributing Guide](docs/Contribute/how-to-contribute.md).
 
 ## Support
-If you encounter any issues, our support team is here to help Monday to Friday, 8:00–18:00 Central European Time. Reach out using our support form, email us at support@fusion-reactor.com, or start a live chat for assistance
 
+Reach out via the in-app chat or email [support@fusion-reactor.com](mailto:support@fusion-reactor.com). Support is available Monday to Friday, 08:00–18:00 CET.
 
 ## License
 
-This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), allowing you to freely use, modify, and distribute the code, subject to the terms of the license.
-
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
