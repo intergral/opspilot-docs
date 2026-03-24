@@ -36,11 +36,6 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - name: Set up SSH for deployment
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.MATERIAL_SSH_KEY }}
-
       - name: Install dependencies
         run: pip install -r requirements.txt
         env:
