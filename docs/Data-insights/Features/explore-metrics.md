@@ -1,30 +1,31 @@
-# Overview
+# Metrics Drilldown
+
+Drill down into metrics to find trends and anomalies.
+
+Navigate to **Metrics Drilldown** from the left-hand sidebar to explore Prometheus-compatible metrics without writing PromQL queries.
 
 ![!Screenshot](../../Data-insights/Features/images/metrics-main.png)
 
-**Metrics Drilldown** offers a seamless, query-free way to explore Prometheus-compatible metrics. With just a few clicks, you can uncover related metrics and insights - no need to write a single PromQL query.
+---
 
-## Key features
+## Filters
 
-- Segment metrics by labels to quickly spot anomalies and pinpoint issues.
+| Filter | Description |
+|---|---|
+| **Data source** | Select the Metrics data source |
+| **Filter by label values** | Narrow metrics by label |
+| **Quick search metrics** | Type to search across all available metrics |
+| **Sort by** | Order results by Default or other criteria |
+| **View** | Switch between Grid and Rows layout |
+| **Time range** | Set the window using the picker in the top right |
 
-- Auto-visualize metric types (e.g., gauges vs. counters) with no manual configuration.
+The total number of matching metrics is shown next to the search bar (e.g., 1613).
 
-- Discover related metrics to broaden context and deepen analysis.
+---
 
-- Pivot seamlessly to related telemetry, including logs, for end-to-end visibility.
+## Browsing metrics
 
-## Getting started
-
-At the top center of the screen, you'll see a welcome panel:
-
-![!Screenshot](../../Data-insights/Features/images/metrics1.png)
-
-
-* Click the **Let’s start!** button to open the **Explore > Metrics** interface.
-* A dynamic grid of metric panels is displayed, each representing a specific Prometheus metric (e.g., apiserver_client_certificate_expiration_seconds_count, apiserver_audit_event_total, apiserver_delegated_authz_request_duration_seconds).
-    ![!Screenshot](../../Data-insights/Features/images/metric-graphs.png)
-* Below the launch panel, you’ll see a list of your **recently run metric queries** for quick re-access. 
+A dynamic grid of metric panels is displayed, each representing a specific Prometheus metric. Click **Select** on any panel to drill into that metric in more detail.
 
 ### Search & filter metrics
 
@@ -32,9 +33,8 @@ Use search and filters to quickly narrow down the metrics you want to investigat
 
 To filter:
 
-* Use the Filter by label values dropdown to select specific services or tags.
-
-* Or type in the Search metrics box (e.g., type cpu), then press **Enter**.
+* Use the **Filter by label values** dropdown to select specific services or tags.
+* Or type in the **Quick search metrics** box (e.g., `cpu`), then press **Enter**.
 
 Matching metrics will appear. From here, you can dive deeper into your analysis.
 
