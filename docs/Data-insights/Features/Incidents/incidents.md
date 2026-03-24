@@ -156,7 +156,7 @@ Labels are added during incident creation or via the **Add Label** button on the
 
 
 1. Navigate to the **Settings** page using the cog icon.
-    ![!Screenshot](/Data-insights/Features/Incidents/images/settings-icon.png)
+    ![!Screenshot](/Data-insights/Features/Incidents/images/settings-cog.png)
 2. Select **+ Add label**
 2. Enter a name.
 2. Choose a color.

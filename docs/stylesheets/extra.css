@@ -77,7 +77,7 @@
     line-height: 1.8; /* Creates space between nav items*/
 }
 
-/* Nav: white links, grey section headings */
+/* Nav: white links, grey bold section headings */
 [data-md-color-scheme="slate"] .md-nav__item .md-nav__link {
   color: #ffffff;
 }
@@ -91,6 +91,13 @@
   color: #888888;
 }
 
+/* Sub-links and top-level non-section items bold grey - both modes */
+.md-sidebar--primary .md-nav__item--section .md-nav .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:not(.md-nav__item--section) > .md-nav__link {
+  color: #888888 !important;
+  font-weight: bold !important;
+}
+
 /* Header logo: larger and hide site title text */
 .md-header__button.md-logo img {
   width: 120px;
@@ -99,6 +106,11 @@
 
 .md-header__title {
   display: none;
+}
+
+/* Hide site name in nav */
+.md-nav--primary > .md-nav__title {
+  display: none !important;
 }
 
 /* Push logo left, search and icons right */
@@ -116,15 +128,86 @@
   margin-left: auto;
 }
 
-/* Header: slate, main content: black */
+/* Light mode: black header, white nav */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #000000;
+  --md-primary-fg-color--light: #000000;
+  --md-primary-fg-color--dark: #000000;
+  --md-accent-fg-color: #FF6600;
+  --md-accent-fg-color--transparent: rgba(255, 102, 0, 0.1);
+}
+
+/* Light mode nav: white background, dark text */
+[data-md-color-scheme="default"] .md-sidebar--primary,
+[data-md-color-scheme="default"] .md-sidebar--primary *,
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav,
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__list,
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__item,
+[data-md-color-scheme="default"] .md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: #ffffff !important;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__link {
+  color: #222222 !important;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__title {
+  color: #888888 !important;
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+  font-weight: bold !important;
+}
+
+[data-md-color-scheme="default"] .md-nav__item--section > label.md-nav__link {
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--section > label.md-nav__link {
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__link:hover,
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__link--active {
+  color: #FF6600 !important;
+}
+
+/* Dark mode: slate header, black main content */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #2e303e;
-  --md-primary-fg-color--light: #2e303e;
-  --md-primary-fg-color--dark: #2e303e;
+  --md-primary-fg-color: #27272a;
+  --md-primary-fg-color--light: #27272a;
+  --md-primary-fg-color--dark: #27272a;
   --md-accent-fg-color: #FF6600;
   --md-accent-fg-color--transparent: rgba(255, 102, 0, 0.1);
   --md-default-bg-color: #0d0d0d;
   --md-default-bg-color--light: #111111;
+}
+
+/* Dark mode nav: always black */
+[data-md-color-scheme="slate"] .md-sidebar--primary,
+[data-md-color-scheme="slate"] .md-sidebar--primary *,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__list,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: #0d0d0d !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link {
+  color: #ffffff !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title {
+  color: #888888 !important;
+  background-color: #0d0d0d !important;
+  box-shadow: none !important;
+  font-weight: bold !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:hover,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link--active {
+  color: #FF6600 !important;
 }
 
 /* Footer navigation */
