@@ -1,10 +1,12 @@
 # Traces Drilldown
 
+![!Screenshot](../../Data-insights/Features/images/traces-main.png)
+
 Trace requests across services to find bottlenecks.
 
 Navigate to **Traces Drilldown** from the left-hand sidebar to explore distributed trace data without writing TraceQL queries.
 
-![!Screenshot](../../Data-insights/Features/images/traces-main.png)
+
 
 ---
 
@@ -54,7 +56,31 @@ Compare trace metrics across two time ranges or filter sets to identify regressi
 
 ### Traces
 
-A list of individual traces matching the current filters. Shows up to 200 results. Click any trace to open the full trace detail view.
+A list of individual traces matching the current filters. Shows up to 200 results. Hover over a trace and click **View trace** to open the full trace detail view.
+
+---
+
+## Trace detail view
+
+Clicking **View trace** opens a detail panel showing the full trace waterfall.
+
+| Field | Description |
+|---|---|
+| **Trace ID** | Unique identifier for the trace (click to copy) |
+| **Start time** | When the trace began |
+| **Duration** | Total end-to-end time for the trace |
+| **Services** | Number of services involved |
+| **URL** | The request URL that triggered the trace (if available) |
+
+### Span waterfall
+
+The waterfall view shows each span as a horizontal bar, positioned on a timeline from 0 to the total trace duration. Each row shows the **service name**, **operation**, and **duration**.
+
+Use **Span Filters** to narrow the spans shown. Use **Prev** / **Next** to step through spans.
+
+### Analyze Trace
+
+Click **Analyze Trace** in the top right to open a deeper breakdown of the trace, including span-level metrics and structure.
 
 ---
 

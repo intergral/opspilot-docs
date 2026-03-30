@@ -1,10 +1,12 @@
 # Metrics Drilldown
 
+![!Screenshot](../../Data-insights/Features/images/metrics-main.png)
+
 Drill down into metrics to find trends and anomalies.
 
 Navigate to **Metrics Drilldown** from the left-hand sidebar to explore Prometheus-compatible metrics without writing PromQL queries.
 
-![!Screenshot](../../Data-insights/Features/images/metrics-main.png)
+
 
 ---
 
@@ -41,57 +43,61 @@ Matching metrics will appear. From here, you can dive deeper into your analysis.
 
 ###  Investigate the data
 
-Once you've filtered your metrics, it’s time to analyze the data for patterns or unusual behavior. Understanding your system’s normal (baseline) performance makes it easier to spot issues.
-
-To start:
+Once you’ve filtered your metrics, it’s time to analyze the data for patterns or unusual behavior. Understanding your system’s normal (baseline) performance makes it easier to spot issues.
 
 1. Review the metric panels and look for ones with noticeable changes.
 
     * Metrics with little variation (e.g., JVM Uptime) are typically less insightful.
+    * Focus on dynamic and performance-critical metrics (e.g., CPU Usage, Heap Memory Used, or Request Throughput) to uncover trends and potential issues.
 
-    * Focus on dynamic and performance-critical metrics (e.g., CPU Usage, Heap Memory Used, Active JDBC Connections, or Request Throughput) to uncover system trends and potential issues.hat show clear trends.
+2. Click **Select** on a metric to open the detail view.
 
-2. Click **Select** on a metric to view it in more detail.
-    
 3. Adjust the time range using the time picker in the top right if needed.
 
-4. Use the **Breakdown** and **Related metrics** tabs:
+---
 
-     * **Breakdown:** Visualizes each label-value pair for the selected metric. You can drill down further or add filters directly.
-     * **Related metrics:** Lists similar metrics based on keywords. You can continue your analysis from here.
+## Metric detail view
 
-    ![!Screenshot](../../Data-insights/Features/images/select.png)
+Clicking **Select** on a metric opens the detail view. The breadcrumb updates to show your current path (e.g., Home > Drilldown > Metrics > `metric_name` > Breakdown).
+
+The main graph shows the selected metric over the chosen time range. Use **Select new metric** (top right) to switch to a different metric without going back.
+
+### Tabs
+
+| Tab | Description |
+|---|---|
+| **Breakdown** | Breaks the metric down by label. Use the **By label** dropdown to choose a label (e.g., `cluster`, `instance`, `job`). Each label value appears as its own panel. |
+| **Related metrics** | Lists similar metrics based on shared keywords. Use this to discover related signals. |
+| **Related logs** | Shows log entries correlated with the selected metric. |
+
+### Breakdown view
+
+The Breakdown tab is the default view after selecting a metric. It displays a grid of panels — one per label value — so you can see how the metric differs across instances, environments, jobs, or other dimensions.
+
+- Use the **By label** dropdown to switch between label dimensions.
+- Switch between **Grid** and **Rows** layout using the view toggle.
+- Hover over any panel to reveal a **Navigation** menu with options to open the panel in **Explore**.
 
 ### Open a metric in Explore
 
-Explore lets you interact with your data in real time. You can build, test, and refine queries without needing to create a dashboard. If your data source supports it, you’ll see results in both graph and table views-perfect for quick and detailed analysis.
+To drill deeper into a specific label panel:
 
-To drill deeper into a specific metric using Explore:
+1. Hover over the panel to reveal the **Navigation** menu.
+2. Click **Explore** to open it in Explore view with the full query pre-filled.
+3. From here, modify the query, adjust the time range, or switch between graph and table views.
 
-1. Click **Select** on the metric panel you want to investigate in more detail.
-
-2. Once the panel expands, click the explore icon in the bottom-right corner of the graph.
-
-    
-    ![!Screenshot](../../Data-insights/Features/images/explore-icon.png)
-
-3. This opens the metric in **Explore** view, where you’ll see the full query.
-
-4. From here, you can modify the query, change the time range, and switch between graph and table views to further analyze the data.
-
-    ![!Screenshot](../../Data-insights/Features/images/explore-metrics.png) 
-
-Explore is great for experimenting with queries and uncovering deeper insights-without needing to build a full dashboard.
+Explore is great for experimenting with queries and uncovering deeper insights without needing to build a full dashboard.
 
 ### Add metrics visualization to a dashboard
 
-1. At the top of the **Explore** page, click **Add to dashboard**.
+From the metric detail view, you can add the graph directly to a dashboard using the icon in the top-right corner of the panel.
+
+1. In the top-right corner of the metric graph, click the **Add to dashboard** icon (grid icon).
 
 2. Choose one of the following:
 
-    * New dashboard – to create a new one
-
-    * Existing dashboard – and pick one from the list
+    * **New dashboard** – to create a new one
+    * **Existing dashboard** – and pick one from the list
 
 3. Click **Open dashboard** to view it.
 
@@ -99,7 +105,7 @@ Explore is great for experimenting with queries and uncovering deeper insights-w
 
 5. Give your dashboard a name and description, choose a folder (if needed), and click **Save**.
 
-    ![!Screenshot](../../Data-insights/Features/images/save-dashboard.png) 
+    ![!Screenshot](../../Data-insights/Features/images/save-dashboard.png)
 
 !!! info "Learn more"
     [Metrics](https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/)

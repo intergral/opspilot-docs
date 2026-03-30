@@ -38,8 +38,26 @@ theme:
 
 nav:
   - Get Started: index.md
-  - Dashboards: Data-insights/Features/dashboards.md
-  - Integrations: Data-insights/Features/integrations.md
+  - AI:
+     - OpsPilot Assistant:
+        - Overview: Data-insights/Features/OpsPilot/AIoverview.md
+        - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
+     - Knowledge: Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md
+     - MCP Interfaces:
+        - FR Cloud MCP:
+           - Overview: Monitor-your-data/MCP/mcp-overview.md
+           - Install: Monitor-your-data/MCP/MCP.md
+        - Katie - Kubernetes tooling for AI:
+           - Overview: Monitor-your-data/Katie/overview.md
+           - Install MCP: Monitor-your-data/Katie/install.md
+  - INTEGRATIONS:
+     - Overview: Data-insights/Features/integrations.md
+     - Chat:
+        - Slack: Data-insights/Features/Integrations/Chat/slack.md
+     - SDKs:
+        - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
+     - Ticketing:
+        - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
   - MONITORING:
      - Servers: Data-insights/Features/Explore-servers.md
      - Applications: Data-insights/Features/applications.md
@@ -70,6 +88,7 @@ nav:
         - Overview: Data-insights/Features/Incidents/incidents.md
         - Settings: Data-insights/Features/Incidents/Settings.md
   - TELEMETRY:
+     - Dashboards: Data-insights/Features/dashboards.md
      - Logs: Data-insights/Features/explore-logs.md
      - Metrics: Data-insights/Features/explore-metrics.md
      - Traces: Data-insights/Features/explore-traces.md
@@ -115,18 +134,6 @@ nav:
         - Overview: Monitor-your-data/Deep/overview.md
         - Search: Data-insights/Features/Deep/Search.md
         - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
-  - AI:
-     - OpsPilot Assistant:
-        - Overview: Data-insights/Features/OpsPilot/AIoverview.md
-        - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
-     - Knowledge: Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md
-     - MCP Interfaces:
-        - FR Cloud MCP:
-           - Overview: Monitor-your-data/MCP/mcp-overview.md
-           - Install: Monitor-your-data/MCP/MCP.md
-        - Katie - Kubernetes tooling for AI:
-           - Overview: Monitor-your-data/Katie/overview.md
-           - Install MCP: Monitor-your-data/Katie/install.md
   - MISCELLANEOUS:
      - What's New: Latest-updates/WhatsNew.md
      - Releases:
