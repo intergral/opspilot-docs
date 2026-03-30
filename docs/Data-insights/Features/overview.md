@@ -1,5 +1,9 @@
 # Overview
 
+<div class="video-wrapper">
+  <iframe src="https://player.vimeo.com/video/1175447059" width="100%" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 The **Overview** page is your observability dashboard at a glance. It gives you an immediate, high-level summary of your entire environment - services, servers, applications, alerts, anomaly detection, and usage - all in one place.
 
 ## Active account view

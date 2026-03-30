@@ -3,6 +3,66 @@
     text-align: center; /* Center the button text */
 }
 
+/* Responsive video embeds */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Language selector buttons on Get Started page */
+.lang-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.lang-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 90px;
+  padding: 14px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.lang-btn:hover {
+  border-color: #FF6600;
+  background: rgba(255, 102, 0, 0.08);
+}
+
+.lang-btn img,
+.lang-btn svg {
+  width: 36px !important;
+  height: 36px !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  max-width: none !important;
+}
+
+.lang-btn span {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 .md-button:hover,
 .md-button:focus,
 .md-button--primary:hover,

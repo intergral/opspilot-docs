@@ -38,6 +38,7 @@ theme:
 
 nav:
   - Get Started: index.md
+  - UI Overview: Data-insights/Features/overview.md
   - AI:
      - OpsPilot Assistant:
         - Overview: Data-insights/Features/OpsPilot/AIoverview.md
@@ -206,7 +207,8 @@ nav:
               - Formatting: Contribute/style-guide/Language-and-grammar/Formatting.md
 
 plugins:
-   - glightbox
+   - glightbox:
+       selector: '.md-content img:not(.no-lightbox)'
    - search
    - redirects:
       redirect_maps:
