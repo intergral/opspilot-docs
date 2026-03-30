@@ -96,11 +96,20 @@ Or deploy an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping
 
 ---
 
-## Step 3 — Instrument your infrastructure
+## Step 3 — Connect your infrastructure
 
-Connect your infrastructure by installing the integrations you need. OpsPilot supports a wide range of integrations across cloud providers, databases, Kubernetes, and more.
+Get metrics, logs, and traces flowing from your infrastructure using **Grafana Alloy** or standalone **OpenTelemetry exporters**.
 
-Find setup instructions for your specific stack in the [Integrations Hub](/Data-insights/Features/integrations/).
+| Signal | How to ship it |
+|---|---|
+| **Metrics** | Run an OTel-compatible exporter (e.g. Node Exporter, cAdvisor) and forward via [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or the [OTel Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) |
+| **Logs** | Use the Alloy `loki.source` component or the OTel `filelog` receiver to tail and forward log files |
+| **Traces** | Configure your collector or Alloy pipeline to receive and forward spans to OpsPilot |
+
+[Grafana Alloy](https://grafana.com/docs/alloy/latest/) is a flexible, vendor-neutral collector that can scrape, transform, and forward all three signal types in a single agent.
+
+!!! info "Integration Hub — coming soon"
+    A full self-serve Integration Hub with one-click setup for cloud providers, databases, Kubernetes, and more is on the way. Watch this space.
 
 ---
 
