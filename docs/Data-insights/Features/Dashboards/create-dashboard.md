@@ -3,7 +3,7 @@
 Custom dashboards allow you to curate specific datasets into a single, cohesive view. Whether you are monitoring high-level infrastructure health or debugging a specific microservice, dashboards provide the visual context needed to make informed decisions.
 
 !!! note
-    Custom dashboard creation is available on **all** FusionReactor plans.
+    Custom dashboard creation is available on **all** OpsPilot plans.
 
 ## Before you start
 
@@ -13,10 +13,6 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 ---
 
 ## Steps
-
-<div class="video-wrapper">
-  <iframe src="https://player.vimeo.com/video/893302849?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="How to create a FusionReactor dashboard"></iframe>
-</div>
 
 **Step 1** — Select **Dashboards** from the navigation menu.
 
@@ -32,8 +28,6 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 - Select one of the built-in special data sources.
 - Click **Configure a new data source** to set up a new one (Admins only).
 
-![Screenshot](/Getting-started/Tutorials/step4.png)
-
 !!! info
     The **Edit panel** view initially displays your chosen data source. You can modify the panel data source at any time using the drop-down in the **Query** tab.
 
@@ -41,11 +35,7 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 
 **Step 6** — Select the **Refresh dashboard** icon to query the data source.
 
-![Screenshot](/Getting-started/Tutorials/step6.png)
-
 **Step 7** — In the visualization list, select a visualization type.
-
-![Screenshot](/Getting-started/Tutorials/step7.png)
 
 **Step 8** — Under **Panel options**, enter a title and description for your panel.
 
@@ -69,8 +59,6 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 **Step 13** — Select **Save**.
 
 **Step 14** — To add more panels, click **Add** in the dashboard header and select **Visualization**.
-
-![Screenshot](/Getting-started/Tutorials/add.png)
 
 ---
 
