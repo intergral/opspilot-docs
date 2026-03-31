@@ -18,7 +18,7 @@ Dashboards in OpsPilot are stored as JSON. You can export any dashboard to a fil
 
 ## Import a dashboard
 
-**Step 1** — From the **Dashboards** menu, click **New** and select **Import**.
+**Step 1** — From the **Dashboards** library, click **New** in the top-right corner and select **Import**.
 
 **Step 2** — Do one of the following:
 

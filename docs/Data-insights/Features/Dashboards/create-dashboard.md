@@ -20,9 +20,7 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 
 **Step 1** — Select **Dashboards** from the navigation menu.
 
-![Screenshot](/Getting-started/Tutorials/step1.png)
-
-**Step 2** — Click **Create New Dashboard**.
+**Step 2** — Click **New** in the top-right corner and select **New dashboard**.
 
 ![Screenshot](/Getting-started/Tutorials/step2.png)
 

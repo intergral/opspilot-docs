@@ -2,11 +2,14 @@
 
 ## Navigating dashboards
 
-From the **Dashboards** menu you can browse all pre-built and custom dashboards in your account.
+From the **Dashboards** menu you can browse all pre-built and custom dashboards organised into folders.
 
-- Click the **star icon** on any dashboard to add it to your **Favourites** for quicker access.
-- Use the **time picker** in the top-right to adjust the time range. Highlighting a specific timeframe on a chart updates all panels on that dashboard.
-- Use the breadcrumb links in the top-right to navigate back to the main dashboard library.
+- Use the **search bar** to find any dashboard or folder by name.
+- Use **Filter by tag** to narrow by category.
+- Tick **Starred** to show only dashboards you have favourited.
+- Click the **star icon** on any open dashboard to add it to your favourites.
+- Use the **time picker** inside a dashboard to adjust the time range. Highlighting a specific timeframe on a chart updates all panels on that dashboard.
+- Use **Sort** and the grid/list toggle to change how dashboards are displayed.
 
 ---
 

@@ -1,10 +1,50 @@
 # About Dashboards
 
-![Dashboards](../../../Data-insights/Features/images/Dashboards/new-dashboards.png)
-
 Dashboards combine metrics, logs, and trace data in one place to give you a complete picture of your environment. Use them to monitor infrastructure health, debug application issues, or track business metrics — all in a single view.
 
 Navigate to **Dashboards** from the left-hand menu in OpsPilot to access your full library of pre-built and custom dashboards.
+
+---
+
+## The Dashboards library
+
+The Dashboards page shows all dashboards and folders available to you. From here you can:
+
+- **Search** for any dashboard or folder by name
+- **Filter by tag** to narrow results by category
+- **Show Starred** to see only dashboards you have favourited
+- Toggle between **grid** and **list** view
+- **Sort** by name, last modified, or other criteria
+
+To create or import a dashboard, click **New** in the top-right corner:
+
+| Option | Description |
+|---|---|
+| **New dashboard** | Start a blank dashboard in the panel editor |
+| **New folder** | Create a folder to organise your dashboards |
+| **Import** | Import a dashboard from a JSON file |
+
+---
+
+## Dashboard folders
+
+Dashboards are organised into folders. The following folders are provisioned automatically:
+
+| Folder | Contents |
+|---|---|
+| **Anomaly Detection** | Dashboards for AI-detected anomalies |
+| **Billing** | Data usage and plan consumption |
+| **Custom Anomaly Detectors** | User-defined anomaly detector views |
+| **Custom Dashboards Folder** | Your saved custom dashboards |
+| **FusionReactor** | Application performance dashboards from the FR agent |
+| **FusionReactor Alerts** | Alert state views from the FR agent |
+| **Infrastructure** | Host and infrastructure health |
+| **Integrations** | Pre-built dashboards for third-party integrations |
+| **Kubernetes** | Cluster and pod resource dashboards |
+| **Logs** | Log browsing and analysis |
+| **Service Anomaly Detectors** | Anomaly views scoped to individual services |
+| **Traces** | Trace browsing and lookup |
+| **Shared with me** | Dashboards shared by other users in your organisation |
 
 !!! info
     Dashboards will continue to evolve — over time we will add new sets of dashboards and improve existing dashboards provisioned to your account. Some dashboards are marked as **experimental**, allowing us to continually roll out new concepts.
