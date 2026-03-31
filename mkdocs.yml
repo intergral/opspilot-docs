@@ -46,7 +46,7 @@ nav:
         - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
      - Knowledge: Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md
      - MCP Interfaces:
-        - FR Cloud MCP:
+        - OpsPilot MCP:
            - Overview: Monitor-your-data/MCP/mcp-overview.md
            - Install: Monitor-your-data/MCP/MCP.md
         - Katie - Kubernetes tooling for AI:
