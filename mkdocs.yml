@@ -39,6 +39,16 @@ theme:
 nav:
   - Get Started: index.md
   - UI Overview: Data-insights/Features/overview.md
+  - Dashboards:
+     - About Dashboards: Data-insights/Features/Dashboards/about-dashboards.md
+     - Work with Dashboards:
+        - Create a Dashboard: Data-insights/Features/Dashboards/create-dashboard.md
+        - Manage Dashboards: Data-insights/Features/Dashboards/manage-dashboards.md
+        - Import & Export: Data-insights/Features/Dashboards/import-export.md
+     - Work with Panels:
+        - Configure Panels: Data-insights/Features/Dashboards/configure-panels.md
+        - Build Queries: Data-insights/Features/Dashboards/build-queries.md
+        - Add Variables: Data-insights/Features/Dashboards/add-variables.md
   - AI:
      - OpsPilot Assistant:
         - Overview: Data-insights/Features/OpsPilot/AIoverview.md
@@ -89,7 +99,6 @@ nav:
         - Overview: Data-insights/Features/Incidents/incidents.md
         - Settings: Data-insights/Features/Incidents/Settings.md
   - TELEMETRY:
-     - Dashboards: Data-insights/Features/dashboards.md
      - Logs: Data-insights/Features/explore-logs.md
      - Metrics: Data-insights/Features/explore-metrics.md
      - Traces: Data-insights/Features/explore-traces.md
