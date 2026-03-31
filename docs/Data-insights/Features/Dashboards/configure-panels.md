@@ -4,9 +4,6 @@
 
 After adding a panel to a dashboard, you can open it at any time to update queries, change visualizations, add transformations, or adjust display settings.
 
-<div class="video-wrapper">
-  <iframe src="https://player.vimeo.com/video/893744767?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="How to edit custom dashboards on FusionReactor"></iframe>
-</div>
 
 **Step 1** — Open the dashboard containing the panel you want to edit.
 
