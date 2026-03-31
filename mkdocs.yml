@@ -124,13 +124,8 @@ nav:
         - Configuration: Monitor-your-data/OpenTelemetry/Configuration.md
         - FAQ: Monitor-your-data/OpenTelemetry/FAQ.md
         - Troubleshooting: Monitor-your-data/OpenTelemetry/Troubleshooting.md
-     - Log Monitoring:
-        - Overview: Monitor-your-data/Log-monitoring/overview.md
-        - Log shipper: Monitor-your-data/Log-monitoring/log-shipper.md
-        - FR Agent shipper: Monitor-your-data/Log-monitoring/agent-shipper.md
-        - Alerting: Monitor-your-data/Log-monitoring/alerting.md
-        - Labels & fields: Monitor-your-data/Log-monitoring/labels-and-fields.md
-        - Log dashboards: Monitor-your-data/Log-monitoring/Log-dashboards.md
+     - Infrastructure Monitoring:
+        - Overview: Monitor-your-data/Infrastructure-monitoring/overview.md
      - Deep:
         - Overview: Monitor-your-data/Deep/overview.md
         - Search: Data-insights/Features/Deep/Search.md
