@@ -1,2 +1,0 @@
-!!! note
-    Upgrading the FRAM Service does not upgrade the instances of FusionReactor on your Application Server. This is done to prevent FusionReactor restarting your applications when an upgrade is performed. Go to the Instance Manager and upgrade [each instance](/Installation/FRAM) individually.

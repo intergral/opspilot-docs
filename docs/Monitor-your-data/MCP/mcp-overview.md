@@ -6,18 +6,18 @@
 
 MCP was developed by [Anthropic](https://www.anthropic.com/news/model-context-protocol), but is vendor-neutral. Many AI providers offer MCP interfaces to their models, and many software vendors provide MCP interfaces into their products.
 
-FusionReactor currently provides one MCP interface, the **FusionReactor Cloud MCP**.
+OpsPilot provides one MCP interface, the **OpsPilot MCP**.
 
-## FusionReactor Cloud MCP
+## OpsPilot MCP
 
-Users of FusionReactor Cloud have the ability to connect their AI tooling to their FR Cloud data using the [Model Context Protocol](https://modelcontextprotocol.io/introduction), a standard tool interface which allows AI models to communicate in real time with external tools.
+OpsPilot users can connect their AI tooling to their data using the [Model Context Protocol](https://modelcontextprotocol.io/introduction), a standard tool interface which allows AI models to communicate in real time with external tools.
 
 MCP is used by many providers, including Claude Desktop, to help AI tooling access (and in some cases effect change in) external tools and systems.
 
-The FusionReactor Cloud MCP is an integration of the [Grafana MCP](https://github.com/grafana/mcp-grafana) project.
+The OpsPilot MCP is an integration of the [Grafana MCP](https://github.com/grafana/mcp-grafana) project.
 
-!!! note 
-    The FusionReactor Cloud MCP is a **read-only** data source – you can’t make changes to your account using it.
+!!! note
+    The OpsPilot MCP is a **read-only** data source – you can’t make changes to your account using it.
 
 ### Key capabilities
 
@@ -26,5 +26,5 @@ The FusionReactor Cloud MCP is an integration of the [Grafana MCP](https://githu
 
 
 !!! info "Learn more"
-    [Installing the FusionReactor Cloud MCP](/Monitor-your-data/MCP/MCP/)
+    [Installing the OpsPilot MCP](/Monitor-your-data/MCP/MCP/)
 

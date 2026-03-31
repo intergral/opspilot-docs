@@ -1,1 +1,0 @@
-JVM arguments for your Application Server are only read when the server / JRE (Java Runtime Environment) is started. For this reason we recommend that you stop your Application Server before adding or modifying any of your JVM arguments.

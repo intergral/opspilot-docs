@@ -1,8 +1,8 @@
 
 
-# Installing the FusionReactor Cloud MCP
+# Installing the OpsPilot MCP
 
-To connect your AI tooling to FusionReactor Cloud using MCP, follow the steps below.
+To connect your AI tooling to OpsPilot using MCP, follow the steps below.
 
 ---
 
@@ -19,7 +19,7 @@ You’ll need an API key so your tooling can authenticate with the FusionReactor
 
 FusionReactor Cloud MCP is based on the [Grafana MCP adapter](https://github.com/grafana/mcp-grafana).
 
-Here’s an example configuration for connecting [Claude Desktop](https://claude.ai/download) to FusionReactor Cloud using the MCP adapter.
+Here’s an example configuration for connecting [Claude Desktop](https://claude.ai/download) to OpsPilot using the MCP adapter.
 
 The simplest way to get started is by using the prebuilt Grafana MCP Docker image, together with SSE (Server-Side Event) streams. Grafana provides [additional documentation](https://github.com/grafana/mcp-grafana?tab=readme-ov-file#usage) for alternative methods.
 
