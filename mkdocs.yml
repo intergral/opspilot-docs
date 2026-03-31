@@ -37,8 +37,9 @@ theme:
 
 
 nav:
-  - Get Started: index.md
-  - UI Overview: Data-insights/Features/overview.md
+  - GETTING STARTED:
+     - Get Started: index.md
+     - UI Overview: Data-insights/Features/overview.md
   - DASHBOARDS:
      - About Dashboards: Data-insights/Features/Dashboards/about-dashboards.md
      - Work with Dashboards:
