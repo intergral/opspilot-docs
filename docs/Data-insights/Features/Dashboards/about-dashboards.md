@@ -1,5 +1,7 @@
 # About Dashboards
 
+![Dashboards](/Data-insights/Features/images/dashboards.png)
+
 Dashboards combine metrics, logs, and trace data in one place to give you a complete picture of your environment. Use them to monitor infrastructure health, debug application issues, or track business metrics — all in a single view.
 
 Navigate to **Dashboards** from the left-hand menu in OpsPilot to land on the **Home** dashboard.
