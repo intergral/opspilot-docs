@@ -1,2 +1,8 @@
 # Test temporary directories
 test-go-otel-temp/
+
+# MkDocs build output
+site/
+
+# Windows shortcuts
+*.lnk
