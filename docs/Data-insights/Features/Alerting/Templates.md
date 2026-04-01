@@ -2,7 +2,7 @@ Use templating to transform raw technical metrics-like heap usage or slow reques
 
 ## Alert Rule Annotations
 
-[Annotations](https://grafana.com/docs/grafana/latest/alerting/fundamentals/templates/#template-annotations) are the primary way to pass FusionReactor metadata into your alerts.
+[Annotations](https://grafana.com/docs/grafana/latest/alerting/fundamentals/templates/#template-annotations) are the primary way to pass OpsPilot metadata into your alerts.
 
 * **Purpose:** Use them for the **Summary** (what happened) and **Description** (why it matters).
 * **Dynamic Values:** Use Go templating to display specific FR metrics. For example, show the exact millisecond duration of a slow request or the specific URL that triggered the alert.
@@ -12,7 +12,7 @@ Use templating to transform raw technical metrics-like heap usage or slow reques
 
 ## Alert Rule Labels
 
-[Labels](https://grafana.com/docs/grafana/latest/alerting/fundamentals/templates/#template-labels) categorize your FusionReactor instances (such as, `app_name`, `environment`, or `server_id`).
+[Labels](https://grafana.com/docs/grafana/latest/alerting/fundamentals/templates/#template-labels) categorize your OpsPilot instances (such as, `app_name`, `environment`, or `server_id`).
 
 * **Purpose:** Use labels to route alerts to different teams (such as, `tier: critical` goes to PagerDuty, while `tier: warning` goes to Slack).
 * **Important:** Avoid putting highly variable data (like a dynamic timestamp or unique Request ID) in labels. This creates cardinality issues, making it harder to track alert history. Keep these values in **Annotations** instead.
@@ -24,8 +24,8 @@ Use templating to transform raw technical metrics-like heap usage or slow reques
 
 Managed in the [Contact Points](Contact-points.md) section, these define the wrapper or envelope for your notifications.
 
-* **Purpose:** Ensure every Slack alert from FusionReactor has the same layout, icon, or link to your runbooks.
-* **Centralization:** Instead of writing the same Slack block for 50 different alert rules, you define it once in a **Notification Template** and reuse it across all FusionReactor alerts.
+* **Purpose:** Ensure every Slack alert from OpsPilot has the same layout, icon, or link to your runbooks.
+* **Centralization:** Instead of writing the same Slack block for 50 different alert rules, you define it once in a **Notification Template** and reuse it across all OpsPilot alerts.
 
 !!! info "Learn more"
     [Create Notification Templates](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/template-notifications/)

@@ -1,4 +1,4 @@
-This page covers common issues when setting up and operating FusionReactor alerting, with particular focus on the differences from the previous Mimir-based alerting system.
+This page covers common issues when setting up and operating OpsPilot alerting, with particular focus on the differences from the previous Mimir-based alerting system.
 
 ## Quick reference
 
