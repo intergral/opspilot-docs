@@ -1,4 +1,4 @@
-An **Alert Rule** is a set of criteria that defines when FusionReactor should trigger an alert. Rules are evaluated continuously by the Grafana Ruler and route notifications through the Alertmanager.
+An **Alert Rule** is a set of criteria that defines when OpsPilot should trigger an alert. Rules are evaluated continuously by the Grafana Ruler and route notifications through the Alertmanager.
 
 ## What makes up an Alert Rule?
 
@@ -77,7 +77,7 @@ Enter a descriptive and unique name in the **Name** field. This name appears in 
 
 ### 4. Add Routing Labels
 
-Labels are how FusionReactor routes alerts to the correct contact point via notification policies. **At minimum, add a `channel` label** matching the destination you want to use.
+Labels are how OpsPilot routes alerts to the correct contact point via notification policies. **At minimum, add a `channel` label** matching the destination you want to use.
 
 | Label | Value | Routes to |
 | --- | --- | --- |

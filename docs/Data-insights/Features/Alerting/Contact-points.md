@@ -1,4 +1,4 @@
-**Contact points** define where and how FusionReactor sends alert notifications. Each contact point contains one or more integrations, such as, Slack, Email, or PagerDuty, and can be assigned directly to an [alert rule](Alert-Rules/Configure-rules.md) or routed via [notification policies](Notifications.md).
+**Contact points** define where and how OpsPilot sends alert notifications. Each contact point contains one or more integrations, such as, Slack, Email, or PagerDuty, and can be assigned directly to an [alert rule](Alert-Rules/Configure-rules.md) or routed via [notification policies](Notifications.md).
 
 ## What are Contact Points?
 
