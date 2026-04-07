@@ -30,7 +30,7 @@ Each section tells you exactly what to install or configure to start seeing data
 
 ## Step 2 — Instrument your application
 
-Send telemetry from your applications using OpenTelemetry or the FusionReactor agent.
+Send telemetry from your applications using OpenTelemetry or the [FusionReactor agent](/Data-insights/Features/Integrations/SDKs/fusionreactor/).
 
 Select your language:
 
