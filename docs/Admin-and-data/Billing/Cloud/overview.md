@@ -136,7 +136,7 @@ A seat refers to a single, unique virtual or physical host with up to four insta
     It is possible to be billed on-demand for all usage. There is no requirement to reserve an OpsPilot Ultimate seat.
 
 
-![!Screenshot](../../Billing/Cloud/seat.png)
+![!Screenshot](/Admin-and-data/Images/seat.png)
 
 
 
