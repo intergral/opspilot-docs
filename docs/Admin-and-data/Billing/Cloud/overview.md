@@ -283,12 +283,12 @@ To control your usage and spending costs it is possible to create an alert to fi
 
 #### Example billing usage checks
 
-For instructions on configuring billing checks, see the [Billing usage checks](/Data-insights/Features/alerting-examples/) section. The following are examples of common billing usage checks: 
+For instructions on configuring billing alerts, see the [Billing checks](/Data-insights/Features/alerting-examples/#billing-checks) section. The following data usage metrics are available for alerting:
 
-* `fr_billing_usage_current`
-* `fr_billing_charges_metered`
-* `fr_billing_usage`
-* `fr_billing_charges_total`
+* `fr_logs_bytes_received`
+* `fr_traces_bytes_received`
+* `fr_metrics_series_count`
+* `fr_usage_minutes`
 
 ---
 

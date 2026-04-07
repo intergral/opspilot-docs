@@ -62,12 +62,12 @@ Usage beyond your plan's included allowance is billed at [on-demand rates](/Admi
 
 ## How do I set up a billing alert?
 
-You can create an alert using the billing usage metrics to notify you before you exceed your allowance:
+You can create an alert using the data usage metrics to notify you before you exceed your allowance:
 
-- `fr_billing_usage_current`
-- `fr_billing_charges_metered`
-- `fr_billing_usage`
-- `fr_billing_charges_total`
+- `fr_logs_bytes_received` — alert when log ingestion approaches your plan limit
+- `fr_traces_bytes_received` — alert when trace ingestion approaches your plan limit
+- `fr_metrics_series_count` — alert when your metric series count approaches your plan limit
+- `fr_usage_minutes` — alert when FR instance hours approach your seat allowance
 
 !!! info "Learn more"
     [Create an alert rule](/Data-insights/Features/Alerting/Alert-Rules/Configure-rules/)

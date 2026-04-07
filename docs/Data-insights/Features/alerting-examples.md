@@ -223,23 +223,20 @@ Click **Save rule and exit**.
 
 Billing alerts let you monitor your OpsPilot usage against thresholds before you exceed a plan limit or incur unexpected on-demand charges.
 
-!!! warning "Always filter by `servicename`"
-    All billing metrics aggregate usage across **all services** unless you filter by the `servicename` label. Failing to specify a `servicename` will result in aggregated usage data, leading to inaccurate alerts. Always add a `servicename` filter as shown in the examples below.
-
-The following billing metrics are available:
+The following data usage metrics are available:
 
 | Metric | What it measures |
 | --- | --- |
-| `fr_billing_usage_current` | Current monthly usage for the selected service |
-| `fr_billing_charges_metered` | On-demand usage charges for the selected service |
-| `fr_billing_usage` | Total billable data usage for the selected service |
-| `fr_billing_charges_total` | Total current billing charges for the selected service |
+| `fr_usage_minutes` | Time used by running FR instances (per minute) |
+| `fr_logs_bytes_received` | Logs ingested into your account (per hour) |
+| `fr_traces_bytes_received` | Traces ingested into your account (per hour) |
+| `fr_metrics_series_count` | Number of metric series ingested into your account (per hour) |
 
 ---
 
-### 5. On-demand usage alert
+### 5. Log ingestion alert
 
-Triggers when on-demand usage charges for a service exceed a threshold, using the `fr_billing_charges_metered` metric.
+Triggers when the volume of logs ingested approaches your plan limit, using the `fr_logs_bytes_received` metric.
 
 #### Configuration
 
@@ -247,14 +244,13 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `On-Demand Charges - [Service Name]`.
+Enter a name such as `Log Ingestion - Usage Warning`.
 
 **2. Query and condition**
 
 - Select the **Metrics** data source.
-- Select the `fr_billing_charges_metered` metric.
-- Filter by `servicename` and specify the target service name. This is required to avoid aggregated data across all services.
-- Set the alert condition to **IS ABOVE** and specify your threshold value (in the units your billing reports use).
+- Select the `fr_logs_bytes_received` metric.
+- Set the alert condition to **IS ABOVE** and specify your threshold in bytes. For example, to alert at 20 GB, enter `20000000000`.
 
 !!! tip
     Click **Preview alert rule condition** to confirm data is being returned before continuing.
@@ -271,20 +267,18 @@ Enter a name such as `On-Demand Charges - [Service Name]`.
 
 **5. Annotations**
 
-- **Summary:** `On-demand charges threshold exceeded for {{ $labels.servicename }}`
-- **Description:** `On-demand usage charges for {{ $labels.servicename }} have exceeded the configured threshold.`
+- **Summary:** `Log ingestion is approaching the plan limit`
+- **Description:** `Log ingestion has exceeded the configured threshold. Review log verbosity or add a filter to reduce volume.`
 
 **6. Save**
 
 Click **Save rule and exit**.
 
-
-
 ---
 
-### 6. Billable data usage alert
+### 6. Trace ingestion alert
 
-Triggers when total billable data usage for a service exceeds a threshold, using the `fr_billing_usage` metric. Use this to monitor data volume before you approach a plan limit.
+Triggers when the volume of traces ingested approaches your plan limit, using the `fr_traces_bytes_received` metric.
 
 #### Configuration
 
@@ -292,14 +286,13 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `Billable Data Usage - [Service Name]`.
+Enter a name such as `Trace Ingestion - Usage Warning`.
 
 **2. Query and condition**
 
 - Select the **Metrics** data source.
-- Select the `fr_billing_usage` metric.
-- Filter by `servicename` and specify the target service name.
-- Set the alert condition to **IS ABOVE** and specify your threshold in bytes. For example, to alert at 80 GB, enter `80000000000`.
+- Select the `fr_traces_bytes_received` metric.
+- Set the alert condition to **IS ABOVE** and specify your threshold in bytes. For example, to alert at 20 GB, enter `20000000000`.
 
 !!! tip
     Click **Preview alert rule condition** to confirm data is being returned before continuing.
@@ -316,20 +309,18 @@ Enter a name such as `Billable Data Usage - [Service Name]`.
 
 **5. Annotations**
 
-- **Summary:** `Data usage threshold exceeded for {{ $labels.servicename }}`
-- **Description:** `Billable data usage for {{ $labels.servicename }} has exceeded the configured threshold.`
+- **Summary:** `Trace ingestion is approaching the plan limit`
+- **Description:** `Trace ingestion has exceeded the configured threshold. Consider reducing the sampling ratio to lower trace volume.`
 
 **6. Save**
 
 Click **Save rule and exit**.
 
-
-
 ---
 
-### 7. Total billing charges alert
+### 7. Metrics series count alert
 
-Triggers when total billing charges for a service exceed a threshold, using the `fr_billing_charges_total` metric. Use this for a high-level cost ceiling alert covering all charge types.
+Triggers when the number of active metric series approaches your plan limit, using the `fr_metrics_series_count` metric.
 
 #### Configuration
 
@@ -337,14 +328,13 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `Total Billing Charges - [Service Name]`.
+Enter a name such as `Metrics Series Count - Usage Warning`.
 
 **2. Query and condition**
 
 - Select the **Metrics** data source.
-- Select the `fr_billing_charges_total` metric.
-- Filter by `servicename` and specify the target service name.
-- Set the alert condition to **IS ABOVE** and specify your threshold value.
+- Select the `fr_metrics_series_count` metric.
+- Set the alert condition to **IS ABOVE** and specify your threshold. For example, to alert at 18,000 series, enter `18000`.
 
 !!! tip
     Click **Preview alert rule condition** to confirm data is being returned before continuing.
@@ -361,8 +351,8 @@ Enter a name such as `Total Billing Charges - [Service Name]`.
 
 **5. Annotations**
 
-- **Summary:** `Total billing charges threshold exceeded for {{ $labels.servicename }}`
-- **Description:** `Total billing charges for {{ $labels.servicename }} have exceeded the configured threshold.`
+- **Summary:** `Metric series count is approaching the plan limit`
+- **Description:** `The number of active metric series has exceeded the configured threshold. Review metric cardinality to reduce series count.`
 
 **6. Save**
 
