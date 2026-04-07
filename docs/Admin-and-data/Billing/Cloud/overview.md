@@ -290,6 +290,32 @@ For instructions on configuring billing checks, see the [Billing usage checks](/
 * `fr_billing_usage`
 * `fr_billing_charges_total`
 
+---
+
+## On-Premise Plans
+
+On-premise plans are available for teams running the FusionReactor agent in their own infrastructure. Both editions are seat-based, where a seat covers a single unique virtual or physical host with up to 4 instances of Java/ColdFusion installed, or up to 4 Docker containers.
+
+!!! example
+    5–8 instances on a host requires 2 seats.
+
+### OpsPilot Ultimate
+
+**$95/mo per seat**
+
+The production-grade on-premise edition. Includes all features for comprehensive application performance monitoring in production environments.
+
+### OpsPilot Developer
+
+**$25/mo per seat**
+
+The developer on-premise edition. Has the same features as Ultimate but should be exclusively used in DEV and/or non-customer-facing QA environments.
+
+!!! warning
+    The Developer edition is not licensed for production use.
+
+---
+
 ## Modifications
 
 It is important to note that any upgrades you make to your billing plan occur immediately while downgrades will only come into effect at the end of the billing period. 
