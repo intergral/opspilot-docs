@@ -20,4 +20,4 @@ OpsPilot enforces rate limits for ingested data. The ingest system will return `
 
 
 !!! info
-    [How to reduce billing usage costs in OpsPilot](/Troubleshooting/Optimize-data/)
+    [How to reduce billing usage costs](https://docs.fusionreactor.io/Troubleshooting/Optimize-data/)
