@@ -4,7 +4,7 @@
 
 To start your OpsPilot journey, first sign up for a free, no-obligation [trial](https://app.fusionreactor.io/auth/register). Once you’ve experienced the benefits, all purchase transactions can be easily managed within the app itself.
 
-![!Screenshot](../../Billing/Cloud/newbilling.png)
+![!Screenshot](/images/Admin/cloud-plans.png)
 
 
 ## Purchasing a Subscription
@@ -293,6 +293,8 @@ For instructions on configuring billing checks, see the [Billing usage checks](/
 ---
 
 ## On-Premise Plans
+
+![!Screenshot](/images/Admin/on-prem-plans.png)
 
 On-premise plans are available for teams running the FusionReactor agent in their own infrastructure. Both editions are seat-based, where a seat covers a single unique virtual or physical host with up to 4 instances of Java/ColdFusion installed, or up to 4 Docker containers.
 
