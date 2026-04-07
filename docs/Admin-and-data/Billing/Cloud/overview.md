@@ -279,7 +279,7 @@ Alongside each data source is a graph that provides further information on your 
 To control your usage and spending costs it is possible to create an alert to fire if you exceed the allowed usage. 
 
 !!! info "Learn more"
-    [Create a check](/Data-insights/Features/Alerting/Alerts-overview/)
+    [Create an alert rule](/Data-insights/Features/Alerting/Alert-Rules/Configure-rules/)
 
 #### Example billing usage checks
 
