@@ -180,7 +180,9 @@ nav:
            - Getting-started/Tutorials/Common-issues/TLS-deprecation-guide.md
      - Administration:
         - Usage & Details: Admin-and-data/usage-and-details.md
-        - Billing: Admin-and-data/Billing/Cloud/overview.md
+        - Billing:
+           - Overview: Admin-and-data/Billing/Cloud/overview.md
+           - FAQ: Admin-and-data/Billing/Cloud/faq.md
         - Invoices: Admin-and-data/invoices.md
         - API Keys: Admin-and-data/api-keys.md
         - Organization Settings: Admin-and-data/organization-settings.md
