@@ -182,7 +182,6 @@ nav:
         - Usage & Details: Admin-and-data/usage-and-details.md
         - Billing: Admin-and-data/Billing/Cloud/overview.md
         - Invoices: Admin-and-data/invoices.md
-        - EULA: Admin-and-data/EULA.md
         - API Keys: Admin-and-data/api-keys.md
         - Organization Settings: Admin-and-data/organization-settings.md
         - Users:
@@ -193,6 +192,7 @@ nav:
         - Security: Admin-and-data/security.md
         - Legal:
            - Terms of Service: Admin-and-data/tos.md
+           - EULA: Admin-and-data/EULA.md
            - Third Party Licenses: Admin-and-data/Third-Party-Licenses/licenses.md
      - Contribute:
         - Contribute/how-to-contribute.md
