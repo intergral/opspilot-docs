@@ -16,7 +16,7 @@ Whether you’re investigating a performance slowdown, reviewing code logic, or 
 
 ## Access
 
-![!Screenshot](/Data-insights/Features/OpsPilot/images/access.png)
+![!Screenshot](/Data-insights/Features/OpsPilot/images/OPmain.png)
 
 OpsPilot opens by default upon login, providing instant access to its wealth of monitoring and troubleshooting capabilities. The ingenious concept behind the slider is its unobtrusive presence, meaning OpsPilot is always ready to assist without getting in the way. 
 
