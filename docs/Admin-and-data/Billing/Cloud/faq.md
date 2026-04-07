@@ -70,7 +70,7 @@ You can create an alert using the billing usage metrics to notify you before you
 - `fr_billing_charges_total`
 
 !!! info "Learn more"
-    [Create an alert](/Admin-and-data/Billing/Cloud/overview/#create-an-alert)
+    [Create an alert rule](/Data-insights/Features/Alerting/Alert-Rules/Configure-rules/)
 
 ## What is the difference between annual and monthly pricing?
 
