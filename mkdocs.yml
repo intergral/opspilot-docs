@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  favicon: Data-insights/Features/images/Favicon-white.svg
+  favicon: op-logo-white.png
   logo: Data-insights/Features/images/whiteOP.svg
   features:
     - navigation.sections
