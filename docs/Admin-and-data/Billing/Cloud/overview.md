@@ -316,6 +316,10 @@ The developer on-premise edition. Has the same features as Ultimate but should b
 !!! warning
     The Developer edition is not licensed for production use.
 
+### FusionReactor licensing
+
+On-premise plans use the FusionReactor agent, which requires a license key. For details on applying, activating, and troubleshooting licenses, see the [FusionReactor licensing documentation](https://docs.fusionreactor.io/Admin-and-data/Licensing/Licensing/).
+
 ---
 
 ## Modifications

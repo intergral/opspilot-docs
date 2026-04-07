@@ -182,12 +182,7 @@ nav:
         - Usage & Details: Admin-and-data/usage-and-details.md
         - Billing: Admin-and-data/Billing/Cloud/overview.md
         - Invoices: Admin-and-data/invoices.md
-        - Licenses:
-           - Overview: Admin-and-data/Licensing/Licensing.md
-           - Manual activation: Admin-and-data/Licensing/Manual-Activation.md
-           - Static endpoints: Admin-and-data/Licensing/Static-Licensing-Endpoints.md
-           - Troubleshooting: Admin-and-data/Licensing/Troubleshooting.md
-           - EULA: Admin-and-data/EULA.md
+        - EULA: Admin-and-data/EULA.md
         - API Keys: Admin-and-data/api-keys.md
         - Organization Settings: Admin-and-data/organization-settings.md
         - Users:
