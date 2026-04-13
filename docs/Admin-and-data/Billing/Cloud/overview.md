@@ -113,26 +113,22 @@ Need a large number of seats or a tailored plan? Contact our Sales Team for cust
     As the OpsPilot AI uses previous prompts and responses to reply to a query, long involved responses can prove costly.
 
 
-## OpsPilot Ultimate Reservations
-To effectively manage costs, a customer can optionally reserve an **OpsPilot Ultimate** seat for $79 billed monthly with an annual commitment or $95 billed monthly with no commitment. Each seat gives the user 750 hours of OpsPilot usage and includes 2GB logs, 5000 metrics and 2GB traces to cover the average usage from OpsPilot. This acts as a buffer to prevent most existing customers from entering the usage-based billing.
+## FusionReactor Ultimate Reservations
 
+Customers running the FusionReactor agent can optionally reserve **FusionReactor Ultimate** seats to manage costs and avoid on-demand billing. Seats are priced at $79/mo (annual) or $95/mo (monthly).
 
-!!! note
-    Additional [on-demand](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs) usage outside of the plan is chargeable.
-
-### What is a seat?
-
-A seat refers to a single, unique virtual or physical host with up to four instances of Java/ColdFusion installed or up to four Docker containers.
-
+A seat covers a single unique virtual or physical host with up to 4 instances of Java/ColdFusion installed, or up to 4 Docker containers.
 
 !!! example
-    To monitor five to eight instances on a host, you'll need two seats.
-
-!!! note
-    It is possible to be billed on-demand for all usage. There is no requirement to reserve an OpsPilot Ultimate seat.
-
+    5–8 instances on a host requires 2 seats.
 
 ![!Screenshot](/Admin-and-data/Images/seat.png)
+
+!!! note
+    It is possible to be billed fully on-demand with no seat reservation required.
+
+!!! info "Learn more"
+    [FusionReactor Ultimate](https://docs.fusionreactor.io/Admin-and-data/Billing/Cloud/overview/#fusionreactor-ultimate)
 
 
 
@@ -185,13 +181,13 @@ To help keep things simple and transparent, **OpsPilot** has developed usage das
 
 ![](../../Billing/Cloud/billingdash.png)
 
-The data usage dashboard calculates the approximate usage of the FR instance, metrics, logs and traces. It displays the raw values or unedited data you have sent to OpsPilot. 
+The data usage dashboard calculates the approximate usage of the FusionReactor instance, metrics, logs and traces. It displays the raw values or unedited data you have sent to OpsPilot. 
 
 #### FusionReactor agent instance
 
 The first total in the graph relates to the FusionReactor agent instances and provides the number of hours the instance has been used. 
 
-For example, in the above graphic, the total number of hours in the FR instance is 3235 hours over 30 days which equates to running 5 seats. The figure of 306 hours shows the hours spent in the instance for the last 24 hours.
+For example, in the above graphic, the total number of hours in the FusionReactor instance is 3235 hours over 30 days which equates to running 5 seats. The figure of 306 hours shows the hours spent in the instance for the last 24 hours.
 
 #### Metrics
 

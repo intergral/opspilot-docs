@@ -4,9 +4,9 @@ The **Preferences** page lets you control which data types are ingested into you
 
 Navigate to **Administration** > **Preferences** to access these settings.
 
-![!Screenshot](/images/Admin/preferences.png)
-
 ## Signals
+
+![!Screenshot](/images/Admin/preferences.png)
 
 The **Signals** section controls which OpenTelemetry signal types are ingested into your OpsPilot account. This applies to all incoming data regardless of source (FusionReactor agent, Grafana Alloy, OTel collector, etc.). Disabling a signal type will block all incoming data of that type from being collected or stored.
 
