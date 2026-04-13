@@ -38,7 +38,9 @@ The **Usage** panel shows your current consumption against your plan limits for 
 | **Traces** | Volume of trace data ingested vs allowance |
 | **AI Tokens** | OpsPilot AI tokens consumed vs allowance |
 
-A progress bar shows the percentage of your allowance used. If you exceed your plan limit, on-demand billing applies for the overage.
+A progress bar shows the percentage of your allowance used. Each signal also shows a **Forecast** — a projection of your total usage by the end of the current pay period based on your current consumption rate. This helps you anticipate overages before they happen.
+
+If you exceed your plan limit, on-demand billing applies for the overage.
 
 !!! info "Learn more"
     [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
