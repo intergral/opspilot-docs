@@ -4,6 +4,8 @@ The **Preferences** page lets you control which data types are ingested into you
 
 Navigate to **Administration** > **Preferences** to access these settings.
 
+![!Screenshot](/images/Admin/preferences.png)
+
 ## Signals
 
 The **Signals** section controls which OpenTelemetry signal types are ingested into your OpsPilot account. This applies to all incoming data regardless of source (FusionReactor agent, Grafana Alloy, OTel collector, etc.). Disabling a signal type will block all incoming data of that type from being collected or stored.
@@ -29,6 +31,8 @@ The **Shipping** tab is available if Metric Shipping is included on your plan. I
 
 ### Simple
 
+![!Screenshot](/images/Admin/shipping-simple.png)
+
 Configure a single destination for all signal types:
 
 | Field | Description |
@@ -39,7 +43,27 @@ Configure a single destination for all signal types:
 
 ### Advanced
 
+![!Screenshot](/images/Admin/adv-shipping.png)
+
 Configure a separate destination for each signal type — **Logs**, **Metrics**, and **Traces** can each be sent to a different endpoint. This is useful if you want to route different data types to different providers.
+
+Set the **Destination** for each signal type:
+
+| Option | Description |
+|---|---|
+| **OpsPilot** | Send the signal to OpsPilot (default) |
+| **Custom** | Send to a third-party OTel-compatible endpoint |
+| **Disabled** | Stop shipping that signal type entirely |
+
+When **Custom** is selected, the following fields are available:
+
+| Field | Description |
+|---|---|
+| **Endpoint** | The destination URL (e.g. `https://otel-collector.example.com`) |
+| **Protocol** | The transport protocol — **gRPC** or **HTTP** |
+| **Format** | The data format — **OTLP** |
+| **Compression** | Optional compression — **None** or **gzip** |
+| **Headers** | Any authentication headers (e.g. `x-api-key=abc123`) |
 
 Click **Save** to apply your changes.
 
