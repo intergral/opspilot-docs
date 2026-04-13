@@ -179,7 +179,9 @@ nav:
            - Getting-started/Tutorials/Common-issues/FR-wmic.exe-error.md
            - Getting-started/Tutorials/Common-issues/TLS-deprecation-guide.md
      - Administration:
-        - Usage & Details: Admin-and-data/usage-and-details.md
+        - Usage & Details:
+           - Overview: Admin-and-data/usage-and-details.md
+           - Preferences: Admin-and-data/preferences.md
         - Billing:
            - Overview: Admin-and-data/Billing/Cloud/overview.md
            - FAQ: Admin-and-data/Billing/Cloud/faq.md
