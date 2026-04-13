@@ -1,8 +1,10 @@
 # Billing
 
-**OpsPilot** capabilities are growing and expanding at a rapid rate. As a complete observability solution, our usage-based billing plan meets your needs in a diverging technical space and we pride ourselves on offering **essential** observability at **sensible** prices. 
+OpsPilot uses a unified billing model that covers both on-premise and cloud usage in one place.
 
-To start your OpsPilot journey, first sign up for a free, no-obligation [trial](https://app.fusionreactor.io/auth/register). Once you’ve experienced the benefits, all purchase transactions can be easily managed within the app itself.
+If you’re already running the FusionReactor agent on-premise, you can enable OpsPilot cloud features with a single click — no migration, no reconfiguration, and no change to your existing FusionReactor pricing. The FusionReactor agent costs the same whether it runs purely on-premise or connected to OpsPilot.
+
+To get started, sign up for a free, no-obligation [trial](https://app.opspilot.com/auth/register). All plan and subscription management is handled within the app.
 
 ![!Screenshot](/images/Admin/billing-main.png)
 

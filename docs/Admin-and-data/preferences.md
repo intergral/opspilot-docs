@@ -8,6 +8,11 @@ Navigate to **Administration** > **Preferences** to access these settings.
 
 The **Signals** section controls which OpenTelemetry signal types are ingested into your OpsPilot account. This applies to all incoming data regardless of source (FusionReactor agent, Grafana Alloy, OTel collector, etc.). Disabling a signal type will block all incoming data of that type from being collected or stored.
 
+All signals are enabled by default. Signals give you precise control over what data flows into OpsPilot — useful both for day-to-day management and in emergency situations. For example, if a misconfigured service is causing a log flood or unexpected billing spike, you can immediately disable the relevant signal type to stop ingestion while you investigate.
+
+!!! note
+    Signals are only available on OpsPilot cloud plans. On-premise plans do not have this feature.
+
 | Signal | Description |
 |---|---|
 | **Logs** | Enable or disable log ingestion |
