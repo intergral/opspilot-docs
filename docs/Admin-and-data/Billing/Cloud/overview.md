@@ -4,38 +4,37 @@
 
 To start your OpsPilot journey, first sign up for a free, no-obligation [trial](https://app.fusionreactor.io/auth/register). Once you’ve experienced the benefits, all purchase transactions can be easily managed within the app itself.
 
-![!Screenshot](/images/Admin/cloud-plans.png)
+![!Screenshot](/images/Admin/billing-main.png)
 
 
 ## Purchasing a Subscription
 
 1. [Log in](https://app.opspilot.com) to the OpsPilot Portal.
-2. Navigate to **Administration** in the left-hand menu.
-3. In the **Cloud Trial** box, click the gear icon and select **Manage Settings**.
-4. You will be redirected to the **Billing** page. At the top of the page, select the subscription frequency you prefer, either **Yearly** or **Monthly**.
-    !!! note
-        The Yearly option is approximately 20% less expensive than the monthly plan.
-5. Select the number of **OpsPilot Ultimate** reservations you require.
-    !!! tip
-        If you need more in the future, you can add additional servers at any time, either on demand or as additional reservations.
-6. Select the **AI plan** you would like to use.
-    !!! note
-        If you have more than 4 servers or 16 containers, we recommend the **Pro AI plan**.
+2. Navigate to **Administration** > **Billing** in the left-hand menu.
+3. At the top of the page, select **Monthly** or **Yearly** billing.
 
-Once the subscription has been processed, any discounts required will be applied to your account.
+    !!! note
+        The Yearly option saves approximately 20%.
+4. If you are running the FusionReactor agent on-premise, set the number of **FusionReactor Ultimate** and/or **FusionReactor Developer** seats required.
+5. Optionally enable **Metric Shipping** to ship FusionReactor agent data to third-party providers ($59/mo).
+6. Select your OpsPilot plan: **Onprem**, **Starter**, **Pro**, or **Advanced**.
+7. Review the **Plan Summary** on the right and click **Select a Plan** to proceed to checkout.
 
 ---
 
 ## What's included
 
-|**Product**| **Price** | **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**|
+|**Plan**| **Price** | **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**|
 |------------ | ------------- | ------------ | ----------- | ------ |-----|
-**Trial** | FREE | Unlimited |Unlimited| Unlimited| 1000 |
-**Starter Plan** | $49 (A) <br> $59 (M) | 10,000 | 25 GB  | 25 GB  | 500 |
-**Pro AI Plan** | $249 (A) <br> $299 (M) |20,000 |100 GB |  100 GB | 5,000 |
-**Advanced AI Plan** | $899 (A) <br> $1,079 (M) |50,000 |250 GB |  250 GB |20,000 |
-**OpsPilot Ultimate** | $79 (A)<br> $95 (M) | 5,000 | 2 GB  | 2 GB |
-**Historical data retention** |   | 13 months | 30 days|30 days |
+**Trial** | FREE | Unlimited |Unlimited| Unlimited| 1,000 |
+**Onprem** | $0/mo | — | — | — | — |
+**Starter** | $49 (A) <br> $59 (M) | 10,000 | 25 | 25 | 500 |
+**Pro** | $249 (A) <br> $299 (M) | 20,000 | 100 | 100 | 5,000 |
+**Advanced** | $899 (A) <br> $1,079 (M) | 50,000 | 250 | 250 | 20,000 |
+**FusionReactor Ultimate** | $79 (A)<br> $95 (M) /seat | 5,000 | 2 GB | 2 GB | — |
+**FusionReactor Developer** | $25/mo /seat | — | — | — | — |
+**Metric Shipping** | $59/mo | — | — | — | — |
+**Historical data retention** | | 13 months | 30 days | 30 days | — |
 
 !!! info
     Custom dashboards are available on all plans at no additional cost.
@@ -46,64 +45,59 @@ Once the subscription has been processed, any discounts required will be applied
 
 ## Plans
 
-### Starter Plan
+### Onprem
 
-The **Starter Plan** is recommended for strict observability, distributed tracing, infrastructure monitoring and log management as it is simple and cost effective. It has a base cost of $49, which includes:
+The **Onprem** plan is for teams running the FusionReactor agent in their own infrastructure. It has no base cost — you pay only for the on-premise seats you need.
 
-| **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**| **Snapshots/Profiles** |
-|:------------:| :-------------: | :------------:| :-----------: |  :-----------: | 
-| 10,000 | 25 GB | 25 GB  |  500 | 5 GB|
+| | **Price** |
+|---|---|
+| **FusionReactor Ultimate** | $79 (A) / $95 (M) per seat |
+| **FusionReactor Developer** | $25/mo per seat |
 
+The total cost depends on the number of Ultimate and Developer seats selected. Optionally add **Metric Shipping** ($59/mo) to ship agent data to third-party providers.
 
+!!! warning
+    The Developer edition is not licensed for production use.
 
-In addition to this base cost, we also offer usage-based metered costs for OpsPilot tokens, logs, metrics, and traces, so you only pay for what you use beyond the included amount. 
+!!! info "Learn more"
+    [FusionReactor licensing](https://docs.fusionreactor.io/Admin-and-data/Licensing/Licensing/)
 
-!!! info "Learn  more"
+### Starter
+
+The **Starter** plan is recommended for observability, distributed tracing, infrastructure monitoring, and log management. It has a base cost of $49/mo (annual) or $59/mo (monthly), which includes:
+
+| **Metrics** | **Logs** | **Traces** | **OpsPilot tokens** |
+|:---:|:---:|:---:|:---:|
+| 10,000 | 25 GB | 25 GB | 500 |
+
+!!! info "Learn more"
     [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
 
+### Pro
 
-### Pro AI Plan
+The **Pro** plan provides increased allowances and OpsPilot AI on-demand with customisable dashboards. It has a base cost of $249/mo (annual) or $299/mo (monthly), which includes:
 
-The **Pro AI Plan** is designed to provide a higher level of granularity and depth in monitoring and analyzing your system's performance. It allows for greater visibility into the various aspects of your application or infrastructure, enabling you to track and analyze a larger volume of logs, traces, and metrics. Additionally, the increased OpsPilot AI tokens allow you to ask questions about your applications or technology in plain English, as well as help you quickly identify issues and anomalies in your logs.
+| **Metrics** | **Logs** | **Traces** | **OpsPilot tokens** |
+|:---:|:---:|:---:|:---:|
+| 20,000 | 100 GB | 100 GB | 5,000 |
 
-The **Pro AI Plan** has a base cost of $249 which includes:
-
-
-| **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**| **Snapshots/Profiles** |
-|:------------:| :-------------: | :------------:| :-----------: |  :-----------: | 
-| 20,000 |100 GB |  100 GB | 5,000 | 10 GB|
-
-
-In addition to this base cost, we also offer usage-based metered costs for OpsPilot tokens, logs, metrics, and traces, so you only pay for what you use beyond the included amount. 
-
-!!! info "Learn  more"
+!!! info "Learn more"
     [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
 
+### Advanced
 
+The **Advanced** plan unlocks the full potential of OpsPilot as a DevOps co-pilot with advanced AI capabilities. It has a base cost of $899/mo (annual) or $1,079/mo (monthly), which includes:
 
-### Advanced AI Plan
+| **Metrics** | **Logs** | **Traces** | **OpsPilot tokens** |
+|:---:|:---:|:---:|:---:|
+| 50,000 | 250 GB | 250 GB | 20,000 |
 
-The **Advanced AI Plan** is our premium offering, designed to cater to those who require extensive resources and advanced features. 
-
-The **Advanced AI Plan** has a base cost of $899, which includes:
-
-| **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**| **Snapshots/Profiles** |
-|:------------:| :-------------: | :------------:| :-----------: |  :-----------: | 
-|50,000 |250 GB |  250 GB |20,000 | 30 GB|
-
-
-The **Advanced AI** plan also includes an audit of your OpsPilot queries. Additionally, you'll have access to our most powerful AI capabilities, allowing you to leverage cutting-edge technology to drive your operations forward. 
-
-In addition to this base cost, we also offer usage-based metered costs for OpsPilot tokens, logs, metrics, and traces, so you only pay for what you use beyond the included amount. 
-
-!!! info "Learn  more"
+!!! info "Learn more"
     [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
 
-
-    
 ### Custom pricing
 
-Require a large number of [seats](/Admin-and-data/Billing/Cloud/overview/#opspilot-ultimate-reservations)? Why not get in touch with our Sales Team who will create a custom pricing plan to suit your requirements. 
+Need a large number of seats or a tailored plan? Contact our Sales Team for custom pricing.
 
 ## OpsPilot AI 
 
@@ -291,34 +285,6 @@ For instructions on configuring billing alerts, see the [Billing checks](/Data-i
 * `fr_usage_minutes`
 
 ---
-
-## On-Premise Plans
-
-![!Screenshot](/images/Admin/on-prem-plans.png)
-
-On-premise plans are available for teams running the FusionReactor agent in their own infrastructure. Both editions are seat-based, where a seat covers a single unique virtual or physical host with up to 4 instances of Java/ColdFusion installed, or up to 4 Docker containers.
-
-!!! example
-    5–8 instances on a host requires 2 seats.
-
-### OpsPilot Ultimate
-
-**$95/mo per seat**
-
-The production-grade on-premise edition. Includes all features for comprehensive application performance monitoring in production environments.
-
-### OpsPilot Developer
-
-**$25/mo per seat**
-
-The developer on-premise edition. Has the same features as Ultimate but should be exclusively used in DEV and/or non-customer-facing QA environments.
-
-!!! warning
-    The Developer edition is not licensed for production use.
-
-### FusionReactor licensing
-
-On-premise plans use the FusionReactor agent, which requires a license key. For details on applying, activating, and troubleshooting licenses, see the [FusionReactor licensing documentation](https://docs.fusionreactor.io/Admin-and-data/Licensing/Licensing/).
 
 ---
 
