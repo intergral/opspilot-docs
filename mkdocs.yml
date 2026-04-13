@@ -185,6 +185,7 @@ nav:
            - FAQ: Admin-and-data/Billing/Cloud/faq.md
         - Invoices: Admin-and-data/invoices.md
         - API Keys: Admin-and-data/api-keys.md
+        - Preferences: Admin-and-data/preferences.md
         - Organization Settings: Admin-and-data/organization-settings.md
         - Users:
            - Organization Users: Admin-and-data/Account/Cloud/users.md
