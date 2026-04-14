@@ -1,6 +1,6 @@
 # What's new in OpsPilot 
 
-## One-Click: Extend FusionReactor with OpsPilot
+## One-click: Extend FusionReactor with OpsPilot
 
 **Published: April 14, 2026**
 
@@ -10,11 +10,11 @@ If you're already running FusionReactor on-premise, you can now enable OpsPilot 
 
 ### What's new
 
-- **One-Click activation** — Enable OpsPilot instantly from the Billing page. No new license, no infrastructure changes, no disruption to your existing setup.
+- **One-click activation** — Enable OpsPilot instantly from the Billing page. No new license, no infrastructure changes, no disruption to your existing setup.
 - **Unified billing** — On-premise and cloud usage are now managed in one place. Billing covers FusionReactor Ultimate and Developer seats, OpsPilot cloud plans, and optional Metric Shipping.
 - **Signals** — Control which data types (Logs, Metrics, Traces, AI) are ingested into OpsPilot. Useful for day-to-day data management and reacting instantly to unexpected usage spikes.
-- **Metric Shipping** — Ship FusionReactor agent data to any OTel-compatible provider (Datadog, Grafana Cloud, and more) alongside or instead of OpsPilot.
-- **Usage forecasting** — The Usage & Details page now shows a projected end-of-period forecast for each signal type, so you can anticipate overages before they happen.
+- **Metric shipping** — Ship FusionReactor agent data to any OTel-compatible provider (Datadog, Grafana Cloud, and more) alongside or instead of OpsPilot.
+- **Usage forecasting** — The **Usage & Details** page now shows a projected end-of-period forecast for each signal type, so you can anticipate overages before they happen.
 
 ### What you unlock with OpsPilot
 
