@@ -1,4 +1,31 @@
-# What's New in FusionReactor
+# What's new in OpsPilot 
+
+## One-Click: Extend FusionReactor with OpsPilot
+
+**Published: April 14, 2026**
+
+If you're already running FusionReactor on-premise, you can now enable OpsPilot cloud features with a single click — no migration, no reconfiguration, and no change to your existing FusionReactor pricing.
+
+![!Screenshot](/Latest-updates/images/one-click.png)
+
+### What's new
+
+- **One-Click activation** — Enable OpsPilot instantly from the Billing page. No new license, no infrastructure changes, no disruption to your existing setup.
+- **Unified billing** — On-premise and cloud usage are now managed in one place. Billing covers FusionReactor Ultimate and Developer seats, OpsPilot cloud plans, and optional Metric Shipping.
+- **Signals** — Control which data types (Logs, Metrics, Traces, AI) are ingested into OpsPilot. Useful for day-to-day data management and reacting instantly to unexpected usage spikes.
+- **Metric Shipping** — Ship FusionReactor agent data to any OTel-compatible provider (Datadog, Grafana Cloud, and more) alongside or instead of OpsPilot.
+- **Usage forecasting** — The Usage & Details page now shows a projected end-of-period forecast for each signal type, so you can anticipate overages before they happen.
+
+### What you unlock with OpsPilot
+
+- **AI-assisted observability** — Automatically identify anomalies, surface root causes, and highlight risks before they become incidents.
+- **Long-term historical visibility** — Trend analysis across days, weeks, or months, far beyond the retention limits of on-premise monitoring.
+- **Full-stack observability** — Metrics, logs, and traces in one place across distributed systems and services.
+
+!!! info "Learn more"
+    [Billing overview](/Admin-and-data/Billing/Cloud/overview/)
+
+---
 
 ## FusionReactor Cloud is now OpsPilot
 
