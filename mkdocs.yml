@@ -41,6 +41,7 @@ nav:
      - Get Started: index.md
      - UI Overview: Data-insights/Features/overview.md
   - AI:
+     - Coworker: Data-insights/Features/OpsPilot/Coworker/overview.md
      - OpsPilot Assistant:
         - Overview: Data-insights/Features/OpsPilot/AIoverview.md
         - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
