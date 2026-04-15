@@ -170,7 +170,7 @@ At the top, a row of live metrics shows the current state:
 | **Tasks Ran** | Number of background tasks completed |
 | **Running** | Number of tasks currently active |
 
-Use the **My Insights** dropdown to filter the view, and **Change what I show you** to update your preferences directly from the dashboard. The **Triage** and **Cost & Optimisation** buttons are also accessible from the top right.
+Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights** — which shows insights across all users in your organisation. Use **Change what I show you** to update your preferences directly from the dashboard. The **Triage** and **Cost & Optimisation** buttons are also accessible from the top right.
 
 Below the metrics, the **Priority Queue** highlights the top issues Coworker thinks you should look at — with chat, resolve, and ignore actions on each. Click **Browse all insights** to see the full list. When everything is handled, you'll see an **All caught up!** message.
 
