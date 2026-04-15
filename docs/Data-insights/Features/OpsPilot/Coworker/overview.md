@@ -44,7 +44,11 @@ This setup can be restarted at any time from the dashboard settings.
 
 Tasks are the automated jobs Coworker runs in the background to proactively investigate your systems. You don't need to fill in forms or understand configuration options — just describe what you want in plain language and OpsPilot builds the task for you through conversation.
 
-Click **Create Task** to open a chat modal. To edit an existing task, click **Edit with OpsPilot** from the task's detail view.
+Click **Create Task** to open the **Task Agent** — a conversational interface where you describe what you want monitored and OpsPilot builds the task for you through conversation, asking clarifying questions and setting it up.
+
+![!Screenshot](/Coworker/create-task.png)
+
+To edit an existing task, click **Edit with OpsPilot** from the task's detail view — the Task Agent opens pre-loaded with the current configuration.
 
 ### Task types
 
