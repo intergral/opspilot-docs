@@ -68,13 +68,17 @@ React to webhooks from external systems. Instead of running on a schedule, they 
 
 A built-in event source present for every user. It connects Coworker directly to your configured alert rules so that when an alert fires, Coworker automatically investigates it.
 
-From the OpsPilot Alerts configuration screen you can:
+![!Screenshot](/Coworker/op-alerts.png)
 
-- **Browse all alert rules** — see every configured alert, its current state (firing, pending, normal), labels and query
-- **Enable or disable individual alerts** — choose which alerts Coworker should investigate, or bulk enable/disable all
-- **Add alert-specific instructions** — give Coworker guidance for a particular alert (e.g. "Check the Redis connection pool first")
-- **Set general instructions** — guidance that applies to all alert investigations
-- **Choose a model tier** — **Thorough** for critical alerts needing deep analysis, or **Efficient** for high-volume routine alerts
+Use the toggle at the top to enable or disable the OpsPilot Alerts integration entirely. The **History** and **Cost & Optimisation** buttons are available for reviewing past investigations and spend.
+
+Under **Alert Rules**, you can:
+
+- **Search** alerts by name
+- Filter by **All**, **Enabled**, or **Firing**
+- **Enable All** or **Disable All** in bulk
+- Toggle individual alerts on or off — each shows its name, type, and current state (inactive/firing)
+- Expand an alert (using the `>` chevron) to add alert-specific instructions for Coworker (e.g. "Check the Redis connection pool first")
 
 ---
 
@@ -174,7 +178,7 @@ Use the **My Insights** dropdown to switch between your personalised view and **
 
 Below the metrics, the **Priority Queue** highlights the top issues Coworker thinks you should look at — with chat, resolve, and ignore actions on each. Click **Browse all insights** to see the full list. When everything is handled, you'll see an **All caught up!** message.
 
-The **Tasks** section below shows everything Coworker takes care of on schedule or when events come in. Use **+ Create Task**, **History**, and **Manage** to create and manage your tasks.
+The **Tasks** section below shows everything Coworker takes care of on schedule or when events come in. Filter tasks by **All**, **Favorites**, **Scheduled**, **Monitoring**, or **Events**. Each task card shows its last run time, next run time, number of runs, and a summary of findings. Use **Run Now**, **Last Run**, **Configure**, and **History** to manage each task, or use **+ Create Task** and **Manage** from the top of the section.
 
 ---
 
