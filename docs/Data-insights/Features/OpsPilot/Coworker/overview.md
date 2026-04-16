@@ -239,6 +239,10 @@ The **Cost Breakdown** table lists each task with:
 | **Monthly** | Projected monthly token cost |
 | **%** | Percentage of total task budget |
 
+Click through to a specific task to see its detailed cost history and an **Analyse & Optimise** button. After a task has run a few times, Coworker automatically detects ways it could be improved and surfaces optimisation suggestions here. If no optimisations are needed, you'll see a **Looking good!** confirmation.
+
+![!Screenshot](/Coworker/looking-good.png)
+
 ---
 
 !!! question "Need more help?"
