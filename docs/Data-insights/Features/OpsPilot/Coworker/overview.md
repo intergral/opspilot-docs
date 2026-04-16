@@ -64,6 +64,18 @@ Focused on a specific issue. Created by clicking **Watch** on an insight, or by 
 
 React to webhooks from external systems. Instead of running on a schedule, they wait for an event to arrive and immediately kick off an investigation — enabling real-time response to issues as they happen.
 
+Click **Connect** from the dashboard prompt or **+ Create Task** and select Event Source to open the setup modal.
+
+![!Screenshot](/Coworker/create-event.png)
+
+| Field | Description |
+|---|---|
+| **Type** | The webhook type — e.g. Generic Webhook |
+| **Name** | A name for the event source (e.g. Production Alerts) |
+| **Description** | What events this webhook will receive |
+| **Custom Instructions** (optional) | Guides how events are investigated — e.g. "Focus on database-related issues" |
+| **Model Tier** | **Thorough** for critical, complex events needing deep analysis; **Efficient** for high-volume routine events |
+
 ##### OpsPilot Alerts
 
 A built-in event source present for every user. It connects Coworker directly to your configured alert rules so that when an alert fires, Coworker automatically investigates it.
