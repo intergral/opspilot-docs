@@ -72,7 +72,7 @@ Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost de
 
 ### What is the difference between Thorough and Efficient model tiers?
 
-**Thorough** performs deeper analysis and is best for critical alerts and complex investigations. **Efficient** is faster and cheaper, suited for high-volume routine events like health checks. You can set the model tier per task or per event source.
+**Thorough** handles any task and is more capable — use it for critical alerts and complex investigations where depth matters. **Efficient** is suited to simpler, focused tasks and costs less — use it for routine or high-volume tasks to keep spend down. You can set the model tier per task or per event source.
 
 ---
 

@@ -74,7 +74,7 @@ Click **Connect** from the dashboard prompt or **+ Create Task** and select Even
 | **Name** | A name for the event source (e.g. Production Alerts) |
 | **Description** | What events this webhook will receive |
 | **Custom Instructions** (optional) | Guides how events are investigated — e.g. "Focus on database-related issues" |
-| **Model Tier** | **Thorough** for critical, complex events needing deep analysis; **Efficient** for high-volume routine events |
+| **Model Tier** | Controls how the event is investigated — see [Model tier](#model-tier) |
 
 ##### OpsPilot Alerts
 
@@ -91,6 +91,17 @@ Under **Alert Rules**, you can:
 - **Enable All** or **Disable All** in bulk
 - Toggle individual alerts on or off — each shows its name, type, and current state (inactive/firing)
 - Expand an alert (using the `>` chevron) to add alert-specific instructions for Coworker (e.g. "Check the Redis connection pool first")
+
+### Model tier
+
+Every task and event source has a **Model Tier** setting that controls how Coworker analyses the data:
+
+| Tier | Description |
+|---|---|
+| **Thorough** | Handles any task — more capable, higher cost |
+| **Efficient** | Suited to simpler, focused tasks — lower cost |
+
+Use **Thorough** for critical alerts and complex investigations where depth matters. Use **Efficient** for routine or high-volume tasks to keep token costs down.
 
 ---
 
