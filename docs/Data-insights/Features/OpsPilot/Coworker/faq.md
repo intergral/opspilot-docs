@@ -28,7 +28,10 @@ Start with one or two [scheduled tasks](overview.md#scheduled-tasks) covering yo
 
 ### How often should I run scheduled tasks?
 
-This depends on how dynamic your environment is. Daily is a good starting point for most teams. Hourly is useful for high-traffic or critical services where issues can escalate quickly. See [Scheduled tasks](overview.md#scheduled-tasks).
+This depends on how dynamic your environment is. Daily is a good starting point for most teams. Hourly is useful for high-traffic or critical services where issues can escalate quickly.
+
+!!! info "Learn more"
+    [Scheduled tasks](overview.md#scheduled-tasks)
 
 ### Why isn't my task finding anything?
 
@@ -44,7 +47,10 @@ A [scheduled task](overview.md#scheduled-tasks) runs on a recurring interval and
 
 ### What is the difference between Resolve and Ignore?
 
-**Resolve** marks an insight as handled — it will appear in your resolved insights history. **Ignore** dismisses it from your priority list without marking it as resolved. Use Resolve when you've taken action; use Ignore when the insight isn't relevant to you. See [Insights](overview.md#insights).
+**Resolve** marks an insight as handled — it will appear in your resolved insights history. **Ignore** dismisses it from your priority list without marking it as resolved. Use Resolve when you've taken action; use Ignore when the insight isn't relevant to you.
+
+!!! info "Learn more"
+    [Insights](overview.md#insights)
 
 ### Why am I seeing the same insight repeatedly?
 
@@ -52,7 +58,10 @@ If the underlying issue hasn't been fixed, Coworker will continue to surface it.
 
 ### How do I change what types of insights I see?
 
-Click **Change what I show you** on the dashboard to adjust your severity and category preferences, or use **Update via chat** to describe your preferences in plain language. See [Preferences](overview.md#preferences).
+Click **Change what I show you** on the dashboard to adjust your severity and category preferences, or use **Update via chat** to describe your preferences in plain language.
+
+!!! info "Learn more"
+    [Preferences](overview.md#preferences)
 
 ---
 
@@ -60,7 +69,10 @@ Click **Change what I show you** on the dashboard to adjust your severity and ca
 
 ### How much does Coworker cost to run?
 
-Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost depends on how many tasks you have, how frequently they run, and the [model tier](overview.md#model-tier) selected (Thorough uses more tokens than Efficient). See [Cost and optimisation](overview.md#cost-and-optimisation) on the dashboard for a full breakdown and projected monthly spend.
+Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost depends on how many tasks you have, how frequently they run, and the [model tier](overview.md#model-tier) selected (Thorough uses more tokens than Efficient).
+
+!!! info "Learn more"
+    [Cost and optimisation](overview.md#cost-and-optimisation)
 
 ### How do I reduce Coworker token usage?
 
@@ -72,7 +84,10 @@ Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost de
 
 ### What is the difference between Thorough and Efficient model tiers?
 
-**Thorough** handles any task and is more capable — use it for critical alerts and complex investigations where depth matters. **Efficient** is suited to simpler, focused tasks and costs less — use it for routine or high-volume tasks to keep spend down. You can set the model tier per task or per event source. See [Model tier](overview.md#model-tier).
+**Thorough** handles any task and is more capable — use it for critical alerts and complex investigations where depth matters. **Efficient** is suited to simpler, focused tasks and costs less — use it for routine or high-volume tasks to keep spend down. You can set the model tier per task or per event source.
+
+!!! info "Learn more"
+    [Model tier](overview.md#model-tier)
 
 ---
 
