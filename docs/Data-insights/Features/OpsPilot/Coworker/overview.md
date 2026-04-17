@@ -35,6 +35,8 @@ When you first access Coworker, a guided chat conversation walks you through set
 
 This setup can be restarted at any time from the dashboard settings.
 
+![!Screenshot](/Coworker/restart-chat.png)
+
 !!! tip
     The quickest way to get value from Coworker is to enable **OpsPilot Alerts** — this connects Coworker directly to your existing alert rules so it automatically investigates whenever an alert fires. A prompt on the dashboard will guide you through enabling it.
 
