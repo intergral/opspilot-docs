@@ -232,6 +232,8 @@ Coworker tracks the cost of running your tasks and provides full transparency in
 
 ![!Screenshot](/Coworker/cost-optimize.png)
 
+### Budget
+
 At the top, the **Task Budget** bar shows your current spend against your configured budget. Click **Configure** to open the Budget Settings modal.
 
 ![!Screenshot](/Coworker/budget-settings.png)
@@ -244,6 +246,8 @@ At the top, the **Task Budget** bar shows your current spend against your config
 | **Halt threshold** | The percentage at which Coworker stops running tasks to prevent overspend |
 
 Below the Task Budget bar, **Total org usage** shows the full organisation-level token consumption including non-task usage.
+
+### Usage overview
 
 The **Usage** section provides three key metrics:
 
@@ -264,6 +268,8 @@ The **Cost Breakdown** table lists each task with:
 | **Avg / run** | Average token cost per execution |
 | **Monthly** | Projected monthly token cost |
 | **%** | Percentage of total task budget |
+
+### Per-task analysis
 
 Click through to a specific task to see its full cost breakdown:
 
