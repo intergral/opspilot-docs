@@ -128,6 +128,8 @@ For each insight you can:
 
 You can browse all insights, filter by date, search, and view resolved insights separately. The **Analytics** view breaks down insights by service, category, and label groupings — giving you a higher-level picture of where issues are concentrated over time.
 
+Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights** — which shows insights across all users in your organisation.
+
 ---
 
 ## Chat integration
