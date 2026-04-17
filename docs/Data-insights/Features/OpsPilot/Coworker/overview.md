@@ -272,6 +272,12 @@ After a task has run a few times, Coworker automatically surfaces **Optimisation
 
 ![!Screenshot](/Coworker/optimize-alert.png)
 
+Expand a suggestion to see the full reasoning — including a **Why this suggestion** breakdown of the cost data behind the recommendation and the specific change proposed (e.g. switching model tier).
+
+![!Screenshot](/Coworker/optimize-accept.png)
+
+From here you can **Accept** to apply the change immediately, or **Dismiss** to ignore it. Use **View task config** to review the full task setup before deciding.
+
 Click **Analyse & Optimise** to trigger an on-demand analysis at any time. If no optimisations are needed, you'll see a **Looking good!** confirmation.
 
 ![!Screenshot](/Coworker/looking-good.png)
