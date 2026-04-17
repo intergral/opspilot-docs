@@ -254,11 +254,25 @@ The **Cost Breakdown** table lists each task with:
 | **Monthly** | Projected monthly token cost |
 | **%** | Percentage of total task budget |
 
-Click through to a specific task to see its detailed cost history and an **Analyse & Optimise** button.
+Click through to a specific task to see its full cost breakdown:
 
 ![!Screenshot](/Coworker/optimize.png)
 
-After a task has run a few times, Coworker automatically detects ways it could be improved and surfaces optimisation suggestions here. If no optimisations are needed, you'll see a **Looking good!** confirmation.
+| Metric | Description |
+|---|---|
+| **Avg cost / run** | Average tokens consumed per execution |
+| **Total this period** | Tokens used so far, with execution count and percentage of your plan |
+| **Projected monthly** | Estimated monthly token usage and number of runs |
+
+The **Cost by Model Tier** section breaks down spend across Efficient and Thorough runs — showing tokens per run, projected monthly cost, and number of samples for each tier.
+
+A **Cost per Run** chart shows token usage over time so you can spot trends or spikes.
+
+After a task has run a few times, Coworker automatically surfaces **Optimisation Suggestions** — each showing the recommended change, an explanation, and an estimated monthly token saving.
+
+![!Screenshot](/Coworker/optimize-alert.png)
+
+Click **Analyse & Optimise** to trigger an on-demand analysis at any time. If no optimisations are needed, you'll see a **Looking good!** confirmation.
 
 ![!Screenshot](/Coworker/looking-good.png)
 
