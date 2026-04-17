@@ -193,6 +193,8 @@ Each task builds its own memory over time — remembering what patterns matter, 
 
 The Coworker dashboard gives you a centralised view of your priorities, active tasks, and live system metrics — all in one place. The dashboard is personalised — it's named after you (e.g. *J's Coworker*) and shows only what's relevant to you.
 
+![!Screenshot](/Coworker/dashboard.png)
+
 At the top, a row of live metrics shows the current state:
 
 | Metric | Description |
