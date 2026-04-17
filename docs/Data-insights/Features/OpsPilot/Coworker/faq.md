@@ -69,7 +69,7 @@ Click **Change what I show you** on the dashboard to adjust your severity and ca
 
 ### How much does Coworker cost to run?
 
-Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost depends on how many tasks you have, how frequently they run, and the [model tier](overview.md#model-tier) selected (Thorough uses more tokens than Efficient).
+Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost depends on how many tasks you have, how frequently they run, and the [model tier](overview.md#model-tier) selected (Thorough uses more tokens than Efficient). You can set a monthly task budget to control spend, with configurable warning and halt thresholds to prevent overruns.
 
 !!! info "Learn more"
     [Cost and optimisation](overview.md#cost-and-optimisation)
@@ -77,10 +77,32 @@ Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost de
 ### How do I reduce Coworker token usage?
 
 - Review the **optimisation suggestions** in the [Cost & Optimisation](overview.md#cost-and-optimisation) page — these appear automatically after a task has run a few times and Coworker detects ways it could be improved
-- Click through to a specific task in the Cost & Optimisation page and click **Analyse & Optimise** to analyse it for potential cost reductions
+- **Accept** an optimisation suggestion to apply the recommended change immediately
+- Click through to a specific task in the Cost & Optimisation page and click **Analyse & Optimise** to trigger an on-demand analysis
 - Switch high-volume or routine tasks to the [Efficient model tier](overview.md#model-tier)
 - Reduce the frequency of scheduled tasks that run often but find little
 - Review the **Cost Breakdown** table to identify the most expensive tasks and consolidate or adjust them
+
+### What happens when I reach my task budget?
+
+Coworker will stop running tasks once spend reaches the **Halt threshold** — by default set to 100% of your task budget. You can lower this threshold to stop tasks earlier and protect your allowance. A separate **Warning threshold** notifies you before the halt is reached.
+
+!!! info "Learn more"
+    [Budget](overview.md#budget)
+
+### Can I get warned before hitting my budget limit?
+
+Yes — the **Warning threshold** in Budget Settings triggers a notification when your spend reaches a set percentage of your task budget (e.g. 80%). This gives you time to adjust tasks or increase your budget before tasks are halted.
+
+!!! info "Learn more"
+    [Budget](overview.md#budget)
+
+### How do I accept or dismiss an optimisation suggestion?
+
+Open the **Cost & Optimisation** view and click through to the relevant task. Expand any optimisation suggestion to see the full reasoning and the proposed change. Click **Accept** to apply it immediately, or **Dismiss** to ignore it. You can also click **View task config** to review the task setup before deciding.
+
+!!! info "Learn more"
+    [Per-task analysis](overview.md#per-task-analysis)
 
 ### What is the difference between Thorough and Efficient model tiers?
 
