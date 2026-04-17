@@ -68,15 +68,16 @@ React to webhooks from external systems. Instead of running on a schedule, they 
 
 Click **Connect** from the dashboard prompt or **+ Create Task** and select Event Source to open the setup modal.
 
-![!Screenshot](/Coworker/create-event.png)
+![!Screenshot](/Coworker/create-event-source.png)
 
 | Field | Description |
 |---|---|
 | **Type** | The webhook type — e.g. Generic Webhook |
 | **Name** | A name for the event source (e.g. Production Alerts) |
 | **Description** | What events this webhook will receive |
-| **Custom Instructions** (optional) | Guides how events are investigated — e.g. "Focus on database-related issues" |
-| **Model Tier** | Controls how the event is investigated — see [Model tier](#model-tier) |
+| **Custom Instructions** (optional) | Guides how events are investigated — e.g. "Focus on database-related issues and suggest query optimizations" |
+| **Model Tier** | Controls how the event is investigated — see [Model tier](#model-tier). **Thorough** is best for critical alerts and complex events needing deep analysis; **Efficient** is best for high-volume, routine events like health checks |
+| **Monthly Budget** (optional) | Set a token budget for this event source — click **Set budget** to configure |
 
 ##### OpsPilot Alerts
 
