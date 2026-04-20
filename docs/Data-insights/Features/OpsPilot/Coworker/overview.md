@@ -1,6 +1,6 @@
 # Coworker
 
-Coworker is your AI teammate for operations. It continuously monitors your systems, surfaces the issues that matter most, and helps you stay ahead of problems — so you spend less time investigating and more time building.
+Coworker is your AI teammate for operations. It continuously monitors your systems, surfaces the issues that matter most, and helps you stay ahead of problems, so you spend less time investigating and more time building.
 
 ![!Screenshot](/Coworker/coworker.png)
 
@@ -15,7 +15,7 @@ Each user gets their own personalised Coworker that learns what's relevant to th
 | **Scheduled tasks** | Recurring automated analysis and reporting |
 | **Monitoring tasks** | Continuous observation of specific patterns or issues |
 | **Event sources** | React to external webhooks and investigate immediately |
-| **Chat integration** | Insight shortcuts, report discussion, triage, and onboarding — all via OpsPilot chat |
+| **Chat integration** | Insight shortcuts, report discussion, triage, and onboarding via OpsPilot chat |
 | **Memory** | System-wide and task-specific memory that connects the dots and improves over time |
 | **Preferences** | Personalised focus on what matters to you |
 | **Cost management** | Budget tracking and optimisation suggestions |
@@ -38,19 +38,19 @@ This setup can be restarted at any time from the dashboard settings.
 ![!Screenshot](/Coworker/restart-chat.png)
 
 !!! tip
-    The quickest way to get value from Coworker is to enable **OpsPilot Alerts** — this connects Coworker directly to your existing alert rules so it automatically investigates whenever an alert fires. A prompt on the dashboard will guide you through enabling it.
+    The quickest way to get value from Coworker is to enable **OpsPilot Alerts**, which connects Coworker directly to your existing alert rules so it automatically investigates whenever an alert fires. A prompt on the dashboard will guide you through enabling it.
 
 ---
 
 ## Tasks
 
-Tasks are the automated jobs Coworker runs in the background to proactively investigate your systems. You don't need to fill in forms or understand configuration options — just describe what you want in plain language and OpsPilot builds the task for you through conversation.
+Tasks are the automated jobs Coworker runs in the background to proactively investigate your systems. You don't need to fill in forms or understand configuration options. Just describe what you want in plain language and OpsPilot builds the task for you through conversation.
 
-Click **Create Task** to open the **Task Agent** — a conversational interface where you describe what you want monitored and OpsPilot builds the task for you through conversation, asking clarifying questions and setting it up.
+Click **Create Task** to open the **Task Agent**, a conversational interface where you describe what you want monitored. OpsPilot asks clarifying questions and sets it up for you.
 
 ![!Screenshot](/Coworker/create-task.png)
 
-To edit an existing task, click **Edit with OpsPilot** from the task's detail view — the Task Agent opens pre-loaded with the current configuration.
+To edit an existing task, click **Edit with OpsPilot** from the task's detail view. The Task Agent opens pre-loaded with the current configuration.
 
 ### Task types
 
@@ -60,11 +60,11 @@ Run on a recurring schedule — hourly, daily, weekly, monthly, or a custom inte
 
 #### Monitoring tasks
 
-Focused on a specific issue. Created by clicking **Watch** on an insight, or by describing what you want monitored in chat. A monitoring task periodically checks a particular pattern and notifies you if something changes — turning a one-off finding into continuous observation without you having to remember to check back.
+Focused on a specific issue. Created by clicking **Watch** on an insight, or by describing what you want monitored in chat. A monitoring task periodically checks a particular pattern and notifies you if something changes, turning a one-off finding into continuous observation without you having to remember to check back.
 
 #### Event sources
 
-React to webhooks from external systems. Instead of running on a schedule, they wait for an event to arrive and immediately kick off an investigation — enabling real-time response to issues as they happen.
+React to webhooks from external systems. Instead of running on a schedule, they wait for an event to arrive and immediately kick off an investigation, enabling real-time response to issues as they happen.
 
 Click **Connect** from the dashboard prompt or **+ Create Task** and select Event Source to open the setup modal.
 
@@ -87,13 +87,15 @@ A built-in event source present for every user. It connects Coworker directly to
 
 Use the toggle at the top to enable or disable the OpsPilot Alerts integration entirely. The **History** and **Cost & Optimisation** buttons are available for reviewing past investigations and spend.
 
+You can also add **General Instructions** that apply to all alert investigations, or expand individual alerts (using the `>` chevron) to add alert-specific instructions. Both are optional but can improve the quality of Coworker's investigations.
+
 Under **Alert Rules**, you can:
 
 - **Search** alerts by name
 - Filter by **All**, **Enabled**, or **Firing**
 - **Enable All** or **Disable All** in bulk
-- Toggle individual alerts on or off — each shows its name, type, and current state (inactive/firing)
-- Expand an alert (using the `>` chevron) to add alert-specific instructions for Coworker (e.g. "Check the Redis connection pool first")
+- Toggle individual alerts on or off (each shows its name, type, and current state: inactive/firing)
+- Expand an alert (using the `>` chevron) to add alert-specific instructions (e.g. "Check the Redis connection pool first")
 
 ### Model tier
 
@@ -110,28 +112,27 @@ Use **Thorough** for critical alerts and complex investigations where depth matt
 
 ## Insights
 
-Insights are the findings Coworker surfaces from its background analysis — intelligent, contextualised observations with evidence and recommended actions, not just raw alerts.
+Insights are the findings Coworker surfaces from its background analysis: intelligent, contextualised observations with supporting context and recommended actions, not just raw alerts.
 
 Each insight includes:
 
-- **Title and severity** — Critical, Warning, or Info
-- **Category** — the type of issue (performance, reliability, cost, etc.)
+- **Title and severity**: Critical, Warning, or Info
+- **Category**: Errors, Performance, Notable, or Coverage
 - **Affected service**
-- **Description** — a written explanation of what was found
-- **Evidence** — the raw data, metrics, or logs that led to the finding
-- **Occurrence history** — a timeline showing if this is a recurring pattern
-- **Recommended actions** — what you can do about it
+- **Description**: a written explanation of what was found, including supporting evidence
+- **Occurrence history**: a timeline showing if this is a recurring pattern
+- **Recommended actions**: what you can do about it
 
 For each insight you can:
 
-- **Chat** — ask Coworker to explain the issue or help you decide what to do
-- **Watch** — create a monitoring task to track this pattern going forward
-- **Resolve** — mark it as handled
-- **Ignore** — dismiss it from your priority list
+- **Chat**: ask Coworker to explain the issue or help you decide what to do
+- **Watch**: create a monitoring task to track this pattern going forward
+- **Resolve**: mark it as handled
+- **Ignore**: dismiss it from your priority list
 
-You can browse all insights, filter by date, search, and view resolved insights separately. The **Analytics** view breaks down insights by service, category, and label groupings — giving you a higher-level picture of where issues are concentrated over time.
+You can browse all insights, filter by date, search, and view resolved insights separately. The **Analytics** view breaks down insights by service, category, and label groupings, giving you a higher-level picture of where issues are concentrated over time.
 
-Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights** — which shows insights across all users in your organisation.
+Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights**, which shows insights across all users in your organisation.
 
 ---
 
@@ -159,7 +160,7 @@ After a task runs, an input field appears below the report: *Ask OpsPilot about 
 
 ### Execution history summary
 
-In the task execution history timeline, a **Summarize** button sends details of your recent executions (up to 50) to OpsPilot for a summary — including success/failure counts, durations, and insight counts across runs.
+In the task execution history timeline, a **Summarize** button sends details of your executions to OpsPilot for a summary, including success/failure counts, durations, and insight counts. The summary covers only the executions currently visible in the list, so you can filter the history first to control what gets summarised.
 
 ### Triage
 
@@ -171,7 +172,7 @@ The **Help me triage** button sends your current priority insights, recent insig
 
 ## Memory
 
-One of Coworker's most powerful features is that it gets smarter over time. As it runs tasks, investigates insights, and chats with you, it continuously builds memory — learning about your systems, your preferences, and how things connect together.
+One of Coworker's most powerful features is that it gets smarter over time. As it runs tasks, investigates insights, and chats with you, it continuously builds memory, learning about your systems, your preferences, and how things connect together.
 
 ### System-wide memory
 
@@ -181,7 +182,7 @@ Coworker's general understanding of your environment, gathered from every task r
 - What metrics exist and what they mean
 - General patterns, best practices, and operational context
 
-Browse this via the **Knowledge** button on the dashboard, which shows a visual knowledge graph. Memories are connected — Coworker understands how different pieces of knowledge relate to each other, joining the dots across everything it has learned.
+Browse this via the **Knowledge** button on the dashboard, which shows a visual knowledge graph. Memories are connected. Coworker understands how different pieces of knowledge relate to each other, joining the dots across everything it has learned.
 
 ### Task-specific memory
 
@@ -204,7 +205,7 @@ At the top, a row of live metrics shows the current state:
 | **Tasks Ran** | Number of background tasks completed |
 | **Running** | Number of tasks currently active |
 
-Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights** — which shows insights across all users in your organisation. Use **Change what I show you** to update your preferences directly from the dashboard. The **Triage** and **Cost & Optimisation** buttons are also accessible from the top right.
+Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights**, which shows insights across all users in your organisation. Use **Change what I show you** to update your preferences directly from the dashboard. The **Triage** and **Cost & Optimisation** buttons are also accessible from the top right.
 
 Below the metrics, the **Priority Queue** highlights the top issues Coworker thinks you should look at — with chat, resolve, and ignore actions on each. Click **Browse all insights** to see the full list. When everything is handled, you'll see an **All caught up!** message.
 
@@ -226,6 +227,11 @@ Personalise what your Coworker focuses on by clicking **Change what I show you**
 | **Label** | Filter by custom groupings and tags |
 
 You can update preferences via chat using the **Update via chat** button, or restart the full setup with **Restart setup**.
+
+!!! tip
+    Adding **Label** groups in your preferences makes Coworker prioritise those groupings when organising insights, helping surface the most relevant findings for your area.
+
+To hide insights of a similar type across your view, use the **Hide similar** button on any insight. This lets you suppress noise for patterns that are not relevant to you without resolving or ignoring them individually.
 
 ---
 
@@ -284,15 +290,15 @@ Click through to a specific task to see its full cost breakdown:
 | **Total this period** | Tokens used so far, with execution count and percentage of your plan |
 | **Projected monthly** | Estimated monthly token usage and number of runs |
 
-The **Cost by Model Tier** section breaks down spend across Efficient and Thorough runs — showing tokens per run, projected monthly cost, and number of samples for each tier.
+The **Cost by Model Tier** section breaks down spend across Efficient and Thorough runs, showing tokens per run, projected monthly cost, and number of samples for each tier.
 
 A **Cost per Run** chart shows token usage over time so you can spot trends or spikes.
 
-After a task has run a few times, Coworker automatically surfaces **Optimisation Suggestions** — each showing the recommended change, an explanation, and an estimated monthly token saving.
+After a task has run a few times, Coworker automatically surfaces **Optimisation Suggestions**. Each shows the recommended change, an explanation, and an estimated monthly token saving.
 
 ![!Screenshot](/Coworker/optimize-alert.png)
 
-Expand a suggestion to see the full reasoning — including a **Why this suggestion** breakdown of the cost data behind the recommendation and the specific change proposed (e.g. switching model tier).
+Expand a suggestion to see the full reasoning, including a **Why this suggestion** breakdown of the cost data behind the recommendation and the specific change proposed (e.g. switching model tier).
 
 ![!Screenshot](/Coworker/optimize-accept.png)
 

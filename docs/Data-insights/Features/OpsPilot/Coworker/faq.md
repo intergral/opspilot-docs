@@ -58,7 +58,7 @@ If the underlying issue hasn't been fixed, Coworker will continue to surface it.
 
 ### How do I change what types of insights I see?
 
-Click **Change what I show you** on the dashboard to adjust your severity and category preferences, or use **Update via chat** to describe your preferences in plain language.
+Click **Change what I show you** on the dashboard to adjust your severity and category preferences (Errors, Performance, Notable, Coverage), or use **Update via chat** to describe your preferences in plain language.
 
 !!! info "Learn more"
     [Preferences](overview.md#preferences)
