@@ -29,7 +29,7 @@ When you first access Coworker, a guided chat conversation walks you through set
 ![!Screenshot](/Coworker/getting-started.png)
 
 1. Coworker asks about your role and what you monitor
-2. You set your initial preferences — services, severity levels, and categories
+2. You set your initial preferences: services, severity levels, and categories
 3. You create your first task together
 4. Coworker begins investigating
 
@@ -56,7 +56,7 @@ To edit an existing task, click **Edit with OpsPilot** from the task's detail vi
 
 #### Scheduled tasks
 
-Run on a recurring schedule — hourly, daily, weekly, monthly, or a custom interval. Each run produces a report summarising what Coworker found. These are the core of Coworker's continuous analysis. Run any task on-demand with the **Run now** button and view the full execution history to see what it found on each run.
+Run on a recurring schedule (hourly, daily, weekly, monthly, or a custom interval). Each run produces a report summarising what Coworker found. These are the core of Coworker's continuous analysis. Run any task on-demand with the **Run now** button and view the full execution history to see what it found on each run.
 
 #### Monitoring tasks
 
@@ -72,12 +72,12 @@ Click **Connect** from the dashboard prompt or **+ Create Task** and select Even
 
 | Field | Description |
 |---|---|
-| **Type** | The webhook type — e.g. Generic Webhook |
+| **Type** | The webhook type, e.g. Generic Webhook |
 | **Name** | A name for the event source (e.g. Production Alerts) |
 | **Description** | What events this webhook will receive |
-| **Custom Instructions** (optional) | Guides how events are investigated — e.g. "Focus on database-related issues and suggest query optimizations" |
-| **Model Tier** | Controls how the event is investigated — see [Model tier](#model-tier). **Thorough** is best for critical alerts and complex events needing deep analysis; **Efficient** is best for high-volume, routine events like health checks |
-| **Monthly Budget** (optional) | Set a token budget for this event source — click **Set budget** to configure |
+| **Custom Instructions** (optional) | Guides how events are investigated, e.g. "Focus on database-related issues and suggest query optimizations" |
+| **Model Tier** | Controls how the event is investigated. See [Model tier](#model-tier). **Thorough** is best for critical alerts and complex events needing deep analysis; **Efficient** is best for high-volume, routine events like health checks |
+| **Monthly Budget** (optional) | Set a token budget for this event source. Click **Set budget** to configure |
 
 ##### OpsPilot Alerts
 
@@ -103,8 +103,8 @@ Every task and event source has a **Model Tier** setting that controls how Cowor
 
 | Tier | Description |
 |---|---|
-| **Thorough** | Handles any task — more capable, higher cost |
-| **Efficient** | Suited to simpler, focused tasks — lower cost |
+| **Thorough** | Handles any task, more capable, higher cost |
+| **Efficient** | Suited to simpler, focused tasks, lower cost |
 
 Use **Thorough** for critical alerts and complex investigations where depth matters. Use **Efficient** for routine or high-volume tasks to keep token costs down.
 
@@ -152,7 +152,7 @@ Click **Chat** on any insight to access five quick actions:
 | **Suggest a fix** | Recommends remediation steps or best practices |
 | **Discuss this insight** | Opens a free-form conversation about the insight |
 
-These shortcuts are available everywhere insights appear — the priority queue, insight lists, and insight detail views.
+These shortcuts are available everywhere insights appear: the priority queue, insight lists, and insight detail views.
 
 ### Task reports
 
@@ -186,13 +186,13 @@ Browse this via the **Knowledge** button on the dashboard, which shows a visual 
 
 ### Task-specific memory
 
-Each task builds its own memory over time — remembering what patterns matter, what turned out to be important, and what didn't. A task that has been running for weeks produces richer, more relevant results than one that just started, and becomes more cost-efficient as it re-uses context it already knows.
+Each task builds its own memory over time, remembering what patterns matter, what turned out to be important, and what didn't. A task that has been running for weeks produces richer, more relevant results than one that just started, and becomes more cost-efficient as it re-uses context it already knows.
 
 ---
 
 ## Dashboard
 
-The Coworker dashboard gives you a centralised view of your priorities, active tasks, and live system metrics — all in one place. The dashboard is personalised — it's named after you (e.g. *J's Coworker*) and shows only what's relevant to you.
+The Coworker dashboard gives you a centralised view of your priorities, active tasks, and live system metrics, all in one place. The dashboard is personalised, named after you (e.g. *J's Coworker*), and shows only what's relevant to you.
 
 ![!Screenshot](/Coworker/dashboard.png)
 
@@ -207,7 +207,7 @@ At the top, a row of live metrics shows the current state:
 
 Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights**, which shows insights across all users in your organisation. Use **Change what I show you** to update your preferences directly from the dashboard. The **Triage** and **Cost & Optimisation** buttons are also accessible from the top right.
 
-Below the metrics, the **Priority Queue** highlights the top issues Coworker thinks you should look at — with chat, resolve, and ignore actions on each. Click **Browse all insights** to see the full list. When everything is handled, you'll see an **All caught up!** message.
+Below the metrics, the **Priority Queue** highlights the top issues Coworker thinks you should look at, with chat, resolve, and ignore actions on each. Click **Browse all insights** to see the full list. When everything is handled, you'll see an **All caught up!** message.
 
 The **Tasks** section below shows everything Coworker takes care of on schedule or when events come in. Filter tasks by **All**, **Favorites**, **Scheduled**, **Monitoring**, or **Events**. Each task card shows its last run time, next run time, number of runs, and a summary of findings. Use **Run Now**, **Last Run**, **Configure**, and **History** to manage each task, or use **+ Create Task** and **Manage** from the top of the section.
 
@@ -221,8 +221,8 @@ Personalise what your Coworker focuses on by clicking **Change what I show you**
 
 | Preference | Description |
 |---|---|
-| **Severity** | Toggle which severity levels you care about — Critical, Warning, Info |
-| **Category** | Choose which types of insights to prioritise — Errors, Performance, Notable, Coverage |
+| **Severity** | Toggle which severity levels you care about: Critical, Warning, Info |
+| **Category** | Choose which types of insights to prioritise: Errors, Performance, Notable, Coverage |
 | **Service** | Select which services are relevant to you |
 | **Label** | Filter by custom groupings and tags |
 
@@ -235,7 +235,7 @@ To hide insights of a similar type across your view, use the **Hide similar** bu
 
 ![!Screenshot](/Coworker/hide-similar.png)
 
-This opens a modal where you can choose what to match — by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your selected conditions.
+This opens a modal where you can choose what to match: by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your selected conditions.
 
 ![!Screenshot](/Coworker/hide-insights.png)
 
@@ -256,7 +256,7 @@ At the top, the **Task Budget** bar shows your current spend against your config
 | Setting | Description |
 |---|---|
 | **Plan Allowance** | Your total token allowance per month (set by your plan) |
-| **Monthly task budget** | The percentage of your plan allowance allocated to tasks — select a preset or use the slider |
+| **Monthly task budget** | The percentage of your plan allowance allocated to tasks. Select a preset or use the slider |
 | **Warning threshold** | The percentage of your task budget at which Coworker warns you about spend |
 | **Halt threshold** | The percentage at which Coworker stops running tasks to prevent overspend |
 
