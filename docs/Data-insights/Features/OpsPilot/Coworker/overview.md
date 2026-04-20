@@ -231,7 +231,13 @@ You can update preferences via chat using the **Update via chat** button, or res
 !!! tip
     Adding **Label** groups in your preferences makes Coworker prioritise those groupings when organising insights, helping surface the most relevant findings for your area.
 
-To hide insights of a similar type across your view, use the **Hide similar** button on any insight. This lets you suppress noise for patterns that are not relevant to you without resolving or ignoring them individually.
+To hide insights of a similar type across your view, use the **Hide similar** button on any insight.
+
+![!Screenshot](/Coworker/hide-similar.png)
+
+This opens a modal where you can choose what to match — by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your selected conditions.
+
+![!Screenshot](/Coworker/hide-insights.png)
 
 ---
 
