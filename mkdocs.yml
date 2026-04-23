@@ -74,6 +74,11 @@ nav:
      - Servers: Data-insights/Features/Explore-servers.md
      - Applications: Data-insights/Features/applications.md
      - Database: Data-insights/Features/database.md
+     - Services:
+        - Overview: Data-insights/Features/Services/overview.md
+        - Service Detail: Data-insights/Features/Services/service-detail.md
+        - Traces: Data-insights/Features/Services/traces.md
+        - Logs: Data-insights/Features/Services/logs.md
      - Kubernetes:
         - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
         - Shipping data: Monitor-your-data/Kubernetes-monitoring/Shipping.md
