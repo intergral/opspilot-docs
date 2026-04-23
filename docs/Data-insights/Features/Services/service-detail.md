@@ -1,6 +1,6 @@
 # Service Detail
 
-The Service Detail page gives you a deep breakdown of a single service's performance, errors, log patterns, and active alerts. Use the **Select Service** dropdown to choose the service you want to inspect, and the time range selector to adjust the period.
+The Service Detail page gives you a deep breakdown of a single service's performance, errors, log patterns, and active alerts. You can arrive here by clicking a service name in the [Services Overview](overview.md), which pre-selects that service automatically. The selected service appears as a filter chip at the top of the page — click the **x** to clear it and return to an unfiltered view, or use the **Select Service** dropdown to switch services. Use the time range selector to adjust the period.
 
 The page is split into three tabs: **Detail**, **Traces**, and **Logs**.
 
@@ -34,11 +34,11 @@ Use the trace icon to open a trace directly, or the link icon to copy a direct l
 
 ### Log Patterns
 
-The **Log Patterns** section surfaces recurring patterns in log output. If no patterns are detected in the selected time range, it will display a "No patterns detected" message.
+The **Log Patterns** section surfaces recurring patterns in log output. If no patterns are detected in the selected time range, it displays a "No patterns detected in the current time range" message.
 
 ### Alerts
 
-The **Alerts** section shows all alert rules associated with the selected service, along with their current state and time since last change. Alerts are listed with their status (Normal, Firing, or NoData) and name — giving you a quick view of whether anything is currently triggering.
+The **Alerts** section shows all alert rules associated with the selected service, along with their current state and time since last change. Alerts are listed with their status (Normal, Firing, or NoData) and name, giving you a quick view of whether anything is currently triggering. If no alerts are configured for the selected service, it displays "No alerts match the selected services".
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

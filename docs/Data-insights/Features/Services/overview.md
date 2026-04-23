@@ -30,7 +30,7 @@ Below the graph, the **Service Table** lists all services with key performance m
 | **Requests** | Total request count in the selected time range |
 | **Errors** | Total error count in the selected time range |
 
-Click any service name to open the [Service Detail](service-detail.md) view for a deeper breakdown.
+Click any service name to open the [Service Detail](service-detail.md) view with that service pre-selected, giving you an immediate breakdown of its performance, errors, logs, and alerts.
 
 Use the **Select Service** dropdown to filter the graph and table to a specific service. Use the time range selector in the top right to adjust the period shown.
 
