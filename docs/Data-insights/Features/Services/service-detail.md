@@ -1,6 +1,6 @@
 # Service Detail
 
-The Service Detail page gives you a deep breakdown of a single service's performance, errors, log patterns, and active alerts. You can arrive here by clicking a service name in the [Services Overview](overview.md), which pre-selects that service automatically. The selected service appears as a filter chip at the top of the page — click the **x** to clear it and return to an unfiltered view, or use the **Select Service** dropdown to switch services. Use the time range selector to adjust the period.
+The Service Detail page gives you a deep breakdown of a single service's performance, errors, log patterns, and active alerts. You can arrive here by clicking a service name in the [Services Overview](overview.md), which pre-selects that service automatically. The selected service appears as a filter chip at the top of the page. Click the **x** to clear it and return to an unfiltered view, or use the **Select Service** dropdown to switch services. Use the time range selector to adjust the period.
 
 The page is split into three tabs: **Detail**, **Traces**, and **Logs**.
 
