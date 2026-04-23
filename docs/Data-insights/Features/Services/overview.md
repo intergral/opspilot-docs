@@ -8,6 +8,13 @@ The **Service Graph** displays your services as an interactive network diagram, 
 
 Use the graph to quickly identify which services are upstream or downstream of a problem area. You can pan by clicking and dragging, and zoom using the scroll wheel.
 
+Two icons in the top right corner of the graph panel give you additional viewing options:
+
+- **3D toggle**: switches the graph between a flat 2D layout and a 3D view
+- **Expand**: opens the graph in full screen for a clearer view of complex environments
+
+Use **Clear all** to reset any active service filters.
+
 ## Service Table
 
 Below the graph, the **Service Table** lists all services with key performance metrics:
