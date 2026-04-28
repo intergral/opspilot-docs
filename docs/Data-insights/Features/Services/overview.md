@@ -2,6 +2,8 @@
 
 The Services Overview gives you a centralised view of all services in your environment, visualising how they depend on each other and summarising their health at a glance.
 
+![!Screenshot](services-overview.png)
+
 ## Service Graph
 
 The **Service Graph** displays your services as an interactive network diagram, showing the communication patterns and dependencies between them. Each node represents a service. Connections between nodes show how services call each other.
