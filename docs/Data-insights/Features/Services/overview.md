@@ -21,9 +21,9 @@ Use **Clear all** to reset any active service filters.
 
 ## Service Table
 
-![!Screenshot](services-table.png)
-
 Below the graph, the **Service Table** lists all services with key performance metrics:
+
+![!Screenshot](services-table.png)
 
 | Column | Description |
 |---|---|
