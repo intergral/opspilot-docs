@@ -1,4 +1,6 @@
 # Services Overview
+![!Screenshot](services.png)
+
 
 The Services Overview gives you a centralised view of all services in your environment, visualising how they depend on each other and summarising their health at a glance.
 
