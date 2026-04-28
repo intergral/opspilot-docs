@@ -2,6 +2,8 @@
 
 The Logs tab shows all log output for the selected service within the chosen time range. Use it to investigate errors, trace log patterns, and filter down to specific severity levels or log content.
 
+![!Screenshot](logs.png)
+
 ## Filters
 
 | Filter | Description |

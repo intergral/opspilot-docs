@@ -2,6 +2,8 @@
 
 The Traces tab shows all traces for the selected service, with performance charts and a filterable trace list. Use it to investigate slow requests, errors, and individual spans in detail.
 
+![!Screenshot](traces.png)
+
 ## Filters
 
 At the top of the page, use the filter bar to narrow the trace list:
