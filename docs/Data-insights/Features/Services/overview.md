@@ -12,10 +12,14 @@ Use the graph to quickly identify which services are upstream or downstream of a
 
 ![!Screenshot](services-graph.png)
 
+Each node shows the service's **average latency** and **request rate** directly on it. The colour of the node indicates its health: green means healthy, red means the service is producing errors. Connection lines between nodes also show the latency and request rate for that specific call path, and arrows indicate the direction of the call.
+
 Two icons in the top right corner of the graph panel give you additional viewing options:
 
 - **3D toggle**: switches the graph between a flat 2D layout and a 3D view
 - **Expand**: opens the graph in full screen for a clearer view of complex environments
+
+![!Screenshot](services-graph-expanded.png)
 
 Use **Clear all** to reset any active service filters.
 
