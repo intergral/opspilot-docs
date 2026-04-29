@@ -283,6 +283,15 @@
   color: #cccccc;
 }
 
+/* Table header background */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background-color: #f2f2f2;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #1e1e1e;
+}
+
 /* Dark mode: white headings, grey body text, visible links */
 [data-md-color-scheme="slate"] {
   --md-typeset-color: #b0b0b0;
