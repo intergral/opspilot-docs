@@ -46,6 +46,11 @@ This setup can be restarted at any time from the dashboard settings.
 
 Tasks are the automated jobs Coworker runs in the background to proactively investigate your systems. You don't need to fill in forms or understand configuration options. Just describe what you want in plain language and OpsPilot builds the task for you through conversation.
 
+Coworker is not limited to your observability data. As an LLM, it can also search the web as part of an investigation, meaning it can bring in external context — documentation, known issues, best practices — alongside your metrics, logs, and traces.
+
+!!! info
+    Tasks are currently configured at the organisation level.
+
 Click **Create Task** to open the **Task Agent**, a conversational interface where you describe what you want monitored. OpsPilot asks clarifying questions and sets it up for you.
 
 ![!Screenshot](/Coworker/create-task.png)
@@ -132,6 +137,10 @@ For each insight you can:
 
 You can browse all insights, filter by date, search, and view resolved insights separately. The **Analytics** view breaks down insights by service, category, and label groupings, giving you a higher-level picture of where issues are concentrated over time.
 
+Insights that are not resolved or ignored will age out after **30 days**, keeping your list focused and preventing stale findings from building up.
+
+Coworker also proactively generates **observability gap insights** — flagging services that are not instrumented or areas where metrics are missing. These help you improve your coverage and give Coworker itself better data to work with over time.
+
 Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights**, which shows insights across all users in your organisation.
 
 ---
@@ -155,6 +164,8 @@ Click **Chat** on any insight to access five quick actions:
 These shortcuts are available everywhere insights appear: the priority queue, insight lists, and insight detail views.
 
 ### Task reports
+
+Each task run produces a report containing three parts: the **findings** (insights surfaced during the investigation), the **investigation process** (what Coworker checked and how it reached its conclusions), and a **final summary**. The default mode is reporting — Coworker surfaces what it found without proposing fixes unless you instruct it to. The insights themselves will suggest remediation steps where relevant.
 
 After a task runs, an input field appears below the report: *Ask OpsPilot about this report...* The full report is included as context, so you can ask follow-up questions without copying anything.
 
@@ -186,7 +197,11 @@ Browse this via the **Knowledge** button on the dashboard, which shows a visual 
 
 ### Task-specific memory
 
-Each task builds its own memory over time, remembering what patterns matter, what turned out to be important, and what didn't. A task that has been running for weeks produces richer, more relevant results than one that just started, and becomes more cost-efficient as it re-uses context it already knows.
+Each task builds its own memory over time, remembering what patterns matter, what turned out to be important, and what didn't. A task that has been running for weeks produces richer, more relevant results than one that just started, and becomes more cost-efficient as it re-uses context it already knows. In some cases, task memory can reduce token costs by up to 50% by eliminating the need to re-fetch background information on every run.
+
+### User memory
+
+Coworker also remembers your personal preferences from conversations — for example, whether you prefer responses with or without tables, or other formatting preferences you have expressed. This makes the assistant and task output increasingly tailored to how you like to work.
 
 ---
 
@@ -244,6 +259,9 @@ This opens a modal where you can choose what to match: by category, severity, la
 ## Cost and optimisation
 
 Coworker tracks the cost of running your tasks and provides full transparency into spend. Click **Cost & Optimisation** from the dashboard to open the view.
+
+!!! tip
+    One of the most effective ways to reduce costs over time is simply to let tasks run. As [task-specific memory](#task-specific-memory) builds up, Coworker re-uses context it already knows rather than fetching it fresh each run — reducing token usage by up to 50% in some cases.
 
 ![!Screenshot](/Coworker/cost-optimize.png)
 
