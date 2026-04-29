@@ -16,11 +16,11 @@ A service only appears if it is sending trace data to OpsPilot. Check that your 
 
 ### What is the difference between P50 and P95 latency?
 
-**P50** (median) is the latency that 50% of requests complete within — it represents typical performance. **P95** is the latency that 95% of requests complete within — it highlights slower, tail-end responses that affect a minority of users but often indicate underlying issues. A large gap between P50 and P95 suggests inconsistent performance worth investigating.
+**P50** (median) is the latency that 50% of requests complete within, representing typical performance. **P95** is the latency that 95% of requests complete within, highlighting slower, tail-end responses that affect a minority of users but often indicate underlying issues. A large gap between P50 and P95 suggests inconsistent performance worth investigating.
 
 ### Why does Avg Latency look different from P50?
 
-Average latency is pulled up by outliers — a small number of very slow requests can make the average much higher than the median. P50 is usually a better indicator of the experience most users have.
+Average latency is pulled up by outliers. A small number of very slow requests can make the average much higher than the median. P50 is usually a better indicator of the experience most users have.
 
 ---
 
@@ -28,7 +28,7 @@ Average latency is pulled up by outliers — a small number of very slow request
 
 ### What is the difference between a span and a trace?
 
-A **trace** represents the full journey of a single request through your system, from entry point to completion. A **span** is one unit of work within that trace — for example, a database query or an outbound HTTP call. A trace is made up of one or more spans.
+A **trace** represents the full journey of a single request through your system, from entry point to completion. A **span** is one unit of work within that trace, for example a database query or an outbound HTTP call. A trace is made up of one or more spans.
 
 ### What do the span status codes mean?
 
@@ -36,7 +36,7 @@ A **trace** represents the full journey of a single request through your system,
 |---|---|
 | **STATUS_CODE_OK** | The span completed successfully |
 | **STATUS_CODE_ERROR** | The span completed with an error |
-| **STATUS_CODE_UNSET** | No status was explicitly set — typically treated as successful |
+| **STATUS_CODE_UNSET** | No status was explicitly set, typically treated as successful |
 
 A high proportion of STATUS_CODE_ERROR spans indicates errors worth investigating in the Span Errors table or Traces tab.
 
