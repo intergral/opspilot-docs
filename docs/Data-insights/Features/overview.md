@@ -97,6 +97,18 @@ The **Usage** panel shows your current consumption against your plan limits for 
 
 A progress bar indicates how much of your plan allowance has been used.
 
+### Coworker
+
+The **Coworker** panel gives you a summary of your AI teammate's activity over the last 30 days, directly from the Overview page.
+
+| Element | Description |
+|---|---|
+| **Critical Insights** | Number of critical insights currently needing attention, with a trend indicator |
+| **Optimisation suggestions** | Alerts you to available cost optimisation suggestions for your tasks |
+| **Recent Activity** | A feed of the latest task runs and recurring findings, showing what Coworker has been investigating |
+
+Use the **Ask** button to open a chat conversation with Coworker directly from the panel, or click **Coworker** to go to the full Coworker dashboard.
+
 ## No Data view
 
 If your account has no data yet, each section of the Overview displays a **Get Started** prompt to guide you through setup:
