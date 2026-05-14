@@ -1,10 +1,20 @@
 # Services Overview
 ![!Screenshot](services.png)
 
+<br>
 
-The Services Overview gives you a centralised view of all services in your environment, visualising how they depend on each other and summarising their health at a glance.
+The **Services** page gives you full visibility into your OpenTelemetry-instrumented services - how they connect, how they perform, and where problems are occurring.
 
-![!Screenshot](services-overview.png)
+<br>
+
+<div class="intro-with-video">
+  <div class="video-side">
+    <iframe src="https://player.vimeo.com/video/1192175205?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="intro-text">
+    <p>Watch this short walkthrough to see the Services view in action - covering the service graph, dependency mapping, latency and error metrics, and how to drill into individual services for deeper investigation.</p>
+  </div>
+</div>
 
 ## Service Graph
 
