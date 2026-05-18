@@ -1,6 +1,6 @@
 # Knowledge
 
-The **Knowledge** page lets you build a context library for the OpsPilot AI assistant. By adding information about your technology stack, services, and organisation, you help OpsPilot give more accurate, relevant responses and recommendations.
+The **Knowledge** page lets you build a context library that OpsPilot draws on during autonomous investigations and chat conversations. By adding information about your technology stack, services, and organisation, you help OpsPilot reach more accurate conclusions and surface more relevant findings.
 
 ![!Screenshot](/Data-insights/Features/OpsPilot/images/new-knowledge.png)
 

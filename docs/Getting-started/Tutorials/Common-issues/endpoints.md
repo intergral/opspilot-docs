@@ -1,6 +1,6 @@
 # What endpoints need to be exposed for the FusionReactor Agent to connect to the Cloud?
 
-FusionReactor requires outbound connections to specific endpoints to communicate with FusionReactor Cloud. You have two primary options for configuring your firewall: using DNS names (recommended) or static IP addresses.
+FusionReactor requires outbound connections to specific endpoints to communicate with OpsPilot. You have two primary options for configuring your firewall: using DNS names (recommended) or static IP addresses.
 
 ### Option 1: Using DNS Firewall Rules (Recommended)
 

@@ -115,13 +115,10 @@ Get metrics, logs, and traces flowing from your infrastructure using **Grafana A
 
 ## Step 4 — Query with AI
 
-Once data is flowing, use the **OpsPilot AI assistant** to query your telemetry in plain English. Ask questions like:
+Once data is flowing, OpsPilot's AI works in two ways:
 
-- *"Which services had the highest error rate in the last hour?"*
-- *"Show me latency trends for the checkout service"*
-- *"Are there any anomalies in my infrastructure metrics today?"*
-
-OpsPilot translates your questions into queries across metrics, logs, and traces — no PromQL or LogQL required.
+- **Coworker** - your AI SRE teammate that runs automated investigations in the background, surfaces prioritised insights, and flags issues before they escalate. [Learn more](/Data-insights/Features/OpsPilot/Coworker/overview/)
+- **OpsPilot Chat** - ask questions in plain English to query your telemetry, investigate specific issues, or get on-demand AI analysis across metrics, logs, and traces.
 
 ---
 

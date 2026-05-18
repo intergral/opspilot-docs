@@ -111,7 +111,7 @@ If your account has no data yet, each section of the Overview displays a **Get S
 | **Alerts** | Configure alert rules to monitor your infrastructure. |
 | **Anomaly Detection** | Enable anomaly detection to automatically detect unusual behavior in your data. |
 
-The **Servers** and **Applications** prompts also display your **FusionReactor Cloud license key** directly on the page so you can copy it for use during agent installation.
+The **Servers** and **Applications** prompts also display your **OpsPilot license key** directly on the page so you can copy it for use during agent installation.
 
 The **Usage** panel shows your plan limits with all values at zero until data starts flowing (for example, `0 bytes / 27 GB` for Logs).
 

@@ -9,7 +9,7 @@ Kubernetes allows developers to deploy, manage, and scale containerized applicat
 Kubernetes is highly modular and extensible, with a large ecosystem of plugins and tools that can be used to customize and extend its functionality. 
 
 
-To make things easier for you, we have introduced Kubernetes monitoring in **FusionReactor Cloud**. With this tool, you can automate many of the manual tasks and focus on getting the most out of your Kubernetes monitoring. Whether you're an SRE, application developer, or DevOps administrator, Kubernetes monitoring in **FusionReactor Cloud** can help you troubleshoot incidents, implement changes, and maintain servers more easily.
+OpsPilot brings AI-powered Kubernetes monitoring giving SREs, application developers, and DevOps administrators deep visibility into cluster health, workload performance, and reliability - with autonomous detection of issues and AI-guided investigation to cut resolution time.
 
 !!! info "Learn more"
     [Shipping K8s data to FR Cloud](/Monitor-your-data/Kubernetes-monitoring/Shipping/)
@@ -41,7 +41,7 @@ In summary, a Kubernetes cluster is a group of nodes that work together to run c
 
 ## Kubernetes dashboards
 
-Kubernetes monitoring with **FusionReactor Cloud** includes many dashboards out of the box to help you get started with observing and monitoring your Kubernetes clusters and their workloads. This set includes the following:
+Kubernetes monitoring with **OpsPilot** includes many dashboards out of the box to help you get started with observing and monitoring your Kubernetes clusters and their workloads. This set includes the following:
 
 * Kubernetes / API server
 

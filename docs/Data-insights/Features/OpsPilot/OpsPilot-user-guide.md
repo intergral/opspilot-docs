@@ -2,7 +2,7 @@
 
 # User Guide
 
-OpsPilot is an AI assistant built into the OpsPilot platform. Ask questions in plain English to get insights about your applications, infrastructure, and logs — without needing to write queries or navigate dashboards manually.
+OpsPilot is your AI-powered operations platform, combining autonomous background monitoring with an on-demand chat interface. Use the chat to investigate issues, query your telemetry in plain English, and get AI-guided analysis — without writing queries or navigating dashboards manually.
 
 
 

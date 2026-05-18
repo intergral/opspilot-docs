@@ -2,11 +2,11 @@
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/871379062?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OpsPilot Assistant"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-OpsPilot is your intelligent AI assistant for full-stack observability, designed to help every team member - from developers to SREs and engineering managers - understand, diagnose, and resolve issues faster than ever.
+OpsPilot is an AI-powered observability and autonomous reliability platform. It gives your team an AI SRE teammate that continuously monitors your systems, investigates issues, and helps prevent, detect, and resolve disruptions before they impact your customers - so your engineers spend less time firefighting and more time building.
 
-By combining FusionReactor’s powerful telemetry platform with advanced AI reasoning, OpsPilot transforms complex system data, code, and performance metrics into clear, actionable insights - all in natural, conversational language.
+Built on FusionReactor’s telemetry platform and powered by advanced AI reasoning, OpsPilot combines deep observability with agentic AI - correlating metrics, logs, and traces, investigating root causes, and surfacing prioritised, actionable findings across your entire environment.
 
-OpsPilot goes beyond traditional monitoring to analyze code, detect memory anomalies, interpret metrics, and even suggest the next steps to resolve problems. It’s observability, explanation, and action - all in one assistant.
+From scheduled background investigations and real-time alert analysis to conversational queries and autonomous remediation guidance, OpsPilot works as an operational partner - not just a monitoring tool.
 
 !!! info "Learn more"
     [OpsPilot user guide](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/)
@@ -69,11 +69,11 @@ With external integration support, OpsPilot also connects to Microsoft Teams, Ji
 
 ## Benefits of using OpsPilot 
 
-- **Faster troubleshooting** – Real-time analysis and reasoning drastically reduce mean time to resolution (MTTR).
+- **Reduced MTTR** – Agentic investigation and real-time reasoning dramatically cut the time from alert to resolution.
 
-- **Proactive detection** – Identify potential issues before they impact users or uptime.
+- **Proactive reliability** – Continuous autonomous monitoring detects and surfaces issues before they reach your customers, protecting uptime and revenue.
 
-- **Consistency & reliability** – Automated checks ensure monitoring and diagnostics follow best practices every time.
+- **Operational resilience** – Automated investigations run 24/7, ensuring nothing is missed even outside business hours.
 
 - **Human-Friendly insights** – Get complex technical explanations in plain language, ready to share with your team.
 

@@ -71,7 +71,7 @@ When you click on a Server cube from the System Overview dashboard, you'll be ta
 
 This detailed view is organized into top-level tabs that provide comprehensive diagnostics and monitoring capabilities:
 
-- **UI Tunnel** - Access your on-premises application's user interface directly through FusionReactor Cloud.
+- **UI Tunnel** - Access your on-premises application's user interface directly through OpsPilot.
 
 - **Metrics** - Performance metrics and resource utilization data.
 
@@ -87,7 +87,7 @@ Each tab provides specialized tools for monitoring and troubleshooting your Fusi
 
 ## UI Tunnel
 
-The **UI Tunnel** in FusionReactor is a specialized feature that enables secure remote access to the detailed, local user interface (UI) of an on-premises FusionReactor Agent through the FusionReactor Cloud platform. You can also filter the UI Tunnel view by **job** to focus on specific tasks or workloads.
+The **UI Tunnel** in FusionReactor is a specialized feature that enables secure remote access to the detailed, local user interface (UI) of an on-premises FusionReactor Agent through the OpsPilot platform. You can also filter the UI Tunnel view by **job** to focus on specific tasks or workloads.
 
 ![Screenshot](../../Data-insights/Features/Servers/tunnel-view.png)
 

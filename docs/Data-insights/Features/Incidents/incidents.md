@@ -15,12 +15,12 @@
 <span class="badge badge-purple">Available in public preview</span> 
 
 
-The **Incident Management Application** is a robust tool for tracking and resolving incidents in real-time. It streamlines incident workflows, enabling teams to manage tasks, update statuses, and maintain detailed activity logs with ease.
+The **Incident Management** feature gives your team a structured, real-time workspace for tracking and resolving incidents. It streamlines workflows, centralises activity logs, and keeps everyone aligned from detection through to resolution.
 
 ![!Screenshot](/Data-insights/Features/Incidents/images/mainpg.png)
 
 
-Incidents can be challenging, particularly during the critical initial stages of investigation and identification. FusionReactor's **Incidents** feature is packed with powerful, time-saving tools designed to help you respond swiftly and efficiently, minimizing downtime and streamlining your resolution process.
+The critical early stages of an incident - investigation and root cause identification - are where OpsPilot's AI capabilities have the most impact. Coworker can automatically investigate firing alerts, surface relevant findings, and suggest next steps, so your team spends less time digging and more time resolving.
 
 The application provides:
 

@@ -29,10 +29,10 @@ FusionReactor offers settings to increase the default character limit for displa
 
 ### Cloud environment
 
-To view the full SQL queries in FusionReactor Cloud transactions, you need to perform two steps:
+To view the full SQL queries in OpsPilot transactions, you need to perform two steps:
 
 1.  **Apply On-Premise Settings:**
-    As described in the [On-Premise environment](#on-premise-environment) section, adjust the **SQL Text Limiting (Log and Display)** setting within the on-premise tab of your FusionReactor Cloud server configuration.
+    As described in the [On-Premise environment](#on-premise-environment) section, adjust the **SQL Text Limiting (Log and Display)** setting within the on-premise tab of your OpsPilot server configuration.
 2.  **Add JVM Argument:**
     Apply the following JVM argument to your application server instance:
 

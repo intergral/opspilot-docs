@@ -1,5 +1,5 @@
 
-FusionReactor Cloud supports multiple member roles, each with different levels of access and responsibilities within the organization. Use this to scale or restrict access as your team evolves.
+OpsPilot supports multiple member roles, each with different levels of access and responsibilities within the organization. Use this to scale or restrict access as your team evolves.
 
 !!! note
     You must be an Admin to modify other users' roles.

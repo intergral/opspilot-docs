@@ -1,10 +1,10 @@
 
 
-# Post-crash Troubleshooting with FusionReactor Cloud
+# Post-crash Troubleshooting with OpsPilot
 
 ## Overview
 
-This guide explains how to use **FusionReactor Cloud** to diagnose and prevent application server crashes. It includes steps to identify root causes using memory metrics, transaction traces, and logs, followed by setting up proactive alerts.
+This guide explains how to use **OpsPilot** to diagnose and prevent application server crashes. It includes steps to identify root causes using memory metrics, transaction traces, and logs, followed by setting up proactive alerts.
 
 !!! info 
     While this guide highlights a memory-related example, the same process can help uncover other root causes like CPU saturation, slow database calls, or blocked threads.
@@ -13,7 +13,7 @@ This guide explains how to use **FusionReactor Cloud** to diagnose and prevent a
 
 ## Video
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1089031476?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Investigating Server Crashes with FusionReactor Cloud"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1089031476?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Investigating Server Crashes with OpsPilot"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
 ---
@@ -33,7 +33,7 @@ This guide explains how to use **FusionReactor Cloud** to diagnose and prevent a
 
 An application server (e.g., **Storefront 1**) is crashing intermittently. The goal is to:
 
-1. Investigate the cause using FusionReactor Cloud.  
+1. Investigate the cause using OpsPilot.  
 2. Prevent future crashes with proactive monitoring.
 
 This example focuses on memory issues, but the same steps apply when diagnosing other causes such as CPU pressure or database slowdowns.
@@ -42,7 +42,7 @@ This example focuses on memory issues, but the same steps apply when diagnosing 
 
 ## Step 1: Spot the issue
 
-1. Open the affected server in **FusionReactor Cloud**.
+1. Open the affected server in **OpsPilot**.
 2. Use the **Live Mode Clock** to select a custom time range (e.g., last 6 hours).
 3. The time filter syncs across:
     - Metrics  

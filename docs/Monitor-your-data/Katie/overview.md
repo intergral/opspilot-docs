@@ -1,6 +1,6 @@
 # Katie - Kubernetes Tooling for AI
 
-**Katie** is an AI agent to answer questions about your Kubernetes cluster.
+**Katie** is an AI agent that provides intelligent, real-time analysis of your Kubernetes cluster - investigating health, resource usage, and issues through natural language.
 
 > **Prompt**:  Are any pods in trouble in the demo cluster?
 
