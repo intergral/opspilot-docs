@@ -2,9 +2,7 @@
 
 ![Get Started with OpsPilot](images/get-started.png)
 
-From sign-up to your first insights in minutes.
-
-This guide walks you through creating your account, connecting your first data source, and exploring your initial views in OpsPilot.
+OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and AI SRE platform. This guide walks you through creating your account, connecting your first data source, and exploring your initial views — from sign-up to your first insights in minutes.
 
 !!! info "Already have an account?"
     [Sign in](https://app.opspilot.com/auth/login) and head to your dashboard to start exploring your data. If you have an invitation, follow the link in your invitation email to access your organization.
