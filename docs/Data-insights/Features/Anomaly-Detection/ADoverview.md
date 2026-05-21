@@ -1,3 +1,5 @@
+# Anomaly Detection
+
 ![!Screenshot](../../images/Anomaly-detection/anomalyreport.png)
 
 ## What is anomaly detection?
@@ -25,7 +27,7 @@ In summary, anomalies can emerge in various facets of system operation and can b
 
 Understanding and categorizing anomalies is crucial for effective system monitoring and troubleshooting.
 
-## Benefits
+## Benefits of AI-driven anomaly detection
 
 * **Early issue identification**: Anomaly detection helps identify deviations from normal behavior or patterns in data, allowing organizations to detect issues at an early stage before they escalate into significant problems.
 

@@ -12,8 +12,9 @@
 .badge-purple { background-color:rgb(150, 190, 251); color:rgb(31, 36, 197); }
 </style>
 
-<span class="badge badge-purple">Available in public preview</span> 
+<span class="badge badge-purple">Available in public preview</span>
 
+# Incident Management
 
 The **Incident Management** feature gives your team a structured, real-time workspace for tracking and resolving incidents. It streamlines workflows, centralises activity logs, and keeps everyone aligned from detection through to resolution.
 
@@ -60,7 +61,7 @@ The filtering feature allows you to refine the list of incidents displayed on th
     A red notification badge (e.g., 1) will appear on the button to indicate active filters.
 
 
-## Key features & workflows
+## AI-assisted incident investigation
 
 
 ### Create a new incident

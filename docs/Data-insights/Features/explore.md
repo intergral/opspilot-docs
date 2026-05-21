@@ -1,4 +1,4 @@
-# Explore
+# Explore: Metrics, Logs and Traces
 
 🔎**Find it**: **FusionReactor** > **Explore** 
 

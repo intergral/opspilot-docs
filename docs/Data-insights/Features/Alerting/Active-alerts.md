@@ -1,3 +1,5 @@
+# Firing Alerts
+
 The **Firing Alerts** page shows all active notifications currently being managed by the Alertmanager. Notifications are grouped by label to reduce noise, and you can filter by state, contact point, or Alertmanager instance.
 
 ## Notification States

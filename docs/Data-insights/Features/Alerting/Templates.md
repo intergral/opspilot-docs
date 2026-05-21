@@ -1,3 +1,5 @@
+# Alert Notification Templates
+
 Use templating to transform raw technical metrics-like heap usage or slow request counts-into human-readable alerts. By incorporating dynamic data, your team can diagnose issues directly from a Slack message or email without opening the dashboard first.
 
 ## Alert Rule Annotations

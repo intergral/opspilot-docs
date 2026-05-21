@@ -1,4 +1,4 @@
-# Integrations
+# Integrations Hub
 
 ![Integrations hub](../../images/integrations.png)
 
