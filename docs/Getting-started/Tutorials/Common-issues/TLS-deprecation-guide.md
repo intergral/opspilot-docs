@@ -135,7 +135,7 @@ Use this if you cannot enable TLS 1.2 or add Let’s Encrypt roots.
 
 
 !!! note
-    Not available for FusionReactor Cloud licenses due to internet connection requirements.
+    Not available for OpsPilot licenses due to internet connection requirements.
 
 1. In the **FusionReactor On-Premise UI**, go to **About → Manual Activation**.
 2. Copy the activation code.

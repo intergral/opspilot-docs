@@ -2,7 +2,7 @@
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1080127315?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Checking your data and billing usage"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-This guide shows you how to check your FusionReactor Cloud data and billing usage.
+This guide shows you how to check your OpsPilot data and billing usage.
 
 1.  **Log in:** Go to [app.fusionreactor.io](https://app.fusionreactor.io) and log in to your account.
 
@@ -24,4 +24,4 @@ This guide shows you how to check your FusionReactor Cloud data and billing usag
     * OpsPilot token consumption
        
 
-This dashboard provides a clear breakdown of your FusionReactor Cloud resource consumption.
+This dashboard provides a clear breakdown of your OpsPilot resource consumption.

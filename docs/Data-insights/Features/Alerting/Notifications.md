@@ -1,3 +1,5 @@
+# Notification Policies
+
 Notification policies are the engine of your alerting system, providing a flexible way to route alerts while minimising noise. They are organised in a **tree structure**, starting with a **Default (Root) policy** that can branch into child policies for more specific routing.
 
 ## How policies handle alerts

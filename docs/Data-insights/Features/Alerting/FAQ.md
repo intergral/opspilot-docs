@@ -1,3 +1,5 @@
+# Alerting FAQ
+
 ## What changed from the previous Mimir-based alerting?
 
 The advanced alerting system uses the full Grafana Ruler and Alertmanager stack. The key differences are:
