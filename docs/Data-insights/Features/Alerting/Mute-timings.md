@@ -1,3 +1,5 @@
+# Time Intervals
+
 **Time intervals** allow you to control exactly when alert notifications are delivered during designated periods. These intervals are assigned to a specific Alertmanager and only affect the alerts managed by that instance. Importantly, while a time interval suppresses the actual notification, it does not interrupt the underlying alert evaluation process.
 
 A time interval is a recurring interval used to pause notifications for one or more [notification policies](Notifications.md) during a specific period. This is ideal for managing notifications during:

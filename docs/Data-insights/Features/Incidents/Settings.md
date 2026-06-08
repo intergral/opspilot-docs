@@ -1,4 +1,4 @@
-# Settings
+# Incident Settings
 
 ![!Screenshot](/Data-insights/Features/Incidents/images/setting-main.png)
 

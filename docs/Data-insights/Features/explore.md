@@ -1,10 +1,10 @@
-# Explore
+# Explore: Metrics, Logs and Traces
 
 🔎**Find it**: **FusionReactor** > **Explore** 
 
 <iframe src="https://player.vimeo.com/video/840905546?h=dfe78f4f96" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-**Explore** allows you to query and analyse all metrics, logs and traces ingested to your cloud account. Create new data views and filter data in any way you require.
+**Explore** gives you direct, flexible access to all metrics, logs, and traces in your OpsPilot account. Query raw telemetry, create custom data views, and filter across signals without writing PromQL, LogQL, or TraceQL.
 
 !!! warning
     While with **Explore** you can technically search for any amount of data within your cloud account, there are strict execution times on queries that will restrict performance heavy queries. 

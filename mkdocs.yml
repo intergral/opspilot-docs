@@ -39,6 +39,7 @@ theme:
 nav:
   - WELCOME:
      - Get Started: index.md
+     - What is OpsPilot?: what-is-opspilot.md
      - UI Overview: Data-insights/Features/overview.md
   - AI:
      - OpsPilot Assistant:
