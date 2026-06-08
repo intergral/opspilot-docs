@@ -1,68 +1,71 @@
-# Traces
+﻿# Traces
 
-The **Traces** tab provides deep insights into the performance of individual requests (spans) as they move through the system. This view is critical for identifying slow transactions, latency issues, and service dependencies.
+The Traces tab shows all traces for the selected service, with performance charts and a filterable trace list. Use it to investigate slow requests, errors, and individual spans in detail.
 
-![Screenshot](traces.png)
+![!Screenshot](traces2.png)
 
-Four key graphs display at the top of the view:
+## Filters
 
-1. **50th Percentile Span Duration** - Shows the median response time for requests, indicating typical performance.
-2. **95th Percentile Span Duration** - Displays response times for 95% of requests, helping identify slower outliers.
-3. **Status (Top spans by status code)** - Breaks down request volume by HTTP status codes (errors vs. successful requests).
-4. **Top 20 Span Throughput** - Shows request volume for the most active endpoints or operations.
+At the top of the page, use the filter bar to narrow the trace list:
 
-Use the filter bar to narrow down traces by:
+| Filter | Description |
+|---|---|
+| **Select Service** | Filter by service name |
+| **Select Span Name** | Filter by a specific operation or endpoint |
+| **Select Status** | Filter by span status (e.g. error, ok) |
+| **Duration** | Sort or filter by trace duration |
+| **+ Filter** | Add additional filter conditions |
 
-- **Job** - The service or application name (e.g., quote-service-lucee).
-- **Span Name** - Specific operation or endpoint.
-- **Status** - HTTP status code (All, error, ok, unset).
-- **Flavor** - Request type or protocol.
-- **Min/Max Duration** - Filter by response time range.
-- **Adhoc Filters** - Add custom filters with the + button.
+Click **Clear all** to reset all filters.
 
-Below the metrics, the trace list shows individual requests with:
+Use the **Filter traces...** search box to search within the trace list by keyword.
 
-- **Trace ID** - Unique identifier for the request (click to view detailed trace timeline).
-- **Start time** - When the request began.
-- **Service** - Which service handled the request.
-- **Name** - The HTTP method (GET, POST, etc.).
-- **Duration** - Total request processing time in milliseconds.
+## Performance charts
 
+Four charts give you an overview of trace performance across the selected time range:
 
-## Trace Details
+| Chart | Description |
+|---|---|
+| **P50 Latency** | Median trace duration, broken down by service |
+| **P95 Latency** | 95th percentile duration, highlighting slower traces |
+| **Span Status** | Breakdown of span outcomes across all traces |
+| **Top Throughput** | Most active endpoints by request volume |
 
-When you click on a specific Trace ID from the Traces list, you navigate to the **Trace Details** view. This view is the core of distributed tracing, presenting the entire transaction flow as a precise waterfall diagram.
+## Traces list
 
-![Screenshot](trace-details.png)
+The **Traces** table lists individual traces with:
 
-The header displays key information about the selected trace:
+| Column | Description |
+|---|---|
+| **Service** | The service that originated the trace |
+| **Span Name** | The operation or endpoint name |
+| **Spans** | Total number of spans in the trace |
+| **Services** | Number of services involved in the trace |
+| **Trace ID** | The unique identifier for the trace |
+| **Started** | When the trace began |
+| **Duration** | Total end-to-end duration |
 
-- **Service and Method** - The originating service and HTTP method (e.g., load-generator: POST).
-- **Total Duration** - End-to-end request time (e.g., 513.22ms).
-- **Timestamp** - Exact date and time the request started.
-- **Status Code** - HTTP response code with visual badge (e.g., 200, POST).
-- **Endpoint Path** - The API endpoint or route accessed.
+Traces with errors are highlighted in red with an **ERROR** badge.
 
-### Navigation Tabs
+!!! info "`<root span not yet received>`"
+    This entry appears when child spans have been received but the root span hasn't arrived yet. This is usually transient - the root span typically arrives shortly after.
 
-The trace details interface includes multiple tabs:
+## Expanded trace view
 
-- **Detail** - The default view showing the waterfall diagram of the trace spans.
-- **Profile** - When available, this tab displays a hierarchical flame graph showing method execution times and call stacks. Each entry shows the percentage of total execution time and duration (e.g., "100% - 1.61s") along with the full method path, allowing you to identify performance hotspots at the code level.
-    ![Screenshot](profile.png)
+![!Screenshot](expanded-trace-view.png)
 
-- **[Event Snapshot](https://docs.fusionreactor.io/Data-insights/Features/Debugger/Event-Snapshot/)** - This tab appears when a snapshot is associated with the trace, providing deep diagnostics including decompilation, frames, and request/response details captured at the point of the event.
-     ![Screenshot](event-snap.png)
+Click the `>` arrow on any row to expand it and see a summary and waterfall timeline for that trace:
 
-### Trace Actions
+- **Service and span name** with an ERROR badge if the trace contains errors
+- **Duration**, **Services**, **Spans**, and **Kind** (e.g. `SPAN_KIND_CLIENT`)
+- A **waterfall timeline** showing how time was spent across spans
+- A service breakdown showing each service involved and its span count
 
-Three action buttons in the top-right allow you to:
+Three buttons in the top right of the expanded view let you:
 
-1. **Analyze Trace** - Send the trace to OpsPilot AI for natural language analysis of performance bottlenecks, errors, and optimization recommendations.
-
-2. **Trace ID** - Copy the unique trace identifier to your clipboard for sharing or external analysis.
-
-3. **Export** - Download the trace data in a portable format for offline analysis or archival.
+- **Analyze Trace** - send the trace to OpsPilot AI for analysis
+- **Expand all** - expand all spans in the waterfall at once
+- **Collapse all** - collapse all spans in the waterfall at once
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

@@ -61,10 +61,11 @@ Click the `>` arrow on any row to expand it and see a summary and waterfall time
 - A **waterfall timeline** showing how time was spent across spans
 - A service breakdown showing each service involved and its span count
 
-Two buttons in the top right of the expanded view let you:
+Three buttons in the top right of the expanded view let you:
 
 - **Analyze Trace** - send the trace to OpsPilot AI for analysis
-- **Expand all / Collapse all** - expand or collapse all spans in the waterfall at once
+- **Expand all** - expand all spans in the waterfall at once
+- **Collapse all** - collapse all spans in the waterfall at once
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.
