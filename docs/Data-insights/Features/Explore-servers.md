@@ -1,4 +1,4 @@
-# Servers
+﻿# Servers
 
 ![Servers overview](../../Data-insights/Features/images/Servers/new-servers.png)
 
@@ -62,7 +62,7 @@ You can configure warning and critical thresholds for key metrics directly from 
 
 ![Screenshot](../../Data-insights/Features/Servers/configuration.png)
 
-Click the thresholds icon in the top right of the overview to open the **Thresholds** panel. For each metric — **Process CPU**, **Heap Usage**, **Web Request Count**, **DB Throughput**, and **Error Count** — set a **Warning** and **Critical** value inline. Click **Save** to apply, or use the **reset** button to restore all values to their defaults. When a server's metric exceeds a configured threshold, its cube colour updates to reflect the alert level — orange for warning, red for critical.
+Click the thresholds icon in the top right of the overview to open the **Thresholds** panel. For each metric - **Process CPU**, **Heap Usage**, **Web Request Count**, **DB Throughput**, and **Error Count** - set a **Warning** and **Critical** value inline. Click **Save** to apply, or use the **reset** button to restore all values to their defaults. When a server's metric exceeds a configured threshold, its cube colour updates to reflect the alert level - orange for warning, red for critical.
 
 ## Server Details
 

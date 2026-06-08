@@ -1,4 +1,4 @@
-# Logs Drilldown
+﻿# Logs Drilldown
 
 ![!Screenshot](../../Data-insights/Features/images/logs-drilldown.png)
 
@@ -75,7 +75,7 @@ The **Fields** panel on the left lists all detected fields across your logs, alo
 
 ### Display options
 
-Use the icons on the right-hand side to adjust how logs are displayed — switch between **Logs**, **Table**, and **JSON** views, toggle **Newest logs first**, enable **Deduplication**, adjust font size, or **Download logs**.
+Use the icons on the right-hand side to adjust how logs are displayed - switch between **Logs**, **Table**, and **JSON** views, toggle **Newest logs first**, enable **Deduplication**, adjust font size, or **Download logs**.
 
 You can click and drag on the log volume chart to zoom into a specific time window.
 

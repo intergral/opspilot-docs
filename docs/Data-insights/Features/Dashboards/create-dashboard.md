@@ -1,4 +1,4 @@
-# Create a Dashboard
+﻿# Create a Dashboard
 
 Custom dashboards allow you to curate specific datasets into a single, cohesive view. Whether you are monitoring high-level infrastructure health or debugging a specific microservice, dashboards provide the visual context needed to make informed decisions.
 
@@ -7,22 +7,22 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 
 ## Before you start
 
-- **Permissions** — ensure your user profile has the necessary permissions to create and edit dashboards.
-- **Query knowledge** — familiarise yourself with the query language of your target data source (LogQL for logs, PromQL for metrics, or TraceQL for traces).
+- **Permissions** - ensure your user profile has the necessary permissions to create and edit dashboards.
+- **Query knowledge** - familiarise yourself with the query language of your target data source (LogQL for logs, PromQL for metrics, or TraceQL for traces).
 
 ---
 
 ## Steps
 
-**Step 1** — Select **Dashboards** from the navigation menu.
+**Step 1** - Select **Dashboards** from the navigation menu.
 
-**Step 2** — Click **New** in the top-right corner and select **New dashboard**.
+**Step 2** - Click **New** in the top-right corner and select **New dashboard**.
 
-**Step 3** — On the empty dashboard, click **+ Add visualization**.
+**Step 3** - On the empty dashboard, click **+ Add visualization**.
 
 ![Screenshot](/Getting-started/Tutorials/step3.png)
 
-**Step 4** — In the dialog box that opens, do one of the following:
+**Step 4** - In the dialog box that opens, do one of the following:
 
 - Select one of your existing data sources.
 - Select one of the built-in special data sources.
@@ -31,15 +31,15 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 !!! info
     The **Edit panel** view initially displays your chosen data source. You can modify the panel data source at any time using the drop-down in the **Query** tab.
 
-**Step 5** — Construct a query in the query language of your data source.
+**Step 5** - Construct a query in the query language of your data source.
 
-**Step 6** — Select the **Refresh dashboard** icon to query the data source.
+**Step 6** - Select the **Refresh dashboard** icon to query the data source.
 
-**Step 7** — In the visualization list, select a visualization type.
+**Step 7** - In the visualization list, select a visualization type.
 
-**Step 8** — Under **Panel options**, enter a title and description for your panel.
+**Step 8** - Under **Panel options**, enter a title and description for your panel.
 
-**Step 9** — Adjust panel settings as needed. Refer to the following for options:
+**Step 9** - Adjust panel settings as needed. Refer to the following for options:
 
 - [Configure value mappings](https://grafana.com/docs/grafana/latest/panels-visualizations/configure-value-mappings/)
 - [Visualization-specific options](https://grafana.com/docs/grafana/latest/panels-visualizations/visualizations/)
@@ -47,18 +47,18 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 - [Configure thresholds](/Data-insights/Features/Dashboards/configure-panels/#configure-thresholds)
 - [Configure standard options](https://grafana.com/docs/grafana/latest/panels-visualizations/configure-standard-options/)
 
-**Step 10** — Click **Save** to save the dashboard, or **Apply** to preview changes first, then save via the dashboard header.
+**Step 10** - Click **Save** to save the dashboard, or **Apply** to preview changes first, then save via the dashboard header.
 
-**Step 11** — Enter a summary of your dashboard changes.
+**Step 11** - Enter a summary of your dashboard changes.
 
-**Step 12** — Enter a title and select a folder.
+**Step 12** - Enter a title and select a folder.
 
 !!! info
     We recommend saving custom dashboards to the **General** folder.
 
-**Step 13** — Select **Save**.
+**Step 13** - Select **Save**.
 
-**Step 14** — To add more panels, click **Add** in the dashboard header and select **Visualization**.
+**Step 14** - To add more panels, click **Add** in the dashboard header and select **Visualization**.
 
 ---
 

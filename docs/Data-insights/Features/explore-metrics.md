@@ -1,4 +1,4 @@
-# Metrics Drilldown
+﻿# Metrics Drilldown
 
 ![!Screenshot](../../Data-insights/Features/images/metrics-main.png)
 
@@ -72,7 +72,7 @@ The main graph shows the selected metric over the chosen time range. Use **Selec
 
 ### Breakdown view
 
-The Breakdown tab is the default view after selecting a metric. It displays a grid of panels — one per label value — so you can see how the metric differs across instances, environments, jobs, or other dimensions.
+The Breakdown tab is the default view after selecting a metric. It displays a grid of panels - one per label value - so you can see how the metric differs across instances, environments, jobs, or other dimensions.
 
 - Use the **By label** dropdown to switch between label dimensions.
 - Switch between **Grid** and **Rows** layout using the view toggle.

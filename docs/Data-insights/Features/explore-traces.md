@@ -1,4 +1,4 @@
-# Traces Drilldown
+﻿# Traces Drilldown
 
 ![!Screenshot](../../Data-insights/Features/images/traces-main.png)
 
@@ -26,9 +26,9 @@ Navigate to **Traces Drilldown** from the left-hand sidebar to explore distribut
 
 Select the metric type to drive your investigation:
 
-- **Span rate** — requests per second across services
-- **Errors** — error rate over time
-- **Duration** — latency distribution across spans
+- **Span rate** - requests per second across services
+- **Errors** - error rate over time
+- **Duration** - latency distribution across spans
 
 The main graph updates to show the selected metric over the chosen time range.
 
@@ -40,7 +40,7 @@ The main graph updates to show the selected metric over the chosen time range.
 
 The default view. Shows how the selected metric breaks down across attribute values.
 
-- **Attributes panel** (left) — browse and search attributes by category: Favorites, All, Resource, Span
+- **Attributes panel** (left) - browse and search attributes by category: Favorites, All, Resource, Span
 - Common attributes include `resource.service.name`, `resource.service.namespace`, `k8s.pod.name`, `span.name`, `span.status`, `http.status_code`
 - Click **Add to filters** on any service card to scope the view
 - Switch between **Single**, **Grid**, and **Rows** view modes

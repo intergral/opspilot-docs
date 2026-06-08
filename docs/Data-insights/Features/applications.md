@@ -1,4 +1,4 @@
-# Applications
+﻿# Applications
 
 
 ![Applications overview](../../Data-insights/Features/images/Applications/new-applications-overview.png)
@@ -14,8 +14,8 @@ Navigate to **Applications** from the left-hand sidebar to view performance metr
 
 The Applications page displays an **Overview** of your applications, with two tabs:
 
-- **Servers** — view metrics grouped by server
-- **Applications** — view metrics grouped by application
+- **Servers** - view metrics grouped by server
+- **Applications** - view metrics grouped by application
 
 Use the **Application Filter** to search for a specific application by name.
 
@@ -78,7 +78,7 @@ Below the graphs, a **Traces** table lists recent transactions with:
 
 | Column | Description |
 |---|---|
-| **Trace ID** | Unique identifier — click to open the full trace |
+| **Trace ID** | Unique identifier - click to open the full trace |
 | **Start time** | When the transaction began |
 | **Service** | The service that handled the request |
 | **Name** | HTTP method (GET, POST, etc.) |

@@ -19,9 +19,9 @@ Click **Clear all** to reset all active filters.
 
 The **Log Rate** bar chart shows log volume over time, colour-coded by severity:
 
-- **Red**: Error logs
-- **Green**: Info logs
-- **Grey**: Unknown severity
+- <span style="color:#FF4D4D;">**Red**</span>: Error logs
+- <span style="color:#4CAF50;">**Green**</span>: Info logs
+- <span style="color:#9E9E9E;">**Grey**</span>: Unknown severity
 
 Hover over a bar to see the exact counts per severity at that timestamp. Use this chart to quickly spot spikes in error output.
 

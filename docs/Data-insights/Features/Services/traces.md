@@ -1,4 +1,4 @@
-# Traces
+﻿# Traces
 
 The Traces tab shows all traces for the selected service, with performance charts and a filterable trace list. Use it to investigate slow requests, errors, and individual spans in detail.
 
@@ -37,12 +37,34 @@ The **Traces** table lists individual traces with:
 
 | Column | Description |
 |---|---|
-| **Service and Operation** | The service name, operation, and span count |
+| **Service** | The service that originated the trace |
+| **Span Name** | The operation or endpoint name |
+| **Spans** | Total number of spans in the trace |
+| **Services** | Number of services involved in the trace |
 | **Trace ID** | The unique identifier for the trace |
 | **Started** | When the trace began |
 | **Duration** | Total end-to-end duration |
 
-Click any row to expand it and view the full span breakdown. The list shows up to 100 traces at a time.
+Traces with errors are highlighted in red with an **ERROR** badge.
+
+!!! info "`<root span not yet received>`"
+    This entry appears when child spans have been received but the root span hasn't arrived yet. This is usually transient - the root span typically arrives shortly after.
+
+## Expanded trace view
+
+![!Screenshot](expanded-trace.png)
+
+Click the `>` arrow on any row to expand it and see a summary and waterfall timeline for that trace:
+
+- **Service and span name** with an ERROR badge if the trace contains errors
+- **Duration**, **Services**, **Spans**, and **Kind** (e.g. `SPAN_KIND_CLIENT`)
+- A **waterfall timeline** showing how time was spent across spans
+- A service breakdown showing each service involved and its span count
+
+Two buttons in the top right of the expanded view let you:
+
+- **Analyze Trace** - send the trace to OpsPilot AI for analysis
+- **Expand all / Collapse all** - expand or collapse all spans in the waterfall at once
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

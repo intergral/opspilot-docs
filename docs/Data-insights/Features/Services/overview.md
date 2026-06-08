@@ -1,4 +1,4 @@
-# Services Overview
+﻿# Services Overview
 ![!Screenshot](services.png)
 
 <br>
@@ -24,7 +24,7 @@ Use the graph to quickly identify which services are upstream or downstream of a
 
 ![!Screenshot](services-graph.png)
 
-Each node shows the service's **average latency** and **request rate** directly on it. A red arc around the node indicates the **error rate** — the larger the arc, the higher the proportion of erroring requests. Connection lines between nodes show the latency and request rate for that specific call path, and arrows indicate the direction of the call.
+Each node shows the service's **average latency** and **request rate** directly on it. A red arc around the node indicates the **error rate** - the larger the arc, the higher the proportion of erroring requests. Connection lines between nodes show the latency and request rate for that specific call path, and arrows indicate the direction of the call.
 
 ### Node types
 
@@ -48,11 +48,11 @@ Similar services can be grouped together using the **Group peers by name similar
 Click any node to open a detailed panel showing:
 
 - **Throughput**, **Avg Latency**, **Errors/s**, and **Error Rate** for the service
-- **Inbound** connections — the upstream services calling this one, with their latency
-- **Outbound** connections — the downstream services this one calls, with their latency
+- **Inbound** connections - the upstream services calling this one, with their latency
+- **Outbound** connections - the downstream services this one calls, with their latency
 - Quick links to **View service detail**, **View traces**, and **View logs**
 
-Use the **Focus** button in the top right of the panel to isolate that service in the graph. Focus mode hides all unrelated nodes, leaving only the selected service and its direct inbound and outbound connections. A **Clear focus: [service name]** button appears in the top right of the graph panel — click it to return to the full graph.
+Use the **Focus** button in the top right of the panel to isolate that service in the graph. Focus mode hides all unrelated nodes, leaving only the selected service and its direct inbound and outbound connections. A **Clear focus: [service name]** button appears in the top right of the graph panel - click it to return to the full graph.
 
 ### Graph controls
 
@@ -66,7 +66,7 @@ The icons in the top right corner of the graph panel give you additional viewing
     | **Hierarchy (top-to-bottom)** | Rows by topological order; sources at the top |
     | **Force-directed** | Physics simulation; springs along edges, repulsion between nodes |
     | **Circle** | All nodes on a single ring |
-    | **Concentric** | Rings keyed by topological rank — sources at the centre |
+    | **Concentric** | Rings keyed by topological rank - sources at the centre |
     | **Radial tree** | Subtrees fan out as angular slices from the root |
     | **Grid** | Uniform grid, row-major insertion order |
 

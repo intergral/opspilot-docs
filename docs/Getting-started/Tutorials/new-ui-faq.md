@@ -1,4 +1,4 @@
-# New UI FAQ
+﻿# New UI FAQ
 
 Frequently asked questions about finding features in the new OpsPilot UI.
 
@@ -50,9 +50,9 @@ The new alerting system is built on Grafana Alertmanager and is more powerful th
 To purchase a subscription, navigate to **Administration** in the left-hand menu and click the gear icon on either the **Cloud Trial** or **On-Premise Subscription** box, then select **Manage Settings**.
 
 !!! info "Learn more"
-    [Cloud — Purchasing a Subscription](/Admin-and-data/Billing/Cloud/overview/#purchasing-a-subscription)
+    [Cloud - Purchasing a Subscription](/Admin-and-data/Billing/Cloud/overview/#purchasing-a-subscription)
 
-    [On-Premise — Purchasing a Subscription](/Admin-and-data/Billing/On-Premise/billing/#purchasing-a-subscription)
+    [On-Premise - Purchasing a Subscription](/Admin-and-data/Billing/On-Premise/billing/#purchasing-a-subscription)
 
 ---
 

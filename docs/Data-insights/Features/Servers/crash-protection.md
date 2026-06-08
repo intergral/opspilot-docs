@@ -1,4 +1,4 @@
-# Crash Protection
+﻿# Crash Protection
 
 Crash Protection is a diagnostic feature available starting in **version 2025.2**. It provides deep visibility into runtime behavior when a Crash Protection (CP) event occurs. The feature uploads detailed crash snapshots to the cloud, enabling analysis of system state at the moment a triggering exception or condition occurred.
 
@@ -95,7 +95,7 @@ Details about the specific request that was active when protection triggered:
 
 ### Associated requests
 
-Other requests or threads running at the same time are displayed in the **Running Requests** section. If empty, displays "No running requests" — indicating the system has recovered from the condition.
+Other requests or threads running at the same time are displayed in the **Running Requests** section. If empty, displays "No running requests" - indicating the system has recovered from the condition.
 
 ![Screenshot](running.png)
 
