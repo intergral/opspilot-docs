@@ -1,4 +1,4 @@
-# Jira
+# Jira Integration
 
 Connect OpsPilot to Jira to automatically create issues from alerts and incidents.
 

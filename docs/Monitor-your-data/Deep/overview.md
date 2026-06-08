@@ -1,4 +1,4 @@
-FusionReactor seamlessly integrates with Deep, a dynamic monitoring tool that enhances existing monitoring capabilities in real-time. Deep, facilitates the collection of application data precisely when it's needed. This user-friendly, and cost-effective solution dynamically instruments applications, to ensure seamless runtime application observability.
+OpsPilot integrates with Deep, a dynamic instrumentation tool that enhances observability by collecting application data in real-time — without redeployment. Deep dynamically instruments applications to ensure seamless runtime observability, gathering the data you need precisely when you need it.
 
 At the heart of Deep lies its powerful query language, DeepQL. A monitoring-centric query and command language, that draws inspiration from PromQL, streamlines the real-time addition and manipulation of logs, metrics, traces, and live data snapshots. This empowers users with more effective debugging, heightened system visibility, and improved performance monitoring capabilities.
 
@@ -19,7 +19,7 @@ At the heart of Deep lies its powerful query language, DeepQL. A monitoring-cent
 
 ## Deep in FusionReactor
 
-To use **Deep** in FusionReactor Cloud, navigate to the **Explore** page and select the Deep datasource.
+To use **Deep** in OpsPilot, navigate to the **Explore** page and select the Deep datasource.
 
 ![!Screenshot](/Monitor-your-data/Deep/images/deep1.png)
 

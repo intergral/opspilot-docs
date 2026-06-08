@@ -1,4 +1,4 @@
-# Servers
+﻿# Servers
 
 ![Servers overview](../../Data-insights/Features/images/Servers/new-servers.png)
 
@@ -26,7 +26,6 @@ This table describes the key elements you'll see on the **Overview** dashboard.
 | **Server Cube Icon** | Each cube represents an individual server or a cluster/group of servers (e.g., `group: canary`). |
 | **Cube Labeling** | Provides the Group/Environment name (top line) and the **instance name** on the bottom line for clear identification. |
 | **Live Toggle** | Indicates if the view is displaying real-time data updates. |
-| **Quick Nav** | A dropdown menu that provides immediate, centralized access to the main areas of the platform from any screen. |
 
 
 ## Visual indicators
@@ -57,12 +56,13 @@ Small indicator bars displayed on the cube provide instantaneous utilization and
 | **R** | Web **Request** count | The rate of incoming requests or the average time taken to process a request. |
 | **D** | App **Database** Throughput Count | Monitors the number of database operations/queries handled by the application per unit time.
 
-## Quick Nav
+## Editing thresholds
 
-The Quick Nav is a dropdown menu providing immediate, centralized access to the most frequently used views - **Home, Overview, Applications, Servers, and Configuration**.
+You can configure warning and critical thresholds for key metrics directly from the Servers Overview page.
 
-![Screenshot](../../Data-insights/Features/Servers/quick-nav.png)
+![Screenshot](../../Data-insights/Features/Servers/configuration.png)
 
+Click the thresholds icon in the top right of the overview to open the **Thresholds** panel. For each metric - **Process CPU**, **Heap Usage**, **Web Request Count**, **DB Throughput**, and **Error Count** - set a **Warning** and **Critical** value inline. Click **Save** to apply, or use the **reset** button to restore all values to their defaults. When a server's metric exceeds a configured threshold, its cube colour updates to reflect the alert level - orange for warning, red for critical.
 
 ## Server Details
 
@@ -71,7 +71,7 @@ When you click on a Server cube from the System Overview dashboard, you'll be ta
 
 This detailed view is organized into top-level tabs that provide comprehensive diagnostics and monitoring capabilities:
 
-- **UI Tunnel** - Access your on-premises application's user interface directly through FusionReactor Cloud.
+- **UI Tunnel** - Access your on-premises application's user interface directly through OpsPilot.
 
 - **Metrics** - Performance metrics and resource utilization data.
 
@@ -87,7 +87,7 @@ Each tab provides specialized tools for monitoring and troubleshooting your Fusi
 
 ## UI Tunnel
 
-The **UI Tunnel** in FusionReactor is a specialized feature that enables secure remote access to the detailed, local user interface (UI) of an on-premises FusionReactor Agent through the FusionReactor Cloud platform. You can also filter the UI Tunnel view by **job** to focus on specific tasks or workloads.
+The **UI Tunnel** in FusionReactor is a specialized feature that enables secure remote access to the detailed, local user interface (UI) of an on-premises FusionReactor Agent through the OpsPilot platform. You can also filter the UI Tunnel view by **job** to focus on specific tasks or workloads.
 
 ![Screenshot](../../Data-insights/Features/Servers/tunnel-view.png)
 
@@ -107,7 +107,20 @@ The **Metrics** tab provides an historic view of your server’s performance and
 
 ![Screenshot](../../Data-insights/Features/Servers/metrics.png)
 
-The boxes at the top display the latest collected performance metrics for the selected instance, based on the selected time range.
+The **Stats** section displays key performance metrics as a grid of cards across the top of the page. Use the **Stat show as** dropdown in the filter bar to control which aggregate function is applied to the values shown:
+
+| Option | Description |
+|---|---|
+| **Last** | The most recent value recorded in the selected time range |
+| **First** | The first value recorded in the selected time range |
+| **Min** | The lowest value recorded |
+| **Max** | The highest value recorded |
+| **Mean** | The arithmetic average across the time range |
+| **Median** | The middle value when all data points are sorted |
+| **Mode** | The most frequently occurring value |
+| **Total** | The sum of all values across the time range |
+
+Use the **Select Group**, **Select Job**, and **Select Instance** dropdowns alongside **Stat show as** to filter the stats and graphs to a specific server or service.
 
 | **Metric**                         | **Description**                                           | **Why It’s Useful**                                            |
 | ---------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------- |
@@ -128,7 +141,7 @@ The boxes at the top display the latest collected performance metrics for the se
 
 Each graph provides **historical trends** for the metrics shown below.
 
-![Screenshot](../../Data-insights/Features/Servers/metrics.png)
+![Screenshot](../../Data-insights/Features/Servers/metrics2.png)
 
 You can:
 
@@ -150,45 +163,13 @@ This helps with **root-cause analysis** - understanding what led to a performanc
 
 ![Screenshot](../../Data-insights/Features/Servers/graph.png)
 
-The top-right corner of each metric graph contains action icons that may vary depending on the dashboard and metric type:
+The top-right corner of each metric graph contains three action icons:
 
-1. **Edit Threshold** - Configure alert thresholds for this metric to receive notifications when values exceed defined limits (available on select dashboards).
+1. **Ask AI** - Send this metric to OpsPilot AI for natural language explanations and analysis of patterns or anomalies.
 
-2. **View Logs** - Access related log entries for the time period and service shown in the graph to investigate issues.
+2. **Full screen** - Open the metric in full-screen view for detailed analysis and extended time ranges.
 
-3. **Ask OpsPilot** - Send this metric to OpsPilot AI for natural language explanations and analysis of patterns or anomalies.
-
-4. **Expand Graph** - Open the metric in full-screen view for detailed analysis and extended time ranges.
-
-These actions provide quick access to troubleshooting and monitoring capabilities directly from the metric visualization. Note that not all actions are available for every metric or dashboard type.
-
-
-### Threshold Configuration 
-
-The **Configuration** page allows you to set and manage warning and critical thresholds for key performance metrics across your application. Thresholds help you identify performance degradation early - when a metric exceeds a configured limit, it triggers visual alerts in dashboards and monitoring panels.
-
-You can adjust thresholds individually on certain graphs using the icon in the top right, or view and edit all thresholds in one place via **Quick Nav** → **Configuration**. 
-
-![Screenshot](../../Data-insights/Features/Servers/configuration.png)
-
-
-#### Setting threshold values
-
-The **Edit Threshold** dialog allows you to configure two levels:
-
-- **Warning** - Set a threshold for early notification of potential issues (e.g., CPU at 50%)
-- **Critical** - Set a threshold for urgent alerts requiring immediate attention (e.g., CPU at 80%)
-
-Enter numeric values appropriate for the metric type. Percentage-based metrics use values from 0-100, while other metrics accept values based on their unit of measurement.
-
-Once configured, thresholds appear as visual indicators in metric panels across the application. When a metric value exceeds:
-
-- The **Warning** threshold - displayed with a yellow/orange indicator.
-- The **Critical** threshold - displayed with a red indicator.
-
-This visual feedback helps you quickly identify performance issues across your monitored services.
-
-Click **Update Thresholds** to apply your configuration. The new thresholds take effect immediately and will be used for all future metric evaluations.
+3. **Edit thresholds** - Configure warning and critical thresholds for this metric inline using the toggle. When a metric exceeds a threshold, it is highlighted visually in the stat cards and graphs.
 
 
 ### Filters & Controls

@@ -1,4 +1,4 @@
-
+# Search Snapshots
 
 To search for triggered snapshots, open **Explore**, select the **Deep** data source, and choose **Search**.  
 

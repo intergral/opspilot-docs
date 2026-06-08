@@ -1,3 +1,5 @@
+# Anomaly Detection User Guide
+
 ![!Screenshot](../../images/Anomaly-detection/overview.png)
 
 ## Anomaly Detection feature in OpsPilot

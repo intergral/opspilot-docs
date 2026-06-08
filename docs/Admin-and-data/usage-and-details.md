@@ -1,6 +1,6 @@
-# Usage & Details
+﻿# Usage & Details
 
-The **Usage & Details** page gives you a real-time view of your subscription, current ingest usage, and upcoming bill — all in one place.
+The **Usage & Details** page gives you a real-time view of your subscription, current ingest usage, and upcoming bill - all in one place.
 
 ## Subscription
 
@@ -21,9 +21,9 @@ The following actions are available from the Subscription panel:
 
 | Icon | Action |
 |---|---|
-| Key | **View Licenses** — view your license keys |
-| Gear | **Manage Subscription** — update your plan or seats |
-| Red cancel | **Cancel Subscription** — cancel your current subscription |
+| Key | **View Licenses** - view your license keys |
+| Gear | **Manage Subscription** - update your plan or seats |
+| Red cancel | **Cancel Subscription** - cancel your current subscription |
 
 ## Usage
 
@@ -31,14 +31,14 @@ The **Usage** panel shows your current consumption against your plan limits for 
 
 | Signal | Description |
 |---|---|
-| **Agents — Ultimate** | FusionReactor Ultimate agent hours consumed vs allowance |
-| **Agents — Developer** | FusionReactor Developer agent hours consumed vs allowance |
+| **Agents - Ultimate** | FusionReactor Ultimate agent hours consumed vs allowance |
+| **Agents - Developer** | FusionReactor Developer agent hours consumed vs allowance |
 | **Metrics** | Number of active metric series vs allowance |
 | **Logs** | Volume of log data ingested vs allowance |
 | **Traces** | Volume of trace data ingested vs allowance |
 | **AI Tokens** | OpsPilot AI tokens consumed vs allowance |
 
-A progress bar shows the percentage of your allowance used. Each signal also shows a **Forecast** — a projection of your total usage by the end of the current pay period based on your current consumption rate. This helps you anticipate overages before they happen.
+A progress bar shows the percentage of your allowance used. Each signal also shows a **Forecast** - a projection of your total usage by the end of the current pay period based on your current consumption rate. This helps you anticipate overages before they happen.
 
 If you exceed your plan limit, on-demand billing applies for the overage.
 

@@ -1,3 +1,5 @@
+# Silences
+
 Silences temporarily suppress alert notifications without stopping the alert evaluation process itself. Use them to prevent notification noise during known events, such as scheduled maintenance windows or active incident response.
 
 ## Suppressing Notifications: Silences vs. Mute Timings

@@ -1,4 +1,4 @@
-# Slack
+# Slack Integration
 
 Connect OpsPilot to Slack to receive alert notifications and incident updates directly in your Slack channels.
 

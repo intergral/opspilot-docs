@@ -3,6 +3,35 @@
     text-align: center; /* Center the button text */
 }
 
+/* Side-by-side intro: video left, text right */
+.intro-with-video {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.intro-with-video .video-side {
+  flex: 1;
+}
+
+.intro-with-video .video-side iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
+}
+
+.intro-with-video .intro-text {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .intro-with-video {
+    flex-direction: column;
+  }
+}
+
 /* Responsive video embeds */
 .video-wrapper {
   position: relative;

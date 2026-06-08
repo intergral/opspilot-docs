@@ -1,6 +1,6 @@
-# FusionReactor Agent
+﻿# FusionReactor Agent
 
-The FusionReactor agent provides deep visibility into ColdFusion, Java, and Lucee applications, automatically capturing metrics, traces, logs, and request data — no code changes required.
+The FusionReactor agent provides deep visibility into ColdFusion, Java, and Lucee applications, automatically capturing metrics, traces, logs, and request data - no code changes required.
 
 ---
 

@@ -24,21 +24,22 @@ theme:
     text: 'Inter'
     code: 'monospace'
   palette:
-    - scheme: default
-      primary: custom
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
     - scheme: slate
       primary: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 
 
 nav:
   - WELCOME:
      - Get Started: index.md
+     - What is OpsPilot?: what-is-opspilot.md
      - UI Overview: Data-insights/Features/overview.md
   - AI:
      - Coworker:
@@ -74,9 +75,23 @@ nav:
      - Ticketing:
         - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
   - MONITORING:
-     - Servers: Data-insights/Features/Explore-servers.md
+     - Servers:
+        - Overview: Data-insights/Features/Servers/overview.md
+        - UI Tunnel: Data-insights/Features/Servers/ui-tunnel.md
+        - Metrics: Data-insights/Features/Servers/metrics.md
+        - Logs: Data-insights/Features/Servers/logs.md
+        - Traces: Data-insights/Features/Servers/traces.md
+        - Info: Data-insights/Features/Servers/info.md
+        - Crash Protection: Data-insights/Features/Servers/crash-protection.md
+        - FAQ: Data-insights/Features/Servers/faq.md
      - Applications: Data-insights/Features/applications.md
      - Database: Data-insights/Features/database.md
+     - Services:
+        - Overview: Data-insights/Features/Services/overview.md
+        - Service Detail: Data-insights/Features/Services/service-detail.md
+        - Traces: Data-insights/Features/Services/traces.md
+        - Logs: Data-insights/Features/Services/logs.md
+        - FAQ: Data-insights/Features/Services/faq.md
      - Kubernetes:
         - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
         - Shipping data: Monitor-your-data/Kubernetes-monitoring/Shipping.md

@@ -1,8 +1,8 @@
-# About Dashboards
+﻿# About Dashboards
 
 ![Dashboards](/Data-insights/Features/images/dashboards.png)
 
-Dashboards combine metrics, logs, and trace data in one place to give you a complete picture of your environment. Use them to monitor infrastructure health, debug application issues, or track business metrics — all in a single view.
+Dashboards combine metrics, logs, and trace data in one place to give you a complete picture of your environment. Use them to monitor infrastructure health, debug application issues, or track business metrics - all in a single view.
 
 Navigate to **Dashboards** from the left-hand menu in OpsPilot to land on the **Home** dashboard.
 
@@ -10,7 +10,7 @@ Navigate to **Dashboards** from the left-hand menu in OpsPilot to land on the **
 
 ## The Home dashboard
 
-The Home dashboard is your central hub for navigating all pre-built and custom dashboards. It is organised into sections — **Metrics Dashboards**, **Logs Dashboards**, **Favorite Dashboards**, and **About Dashboards** — so you can quickly find what you need.
+The Home dashboard is your central hub for navigating all pre-built and custom dashboards. It is organised into sections - **Metrics Dashboards**, **Logs Dashboards**, **Favorite Dashboards**, and **About Dashboards** - so you can quickly find what you need.
 
 ### Variable filters
 
@@ -117,7 +117,7 @@ Pre-built dashboards for monitoring application and infrastructure metrics from 
 Some dashboards are marked as experimental. This allows us to continually roll out new concepts before they are fully production-ready. These dashboards may contain issues as we continue to refine and develop them.
 
 !!! info
-    Dashboards will continue to evolve — over time we will add new sets of dashboards and improve existing dashboards provisioned to your account.
+    Dashboards will continue to evolve - over time we will add new sets of dashboards and improve existing dashboards provisioned to your account.
 
 ---
 
@@ -130,7 +130,7 @@ When viewing any individual dashboard, the header provides the following control
 | **Star icon** | Add the dashboard to your Favourites |
 | **Make editable** | Enable edit mode to modify the dashboard layout and panels |
 | **Export** | Export the dashboard as a JSON file |
-| **Share** | Share the dashboard — choose **Share internally** (share with other users in your organisation), **Share externally** (generate a public link), or **Share snapshot** (capture a static point-in-time snapshot) |
+| **Share** | Share the dashboard - choose **Share internally** (share with other users in your organisation), **Share externally** (generate a public link), or **Share snapshot** (capture a static point-in-time snapshot) |
 | **Time picker** | Set the time range for all panels (e.g. Last 1 hour) |
 | **Refresh** | Manually refresh panel data, or set an auto-refresh interval |
 
