@@ -1,8 +1,8 @@
-# Billing
+﻿# Billing
 
 OpsPilot uses a unified billing model that covers both on-premise and cloud usage in one place.
 
-If you’re already running the FusionReactor agent on-premise, you can enable OpsPilot cloud features with a single click — no migration, no reconfiguration, and no change to your existing FusionReactor pricing. The FusionReactor agent costs the same whether it runs purely on-premise or connected to OpsPilot.
+If you’re already running the FusionReactor agent on-premise, you can enable OpsPilot cloud features with a single click - no migration, no reconfiguration, and no change to your existing FusionReactor pricing. The FusionReactor agent costs the same whether it runs purely on-premise or connected to OpsPilot.
 
 To get started, sign up for a free, no-obligation [trial](https://app.opspilot.com/auth/register). All plan and subscription management is handled within the app.
 
@@ -29,14 +29,14 @@ To get started, sign up for a free, no-obligation [trial](https://app.opspilot.c
 |**Plan**| **Price** | **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**|
 |------------ | ------------- | ------------ | ----------- | ------ |-----|
 **Trial** | FREE | Unlimited |Unlimited| Unlimited| 1,000 |
-**Onprem** | $0/mo | — | — | — | — |
+**Onprem** | $0/mo | - | - | - | - |
 **Starter** | $49 (A) <br> $59 (M) | 10,000 | 25 | 25 | 500 |
 **Pro** | $249 (A) <br> $299 (M) | 20,000 | 100 | 100 | 5,000 |
 **Advanced** | $899 (A) <br> $1,079 (M) | 50,000 | 250 | 250 | 20,000 |
-**FusionReactor Ultimate** | $79 (A)<br> $95 (M) /seat | 5,000 | 2 GB | 2 GB | — |
-**FusionReactor Developer** | $25/mo /seat | — | — | — | — |
-**Metric Shipping** | $59/mo | — | — | — | — |
-**Historical data retention** | | 13 months | 30 days | 30 days | — |
+**FusionReactor Ultimate** | $79 (A)<br> $95 (M) /seat | 5,000 | 2 GB | 2 GB | - |
+**FusionReactor Developer** | $25/mo /seat | - | - | - | - |
+**Metric Shipping** | $59/mo | - | - | - | - |
+**Historical data retention** | | 13 months | 30 days | 30 days | - |
 
 !!! info
     Custom dashboards are available on all plans at no additional cost.
@@ -49,7 +49,7 @@ To get started, sign up for a free, no-obligation [trial](https://app.opspilot.c
 
 ### Onprem
 
-The **Onprem** plan is for teams running the FusionReactor agent in their own infrastructure. It has no base cost — you pay only for the on-premise seats you need.
+The **Onprem** plan is for teams running the FusionReactor agent in their own infrastructure. It has no base cost - you pay only for the on-premise seats you need.
 
 | | **Price** |
 |---|---|

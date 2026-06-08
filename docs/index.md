@@ -1,4 +1,4 @@
-# Get Started with OpsPilot
+﻿# Get Started with OpsPilot
 
 ![Get Started with OpsPilot](images/get-started.png)
 
@@ -9,7 +9,7 @@ OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and AI SR
 
 ---
 
-## Step 1 — Create your account
+## Step 1 - Create your account
 
 Navigate to [app.opspilot.com/auth/register](https://app.opspilot.com/auth/register) and sign up. Once signed in, you will be prompted to set up your organization.
 
@@ -26,7 +26,7 @@ Each section tells you exactly what to install or configure to start seeing data
 
 ---
 
-## Step 2 — Instrument your application
+## Step 2 - Instrument your application
 
 Send telemetry from your applications using OpenTelemetry or the [FusionReactor agent](/Data-insights/Features/Integrations/SDKs/fusionreactor/).
 
@@ -94,7 +94,7 @@ Or deploy an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping
 
 ---
 
-## Step 3 — Connect your infrastructure
+## Step 3 - Connect your infrastructure
 
 Get metrics, logs, and traces flowing from your infrastructure using **Grafana Alloy** or standalone **OpenTelemetry exporters**.
 
@@ -106,12 +106,12 @@ Get metrics, logs, and traces flowing from your infrastructure using **Grafana A
 
 [Grafana Alloy](https://grafana.com/docs/alloy/latest/) is a flexible, vendor-neutral collector that can scrape, transform, and forward all three signal types in a single agent.
 
-!!! info "Integration Hub — coming soon"
+!!! info "Integration Hub - coming soon"
     A full self-serve Integration Hub with one-click setup for cloud providers, databases, Kubernetes, and more is on the way. Watch this space.
 
 ---
 
-## Step 4 — Query with AI
+## Step 4 - Query with AI
 
 Once data is flowing, OpsPilot's AI works in two ways:
 
@@ -120,7 +120,7 @@ Once data is flowing, OpsPilot's AI works in two ways:
 
 ---
 
-## Step 5 — Explore your data
+## Step 5 - Explore your data
 
 Dive deeper into your data using the built-in drilldown tools.
 

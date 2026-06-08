@@ -1,4 +1,4 @@
-# Billing FAQ
+﻿# Billing FAQ
 
 ## How is usage calculated?
 
@@ -16,10 +16,10 @@ Different data types are calculated differently each billing period:
 
 The most common causes are:
 
-- **Metrics cardinality** — A spike in unique metric series (e.g. a deployment creating many new label combinations) can push your mean average up.
-- **Log volume** — Verbose log levels (DEBUG, TRACE) generate significantly more data than INFO or WARN.
-- **Trace volume** — A high-traffic application with 100% sampling will ingest traces rapidly.
-- **AI token usage** — Long, multi-turn OpsPilot AI conversations consume tokens quickly as previous context is included in each request.
+- **Metrics cardinality** - A spike in unique metric series (e.g. a deployment creating many new label combinations) can push your mean average up.
+- **Log volume** - Verbose log levels (DEBUG, TRACE) generate significantly more data than INFO or WARN.
+- **Trace volume** - A high-traffic application with 100% sampling will ingest traces rapidly.
+- **AI token usage** - Long, multi-turn OpsPilot AI conversations consume tokens quickly as previous context is included in each request.
 
 Use the [Billing usage dashboard](/Admin-and-data/Billing/Cloud/overview/#billing-usage) for a full breakdown of where costs are coming from.
 
@@ -47,27 +47,27 @@ Common values:
 
 Optimize at the collector level:
 
-- **Traces** — Configure a [tail sampling processor](https://grafana.com/docs/alloy/latest/) to drop low-value spans.
-- **Logs** — Add a filter stage to drop DEBUG/TRACE log levels or noisy sources before they are sent.
-- **Metrics** — Increase scrape intervals or use relabelling to drop unused metric series.
+- **Traces** - Configure a [tail sampling processor](https://grafana.com/docs/alloy/latest/) to drop low-value spans.
+- **Logs** - Add a filter stage to drop DEBUG/TRACE log levels or noisy sources before they are sent.
+- **Metrics** - Increase scrape intervals or use relabelling to drop unused metric series.
 
 ### OpsPilot AI tokens
 
-- Keep queries focused and concise — long conversations accumulate context quickly.
+- Keep queries focused and concise - long conversations accumulate context quickly.
 - Start a new conversation rather than extending a very long one.
 
 ## What happens when I exceed my plan limits?
 
-Usage beyond your plan's included allowance is billed at [on-demand rates](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs). There is no hard cutoff — data continues to be ingested and you are charged for the overage at the end of the billing period.
+Usage beyond your plan's included allowance is billed at [on-demand rates](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs). There is no hard cutoff - data continues to be ingested and you are charged for the overage at the end of the billing period.
 
 ## How do I set up a billing alert?
 
 You can create an alert using the data usage metrics to notify you before you exceed your allowance:
 
-- `fr_logs_bytes_received` — alert when log ingestion approaches your plan limit
-- `fr_traces_bytes_received` — alert when trace ingestion approaches your plan limit
-- `fr_metrics_series_count` — alert when your metric series count approaches your plan limit
-- `fr_usage_minutes` — alert when FR instance hours approach your seat allowance
+- `fr_logs_bytes_received` - alert when log ingestion approaches your plan limit
+- `fr_traces_bytes_received` - alert when trace ingestion approaches your plan limit
+- `fr_metrics_series_count` - alert when your metric series count approaches your plan limit
+- `fr_usage_minutes` - alert when FR instance hours approach your seat allowance
 
 !!! info "Learn more"
     [Create an alert rule](/Data-insights/Features/Alerting/Alert-Rules/Configure-rules/)

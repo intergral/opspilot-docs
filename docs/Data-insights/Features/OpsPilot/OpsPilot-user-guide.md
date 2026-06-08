@@ -1,8 +1,8 @@
-
+﻿
 
 # User Guide
 
-OpsPilot is your AI-powered operations platform, combining autonomous background monitoring with an on-demand chat interface. Use the chat to investigate issues, query your telemetry in plain English, and get AI-guided analysis — without writing queries or navigating dashboards manually.
+OpsPilot is your AI-powered operations platform, combining autonomous background monitoring with an on-demand chat interface. Use the chat to investigate issues, query your telemetry in plain English, and get AI-guided analysis - without writing queries or navigating dashboards manually.
 
 
 
@@ -55,7 +55,7 @@ This feature was added primarily for **privacy control**. While web search is he
 
 ## Suggestions
 
-When you start a new conversation, OpsPilot displays a set of **Suggestions** — pre-built questions based on common observability scenarios. Clicking a suggestion sends it directly as your first message, giving you a fast starting point without needing to type anything.
+When you start a new conversation, OpsPilot displays a set of **Suggestions** - pre-built questions based on common observability scenarios. Clicking a suggestion sends it directly as your first message, giving you a fast starting point without needing to type anything.
 
 Suggestions cover areas such as errors, performance, network latency, and database health. You can also ignore them entirely and type your own question in the message box at the bottom of the screen.
 
@@ -139,9 +139,9 @@ Click the OpsPilot AI button to send error details to OpsPilot. It will explain 
 
 Highlight any decompiled code and right-click to access three options:
 
-- **Debug code** — flags potential error causes
-- **Explain code** — explains what the code does
-- **Suggest optimization** — recommends readability and performance improvements
+- **Debug code** - flags potential error causes
+- **Explain code** - explains what the code does
+- **Suggest optimization** - recommends readability and performance improvements
 
 ![!Screenshot](/Data-insights/Features/OpsPilot/images/codehelp1.png)
 

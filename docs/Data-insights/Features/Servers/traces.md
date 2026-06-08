@@ -2,7 +2,7 @@
 
 The Traces tab shows all traces for the selected service, with performance charts and a filterable trace list. Use it to investigate slow requests, errors, and individual spans in detail.
 
-![!Screenshot](traces.png)
+![!Screenshot](traces2.png)
 
 ## Filters
 
@@ -52,7 +52,7 @@ Traces with errors are highlighted in red with an **ERROR** badge.
 
 ## Expanded trace view
 
-![!Screenshot](expanded-trace.png)
+![!Screenshot](expanded-trace-view.png)
 
 Click the `>` arrow on any row to expand it and see a summary and waterfall timeline for that trace:
 

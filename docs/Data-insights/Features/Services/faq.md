@@ -4,7 +4,11 @@
 
 ### What is the difference between Services, Servers, and Applications?
 
-**Services** shows your instrumented services as reported via OpenTelemetry traces, focusing on request flow, latency, errors, and inter-service dependencies. **Servers** shows FR agent server-level metrics such as CPU, memory, and disk for the hosts your services run on. **Applications** shows FR agent application and JVM-level metrics. Use Services when you want to understand how requests move through your system; use Servers or Applications when you want to investigate the FR agent data underneath.
+| | **Services** | **Servers** | **Applications** |
+|---|---|---|---|
+| **Data source** | OpenTelemetry traces | FusionReactor agent | FusionReactor agent |
+| **What it shows** | Service dependency graph - request flow, latency, errors, and inter-service dependencies | Host-level metrics - CPU, memory, request counts, database throughput | Application and JVM-level metrics |
+| **Use when** | Understanding how requests move through your system | Investigating the host or instance health underneath your services | Investigating application-level performance |
 
 ### Why is a service not appearing in the Service Graph or table?
 

@@ -1,6 +1,6 @@
-# Infrastructure Monitoring
+﻿# Infrastructure Monitoring
 
-OpsPilot collects infrastructure metrics, logs, and traces using **Grafana Alloy** — a lightweight, vendor-neutral collector that runs on your hosts and pipelines telemetry signals to OpsPilot in a single agent.
+OpsPilot collects infrastructure metrics, logs, and traces using **Grafana Alloy** - a lightweight, vendor-neutral collector that runs on your hosts and pipelines telemetry signals to OpsPilot in a single agent.
 
 Grafana Alloy is the recommended approach for infrastructure monitoring. It replaces the need for separate scraping agents by combining metric collection, log tailing, and trace forwarding into one configurable pipeline.
 
@@ -35,9 +35,9 @@ Alloy is the recommended way to collect infrastructure telemetry from Kubernetes
 
 ### Deployment options
 
-- **Helm chart** — the [Grafana k8s-monitoring Helm chart](https://github.com/grafana/k8s-monitoring-helm) bundles Alloy with pre-built pipelines for all signal types
-- **Operator** — the [Grafana Agent Operator](https://grafana.com/docs/agent/latest/operator/) manages Alloy deployments via Kubernetes CRDs
-- **Manual manifest** — deploy Alloy directly using a DaemonSet manifest and configure it with a ConfigMap
+- **Helm chart** - the [Grafana k8s-monitoring Helm chart](https://github.com/grafana/k8s-monitoring-helm) bundles Alloy with pre-built pipelines for all signal types
+- **Operator** - the [Grafana Agent Operator](https://grafana.com/docs/agent/latest/operator/) manages Alloy deployments via Kubernetes CRDs
+- **Manual manifest** - deploy Alloy directly using a DaemonSet manifest and configure it with a ConfigMap
 
 ---
 
@@ -76,16 +76,16 @@ Alloy can be deployed on cloud VMs and managed services to collect infrastructur
 
 Alloy runs anywhere you can install a binary or container:
 
-- **Bare metal / on-premise** — install Alloy as a systemd service on Linux or a Windows service, point it at your exporters and log files
-- **Docker / Docker Compose** — run Alloy as a sidecar or standalone container with a mounted config file
-- **VMs (any cloud)** — deploy via your standard provisioning tooling (Ansible, Terraform, cloud-init)
+- **Bare metal / on-premise** - install Alloy as a systemd service on Linux or a Windows service, point it at your exporters and log files
+- **Docker / Docker Compose** - run Alloy as a sidecar or standalone container with a mounted config file
+- **VMs (any cloud)** - deploy via your standard provisioning tooling (Ansible, Terraform, cloud-init)
 
 ---
 
 ## Getting started with Alloy
 
 1. [Install Grafana Alloy](https://grafana.com/docs/alloy/latest/get-started/install/) on your target hosts
-2. Configure an Alloy pipeline for your signals — see the [Grafana Alloy shipping guide](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) for OpsPilot-specific configuration
+2. Configure an Alloy pipeline for your signals - see the [Grafana Alloy shipping guide](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) for OpsPilot-specific configuration
 3. Point the OTLP exporter at your OpsPilot endpoint using your API key
 4. Verify data is flowing in the [Overview](/Data-insights/Features/overview/) page
 

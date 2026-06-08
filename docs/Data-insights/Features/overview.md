@@ -14,7 +14,18 @@ Once your environment is sending data, the Overview page shows a full observabil
 
 ### Services
 
-The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour.
+The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour. Use the **Overview show as** dropdown to change the aggregate function applied to the stat values:
+
+| Option | Description |
+|---|---|
+| **Last** | The most recent value recorded in the selected time range |
+| **First** | The first value recorded in the selected time range |
+| **Min** | The lowest value recorded |
+| **Max** | The highest value recorded |
+| **Mean** | The arithmetic average across the time range |
+| **Median** | The middle value when all data points are sorted |
+| **Mode** | The most frequently occurring value |
+| **Total** | The sum of all values across the time range |
 
 | Metric | Description |
 |---|---|
