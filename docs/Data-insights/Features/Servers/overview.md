@@ -4,14 +4,14 @@
 
 View and manage your FusionReactor agent servers and instances.
 
-Navigate to **Servers** from the left-hand sidebar to see a visual overview of all monitored servers. The System Overview provides quick identification of performance issues, health states, and environment status at a glance.
+Navigate to **Servers** from the left-hand sidebar to see a visual overview of all monitored servers. The System Overview provides quick identification of performance issues and health states at a glance.
 
 
 ## Key features
 
 - **Quick status check**: Visually assess the health and performance of your server fleet without needing to drill down into individual metrics.
 
-- **Environment segregation**: Servers are grouped by environment (e.g.,`canary`, `stg_staging`, `prod`), allowing for easy filtering and environment-specific health checks.
+- **Group organisation**: Servers are grouped by their FusionReactor group name, allowing for easy filtering and group-specific health checks.
 
 - **Immediate issue identification**: Color-coding and visual states quickly draw attention to servers or groups experiencing issues.
 
@@ -24,7 +24,7 @@ This table describes the key elements you'll see on the **Overview** dashboard.
 | **Filter Bar (Group, All)** | Use this bar to filter the displayed server cubes based on server groups. |
 | **System Overview** | The main area where all monitored servers or server groups are displayed as 3D cube icons. |
 | **Server Cube Icon** | Each cube represents an individual server or a cluster/group of servers (e.g., `group: canary`). |
-| **Cube Labeling** | Provides the Group/Environment name (top line) and the **instance name** on the bottom line for clear identification. |
+| **Cube Labeling** | Provides the FusionReactor group name (top line) and the **instance name** on the bottom line for clear identification. |
 | **Live Toggle** | Indicates if the view is displaying real-time data updates. |
 
 
@@ -56,11 +56,11 @@ Small indicator bars displayed on the cube provide instantaneous utilization and
 | **R** | Web **Request** count | The rate of incoming requests or the average time taken to process a request. |
 | **D** | App **Database** Throughput Count | Monitors the number of database operations/queries handled by the application per unit time. |
 
-## Editing thresholds
+## Thresholds
 
 You can configure warning and critical thresholds for key metrics directly from the Servers Overview page.
 
-![Screenshot](configuration.png)
+![Screenshot](edit-threshold.png)
 
 Click the thresholds icon in the top right of the overview to open the **Thresholds** panel. For each metric - **Process CPU**, **Heap Usage**, **Web Request Count**, **DB Throughput**, and **Error Count** - set a **Warning** and **Critical** value inline. Click **Save** to apply, or use the **reset** button to restore all values to their defaults. When a server's metric exceeds a configured threshold, its cube colour updates to reflect the alert level - orange for warning, red for critical.
 

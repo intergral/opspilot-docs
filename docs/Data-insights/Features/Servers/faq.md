@@ -4,15 +4,19 @@
 
 ### What is the difference between Servers, Services, and Applications?
 
-**Servers** shows host-level metrics collected by the FusionReactor agent, such as CPU, memory, request counts, and database throughput, displayed as 3D cube icons on the overview. **Services** shows your OpenTelemetry-instrumented services as a dependency graph, focusing on request flow, latency, and errors between services. **Applications** shows FR agent application and JVM-level data. Use Servers when you want to investigate host or instance health; use Services when you want to understand how requests move across your system.
+| | **Servers** | **Services** | **Applications** |
+|---|---|---|---|
+| **Data source** | FusionReactor agent | OpenTelemetry traces | FusionReactor agent |
+| **What it shows** | Host-level metrics - CPU, memory, request counts, database throughput | Service dependency graph - request flow, latency, and errors between services | Application and JVM-level metrics |
+| **Use when** | Investigating host or instance health | Understanding how requests move across your system | Investigating application-level performance |
 
 ### Why is a server not appearing on the overview?
 
 A server only appears if it has the FusionReactor agent installed and is sending data to OpsPilot. Check that the agent is running and that the instance is connected. If the server was recently added, try refreshing the page or extending the time range.
 
-### What do the environment labels (e.g. `canary`, `stg_staging`, `prod`) mean?
+### What do the group names (e.g. `canary`, `stg_staging`, `prod`) mean?
 
-These are the environment or group names configured in the FusionReactor agent. Servers are grouped by these labels on the overview, making it easier to filter and compare health across different deployment environments.
+These are FusionReactor group names - a FusionReactor concept used to organise servers. Servers are grouped by these names on the overview, making it easier to filter and compare health across different groups.
 
 ---
 

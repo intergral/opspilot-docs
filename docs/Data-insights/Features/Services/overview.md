@@ -100,5 +100,23 @@ Click any service name to open the [Service Detail](service-detail.md) view with
 
 Use the **Select Service** dropdown to filter the graph and table to a specific service. Use the time range selector in the top right to adjust the period shown.
 
+## Thresholds
+
+You can configure warning and critical thresholds for key service metrics directly from the Services Overview page.
+
+Click the thresholds icon in the top right of the Service Graph panel to open the **Thresholds** panel.
+
+![!Screenshot](thresholds.png) Set **Warning** and **Critical** values for each metric:
+
+| Metric | Unit |
+|---|---|
+| **Span Throughput** | req/s |
+| **Avg Span Latency** | ms |
+| **P50 Span Duration** | ms |
+| **P95 Span Duration** | ms |
+| **Span Errors/s** | errors/s |
+
+Click **Save** to apply your changes, or use the reset button to restore all values to their defaults.
+
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.
