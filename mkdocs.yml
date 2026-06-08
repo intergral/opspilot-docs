@@ -80,6 +80,7 @@ nav:
         - Logs: Data-insights/Features/Servers/logs.md
         - Info: Data-insights/Features/Servers/info.md
         - Crash Protection: Data-insights/Features/Servers/crash-protection.md
+        - FAQ: Data-insights/Features/Servers/faq.md
      - Applications: Data-insights/Features/applications.md
      - Database: Data-insights/Features/database.md
      - Services:
