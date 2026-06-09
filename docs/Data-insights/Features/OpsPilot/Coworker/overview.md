@@ -51,11 +51,13 @@ Coworker is not limited to your observability data. As an LLM, it can also searc
 !!! info
     Tasks are currently configured at the organisation level.
 
-Click **Create Task** to open the **Task Agent**, a conversational interface where you describe what you want monitored. OpsPilot asks clarifying questions and sets it up for you.
+To create a task, open a new thread and select **Set up a task**. Coworker asks *"What are you trying to achieve?"* and guides you through setup conversationally - no forms or configuration options to fill in. Suggested shortcuts help you get started quickly:
 
-![!Screenshot](/Coworker/create-task.png)
+- *"Create a scheduled task to check error rates every hour"*
+- *"Watch a service and tell me when something looks off"*
+- *"Listen to a webhook and run a check on every event"*
 
-To edit an existing task, click **Edit with OpsPilot** from the task's detail view. The Task Agent opens pre-loaded with the current configuration.
+To edit an existing task, click **Configure** from the task panel in the sidebar.
 
 ### Task types
 
@@ -71,7 +73,7 @@ Focused on a specific issue. Created by clicking **Watch** on an insight, or by 
 
 React to webhooks from external systems. Instead of running on a schedule, they wait for an event to arrive and immediately kick off an investigation, enabling real-time response to issues as they happen.
 
-Click **Connect** from the dashboard prompt or **+ Create Task** and select Event Source to open the setup modal.
+To set up an event source, open a new thread, select **Set up a task**, and describe the webhook you want to connect.
 
 ![!Screenshot](/Coworker/create-event-source.png)
 
@@ -207,44 +209,47 @@ Coworker also remembers your personal preferences from conversations — for exa
 
 ## Dashboard
 
-The Coworker dashboard gives you a centralised view of your priorities, active tasks, and live system metrics, all in one place. The dashboard is personalised, named after you (e.g. *J's Coworker*), and shows only what's relevant to you.
+The Coworker dashboard is personalised, named after you (e.g. *J's Coworker*), and gives you a conversational interface to your AI teammate alongside a live view of your tasks.
 
 ![!Screenshot](/Coworker/dashboard.png)
 
-At the top, a row of live metrics shows the current state:
+A **WATCHING** badge in the header indicates Coworker is actively monitoring your environment. Use the dropdown in the top right to switch between **Just for me** (your personalised view) and **Across the team** (insights across all users in your organisation). **Usage** and **Knowledge** are also accessible from the top right.
 
-| Metric | Description |
+### Home tab
+
+The **Home** tab is the main feed where Coworker proactively surfaces what it has found. Coworker posts updates directly into the feed - for example, *"Nothing critical right now - a few things worth a look when you have the time."* Monitoring task results appear as inline cards showing the issue title, the service being watched, how long it has been watched, and when it was last checked.
+
+Suggested questions appear at the bottom of the feed (e.g. *"What changed in the last hour?"*, *"Anything I should know before standup?"*). A persistent chat input lets you message Coworker directly from the Home tab at any time.
+
+### Threads
+
+Click **+** next to the Home tab to open a new thread. Each thread is a focused conversation with Coworker and runs alongside Home as a separate tab. When you open a new thread, Coworker offers three starting points:
+
+| Option | Description |
 |---|---|
-| **Total Insights** | Breakdown by severity (Critical, Warning, Info) with trend indicators |
-| **Resolved Rate** | Progress ring showing how many insights have been handled |
-| **Tasks Ran** | Number of background tasks completed |
-| **Running** | Number of tasks currently active |
+| **Just chat** | Opens a freeform composer with *"I'm listening."* - ask anything: run a query, debug a service, explore an idea |
+| **Set up a task** | Conversationally create a scheduled check, a watching task, or a webhook event source |
+| **Update your preferences** | Adjust which services, categories, or severities Coworker highlights for you |
 
-Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights**, which shows insights across all users in your organisation. Use **Change what I show you** to update your preferences directly from the dashboard. The **Triage** and **Cost & Optimisation** buttons are also accessible from the top right.
+Threads can be closed with the **×** on the tab. You can have multiple threads open at once and switch between them freely.
 
-Below the metrics, the **Priority Queue** highlights the top issues Coworker thinks you should look at, with chat, resolve, and ignore actions on each. Click **Browse all insights** to see the full list. When everything is handled, you'll see an **All caught up!** message.
+### Tasks panel
 
-The **Tasks** section below shows everything Coworker takes care of on schedule or when events come in. Filter tasks by **All**, **Favorites**, **Scheduled**, **Monitoring**, or **Events**. Each task card shows its last run time, next run time, number of runs, and a summary of findings. Use **Run Now**, **Last Run**, **Configure**, and **History** to manage each task, or use **+ Create Task** and **Manage** from the top of the section.
+The right-hand sidebar shows your active tasks, split into **Event Sources** and **Scheduled** sections. Each task shows its name, schedule, and when it last ran. Click **Manage all tasks** at the bottom to open the full task management panel.
+
+The **All tasks** panel lets you view and manage everything Coworker runs:
+
+- Use the **Preferences** button to update your monitoring preferences, or **+ Create Task** to create a new task
+- Filter tasks using the tabs: **All**, **Scheduled**, **Monitoring**, **Event Sources**
+- Search tasks by name using the search bar
+- The **SYSTEM** section shows built-in tasks such as **OpsPilot Alerts**, which automatically investigates firing alerts. A badge shows how many alerts are currently being watched (e.g. *38/38 watched*)
+- The **ACTIVE** section lists your tasks with schedule, next run time, and last run date. Each task has a **run** button to trigger it immediately, a toggle to enable or disable it, and a delete button
 
 ---
 
 ## Preferences
 
-Personalise what your Coworker focuses on by clicking **Change what I show you** on the dashboard.
-
-![!Screenshot](/Coworker/change-what-see.png)
-
-| Preference | Description |
-|---|---|
-| **Severity** | Toggle which severity levels you care about: Critical, Warning, Info |
-| **Category** | Choose which types of insights to prioritise: Errors, Performance, Notable, Coverage |
-| **Service** | Select which services are relevant to you |
-| **Label** | Filter by custom groupings and tags |
-
-You can update preferences via chat using the **Update via chat** button, or restart the full setup with **Restart setup**.
-
-!!! tip
-    Adding **Label** groups in your preferences makes Coworker prioritise those groupings when organising insights, helping surface the most relevant findings for your area.
+To update your preferences, open a new thread and select **Update your preferences**, or describe the change you want directly in any chat. Coworker will ask clarifying questions and update your settings conversationally - you can adjust which services you track, what types of insights you see, or your role and team info.
 
 To hide insights of a similar type across your view, use the **Hide similar** button on any insight.
 
@@ -258,7 +263,7 @@ This opens a modal where you can choose what to match: by category, severity, la
 
 ## Cost and optimisation
 
-Coworker tracks the cost of running your tasks and provides full transparency into spend. Click **Cost & Optimisation** from the dashboard to open the view.
+Coworker tracks the cost of running your tasks and provides full transparency into spend. Click **Usage** from the top right of the dashboard to open the view.
 
 !!! tip
     One of the most effective ways to reduce costs over time is simply to let tasks run. As [task-specific memory](#task-specific-memory) builds up, Coworker re-uses context it already knows rather than fetching it fresh each run — reducing token usage by up to 50% in some cases.
@@ -267,7 +272,7 @@ Coworker tracks the cost of running your tasks and provides full transparency in
 
 ### Budget
 
-At the top, the **Task Budget** bar shows your current spend against your configured budget. Click **Configure** to open the Budget Settings modal.
+At the top, the **Task Budget** bar shows your current spend broken down into **Chat**, **Coworker**, and **Projected** segments, with the total tokens used against your budget (e.g. 1,592 / 5,000 tokens). Click **Configure** to open the Budget Settings modal.
 
 ![!Screenshot](/Coworker/budget-settings.png)
 
@@ -318,7 +323,9 @@ The **Cost by Model Tier** section breaks down spend across Efficient and Thorou
 
 A **Cost per Run** chart shows token usage over time so you can spot trends or spikes.
 
-After a task has run a few times, Coworker automatically surfaces **Optimisation Suggestions**. Each shows the recommended change, an explanation, and an estimated monthly token saving.
+After a task has run a few times, Coworker automatically surfaces optimisation suggestions, shown as a **Pending Suggestions** count at the bottom of the Cost & Optimisation panel - and as a numbered badge on the Overview page widget. Each suggestion shows the recommended change, an explanation, and an estimated monthly token saving.
+
+Use **Accept all** to apply all suggestions at once, or enable **Auto-accept** to have Coworker automatically apply future suggestions as they are generated.
 
 ![!Screenshot](/Coworker/optimize-alert.png)
 
