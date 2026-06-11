@@ -44,6 +44,9 @@ nav:
   - AI:
      - Coworker:
         - Overview: Data-insights/Features/OpsPilot/Coworker/overview.md
+        - Getting started: Data-insights/Features/OpsPilot/Coworker/getting-started.md
+        - Tasks: Data-insights/Features/OpsPilot/Coworker/tasks.md
+        - Cost & Optimisation: Data-insights/Features/OpsPilot/Coworker/cost-and-optimisation.md
         - FAQ: Data-insights/Features/OpsPilot/Coworker/faq.md
      - OpsPilot Assistant:
         - Overview: Data-insights/Features/OpsPilot/AIoverview.md

@@ -1,343 +1,176 @@
 # Coworker
 
-Coworker is your AI teammate for operations. It continuously monitors your systems, surfaces the issues that matter most, and helps you stay ahead of problems, so you spend less time investigating and more time building.
+Coworker is your always-on AI operations partner. It watches your services, investigates what it finds, and gives you a clear, prioritised picture of what's worth your attention right now, so you spend less time watching dashboards and more time building.
 
 ![!Screenshot](/Coworker/coworker.png)
 
-Each user gets their own personalised Coworker that learns what's relevant to them. It runs tasks in the background, builds context over time, and delivers prioritised, actionable insights directly to your dashboard.
+Each user gets their own personalised Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
+
+## How to think about it
+
+Think of Coworker as a single teammate rather than a monitoring tool. Behind that one voice it is doing several jobs at once: watching for signals, investigating them, writing down what it finds, and deciding what to tell you. You don't need to think about those internal jobs. You just get one Coworker who keeps you informed.
 
 ## What Coworker does
 
-| Capability | What it does |
+| Capability | Description |
 |---|---|
-| **Dashboard** | Centralised view of priorities, live metrics, and tasks |
-| **Insights** | Investigated, contextualised findings with evidence and recommended actions |
-| **Scheduled tasks** | Recurring automated analysis and reporting |
-| **Monitoring tasks** | Continuous observation of specific patterns or issues |
-| **Event sources** | React to external webhooks and investigate immediately |
-| **Chat integration** | Insight shortcuts, report discussion, triage, and onboarding via OpsPilot chat |
-| **Memory** | System-wide and task-specific memory that connects the dots and improves over time |
-| **Preferences** | Personalised focus on what matters to you |
-| **Cost management** | Budget tracking and optimisation suggestions |
+| **Situations** | Intelligent, contextualised findings grouped into coherent stories with severity, evidence, and recommended actions |
+| **Continuous monitoring** | Watches your systems around the clock and re-investigates open situations on a regular cadence |
+| **Alert response** | Automatically investigates firing alerts and posts one clean situation instead of a stream of raw alert noise |
+| **Tasks** | Scheduled, monitoring, and webhook-driven jobs that run recurring analysis and report back proactively |
+| **Memory** | Builds a growing understanding of your systems, your team, and your preferences over time |
+| **Cost management** | Budget tracking and optimisation suggestions to keep token spend under control |
 
 ---
 
-## Getting started
+## Insights and situations
 
-When you first access Coworker, a guided chat conversation walks you through setup:
+Two concepts underpin everything Coworker shows you.
 
-![!Screenshot](/Coworker/getting-started.png)
+**Insights** are Coworker's atomic findings: one observation, one anomaly, one error pattern. They are written automatically whenever Coworker investigates something: an alert that fired, a scheduled check, or a webhook event. Each insight has a severity, a category, an affected service, and a short description with supporting evidence.
 
-1. Coworker asks about your role and what you monitor
-2. You set your initial preferences: services, severity levels, and categories
-3. You create your first task together
-4. Coworker begins investigating
+**Situations** are the editorial layer on top. Coworker groups related insights into one coherent story: a title, a plain-language summary, the affected service, severity, and impact. Situations are what you triage. Insights are how Coworker writes them up; situations are what it hands you.
 
-This setup can be restarted at any time from the dashboard settings.
+A situation is not a static record. As new insights arrive, Coworker decides whether to extend an existing situation, merge it with another, escalate or de-escalate its severity, or close it out. That continuous editing is the difference between a useful picture of your operations and a noisy alert feed.
 
-![!Screenshot](/Coworker/restart-chat.png)
+## Severity and status
 
-!!! tip
-    The quickest way to get value from Coworker is to enable **OpsPilot Alerts**, which connects Coworker directly to your existing alert rules so it automatically investigates whenever an alert fires. A prompt on the dashboard will guide you through enabling it.
+Severity and status answer two different questions:
+
+| | Question | Values |
+|---|---|---|
+| **Severity** | How bad is this? | Critical, Warning, Info |
+| **Status** | Should you act on it right now? | Active, Watching, Resolved |
+
+These don't always align the way you'd expect. A warning can be active if Coworker thinks you should look now. A critical is active by default, but once it's handled it moves to resolved. Splitting the two lets the page show "important but not urgent" items without either burying them or sounding false alarms.
 
 ---
 
-## Tasks
+## What runs in the background
 
-Tasks are the automated jobs Coworker runs in the background to proactively investigate your systems. You don't need to fill in forms or understand configuration options. Just describe what you want in plain language and OpsPilot builds the task for you through conversation.
+Coworker is never just a snapshot. Three things run continuously:
 
-Coworker is not limited to your observability data. As an LLM, it can also search the web as part of an investigation, meaning it can bring in external context — documentation, known issues, best practices — alongside your metrics, logs, and traces.
+**Investigating new signals.** When an alert fires or a task runs, Coworker pulls the relevant metrics, logs, and traces, writes insights, and decides what to do: raise a new situation, attach the finding to an existing one, or note that it looked and found nothing worth raising. Alerts that arrive close together are investigated as a group, so one underlying problem doesn't generate a wall of separate cards.
 
-!!! info
-    Tasks are currently configured at the organisation level.
+**Tidying up.** Every few minutes Coworker sweeps your active situations and consolidates them, merging two that turn out to be the same problem, escalating severity when a new signal warrants it, and attaching stray findings to the situation they belong to.
 
-To create a task, open a new thread and select **Set up a task**. Coworker asks *"What are you trying to achieve?"* and guides you through setup conversationally - no forms or configuration options to fill in. Suggested shortcuts help you get started quickly:
+**Re-checking what's open.** Every active situation is re-investigated on a cadence that depends on its severity. Criticals are checked roughly every 10–15 minutes at first; warnings and quieter items less frequently. When a situation recovers on its own, Coworker resolves it and tells you why. As a situation stays stable, checks become less frequent; if something shifts, the cadence tightens back up. Once resolved, a situation gets a couple of follow-up checks over the next few hours to confirm the fix held.
 
-- *"Create a scheduled task to check error rates every hour"*
-- *"Watch a service and tell me when something looks off"*
-- *"Listen to a webhook and run a check on every event"*
+---
 
-To edit an existing task, click **Configure** from the task panel in the sidebar.
+## The home page
 
-### Task types
+The home page is a feed of messages from your Coworker, more like a conversation with a colleague who has been working while you were away than a static dashboard. Everything arrives as a message in that feed: new situations, updates to existing ones, checks that came back clean, and pointers to coverage gaps.
 
-#### Scheduled tasks
+![!Screenshot](/Coworker/dashboard.png)
 
-Run on a recurring schedule (hourly, daily, weekly, monthly, or a custom interval). Each run produces a report summarising what Coworker found. These are the core of Coworker's continuous analysis. Run any task on-demand with the **Run now** button and view the full execution history to see what it found on each run.
+A **WATCHING** badge in the header confirms Coworker is actively monitoring your environment.
 
-#### Monitoring tasks
+The interface uses a tab bar across the top. **Home** is always the first tab. Each situation thread or conversation you open appears as an additional tab alongside it, so you can switch between multiple threads without losing context. Click **+** to open a new thread. Tabs with an orange dot indicate an active or critical situation.
 
-Focused on a specific issue. Created by clicking **Watch** on an insight, or by describing what you want monitored in chat. A monitoring task periodically checks a particular pattern and notifies you if something changes, turning a one-off finding into continuous observation without you having to remember to check back.
+### Your view or the team's
 
-#### Event sources
+At the top of the page is a toggle between two views:
 
-React to webhooks from external systems. Instead of running on a schedule, they wait for an event to arrive and immediately kick off an investigation, enabling real-time response to issues as they happen.
-
-To set up an event source, open a new thread, select **Set up a task**, and describe the webhook you want to connect.
-
-![!Screenshot](/Coworker/create-event-source.png)
-
-| Field | Description |
+| View | Description |
 |---|---|
-| **Type** | The webhook type, e.g. Generic Webhook |
-| **Name** | A name for the event source (e.g. Production Alerts) |
-| **Description** | What events this webhook will receive |
-| **Custom Instructions** (optional) | Guides how events are investigated, e.g. "Focus on database-related issues and suggest query optimizations" |
-| **Model Tier** | Controls how the event is investigated. See [Model tier](#model-tier). **Thorough** is best for critical alerts and complex events needing deep analysis; **Efficient** is best for high-volume, routine events like health checks |
-| **Monthly Budget** (optional) | Set a token budget for this event source. Click **Set budget** to configure |
+| **You** | Your personalised slice, filtered to what is relevant to you based on your setup |
+| **Team** | Everything Coworker has raised across your whole organisation, unfiltered |
 
-##### OpsPilot Alerts
+Most of the time you'll work in **You**. Switch to **Team** when you're on call, covering someone else's area, or want the full picture. Both views show the same situations; the toggle only changes how much of them reaches your page.
 
-A built-in event source present for every user. It connects Coworker directly to your configured alert rules so that when an alert fires, Coworker automatically investigates it.
+### How the feed adapts
 
-![!Screenshot](/Coworker/op-alerts.png)
+Coworker changes how it leads depending on what it has to tell you:
 
-Use the toggle at the top to enable or disable the OpsPilot Alerts integration entirely. The **History** and **Cost & Optimisation** buttons are available for reviewing past investigations and spend.
-
-You can also add **General Instructions** that apply to all alert investigations, or expand individual alerts (using the `>` chevron) to add alert-specific instructions. Both are optional but can improve the quality of Coworker's investigations.
-
-Under **Alert Rules**, you can:
-
-- **Search** alerts by name
-- Filter by **All**, **Enabled**, or **Firing**
-- **Enable All** or **Disable All** in bulk
-- Toggle individual alerts on or off (each shows its name, type, and current state: inactive/firing)
-- Expand an alert (using the `>` chevron) to add alert-specific instructions (e.g. "Check the Redis connection pool first")
-
-### Model tier
-
-Every task and event source has a **Model Tier** setting that controls how Coworker analyses the data:
-
-| Tier | Description |
+| State | What you see |
 |---|---|
-| **Thorough** | Handles any task, more capable, higher cost |
-| **Efficient** | Suited to simpler, focused tasks, lower cost |
+| **Quiet** | An "all clear" note on what Coworker has been doing and watching. Silence means "checked and fine", not "nothing running" |
+| **One critical** | A single focus card with the full story: summary, affected service, impact, latest checkup, and evidence |
+| **A few criticals** | Prominent rows in urgency order, each with enough detail to triage at a glance |
+| **Many criticals** | A status overview showing the count and affected services. When everything is urgent, a wall of full-size cards doesn't help |
 
-Use **Thorough** for critical alerts and complex investigations where depth matters. Use **Efficient** for routine or high-volume tasks to keep token costs down.
+Below the critical items sits the quieter list: warnings and lower-severity items Coworker is watching rather than actively raising. This is where tomorrow's situation often first appears. Recently resolved situations collapse into a short list near the bottom.
 
----
+### Other message types
 
-## Insights
+Alongside situations, the feed contains:
 
-Insights are the findings Coworker surfaces from its background analysis: intelligent, contextualised observations with supporting context and recommended actions, not just raw alerts.
-
-Each insight includes:
-
-- **Title and severity**: Critical, Warning, or Info
-- **Category**: Errors, Performance, Notable, or Coverage
-- **Affected service**
-- **Description**: a written explanation of what was found, including supporting evidence
-- **Occurrence history**: a timeline showing if this is a recurring pattern
-- **Recommended actions**: what you can do about it
-
-For each insight you can:
-
-- **Chat**: ask Coworker to explain the issue or help you decide what to do
-- **Watch**: create a monitoring task to track this pattern going forward
-- **Resolve**: mark it as handled
-- **Ignore**: dismiss it from your priority list
-
-You can browse all insights, filter by date, search, and view resolved insights separately. The **Analytics** view breaks down insights by service, category, and label groupings, giving you a higher-level picture of where issues are concentrated over time.
-
-Insights that are not resolved or ignored will age out after **30 days**, keeping your list focused and preventing stale findings from building up.
-
-Coworker also proactively generates **observability gap insights** — flagging services that are not instrumented or areas where metrics are missing. These help you improve your coverage and give Coworker itself better data to work with over time.
-
-Use the **My Insights** dropdown to switch between your personalised view and **All Team Insights**, which shows insights across all users in your organisation.
+- **Coverage gaps**: pointers to things Coworker would have investigated but couldn't, because data is missing (for example, a service with no telemetry). Each names what's missing and includes a **Help me set this up** button that opens a guided thread.
+- **The digest**: a snapshot Coworker keeps current, summarising the checks it ran and things it handled quietly in the background.
+- **Debriefs**: short notes for when Coworker investigated something and concluded there was nothing worth raising, so the work is visible rather than silent.
 
 ---
 
-## Chat integration
+## Situations and threads
 
-Coworker is deeply integrated with the OpsPilot chat assistant throughout the experience.
+Every situation opens into a thread: a dedicated conversation about that one problem, with all context already loaded. At the top sits the situation itself; below it runs the history of Coworker's checkups and state changes, interleaved with any messages between you and it.
 
-### Insight shortcuts
-
-Click **Chat** on any insight to access five quick actions:
+From a situation thread you can:
 
 | Action | Description |
 |---|---|
-| **Is this still an issue?** | Checks the current state to see if the issue is ongoing or resolved |
+| **Ask follow-ups** | Type any question. Coworker answers with the situation's full context already in hand |
+| **Verify now** | Triggers a fresh investigation immediately, rather than waiting for the next scheduled checkup. The result lands in the thread when done |
+| **Suggest a fix** | Prompts Coworker to propose concrete remediation steps based on what it has found |
+| **Resolve / Dismiss** | Closes the situation. Coworker asks for a quick reason, which also teaches it what not to raise next time |
+| **Share** | Copies a shareable link to the thread |
+| **Copy** | Copies the full situation as a markdown brief, ready to paste into another tool or hand off to a teammate |
+
+### Insight shortcuts
+
+Click **Chat** on any insight for five quick actions:
+
+| Action | Description |
+|---|---|
+| **Is this still an issue?** | Checks current state to see if the problem is ongoing or resolved |
 | **Investigate root cause** | Kicks off a root cause analysis |
 | **Create a ticket** | Creates a ticket for the issue |
 | **Suggest a fix** | Recommends remediation steps or best practices |
 | **Discuss this insight** | Opens a free-form conversation about the insight |
 
-These shortcuts are available everywhere insights appear: the priority queue, insight lists, and insight detail views.
+These shortcuts are available everywhere insights appear: the priority queue, insight lists, and insight detail views. You can also click **Help me triage** to send your current priority insights and recent activity to Coworker for a prioritisation recommendation.
 
-### Task reports
+---
 
-Each task run produces a report containing three parts: the **findings** (insights surfaced during the investigation), the **investigation process** (what Coworker checked and how it reached its conclusions), and a **final summary**. The default mode is reporting — Coworker surfaces what it found without proposing fixes unless you instruct it to. The insights themselves will suggest remediation steps where relevant.
+## Chatting outside a situation
 
-After a task runs, an input field appears below the report: *Ask OpsPilot about this report...* The full report is included as context, so you can ask follow-up questions without copying anything.
+You can start a fresh thread at any time to ask about a service, a recent change, a metric, or anything else Coworker can investigate. These free-form chats have the full set of tools: attach images, use voice input, search the web, and pull context from your connected integrations.
 
-### Execution history summary
-
-In the task execution history timeline, a **Summarize** button sends details of your executions to OpsPilot for a summary, including success/failure counts, durations, and insight counts. The summary covers only the executions currently visible in the list, so you can filter the history first to control what gets summarised.
-
-### Triage
-
-The **Help me triage** button sends your current priority insights, recent insights, and trending issues to OpsPilot and asks it to help you decide what to focus on first.
-
-![!Screenshot](/Coworker/triage.png)
+Each task run produces a report with findings, the investigation process, and a final summary. An input field appears below each report (*Ask OpsPilot about this report...*) with the full report already in context, so you can ask follow-up questions without copying anything.
 
 ---
 
 ## Memory
 
-One of Coworker's most powerful features is that it gets smarter over time. As it runs tasks, investigates insights, and chats with you, it continuously builds memory, learning about your systems, your preferences, and how things connect together.
+Coworker gets smarter over time. Everything it does (investigating alerts, running tasks, talking to you) builds memory that carries forward.
 
-### System-wide memory
-
-Coworker's general understanding of your environment, gathered from every task run, chat, and investigation:
-
-- What services and infrastructure you have and how they depend on each other
-- What metrics exist and what they mean
-- General patterns, best practices, and operational context
-
-Browse this via the **Knowledge** button on the dashboard, which shows a visual knowledge graph. Memories are connected. Coworker understands how different pieces of knowledge relate to each other, joining the dots across everything it has learned.
-
-### Task-specific memory
-
-Each task builds its own memory over time, remembering what patterns matter, what turned out to be important, and what didn't. A task that has been running for weeks produces richer, more relevant results than one that just started, and becomes more cost-efficient as it re-uses context it already knows. In some cases, task memory can reduce token costs by up to 50% by eliminating the need to re-fetch background information on every run.
-
-### User memory
-
-Coworker also remembers your personal preferences from conversations — for example, whether you prefer responses with or without tables, or other formatting preferences you have expressed. This makes the assistant and task output increasingly tailored to how you like to work.
-
----
-
-## Dashboard
-
-The Coworker dashboard is personalised, named after you (e.g. *J's Coworker*), and gives you a conversational interface to your AI teammate alongside a live view of your tasks.
-
-![!Screenshot](/Coworker/dashboard.png)
-
-A **WATCHING** badge in the header indicates Coworker is actively monitoring your environment. Use the dropdown in the top right to switch between **Just for me** (your personalised view) and **Across the team** (insights across all users in your organisation). **Usage** and **Knowledge** are also accessible from the top right.
-
-### Home tab
-
-The **Home** tab is the main feed where Coworker proactively surfaces what it has found. Coworker posts updates directly into the feed - for example, *"Nothing critical right now - a few things worth a look when you have the time."* Monitoring task results appear as inline cards showing the issue title, the service being watched, how long it has been watched, and when it was last checked.
-
-Suggested questions appear at the bottom of the feed (e.g. *"What changed in the last hour?"*, *"Anything I should know before standup?"*). A persistent chat input lets you message Coworker directly from the Home tab at any time.
-
-### Threads
-
-Click **+** next to the Home tab to open a new thread. Each thread is a focused conversation with Coworker and runs alongside Home as a separate tab. When you open a new thread, Coworker offers three starting points:
-
-| Option | Description |
+| Memory type | What it holds |
 |---|---|
-| **Just chat** | Opens a freeform composer with *"I'm listening."* - ask anything: run a query, debug a service, explore an idea |
-| **Set up a task** | Conversationally create a scheduled check, a watching task, or a webhook event source |
-| **Update your preferences** | Adjust which services, categories, or severities Coworker highlights for you |
+| **System-wide** | How your services fit together, what's normal, and what tends to break. Shared across your whole organisation, so what Coworker learns helping one person makes it smarter for everyone |
+| **Task-specific** | What recurring checks have turned up before and the patterns that matter. Can reduce token costs by up to 50% on long-running tasks |
+| **Team** | Who owns what, where the runbook lives, what each channel is for |
+| **User** | Your personal preferences and the way you like to work, learned from your conversations |
 
-Threads can be closed with the **×** on the tab. You can have multiple threads open at once and switch between them freely.
+Browse what Coworker has learned via the **Knowledge** button on the dashboard: a visual knowledge graph of your services and the facts it holds about each.
 
-### Tasks panel
+### Correcting Coworker
 
-The right-hand sidebar shows your active tasks, split into **Event Sources** and **Scheduled** sections. Each task shows its name, schedule, and when it last ran. Click **Manage all tasks** at the bottom to open the full task management panel.
-
-The **All tasks** panel lets you view and manage everything Coworker runs:
-
-- Use the **Preferences** button to update your monitoring preferences, or **+ Create Task** to create a new task
-- Filter tasks using the tabs: **All**, **Scheduled**, **Monitoring**, **Event Sources**
-- Search tasks by name using the search bar
-- The **SYSTEM** section shows built-in tasks such as **OpsPilot Alerts**, which automatically investigates firing alerts. A badge shows how many alerts are currently being watched (e.g. *38/38 watched*)
-- The **ACTIVE** section lists your tasks with schedule, next run time, and last run date. Each task has a **run** button to trigger it immediately, a toggle to enable or disable it, and a delete button
+When Coworker raises something that isn't a problem, dismiss it with a quick reason, such as "this is expected" or "too noisy". Coworker turns your correction into a lasting fact: next time it sees the same pattern on the same service, it remembers and won't raise it again. A few early corrections go a long way towards tuning Coworker to your reality.
 
 ---
 
 ## Preferences
 
-To update your preferences, open a new thread and select **Update your preferences**, or describe the change you want directly in any chat. Coworker will ask clarifying questions and update your settings conversationally - you can adjust which services you track, what types of insights you see, or your role and team info.
+To update your monitoring preferences at any time, open a new thread and select **Update your preferences**, or describe the change you want directly in any chat. Coworker will ask clarifying questions and update your settings conversationally.
 
-To hide insights of a similar type across your view, use the **Hide similar** button on any insight.
+To suppress a type of insight from your view, click **Hide similar** on any insight card.
 
 ![!Screenshot](/Coworker/hide-similar.png)
 
-This opens a modal where you can choose what to match: by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your selected conditions.
+This opens a modal where you can match by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your conditions.
 
 ![!Screenshot](/Coworker/hide-insights.png)
-
----
-
-## Cost and optimisation
-
-Coworker tracks the cost of running your tasks and provides full transparency into spend. Click **Usage** from the top right of the dashboard to open the view.
-
-!!! tip
-    One of the most effective ways to reduce costs over time is simply to let tasks run. As [task-specific memory](#task-specific-memory) builds up, Coworker re-uses context it already knows rather than fetching it fresh each run — reducing token usage by up to 50% in some cases.
-
-![!Screenshot](/Coworker/cost-optimize.png)
-
-### Budget
-
-At the top, the **Task Budget** bar shows your current spend broken down into **Chat**, **Coworker**, and **Projected** segments, with the total tokens used against your budget (e.g. 1,592 / 5,000 tokens). Click **Configure** to open the Budget Settings modal.
-
-![!Screenshot](/Coworker/budget-settings.png)
-
-| Setting | Description |
-|---|---|
-| **Plan Allowance** | Your total token allowance per month (set by your plan) |
-| **Monthly task budget** | The percentage of your plan allowance allocated to tasks. Select a preset or use the slider |
-| **Warning threshold** | The percentage of your task budget at which Coworker warns you about spend |
-| **Halt threshold** | The percentage at which Coworker stops running tasks to prevent overspend |
-
-Below the Task Budget bar, **Total org usage** shows the full organisation-level token consumption including non-task usage.
-
-### Usage overview
-
-The **Usage** section provides three key metrics:
-
-| Metric | Description |
-|---|---|
-| **Tokens spent** | Total tokens consumed in the current period |
-| **Tasks executed** | Number of task runs completed |
-| **Projected monthly** | Estimated end-of-month token usage and number of runs |
-
-A **Token Usage** chart shows your consumption trend over time.
-
-The **Cost Breakdown** table lists each task with:
-
-| Column | Description |
-|---|---|
-| **Task** | The task name |
-| **Schedule** | How often the task runs |
-| **Avg / run** | Average token cost per execution |
-| **Monthly** | Projected monthly token cost |
-| **%** | Percentage of total task budget |
-
-### Per-task analysis
-
-Click through to a specific task to see its full cost breakdown:
-
-![!Screenshot](/Coworker/optimize.png)
-
-| Metric | Description |
-|---|---|
-| **Avg cost / run** | Average tokens consumed per execution |
-| **Total this period** | Tokens used so far, with execution count and percentage of your plan |
-| **Projected monthly** | Estimated monthly token usage and number of runs |
-
-The **Cost by Model Tier** section breaks down spend across Efficient and Thorough runs, showing tokens per run, projected monthly cost, and number of samples for each tier.
-
-A **Cost per Run** chart shows token usage over time so you can spot trends or spikes.
-
-After a task has run a few times, Coworker automatically surfaces optimisation suggestions, shown as a **Pending Suggestions** count at the bottom of the Cost & Optimisation panel - and as a numbered badge on the Overview page widget. Each suggestion shows the recommended change, an explanation, and an estimated monthly token saving.
-
-Use **Accept all** to apply all suggestions at once, or enable **Auto-accept** to have Coworker automatically apply future suggestions as they are generated.
-
-![!Screenshot](/Coworker/optimize-alert.png)
-
-Expand a suggestion to see the full reasoning, including a **Why this suggestion** breakdown of the cost data behind the recommendation and the specific change proposed (e.g. switching model tier).
-
-![!Screenshot](/Coworker/optimize-accept.png)
-
-From here you can **Accept** to apply the change immediately, or **Dismiss** to ignore it. Use **View task config** to review the full task setup before deciding.
-
-Click **Analyse & Optimise** to trigger an on-demand analysis at any time. If no optimisations are needed, you'll see a **Looking good!** confirmation.
-
-![!Screenshot](/Coworker/looking-good.png)
 
 ---
 

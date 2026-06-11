@@ -4,7 +4,7 @@
 
 ### How do I get started with Coworker?
 
-When you first open Coworker, a [guided setup conversation](overview.md#getting-started) walks you through setting your preferences and creating your first task. The quickest way to get value is to enable [OpsPilot Alerts](overview.md#opspilot-alerts) — this connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
+When you first open Coworker, a [guided setup conversation](overview.md#getting-started) walks you through setting your preferences and creating your first task. The quickest way to get value is to enable [OpsPilot Alerts](overview.md#opspilot-alerts), which connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
 
 ### Can I have more than one Coworker?
 
@@ -16,7 +16,7 @@ Each Coworker is personal to the user it belongs to. However, team members can v
 
 ### Can I restart the setup?
 
-Yes — click the settings icon on the [dashboard](overview.md#getting-started) and select **Restart setup** to go through the onboarding conversation again.
+Yes. Click the settings icon on the [dashboard](overview.md#getting-started) and select **Restart setup** to go through the onboarding conversation again.
 
 ---
 
@@ -39,7 +39,7 @@ It may take a few runs for Coworker to build enough context to surface meaningfu
 
 ### What is the difference between a scheduled task and a monitoring task?
 
-A [scheduled task](overview.md#scheduled-tasks) runs on a recurring interval and produces a general report of findings. A [monitoring task](overview.md#monitoring-tasks) is focused on a specific pattern or issue — created from an insight — and tracks whether that pattern is improving, worsening, or stable over time.
+A [scheduled task](overview.md#scheduled-tasks) runs on a recurring interval and produces a general report of findings. A [monitoring task](overview.md#monitoring-tasks) is focused on a specific pattern or issue (created from an insight) and tracks whether that pattern is improving, worsening, or stable over time.
 
 ---
 
@@ -47,7 +47,7 @@ A [scheduled task](overview.md#scheduled-tasks) runs on a recurring interval and
 
 ### What is the difference between Resolve and Ignore?
 
-**Resolve** marks an insight as handled — it will appear in your resolved insights history. **Ignore** dismisses it from your priority list without marking it as resolved. Use Resolve when you've taken action; use Ignore when the insight isn't relevant to you.
+**Resolve** marks an insight as handled and it will appear in your resolved insights history. **Ignore** dismisses it from your priority list without marking it as resolved. Use Resolve when you've taken action; use Ignore when the insight isn't relevant to you.
 
 !!! info "Learn more"
     [Insights](overview.md#insights)
@@ -76,7 +76,7 @@ Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost de
 
 ### How do I reduce Coworker token usage?
 
-- Review the **optimisation suggestions** in the [Cost & Optimisation](overview.md#cost-and-optimisation) page — these appear automatically after a task has run a few times and Coworker detects ways it could be improved
+- Review the **optimisation suggestions** in the [Cost & Optimisation](overview.md#cost-and-optimisation) page; these appear automatically after a task has run a few times and Coworker detects ways it could be improved
 - **Accept** an optimisation suggestion to apply the recommended change immediately
 - Click through to a specific task in the Cost & Optimisation page and click **Analyse & Optimise** to trigger an on-demand analysis
 - Switch high-volume or routine tasks to the [Efficient model tier](overview.md#model-tier)
@@ -85,14 +85,14 @@ Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost de
 
 ### What happens when I reach my task budget?
 
-Coworker will stop running tasks once spend reaches the **Halt threshold** — by default set to 100% of your task budget. You can lower this threshold to stop tasks earlier and protect your allowance. A separate **Warning threshold** notifies you before the halt is reached.
+Coworker will stop running tasks once spend reaches the **Halt threshold**, which by default is set to 100% of your task budget. You can lower this threshold to stop tasks earlier and protect your allowance. A separate **Warning threshold** notifies you before the halt is reached.
 
 !!! info "Learn more"
     [Budget](overview.md#budget)
 
 ### Can I get warned before hitting my budget limit?
 
-Yes — the **Warning threshold** in Budget Settings triggers a notification when your spend reaches a set percentage of your task budget (e.g. 80%). This gives you time to adjust tasks or increase your budget before tasks are halted.
+Yes. The **Warning threshold** in Budget Settings triggers a notification when your spend reaches a set percentage of your task budget (e.g. 80%). This gives you time to adjust tasks or increase your budget before tasks are halted.
 
 !!! info "Learn more"
     [Budget](overview.md#budget)
@@ -106,7 +106,7 @@ Open the **Cost & Optimisation** view and click through to the relevant task. Ex
 
 ### What is the difference between Thorough and Efficient model tiers?
 
-**Thorough** handles any task and is more capable — use it for critical alerts and complex investigations where depth matters. **Efficient** is suited to simpler, focused tasks and costs less — use it for routine or high-volume tasks to keep spend down. You can set the model tier per task or per event source.
+**Thorough** handles any task and is more capable. Use it for critical alerts and complex investigations where depth matters. **Efficient** is suited to simpler, focused tasks and costs less. Use it for routine or high-volume tasks to keep spend down. You can set the model tier per task or per event source.
 
 !!! info "Learn more"
     [Model tier](overview.md#model-tier)
@@ -129,7 +129,7 @@ Please contact support if you need to reset Coworker's [memory](overview.md#memo
 
 ### What data does Coworker have access to?
 
-Coworker has access to the observability data in your OpsPilot account — metrics, logs, traces, and alert rules. It does not have access to data outside your organisation's account.
+Coworker has access to the observability data in your OpsPilot account: metrics, logs, traces, and alert rules. It does not have access to data outside your organisation's account.
 
 ---
 
