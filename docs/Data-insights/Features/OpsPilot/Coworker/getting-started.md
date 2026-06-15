@@ -4,8 +4,6 @@
 
 When you first access Coworker, a short guided setup walks you through personalising your experience. You can skip it at any time and still get a working Coworker, though you'll see a broader, less tailored view until you configure your preferences.
 
-![!Screenshot](/Coworker/getting-started.png)
-
 The first screen introduces what Coworker does and how it works:
 
 | Stage | What happens |
@@ -98,16 +96,24 @@ None of these change what Coworker investigates or raises across your organisati
 
 ---
 
-## Tuning Coworker's behaviour
+## Settings
 
-The Settings panel lets you adjust how Coworker operates for your whole organisation:
+Open **Settings** from the Coworker dashboard to access configuration options. The panel is split into two sections:
 
-| Setting | Description |
+**You**
+
+| Option | Description |
 |---|---|
-| **Checkup cadence** | How eagerly Coworker re-checks open situations. Ranges from **Aggressive** (fresher results, higher cost) to **Minimal** (lower frequency, lower cost). The panel shows the approximate timing and cost trade-off for each preset. |
-| **Report detail** | Whether task reports come back **Concise**, **Standard**, or **Detailed**. |
-| **Digest frequency** | How often Coworker refreshes its daily summary narrative: every 6, 12, or 24 hours. |
-| **Budget** | A monthly spend cap for Coworker's investigations, with warning and halt thresholds. See [Cost & Optimisation](cost-and-optimisation.md) for full details. |
+| **Your preferences** | Adjust your focus services, focus areas, custom keywords, and personal monitoring preferences |
+| **Reset onboarding** | Restart the guided onboarding flow from the beginning |
+
+**Your organisation**
+
+| Option | Description |
+|---|---|
+| **Coworker activity** | View a log of Coworker's background activity across your organisation |
+| **Coworker behaviour** | Adjust how Coworker operates: checkup cadence (Aggressive to Minimal), report detail level (Concise, Standard, Detailed), and digest frequency (every 6, 12, or 24 hours) |
+| **Allowance & cost** | Set your monthly task allowance, warning threshold and halt threshold. See [Usage](usage.md#allowance) for full details |
 
 You don't need to configure all of this up front, as sensible defaults are in place. You can also ask Coworker directly in any chat to update your preferences; it can read and change your settings conversationally.
 

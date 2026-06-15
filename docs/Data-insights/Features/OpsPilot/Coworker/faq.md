@@ -24,7 +24,7 @@ Yes. Click the settings icon on the [dashboard](overview.md#getting-started) and
 
 ### How many tasks should I create?
 
-Start with one or two [scheduled tasks](overview.md#scheduled-tasks) covering your most critical services, and enable [OpsPilot Alerts](overview.md#opspilot-alerts). Add more tasks over time as you identify gaps. Too many tasks running frequently can increase token costs.
+Start with one or two [scheduled tasks](overview.md#scheduled-tasks) covering your most critical services, and enable [OpsPilot Alerts](overview.md#opspilot-alerts). Add more tasks over time as you identify gaps. Too many tasks running frequently can increase AI Token usage.
 
 ### How often should I run scheduled tasks?
 
@@ -67,49 +67,82 @@ Click **Change what I show you** on the dashboard to adjust your severity and ca
 
 ## Costs
 
-### How much does Coworker cost to run?
+### What are OpsPilot AI Tokens?
 
-Coworker uses OpsPilot AI tokens to run tasks and generate insights. The cost depends on how many tasks you have, how frequently they run, and the [model tier](overview.md#model-tier) selected (Thorough uses more tokens than Efficient). You can set a monthly task budget to control spend, with configurable warning and halt thresholds to prevent overruns.
+OpsPilot AI Tokens are the usage allowance for Coworker's AI-powered work, including chat, alert investigations, scheduled checks, telemetry analysis and recommendations. Your plan includes a fixed monthly allowance, and OpsPilot gives you clear usage visibility, forecasting and controls so there are no surprises.
 
 !!! info "Learn more"
-    [Cost and optimisation](overview.md#cost-and-optimisation)
+    [Understanding OpsPilot AI Tokens](usage.md#understanding-opspilot-ai-tokens)
 
-### How do I reduce Coworker token usage?
+### What uses AI Tokens?
 
-- Review the **optimisation suggestions** in the [Cost & Optimisation](overview.md#cost-and-optimisation) page; these appear automatically after a task has run a few times and Coworker detects ways it could be improved
+AI Tokens are used whenever Coworker performs AI-powered work:
+
+- Answering questions in chat
+- Investigating alerts and situations
+- Analysing telemetry and service behaviour
+- Running scheduled checks
+- Generating recommendations, suggested fixes and debriefs
+- Updating situations and producing findings
+
+### Does every Coworker action use the same number of AI Tokens?
+
+No. Usage depends on the amount of telemetry, context and reasoning required. A simple chat question typically uses fewer AI Tokens than a deeper investigation that reviews metrics, logs, prior findings and service context before generating a recommendation.
+
+### Can I forecast my AI Token usage?
+
+Yes. The **Projected monthly** metric in the Usage view estimates your end-of-month AI Token consumption based on current usage patterns, so you can see whether you are on track to stay within your plan allowance.
+
+!!! info "Learn more"
+    [Usage overview](usage.md#usage-overview)
+
+### How much does Coworker cost to run?
+
+Cost depends on how many tasks you have, how frequently they run, and the [model tier](tasks.md#model-tier) selected (Thorough uses more AI Tokens than Efficient). You can set a monthly task allowance to control spend, with configurable warning and halt thresholds to prevent overruns.
+
+!!! info "Learn more"
+    [Cost and Optimisation](usage.md)
+
+### How do I reduce AI Token usage?
+
+- Review the **optimisation suggestions** in the [Cost & Optimisation](usage.md) page; these appear automatically after a task has run a few times and Coworker detects ways it could be improved
 - **Accept** an optimisation suggestion to apply the recommended change immediately
-- Click through to a specific task in the Cost & Optimisation page and click **Analyse & Optimise** to trigger an on-demand analysis
-- Switch high-volume or routine tasks to the [Efficient model tier](overview.md#model-tier)
+- Click through to a specific task and click **Analyse & Optimise** to trigger an on-demand analysis
+- Switch high-volume or routine tasks to the [Efficient model tier](tasks.md#model-tier)
 - Reduce the frequency of scheduled tasks that run often but find little
 - Review the **Cost Breakdown** table to identify the most expensive tasks and consolidate or adjust them
 
-### What happens when I reach my task budget?
+### What happens when I reach my task allowance?
 
-Coworker will stop running tasks once spend reaches the **Halt threshold**, which by default is set to 100% of your task budget. You can lower this threshold to stop tasks earlier and protect your allowance. A separate **Warning threshold** notifies you before the halt is reached.
-
-!!! info "Learn more"
-    [Budget](overview.md#budget)
-
-### Can I get warned before hitting my budget limit?
-
-Yes. The **Warning threshold** in Budget Settings triggers a notification when your spend reaches a set percentage of your task budget (e.g. 80%). This gives you time to adjust tasks or increase your budget before tasks are halted.
+Coworker will stop running tasks once spend reaches the **Halt threshold**, which by default is set to 100% of your task allowance. You can lower this threshold to stop tasks earlier and protect your allowance. A separate **Warning threshold** notifies you before the halt is reached.
 
 !!! info "Learn more"
-    [Budget](overview.md#budget)
+    [Allowance](usage.md#allowance)
+
+### Can I get warned before hitting my allowance limit?
+
+Yes. The **Warning threshold** in Allowance Settings triggers a notification when your spend reaches a set percentage of your task allowance (e.g. 80%). This gives you time to adjust tasks or increase your allowance before tasks are halted.
+
+!!! info "Learn more"
+    [Allowance](usage.md#allowance)
 
 ### How do I accept or dismiss an optimisation suggestion?
 
 Open the **Cost & Optimisation** view and click through to the relevant task. Expand any optimisation suggestion to see the full reasoning and the proposed change. Click **Accept** to apply it immediately, or **Dismiss** to ignore it. You can also click **View task config** to review the task setup before deciding.
 
 !!! info "Learn more"
-    [Per-task analysis](overview.md#per-task-analysis)
+    [Per-task analysis](usage.md#per-task-analysis)
 
 ### What is the difference between Thorough and Efficient model tiers?
 
 **Thorough** handles any task and is more capable. Use it for critical alerts and complex investigations where depth matters. **Efficient** is suited to simpler, focused tasks and costs less. Use it for routine or high-volume tasks to keep spend down. You can set the model tier per task or per event source.
 
 !!! info "Learn more"
-    [Model tier](overview.md#model-tier)
+    [Model tier](tasks.md#model-tier)
+
+### Why use AI Tokens instead of unlimited AI?
+
+AI-powered investigations consume compute and reasoning resources. OpsPilot AI Tokens give your team a predictable, fixed allowance for Coworker's work, with full visibility into what was used and what it delivered. This keeps AI usage transparent and controllable for both teams and budgets.
 
 ---
 

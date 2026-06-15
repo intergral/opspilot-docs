@@ -2,7 +2,6 @@
 
 Coworker is your always-on AI operations partner. It watches your services, investigates what it finds, and gives you a clear, prioritised picture of what's worth your attention right now, so you spend less time watching dashboards and more time building.
 
-![!Screenshot](/Coworker/coworker.png)
 
 Each user gets their own personalised Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
 
@@ -19,7 +18,7 @@ Think of Coworker as a single teammate rather than a monitoring tool. Behind tha
 | **Alert response** | Automatically investigates firing alerts and posts one clean situation instead of a stream of raw alert noise |
 | **Tasks** | Scheduled, monitoring, and webhook-driven jobs that run recurring analysis and report back proactively |
 | **Memory** | Builds a growing understanding of your systems, your team, and your preferences over time |
-| **Cost management** | Budget tracking and optimisation suggestions to keep token spend under control |
+| **Cost management** | Allowance tracking and optimisation suggestions to keep AI Token spend under control |
 
 ---
 
@@ -61,8 +60,6 @@ Coworker is never just a snapshot. Three things run continuously:
 ## The home page
 
 The home page is a feed of messages from your Coworker, more like a conversation with a colleague who has been working while you were away than a static dashboard. Everything arrives as a message in that feed: new situations, updates to existing ones, checks that came back clean, and pointers to coverage gaps.
-
-![!Screenshot](/Coworker/dashboard.png)
 
 A **WATCHING** badge in the header confirms Coworker is actively monitoring your environment.
 
@@ -166,11 +163,7 @@ To update your monitoring preferences at any time, open a new thread and select 
 
 To suppress a type of insight from your view, click **Hide similar** on any insight card.
 
-![!Screenshot](/Coworker/hide-similar.png)
-
 This opens a modal where you can match by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your conditions.
-
-![!Screenshot](/Coworker/hide-insights.png)
 
 ---
 

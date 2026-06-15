@@ -64,8 +64,6 @@ You're offered this during onboarding, but you can connect it at any time:
 
 From then on, every watched alert gets investigated automatically and shows up in your feed as a situation.
 
-![!Screenshot](/Coworker/op-alerts.png)
-
 Use the toggle at the top to enable or disable OpsPilot Alerts entirely. The **History** and **Cost & Optimisation** buttons are available for reviewing past investigations and spend.
 
 You can add **General Instructions** that apply to all alert investigations, or expand individual alerts (using the `>` chevron) to add alert-specific instructions. Both are optional but can improve the quality of Coworker's investigations.
@@ -97,8 +95,6 @@ Use **Thorough** for critical alerts and complex investigations where depth matt
 
 To set up a new event source, open a new thread, select **Set up a task**, and describe the webhook you want to connect.
 
-![!Screenshot](/Coworker/create-event-source.png)
-
 | Field | Description |
 |---|---|
 | **Type** | The webhook type, e.g. Generic Webhook |
@@ -106,7 +102,7 @@ To set up a new event source, open a new thread, select **Set up a task**, and d
 | **Description** | What events this webhook will receive |
 | **Custom Instructions** (optional) | Guides how events are investigated, e.g. *"Focus on database-related issues and suggest query optimisations"* |
 | **Model Tier** | Controls how the event is investigated. **Thorough** for critical or complex events; **Efficient** for high-volume, routine events |
-| **Monthly Budget** (optional) | A token budget for this event source |
+| **Monthly Allowance** (optional) | A token allowance for this event source |
 
 ---
 
