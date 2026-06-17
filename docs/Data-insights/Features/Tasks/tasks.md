@@ -1,6 +1,8 @@
 # Tasks
 
-Tasks gives you one board for all your work - incident follow-ups, runbook steps, and anything else that needs tracking. Access it from **Tasks** in the main navigation.
+Incidents leave follow-ups. Investigations surface action items. Work gets handed off. Without a central place to track it all, things fall through the gaps - buried in chat, forgotten in personal to-do lists, or assumed someone else picked them up.
+
+Tasks gives you one board for everything - incident follow-ups, runbook steps converted to actions, and any standalone work your team needs to track. Everything assigned to you lands in one place, and the full org view means nothing gets lost. Access it from **Tasks** in the main navigation.
 
 ## The board
 
@@ -14,7 +16,7 @@ Tasks are organised into three columns:
 
 Drag a task card between columns to update its status.
 
-Use the **Mine / All org** toggle to switch between your own tasks and all tasks across the organisation.
+Use the **Mine / All org** toggle to switch between your own tasks and all tasks across the organisation. The All org view gives leads and managers a full picture of what is in flight and where work is piling up.
 
 Use the **All types** filter to narrow the board by task type:
 

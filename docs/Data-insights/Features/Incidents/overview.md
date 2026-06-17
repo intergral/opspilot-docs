@@ -1,6 +1,8 @@
 # Incidents
 
-Incidents gives your team a structured workspace for responding to and resolving infrastructure issues. Declare an incident, work through a defined lifecycle, coordinate your team, and write up a post-mortem when it's over.
+When something breaks, the last thing your team needs is to fight its tools. Incidents pulls the whole response onto one page - declaration, coordination, communication, and post-mortem - so your team spends less time figuring out what to do and more time fixing the problem.
+
+Declare an incident the moment you know something is wrong, fill in what you know, and update the details as the situation develops. Everyone involved sees the same picture in real time.
 
 ## The incidents list
 
@@ -45,17 +47,17 @@ A progress bar at the top shows the incident's current stage:
 
 **Triage → Respond → Resolve → Closed**
 
-Each stage records a timestamp when first entered. If SLA targets are configured for the incident's severity, the bar shows whether you're on track or slipping. See [Configuring incidents](#configuring-incidents) to set SLA targets per severity.
+Each stage records a timestamp when first entered, giving you an honest record of how long each phase took. If SLA targets are configured for the incident's severity, the bar shows at a glance whether you are on track or slipping - so there are no surprises when you review response times later. See [Configuring incidents](#configuring-incidents) to set SLA targets per severity.
 
 ### Activity
 
 The **Activity** tab is the live timeline for the incident. Use the rich text editor to add notes - you can format text, add links, and attach screenshots. Click **Add note** to post to the timeline.
 
-Status changes are logged automatically, giving you a complete audit trail of what happened and when.
+Status changes are logged automatically. The result is a complete, shared record of what happened and when - useful for post-incident review, stakeholder updates, and ensuring nothing gets lost in side channels like Slack or email.
 
 ### Scope
 
-The **Scope** tab lets you link related or duplicate incidents together. Search for an incident by name, select the relationship type, and click **Link**.
+The **Scope** tab lets you link related or duplicate incidents together. Linking incidents helps you spot when a single underlying cause is generating multiple reports, and keeps the full picture in one place rather than spread across separate threads. Search for an incident by name, select the relationship type, and click **Link**.
 
 ### Post-mortem
 

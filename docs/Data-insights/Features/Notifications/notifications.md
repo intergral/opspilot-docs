@@ -1,6 +1,8 @@
 # Notifications
 
-Notifications let you know when something needs your attention without having to go looking for it. Access them by clicking the bell icon in the top navigation bar.
+During a fast-moving incident, being pulled in at the right moment matters. Waiting until you happen to check a dashboard can mean the difference between a quick resolution and a prolonged one.
+
+Notifications find you - whether you have been assigned a role, someone needs your input on a timeline, a service you own is affected, or an SLA is about to be breached. You stay in control of what you hear about, so the signal stays useful rather than becoming noise. Access your notifications by clicking the bell icon in the top navigation bar.
 
 ## What triggers a notification
 
@@ -21,7 +23,7 @@ Click the gear icon in the notifications panel, or navigate to **Administration 
 
 ## Watching services
 
-To receive notifications when a specific service is caught up in an incident, add it to your watched services list in **Administration > Preferences > Services**. You will be notified any time a watched service is directly affected by an incident or falls within its blast radius.
+If you own or care about a particular service, you should know the moment it is caught up in an incident - not find out after the fact. Add services to your watched list in **Administration > Preferences > Services** and you will be notified any time a watched service is directly affected by an incident or falls within its blast radius.
 
 ---
 

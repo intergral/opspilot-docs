@@ -17,15 +17,13 @@ Four headline figures appear at the top of the page:
 
 ## Response time metrics
 
-Three panels break down response times by severity (SEV-1 through SEV-4):
+Knowing how fast your team responds is the first step to improving it. Three panels break down response times by severity (SEV-1 through SEV-4), so you can see not just your overall performance but whether your process holds up differently under high-severity pressure versus lower-priority issues.
 
-**Mean time to acknowledge (MTTA)** - the average time from an incident being declared to it first reaching an acknowledged status. Stamped by the `ack` flag on a status in your configuration.
+**Mean time to acknowledge (MTTA)** - the average time from an incident being declared to it first reaching an acknowledged status. A high MTTA often points to gaps in notification or on-call coverage. Stamped by the `ack` flag on a status in your configuration.
 
-**Mean time to mitigate (MTTM)** - the average time from declaration to first reaching a mitigated status. Stamped by the `mitigated` flag on a status in your configuration.
+**Mean time to mitigate (MTTM)** - the average time from declaration to first reaching a mitigated status. This reflects how quickly your team can stop the bleeding, regardless of whether root cause is fully understood. Stamped by the `mitigated` flag on a status in your configuration.
 
-**Time to publish post-mortem** - the average time from an incident being resolved to its post-mortem being marked as published.
-
-All three panels show per-severity breakdowns so you can see whether response times differ across SEV-1, SEV-2, SEV-3, and SEV-4 incidents.
+**Time to publish post-mortem** - the average time from an incident being resolved to its post-mortem being marked as published. A useful signal for whether post-mortems are being deprioritised once the immediate pressure is off.
 
 ## Charts
 

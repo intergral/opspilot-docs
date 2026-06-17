@@ -1,6 +1,8 @@
 # Runbooks
 
-Runbooks are step-by-step response playbooks you build once and reuse across incidents. Attach a runbook to specific services and severities and it surfaces automatically on any matching incident, ready to guide your team through the response.
+When an incident fires, the worst time to figure out what to do is right now. Runbooks let you capture your response procedures in advance - step by step - so that when something goes wrong, your team has a clear path to follow rather than starting from scratch under pressure.
+
+Build a runbook once, attach it to the relevant services and severities, and it surfaces automatically on any matching incident. Institutional knowledge is available to everyone on the team, not just the person who has dealt with it before.
 
 ## Creating a runbook
 

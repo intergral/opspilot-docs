@@ -1,6 +1,10 @@
 # Post-mortem templates
 
-Post-mortem templates are reusable drafts that give your team a consistent starting point when writing up a resolved incident. Create a template once and it becomes available to select from the Post-mortem tab on any incident.
+A good post-mortem is one that actually gets written. Templates remove the blank-page problem by giving your team a consistent structure to fill in rather than having to start from scratch when they are tired and ready to move on.
+
+Consistent post-mortems also build institutional knowledge over time - the same sections, the same questions, the same level of detail - making it easier to spot patterns across incidents and demonstrate improvement to stakeholders.
+
+Create a template once and it becomes available to select from the Post-mortem tab on any incident.
 
 ## Creating a template
 
