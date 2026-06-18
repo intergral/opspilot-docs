@@ -25,6 +25,13 @@ Click the gear icon in the notifications panel, or navigate to **Administration 
 
 If you own or care about a particular service, you should know the moment it is caught up in an incident - not find out after the fact. Add services to your watched list in **Administration > Preferences > Services** and you will be notified any time a watched service is directly affected by an incident or falls within its blast radius.
 
+The watched services list is split into two groups:
+
+- **Owned by you** - services where you are set as the owner in the catalog. These are the services you are most likely to want to watch.
+- **Other services** - services you do not own but want to follow.
+
+You can also watch a service directly from its catalog entry page by clicking the eye icon. This takes you to the same preferences panel with that service pre-selected.
+
 ---
 
 !!! question "Need more help?"

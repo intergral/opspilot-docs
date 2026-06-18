@@ -28,6 +28,31 @@ You can add entries from two places:
 
 The slug is the key linking mechanism - it connects alert labels, runbook attachments, and incident services to the correct catalog entry, so choose something stable and unambiguous.
 
+## Entry detail view
+
+Clicking an entry opens its detail page, which shows the full picture for that service:
+
+### Dependencies
+
+The **Dependencies** panel maps the relationships between catalog entries:
+
+- **Depends on (upstream)** - the services and infrastructure this entry relies on
+- **Used by (downstream)** - the services that depend on this one, directly or transitively
+
+The downstream view is particularly valuable during incidents. If a service is affected, everything listed under Used by could also be impacted - giving you an immediate blast radius picture without having to trace dependencies manually.
+
+### Metadata
+
+The **Metadata** panel lets you attach custom key/value data to an entry - anything your team finds useful that does not fit the standard fields. Click **Add** to create a new key/value pair.
+
+### Runbooks
+
+The **Runbooks** panel shows which runbooks are currently attached to this catalog entry. These are the runbooks that will surface automatically on incidents affecting this service. See [Runbooks](../Features/Incidents/runbooks.md) for how to create and attach them.
+
+### Watching an entry
+
+Click the eye icon on the entry detail page to follow a service. This opens **Administration > Preferences > Services** where you can confirm your watched services selection and save. You will then receive a notification any time that service is directly affected by an incident or falls within its blast radius. See [Notifications](../Features/Notifications/notifications.md) for more.
+
 ### Entry types
 
 | Type | Description |
@@ -49,6 +74,10 @@ Supported language options: .NET, C++, CFML, Erlang, Go, Java, JavaScript, PHP, 
 Use the filters at the top of the catalog page to narrow entries by type, tier, owner, language, or status. The search bar matches against name, slug, and description.
 
 By default the catalog shows active entries only. Switch to **All entries** or **Deprecated only** using the status filter.
+
+### Management state
+
+Each entry shows a **Human-managed** badge, indicating that the entry is maintained manually by your team. This is the default state for all entries.
 
 ### Deprecating an entry
 

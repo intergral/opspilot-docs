@@ -12,13 +12,13 @@ Navigate to **Incidents > Runbooks** and click **+ New runbook**.
 |---|---|
 | **Title** | A descriptive name for the runbook (e.g. Checkout 5xx spike) |
 | **Steps** | One or more titled steps, each with a description of what to do. Drag steps to reorder them. |
-| **Services** | The catalog services this runbook applies to (optional) |
-| **Severities** | The severity levels this runbook applies to (optional) |
-| **Tags** | Additional tags to control when the runbook surfaces (optional) |
+| **Services** | The catalog services this runbook applies to - select one or more (optional) |
+| **Severities** | The severity levels this runbook applies to - select one or more (optional) |
+| **Tags** | Additional free-text tags to control when the runbook surfaces (optional) |
 
 Click **Create** to save the runbook.
 
-When an incident is declared, any runbooks whose services, severities, and tags match the incident automatically appear in the incident's sidebar. The more specific the attachment, the more targeted the suggestions.
+When an incident is declared, any runbooks whose services, severities, and tags match the incident automatically appear in the incident's sidebar. The more specific the attachment, the more targeted the suggestions. A runbook attached to both SEV-1 and SEV-2 will surface on incidents at either severity.
 
 ## Using a runbook during an incident
 
