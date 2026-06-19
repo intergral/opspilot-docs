@@ -32,6 +32,8 @@ The slug is the key linking mechanism - it connects alert labels, runbook attach
 
 Clicking an entry opens its detail page, which shows the full picture for that service:
 
+![!Screenshot](../../Data-insights/Features/Incidents/images/catalog-entry.png)
+
 ### Dependencies
 
 The **Dependencies** panel maps the relationships between catalog entries:
@@ -84,6 +86,8 @@ Each entry shows a **Human-managed** badge, indicating that the entry is maintai
 When a service is retired, mark it as deprecated rather than deleting it. This keeps the historical record intact while removing it from the default active view. Point deprecated entries to their replacements to keep the catalog accurate as your system evolves.
 
 ## Catalog in the Services overview
+
+![!Screenshot](../../Data-insights/Features/Incidents/images/catalog-main.png)
 
 The Services overview has a **Catalog / Raw** toggle on the service graph. Catalog view enriches each node with its catalog details alongside the live metrics. Raw view shows telemetry data only.
 

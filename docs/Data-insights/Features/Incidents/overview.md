@@ -6,6 +6,8 @@ Declare an incident the moment you know something is wrong, fill in what you kno
 
 ## The incidents list
 
+![!Screenshot](images/incident-overview.png)
+
 The **Incidents** page shows all incidents across your organisation. Use the filters at the top to narrow the list:
 
 | Filter | Description |
@@ -25,6 +27,8 @@ Each incident card shows the severity badge, title, description, affected servic
 
 Click **+ Declare incident** to open the declaration form. Fill in what you know - every field except Title can be updated as the situation develops.
 
+![!Screenshot](images/declare.png)
+
 | Field | Description |
 |---|---|
 | **Title** | A brief description of the incident |
@@ -40,6 +44,8 @@ Click **Declare** to create the incident.
 ## The incident detail view
 
 Clicking an incident opens the full detail view.
+
+![!Screenshot](images/incident-detail.png)
 
 ### Lifecycle
 
@@ -87,12 +93,12 @@ Any [runbooks](runbooks.md) that match the incident's affected services and seve
 
 Four severities are available by default:
 
-| Severity | Colour |
+| Severity | Typical use |
 |---|---|
-| **SEV-1** | Red |
-| **SEV-2** | Orange |
-| **SEV-3** | Teal |
-| **SEV-4** | Green |
+| <span class="sev-badge sev-1">SEV-1</span> | Critical - major impact, immediate response required |
+| <span class="sev-badge sev-2">SEV-2</span> | High - significant impact, urgent response needed |
+| <span class="sev-badge sev-3">SEV-3</span> | Medium - moderate impact, timely response required |
+| <span class="sev-badge sev-4">SEV-4</span> | Low - minor impact, standard response |
 
 Severities are fully customisable - you can rename, reorder, delete, and add your own in **Administration > Preferences > Incidents**. To use incidents for practice drills, add a custom severity called **Drill** (or similar) to make test incidents clearly identifiable.
 

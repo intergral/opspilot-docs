@@ -6,9 +6,13 @@ Consistent post-mortems also build institutional knowledge over time - the same 
 
 Create a template once and it becomes available to select from the Post-mortem tab on any incident.
 
+![!Screenshot](images/post-mortem-templates.png)
+
 ## Creating a template
 
 Navigate to **Incidents > Post-mortem templates** and click **+ New template**.
+
+![!Screenshot](images/new-template.png)
 
 | Field | Description |
 |---|---|

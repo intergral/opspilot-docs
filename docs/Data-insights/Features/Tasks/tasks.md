@@ -6,6 +6,8 @@ Tasks gives you one board for everything - incident follow-ups, runbook steps co
 
 ## The board
 
+![!Screenshot](images/tasks-overview.png)
+
 Tasks are organised into three columns:
 
 | Column | Description |
@@ -30,6 +32,8 @@ Use the **All types** filter to narrow the board by task type:
 ### From the Tasks board
 
 Click **+ New task** to create a standalone General task.
+
+![!Screenshot](images/new-task.png)
 
 | Field | Description |
 |---|---|
