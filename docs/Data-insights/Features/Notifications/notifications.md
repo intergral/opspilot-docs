@@ -2,7 +2,7 @@
 
 During a fast-moving incident, being pulled in at the right moment matters. Waiting until you happen to check a dashboard can mean the difference between a quick resolution and a prolonged one.
 
-![!Screenshot](images/notifications.png)
+![!Screenshot](../Incidents/images/notifications.png)
 
 Notifications find you - whether you have been assigned a role, someone needs your input on a timeline, a service you own is affected, or an SLA is about to be breached. You stay in control of what you hear about, so the signal stays useful rather than becoming noise. Access your notifications by clicking the bell icon in the top navigation bar.
 
@@ -23,7 +23,7 @@ SLA breach and escalation notifications cannot be turned off. All others can be 
 
 Click the gear icon in the notifications panel, or navigate to **Administration > Preferences > Notifications**, to toggle individual notification types on or off.
 
-![!Screenshot](images/notifications-preferences.png)
+![!Screenshot](../Incidents/images/notifications-preferences.png)
 
 ## Watching services
 

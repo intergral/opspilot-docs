@@ -4,9 +4,11 @@ When an incident fires, the worst time to figure out what to do is right now. Ru
 
 Build a runbook once, attach it to the relevant services and severities, and it surfaces automatically on any matching incident. Institutional knowledge is available to everyone on the team, not just the person who has dealt with it before.
 
+![!Screenshot](images/runbooks-list.png)
+
 ## Creating a runbook
 
-![!Screenshot](images/runbooks-list.png)
+![!Screenshot](images/runbook-detail.png)
 
 Navigate to **Incidents > Runbooks** and click **+ New runbook**.
 
@@ -21,8 +23,6 @@ Navigate to **Incidents > Runbooks** and click **+ New runbook**.
 Click **Create** to save the runbook.
 
 When an incident is declared, any runbooks whose services, severities, and tags match the incident automatically appear in the incident's sidebar. The more specific the attachment, the more targeted the suggestions. A runbook attached to both SEV-1 and SEV-2 will surface on incidents at either severity.
-
-![!Screenshot](images/runbook-detail.png)
 
 ## Using a runbook during an incident
 

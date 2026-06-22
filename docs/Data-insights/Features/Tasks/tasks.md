@@ -4,9 +4,9 @@ Incidents leave follow-ups. Investigations surface action items. Work gets hande
 
 Tasks gives you one board for everything - incident follow-ups, runbook steps converted to actions, and any standalone work your team needs to track. Everything assigned to you lands in one place, and the full org view means nothing gets lost. Access it from **Tasks** in the main navigation.
 
-## The board
 
-![!Screenshot](images/tasks-overview.png)
+
+![!Screenshot](../Incidents/images/tasks-overview.png)
 
 Tasks are organised into three columns:
 
@@ -29,11 +29,10 @@ Use the **All types** filter to narrow the board by task type:
 
 ## Creating a task
 
-### From the Tasks board
 
 Click **+ New task** to create a standalone General task.
 
-![!Screenshot](images/new-task.png)
+![!Screenshot](../Incidents/images/new-task.png)
 
 | Field | Description |
 |---|---|
