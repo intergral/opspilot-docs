@@ -20,12 +20,7 @@ Drag a task card between columns to update its status.
 
 Use the **Mine / All org** toggle to switch between your own tasks and all tasks across the organisation. The All org view gives leads and managers a full picture of what is in flight and where work is piling up.
 
-Use the **All types** filter to narrow the board by task type:
-
-| Type | Description |
-|---|---|
-| **Incident** | Tasks linked to a specific incident |
-| **General** | Standalone tasks not tied to an incident |
+Use the **All types** filter to narrow the board by task type - for example, to see only tasks linked to incidents or only standalone tasks.
 
 ## Creating a task
 
