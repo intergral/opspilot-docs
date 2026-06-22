@@ -8,7 +8,7 @@ Severity describes the impact level of an incident (SEV-1 through SEV-4). Status
 
 **Can I customise severities and statuses?**
 
-Yes. Both are fully configurable in **Administration > Preferences > Incidents**. You can rename, reorder, add, and delete severities and statuses, and assign colours and slugs. Investigator and Commander are the only built-in roles that cannot be removed.
+Yes. Both are fully configurable in **Administration > Preferences > Incidents**. You can rename, reorder, add, and delete severities and statuses, and assign colours and slugs.
 
 **How do I run a practice drill?**
 

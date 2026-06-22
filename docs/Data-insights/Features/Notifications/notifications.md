@@ -1,10 +1,10 @@
 # Notifications
 
-During a fast-moving incident, being pulled in at the right moment matters. Waiting until you happen to check a dashboard can mean the difference between a quick resolution and a prolonged one.
+Notifications keep you informed about the things that matter without requiring you to constantly check in. You stay in control of what you hear about, so the signal stays useful rather than becoming noise. Access your notifications by clicking the bell icon in the top navigation bar.
 
 ![!Screenshot](../Incidents/images/notifications.png)
 
-Notifications find you - whether you have been assigned a role, someone needs your input on a timeline, a service you own is affected, or an SLA is about to be breached. You stay in control of what you hear about, so the signal stays useful rather than becoming noise. Access your notifications by clicking the bell icon in the top navigation bar.
+Notifications currently focus on incidents - being pulled in at the right moment during a fast-moving situation can mean the difference between a quick resolution and a prolonged one. The system is built to expand over time as more notification types are added.
 
 ## What triggers a notification
 

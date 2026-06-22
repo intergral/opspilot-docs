@@ -79,10 +79,6 @@ Use the filters at the top of the catalog page to narrow entries by type, tier, 
 
 By default the catalog shows active entries only. Switch to **All entries** or **Deprecated only** using the status filter.
 
-### Management state
-
-Each entry shows a **Human-managed** badge, indicating that the entry is maintained manually by your team. This is the default state for all entries.
-
 ### Deprecating an entry
 
 When a service is retired, mark it as deprecated rather than deleting it. This keeps the historical record intact while removing it from the default active view. Point deprecated entries to their replacements to keep the catalog accurate as your system evolves.
@@ -96,10 +92,6 @@ The Services overview has a **Catalog / Raw** toggle on the service graph. Catal
 The **Select Catalog** dropdown filters the graph and table to a specific catalog entry.
 
 Services that appear in your telemetry but are not yet in the catalog show a **Create** button in the Catalog column of the Service Table - a quick way to fill gaps as you work.
-
-## Catalog in Analytics
-
-The **Top catalog entries** chart in [Analytics](../Features/Incidents/analytics.md) shows which catalog entries appear most frequently in incidents. The **Repeat offenders** section surfaces entries associated with three or more incidents in the last 30 days - a useful signal for services that may need longer-term attention.
 
 ---
 
