@@ -4,6 +4,8 @@ The Service Catalog is a persistent record of everything you run - your services
 
 The catalog also powers incident response: affected services on an incident link directly to their catalog entries, runbooks surface based on catalog service matches, and Analytics surfaces which catalog entries appear most frequently in incidents.
 
+![!Screenshot](../../Data-insights/Features/Incidents/images/catalog-list.png)
+
 ## Adding a catalog entry
 
 You can add entries from two places:
