@@ -1,7 +1,6 @@
 # Coworker
 
-Coworker is your always-on AI operations partner. It watches your services, investigates what it finds, and gives you a clear, prioritised picture of what's worth your attention right now, so you spend less time watching dashboards and more time building.
-
+Coworker is the connective layer that binds your observability data, alerting, service knowledge, and incident response into one place. Rather than switching between dashboards, alert feeds, and runbooks, you get a single AI operations partner that watches your systems, investigates what it finds, and hands you a clear, prioritised picture of what needs attention - so your team spends less time fighting tools and more time fixing problems.
 
 Each user gets their own personalised Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
 
@@ -9,11 +8,14 @@ Each user gets their own personalised Coworker that learns what's relevant to th
 
 Think of Coworker as a single teammate rather than a monitoring tool. Behind that one voice it is doing several jobs at once: watching for signals, investigating them, writing down what it finds, and deciding what to tell you. You don't need to think about those internal jobs. You just get one Coworker who keeps you informed.
 
+Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unconnected alert rules, uncatalogued services - these surface in your feed so you know exactly what to fix to make Coworker more effective. The onboarding experience is not just setup; it is a diagnostic that tells you where your observability has blind spots.
+
 ## What Coworker does
 
 | Capability | Description |
 |---|---|
-| **Situations** | Intelligent, contextualised findings grouped into coherent stories with severity, evidence, and recommended actions |
+| **Insights** | The core of Coworker - atomic findings written every time Coworker investigates something, forming the foundation for everything it surfaces |
+| **Situations** | Insights grouped into coherent stories with severity, evidence, and recommended actions - the thing you triage |
 | **Continuous monitoring** | Watches your systems around the clock and re-investigates open situations on a regular cadence |
 | **Alert response** | Automatically investigates firing alerts and posts one clean situation instead of a stream of raw alert noise |
 | **Tasks** | Scheduled, monitoring, and webhook-driven jobs that run recurring analysis and report back proactively |
@@ -24,11 +26,9 @@ Think of Coworker as a single teammate rather than a monitoring tool. Behind tha
 
 ## Insights and situations
 
-Two concepts underpin everything Coworker shows you.
+**Insights are the core of Coworker.** Everything Coworker does - investigating alerts, running scheduled checks, responding to webhooks - produces insights. An insight is one atomic finding: one observation, one anomaly, one error pattern. Each has a severity, a category, an affected service, and a short description with supporting evidence. Insights are how Coworker records what it has seen and reasoned about.
 
-**Insights** are Coworker's atomic findings: one observation, one anomaly, one error pattern. They are written automatically whenever Coworker investigates something: an alert that fired, a scheduled check, or a webhook event. Each insight has a severity, a category, an affected service, and a short description with supporting evidence.
-
-**Situations** are the editorial layer on top. Coworker groups related insights into one coherent story: a title, a plain-language summary, the affected service, severity, and impact. Situations are what you triage. Insights are how Coworker writes them up; situations are what it hands you.
+**Situations** are the editorial layer built on top of insights. Coworker groups related insights into one coherent story: a title, a plain-language summary, the affected service, severity, and impact. Situations are what you triage. Insights are how Coworker writes them up; situations are what it hands you.
 
 A situation is not a static record. As new insights arrive, Coworker decides whether to extend an existing situation, merge it with another, escalate or de-escalate its severity, or close it out. That continuous editing is the difference between a useful picture of your operations and a noisy alert feed.
 
@@ -86,7 +86,7 @@ Below the critical items sits the quieter list: warnings and lower-severity item
 
 Alongside situations, the feed contains:
 
-- **Coverage gaps**: pointers to things Coworker would have investigated but couldn't, because data is missing (for example, a service with no telemetry). Each names what's missing and includes a **Help me set this up** button that opens a guided thread.
+- **Coverage gaps**: one of Coworker's most useful signals. When it would have investigated something but couldn't - because a service has no telemetry, an alert rule isn't connected, or a catalog entry is missing - it tells you explicitly. Each gap names what's missing and includes a **Help me set this up** button that opens a guided thread. Coverage gaps turn Coworker into a diagnostic for your observability, not just a consumer of it.
 - **The digest**: a snapshot Coworker keeps current, summarising the checks it ran and things it handled quietly in the background.
 - **Debriefs**: short notes for when Coworker investigated something and concluded there was nothing worth raising, so the work is visible rather than silent.
 
