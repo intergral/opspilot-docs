@@ -67,14 +67,7 @@ The interface uses a tab bar across the top. **Home** is always the first tab. E
 
 ### Your view or the team's
 
-At the top of the page is a toggle between two views:
-
-| View | Description |
-|---|---|
-| **You** | Your personalised slice, filtered to what is relevant to you based on your setup |
-| **Team** | Everything Coworker has raised across your whole organisation, unfiltered |
-
-Most of the time you'll work in **You**. Switch to **Team** when you're on call, covering someone else's area, or want the full picture. Both views show the same situations; the toggle only changes how much of them reaches your page.
+Use the **Just for me** dropdown at the top of the page to filter the feed to your personalised slice - situations relevant to your services and setup. Switch to a broader view when you're on call, covering someone else's area, or want the full picture across your organisation.
 
 ### How the feed adapts
 
@@ -96,6 +89,16 @@ Alongside situations, the feed contains:
 - **Coverage gaps**: pointers to things Coworker would have investigated but couldn't, because data is missing (for example, a service with no telemetry). Each names what's missing and includes a **Help me set this up** button that opens a guided thread.
 - **The digest**: a snapshot Coworker keeps current, summarising the checks it ran and things it handled quietly in the background.
 - **Debriefs**: short notes for when Coworker investigated something and concluded there was nothing worth raising, so the work is visible rather than silent.
+
+### Sidebar
+
+The right-hand sidebar gives a quick status view alongside the feed:
+
+| Section | Description |
+|---|---|
+| **Tasks** | The number of open tasks currently assigned to you, with a link to the full Tasks board |
+| **Event sources** | Your connected event sources and their recent activity - showing whether each has been quiet or firing, and when it last triggered |
+| **Scheduled** | Your scheduled tasks, showing their run cadence and when they last ran |
 
 ---
 
@@ -149,7 +152,12 @@ Coworker gets smarter over time. Everything it does (investigating alerts, runni
 | **Team** | Who owns what, where the runbook lives, what each channel is for |
 | **User** | Your personal preferences and the way you like to work, learned from your conversations |
 
-Browse what Coworker has learned via the **Knowledge** button on the dashboard: a visual knowledge graph of your services and the facts it holds about each.
+Browse what Coworker has learned via the **Knowledge** button on the dashboard. The Knowledge page shows a summary of total memories, observations, nodes, and links, and lets you explore the knowledge in two views:
+
+| View | Description |
+|---|---|
+| **Graph** | A visual map of everything Coworker knows, with nodes representing entities (services, databases, concepts) and links between them showing relationships. Node size reflects how frequently an entity is referenced. The **Entities** panel on the right lists every entity ranked by reference count - use the search box to find a specific one. |
+| **List** | A searchable, filterable list of individual memories. Use the **Search memories** bar to find specific facts, **Filter by entity** to scope the list to a particular service or concept, and the sort control to order by newest or oldest. Each memory shows the fact Coworker recorded, when it was added, and any entity tags attached to it. |
 
 ### Correcting Coworker
 
@@ -157,13 +165,40 @@ When Coworker raises something that isn't a problem, dismiss it with a quick rea
 
 ---
 
-## Preferences
+## Settings
 
-To update your monitoring preferences at any time, open a new thread and select **Update your preferences**, or describe the change you want directly in any chat. Coworker will ask clarifying questions and update your settings conversationally.
+Click the settings icon on the Coworker dashboard to open the Settings modal. Settings are split into two groups:
 
-To suppress a type of insight from your view, click **Hide similar** on any insight card.
+**You** — personal settings that apply only to your Coworker:
 
-This opens a modal where you can match by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your conditions.
+| Setting | Description |
+|---|---|
+| **Your preferences** | Controls what Coworker weights when deciding what to surface in your feed. See below. |
+| **Re-run onboarding** | Walks through the getting-started flow again - useful for adding more scheduled tasks, picking up extra alerts, or refining your preferences. Re-running does not delete anything you already have; your tasks, situations, alert subscriptions, and preferences stay in place. Click **Open onboarding** to start. |
+
+**Your organisation** — settings that apply across your whole team:
+
+| Setting | Description |
+|---|---|
+| **Coworker activity** | Configure what Coworker monitors and how it responds to events |
+| **Coworker behaviour** | Adjust how Coworker investigates and communicates |
+| **Budget & cost** | Manage your AI Token allowance and cost controls (same as the [AI Tokens tab in Usage](#ai-tokens-tab)) |
+
+### Your preferences
+
+The **Your preferences** panel shapes what reaches your personal feed without changing what Coworker investigates. It still investigates everything - this just controls what surfaces for you versus what stays in the team view. You can also update these conversationally at any time by describing the change in any chat.
+
+**Focus services** — add the service names or glob patterns (e.g. `opspilot-*`) for services you own or primarily work on. Situations affecting these services are prioritised in your feed.
+
+**Focus areas** — select the kinds of issues you care about most. Toggle any that apply:
+
+Errors and exceptions · Application performance · Infrastructure and runtime · Databases and data stores · Data pipelines and quality · Deploys and releases · Team and delivery health · Reliability and SLOs · Cost and capacity · Security and auth
+
+**Custom keywords** — add any terms beyond the focus areas above. A match nudges related situations into your feed.
+
+### Hiding insight types
+
+To suppress a type of insight from your view, click **Hide similar** on any insight card. This opens a modal where you can match by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your conditions.
 
 ---
 
