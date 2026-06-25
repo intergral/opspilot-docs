@@ -1,4 +1,30 @@
 
+### Incidents
+
+A single page for declaration, coordination, and post-incident review.
+
+- Declare an incident in seconds with a title, severity, affected services, and assigned roles
+- Work through a triage, respond, and resolve lifecycle with timestamps at every stage
+- SLA targets per severity show at a glance whether you are on track or slipping
+- Add notes and @mention teammates on a live activity timeline, leaving a complete record of what happened
+- Runbooks matching the affected services and severity surface automatically - convert steps to tasks in one click
+- Write the post-mortem in Markdown from a template, then export to PDF, Markdown, or HTML
+- Analytics shows MTTA, MTTM, time to post-mortem, and which services keep coming back as repeat offenders
+- Severities, statuses, SLA targets, and roles are all configurable in **Administration > Preferences > Incidents**
+
+### Services
+
+Improvements to the Services overview, logs, and traces views.
+
+- Interactive service graph with node tooltips showing throughput, latency, errors, inbound, and outbound connections
+- Focus mode isolates a selected service and its direct connections
+- Group peers by name similarity to reduce clutter in large environments
+- Seven layout options including hierarchy, force-directed, circle, concentric, and radial tree
+- 3D view and full-screen expand for complex environments
+- Configure warning and critical thresholds for span throughput, latency, and error rate
+- Logs tab: log rate chart with severity colour coding, per-severity badge filters, and keyword search
+- Traces tab: P50 and P95 latency charts, span status, top throughput, and expanded trace view with waterfall timeline
+
 ### Jira integration
 OpsPilot now integrates directly with Jira Cloud and Data Center, enabling you to:
 

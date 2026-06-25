@@ -1,5 +1,48 @@
 ﻿# What's new in OpsPilot 
 
+## Service catalog, incident management, tasks, and notifications
+
+**Published: June 25, 2026**
+
+This release brings four new features that connect your services, your incidents, and the people who respond to them.
+
+### Service Catalog
+
+A persistent map of everything you run - services, databases, queues, caches, and external dependencies. Unlike the Services overview, catalog entries stay visible whether or not they are currently sending telemetry.
+
+- Give each entry an owner, a tier, a language, and a repo link so nothing is ambiguous at 2am
+- Register new services in a couple of clicks directly from the Services overview
+- Mark retired services as deprecated rather than deleting them to keep the history intact
+- Watch a service and get notified the moment it is caught up in an incident
+
+The Services overview graph and table now draw on catalog details alongside live metrics.
+
+### Incidents
+
+A single page for declaration, coordination, and post-incident review.
+
+- Declare an incident in seconds - title, severity, affected services, and who is leading
+- Work through a triage → respond → resolve lifecycle with timestamps at every stage
+- SLA targets per severity show at a glance whether you are on track
+- Runbooks that match the affected services and severity surface automatically - convert their steps into tasks in one click
+- Write the post-mortem in Markdown from a template, then export to PDF, Markdown, or HTML
+- Analytics shows MTTA, MTTM, time to post-mortem, and which services keep coming back as repeat offenders
+
+Severities, statuses, SLA targets, and roles are all configurable in **Administration > Preferences > Incidents**.
+
+### Tasks
+
+One board for every follow-up, across incidents and beyond. Track work through Open, In progress, and Done, set due dates, and assign to team members.
+
+### Notifications
+
+Notifications reach you when you are assigned a role or task, when someone @mentions you on an incident timeline, when a status or severity changes, when an SLA is breached, or when a service you own or watch is affected. Manage what you receive in **Administration > Preferences > Notifications**.
+
+!!! info "Learn more"
+    [Service Catalog](/Admin-and-data/Catalog/catalog/) · [Incidents](/Data-insights/Features/Incidents/overview/) · [Tasks](/Data-insights/Features/Tasks/tasks/) · [Notifications](/Data-insights/Features/Notifications/notifications/)
+
+---
+
 ## One-click: Extend FusionReactor with OpsPilot
 
 **Published: April 14, 2026**

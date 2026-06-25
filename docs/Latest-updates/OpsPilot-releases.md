@@ -1,5 +1,17 @@
 # OpsPilot Releases
 
+### 25th June, 2026
+
+| Issue Type | Summary |
+|---|---|
+| New Feature | **Service Catalog** - A persistent record of your services and dependencies with ownership, tiers, runbook attachments, and incident linking |
+| New Feature | **Incidents** - Full incident lifecycle management: declaration, triage, coordination, timelines, runbooks, tasks, post-mortems, and analytics |
+| New Feature | **Tasks** - A shared board for tracking incident follow-ups and work items across Open, In progress, and Done |
+| New Feature | **Notifications** - Alerts for role assignments, @mentions, status and severity changes, SLA breaches, and watched service activity |
+| New Feature | **Services graph** - Interactive node tooltips with focus mode, group peers by name similarity, multiple layout options, 3D view, and full-screen expand |
+| New Feature | **Services logs** - Log rate chart with severity colour coding, per-severity badge filters, and keyword search |
+| New Feature | **Services traces** - Performance charts (P50, P95, span status, throughput), filterable trace list, and expanded trace view with waterfall timeline |
+| Improvement | **Thresholds** - Configure warning and critical thresholds for span throughput, latency, and error rate directly from the Services overview |
 
 ### OpsPilot  13th January 2025
 
