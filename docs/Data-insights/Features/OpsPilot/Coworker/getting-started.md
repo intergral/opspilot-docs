@@ -6,9 +6,13 @@ When you first access Coworker, a short guided setup walks you through personali
 
 Step 1 introduces what Coworker does and how it works, with four cards showing the flow: something fires, Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
 
+![!Screenshot](../../../../Coworker/onboarding1.png)
+
 ---
 
 ### Step 2: Your role
+
+![!Screenshot](../../../../Coworker/onboarding2.png)
 
 Coworker asks which role best describes you. This sets the defaults for which kinds of situations are surfaced to you first:
 
@@ -25,6 +29,8 @@ Pick the closest fit. Select **Skip - I'll come back later** to proceed without 
 ---
 
 ### Step 3: What do you want me to help with?
+
+![!Screenshot](../../../../Coworker/onboarding3.png)
 
 Select as many as apply:
 
@@ -44,6 +50,8 @@ Click **Continue** when done, or **Skip** to proceed without selecting any.
 ---
 
 ### Step 4: Which of these matter most to you?
+
+![!Screenshot](../../../../Coworker/onboarding4.png)
 
 The final step. Select the domains you want Coworker to prioritise in your feed:
 

@@ -12,11 +12,11 @@ Each user has their own personalised Coworker. It is not possible to create mult
 
 ### Can my team share a Coworker?
 
-Each Coworker is personal to the user it belongs to. However, team members can view **All Team Insights** from the [dashboard](overview.md#dashboard) to see insights across the whole organisation.
+Each Coworker is personal to the user it belongs to. However, you can switch from the **Just for me** view to a broader team view from the dropdown at the top of the dashboard to see what Coworker has raised across your whole organisation.
 
 ### Can I restart the setup?
 
-Yes. Click the settings icon on the [dashboard](overview.md#getting-started) and select **Restart setup** to go through the onboarding conversation again.
+Yes. Click the settings icon on the Coworker dashboard, select **Re-run onboarding**, and click **Open onboarding** to walk through the setup flow again. Re-running does not delete anything you already have.
 
 ---
 
@@ -94,7 +94,7 @@ No. Usage depends on the amount of telemetry, context and reasoning required. A 
 Yes. The **Projected monthly** metric in the Usage view estimates your end-of-month AI Token consumption based on current usage patterns, so you can see whether you are on track to stay within your plan allowance.
 
 !!! info "Learn more"
-    [Usage overview](usage.md#usage-overview)
+    [Activity tab](usage.md#activity-tab)
 
 ### How much does Coworker cost to run?
 
@@ -105,33 +105,33 @@ Cost depends on how many tasks you have, how frequently they run, and the [model
 
 ### How do I reduce AI Token usage?
 
-- Review the **optimisation suggestions** in the [Cost & Optimisation](usage.md) page; these appear automatically after a task has run a few times and Coworker detects ways it could be improved
-- **Accept** an optimisation suggestion to apply the recommended change immediately
-- Click through to a specific task and click **Analyse & Optimise** to trigger an on-demand analysis
+- Review **Optimization Suggestions** in the [AI Tokens tab](usage.md#optimization-suggestions); these appear automatically after a task has run a few times and Coworker detects ways it could be improved
+- **Apply** an optimisation suggestion to apply the recommended change immediately
+- Click **Analyse & Optimise** to trigger an on-demand optimisation review at any time
 - Switch high-volume or routine tasks to the [Efficient model tier](tasks.md#model-tier)
 - Reduce the frequency of scheduled tasks that run often but find little
-- Review the **Cost Breakdown** table to identify the most expensive tasks and consolidate or adjust them
+- Review the **AI Token Breakdown** table to identify the most expensive tasks and consolidate or adjust them
 
 ### What happens when I reach my task allowance?
 
 Coworker will stop running tasks once spend reaches the **Halt threshold**, which by default is set to 100% of your task allowance. You can lower this threshold to stop tasks earlier and protect your allowance. A separate **Warning threshold** notifies you before the halt is reached.
 
 !!! info "Learn more"
-    [Allowance](usage.md#allowance)
+    [Allowance](usage.md#ai-token-allowance)
 
 ### Can I get warned before hitting my allowance limit?
 
-Yes. The **Warning threshold** in Allowance Settings triggers a notification when your spend reaches a set percentage of your task allowance (e.g. 80%). This gives you time to adjust tasks or increase your allowance before tasks are halted.
+Yes. The **Warning threshold** in Settings > Budget & cost triggers a notification when your spend reaches a set percentage of your task allowance (e.g. 80%). This gives you time to adjust tasks or increase your allowance before tasks are halted.
 
 !!! info "Learn more"
-    [Allowance](usage.md#allowance)
+    [Allowance](usage.md#ai-token-allowance)
 
 ### How do I accept or dismiss an optimisation suggestion?
 
-Open the **Cost & Optimisation** view and click through to the relevant task. Expand any optimisation suggestion to see the full reasoning and the proposed change. Click **Accept** to apply it immediately, or **Dismiss** to ignore it. You can also click **View task config** to review the task setup before deciding.
+Open the **AI Tokens** tab in Usage and scroll to **Optimization Suggestions**. Expand any suggestion to see the reasoning under **Why this suggestion** and the proposed change under **Instruction changes**. Click **Apply** to apply it immediately, or **Dismiss** to ignore it.
 
 !!! info "Learn more"
-    [Per-task analysis](usage.md#per-task-analysis)
+    [Optimization Suggestions](usage.md#optimization-suggestions)
 
 ### What is the difference between Thorough and Efficient model tiers?
 
