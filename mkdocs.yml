@@ -112,8 +112,13 @@ nav:
         - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
         - FAQ: Data-insights/Features/Alerting/FAQ.md
      - Incidents:
-        - Overview: Data-insights/Features/Incidents/incidents.md
-        - Settings: Data-insights/Features/Incidents/Settings.md
+        - Overview: Data-insights/Features/Incidents/overview.md
+        - Runbooks: Data-insights/Features/Incidents/runbooks.md
+        - Post-mortem templates: Data-insights/Features/Incidents/postmortem-templates.md
+        - Analytics: Data-insights/Features/Incidents/analytics.md
+        - FAQ: Data-insights/Features/Incidents/faq.md
+     - Tasks: Data-insights/Features/Tasks/tasks.md
+     - Notifications: Data-insights/Features/Notifications/notifications.md
   - TELEMETRY:
      - Logs: Data-insights/Features/explore-logs.md
      - Metrics: Data-insights/Features/explore-metrics.md
@@ -201,6 +206,7 @@ nav:
         - Invoices: Admin-and-data/invoices.md
         - API Keys: Admin-and-data/api-keys.md
         - Preferences: Admin-and-data/preferences.md
+        - Catalog: Admin-and-data/Catalog/catalog.md
         - Organization Settings: Admin-and-data/organization-settings.md
         - Users:
            - Organization Users: Admin-and-data/Account/Cloud/users.md
