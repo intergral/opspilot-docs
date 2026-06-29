@@ -25,6 +25,8 @@ Usage varies depending on the amount of context, telemetry and reasoning require
 
 The **Activity** tab shows what Coworker has done over a selected time range. Use the **Plan period** selector in the top right to switch between plan years, and the **Last 30 days / Last 90 days / Full period** toggle to adjust the window within that period.
 
+![!Screenshot](../../../../Coworker/usage1.png)
+
 Four summary metrics are shown at the top:
 
 | Metric | Description |
@@ -52,6 +54,8 @@ OpsPilot always shows the operational work Coworker delivered alongside AI Token
 ## AI Tokens tab
 
 The **AI Tokens** tab gives you full visibility into AI Token spend and the controls to manage it.
+
+![!Screenshot](../../../../Coworker/usage-ai-token.png)
 
 !!! tip
     One of the most effective ways to reduce AI Token usage over time is simply to let tasks run. As [task-specific memory](overview.md#memory) builds up, Coworker re-uses context it already knows rather than fetching it fresh on every run, reducing usage by up to 50% in some cases.

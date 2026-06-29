@@ -4,6 +4,8 @@ Coworker is the connective layer that binds your observability data, alerting, s
 
 Each user gets their own personalised Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
 
+![!Screenshot](../../../../Coworker/co1.png)
+
 ## How to think about it
 
 Think of Coworker as a single teammate rather than a monitoring tool. Behind that one voice it is doing several jobs at once: watching for signals, investigating them, writing down what it finds, and deciding what to tell you. You don't need to think about those internal jobs. You just get one Coworker who keeps you informed.
@@ -54,6 +56,8 @@ Coworker is never just a snapshot. Three things run continuously:
 **Tidying up.** Every few minutes Coworker sweeps your active situations and consolidates them, merging two that turn out to be the same problem, escalating severity when a new signal warrants it, and attaching stray findings to the situation they belong to.
 
 **Re-checking what's open.** Every active situation is re-investigated on a cadence that depends on its severity. Criticals are checked roughly every 10–15 minutes at first; warnings and quieter items less frequently. When a situation recovers on its own, Coworker resolves it and tells you why. As a situation stays stable, checks become less frequent; if something shifts, the cadence tightens back up. Once resolved, a situation gets a couple of follow-up checks over the next few hours to confirm the fix held.
+
+![!Screenshot](../../../../Coworker/overview1.png)
 
 ---
 
@@ -153,6 +157,8 @@ Coworker gets smarter over time. Everything it does (investigating alerts, runni
 | **User** | Your personal preferences and the way you like to work, learned from your conversations |
 
 Browse what Coworker has learned via the **Knowledge** button on the dashboard. The Knowledge page shows a summary of total memories, observations, nodes, and links, and lets you explore the knowledge in two views:
+
+![!Screenshot](../../../../Coworker/knowledge.png)
 
 | View | Description |
 |---|---|

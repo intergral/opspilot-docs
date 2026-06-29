@@ -50,6 +50,8 @@ Every task run does two things at once:
 
 This means you can aim a task either at a report you want kept current, or purely at finding problems, and have Coworker proactively raise what it spots without an alert needing to fire at all.
 
+![!Screenshot](../../../../Coworker/usage-report.png)
+
 ---
 
 ## OpsPilot Alerts
