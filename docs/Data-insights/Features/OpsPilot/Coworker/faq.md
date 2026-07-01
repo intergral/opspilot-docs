@@ -8,11 +8,11 @@ When you first open Coworker, a [guided setup conversation](overview.md#getting-
 
 ### Can I have more than one Coworker?
 
-Each user has their own personalised Coworker. It is not possible to create multiple Coworkers for a single user.
+No. Each user has one Coworker. Your feed and preferences are personal to you, but tasks and investigations are shared across your organisation — everyone on the team can see what Coworker has raised.
 
 ### Can my team share a Coworker?
 
-Each Coworker is personal to the user it belongs to. However, you can switch from the **Just for me** view to a broader team view from the dropdown at the top of the dashboard to see what Coworker has raised across your whole organisation.
+Tasks and investigations are already shared across your organisation. Use the **Just for me** dropdown at the top of the dashboard to toggle between your personalised feed and the full team view.
 
 ### Can I restart the setup?
 
@@ -30,7 +30,9 @@ Start with one or two [scheduled tasks](overview.md#scheduled-tasks) covering yo
 
 ### How often should I run scheduled tasks?
 
-This depends on how dynamic your environment is. Daily is a good starting point for most teams. Hourly is useful for high-traffic or critical services where issues can escalate quickly.
+Daily is the most common cadence and a good starting point. Every 6 hours works well for services that need closer attention. Weekly is often enough for higher-level system reviews.
+
+If you find yourself wanting very frequent checks on a specific pattern, a [monitoring task](tasks.md#monitoring-tasks) is usually a better fit than a high-frequency scheduled task. If something needs near-real-time response, connecting an alert rule via OpsPilot Alerts will be more effective and much cheaper.
 
 !!! info "Learn more"
     [Scheduled tasks](overview.md#scheduled-tasks)
@@ -82,6 +84,7 @@ AI Tokens are used whenever Coworker performs AI-powered work:
 
 - Answering questions in chat
 - Investigating alerts and situations
+- Triaging and performing background checkups on open situations
 - Analysing telemetry and service behaviour
 - Running scheduled checks
 - Generating recommendations, suggested fixes and debriefs
@@ -100,7 +103,14 @@ Yes. The **Projected monthly** metric in the Usage view estimates your end-of-mo
 
 ### How much does Coworker cost to run?
 
-Cost depends on how many tasks you have, how frequently they run, and the [model tier](tasks.md#model-tier) selected (Thorough uses more AI Tokens than Efficient). You can set a monthly task allowance to control spend, with configurable warning and halt thresholds to prevent overruns.
+Cost depends on several factors:
+
+- How many tasks you have and how frequently they run
+- The [model tier](tasks.md#model-tier) selected (Thorough uses more AI Tokens than Efficient)
+- The number of events received from your event sources - the more alerts that fire, the more investigations Coworker runs
+- The number of open situations - more open situations means more background checkups running continuously
+
+You can set a monthly task allowance to control spend, with configurable warning and halt thresholds to prevent overruns.
 
 !!! info "Learn more"
     [Cost and Optimisation](usage.md)
@@ -113,6 +123,7 @@ Cost depends on how many tasks you have, how frequently they run, and the [model
 - Switch high-volume or routine tasks to the [Efficient model tier](tasks.md#model-tier)
 - Reduce the frequency of scheduled tasks that run often but find little
 - Review the **AI Token Breakdown** table to identify the most expensive tasks and consolidate or adjust them
+- If noisy alerts are driving up costs, consider disabling Coworker from investigating them. Click on the **OpsPilot Alerts** event source in the sidebar and sort by **Most events** to see which alert rules are firing most frequently - those are the best candidates to review or exclude
 
 ### What happens when I reach my task allowance?
 
