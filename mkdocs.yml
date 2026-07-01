@@ -42,6 +42,14 @@ nav:
      - What is OpsPilot?: what-is-opspilot.md
      - UI Overview: Data-insights/Features/overview.md
   - AI:
+     - Coworker:
+        - Overview: Data-insights/Features/OpsPilot/Coworker/overview.md
+        - Getting started: Data-insights/Features/OpsPilot/Coworker/getting-started.md
+        - Tasks: Data-insights/Features/OpsPilot/Coworker/tasks.md
+        - Usage: Data-insights/Features/OpsPilot/Coworker/usage.md
+        - Knowledge: Data-insights/Features/OpsPilot/Coworker/knowledge.md
+        - Settings: Data-insights/Features/OpsPilot/Coworker/settings.md
+        - FAQ: Data-insights/Features/OpsPilot/Coworker/faq.md
      - OpsPilot Assistant:
         - Overview: Data-insights/Features/OpsPilot/AIoverview.md
         - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
