@@ -129,6 +129,8 @@ Toggle **Auto-apply optimization suggestions** to have Coworker automatically ap
 
 Click **Analyse & Optimise** to trigger an on-demand optimisation review at any time. If no optimisations are needed, you'll see a **Looking good!** confirmation.
 
+![!Screenshot](../../../../Coworker/per-task-usage.png)
+
 ---
 
 !!! question "Need more help?"

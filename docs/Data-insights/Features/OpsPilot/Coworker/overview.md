@@ -102,7 +102,7 @@ The right-hand sidebar gives a quick status view alongside the feed:
 |---|---|
 | **Tasks** | The number of open tasks currently assigned to you, with a link to the full Tasks board |
 | **Event sources** | Your connected event sources and their recent activity - showing whether each has been quiet or firing, and when it last triggered |
-| **Scheduled** | Your scheduled tasks, showing their run cadence and when they last ran |
+| **Scheduled** | Your scheduled tasks, showing their run cadence and when they last ran. A green highlight indicates a task that just finished |
 
 ---
 
@@ -139,7 +139,19 @@ These shortcuts are available everywhere insights appear: the priority queue, in
 
 ## Chatting outside a situation
 
-You can start a fresh thread at any time to ask about a service, a recent change, a metric, or anything else Coworker can investigate. These free-form chats have the full set of tools: attach images, use voice input, search the web, and pull context from your connected integrations.
+You can start a fresh thread at any time to ask about a service, a recent change, a metric, or anything else Coworker can investigate. Click **+** in the tab bar to open a new thread.
+
+![!Screenshot](../../../../Coworker/new-thread.png)
+
+Three shortcuts are offered to get started quickly:
+
+| Shortcut | Description |
+|---|---|
+| **Just chat** | Ask anything - running a query, debugging a service, exploring an idea |
+| **Set up a task** | Schedule a check, watch a service, or react to a webhook |
+| **Update your preferences** | Adjust the categories, services, or severities Coworker highlights for you |
+
+These free-form chats have the full set of tools: attach images, use voice input, search the web, and pull context from your connected integrations.
 
 Each task run produces a report with findings, the investigation process, and a final summary. An input field appears below each report (*Ask OpsPilot about this report...*) with the full report already in context, so you can ask follow-up questions without copying anything.
 
@@ -147,64 +159,15 @@ Each task run produces a report with findings, the investigation process, and a 
 
 ## Memory
 
-Coworker gets smarter over time. Everything it does (investigating alerts, running tasks, talking to you) builds memory that carries forward.
+Coworker gets smarter over time. Everything it does - investigating alerts, running tasks, talking to you - builds memory that carries forward into every future investigation.
 
-| Memory type | What it holds |
-|---|---|
-| **System-wide** | How your services fit together, what's normal, and what tends to break. Shared across your whole organisation, so what Coworker learns helping one person makes it smarter for everyone |
-| **Task-specific** | What recurring checks have turned up before and the patterns that matter. Can reduce token costs by up to 50% on long-running tasks |
-| **Team** | Who owns what, where the runbook lives, what each channel is for |
-| **User** | Your personal preferences and the way you like to work, learned from your conversations |
-
-Browse what Coworker has learned via the **Knowledge** button on the dashboard. The Knowledge page shows a summary of total memories, observations, nodes, and links, and lets you explore the knowledge in two views:
-
-![!Screenshot](../../../../Coworker/knowledge.png)
-
-| View | Description |
-|---|---|
-| **Graph** | A visual map of everything Coworker knows, with nodes representing entities (services, databases, concepts) and links between them showing relationships. Node size reflects how frequently an entity is referenced. The **Entities** panel on the right lists every entity ranked by reference count - use the search box to find a specific one. |
-| **List** | A searchable, filterable list of individual memories. Use the **Search memories** bar to find specific facts, **Filter by entity** to scope the list to a particular service or concept, and the sort control to order by newest or oldest. Each memory shows the fact Coworker recorded, when it was added, and any entity tags attached to it. |
-
-### Correcting Coworker
-
-When Coworker raises something that isn't a problem, dismiss it with a quick reason, such as "this is expected" or "too noisy". Coworker turns your correction into a lasting fact: next time it sees the same pattern on the same service, it remembers and won't raise it again. A few early corrections go a long way towards tuning Coworker to your reality.
+Click the **Knowledge** button on the dashboard to explore what Coworker has learned. See [Knowledge](knowledge.md) for full details.
 
 ---
 
 ## Settings
 
-Click the settings icon on the Coworker dashboard to open the Settings modal. Settings are split into two groups:
-
-**You** — personal settings that apply only to your Coworker:
-
-| Setting | Description |
-|---|---|
-| **Your preferences** | Controls what Coworker weights when deciding what to surface in your feed. See below. |
-| **Re-run onboarding** | Walks through the getting-started flow again - useful for adding more scheduled tasks, picking up extra alerts, or refining your preferences. Re-running does not delete anything you already have; your tasks, situations, alert subscriptions, and preferences stay in place. Click **Open onboarding** to start. |
-
-**Your organisation** — settings that apply across your whole team:
-
-| Setting | Description |
-|---|---|
-| **Coworker activity** | Configure what Coworker monitors and how it responds to events |
-| **Coworker behaviour** | Adjust how Coworker investigates and communicates |
-| **Budget & cost** | Manage your AI Token allowance and cost controls (same as the [AI Tokens tab in Usage](#ai-tokens-tab)) |
-
-### Your preferences
-
-The **Your preferences** panel shapes what reaches your personal feed without changing what Coworker investigates. It still investigates everything - this just controls what surfaces for you versus what stays in the team view. You can also update these conversationally at any time by describing the change in any chat.
-
-**Focus services** — add the service names or glob patterns (e.g. `opspilot-*`) for services you own or primarily work on. Situations affecting these services are prioritised in your feed.
-
-**Focus areas** — select the kinds of issues you care about most. Toggle any that apply:
-
-Errors and exceptions · Application performance · Infrastructure and runtime · Databases and data stores · Data pipelines and quality · Deploys and releases · Team and delivery health · Reliability and SLOs · Cost and capacity · Security and auth
-
-**Custom keywords** — add any terms beyond the focus areas above. A match nudges related situations into your feed.
-
-### Hiding insight types
-
-To suppress a type of insight from your view, click **Hide similar** on any insight card. This opens a modal where you can match by category, severity, label, or title pattern. Coworker will stop surfacing insights that match your conditions.
+Click the settings icon on the Coworker dashboard to open the Settings modal. See [Settings](settings.md) for full details on your preferences, check-in cadence, behaviour, and budget controls.
 
 ---
 

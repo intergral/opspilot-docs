@@ -16,7 +16,9 @@ Each Coworker is personal to the user it belongs to. However, you can switch fro
 
 ### Can I restart the setup?
 
-Yes. Click the settings icon on the Coworker dashboard, select **Re-run onboarding**, and click **Open onboarding** to walk through the setup flow again. Re-running does not delete anything you already have.
+Yes. Click the settings icon on the Coworker dashboard, select **Reset onboarding**, and click **Open onboarding** to walk through the setup flow again. Re-running does not delete anything you already have.
+
+![!Screenshot](../../../../Coworker/rerun-onboarding.png)
 
 ---
 

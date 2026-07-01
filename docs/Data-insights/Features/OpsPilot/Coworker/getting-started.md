@@ -4,6 +4,8 @@
 
 When you first access Coworker, a short guided setup walks you through personalising your experience. You can skip it at any time and still get a working Coworker, though you'll see a broader, less tailored view until you configure your preferences.
 
+### Step 1: Introduction
+
 Step 1 introduces what Coworker does and how it works, with four cards showing the flow: something fires, Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
 
 ![!Screenshot](../../../../Coworker/onboarding1.png)
@@ -88,24 +90,9 @@ None of these change what Coworker investigates or raises across your organisati
 
 ## Settings
 
-Open **Settings** from the Coworker dashboard to access configuration options. The panel is split into two sections:
+Open **Settings** from the Coworker dashboard to access your preferences, check-in cadence, behaviour, and budget controls. You don't need to configure all of this up front — sensible defaults are in place, and you can ask Coworker directly in any chat to update your preferences conversationally.
 
-**You**
-
-| Option | Description |
-|---|---|
-| **Your preferences** | Adjust your focus services, focus areas, custom keywords, and personal monitoring preferences |
-| **Re-run onboarding** | Walk through the getting-started flow again without losing any existing setup |
-
-**Your organisation**
-
-| Option | Description |
-|---|---|
-| **Coworker activity** | View a log of Coworker's background activity across your organisation |
-| **Coworker behaviour** | Adjust how Coworker operates: checkup cadence (Aggressive to Minimal), report detail level (Concise, Standard, Detailed), and digest frequency (every 6, 12, or 24 hours) |
-| **Budget & cost** | Set your monthly task allowance, warning threshold and halt threshold. See [Usage](usage.md#ai-token-allowance) for full details |
-
-You don't need to configure all of this up front, as sensible defaults are in place. You can also ask Coworker directly in any chat to update your preferences; it can read and change your settings conversationally.
+See [Settings](settings.md) for full details.
 
 ---
 

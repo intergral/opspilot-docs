@@ -17,6 +17,8 @@ Run on a recurring schedule you choose: hourly, daily, weekly, monthly, or a cus
 
 Run any scheduled task on-demand with the **Run now** button, and view the full execution history to see what it found on each run.
 
+![!Screenshot](../../../../Coworker/scheduled-task.png)
+
 ### Monitoring tasks
 
 Monitoring tasks are temporary. They run repeatedly for a limited window to keep an eye on one specific thing and report back as they go. For example, "keep checking the checkout error rate through this rollout" or "watch database connections for the next few hours while we drain the node."
