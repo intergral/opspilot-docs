@@ -198,26 +198,24 @@ nav:
            - Getting-started/Tutorials/Common-issues/CF2025-and-FR-2025-Startup-issue.md
            - Getting-started/Tutorials/Common-issues/FR-wmic.exe-error.md
            - Getting-started/Tutorials/Common-issues/TLS-deprecation-guide.md
-     - Administration:
-        - Usage & Details: Admin-and-data/usage-and-details.md
-        - Billing:
-           - Overview: Admin-and-data/Billing/Cloud/overview.md
-           - FAQ: Admin-and-data/Billing/Cloud/faq.md
-        - Invoices: Admin-and-data/invoices.md
+     - Data and Licenses:
+        - Licence Keys: Admin-and-data/Licensing/Licensing.md
         - API Keys: Admin-and-data/api-keys.md
-        - Preferences: Admin-and-data/preferences.md
-        - Catalog: Admin-and-data/Catalog/catalog.md
-        - Organization Settings: Admin-and-data/organization-settings.md
-        - Users:
-           - Organization Users: Admin-and-data/Account/Cloud/users.md
-           - User Profile: Admin-and-data/Account/Cloud/profile.md
-           - User Security: Admin-and-data/Account/Cloud/security.md
-        - Data limits: Admin-and-data/Limits.md
-        - Security: Admin-and-data/security.md
-        - Legal:
-           - Terms of Service: Admin-and-data/tos.md
-           - EULA: Admin-and-data/EULA.md
-           - Third Party Licenses: Admin-and-data/Third-Party-Licenses/licenses.md
+        - Shipping: Admin-and-data/shipping.md
+        - Signals: Admin-and-data/signals.md
+     - Billing:
+        - Overview: Admin-and-data/Billing/Cloud/overview.md
+        - Invoices: Admin-and-data/invoices.md
+        - Manage Subscription: Admin-and-data/Billing/manage-subscription.md
+        - Usage: Admin-and-data/usage-and-details.md
+     - Organization:
+        - General: Admin-and-data/organization-settings.md
+        - Members: Admin-and-data/Account/Cloud/users.md
+        - Invitations: Admin-and-data/Account/Cloud/invitations.md
+     - Profile settings:
+        - Profile: Admin-and-data/Account/Cloud/profile.md
+        - Notifications: Admin-and-data/Account/Cloud/notifications.md
+        - Watched services: Admin-and-data/Account/Cloud/watched-services.md
      - Contribute:
         - Contribute/how-to-contribute.md
         - Style Guide:
