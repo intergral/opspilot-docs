@@ -51,6 +51,6 @@ Click **+ New** in the top right to create something new. Three options are avai
 
 | Option | Description |
 |---|---|
-| **Alert rule** | Create a new alert rule. See [Rules](Configure-rules.md) for full details |
-| **Contact point** | Add a new contact point. See [Contact Points](Contact-points.md) for full details |
-| **Custom detector** | Create a custom anomaly detector. See [Anomaly Detectors](../Anomaly-Detection/ADoverview.md) for full details |
+| **Alert rule** | Create a new alert rule. See [Rules](rules.md) for full details |
+| **Contact point** | Add a new contact point. See [Contact Points](contact-points.md) for full details |
+| **Custom detector** | Create a custom anomaly detector. See [Anomaly Detectors](anomaly-detectors.md) for full details |

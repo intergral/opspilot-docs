@@ -101,22 +101,16 @@ nav:
         - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
         - Shipping data: Monitor-your-data/Kubernetes-monitoring/Shipping.md
      - Alerting:
-        - Overview: Data-insights/Features/Alerting/Alerts-overview.md
-        - Rules: Data-insights/Features/Alerting/Alert-Rules/Configure-rules.md
-        - Contact Points:
-           - Overview: Data-insights/Features/Alerting/Contact-points.md
-           - Notification Templates: Data-insights/Features/Alerting/Templates.md
-        - Notification Policy:
-           - Overview: Data-insights/Features/Alerting/Notifications.md
-           - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
-        - Silences: Data-insights/Features/Alerting/Silences.md
-        - Firing Alerts: Data-insights/Features/Alerting/Active-alerts.md
+        - Status: Data-insights/Features/New-alerting/status.md
+        - Rules: Data-insights/Features/New-alerting/rules.md
+        - Contact Points: Data-insights/Features/New-alerting/contact-points.md
+        - Time Intervals: Data-insights/Features/New-alerting/time-intervals.md
+        - Notification Policy: Data-insights/Features/New-alerting/notification-policy.md
+        - Silences: Data-insights/Features/New-alerting/silences.md
         - Examples:
            - Overview: Data-insights/Features/alerting-examples.md
            - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
-        - Anomaly Detection:
-           - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
-           - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
+        - Anomaly Detectors: Data-insights/Features/New-alerting/anomaly-detectors.md
         - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
         - FAQ: Data-insights/Features/Alerting/FAQ.md
      - Incidents:
