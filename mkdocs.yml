@@ -88,6 +88,7 @@ nav:
         - Service Detail: Data-insights/Features/Services/service-detail.md
         - Traces: Data-insights/Features/Services/traces.md
         - Logs: Data-insights/Features/Services/logs.md
+        - Catalog: Admin-and-data/Catalog/catalog.md
         - FAQ: Data-insights/Features/Services/faq.md
      - Kubernetes:
         - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
@@ -116,9 +117,10 @@ nav:
         - Runbooks: Data-insights/Features/Incidents/runbooks.md
         - Post-mortem templates: Data-insights/Features/Incidents/postmortem-templates.md
         - Analytics: Data-insights/Features/Incidents/analytics.md
+        - Tasks: Data-insights/Features/Tasks/tasks.md
+        - Notifications: Data-insights/Features/Notifications/notifications.md
+        - Settings: Data-insights/Features/Incidents/Settings.md
         - FAQ: Data-insights/Features/Incidents/faq.md
-     - Tasks: Data-insights/Features/Tasks/tasks.md
-     - Notifications: Data-insights/Features/Notifications/notifications.md
   - TELEMETRY:
      - Logs: Data-insights/Features/explore-logs.md
      - Metrics: Data-insights/Features/explore-metrics.md
