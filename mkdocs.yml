@@ -218,6 +218,10 @@ nav:
         - Profile: Admin-and-data/Account/Cloud/profile.md
         - Notifications: Admin-and-data/Account/Cloud/notifications.md
         - Watched services: Admin-and-data/Account/Cloud/watched-services.md
+     - Legal:
+        - Terms of Service: Admin-and-data/tos.md
+        - EULA: Admin-and-data/EULA.md
+        - Third Party Licenses: Admin-and-data/Third-Party-Licenses/licenses.md
      - Contribute:
         - Contribute/how-to-contribute.md
         - Style Guide:
