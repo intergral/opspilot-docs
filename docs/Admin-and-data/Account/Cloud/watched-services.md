@@ -2,7 +2,7 @@
 
 Services you watch to drive watched-service notifications. Navigate to **Profile settings > Watched services** to open it.
 
-![Watched services](../../../../images/watched-services.png)
+![Watched services](../../../images/watched-services.png)
 
 Select the services you want to watch. When a watched service has an incident, you will receive a notification if that notification type is enabled in [Notifications](notifications.md).
 
