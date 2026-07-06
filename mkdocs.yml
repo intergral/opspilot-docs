@@ -200,7 +200,8 @@ nav:
            - Getting-started/Tutorials/Common-issues/CF2025-and-FR-2025-Startup-issue.md
            - Getting-started/Tutorials/Common-issues/FR-wmic.exe-error.md
            - Getting-started/Tutorials/Common-issues/TLS-deprecation-guide.md
-     - Data and Licenses:
+  - ADMINISTRATION:
+     - Data & Licenses:
         - Licence Keys: Admin-and-data/Licensing/Licensing.md
         - API Keys: Admin-and-data/api-keys.md
         - Shipping: Admin-and-data/shipping.md
