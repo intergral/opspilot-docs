@@ -2,7 +2,7 @@
 
 Choose which notifications you receive. Navigate to **Profile settings > Notifications** to open it.
 
-![Notification settings](../../../../images/notification-settings.png)
+![Notification settings](../../../images/notification-settings.png)
 
 Each notification type can be toggled on or off:
 
