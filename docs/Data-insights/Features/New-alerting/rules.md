@@ -1,6 +1,8 @@
 # Rules
 
-The **Rules** page is where you view and manage all your alert rules. Navigate to **Alerting > Rules** to open it.
+A well-configured alert rule is the difference between knowing about a problem before your users do and finding out from a support ticket. The Rules page is where you build, manage, and investigate every alert rule in your environment - with a live view of what's firing, what's pending, and what's healthy, all in one place.
+
+Navigate to **Alerting > Rules** to open it.
 
 ## The rules list
 
@@ -11,6 +13,7 @@ Rules are displayed with four state counters at the top:
 | **Firing** | The alert condition is currently met |
 | **Pending** | The condition is met but the pending period has not yet elapsed |
 | **Normal** | The rule is evaluating and its condition is not met |
+| **Normal (MissingSeries)** | The rule returned no data - the query matched no series. The rule remains Normal but flags that the data source returned nothing |
 | **Paused** | The rule is paused and not being evaluated |
 
 ### Views
@@ -37,7 +40,14 @@ The table has the following columns:
 Click a rule row to expand its detail view. The left panel shows:
 
 - **Metric** - a live graph of the query with the threshold overlaid. Use the time range picker to adjust the window. The shaded region indicates when the condition was met
-- **State history** - a log of state transitions. Click a row to zoom the graph to that moment
+- **State history** - a log of state transitions showing Normal, Firing, and Pending counts. Click a row to zoom the graph to that moment
+
+Two quick-link buttons appear in the top right of the expanded view:
+
+| Button | Description |
+|---|---|
+| **Dashboard** | Opens the dashboard linked in the rule's annotations |
+| **Runbook** | Opens the runbook URL linked in the rule's annotations |
 
 The right panel shows:
 
@@ -61,7 +71,7 @@ The right panel shows:
 
 ### OpsPilot
 
-Click the **OpsPilot** button for AI-assisted help with your alert rules:
+Writing good alert rules is hard - thresholds that are too sensitive create noise, too lenient and real problems slip through. Click the **OpsPilot** button to get AI-assisted help directly in context:
 
 | Option | Description |
 |---|---|
@@ -73,6 +83,8 @@ Click the **OpsPilot** button for AI-assisted help with your alert rules:
 ---
 
 ## Creating an alert rule
+
+A good alert rule has three things: a query that targets the right signal, a threshold that fires at the right level, and a routing label that gets the notification to the right person. The steps below walk through each.
 
 Click **+ New** and select **Alert rule** to create a new rule.
 

@@ -111,6 +111,7 @@ nav:
            - Overview: Data-insights/Features/alerting-examples.md
            - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
         - Anomaly Detectors: Data-insights/Features/New-alerting/anomaly-detectors.md
+        - FAQ: Data-insights/Features/New-alerting/faq.md
         - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
         - FAQ: Data-insights/Features/Alerting/FAQ.md
      - Incidents:
