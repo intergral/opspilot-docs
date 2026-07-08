@@ -16,6 +16,17 @@ The **Services** page gives you full visibility into your OpenTelemetry-instrume
   </div>
 </div>
 
+## View modes
+
+Two tabs at the top of the page control how services are sourced:
+
+| Tab | Description |
+|---|---|
+| **Catalog** | Shows services registered in your OpsPilot catalog |
+| **Raw** | Shows all services detected from your Tempo trace data, whether catalogued or not |
+
+Use the **Select Tempo service** dropdown to filter the graph and table to a single service and its dependencies.
+
 ## Service Graph
 
 The **Service Graph** displays your services as an interactive network diagram, showing the communication patterns and dependencies between them. Each node represents a service. Connections between nodes show how services call each other.
@@ -25,6 +36,8 @@ Use the graph to quickly identify which services are upstream or downstream of a
 ![!Screenshot](services-graph.png)
 
 Each node shows the service's **average latency** and **request rate** directly on it. A red arc around the node indicates the **error rate** - the larger the arc, the higher the proportion of erroring requests. Connection lines between nodes show the latency and request rate for that specific call path, and arrows indicate the direction of the call.
+
+An orange **+** badge on a node indicates the service has not yet been added to your catalog. Clicking it opens the node tooltip where you can add it.
 
 ### Node types
 
@@ -45,11 +58,26 @@ Similar services can be grouped together using the **Group peers by name similar
 
 ### Node tooltip
 
-Click any node to open a detailed panel showing:
+Click any node to open a detailed panel. The top section shows live sparklines and current values for:
 
-- **Throughput**, **Avg Latency**, **Errors/s**, and **Error Rate** for the service
-- **Inbound** connections - the upstream services calling this one, with their latency
-- **Outbound** connections - the downstream services this one calls, with their latency
+| Metric | Description |
+|---|---|
+| **Throughput** | Current request rate (req/s) |
+| **Avg Latency** | Average response time (ms) |
+| **Errors/s** | Current error rate |
+| **Error Rate** | Percentage of requests resulting in errors |
+
+Two action buttons appear below the metrics:
+
+| Button | Description |
+|---|---|
+| **+ Add to catalog** | Registers this service in your OpsPilot catalog |
+| **Add as alias** | Attaches this service as a tempo alias on an existing catalog entry instead of creating a new one. Useful when the service name is a shard, alternate environment, or renamed instance of a service that is already catalogued |
+
+Below the actions, the panel shows:
+
+- **Inbound** connections - the upstream services calling this one, each with their latency
+- **Outbound** connections - the downstream services this one calls, each with their latency
 - Quick links to **View service detail**, **View traces**, and **View logs**
 
 Use the **Focus** button in the top right of the panel to isolate that service in the graph. Focus mode hides all unrelated nodes, leaving only the selected service and its direct inbound and outbound connections. A **Clear focus: [service name]** button appears in the top right of the graph panel - click it to return to the full graph.
@@ -87,7 +115,7 @@ Below the graph, the **Service Table** lists all services with key performance m
 
 | Column | Description |
 |---|---|
-| **Service** | The service name |
+| **Service** | The service name, with quick-action icons |
 | **Throughput** | Request rate with a sparkline showing recent trend |
 | **Avg Latency** | Average response time across all requests |
 | **P50** | Median latency |
@@ -95,10 +123,20 @@ Below the graph, the **Service Table** lists all services with key performance m
 | **Errors/s** | Error rate per second |
 | **Requests** | Total request count in the selected time range |
 | **Errors** | Total error count in the selected time range |
+| **Catalog** | Shows the catalog status for the service - a **Create** button if not yet catalogued, or the catalog type badge (e.g. **Service**) and language once registered |
+
+Each row has two icons to the left of the service name:
+
+| Icon | Description |
+|---|---|
+| **Focus** | Isolates this service in the graph, showing only its direct connections |
+| **Ask AI** | Opens a Coworker conversation with this service already in context |
+
+Once a service is added to the catalog, the orange **+** badge also disappears from its node in the graph.
 
 Click any service name to open the [Service Detail](service-detail.md) view with that service pre-selected, giving you an immediate breakdown of its performance, errors, logs, and alerts.
 
-Use the **Select Service** dropdown to filter the graph and table to a specific service. Use the time range selector in the top right to adjust the period shown.
+Use the time range selector in the top right to adjust the period shown.
 
 ## Thresholds
 
