@@ -31,6 +31,14 @@ Four charts give you an overview of trace performance across the selected time r
 | **Span Status** | Breakdown of span outcomes across all traces |
 | **Top Throughput** | Most active endpoints by request volume |
 
+Each chart has three icons in its top right corner:
+
+| Icon | Description |
+|---|---|
+| **Ask AI** | Opens a Coworker conversation with this chart in context |
+| **Fullscreen** | Expands the chart to full screen |
+| **Edit threshold** | Set warning and critical thresholds for the metric |
+
 ## Traces list
 
 The **Traces** table lists individual traces with:

@@ -100,6 +100,9 @@ The icons in the top right corner of the graph panel give you additional viewing
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1198737284?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Services Graph Layout Options"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+- **Node spacing**: opens a slider to adjust how far apart nodes are spread. Useful for reducing overlap in dense graphs
+- **Catalog aliases**: toggles whether tempo aliases are collapsed onto their catalog entry or shown as separate nodes. When collapsed, aliased services appear as a single node; click to expand and show each tempo name individually
+- **Offline services**: toggles visibility of offline (catalog-only) services. These are services registered in your catalog but not currently seen in telemetry. Click to show or hide them in the graph
 - **3D toggle**: switches the graph between a flat 2D layout and a 3D view
 - **Expand**: opens the graph in full screen for a clearer view of complex environments
 
@@ -112,6 +115,15 @@ Use **Clear all** to reset any active service filters.
 Below the graph, the **Service Table** lists all services with key performance metrics:
 
 ![!Screenshot](services-table.png)
+
+Four icons in the top right of the table provide additional controls:
+
+| Icon | Description |
+|---|---|
+| **Add catalog** | Add a new service to your catalog manually |
+| **Type** | Filter the table by catalog type: All types, Service, Database, Messaging, Cache, or External |
+| **Service catalog** | Open the service catalog |
+| **Edit thresholds** | Open the thresholds panel to set warning and critical values |
 
 | Column | Description |
 |---|---|

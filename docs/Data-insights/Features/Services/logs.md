@@ -8,10 +8,9 @@ The Logs tab shows all log output for the selected service within the chosen tim
 
 | Filter | Description |
 |---|---|
-| **Select Service** | Filter logs to a specific service |
+| **Catalog / Raw** | Switch between catalog services and all detected services |
+| **Select Catalog** | Filter logs to a specific service |
 | **+ Filter** | Add additional filter conditions |
-| **Filter text** | Search log content by keyword or pattern |
-| **All streams** | Select which log streams to include |
 
 Click **Clear all** to reset all active filters.
 
@@ -24,6 +23,27 @@ The **Log Rate** bar chart shows log volume over time, colour-coded by severity:
 - <span style="color:#9E9E9E;">**Grey**</span>: Unknown severity
 
 Hover over a bar to see the exact counts per severity at that timestamp. Use this chart to quickly spot spikes in error output.
+
+Three icons appear in the top right corner of the chart:
+
+| Icon | Description |
+|---|---|
+| **Sync** | Refresh the chart data |
+| **Ask AI** | Opens a Coworker conversation with this chart in context |
+| **Fullscreen** | Expands the chart to full screen |
+
+## Log list toolbar
+
+Between the filters and the log list, a toolbar gives you additional controls:
+
+| Control | Description |
+|---|---|
+| **Filter text** | Search log content by keyword or pattern |
+| **All streams** | Select which log streams to include |
+| **Labels** | Filter by log labels |
+| **`{}`** | Toggle JSON formatting for structured log entries |
+| **Sort order** | Switch between newest-first and oldest-first |
+| **Single / split view** | Toggle between a single log panel and a split view |
 
 ## Severity filters
 
