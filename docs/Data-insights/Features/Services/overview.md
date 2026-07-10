@@ -58,7 +58,9 @@ Similar services can be grouped together using the **Group peers by name similar
 
 ### Node tooltip
 
-Click any node to open a detailed panel. The top section shows live sparklines and current values for:
+Click any node to open a detailed panel.
+
+![!Screenshot](click-service.png) The top section shows live sparklines and current values for:
 
 | Metric | Description |
 |---|---|

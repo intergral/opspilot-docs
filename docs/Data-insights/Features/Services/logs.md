@@ -40,10 +40,30 @@ Between the filters and the log list, a toolbar gives you additional controls:
 |---|---|
 | **Filter text** | Search log content by keyword or pattern |
 | **All streams** | Select which log streams to include |
-| **Labels** | Filter by log labels |
-| **`{}`** | Toggle JSON formatting for structured log entries |
-| **Sort order** | Switch between newest-first and oldest-first |
-| **Single / split view** | Toggle between a single log panel and a split view |
+| **Show stream labels** | Toggle display of log stream labels on each entry |
+| **Wrap lines** | Toggle line wrapping for long log messages |
+| **Prettify JSON** | Format JSON log entries for easier reading |
+| **Newest first** | Toggle sort order between newest-first and oldest-first |
+| **Show details in sidebar** | Open the Log Details panel alongside the log list |
+| **Tail logs** | Live-follow log output as it arrives |
+
+## Log Details sidebar
+
+Click **Show details in sidebar** or click a log entry to open the **Log Details** panel.
+
+![!Screenshot](sidebar.png) The panel shows:
+
+- **Timestamp**: the exact time of the log entry
+- **Unique labels**: key labels attached to the entry (e.g. exporter, instance, job, level, service name)
+- **All labels**: the full set of labels for the entry
+- **Log line**: the raw log content
+
+Two buttons in the top right of the sidebar:
+
+| Button | Description |
+|---|---|
+| **Ask AI** | Opens a Coworker conversation with this log entry in context |
+| **Copy to clipboard** | Copies the log entry details |
 
 ## Severity filters
 
