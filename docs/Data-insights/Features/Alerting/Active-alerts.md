@@ -1,52 +1,56 @@
-# Firing Alerts
+# Status
 
-The **Firing Alerts** page shows all active notifications currently being managed by the Alertmanager. Notifications are grouped by label to reduce noise, and you can filter by state, contact point, or Alertmanager instance.
+The **Status** page gives you an overview of alert rule states across your environment. Navigate to **Alerting > Status** to open it.
 
-## Notification States
+## Rules tab
 
-Each notification group will be in one of the following states:
+The Rules tab shows all your alert rules as a hexagonal grid. Each hexagon represents one rule, colour-coded by its current state:
 
-| State | Description |
-| --- | --- |
-| **Active** | The alert is firing and notifications are being delivered to the configured contact point. |
-| **Suppressed** | The alert is firing but notifications are being held back by a **[Silence](Silences.md)** or **[Mute Timing](Mute-timings.md)**. The alert is still visible here but no messages are being sent. |
-| **Unprocessed** | The alert has been received by the Alertmanager but has not yet been matched to a notification policy. |
+| State | Colour | Description |
+|---|---|---|
+| **Normal** | Green | The rule is evaluating and its condition is not currently met |
+| **Firing** | Red | The alert condition is met and the rule is actively firing |
+| **Paused** | Grey | The rule is paused and not being evaluated |
 
-## Viewing Active Notifications
+Hover over any hexagon to see the rule name, its current state, and the group it belongs to.
 
-1. Navigate to **Alerting** > **Firing Alerts**.
-2. Use the **Search by label** bar to filter by a specific label key or value (such as, `alertname=high-cpu`).
-3. Use the **Notification state** buttons to filter by **Active**, **Suppressed**, or **Unprocessed**.
-4. Use the **Filter by contact point** dropdown to show only notifications delivered to a specific destination.
-5. Use **Custom group by** to regroup the list by a different label (such as, `severity` or `team`).
+Rules that need attention are surfaced at the top of the page, above the grid, so firing alerts are visible without scrolling.
 
-## Choosing an Alertmanager
+## Instances tab
 
-Use the **Choose Alertmanager** dropdown in the top right to switch between Grafana's built-in Alertmanager and any external Alertmanager instances configured in your environment.
+The Instances tab shows individual alert instances rather than rules. Each hexagon is one instance, colour-coded by state using the same scheme as the Rules tab.
 
-## Expanded Alert Detail
+Hover over any hexagon to see the instance name, its state, the group it belongs to, and all labels attached to it (such as `alert_type`, `contact_points`, and `opspilot_coworker`).
 
-Click the **>** arrow on a notification group to expand it and view full details for each alert instance:
+Use the state filters to narrow the view - for example, selecting **Paused** shows only paused instances and hides the rest.
 
-| Field | Description |
-| --- | --- |
-| **Duration** | How long the notification has been in its current state (such as, `Active for 3d 21h`). |
-| **Instance labels** | All labels attached to this alert instance, displayed as colour-coded tags. |
-| **Silence / See alert rule** | Action buttons to silence the alert or navigate directly to the rule that triggered it. |
-| **__value_string__** | The raw metric values from the query at the time of firing, including label context. |
-| **__values__** | JSON representation of query, threshold, and expression values. |
-| **Runbook URL** | A link to your runbook or troubleshooting guide, if configured on the alert rule. |
-| **Summary** | The summary annotation from the alert rule, describing what happened. |
-| **Receivers** | The contact points currently handling this notification. |
+---
 
-## Silencing from Firing Alerts
+## Filtering and grouping
 
-You can create a silence directly from an active notification without navigating away:
+- Use **Search rules** to find a rule by name
+- Use the state filters (**Normal**, **Paused**, **Firing**) to scope the count and highlight rules in a specific state
+- Use **Group by** to reorganise the grid. Options are:
 
-1. Expand a notification group by clicking the **>** arrow on the left.
-2. Click the **Silence** button on the alert instance row.
-3. The silence form will be pre-filled with the alert's labels - adjust the duration as needed.
-4. Click **Submit** to suppress notifications immediately.
+| Group | Description |
+|---|---|
+| **No grouping** | All rules in a single grid (default) |
+| **Namespace** | Group by the folder or namespace the rule belongs to |
+| **Rule Group** | Group by the rule group within a namespace |
+| **severity** | Group by the severity label on the rule |
+| **alert_type** | Group by alert type label |
+| **contact_points** | Group by the contact point label |
+| **opspilot_coworker** | Group by whether the rule is connected to Coworker |
+| **opspilot_slack_post** | Group by Slack post label |
+| **created_by** | Group by the user who created the rule |
+| **agent_proposal_id** | Group by agent proposal ID |
 
-!!! info "Learn more"
-    [View and manage firing alerts](https://grafana.com/docs/grafana/latest/alerting/monitor-status/view-alert-state/)
+## Creating from Status
+
+Click **+ New** in the top right to create something new. Three options are available:
+
+| Option | Description |
+|---|---|
+| **Alert rule** | Create a new alert rule. See [Rules](Configure-rules.md) for full details |
+| **Contact point** | Add a new contact point. See [Contact Points](Contact-points.md) for full details |
+| **Custom detector** | Create a custom anomaly detector. See [Anomaly Detectors](../Anomaly-Detection/ADoverview.md) for full details |

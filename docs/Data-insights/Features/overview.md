@@ -12,6 +12,22 @@ Once your environment is sending data, the Overview page shows a full observabil
 
 ![!Screenshot](../../Data-insights/Features/images/Active-account-overview.png)
 
+## Customising your dashboard
+
+Click the **My dashboard** icon in the top right of the Overview to choose which sections are visible. Tick or untick any section to show or hide it:
+
+- Coworker
+- Services
+- Services by latency
+- Servers
+- Servers by latency
+- Applications
+- Applications by latency
+- Alerts
+- Anomaly Detection
+
+Click **Reset to org defaults** to restore the default layout.
+
 ### Services
 
 The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour. Use the **Overview show as** dropdown to change the aggregate function applied to the stat values:
@@ -46,6 +62,24 @@ Below the summary metrics, **Services by latency** lists your top 10 services ra
 - **Throughput**
 
 Click any service card to drill into that service's detailed performance data.
+
+### Coworker
+
+The **Coworker** panel gives you a summary of your AI teammate's activity over the last 30 days, directly from the Overview page.
+
+| Element | Description |
+|---|---|
+| **Critical Insights** | Number of critical insights currently needing attention, with a percentage trend indicator and total insight count. Click to expand a list of the current critical insights. |
+| **Optimisation suggestions** | Shows the number of pending cost optimisation suggestions. Click it to open the Cost & Optimisation panel directly. |
+| **Recent Activity** | A feed of the latest task runs and alert checks, showing what Coworker has been investigating and when. Click **7 more** to expand the full list. |
+
+Click **Ask** to open a quick-action menu with chat shortcuts:
+
+- **Catch me up**
+- **What needs attention?**
+- **What keeps recurring?**
+
+Select one to send it directly to Coworker. Click **Coworker →** to go to the full Coworker dashboard.
 
 ### Servers
 
