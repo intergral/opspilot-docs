@@ -123,11 +123,11 @@ nav:
         - Notifications: Data-insights/Features/Notifications/notifications.md
         - Settings: Data-insights/Features/Incidents/Settings.md
         - FAQ: Data-insights/Features/Incidents/faq.md
-  - TELEMETRY:
-     - Logs: Data-insights/Features/explore-logs.md
-     - Metrics: Data-insights/Features/explore-metrics.md
-     - Traces: Data-insights/Features/explore-traces.md
-     - Explore: Data-insights/Features/explore.md
+  - EXPLORE:
+     - Overview: Data-insights/Features/explore.md
+     - Metrics Drilldown: Data-insights/Features/explore-metrics.md
+     - Logs Drilldown: Data-insights/Features/explore-logs.md
+     - Traces Drilldown: Data-insights/Features/explore-traces.md
   - DATA COLLECTION:
      - OpenTelemetry:
         - Get started: Monitor-your-data/OpenTelemetry/getting-started.md

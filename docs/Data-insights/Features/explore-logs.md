@@ -1,8 +1,5 @@
 ﻿# Logs Drilldown
 
-![!Screenshot](../../Data-insights/Features/images/logs-drilldown.png)
-
-
 Search, filter, and analyze logs across services.
 
 Navigate to **Logs Drilldown** from the left-hand sidebar to explore your log data without writing LogQL queries.

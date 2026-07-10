@@ -1,7 +1,5 @@
 ﻿# Metrics Drilldown
 
-![!Screenshot](../../Data-insights/Features/images/metrics-main.png)
-
 Drill down into metrics to find trends and anomalies.
 
 Navigate to **Metrics Drilldown** from the left-hand sidebar to explore Prometheus-compatible metrics without writing PromQL queries.
@@ -105,7 +103,6 @@ From the metric detail view, you can add the graph directly to a dashboard using
 
 5. Give your dashboard a name and description, choose a folder (if needed), and click **Save**.
 
-    ![!Screenshot](../../Data-insights/Features/images/save-dashboard.png)
 
 !!! info "Learn more"
     [Metrics](https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/)

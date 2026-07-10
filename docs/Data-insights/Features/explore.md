@@ -1,176 +1,87 @@
-# Explore: Metrics, Logs and Traces
+# Explore
 
-🔎**Find it**: **FusionReactor** > **Explore** 
+When you know what you're looking for, Explore lets you query it directly. Skip the dashboard, pick a datasource, build or write your query, and get the answer — without creating a panel or navigating through a pre-built view.
 
-<iframe src="https://player.vimeo.com/video/840905546?h=dfe78f4f96" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Navigate to **Explore** from the left-hand sidebar.
 
-**Explore** gives you direct, flexible access to all metrics, logs, and traces in your OpsPilot account. Query raw telemetry, create custom data views, and filter across signals without writing PromQL, LogQL, or TraceQL.
+## Datasources
 
-!!! warning
-    While with **Explore** you can technically search for any amount of data within your cloud account, there are strict execution times on queries that will restrict performance heavy queries. 
+Use the datasource dropdown at the top left to choose what you're querying:
 
-## Datasource selection
+| Datasource | Description |
+|---|---|
+| **Metrics** | Prometheus-compatible metrics from your instrumented services |
+| **Logs** | Log data ingested from your services and log shippers |
+| **Traces** | Distributed trace data from your OpenTelemetry-instrumented services |
 
-Within **Explore** there are three datasource configures. They are accessed using the dropdown located to the left of the screen. The default datasource is **Metrics**.
+The query builder updates to match the selected datasource.
 
-![](../../Data-insights/Features/images/Dashboards/datasources.png)
+## Go queryless
 
-- Metrics will contain any metric sent from a FusionReactor agent, plus some additional metrics created within our ingest engine.
-- Traces will contain any slow or error transactions sent from a FusionReactor agent, requests viewed in the recent or running tabs of the server view will not appear here as they are not ingested. 
-- Logs will contain any logs sent to FusionReactor, either from a FusionReactor agent or log shipper.
+Click **Go queryless** to switch to the guided Drilldown experience for the current datasource. Drilldown views let you browse and filter without writing queries:
 
-!!! note
-    Going forward we will allow ingest for traces and metrics from a non FusionReactor agents, however at this time this feature is unavailable.
+- **[Metrics Drilldown](explore-metrics.md)** — browse metrics, filter by label, and explore breakdowns
+- **[Logs Drilldown](explore-logs.md)** — browse log streams, filter by label and severity, and explore patterns
+- **[Traces Drilldown](explore-traces.md)** — explore span rate, errors, and duration across services
 
-## Metric queries
+## Query builder
 
-🔎**Find it**: **FusionReactor** > **Explore** > **Metrics**
+Each query appears as a labelled panel (A, B, C...). The builder has two modes, toggled in the top right of the query panel:
 
-To explore metrics, use the **Metric** browser.
+| Mode | Description |
+|---|---|
+| **Builder** | Visual query builder — select metric, add label filters, and add operations without writing query language |
+| **Code** | Raw query editor — write PromQL, LogQL, or TraceQL directly |
 
-![](../../Data-insights/Features/images/Dashboards/metricsbrowser2.png)
+### Metrics query builder
 
-Within the **Metric** browser you can:
+| Field | Description |
+|---|---|
+| **Metric** | Select the metric to query |
+| **Label filters** | Filter by label key, operator, and value. Click **+** to add more filters |
+| **+ Operations** | Add functions such as rate(), sum(), avg(), or histogram_quantile() |
 
-- Select one or more metrics to view.
+Expand **Options** to configure:
 
-- Filter metrics by any label, such as **instance**, **group** or **application**.
+| Option | Description |
+|---|---|
+| **Legend** | How series are labelled in the chart (Auto, Verbose, Custom) |
+| **Format** | Output format — Time series, Table, or Heatmap |
+| **Step** | Query resolution step |
+| **Type** | What to display — Both, Metrics, or Exemplars |
+| **Exemplars** | Toggle exemplar display on the chart |
 
-- Execute functions such as **Sum**, **Count**, or **Avg** on metrics.
+Click **Kick start your query** to get a pre-built query template for common use cases.
 
-- Compare metrics by using mathematical functions.
+Toggle **Explain** to see a plain-language description of what your current query does.
 
-- Combine multiple queries in a single view.
+### Adding queries
 
-- View data as various chart types, or as raw data in a table.
+Click **+ Add query** to add a second query to the same view. Multiple queries render on the same chart, making it easy to compare signals.
 
-The metrics browser will create data views for you using [Promql](https://prometheus.io/docs/prometheus/latest/querying/basics/).
+Click **Query inspector** to see the raw request and response for debugging query issues.
 
-Using Promql directly you can create powerful and complex queries to get the most out of your FusionReactor data.
+## Running queries
 
-## Trace queries
+Click **Run query** (top right) to execute the current query. The results appear in the panel below.
 
-🔎**Find it**: **FusionReactor** > **Explore** > **Traces** > **Search**
+Use the **time range selector** to adjust the period. The navigation arrows step backwards and forwards by one time range window.
 
-To explore traces we advise using the **Search** feature.
+## Split view
 
-![](../../Data-insights/Features/images/Dashboards/tracemain.png)
+Click **Split** to open a second Explore panel side by side. Useful for comparing two different queries, datasources, or time ranges at once.
 
-Within search, you can specify:
+## Add to dashboard
 
-|Type      | Description     |
-|--------------|-----------|
-| Service Name | Instance from which the trace originates.|
-| Span Name | The URL or action of a transaction.|
-| Tag | A label applied to a trace, for example ```txnId``` or ```status.code```. A full list of tags can be searched within the input field.|
-| Min Duration | The minimum duration of a transaction. |
-| Max Duration | The maximum duration of a transaction. |
-|Limit | How many results you wish to view.|
+Click **Add to dashboard** to add the current query directly to a new or existing dashboard without leaving Explore.
 
-You can view the trace information by clicking on the trace ID, which will open a window on the right of the screen.
+## Query history
 
-![](../../Data-insights/Features/images/Dashboards/trace.png)
+Click **Query history** (top right) to see your recent queries. Rerun or modify a past query without having to rebuild it from scratch.
 
-## Log queries
+## Share
 
-🔎**Find it**: **FusionReactor** > **Explore** > **Logs**
-
-To explore logs, use the **Logs** browser.
-
-The **Logs** browser allows you to filter and view any ingested logs.
-
-![](../../Data-insights/Features/images/Dashboards/logsmain.png)
-
-  
-
-The log browser lets you:  
-
-- Filter logs by labels like **job**, **filename** or **instance**.
-
-- Perform calculations like **Sum**, **Count**, or **Avg** to extract metrics from logs.  
-
-- Combine multiple queries in one view.  
-
-- Display data as charts or raw tables.  
-
-The browser automatically builds log queries and generates [LogQL](https://grafana.com/docs/loki/latest/logql/) for you.  
-
-You can also use **Explore** to run custom LogQL queries.  
-
-!!! info
-    LogQL, developed by Grafana Labs, is a query language for filtering, searching, and generating metrics from log data.  
-
-
-
-### LogQL examples
-#### Search for logs with a specific job
-
-!!! example
-    ````{job="job1"}````
-
-
-
-#### Search for specific filename
-
-!!! example
-    ````{filename=~"request"}````
-
-
-
-#### Search for logs with a job using wildcard
-
-!!! example
-    ````{job=~"job.*"}````
-
-#### Search for any stdout or stderr logs for any jobs matching the wildcard
-
-!!! example
-    ````{job=~"job.*",filename=~"std.*"}````
-
-
-#### Query for the volume of jobs per job and instance
-
-!!! example
-    ````sum(count_over_time({job=~".+"}[5m])) by (job,instance)````
-
-#### Query for the top IP addresses triggering requests in FusionReactor
-
-!!! example
-    ````topk(10,sum by (clientAddress)(rate({filename="request"} | logfmt | line_format "{{.clientAddress}}" | __error__="" [1m])))````
-
-#### Query nginx for the top IP address hitting the load balancer
-
-!!! example
-    ````topk(10,sum by (remote_address)(rate({filename="/opt/access.log"} | logfmt | line_format "{{.remote_address}}" | __error__="" [1m])))````
-
-#### Search all logs for the text exception
-
-!!! example
-    ````{ job=~".+"} |= "Exception"````
-
-#### Process the request log for top hit page URLs
-
-!!! example
-    ````sum by (url)(rate({filename="request"} | logfmt | line_format "{{.url}}" | __error__="" [10s]))````
-
-#### Graph the number of error or exception error lines   
-
-!!! example
-    ````sum by (job) (count_over_time({job=~"store-.*"} |= "error" != "exception" [5m]))````
-
-
-#### Process the avg CPU time per page URL
-
-!!! example
-    ````topk(10, sum by (url)(avg_over_time({ filename="request"} | logfmt | __error__="" | unwrap cpuTime[5m])))````
-
-
-#### Graph previous crashes caused by OutOfMemory errors 
-
-!!! example
-    ````sum by (job) (count_over_time({job=~".+"} |= "java.lang.OutOfMemory" [1m]))````
-
-___
+Click **Share** to generate a link to the current Explore view, including the datasource, query, and time range.
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

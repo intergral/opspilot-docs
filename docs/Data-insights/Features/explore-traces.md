@@ -1,7 +1,5 @@
 ﻿# Traces Drilldown
 
-![!Screenshot](../../Data-insights/Features/images/traces-main.png)
-
 Trace requests across services to find bottlenecks.
 
 Navigate to **Traces Drilldown** from the left-hand sidebar to explore distributed trace data without writing TraceQL queries.
