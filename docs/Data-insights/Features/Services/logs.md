@@ -1,6 +1,6 @@
 # Logs
 
-The Logs tab shows all log output for the selected service within the chosen time range. Use it to investigate errors, trace log patterns, and filter down to specific severity levels or log content.
+When metrics tell you something is wrong, logs tell you why. The Logs tab shows all log output for the selected service within the chosen time range. Use it to investigate errors, trace log patterns, and filter down to specific severity levels or log content.
 
 ![!Screenshot](logs.png)
 
@@ -48,6 +48,8 @@ Between the filters and the log list, a toolbar gives you additional controls:
 | **Tail logs** | Live-follow log output as it arrives |
 
 ## Log Details sidebar
+
+Clicking into a log entry gives you the full label set for that entry and a direct path to Coworker analysis, useful when you want to understand the context around a specific error or anomaly.
 
 Click **Show details in sidebar** or click a log entry to open the **Log Details** panel.
 

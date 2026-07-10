@@ -1,6 +1,6 @@
 # Service Detail
 
-The Service Detail page gives you a deep breakdown of a single service: its performance, errors, log patterns, catalog metadata, and active incidents. Arrive here by clicking a service name in the [Services Overview](overview.md).
+This is where you go when the overview tells you something is wrong and you need to understand exactly what. The Service Detail page gives you a deep breakdown of a single service: its performance, errors, log patterns, catalog metadata, and active incidents. Arrive here by clicking a service name in the [Services Overview](overview.md).
 
 ![!Screenshot](service-detail.png)
 
@@ -11,6 +11,8 @@ The page is organised into six tabs: **Details**, **Metrics**, **Traces**, **Log
 ## Details tab
 
 ### Performance charts
+
+Together, these five charts cover latency distribution, error volume, request load, and log output, giving you a complete picture of service health at a glance.
 
 Five charts give you an at-a-glance view of the service's health:
 
@@ -31,6 +33,8 @@ Each chart has three icons in its top right corner:
 | **Edit threshold** | Set warning and critical thresholds for the metric |
 
 ### Span Errors
+
+This section surfaces where errors are concentrated across your operations, so you don't have to trawl through individual spans to find what's failing.
 
 Lists the operations generating the most errors. Each row shows the service and operation name, span count, and trace count. Two icons appear on each row:
 
@@ -53,15 +57,15 @@ Coming soon.
 
 ## Traces tab
 
-See [Traces](traces.md) for full documentation of the trace explorer.
+See **[Traces](traces.md)** for full documentation of the trace explorer.
 
 ## Logs tab
 
-See [Logs](logs.md) for full documentation of the log explorer.
+See **[Logs](logs.md)** for full documentation of the log explorer.
 
 ## Info tab
 
-Shows the catalog record for the selected service: ownership, classification, dependencies, and OpsPilot's accumulated knowledge.
+The Info tab is where you answer "who owns this, what does it depend on, and what does OpsPilot know about it." It surfaces the context you need when you're in the middle of an incident. It shows the catalog record for the selected service: ownership, classification, dependencies, and OpsPilot's accumulated knowledge.
 
 ### Service card
 
@@ -132,6 +136,8 @@ Click **+** to expand the editor. Each entry has a **key**, a **type** (string b
 Runbooks linked to this service. Displays the count and a list of attached runbooks. Use the **+** button to attach one.
 
 ### What OpsPilot remembers
+
+OpsPilot's memory is what makes it useful over time. The more context it has about a service, the better it can help when things go wrong.
 
 OpsPilot builds up a memory of each service as it runs tasks, investigates alerts, and chats about it. This panel shows that accumulated knowledge.
 

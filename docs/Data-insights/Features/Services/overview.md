@@ -29,7 +29,7 @@ Use the **Select Tempo service** dropdown to filter the graph and table to a sin
 
 ## Service Graph
 
-The **Service Graph** displays your services as an interactive network diagram, showing the communication patterns and dependencies between them. Each node represents a service. Connections between nodes show how services call each other.
+When something breaks, you need to know immediately what it affects and what caused it. The **Service Graph** displays your services as an interactive network diagram, showing the communication patterns and dependencies between them. Each node represents a service. Connections between nodes show how services call each other.
 
 Use the graph to quickly identify which services are upstream or downstream of a problem area. You can pan by clicking and dragging, and zoom using the scroll wheel.
 
@@ -58,7 +58,7 @@ Similar services can be grouped together using the **Group peers by name similar
 
 ### Node tooltip
 
-Click any node to open a detailed panel.
+The node tooltip gives you live performance data and lets you act (add to catalog, focus the graph, or navigate to logs and traces) without leaving the graph. Click any node to open a detailed panel.
 
 ![!Screenshot](click-service.png) The top section shows live sparklines and current values for:
 
@@ -154,7 +154,7 @@ Use the time range selector in the top right to adjust the period shown.
 
 ## Thresholds
 
-You can configure warning and critical thresholds for key service metrics directly from the Services Overview page.
+Thresholds turn raw numbers into signals, so you know when a metric has crossed from normal into territory that needs attention. You can configure warning and critical thresholds for key service metrics directly from the Services Overview page.
 
 Click the thresholds icon in the top right of the Service Graph panel to open the **Thresholds** panel.
 

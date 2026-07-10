@@ -1,6 +1,6 @@
 ﻿# Traces
 
-The Traces tab shows all traces for the selected service, with performance charts and a filterable trace list. Use it to investigate slow requests, errors, and individual spans in detail.
+Traces answer the question "what actually happened during this request." You can follow a single request across every service it touched, see exactly where time was spent, and identify which operation or dependency caused the slowdown. The Traces tab shows all traces for the selected service, with performance charts and a filterable trace list. Use it to investigate slow requests, errors, and individual spans in detail.
 
 ![!Screenshot](traces.png)
 
@@ -59,6 +59,8 @@ Traces with errors are highlighted in red with an **ERROR** badge.
     This entry appears when child spans have been received but the root span hasn't arrived yet. This is usually transient - the root span typically arrives shortly after.
 
 ## Expanded trace view
+
+Drilling into a single trace shows you the full span waterfall: where time went, which services were involved, and exactly which span failed or was slow.
 
 ![!Screenshot](expanded-trace.png)
 
