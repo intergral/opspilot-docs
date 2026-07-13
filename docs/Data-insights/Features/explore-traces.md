@@ -58,6 +58,8 @@ Each panel shows a **Service & Operation** tree alongside a duration timeline:
 - Use the expand/collapse controls to open or close branches of the tree.
 - Errors are flagged with a red indicator on the affected span.
 
+![!Screenshot](images/traces-service-structure.png)
+
 ### Comparison
 
 Compares a **Baseline** (green) against a **Selection** (red) to surface which attributes differ most between the two. Attributes are ordered by the difference between the baseline and selection values for each value.
@@ -66,6 +68,8 @@ Compares a **Baseline** (green) against a **Selection** (red) to surface which a
 - Each attribute panel shows the value distribution and the **Highest difference** (e.g., 100.00%) for that attribute.
 - Click **Inspect** to look at an attribute in more detail, or **Add to filters** to scope the view by it.
 
+![!Screenshot](images/traces-comparison.png)
+
 ### Traces
 
 A table of individual traces (spans) for the current set of filters, showing up to 200 results. Columns include **Start time**, **Trace Service**, **Trace Name**, and **Duration**.
@@ -73,11 +77,15 @@ A table of individual traces (spans) for the current set of filters, showing up 
 - Click a **Trace Name** link (external-link icon) to open the full trace detail view.
 - Use the **Attributes panel** (left) to select attributes and refine the list.
 
+![!Screenshot](images/traces-list.png)
+
 ---
 
 ## Trace detail view
 
 Clicking a **Trace Name** link opens a detail panel showing the full trace waterfall. The panel header shows the trace's root service and operation, with **Analyze Trace** and **Share** buttons in the top right.
+
+![!Screenshot](images/traces-detail.png)
 
 | Field | Description |
 |---|---|

@@ -48,6 +48,8 @@ Use the **Labels** section at the top to filter services by a specific label dim
 
 Click **Show logs** on any service to open its full log stream. The breadcrumb updates to Home > Drilldown > Grafana Logs Drilldown > Logs, and the active service filter is shown at the top. Click **Share** (top right) to generate a link to the current view. Use the **collapse/expand filters** icon (left of the Data source dropdown) to hide or show the filter controls.
 
+![!Screenshot](images/logs-show-logs.png)
+
 ### Tabs
 
 | Tab | Description |
@@ -61,6 +63,8 @@ Click **Show logs** on any service to open its full log stream. The breadcrumb u
 
 The **Labels** tab shows log volume broken down by label, with one panel per label (e.g., `detected_level`, `exporter`, `service_name`, `level`, `job`, `instance`).
 
+![!Screenshot](images/logs-labels.png)
+
 - Use the **Label** dropdown to focus on a specific label, or leave it on **All**.
 - Switch between **Grid** and **Rows** layout using the view toggle.
 - Click **Select** on any panel to drill into that label's values.
@@ -68,6 +72,8 @@ The **Labels** tab shows log volume broken down by label, with one panel per lab
 ### Fields tab
 
 The **Fields** tab shows detected fields, with one panel per field (e.g., `body`, `instrumentation_scope_name`, `partition`). Fields with no values in the current range show **No data**.
+
+![!Screenshot](images/logs-fields.png)
 
 - Use the **Field** dropdown to focus on a specific field, or leave it on **All**.
 - Toggle between **Volume** and **Names** at the top.
