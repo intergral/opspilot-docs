@@ -4,7 +4,7 @@ Trace requests across services to find bottlenecks.
 
 Navigate to **Traces Drilldown** from the left-hand sidebar to explore distributed trace data without writing TraceQL queries.
 
-
+![!Screenshot](images/traces-main.png)
 
 ---
 

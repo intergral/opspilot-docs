@@ -4,7 +4,7 @@ Drill down into metrics to find trends and anomalies.
 
 Navigate to **Metrics Drilldown** from the left-hand sidebar to explore Prometheus-compatible metrics without writing PromQL queries.
 
-
+![!Screenshot](images/metrics-main.png)
 
 ---
 
@@ -26,6 +26,8 @@ The total number of matching metrics is shown next to the search bar (e.g., 1613
 ## Browsing metrics
 
 A dynamic grid of metric panels is displayed, each representing a specific Prometheus metric. Click **Select** on any panel to drill into that metric in more detail.
+
+![!Screenshot](images/metrics-drill.png)
 
 ### Search & filter metrics
 
@@ -58,7 +60,34 @@ Once you’ve filtered your metrics, it’s time to analyze the data for pattern
 
 Clicking **Select** on a metric opens the detail view. The breadcrumb updates to show your current path (e.g., Home > Drilldown > Metrics > `metric_name` > Breakdown).
 
+![!Screenshot](images/metric-select.png)
+
 The main graph shows the selected metric over the chosen time range. Use **Select new metric** (top right) to switch to a different metric without going back.
+
+The icons in the top-right corner of the graph panel let you:
+
+| Icon | Action |
+|---|---|
+| **⚙ (gear)** | Configure the Prometheus function |
+| **Grid** | Add to dashboard |
+| **☆ (star)** | Add to bookmark |
+| **⋮ (more)** | Open in **Explore** or **Copy URL** |
+
+### Configure the Prometheus function
+
+Click the **⚙ (gear)** icon to choose the default Prometheus function used to display the metric. Each option shows a preview so you can compare before applying:
+
+| Function | Description |
+|---|---|
+| **Sum (default)** | Total across all series (`sum(rate)`) |
+| **Average** | Mean across series (`avg(rate)`) |
+| **Standard deviation** | Spread of values across series (`stddev(rate)`) |
+| **Percentiles** | Selected percentiles (P99, P95, P90, P75, P50) |
+| **Minimum and maximum** | Lowest and highest values across series (`min(rate)` / `max(rate)`) |
+
+Click **Apply** to use the selected function, or **Restore default config** to revert to Sum.
+
+![!Screenshot](images/configure-prom.png)
 
 ### Tabs
 
@@ -74,17 +103,19 @@ The Breakdown tab is the default view after selecting a metric. It displays a gr
 
 - Use the **By label** dropdown to switch between label dimensions.
 - Switch between **Grid** and **Rows** layout using the view toggle.
-- Hover over any panel to reveal a **Navigation** menu with options to open the panel in **Explore**.
+- Click the **⋮** (more) icon on any panel to open its menu, which includes **Explore** (Navigation) and **Copy URL** (Actions).
 
 ### Open a metric in Explore
 
 To drill deeper into a specific label panel:
 
-1. Hover over the panel to reveal the **Navigation** menu.
-2. Click **Explore** to open it in Explore view with the full query pre-filled.
+1. Click the **⋮** (more) icon on the panel to open its menu.
+2. Under **Navigation**, click **Explore** to open it in Explore view with the full query pre-filled.
 3. From here, modify the query, adjust the time range, or switch between graph and table views.
 
 Explore is great for experimenting with queries and uncovering deeper insights without needing to build a full dashboard.
+
+Under **Actions**, click **Copy URL** to copy a direct link to the panel.
 
 ### Add metrics visualization to a dashboard
 
@@ -102,6 +133,8 @@ From the metric detail view, you can add the graph directly to a dashboard using
 4. Click **Save dashboard** in the top-right corner.
 
 5. Give your dashboard a name and description, choose a folder (if needed), and click **Save**.
+
+![!Screenshot](images/save-dashboard.png)
 
 
 !!! info "Learn more"

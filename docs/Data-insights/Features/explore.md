@@ -1,8 +1,10 @@
 # Explore
 
-When you know what you're looking for, Explore lets you query it directly. Skip the dashboard, pick a datasource, build or write your query, and get the answer — without creating a panel or navigating through a pre-built view.
+When you know what you're looking for, Explore lets you query it directly. Skip the dashboard, pick a datasource, build or write your query, and get the answer, without creating a panel or navigating through a pre-built view.
 
 Navigate to **Explore** from the left-hand sidebar.
+
+![!Screenshot](images/explore-main.png)
 
 ## Datasources
 
@@ -18,11 +20,13 @@ The query builder updates to match the selected datasource.
 
 ## Go queryless
 
-Click **Go queryless** to switch to the guided Drilldown experience for the current datasource. Drilldown views let you browse and filter without writing queries:
+Click **Go queryless** to switch to the guided Drilldown experience for the current datasource. A dialog asks whether to open in the current tab or a new tab.
 
-- **[Metrics Drilldown](explore-metrics.md)** — browse metrics, filter by label, and explore breakdowns
-- **[Logs Drilldown](explore-logs.md)** — browse log streams, filter by label and severity, and explore patterns
-- **[Traces Drilldown](explore-traces.md)** — explore span rate, errors, and duration across services
+![!Screenshot](images/queryless.png) Drilldown views let you browse and filter without writing queries:
+
+- **[Metrics Drilldown](explore-metrics.md)**: browse metrics, filter by label, and explore breakdowns
+- **[Logs Drilldown](explore-logs.md)**: browse log streams, filter by label and severity, and explore patterns
+- **[Traces Drilldown](explore-traces.md)**: explore span rate, errors, and duration across services
 
 ## Query builder
 
@@ -30,8 +34,12 @@ Each query appears as a labelled panel (A, B, C...). The builder has two modes, 
 
 | Mode | Description |
 |---|---|
-| **Builder** | Visual query builder — select metric, add label filters, and add operations without writing query language |
-| **Code** | Raw query editor — write PromQL, LogQL, or TraceQL directly |
+| **Builder** | Visual query builder: select metric, add label filters, and add operations without writing query language |
+| **Code** | Raw query editor: write PromQL, LogQL, or TraceQL directly |
+
+![!Screenshot](images/code.png)
+
+In **Code** mode, click **Metrics browser** to look up available metrics and labels while you write your query.
 
 ### Metrics query builder
 
@@ -46,9 +54,9 @@ Expand **Options** to configure:
 | Option | Description |
 |---|---|
 | **Legend** | How series are labelled in the chart (Auto, Verbose, Custom) |
-| **Format** | Output format — Time series, Table, or Heatmap |
+| **Format** | Output format: Time series, Table, or Heatmap |
 | **Step** | Query resolution step |
-| **Type** | What to display — Both, Metrics, or Exemplars |
+| **Type** | What to display: Both, Metrics, or Exemplars |
 | **Exemplars** | Toggle exemplar display on the chart |
 
 Click **Kick start your query** to get a pre-built query template for common use cases.
