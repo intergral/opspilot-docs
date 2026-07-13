@@ -16,7 +16,9 @@ Navigate to **Traces Drilldown** from the left-hand sidebar to explore distribut
 | **Root spans / All spans** | Toggle between root-level spans only or all spans |
 | **Filter by label values** | Narrow traces by attribute values |
 | **Trace ID** | Look up a specific trace by ID |
-| **Time range** | Set the time window using the picker in the top right |
+| **Time range** | Set the time window using the picker in the top right. Use **«** / **»** to step the range backwards and forwards, the **zoom out** icon to widen it, and the **refresh** icon to reload |
+
+Click **Need help** (top right) to open guided tips and links to documentation.
 
 ---
 
@@ -34,6 +36,8 @@ The main graph updates to show the selected metric over the chosen time range.
 
 ## Tabs
 
+Click the **Share** icon (right of the tab row) to generate a link to the current view.
+
 ### Breakdown
 
 The default view. Shows how the selected metric breaks down across attribute values.
@@ -46,21 +50,34 @@ The default view. Shows how the selected metric breaks down across attribute val
 
 ### Service structure
 
-Visualizes the relationships and dependencies between services in your traces.
+Analyses the service structure of the traces that match the current filters. Each panel is an aggregate view compiled using spans from multiple traces, with a header showing how many spans were used (e.g., *Structure for load-generator [457 spans used]*).
+
+Each panel shows a **Service & Operation** tree alongside a duration timeline:
+
+- Rows are nested to show the call hierarchy (service, operation, and duration for each span).
+- Use the expand/collapse controls to open or close branches of the tree.
+- Errors are flagged with a red indicator on the affected span.
 
 ### Comparison
 
-Compare trace metrics across two time ranges or filter sets to identify regressions.
+Compares a **Baseline** (green) against a **Selection** (red) to surface which attributes differ most between the two. Attributes are ordered by the difference between the baseline and selection values for each value.
+
+- The **Attributes panel** (left) lets you browse and search attributes by category: Favorites, All, Resource, Span.
+- Each attribute panel shows the value distribution and the **Highest difference** (e.g., 100.00%) for that attribute.
+- Click **Inspect** to look at an attribute in more detail, or **Add to filters** to scope the view by it.
 
 ### Traces
 
-A list of individual traces matching the current filters. Shows up to 200 results. Hover over a trace and click **View trace** to open the full trace detail view.
+A table of individual traces (spans) for the current set of filters, showing up to 200 results. Columns include **Start time**, **Trace Service**, **Trace Name**, and **Duration**.
+
+- Click a **Trace Name** link (external-link icon) to open the full trace detail view.
+- Use the **Attributes panel** (left) to select attributes and refine the list.
 
 ---
 
 ## Trace detail view
 
-Clicking **View trace** opens a detail panel showing the full trace waterfall.
+Clicking a **Trace Name** link opens a detail panel showing the full trace waterfall. The panel header shows the trace's root service and operation, with **Analyze Trace** and **Share** buttons in the top right.
 
 | Field | Description |
 |---|---|
@@ -72,9 +89,9 @@ Clicking **View trace** opens a detail panel showing the full trace waterfall.
 
 ### Span waterfall
 
-The waterfall view shows each span as a horizontal bar, positioned on a timeline from 0 to the total trace duration. Each row shows the **service name**, **operation**, and **duration**.
+The waterfall view shows each span as a horizontal bar, positioned on a timeline from 0 to the total trace duration. Each row shows the **service name**, **operation**, and **duration**, and a **Logs** button to view logs related to that span.
 
-Use **Span Filters** to narrow the spans shown. Use **Prev** / **Next** to step through spans.
+Use **Span Filters** to narrow the spans shown, and **Prev** / **Next** to step through them. The total span count is shown above the waterfall (e.g., *3 spans*).
 
 ### Analyze Trace
 

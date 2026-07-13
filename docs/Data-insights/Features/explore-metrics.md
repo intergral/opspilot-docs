@@ -15,11 +15,27 @@ Navigate to **Metrics Drilldown** from the left-hand sidebar to explore Promethe
 | **Data source** | Select the Metrics data source |
 | **Filter by label values** | Narrow metrics by label |
 | **Quick search metrics** | Type to search across all available metrics |
-| **Sort by** | Order results by Default or other criteria |
+| **Sort by** | Order results. Options are **Default** (alphabetical with recently-selected metrics first), **Alphabetical [A-Z]**, **Alphabetical [Z-A]**, **Dashboard Usage** (prevalence in dashboard panel queries), and **Alerting Usage** (prevalence in alerting rules) |
 | **View** | Switch between Grid and Rows layout |
-| **Time range** | Set the window using the picker in the top right |
+| **Time range** | Set the window using the picker in the top right. Use **«** to move the range back 30 minutes and **»** to move it forwards, the **zoom out** icon to widen the range, and the **refresh** icon to reload. The **ⓘ Plugin info** icon (far right) shows the plugin version, changelog, documentation, and links to contribute or report an issue |
 
 The total number of matching metrics is shown next to the search bar (e.g., 1613).
+
+---
+
+## Left toolbar
+
+The vertical icon rail on the left opens additional filter panels. Each panel filters the metric grid, and selections can be cleared with **clear**.
+
+| Icon | Panel | Description |
+|---|---|---|
+| **Rules filters** | Rules filters | Filter by **Non-rules metrics** or **Recording rules** (each with a count) |
+| **A_** | Prefix filters | Filter metrics by name prefix (e.g., `mysql`, `go`, `node`). Includes a **Search** box and a **Hide empty** toggle |
+| **_Z** | Suffix filters | Filter metrics by name suffix (e.g., `total`, `count`, `bytes`). Includes a **Search** box and a **Hide empty** toggle |
+| **Clock** | Recent metrics filters | Limit to metrics seen within a time window (All time, or Past 1m through Past 24h) |
+| **Group by labels** | Group by labels | Search and select labels to group the metrics by |
+| **Star** | Bookmarks | Saved metrics for the current data source |
+| **Settings** | Settings | Labelled Settings on hover; may be unavailable depending on your configuration |
 
 ---
 
