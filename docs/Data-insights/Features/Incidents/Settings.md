@@ -1,64 +1,48 @@
-# Incident Settings
+# Settings
 
-![!Screenshot](/Data-insights/Features/Incidents/images/setting-main.png)
+Configure incident roles, statuses, and severities. Navigate to **Incidents > Settings** to open it.
 
+![Incident settings](../../../images/settings.png)
 
-The **Settings** page allows users to configure key elements of the **Incidents** module, including **Labels**, **Severities**, **Statuses**, and **Roles**. 
+## Statuses
 
-## Access Settings
+Lifecycle states for incidents. These drive MTTA/MTTM analytics and defaults are seeded on first use.
 
-![!Screenshot](/Data-insights/Features/Incidents/images/settings-cog.png)
+Each status can be flagged with one or more behaviours:
 
+| Flag | Effect |
+|---|---|
+| **terminal** | Closes the incident when this status is set |
+| **acknowledged** | Stamps the acknowledged time on first entry - used for MTTA calculation |
+| **mitigated** | Stamps the mitigated time - used for MTTM calculation |
 
-1. Click the **cog icon** in the top-right of the screen.  
-2. Navigate to the relevant section: **Labels**, **Severities**, **Statuses**, and **Roles**. 
+Default statuses:
 
+| Status | Flag | Slug |
+|---|---|---|
+| Triage | - | `triage` |
+| Investigating | acknowledged | `investigating` |
+| Mitigated | mitigated | `mitigated` |
+| Resolved | terminal | `resolved` |
 
+To add a status, enter a label, slug, and colour then click **+**. Existing statuses can be edited or deleted.
 
+## Roles
 
-### Labels  
+People-roles that can be assigned on each incident. **Investigator** and **Commander** are built-in and cannot be removed. Add your own (e.g. comms-lead, scribe) by entering a label and slug then clicking **+**.
 
-Labels help categorize incidents for better tracking and filtering. 
+## Severities
 
-- To add a label, click **+ Add Label** and enter a name, color and description and click **Save**.  
+Severity levels used when declaring incidents. Existing incidents keep their severity slug even after the severity is removed, so you can delete freely.
 
-- Labels can be edited or deleted at any time. 
+Default severities: **SEV-1**, **SEV-2**, **SEV-3**, **SEV-4**.
 
-- By default, there will be a label called customers-affected. This label can be edited or deleted. 
+Options per severity:
 
-- No minimum label requirements exist.  
+- **SLA budget** - opt-in per severity. Toggle on when editing a row to set ack / mitigate / post-mortem-publish time budgets.
+- **Post-mortem gate** - blocks an incident from moving to a terminal status until its post-mortem is published. On by default, customisable per severity.
 
-### Severities
+To add a severity, enter a label, short name, slug, and colour then click **+**.
 
-Severities define the impact level of an incident. The available severities are:  
-
--  **Pending** – Severity not yet determined.  
-- **Low** – Limited impact on business operations.  
--  **Medium** – Some impact on business operations.  
--  **High** – Significant impact on business operations.  
--  **Critical** – Severe business impact requiring immediate attention.  
-
-
-### Statuses
-
-Statuses indicate the current state of an incident.  
-
-- 🟠 **Active** – The incident is currently ongoing.  
-- 🟢 **Resolved** – The incident has been resolved.  
- 
-
-### Roles
-
-Roles define responsibilities within an incident response.  
-
-- **Default Roles:**  
-    - **Commander** – Manages the incident response.  
-    - **Investigator** – Handles the technical investigation.  
-
-- To add a role, click **+ Add Role**, enter a name and description.  
-
-!!! info
-    Checking the **"Important"** box ensures the role appears on all incidents by default.
-
-
-- **Editing/Deleting:** Roles can be updated or removed, but at least **two roles** must always exist.  
+!!! question "Need more help?"
+    Contact support in the chat bubble and let us know how we can assist.
