@@ -4,6 +4,8 @@ When you have dozens of alert rules across multiple services, knowing what's hea
 
 Navigate to **Alerting > Status** to open it.
 
+![Screenshot](/Data-insights/Features/images/Alerting/status.png)
+
 ## Rules tab
 
 The Rules tab shows all your alert rules as a hexagonal grid. Each hexagon represents one rule, colour-coded by its current state:
@@ -11,16 +13,19 @@ The Rules tab shows all your alert rules as a hexagonal grid. Each hexagon repre
 | State | Colour | Description |
 |---|---|---|
 | **Normal** | Green | The rule is evaluating and its condition is not currently met |
+| **Pending** | Amber | The condition has been met, but not yet for long enough to fire |
 | **Firing** | Red | The alert condition is met and the rule is actively firing |
 | **Paused** | Grey | The rule is paused and not being evaluated |
 
-Hover over any hexagon to see the rule name, its current state, and the group it belongs to.
+Hover over any hexagon to see the rule name, its current state, and the group it belongs to. **Scroll to zoom**, **drag to pan**, and **click a hexagon to view that rule**. Use the zoom (**+** / **-**) and reset controls in the bottom-right corner.
 
 Rules that need attention are surfaced at the top of the page, above the grid, so firing alerts are visible without scrolling.
 
 ## Instances tab
 
 Where the Rules tab shows one hexagon per rule, the Instances tab shows one hexagon per alert instance. A single rule can produce multiple instances - one per server, service, or label combination it matches. This view is useful when you need to understand the blast radius of a firing rule: how many things are affected, and which specific ones.
+
+![Screenshot](/Data-insights/Features/images/Alerting/instance.png)
 
 Hover over any hexagon to see the instance name, its state, the group it belongs to, and all labels attached to it (such as `alert_type`, `contact_points`, and `opspilot_coworker`).
 
@@ -31,7 +36,7 @@ Use the state filters to narrow the view - for example, selecting **Paused** sho
 ## Filtering and grouping
 
 - Use **Search rules** to find a rule by name
-- Use the state filters (**Normal**, **Paused**, **Firing**) to scope the count and highlight rules in a specific state
+- Use the state filters (**Pending**, **Normal**, **Firing**, **Paused**) to scope the count and highlight rules in a specific state. Only the states currently present are shown
 - Use **Group by** to reorganise the grid by any label or property:
 
 | Group | Description |
