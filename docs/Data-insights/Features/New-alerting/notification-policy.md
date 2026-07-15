@@ -9,6 +9,8 @@ Navigate to **Alerting > Notification Policy** to open it.
 
 Routes are evaluated top-to-bottom. The first match wins unless `continue` is set.
 
+![Screenshot](/Data-insights/Features/images/Alerting/notification-policy.png)
+
 ## How routing works
 
 - **Label matching** - alerts are routed based on label matchers. Each route checks the labels on an incoming alert to decide whether to handle it
@@ -23,7 +25,7 @@ Each route in the list shows:
 - **continue** badge - shown when the route is set to continue matching sibling routes after it matches
 - **Contact point** - the destination the alert is sent to
 - **Timing** - wait / interval / repeat values inline (such as, `wait 10s / interval 5m / repeat 12h`)
-- **Actions** - edit (pencil), add child route (+), and delete (bin). Routes with a **System** lock badge are managed by the system and cannot be deleted.
+- **Actions** - edit (pencil), add child route (+), and delete (bin). Routes with a **System** lock badge are managed by the system and cannot be deleted. The **+** (add child route) opens the same panel as **+ New route**, creating the new route nested under the current one.
 
 ## Recommended setup
 
@@ -34,6 +36,8 @@ The simplest approach is to use a `channel` label on your alert rules and match 
 Go to **Alerting > Contact Points** and create one contact point for each notification destination. See [Contact Points](contact-points.md).
 
 ### Step 2 - Add a route per destination
+
+![Screenshot](/Data-insights/Features/images/Alerting/new-route.png)
 
 1. Click **+ New route** to open the route panel
 2. Select a **Contact point** from the dropdown
@@ -71,9 +75,12 @@ When creating an [alert rule](rules.md), add a `channel` label with the value ma
 
 The Default policy handles any alert that does not match a specific route.
 
+![Screenshot](/Data-insights/Features/images/Alerting/edit-default-policy.png)
+
 1. Click the **edit** icon on the Default policy row
 2. Select a **Contact point** for unmatched alerts
-3. Set your timing preferences:
+3. Set **Group by** to the label names used to bundle related alerts (such as, `grafana_folder, alertname`)
+4. Set your timing preferences:
 
 | Setting | Description |
 |---|---|
@@ -81,7 +88,8 @@ The Default policy handles any alert that does not match a specific route.
 | **Group interval** | How long to wait before sending updates for an existing group (default `5m`) |
 | **Repeat interval** | How long to wait before re-sending the same firing alert (default `4h`) |
 
-4. Click **Save**
+5. Optionally add **Mute time intervals** and **Active time intervals** to control when notifications are sent
+6. Click **Save changes**
 
 ## Applying time intervals
 
