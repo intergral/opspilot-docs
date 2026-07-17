@@ -1,6 +1,6 @@
 # Silences
 
-Silences temporarily mute alert notifications for a set time window using label matchers. Use them during planned maintenance, known outages, or while investigating an incident to reduce noise.
+Deploying during a maintenance window and don't want to wake the on-call team? A **silence** temporarily mutes matching alert notifications for a set time window, so planned maintenance, known outages, and active investigations don't flood people with noise - while the rules keep evaluating in the background so nothing is actually missed.
 
 Navigate to **Alerting > Silences** to view and manage silences. Use **Show expired** to see silences that have already ended.
 

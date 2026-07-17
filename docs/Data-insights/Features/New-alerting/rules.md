@@ -6,6 +6,8 @@ Navigate to **Alerting > Rules** to open it.
 
 ## The rules list
 
+![Screenshot](/Data-insights/Features/images/Alerting/rule-table.png)
+
 Rules are displayed with four state counters at the top:
 
 | State | Description |

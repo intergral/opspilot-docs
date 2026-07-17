@@ -1,6 +1,6 @@
 # Anomaly Detectors
 
-**Anomaly Detectors** manage anomaly detection rules for your services and custom PromQL queries. Navigate to **Alerting > Anomaly Detectors** to open it.
+Picking the right threshold is hard - too tight and you drown in false alarms, too loose and you miss the real problem. **Anomaly Detectors** flag unusual behaviour in your services automatically, so you get meaningful alerts without hand-tuning numbers. Navigate to **Alerting > Anomaly Detectors** to open it.
 
 The page has two tabs: **Service detectors** and **Custom detectors**.
 

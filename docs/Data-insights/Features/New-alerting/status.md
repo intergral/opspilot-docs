@@ -19,6 +19,8 @@ The Rules tab shows all your alert rules as a hexagonal grid. Each hexagon repre
 
 Hover over any hexagon to see the rule name, its current state, and the group it belongs to. **Scroll to zoom**, **drag to pan**, and **click a hexagon to view that rule**. Use the zoom (**+** / **-**) and reset controls in the bottom-right corner.
 
+![Screenshot](/Data-insights/Features/images/Alerting/status-hover.png)
+
 Rules that need attention are surfaced at the top of the page, above the grid, so firing alerts are visible without scrolling.
 
 ## Instances tab
