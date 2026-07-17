@@ -130,8 +130,6 @@ A good alert rule has three things: a query that targets the right signal, a thr
 
 Click **+ New** (top right) to open a menu with two options: **Alert rule** and **Custom detector** (see [Anomaly Detectors](anomaly-detectors.md)). Select **Alert rule** to open the rule editor.
 
-![Screenshot](/Data-insights/Features/images/Alerting/new-rule-main.png)
-
 The rule editor has two modes, toggled in the top right:
 
 | Mode | Description |
