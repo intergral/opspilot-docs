@@ -1,6 +1,6 @@
 # Time Intervals
 
-**Time intervals** define recurring time windows for muting or activating alerts. Navigate to **Alerting > Time Intervals** to view and manage them.
+Nobody wants a low-priority alert at 3am on a Sunday. **Time intervals** let you define recurring windows - business hours, weekends, maintenance slots - once, then reuse them across notification policies to control exactly when alerts are allowed to notify. Navigate to **Alerting > Time Intervals** to view and manage them.
 
 Once defined, time intervals are applied in your [notification policy](notification-policy.md) to control when notifications are delivered.
 
