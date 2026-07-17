@@ -2,7 +2,7 @@
 
 An alert that fires but reaches nobody is just noise you never heard. The Notification Policy is where you decide which alerts go to which people - so the right team is paged for a production incident, Slack gets a heads-up for a warning, and low-priority rules don't interrupt anyone at 3am.
 
-Navigate to **Alerting > Notification Policy** to open it.
+Navigate to **Alerting > Notifications** and open the **Notification Policy** tab.
 
 !!! warning "Advanced configuration"
     Incorrect changes here may cause missed notifications. Most users should manage contact points from the [Contact Points](contact-points.md) page instead.

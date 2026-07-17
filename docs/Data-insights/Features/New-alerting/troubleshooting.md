@@ -37,19 +37,19 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 
 1. **Missing `channel` label on the alert rule**
     - The alert falls through to the Default policy. If the Default policy contact point is not configured, no notification is sent.
-    - Fix: Edit the alert rule and add a `channel` label (such as, `channel=slack`). See [Configure Alert Rules](Alert-Rules/Configure-rules.md#4-add-routing-labels).
+    - Fix: Edit the alert rule and add a `channel` label (such as, `channel=slack`). See [Rules](rules.md#4-add-routing-labels).
 
 2. **No matching child policy**
     - Check that a notification policy exists with a matcher for the `channel` label value you used.
-    - Fix: Navigate to **Alerting** > **Notification policies** and verify the policy matcher (such as, `channel =~ .*slack.*`).
+    - Fix: Navigate to **Alerting** > **Notifications** and open the **Notification Policy** tab, then verify the policy matcher (such as, `channel =~ .*slack.*`).
 
 3. **Contact point misconfigured**
     - The policy is matching but the integration is failing.
-    - Fix: Navigate to **Alerting** > **Contact Points**, find the contact point, and click **Test** to verify delivery. Check the credentials and configuration fields.
+    - Fix: Navigate to **Alerting** > **Notifications** and open the **Contact Points** tab, find the contact point, and check its credentials and configuration fields.
 
 4. **Silence or mute timing is active**
-    - Navigate to **Alerting** > **Firing Alerts** and expand the alert. A **Suppressed** state means a silence or mute timing is blocking the notification.
-    - Fix: Check **[Silences](Silences.md)** and **[Time intervals](Mute-timings.md)** for active suppression rules.
+    - Navigate to **Alerting** > **Status** and open the affected rule. A **Suppressed** state means a silence or mute timing is blocking the notification.
+    - Fix: Check **[Silences](silences.md)** and **[Time intervals](time-intervals.md)** for active suppression rules.
 
 ---
 
@@ -62,11 +62,11 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 **Fix:**
 
 1. Open the alert rule and confirm a `channel` label is present with the correct value (such as, `channel=slack`).
-2. Navigate to **Alerting** > **Notification policies** and confirm a child policy exists with a matcher like `channel =~ .*slack.*`.
+2. Navigate to **Alerting** > **Notifications** and open the **Notification Policy** tab, then confirm a child policy exists with a matcher like `channel =~ .*slack.*`.
 3. Verify the operator is `=~` (regex match) and the regex value is correct - `.*slack.*` will match any label value containing the word "slack".
 
 !!! tip
-    You can verify which policy an alert will match by using the **Test** option on the Default policy in **Notification policies**. Enter the label key/value pairs from your alert rule to simulate routing.
+    You can verify which policy an alert will match by using the **Test** option on the Default policy in the **Notification Policy** tab. Enter the label key/value pairs from your alert rule to simulate routing.
 
 ---
 
@@ -102,7 +102,7 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 1. **Increase the Pending period** - A pending period of `5m` or `10m` requires the condition to be continuously true before firing, smoothing out brief spikes.
 2. **Use "Keep firing for"** - This holds the alert in a firing state for a period after the condition resolves, preventing rapid recovered/re-fired cycles.
 3. **Adjust the threshold** - If the metric hovers just at the threshold, add a buffer (such as, changing `> 80` to `> 85`).
-4. **Increase the Repeat interval** on the [notification policy](Notifications.md) - This reduces re-notification frequency without changing how the rule evaluates.
+4. **Increase the Repeat interval** on the [notification policy](notification-policy.md) - This reduces re-notification frequency without changing how the rule evaluates.
 
 ---
 
@@ -112,7 +112,7 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 
 **Fixes:**
 
-1. **Grouping** - Ensure your [notification policy](Notifications.md) has appropriate **Group by** labels (such as, `alertname` or `cluster`). This bundles related alerts into a single notification.
+1. **Grouping** - Ensure your [notification policy](notification-policy.md) has appropriate **Group by** labels (such as, `alertname` or `cluster`). This bundles related alerts into a single notification.
 2. **Repeat interval** - Increase the **Repeat interval** on the notification policy (default `4h`). This controls how often a persistently firing alert re-notifies.
 3. **Group wait / Group interval** - Increasing these values batches notifications over a longer window before sending.
 4. **Flapping metric** - If the alert is repeatedly firing and resolving, see [Alert is flapping](#alert-is-flapping) above.
@@ -129,8 +129,8 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 
 1. Check that the alert rule has the correct `channel` label.
 2. Check that the notification policy matcher (such as, `channel =~ .*slack.*`) matches the label value used on the rule.
-3. Navigate to **Alerting** > **Firing Alerts** and expand the firing alert. The **Receivers** field shows which contact point is actually handling the notification.
-4. If **Receivers** shows the Default policy or an unexpected contact point, the routing labels are not matching your intended child policy.
+3. Navigate to **Alerting** > **Status** and open the firing rule. The rule's **Notifies** field shows which contact point is actually handling the notification.
+4. If **Notifies** shows the Default policy or an unexpected contact point, the routing labels are not matching your intended child policy.
 
 ---
 

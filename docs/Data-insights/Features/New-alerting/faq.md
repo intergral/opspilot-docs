@@ -59,7 +59,7 @@ Yes - click the pause icon on any rule in the list. While paused the rule stops 
 
 ## What is the post-mortem gate in anomaly detectors?
 
-The post-mortem gate blocks an incident from moving to a terminal (closed) status until its post-mortem has been published. It defaults on and can be toggled per severity in [Incident Settings](../../Incidents/Settings.md).
+The post-mortem gate blocks an incident from moving to a terminal (closed) status until its post-mortem has been published. It defaults on and can be toggled per severity in [Incident Settings](../Incidents/Settings.md).
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

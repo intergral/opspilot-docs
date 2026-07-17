@@ -83,7 +83,7 @@ Setting it to `0s` means the alert fires immediately on the first evaluation whe
 - The query label selectors are too specific and match no active series.
 - The data source connection is temporarily unavailable.
 
-Review the **No Data** handling option on the rule - **Keep last state** is usually the safest default. See [Troubleshooting](Troubleshooting.md#alert-is-in-no-data-state) for more detail.
+Review the **No Data** handling option on the rule - **Keep last state** is usually the safest default. See [Troubleshooting](../New-alerting/troubleshooting.md#alert-is-in-no-data-state) for more detail.
 
 ---
 
