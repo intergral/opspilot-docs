@@ -1,6 +1,6 @@
 # Time Intervals
 
-Nobody wants a low-priority alert at 3am on a Sunday. **Time intervals** let you define recurring windows - business hours, weekends, maintenance slots - once, then reuse them across notification policies to control exactly when alerts are allowed to notify. Navigate to **Alerting > Time Intervals** to view and manage them.
+Nobody wants a low-priority alert at 3am on a Sunday. **Time intervals** let you define recurring windows - business hours, weekends, maintenance slots - once, then reuse them across notification policies to control exactly when alerts are allowed to notify. Navigate to **Alerting > Notifications** and open the **Time Intervals** tab to view and manage them.
 
 Once defined, time intervals are applied in your [notification policy](notification-policy.md) to control when notifications are delivered.
 
@@ -38,7 +38,7 @@ Click **Create time interval** to save.
 
 After saving, apply the interval to a notification policy:
 
-1. Go to **Alerting > Notification Policy**
+1. Go to **Alerting > Notifications** and open the **Notification Policy** tab
 2. Find the policy you want to mute and click **Edit**
 3. Select your time interval from the **Mute timings** dropdown
 4. Click **Save policy**

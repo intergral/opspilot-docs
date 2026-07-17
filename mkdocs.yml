@@ -98,6 +98,7 @@ nav:
         - Traces: Data-insights/Features/Services/traces.md
         - Logs: Data-insights/Features/Services/logs.md
         - Info: Data-insights/Features/Services/info.md
+        - Incidents: Data-insights/Features/Services/incidents.md
         - Catalog: Admin-and-data/Catalog/catalog.md
         - FAQ: Data-insights/Features/Services/faq.md
      - Kubernetes:
@@ -106,15 +107,16 @@ nav:
      - Alerting:
         - Status: Data-insights/Features/New-alerting/status.md
         - Rules: Data-insights/Features/New-alerting/rules.md
-        - Contact Points: Data-insights/Features/New-alerting/contact-points.md
-        - Time Intervals: Data-insights/Features/New-alerting/time-intervals.md
-        - Notification Policy: Data-insights/Features/New-alerting/notification-policy.md
-        - Silences: Data-insights/Features/New-alerting/silences.md
+        - Notifications:
+           - Contact Points: Data-insights/Features/New-alerting/contact-points.md
+           - Silences: Data-insights/Features/New-alerting/silences.md
+           - Time Intervals: Data-insights/Features/New-alerting/time-intervals.md
+           - Notification Policy: Data-insights/Features/New-alerting/notification-policy.md
+        - Anomaly Detectors: Data-insights/Features/New-alerting/anomaly-detectors.md
         - Examples:
            - Overview: Data-insights/Features/alerting-examples.md
            - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
-        - Anomaly Detectors: Data-insights/Features/New-alerting/anomaly-detectors.md
-        - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
+        - Troubleshooting: Data-insights/Features/New-alerting/troubleshooting.md
         - FAQ: Data-insights/Features/New-alerting/faq.md
      - Incidents:
         - Overview: Data-insights/Features/Incidents/overview.md
