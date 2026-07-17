@@ -94,8 +94,10 @@ nav:
      - Services:
         - Overview: Data-insights/Features/Services/overview.md
         - Service Detail: Data-insights/Features/Services/service-detail.md
+        - Metrics: Data-insights/Features/Services/metrics.md
         - Traces: Data-insights/Features/Services/traces.md
         - Logs: Data-insights/Features/Services/logs.md
+        - Info: Data-insights/Features/Services/info.md
         - Catalog: Admin-and-data/Catalog/catalog.md
         - FAQ: Data-insights/Features/Services/faq.md
      - Kubernetes:
