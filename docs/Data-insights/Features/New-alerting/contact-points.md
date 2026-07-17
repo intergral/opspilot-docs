@@ -1,6 +1,6 @@
 # Contact Points
 
-**Contact points** define where and how OpsPilot sends alert notifications. Each contact point contains one or more integrations and can be assigned directly to an alert rule or routed via a [notification policy](notification-policy.md).
+A **contact point** answers one question: who gets told, and how? Set one up once - email, Slack, PagerDuty, webhook - and any alert you send to it lands in the right place. Each contact point contains one or more integrations and can be assigned directly to an alert rule or routed via a [notification policy](notification-policy.md).
 
 Navigate to **Alerting > Contact Points** to view and manage your contact points.
 
