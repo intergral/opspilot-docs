@@ -89,7 +89,17 @@ A row of summary cards sits below the header:
 
 **State history** (left, below the graph) - a log of state transitions showing the change (such as, Normal from Pending) and when it happened. Shows the count over the last 24h; click **See all** for the full history.
 
-**Investigate** (right) - quick links to explore the metric in related views.
+**Investigate** (right) - a set of quick-launch shortcuts for investigating a firing alert without building queries from scratch. Each card jumps straight to the relevant data, scoped to the alert and its firing window. Click **Collapse** to hide the panel.
+
+| Shortcut | Description |
+|---|---|
+| **Coworker** | Ask Coworker to generate an AI hypothesis for what is causing the alert |
+| **Logs** | View logs from during the firing window |
+| **Traces** | Inspect slow transactions related to the alert |
+| **Host metrics** | See host metrics for the firing instances |
+| **Dashboard** | Open a related dashboard overview |
+
+![Screenshot](/Data-insights/Features/images/Alerting/investigate-mode1.png)
 
 **Rule** (right) - the rule's configuration:
 
