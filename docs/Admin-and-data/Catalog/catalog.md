@@ -10,11 +10,15 @@ The catalog also powers incident response: affected services on an incident link
 
 ## Adding a catalog entry
 
-You can add entries from two places:
+You can populate the catalog three ways:
+
+**Run an audit** - click **Run audit** at the top of the catalog page. Coworker re-discovers services from your telemetry, **creating catalogue entries for services that aren't catalogued yet** and **refreshing existing entries you select**. A confirmation dialog (**Audit service catalogue**) notes that it runs in the background and shows the estimated **OpsPilot AI Token** usage per service. Click **Audit everything** to run it, or **Cancel**. When it finishes, a green banner reports the result, and **History** lets you review previous audits. This is the same discovery Coworker offers during [onboarding](../../Data-insights/Features/OpsPilot/Coworker/getting-started.md).
 
 **From Administration > Catalog** - click **+ New catalog entry** to open the form.
 
 **From the Services overview** - the Service Table includes a **Catalog** column. Any service appearing in your telemetry that does not yet have a catalog entry shows a **Create** button. Click it to register the service directly from where you spotted it.
+
+Each entry shows how it is maintained: entries you create or edit yourself are labelled **Human-managed**, while entries discovered and created by an audit are labelled **OpsPilot-managed**.
 
 ## Entry fields
 
@@ -53,11 +57,11 @@ The **Metadata** panel lets you attach custom key/value data to an entry - anyth
 
 ### Runbooks
 
-The **Runbooks** panel shows which runbooks are currently attached to this catalog entry. These are the runbooks that will surface automatically on incidents affecting this service. See [Runbooks](../Features/Incidents/runbooks.md) for how to create and attach them.
+The **Runbooks** panel shows which runbooks are currently attached to this catalog entry. These are the runbooks that will surface automatically on incidents affecting this service. See [Runbooks](../../Data-insights/Features/Incidents/runbooks.md) for how to create and attach them.
 
 ### Watching an entry
 
-Click the eye icon on the entry detail page to follow a service. This opens **Administration > Preferences > Services** where you can confirm your watched services selection and save. You will then receive a notification any time that service is directly affected by an incident or falls within its blast radius. See [Notifications](../Features/Notifications/notifications.md) for more.
+Click the eye icon on the entry detail page to follow a service. This opens **Administration > Preferences > Services** where you can confirm your watched services selection and save. You will then receive a notification any time that service is directly affected by an incident or falls within its blast radius. See [Notifications](../../Data-insights/Features/Notifications/notifications.md) for more.
 
 ### Entry types
 

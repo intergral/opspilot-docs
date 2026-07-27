@@ -1,6 +1,6 @@
 # Coworker
 
-Coworker is the connective layer that binds your observability data, alerting, service knowledge, and incident response into one place. Rather than switching between dashboards, alert feeds, and runbooks, you get a single AI operations partner that watches your systems, investigates what it finds, and hands you a clear, prioritised picture of what needs attention - so your team spends less time fighting tools and more time fixing problems.
+Coworker is the connective layer that binds your observability data, alerting, service knowledge, and incident response into one place. Rather than switching between dashboards, alert feeds, and runbooks, you get a single AI SRE teammate that watches your systems, investigates what it finds, and hands you a clear, prioritised picture of what needs attention - so your team spends less time fighting tools and more time fixing problems.
 
 Each user gets their own personalised Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
 
@@ -19,6 +19,7 @@ Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unc
 | **Insights** | The core of Coworker - atomic findings written every time Coworker investigates something, forming the foundation for everything it surfaces |
 | **Situations** | Insights grouped into coherent stories with severity, evidence, and recommended actions - the thing you triage |
 | **Continuous monitoring** | Watches your systems around the clock and re-investigates open situations on a regular cadence |
+| **[Heartbeat](heartbeat.md)** | An always-on health screen that watches each catalogued service against learned baselines and investigates sustained deviations on its own - no alert rules required |
 | **Alert response** | Automatically investigates firing alerts and posts one clean situation instead of a stream of raw alert noise |
 | **Tasks** | Scheduled, monitoring, and webhook-driven jobs that run recurring analysis and report back proactively |
 | **Memory** | Builds a growing understanding of your systems, your team, and your preferences over time |

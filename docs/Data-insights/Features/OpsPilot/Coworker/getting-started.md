@@ -2,21 +2,38 @@
 
 ## Onboarding
 
-When you first access Coworker, a short guided setup walks you through personalising your experience. You can skip it at any time and still get a working Coworker, though you'll see a broader, less tailored view until you configure your preferences.
+When you first access Coworker, a short guided setup of five steps walks you through personalising your experience. You can skip it at any time and still get a working Coworker, though you'll see a broader, less tailored view until you configure your preferences.
 
 ### Step 1: Introduction
 
-Step 1 introduces what Coworker does and how it works, with four cards showing the flow: something fires, Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
-
 ![!Screenshot](../../../../Coworker/onboarding1.png)
+
+Step 1 introduces what Coworker does - *"I handle the operational noise so you can focus on what matters"* - and how it helps:
+
+- Watches your alerts and digs into what's actually happening across your observability stack, so you get a clear story rather than a noise feed
+- Runs scheduled checks in the background and only raises something if it's worth your time
+- Answers questions in the chat and does the legwork, with no need to set the scene
+- Learns what you care about over time, so the noise tunes out and the signal stays
+
+A **How it works** flow shows four cards: something fires, Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
 
 ---
 
-### Step 2: Your role
+### Step 2: Health screen
+
+![!Screenshot](../../../../Coworker/onboarding-health.png)
+
+Coworker can watch the health of every service automatically: *"Once your services are catalogued, I watch each one's health signals every few minutes - no setup from you. When something drifts out of its normal range and stays there, I investigate and write it up, the same way I handle an alert."* This is [Heartbeat](heartbeat.md), Coworker's always-on health screen.
+
+Click **Catalogue my services** to discover your services from your telemetry and begin health screening. Cataloguing runs in the background - you can carry on with setup, and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog.md) page. Once it starts, click **Continue**. To move on without cataloguing now, choose **Skip for now** or **Skip**.
+
+---
+
+### Step 3: Your role
 
 ![!Screenshot](../../../../Coworker/onboarding2.png)
 
-Coworker asks which role best describes you. This sets the defaults for which kinds of situations are surfaced to you first:
+Coworker asks which role best describes you. This drives a few defaults - which kinds of situations surface to you first, and how things are weighted:
 
 | Role | Description |
 |---|---|
@@ -30,7 +47,7 @@ Pick the closest fit. Select **Skip - I'll come back later** to proceed without 
 
 ---
 
-### Step 3: What do you want me to help with?
+### Step 4: What do you want me to help with?
 
 ![!Screenshot](../../../../Coworker/onboarding3.png)
 
@@ -51,7 +68,7 @@ Click **Continue** when done, or **Skip** to proceed without selecting any.
 
 ---
 
-### Step 4: Which of these matter most to you?
+### Step 5: Which of these matter most to you?
 
 ![!Screenshot](../../../../Coworker/onboarding4.png)
 
@@ -71,6 +88,8 @@ The final step. Select the domains you want Coworker to prioritise in your feed:
 | **Security and auth** | Auth failures, suspicious traffic, IAM, secrets |
 
 Select as many as apply. These can be updated at any time from **Settings > Your preferences**.
+
+After you continue, Coworker offers to work out which services are yours - *"Want me to figure out which services are yours? The more I know what you own, the better I can filter the noise."* Click **Sure**, then describe in a sentence or two what you work on (a team, a product area, the services you own, anything you've been burned by lately) and click **Investigate**. Coworker uses this to map services to you and prioritise what you own. Choose **Skip** to finish onboarding without it.
 
 ---
 

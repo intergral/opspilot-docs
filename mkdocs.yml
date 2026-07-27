@@ -45,6 +45,7 @@ nav:
      - Coworker:
         - Overview: Data-insights/Features/OpsPilot/Coworker/overview.md
         - Getting started: Data-insights/Features/OpsPilot/Coworker/getting-started.md
+        - Heartbeat: Data-insights/Features/OpsPilot/Coworker/heartbeat.md
         - Tasks: Data-insights/Features/OpsPilot/Coworker/tasks.md
         - Usage: Data-insights/Features/OpsPilot/Coworker/usage.md
         - Knowledge: Data-insights/Features/OpsPilot/Coworker/knowledge.md
