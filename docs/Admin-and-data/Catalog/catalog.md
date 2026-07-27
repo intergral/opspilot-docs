@@ -27,7 +27,7 @@ Each entry shows how it is maintained:
 | **Human-managed** | Created or edited by a person. Its details stay exactly as you set them |
 | **OpsPilot-managed** | Discovered by an audit, or a human-managed entry switched over. OpsPilot keeps these entries updated periodically with the latest details - for any field that isn't locked |
 
-A human-managed entry switches to **OpsPilot-managed** when you open it and choose to **re-audit** or **let OpsPilot manage** it; from then on it is eligible for periodic automatic updates. To switch it back to **Human-managed**, edit any field and confirm the prompt. Lock a field to keep OpsPilot from overwriting it while the rest of the entry stays current.
+On an entry's detail page, click **Let OpsPilot manage** to hand it over. OpsPilot is then free to refresh aliases, type, and other auto-populated fields - but only where it has new evidence, and your current edits are preserved. The entry switches back to **Human-managed** the next time someone edits a field. Use **Re-audit** to re-run discovery for that single entry.
 
 ## Entry fields
 
@@ -47,18 +47,20 @@ The slug is the key linking mechanism - it connects alert labels, runbook attach
 
 ## Entry detail view
 
-Clicking an entry opens its detail page, which shows the full picture for that service:
+Clicking an entry opens its detail page, which shows the full picture for that service. The header carries its key fields and badges, with actions to watch it (eye icon), open its settings, **Let OpsPilot manage**, **Re-audit**, edit, or delete.
 
 ![!Screenshot](../../Data-insights/Features/Incidents/images/catalog-entry.png)
 
-### Dependencies
+### Request flow
 
-The **Dependencies** panel maps the relationships between catalog entries:
+The **Request flow** panel maps the operations and dependencies OpsPilot has observed for the service from its telemetry:
 
 - **Depends on (upstream)** - the services and infrastructure this entry relies on
 - **Used by (downstream)** - the services that depend on this one, directly or transitively
 
 The downstream view is particularly valuable during incidents. If a service is affected, everything listed under Used by could also be impacted - giving you an immediate blast radius picture without having to trace dependencies manually.
+
+Until OpsPilot has seen the service in telemetry, the panel shows *"OpsPilot hasn't observed any operations or dependencies for this service yet."*
 
 ### Metadata
 
@@ -67,6 +69,10 @@ The **Metadata** panel lets you attach custom key/value data to an entry - anyth
 ### Runbooks
 
 The **Runbooks** panel shows which runbooks are currently attached to this catalog entry. These are the runbooks that will surface automatically on incidents affecting this service. See [Runbooks](../../Data-insights/Features/Incidents/runbooks.md) for how to create and attach them.
+
+### What OpsPilot remembers
+
+The **What OpsPilot remembers about [service]** panel shows what Coworker has learned about the service over time - a timeline of memories (such as, *"The cart service error rate acts as a downstream health indicator for the payment service"*), each with when it was recorded. Type in the **Tell OpsPilot something about [service]** box to add context yourself. See [Coworker Knowledge](../../Data-insights/Features/OpsPilot/Coworker/knowledge.md) for how memory works.
 
 ### Watching an entry
 
