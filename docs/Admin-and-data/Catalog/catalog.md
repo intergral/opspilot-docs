@@ -20,7 +20,14 @@ A service needs enough telemetry for Coworker to catalogue it - very quiet or ba
 
 **From the Services overview** - the Service Table includes a **Catalog** column. Any service appearing in your telemetry that does not yet have a catalog entry shows a **Create** button. Click it to register the service directly from where you spotted it.
 
-Each entry shows how it is maintained: entries you create or edit yourself are labelled **Human-managed**, while entries discovered and created by an audit are labelled **OpsPilot-managed**.
+Each entry shows how it is maintained:
+
+| Label | Meaning |
+|---|---|
+| **Human-managed** | Created or edited by a person. Its details stay exactly as you set them |
+| **OpsPilot-managed** | Discovered by an audit, or a human-managed entry switched over. OpsPilot keeps these entries updated periodically with the latest details - for any field that isn't locked |
+
+A human-managed entry switches to **OpsPilot-managed** when you open it and choose to **re-audit** or **let OpsPilot manage** it; from then on it is eligible for periodic automatic updates. To switch it back to **Human-managed**, edit any field and confirm the prompt. Lock a field to keep OpsPilot from overwriting it while the rest of the entry stays current.
 
 ## Entry fields
 
