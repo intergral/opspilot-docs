@@ -14,6 +14,8 @@ You can populate the catalog three ways:
 
 **Run an audit** - click **Run audit** at the top of the catalog page. Coworker re-discovers services from your telemetry, **creating catalogue entries for services that aren't catalogued yet** and **refreshing existing entries you select**. A confirmation dialog (**Audit service catalogue**) notes that it runs in the background and shows the estimated **OpsPilot AI Token** usage per service. Click **Audit everything** to run it, or **Cancel**. When it finishes, a green banner reports the result, and **History** lets you review previous audits. This is the same discovery Coworker offers during [onboarding](../../Data-insights/Features/OpsPilot/Coworker/getting-started.md).
 
+A service needs enough telemetry for Coworker to catalogue it - very quiet or barely-instrumented services may not be picked up.
+
 **From Administration > Catalog** - click **+ New catalog entry** to open the form.
 
 **From the Services overview** - the Service Table includes a **Catalog** column. Any service appearing in your telemetry that does not yet have a catalog entry shows a **Create** button. Click it to register the service directly from where you spotted it.
