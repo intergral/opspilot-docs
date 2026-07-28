@@ -138,7 +138,7 @@ Writing good alert rules is hard - thresholds that are too sensitive create nois
 
 A good alert rule has three things: a query that targets the right signal, a threshold that fires at the right level, and a routing label that gets the notification to the right person.
 
-Click **+ New** (top right) to open a menu with two options: **Alert rule** and **Custom detector** (see [Anomaly Detectors](anomaly-detectors.md)). Select **Alert rule** to open the rule editor.
+Click **+ New** (top right) to open a menu with two options: **Alert rule** and **Custom detector** (see [Custom Anomaly Detectors](custom-anomaly-detectors.md)). Select **Alert rule** to open the rule editor.
 
 The rule editor has two modes, toggled in the top right:
 

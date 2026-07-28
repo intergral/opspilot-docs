@@ -107,12 +107,14 @@ nav:
      - Alerting:
         - Status: Data-insights/Features/New-alerting/status.md
         - Rules: Data-insights/Features/New-alerting/rules.md
+        - Service Anomaly Detectors: Data-insights/Features/New-alerting/service-anomaly-detectors.md
+        - Custom Anomaly Detectors: Data-insights/Features/New-alerting/custom-anomaly-detectors.md
         - Notifications:
            - Contact Points: Data-insights/Features/New-alerting/contact-points.md
            - Silences: Data-insights/Features/New-alerting/silences.md
            - Time Intervals: Data-insights/Features/New-alerting/time-intervals.md
            - Notification Policy: Data-insights/Features/New-alerting/notification-policy.md
-        - Anomaly Detectors: Data-insights/Features/New-alerting/anomaly-detectors.md
+        - Recording Rules: Data-insights/Features/New-alerting/recording-rules.md
         - Examples:
            - Overview: Data-insights/Features/alerting-examples.md
            - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md

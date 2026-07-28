@@ -62,7 +62,7 @@ Click **+ New** in the top right to create something new without leaving the Sta
 |---|---|
 | **Alert rule** | Create a new alert rule. See [Rules](rules.md) for full details |
 | **Contact point** | Add a new contact point. See [Contact Points](contact-points.md) for full details |
-| **Custom detector** | Create a custom anomaly detector. See [Anomaly Detectors](anomaly-detectors.md) for full details |
+| **Custom detector** | Create a custom anomaly detector. See [Custom Anomaly Detectors](custom-anomaly-detectors.md) for full details |
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

@@ -1,26 +1,10 @@
-# Anomaly Detectors
+# Custom Anomaly Detectors
 
-Picking the right threshold is hard - too tight and you drown in false alarms, too loose and you miss the real problem. **Anomaly Detectors** flag unusual behaviour in your services automatically, so you get meaningful alerts without hand-tuning numbers. Navigate to **Alerting > Anomaly Detectors** to open it.
+Custom anomaly detectors let you define anomaly detection against any PromQL query - useful when the signal you care about isn't one of the automatic [service detectors](service-anomaly-detectors.md). Navigate to **Alerting > Custom Anomaly Detectors** to open the list.
 
-The page has two tabs: **Service detectors** and **Custom detectors**.
+## The detectors list
 
----
-
-## Service detectors
-
-Service detectors are auto-created from your instrumented services using templates. Alerts fire when the anomaly probability stays above the configured threshold for the pending duration.
-
-Each instrumented service automatically gets detectors for:
-
-- **Rate** - request rate anomalies
-- **Error** - error rate anomalies
-- **Latency** - response time anomalies
-
-### Scanning for services
-
-Click **Scan for services** to detect your instrumented services and auto-create detectors for them. If no service detectors exist yet, this is the first step.
-
-### State counters
+The list shows your custom detectors with state counters at the top:
 
 | State | Description |
 |---|---|
@@ -30,18 +14,16 @@ Click **Scan for services** to detect your instrumented services and auto-create
 | **No Data** | The detector has no data to evaluate |
 | **Paused** | The detector is paused and not evaluating |
 
-### Filtering the list
-
-- **Search services** - find detectors by service name
+- **Search detectors** - find a detector by name
 - **All states** - filter by current state
 - **All contact points** - filter by the contact point the detector routes to
-- Switch between **Table** and **Tiles** view using the toggle in the top right
+- Set the **auto-refresh interval** (such as, `30s`) or refresh manually
 
----
+Before you add any, the list shows *"No custom detectors yet."*
 
-## Custom detectors
+## Creating a custom detector
 
-Custom detectors let you define anomaly detection rules against any PromQL query. Click **+ New custom detector** to open the creation page, then click **Create detector** to save.
+Click **+ New custom detector** to open the creation page, then click **Create detector** to save.
 
 ### Signal
 
@@ -69,7 +51,8 @@ Choose which contact points receive alerts from this detector. Click **+ Add** t
 
 Toggle **investigate on fire** to have Coworker automatically investigate when this detector fires.
 
----
-
 !!! info "Learn more"
     [Anomaly Detection overview](../Anomaly-Detection/ADoverview.md)
+
+!!! question "Need more help?"
+    Contact support in the chat bubble and let us know how we can assist.
