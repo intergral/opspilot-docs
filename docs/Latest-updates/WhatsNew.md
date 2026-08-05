@@ -192,7 +192,7 @@ With an easy-to-install agent and MCP tooling, you can bring real-time data from
 
 We’ve added a new way to investigate issues by exploring logs directly inside FusionReactor. FusionReactor’s Logs Drilldown makes log exploration effortless with an intuitive, query-free interface. Your log data is instantly transformed into interactive visualizations, allowing engineers of any skill level to investigate issues and uncover insights - no LogQL needed.
 
-![!Screenshot](../../Latest-updates/images/logs.png)
+![!Screenshot](images/logs.png)
 
 **Highlights:**
 
@@ -207,7 +207,7 @@ We’ve added a new way to investigate issues by exploring logs directly inside 
 
 We’re excited to announce the availability  of Traces Drilldown in Explore, delivering a simplified, query-free way to analyze distributed traces. This release offers a refined, fully integrated deep-dive tracing solution.
 
-![!Screenshot](../../Latest-updates/images/traces.png)
+![!Screenshot](images/traces.png)
 
 **Highlights:**
 
@@ -271,7 +271,7 @@ FusionReactor 2025.1.0 introduces several new features, improvements, and bug fi
 
 Pyroscope is a multi-tenant, continuous profiling aggregation system designed to seamlessly integrate with existing observability tools. By correlating profiling data with metrics, logs, and traces, Pyroscope provides deeper insights into application performance. With structured querying and analysis of production data, you can efficiently identify bottlenecks and optimize resource usage. 
 
-![!Screenshot](/Data-insights/Features/Pyroscope/trace.png)
+![!Screenshot](https://docs.fusionreactor.io/Data-insights/Features/Pyroscope/trace.png)
 
 
 
@@ -290,7 +290,7 @@ OpsPilot now integrates directly with Jira Cloud and Data Center, enabling you t
 - Search and comment on existing tickets.
 - Manage tickets across your selected projects.
 
-![!Screenshot](../../Latest-updates/images/Jira1.png)
+![!Screenshot](images/Jira1.png)
 
 !!! info "Learn more"
     [Jira integration](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/)
@@ -371,7 +371,7 @@ We’ve listened to your feedback and are excited to announce that we’ve upgra
 
 FusionReactor's new Deep integration provides AI powered root cause analysis to help solve issues quickly and instantly debug in production with no restart or redeploy required. With Deep, your team are able to concentrate on delivering innovative features rather than spending valuable time debugging.
 
-![!Screenshot](../../Latest-updates/images/Deep.png)
+![!Screenshot](images/Deep.png)
 
 ## OpsPilot 1.2.0
 
@@ -383,17 +383,17 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 
 * **OpsPilot Vision**: OpsPilot introduces OpsPilot Vision, a groundbreaking feature that enriches its capabilities by allowing users to upload images for added context to their inquiries. With OpsPilot Vision, users can now provide supplementary visual information alongside their questions, enabling OpsPilot to deliver more comprehensive and tailored responses. This integration enhances the overall user experience, fostering greater clarity and effectiveness in communication. 
 
-![!Screenshot](../../Latest-updates/images/OPimage.png)
+![!Screenshot](images/OPimage.png)
 
 
-![!Screenshot](../../Latest-updates/images/OPvision.png)
+![!Screenshot](images/OPvision.png)
 
 !!! info "Learn more"
     [OpsPilot Vision](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#opspilot-vision)
     
 * **Updated FR knowledge base**: OpsPilot has undergone a significant upgrade in its FusionReactor knowledge base, resulting in enhanced proficiency in understanding and addressing issues. With this improvement, OpsPilot can now provide more informed and effective responses when dealing with FusionReactor-related tasks. This advancement promises smoother operations and quicker resolutions, ultimately optimizing system performance and minimizing downtime.
 
-![!Screenshot](../../Latest-updates/images/FRknow.png)
+![!Screenshot](images/FRknow.png)
 
 * **Continue On Error**: In the event that OpsPilot encounters an issue while responding, users now have the option to choose between retrying the operation or continuing the conversation seamlessly without interruption.
 
@@ -409,9 +409,9 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 
 ## FusionReactor 12
 
-We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
+We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
 
-![!Screenshot](../../Latest-updates/images/FR12.png)
+![!Screenshot](images/FR12.png)
 
 
 !!! info "Learn more"
@@ -426,7 +426,7 @@ For users familiar with FusionReactor Cloud (FR Cloud), the latest exciting upda
 
 
 
-![!Screenshot](../../Latest-updates/images/WhatsNewAD.png)
+![!Screenshot](images/WhatsNewAD.png)
 
 ## OpsPilot version 1.1.1 
 
@@ -434,12 +434,12 @@ For users familiar with FusionReactor Cloud (FR Cloud), the latest exciting upda
 
 * Theme overhaul: OpsPilot now boasts a fresh, modern theme, providing an enhanced visual experience. The revamped theme contributes to a more cohesive and aesthetically pleasing monitoring interface.
 
-![!Screenshot](../../Latest-updates/images/WNOP1.png)
+![!Screenshot](images/WNOP1.png)
 
 
 * Alert integration: OpsPilot takes a significant step forward in its capabilities by now providing direct access to alerts firing within FusionReactor. This integration enables users to swiftly investigate and respond to alerts, streamlining the troubleshooting process for enhanced system reliability.
 
-![!Screenshot](../../Latest-updates/images/WNOP2.png)
+![!Screenshot](images/WNOP2.png)
 
 **Improvements**
 
@@ -473,13 +473,13 @@ Our trusted assistant is the equivalent to having a team of experts on-call, 24/
 
 We're thrilled to introduce some exciting enhancements to our dashboards providing you with even more powerful data insights! In our latest update,we've improved the user experience by allowing variables and time picker settings to seamlessly pass between dashboards. Our update allows you to move easily between dashboards ensuring you never lose context while exploring your data as all filters and time values are retained as you switch dashboards. To make navigation a breeze, we've improved the search facilities allowing you to effortlessly locate any dashboard you require. The newly incorporated  dropdown dashboard links make it easier than ever to access the information you need. These updates are designed to streamline your dashboard experience and empower you to make data-driven decisions effortlessly.
 
-![!Screenshot](../../Latest-updates/images/newdash.png)
+![!Screenshot](images/newdash.png)
 
 ## Servers update
 
 We're excited to unveil the latest enhancements to FusionReactor's servers view, designed with On-Prem parity to elevate your monitoring and troubleshooting experience. Our team has diligently worked to make the servers view clearer and more accessible than ever before. With a refreshed interface, intuitive navigation, and streamlined information presentation, gaining insights into your server's performance has never been easier. Whether you're a seasoned developer or just starting your journey, you'll appreciate the enhanced visibility into key metrics, real-time updates, and advanced analytics, all thoughtfully organized for effortless comprehension.
 
-![!Screenshot](../../Latest-updates/images/wnservers.png)
+![!Screenshot](images/wnservers.png)
 
 
 ## Coming soon...

@@ -50,8 +50,8 @@
 
 6.  **Ensure ongoing performance with monitoring & alerts:**
     * Configure **real-time alerts** in FusionReactor to detect early signs of performance degradation. Utilize features like:
-        * **On-Premise [Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/):** Set up alerts for specific error conditions or slow transactions.
-        * **Metric [alerting](/Data-insights/Features/alerting/) (Cloud UI):** Create alerts based on thresholds for key performance metrics (CPU, memory, response time, etc.).
+        * **On-Premise [Crash Protection](/Data-insights/Features/Servers/crash-protection/):** Set up alerts for specific error conditions or slow transactions.
+        * **Metric [alerting](/Data-insights/Features/New-alerting/status/) (Cloud UI):** Create alerts based on thresholds for key performance metrics (CPU, memory, response time, etc.).
         * **[Anomaly Detection](/Data-insights/Features/Anomaly-Detection/ADuserguide/) (Cloud UI):** Leverage AI-powered anomaly detection to identify unusual performance patterns that might indicate a problem.
     * Continuously monitor your application's performance with FusionReactor to proactively identify and address potential scalability issues.
 

@@ -60,7 +60,7 @@ For example:
 This will automatically attach `region=us-east-1` and `team=payments` to every metric, log, and trace output.
 
 !!! info "Learn more"
-    [System Properties documentation](/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) 
+    [System Properties documentation](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) 
 
 
 ## Metrics

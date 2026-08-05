@@ -94,7 +94,7 @@ The **Servers** section provides a summary of all servers running a FusionReacto
 
 **Servers by latency** lists your top servers ranked by average latency, with CPU and memory breakdowns per server.
 
-Click **Servers ->** to go to the full [Servers](/Data-insights/Features/servers/) view.
+Click **Servers ->** to go to the full [Servers](/Data-insights/Features/Servers/overview/) view.
 
 ### Applications
 

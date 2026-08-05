@@ -69,7 +69,6 @@ The **Metadata** panel lets you attach custom key/value data to an entry - anyth
 ### Runbooks
 
 The **Runbooks** panel shows which runbooks are currently attached to this catalog entry. These are the runbooks that will surface automatically on incidents affecting this service. See [Runbooks](../../Data-insights/Features/Incidents/runbooks.md) for how to create and attach them.
-
 ### What OpsPilot remembers
 
 The **What OpsPilot remembers about [service]** panel shows what Coworker has learned about the service over time - a timeline of memories (such as, *"The cart service error rate acts as a downstream health indicator for the payment service"*), each with when it was recorded. Type in the **Tell OpsPilot something about [service]** box to add context yourself. See [Coworker Knowledge](../../Data-insights/Features/OpsPilot/Coworker/knowledge.md) for how memory works.

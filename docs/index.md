@@ -129,7 +129,7 @@ Dive deeper into your data using the built-in drilldown tools.
 | [UI Overview](/Data-insights/Features/overview/) | A tour of the OpsPilot interface | Any |
 | [Servers](/Data-insights/Features/Explore-servers/) | Live and historic server health | FusionReactor agent |
 | [Applications](/Data-insights/Features/applications/) | Request rates, errors, and latency | FusionReactor agent |
-| [Dashboards](/Data-insights/Features/dashboards/) | Pre-built and custom visualizations | Any |
+| [Dashboards](/Data-insights/Features/Dashboards/about-dashboards/) | Pre-built and custom visualizations | Any |
 | [Metrics Drilldown](/Data-insights/Features/explore-metrics/) | Explore Prometheus metrics without PromQL | OpenTelemetry / Prometheus |
 | [Logs Drilldown](/Data-insights/Features/explore-logs/) | Filter and analyze logs without LogQL | OpenTelemetry / Loki |
 | [Traces Drilldown](/Data-insights/Features/explore-traces/) | Trace requests across services | OpenTelemetry |

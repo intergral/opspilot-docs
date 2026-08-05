@@ -17,10 +17,6 @@ Navigate to **Servers**, select a server, then open the **UI Tunnel** tab.
 **Live / real-time data**
 Use the **UI Tunnel** tab on a server, then navigate to **Requests > Activity** to see all currently running requests in real time.
 
-![!Screenshot](../../UI/request-activity.png)
-
-
-
 ---
 
 ## Where do I view metrics graphs?
@@ -29,7 +25,7 @@ Metrics graphs are available in two places:
 
 - **Metrics tab** on a server - select a server, open the **Metrics** tab, and use the time-frame selector to view metric graphs over your chosen period.
 
-![!Screenshot](../../UI/metrics.png)
+![!Screenshot](metrics.png)
 
 
 - **UI Tunnel tab** on a server - for live, agent-level metrics graphs directly from FusionReactor, navigate to **Metrics > Web Metrics**.
@@ -52,7 +48,7 @@ To purchase a subscription, navigate to **Administration** in the left-hand menu
 !!! info "Learn more"
     [Cloud - Purchasing a Subscription](/Admin-and-data/Billing/Cloud/overview/#purchasing-a-subscription)
 
-    [On-Premise - Purchasing a Subscription](/Admin-and-data/Billing/On-Premise/billing/#purchasing-a-subscription)
+    [On-Premise - Purchasing a Subscription](https://docs.fusionreactor.io/Admin-and-data/Billing/On-Premise/billing/#purchasing-a-subscription)
 
 ---
 

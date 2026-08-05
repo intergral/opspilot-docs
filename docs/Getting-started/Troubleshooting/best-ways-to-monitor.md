@@ -18,5 +18,5 @@ Each of these dashboards can be filtered to show the data most relevant to your 
 
 Currently, this must be done manually using the monitoring steps outlined above. However, new features in development should improve this process in the future. In the meantime, you can use:
 
-- **[Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)** (On-premise) to monitor and react to repeated slowdowns.
+- **[Crash Protection](/Data-insights/Features/Servers/crash-protection/)** (On-premise) to monitor and react to repeated slowdowns.
 - **[Anomaly Detection](/Data-insights/Features/Anomaly-Detection/ADoverview/)** (Cloud) to receive alerts when unusual patterns occur.
