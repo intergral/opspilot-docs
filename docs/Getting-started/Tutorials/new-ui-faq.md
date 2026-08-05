@@ -17,10 +17,6 @@ Navigate to **Servers**, select a server, then open the **UI Tunnel** tab.
 **Live / real-time data**
 Use the **UI Tunnel** tab on a server, then navigate to **Requests > Activity** to see all currently running requests in real time.
 
-![!Screenshot](../../UI/request-activity.png)
-
-
-
 ---
 
 ## Where do I view metrics graphs?
