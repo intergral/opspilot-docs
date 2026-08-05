@@ -8,7 +8,7 @@ Current version: 2025.2.1 - 3 February 2026
 
 !!! info "Learn more" 
     [Release notes](/Latest-updates/release-notes/) <br>
-    [MD5](/Monitor-your-data/FR-Agent/Installation/md5/)
+    [MD5](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Installation/md5/)
 
  
 ### Automatic    
@@ -27,7 +27,7 @@ Installing the **FusionReactor Administration Manager** using the automatic inst
 | [MacOS](https://download.fusionreactor.io/FR/Latest/FusionReactor_macos.dmg) | <br>
 
 !!! info "Learn more"
-    [Automatic installer](/Monitor-your-data/FR-Agent/Installation/Automatic/)
+    [Automatic installer](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Installation/Automatic/)
 
 **Step 2**: Install a FusionReactor instance using FRAM <br>
 
@@ -40,7 +40,7 @@ After successfully installing FRAM and activating your license key, the subseque
 FusionReactor has significantly simplified monitoring integrations beyond ColdFusion and Java With the inclusion of the Observability Agent in the FRAM installation package, accessing the installation option is conveniently available through your updated FRAM UI.   <br>
 
 !!! info "Learn more"
-    [Observability Agent](/Monitor-your-data/Observability-agent/Installation/FRAM/)
+    [Observability Agent](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/Installation/FRAM/)
     
 
 ### Manual 
@@ -107,7 +107,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
     <br>
 
     !!! info "Learn more"
-        [Install in Docker](/Monitor-your-data/Observability-agent/Installation/Docker/)
+        [Install in Docker](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/Installation/Docker/)
 
 
 
@@ -146,7 +146,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
 
     <br>
     !!! info "Learn more"
-        [Install in CommandBox](/Monitor-your-data/FR-Agent/Installation/CommandBox/)
+        [Install in CommandBox](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Installation/CommandBox/)
  
 
 
@@ -160,7 +160,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
 
 
     !!! info
-        [Download legacy versions](/Monitor-your-data/FR-Agent/Installation/Download-Links/#downloading-legacy-versions)
+        [Download legacy versions](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Installation/Download-Links/#downloading-legacy-versions)
 
 
 ---
@@ -171,7 +171,7 @@ The Observability Agent, an [open source](https://github.com/intergral/observabi
 detect which services are running on your machine, and automatically create a configuration file with integrations for detected services.
 
 !!! info 
-    For a simple install that doesn't rely on scripts, the Observability Agent is available via [FRAM](/Monitor-your-data/Observability-agent/Installation/FRAM/)
+    For a simple install that doesn't rely on scripts, the Observability Agent is available via [FRAM](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/Installation/FRAM/)
 
 ### FRAM
 
@@ -208,11 +208,11 @@ Invoke-WebRequest -Uri "https://github.com/intergral/observability-agent/release
 
 **Step 1**: Prepare the API key
 
-Before running your application in Docker, obtain an [API key](/Monitor-your-data/Observability-agent/overview/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
+Before running your application in Docker, obtain an [API key](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
 
 **Step 2**: Determine the environment variables
 
-Determine which [environment variables](/Monitor-your-data/Observability-agent/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
+Determine which [environment variables](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
 
 
 **Step 3**: Run the Docker container
@@ -225,7 +225,7 @@ docker run --env api_key=<your_api_key> --env mysql_connection_string=root:my-se
 
 
 !!! info "Learn more"
-    [Observability Agent ](/Monitor-your-data/Observability-agent/overview/)
+    [Observability Agent ](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/)
         
 
 

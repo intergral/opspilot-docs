@@ -48,7 +48,7 @@ To purchase a subscription, navigate to **Administration** in the left-hand menu
 !!! info "Learn more"
     [Cloud - Purchasing a Subscription](/Admin-and-data/Billing/Cloud/overview/#purchasing-a-subscription)
 
-    [On-Premise - Purchasing a Subscription](/Admin-and-data/Billing/On-Premise/billing/#purchasing-a-subscription)
+    [On-Premise - Purchasing a Subscription](https://docs.fusionreactor.io/Admin-and-data/Billing/On-Premise/billing/#purchasing-a-subscription)
 
 ---
 

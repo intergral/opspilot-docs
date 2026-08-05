@@ -49,29 +49,29 @@ Licensees may convey the work under these licenses
 
 | Description                      | License type                                                                                               |
 |----------------------------------|------------------------------------------------------------------------------------------------------------|
-| Grafana	                         | [AGPL-3.0-only](/tpl/AGPL-3_LICENSE/) with some [APACHE LICENSE 2.0](/tpl/APACHE_LICENSE-2.0/) exceptions  |
-| Angular	                         | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| Bugsnag	                         | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| @circlon/angular-tree-component	 | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| Fontsource	                      | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| @katoid/angular-grid-layout	     | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| @swimlane/ngx-graph	             | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| angular-split	                   | [APACHE LICENSE 2.0](/tpl/APACHE_LICENSE-2.0/)                                                             |
-| bson-objectid	                   | [APACHE LICENSE 2.0](/tpl/APACHE_LICENSE-2.0/)                                                             |
-| codemirror	                      | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| d3	                              | [ISC](/tpl/ISC_LICENSE/)                                                                                   |
-| lodash	                          | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| moment	                          | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| monaco-editor	                   | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| monaco-promql	                   | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| ngx-color-picker	                | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| ngx-cookie	                      | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| ngx-moment	                      | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| ngx-monaco-editor	               | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| ngx-virtual-scroller	            | [MIT LICENSE](/tpl/MIT-LICENSE/)                                                                           |
-| rxjs	                            | [APACHE LICENSE 2.0](/tpl/APACHE_LICENSE-2.0/)                                                             |
-|   Google Material Design Icons                         | [APACHE LICENSE 2.0](/tpl/APACHE_LICENSE-2.0/)                                                             |
-| yaml	                            | [ISC](/tpl/ISC_LICENSE/)                                                                                   |
+| Grafana	                         | [AGPL-3.0-only](https://docs.fusionreactor.io/tpl/AGPL-3_LICENSE/) with some [APACHE LICENSE 2.0](https://docs.fusionreactor.io/tpl/APACHE_LICENSE-2.0/) exceptions  |
+| Angular	                         | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| Bugsnag	                         | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| @circlon/angular-tree-component	 | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| Fontsource	                      | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| @katoid/angular-grid-layout	     | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| @swimlane/ngx-graph	             | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| angular-split	                   | [APACHE LICENSE 2.0](https://docs.fusionreactor.io/tpl/APACHE_LICENSE-2.0/)                                                             |
+| bson-objectid	                   | [APACHE LICENSE 2.0](https://docs.fusionreactor.io/tpl/APACHE_LICENSE-2.0/)                                                             |
+| codemirror	                      | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| d3	                              | [ISC](https://docs.fusionreactor.io/tpl/ISC_LICENSE/)                                                                                   |
+| lodash	                          | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| moment	                          | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| monaco-editor	                   | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| monaco-promql	                   | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| ngx-color-picker	                | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| ngx-cookie	                      | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| ngx-moment	                      | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| ngx-monaco-editor	               | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| ngx-virtual-scroller	            | [MIT LICENSE](https://docs.fusionreactor.io/tpl/MIT-LICENSE/)                                                                           |
+| rxjs	                            | [APACHE LICENSE 2.0](https://docs.fusionreactor.io/tpl/APACHE_LICENSE-2.0/)                                                             |
+|   Google Material Design Icons                         | [APACHE LICENSE 2.0](https://docs.fusionreactor.io/tpl/APACHE_LICENSE-2.0/)                                                             |
+| yaml	                            | [ISC](https://docs.fusionreactor.io/tpl/ISC_LICENSE/)                                                                                   |
 
 ---
 

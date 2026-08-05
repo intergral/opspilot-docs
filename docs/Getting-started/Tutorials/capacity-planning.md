@@ -41,7 +41,7 @@
 5.  **Maintain continuous monitoring & Optimization:**
     * Continuously **monitor application demand** with FusionReactor.
     * **Optimize resource allocation** based on real-time insights.
-    * Use [historical data](/Data-insights/Features/timepicker/) and proactive alerts for **future capacity planning**.
+    * Use [historical data](https://docs.fusionreactor.io/Data-insights/Features/timepicker/) and proactive alerts for **future capacity planning**.
     * **Continuously validate and refine** capacity planning strategies.
     * Aim for **continuous optimization** to ensure ColdFusion applications are always ready to meet demand.
 

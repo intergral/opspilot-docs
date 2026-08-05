@@ -44,7 +44,7 @@ You can also use the **Search integrations** bar to find a specific integration 
 
 | Integration | Status |
 |---|---|
-| [FusionReactor](/Getting-started/install-fr/) | Installed |
+| [FusionReactor](https://docs.fusionreactor.io/Getting-started/install-fr/) | Installed |
 | [.NET](/Monitor-your-data/OpenTelemetry/Instrumentation/DotNet/) | Coming Soon |
 | Browser | Coming Soon |
 | [C++](/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/) | Coming Soon |

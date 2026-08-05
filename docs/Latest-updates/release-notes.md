@@ -147,7 +147,7 @@
 | Improvement | Add JVM arg (-D) for disabling email notification from reports plugin.                                                                                        |
 | Improvement | Add JVM arg (-D) for setting homepage.                                                                                                                        |
 | Improvement | Add JVM args (-D) for setting passwords for manager and observer roles.                                                                                       |
-| New Feature | Implement transaction tracking for JMS/MDB. See [FusionReactor System Properties](/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) for configuration info. |
+| New Feature | Implement transaction tracking for JMS/MDB. See [FusionReactor System Properties](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) for configuration info. |
 | New Feature | Replace datapack with Prometheus Remote Write for sending FR metrics.                                                                                         |
 | Bug         | Protect against NullPointerException when detecting CommandBox servers.                                                                                       |
 | Improvement | Add JVM arg (-D) for disabling CommandBox server detection.                                                                                                   |                                                                                                      |

@@ -45,7 +45,7 @@ To ensure ColdFusion launches correctly with FusionReactor:
 
 If done correctly, your JVM config `java.home` path and Windows Environment Variables should resemble the image below.
 
-![!Screenshot](/Troubleshooting/images/jre.png)
+![!Screenshot](https://docs.fusionreactor.io/Troubleshooting/images/jre.png)
 
 
 ---

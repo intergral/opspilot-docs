@@ -33,7 +33,7 @@ Example output:
 ✓ TLS_AES_128_GCM_SHA256
 ```
 
-![!Screenshot](/Troubleshooting/images/tlsProbeSuccess.png)
+![!Screenshot](https://docs.fusionreactor.io/Troubleshooting/images/tlsProbeSuccess.png)
 
 This means your system successfully connected over HTTPS.
 The text shown is the **TLS cipher suite** (the encryption method used for the connection).
@@ -61,7 +61,7 @@ Exception in thread "main" javax.net.ssl.SSLHandshakeException: no cipher suites
 
 ```
 
-![!Screenshot](/Troubleshooting/images/tlsProbeFail.png)
+![!Screenshot](https://docs.fusionreactor.io/Troubleshooting/images/tlsProbeFail.png)
 
 This means the TLS handshake failed and no secure connection was established.
 
