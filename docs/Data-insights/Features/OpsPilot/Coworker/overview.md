@@ -91,7 +91,7 @@ Below the critical items sits the quieter list: warnings and lower-severity item
 
 Alongside situations, the feed contains:
 
-- **Coverage gaps**: one of Coworker's most useful signals. When it would have investigated something but couldn't - because a service has no telemetry, an alert rule isn't connected, or a catalog entry is missing - it tells you explicitly. Each gap names what's missing and includes a **Help me set this up** button that opens a guided thread. Coverage gaps turn Coworker into a diagnostic for your observability, not just a consumer of it.
+- **Coverage gaps**: one of Coworker's most useful signals. When it would have investigated something but couldn't - or spotted telemetry it can't trust - it tells you explicitly, grouped under a line like *"Some places I'd like more visibility - pointers below if you can help."* Gaps range from the broad (a service has no telemetry, an alert rule isn't connected, a catalog entry is missing) to the specific (a JVM pool with no metrics, a p95 query using the wrong label and inflating readings, an instance reporting no heap metrics, a service with no span metrics). Each gap names exactly what's missing, with a **Help me set this up** button that opens a guided thread, a **link** icon to copy it, and a **dismiss** (✕) to clear it. Coverage gaps turn Coworker into a diagnostic for your observability, not just a consumer of it.
 - **The digest**: a snapshot Coworker keeps current, summarising the checks it ran and things it handled quietly in the background.
 - **Debriefs**: short notes for when Coworker investigated something and concluded there was nothing worth raising, so the work is visible rather than silent.
 
