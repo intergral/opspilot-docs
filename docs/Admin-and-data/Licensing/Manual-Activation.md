@@ -16,7 +16,7 @@ This process should only be used when activating FusionReactor through other met
 
 If you apply a license on the FusionReactor **About** page and the instance cannot connect to the licensing server, you will be redirected to the manual activation page.
 
- ![Manual Activation code](../../Licensing/Manual-Activation-Code.jpg)
+ ![Manual Activation code](Manual-Activation-Code.jpg)
 
 On the activation page, you'll find instructions for manual activation, an activation code, and a field to enter the activation key.
 
@@ -26,7 +26,7 @@ To manually activate:
 
 2. Copy the activation code from FusionReactor into the manual activation page.
 
-    ![Manual Activation Input](../../Licensing/Manual-Activation-Input.jpg)
+    ![Manual Activation Input](Manual-Activation-Input.jpg)
 
     !!! note
         You may be required to save the activation code to disk and transfer it to a new machine via usb, ftp or other methods.
@@ -34,15 +34,15 @@ To manually activate:
 1. Click submit.
 
     This will either display the reason FusionReactor could not be activated:
-    ![Manual Activation Error](../../Licensing/Manual-Activation-Error.jpg)
+    ![Manual Activation Error](Manual-Activation-Error.jpg)
 
      Or provide an activation key:
 
-     ![Manual Activation Success](../../Licensing/Manual-Activation-Success.jpg)
+     ![Manual Activation Success](Manual-Activation-Success.jpg)
 
 1. Copy the output of the manual activation into the activation key input field of FusionReactor.
 
-    ![Manual-Activation-Key](../../Licensing/Manual-Activation-Key.jpg)
+    ![Manual-Activation-Key](Manual-Activation-Key.jpg)
 
 1. Click Activate.
 

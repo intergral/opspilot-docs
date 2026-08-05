@@ -29,7 +29,7 @@ Metrics graphs are available in two places:
 
 - **Metrics tab** on a server - select a server, open the **Metrics** tab, and use the time-frame selector to view metric graphs over your chosen period.
 
-![!Screenshot](../../UI/metrics.png)
+![!Screenshot](metrics.png)
 
 
 - **UI Tunnel tab** on a server - for live, agent-level metrics graphs directly from FusionReactor, navigate to **Metrics > Web Metrics**.

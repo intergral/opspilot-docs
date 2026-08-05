@@ -53,11 +53,11 @@ The **Metadata** panel lets you attach custom key/value data to an entry - anyth
 
 ### Runbooks
 
-The **Runbooks** panel shows which runbooks are currently attached to this catalog entry. These are the runbooks that will surface automatically on incidents affecting this service. See [Runbooks](../Features/Incidents/runbooks.md) for how to create and attach them.
+The **Runbooks** panel shows which runbooks are currently attached to this catalog entry. These are the runbooks that will surface automatically on incidents affecting this service. See [Runbooks](../../Data-insights/Features/Incidents/runbooks.md) for how to create and attach them.
 
 ### Watching an entry
 
-Click the eye icon on the entry detail page to follow a service. This opens **Administration > Preferences > Services** where you can confirm your watched services selection and save. You will then receive a notification any time that service is directly affected by an incident or falls within its blast radius. See [Notifications](../Features/Notifications/notifications.md) for more.
+Click the eye icon on the entry detail page to follow a service. This opens **Administration > Preferences > Services** where you can confirm your watched services selection and save. You will then receive a notification any time that service is directly affected by an incident or falls within its blast radius. See [Notifications](../../Data-insights/Features/Notifications/notifications.md) for more.
 
 ### Entry types
 

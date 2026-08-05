@@ -83,7 +83,7 @@ Shows the current severity, status, affected services, and tags - all editable i
 
 ### Tasks
 
-Add tasks directly to the incident with an optional due date and assignee. Tasks created here also appear on the [Tasks](../../Tasks/tasks.md) board alongside your other work.
+Add tasks directly to the incident with an optional due date and assignee. Tasks created here also appear on the [Tasks](../Tasks/tasks.md) board alongside your other work.
 
 ### Runbooks
 

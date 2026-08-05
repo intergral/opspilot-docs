@@ -1,6 +1,6 @@
 # Anomaly Detection
 
-![!Screenshot](../../images/Anomaly-detection/anomalyreport.png)
+![!Screenshot](../images/Anomaly-detection/anomalyreport.png)
 
 ## What is anomaly detection?
 
@@ -44,7 +44,7 @@ Understanding and categorizing anomalies is crucial for effective system monitor
 !!! info "Learn more"
     [Anomaly detection user guide](/Data-insights/Features/Anomaly-Detection/ADuserguide/) 
 
-![!Screenshot](../../images/Anomaly-detection/anomalyalert.png)
+![!Screenshot](../images/Anomaly-detection/anomalyalert.png)
 
 ___
 
