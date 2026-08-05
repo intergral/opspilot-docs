@@ -136,7 +136,7 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 
 ## FusionReactor 12
 
-We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
+We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
 
 
 !!! info "Learn more"
@@ -193,7 +193,7 @@ We're excited to unveil the latest enhancements to FusionReactor's servers view,
 
 ## FusionReactor 10.0.2 
 
-**FusionReactor 10.0.2** revolutionizes how you monitor and view your data. Latest updates include cloud support for M1 Macs and new cloud transaction views or filters such as error history, longest transactions, slow transactions and more. Further improvements allow you to configure [Request Content Capture](/Data-insights/Features/Requests/Settings/#request-content-capture) to only capture responses as well as the ability to capture either headers or body only.   
+**FusionReactor 10.0.2** revolutionizes how you monitor and view your data. Latest updates include cloud support for M1 Macs and new cloud transaction views or filters such as error history, longest transactions, slow transactions and more. Further improvements allow you to configure [Request Content Capture](https://docs.fusionreactor.io/Data-insights/Features/Requests/Settings/#request-content-capture) to only capture responses as well as the ability to capture either headers or body only.   
 
 !!! warning
     Cloud data now requires FusionReactor to be running on Java 8 or above. Live data will still work for Java 7.
@@ -203,7 +203,7 @@ We're excited to unveil the latest enhancements to FusionReactor's servers view,
 
 ## Oracle Database Monitor
 
-Introducing the latest advancement in monitoring capabilities - FusionReactor's cutting-edge integration with Oracle Database which uses metrics you can easily send to FusionReactor using the [Observability Agent](/Monitor-your-data/Observability-agent/overview/). Seamlessly embedded within the FusionReactor ecosystem, the Oracle Database Monitor offers comprehensive visibility into critical database metrics, query execution times, resource utilization, and more. Try FusionReactor's Oracle Database integration to collect key performance metrics on databases, tablespaces, and memory by default and experience firsthand the transformative potential of enhanced Oracle monitoring.
+Introducing the latest advancement in monitoring capabilities - FusionReactor's cutting-edge integration with Oracle Database which uses metrics you can easily send to FusionReactor using the [Observability Agent](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/). Seamlessly embedded within the FusionReactor ecosystem, the Oracle Database Monitor offers comprehensive visibility into critical database metrics, query execution times, resource utilization, and more. Try FusionReactor's Oracle Database integration to collect key performance metrics on databases, tablespaces, and memory by default and experience firsthand the transformative potential of enhanced Oracle monitoring.
 
 
 
@@ -213,13 +213,13 @@ In the latest update of **FusionReactor**, we are excited to introduce our new f
 
 ## Redis Dashboard
 
-View your metrics in minutes with **FusionReactor's** new out-the-box Redis Dashboard. Improve visibility into what’s happening in your environment by observing metrics from the Redis exporter. Our Redis Dashboard  uses metrics that can easily be sent to FusionReactor using the [Observability Agent](/Monitor-your-data/Observability-agent/overview/).  It enhances operational efficiency, facilitates troubleshooting, and helps ensure the optimal performance and stability of your Redis infrastructure. 
+View your metrics in minutes with **FusionReactor's** new out-the-box Redis Dashboard. Improve visibility into what’s happening in your environment by observing metrics from the Redis exporter. Our Redis Dashboard  uses metrics that can easily be sent to FusionReactor using the [Observability Agent](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/).  It enhances operational efficiency, facilitates troubleshooting, and helps ensure the optimal performance and stability of your Redis infrastructure. 
 
 
 
 ## Kafka & Elasticsearch integrations
 
-FusionReactor now has Kafka and Elasticsearch integrations which use metrics that you can easily send to FusionReactor using the [Observability Agent](/Monitor-your-data/Observability-agent/overview/). By integrating Kafka with Elasticsearch, you can capture and analyze streaming data from Kafka topics in near real-time, enabling you to monitor the health, performance, and behavior of your Kafka infrastructure effectively. Additionally, Elasticsearch's powerful search and analytics capabilities allow you to visualize and explore the monitored data, gain insights, and detect anomalies or performance bottlenecks.
+FusionReactor now has Kafka and Elasticsearch integrations which use metrics that you can easily send to FusionReactor using the [Observability Agent](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/). By integrating Kafka with Elasticsearch, you can capture and analyze streaming data from Kafka topics in near real-time, enabling you to monitor the health, performance, and behavior of your Kafka infrastructure effectively. Additionally, Elasticsearch's powerful search and analytics capabilities allow you to visualize and explore the monitored data, gain insights, and detect anomalies or performance bottlenecks.
 
 
 

@@ -11,7 +11,7 @@
 
 1.  **Install & set up User Experience Monitoring (UEM):**
     * Understand that UEM uses JavaScript embedded in your webpages to track user experience.
-    * Follow the detailed installation and setup instructions provided [here](/Data-insights/Features/UEM/User-Experience-Monitoring/#script-examples).
+    * Follow the detailed installation and setup instructions provided [here](https://docs.fusionreactor.io/Data-insights/Features/UEM/User-Experience-Monitoring/#script-examples).
     * Ensure the JavaScript snippet is correctly implemented on the webpages you wish to monitor.
 
 2.  **Monitor end-to-end transaction times with UEM:**
@@ -48,7 +48,7 @@
 
 
 !!! info "Learn more"
-    [User Experience Monitoring](/Data-insights/Features/UEM/User-Experience-Monitoring/)
+    [User Experience Monitoring](https://docs.fusionreactor.io/Data-insights/Features/UEM/User-Experience-Monitoring/)
 
 
 

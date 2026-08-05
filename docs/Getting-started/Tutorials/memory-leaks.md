@@ -15,12 +15,12 @@
 
 
     !!! info "Learn more"
-        [Garbage Collection](/Data-insights/Features/Resources/Garbage-Collection/)
+        [Garbage Collection](https://docs.fusionreactor.io/Data-insights/Features/Resources/Garbage-Collection/)
 
 2.  **Analyze the root cause:**
     * If a potential leak is detected, investigate further using FusionReactor.
     * Analyze **thread activity** (On-Premise UI) to detect blocked or excessive memory-holding threads.
-    * Use **[Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)** to trigger Garbage Collection at key moments and observe the impact.
+    * Use **[Crash Protection](/Data-insights/Features/Servers/crash-protection/)** to trigger Garbage Collection at key moments and observe the impact.
     * Take **heap dumps** and analyze them using third-party tools like **[Eclipse MAT](https://eclipse.dev/mat/)**.
     * Inspect the heap dump to identify **large or continuously growing objects** that are not being released.
     * Combine these analysis techniques to pinpoint the exact source of the leak, such as:

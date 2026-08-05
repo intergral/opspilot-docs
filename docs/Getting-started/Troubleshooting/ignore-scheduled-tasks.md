@@ -1,6 +1,6 @@
 # How to ignore specific requests in FusionReactor
 
-Protection restrictions let you choose which pages the FusionReactor’s Protection system will monitor or ignore. If you have specific requests that you are not interested in monitoring, or if you have requests you are using FusionReactor to exclusively monitor, you can set this mode in the [Protection Settings](/Data-insights/Features/Crash-protection/Settings/)
+Protection restrictions let you choose which pages the FusionReactor’s Protection system will monitor or ignore. If you have specific requests that you are not interested in monitoring, or if you have requests you are using FusionReactor to exclusively monitor, you can set this mode in the [Protection Settings](/Data-insights/Features/Servers/crash-protection/)
 
 To access Crash Protection in the on-premise UI, navigate to the **Protection** icon then click **Restrictions**.
 
@@ -15,4 +15,4 @@ The **Restrictions page** has two sections:
 ![!Screenshot](../../Getting-started/Troubleshooting/c-protection.png)
 
 !!! info "Learn more"
-    For more information on creating and managing Crash Protection restrictions, see the [Crash Protection Restrictions](/Data-insights/Features/Crash-protection/Crash-Protection/#restrictions) page.
+    For more information on creating and managing Crash Protection restrictions, see the [Crash Protection Restrictions](/Data-insights/Features/Servers/crash-protection/#restrictions) page.

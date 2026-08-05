@@ -271,7 +271,7 @@ FusionReactor 2025.1.0 introduces several new features, improvements, and bug fi
 
 Pyroscope is a multi-tenant, continuous profiling aggregation system designed to seamlessly integrate with existing observability tools. By correlating profiling data with metrics, logs, and traces, Pyroscope provides deeper insights into application performance. With structured querying and analysis of production data, you can efficiently identify bottlenecks and optimize resource usage. 
 
-![!Screenshot](/Data-insights/Features/Pyroscope/trace.png)
+![!Screenshot](https://docs.fusionreactor.io/Data-insights/Features/Pyroscope/trace.png)
 
 
 
@@ -409,7 +409,7 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 
 ## FusionReactor 12
 
-We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
+We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](https://docs.fusionreactor.io/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
 
 ![!Screenshot](images/FR12.png)
 
