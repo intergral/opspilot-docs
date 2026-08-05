@@ -1,6 +1,6 @@
 # Anomaly Detection User Guide
 
-![!Screenshot](../../images/Anomaly-detection/overview.png)
+![!Screenshot](../images/Anomaly-detection/overview.png)
 
 ## Anomaly Detection feature in OpsPilot
 
@@ -67,11 +67,11 @@ To enable anomaly detection in OpsPilot, follow these steps:
 
 **Step 1**: Use your web browser to navigate to the **Alerting** page in OpsPilot.
 
-![!Screenshot](../../images/Anomaly-detection/Step1.png)
+![!Screenshot](../images/Anomaly-detection/Step1.png)
 
 **Step 2**: Select the **Anomaly Detection** tab to access the Anomaly Detection configuration page.
 
-![!Screenshot](../../images/Anomaly-detection/Step2.png)
+![!Screenshot](../images/Anomaly-detection/Step2.png)
 
 !!! info "Auto-discovery"
     OpsPilot automatically detects your services and lists them on the Anomaly Detection configuration page.
@@ -96,7 +96,7 @@ By expanding a service row, you can access and adjust settings for the RED metri
 
 Here is an example screenshot illustrating the configuration interface:
 
-![!Screenshot](../../images/Anomaly-detection/REDconfigview.png)
+![!Screenshot](../images/Anomaly-detection/REDconfigview.png)
 
 !!! note
     The actual interface may vary slightly, and you should consult the latest version of OpsPilot for the most up-to-date information.
@@ -131,7 +131,7 @@ For each service listed, the following features are available:
 
 Example screenshot showing the current anomaly alert status:
 
-![!Screenshot](../../images/Anomaly-detection/Alertstatus.png)
+![!Screenshot](../images/Anomaly-detection/Alertstatus.png)
 
 ## Customization of individual metrics
 
@@ -144,7 +144,7 @@ Each service within the system allows for separate configuration of its RED metr
 | **Anomaly Threshold Adjustment** | The slider allows you to set the anomaly probability threshold, with a range of 80% to 100%. |
 | **Setting Alert Duration** | Define the required duration for which an anomaly must exceed your chosen threshold to trigger an alert. For example, an anomaly is recognized when its probability stays at or above a set level (such as, 95%) for a predetermined time (such as, 4 minutes). |
 
-![!Screenshot](../../images/Anomaly-detection/RAQS.png)
+![!Screenshot](../images/Anomaly-detection/RAQS.png)
 
 ## Custom Detectors
 

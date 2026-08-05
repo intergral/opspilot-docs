@@ -289,10 +289,10 @@ plugins:
          'Cloud/legal/licenses.md': 'Admin-and-data/Third-Party-Licenses/licenses.md'
          'licensing.md': 'Admin-and-data/Licensing/Licensing.md'
          'Cloud/billing/overview.md': 'Admin-and-data/Billing/Cloud/overview.md'
-         'Cloud/guides/OpsPilot/OpsPilot-Hub/Jira.md': 'Data-insights/Features/OpsPilot/OpsPilot-Hub/Jira.md'
+         'Cloud/guides/OpsPilot/OpsPilot-Hub/Jira.md': 'Data-insights/Features/Integrations/Ticketing/jira.md'
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Knowledge.md': 'Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md'
-         'Cloud/guides/OpsPilot/OpsPilot-Hub/Slack.md': 'Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack.md'
-         'Cloud/guides/OpsPilot/OpsPilot-Hub/Teams.md': 'Data-insights/Features/OpsPilot/OpsPilot-Hub/Teams.md'
+         'Cloud/guides/OpsPilot/OpsPilot-Hub/Slack.md': 'Data-insights/Features/Integrations/Chat/slack.md'
+         'Cloud/guides/OpsPilot/OpsPilot-Hub/Teams.md': 'Data-insights/Features/integrations.md'
          'Cloud/OpenTelemetry/distributed-tracing.md': 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
          'Getting-started/Releases.md': 'Latest-updates/Releases.md'
          'Getting-started/WhatsNew.md': 'Latest-updates/WhatsNew.md'
@@ -324,25 +324,7 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  analytics: 
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >- 
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-
 extra_javascript:
-  - javascripts/feedback.js
   - 'https://code.jquery.com/jquery-3.4.1.min.js'
   - 'script/custom.js'
   - 'script/intercom.js'
