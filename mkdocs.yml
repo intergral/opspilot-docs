@@ -217,6 +217,7 @@ nav:
         - Invoices: Admin-and-data/invoices.md
         - Manage Subscription: Admin-and-data/Billing/manage-subscription.md
         - Usage: Admin-and-data/usage-and-details.md
+        - Optimize data: Troubleshooting/Optimize-data.md
      - Organization:
         - General: Admin-and-data/organization-settings.md
         - Members: Admin-and-data/Account/Cloud/users.md
