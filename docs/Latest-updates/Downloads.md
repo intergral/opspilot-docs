@@ -4,7 +4,7 @@
 
 The FusionReactor Agent monitors Java and ColdFusion. It provides real-time and historical data on web transactions, memory and CPU usage, database query performance, code details like memory and thread profiling, garbage collection data, automated error detection, and more.
 
-Current version: 2025.2.1 - 3 February 2026
+Current version: 2026.1.3 - 29 June 2026
 
 !!! info "Learn more" 
     [Release notes](/Latest-updates/release-notes/) <br>
