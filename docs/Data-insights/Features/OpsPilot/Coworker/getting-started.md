@@ -2,7 +2,7 @@
 
 ## Onboarding
 
-When you first access Coworker, a short guided setup of five steps walks you through personalising your experience. You can skip it at any time and still get a working Coworker, though you'll see a broader, less tailored view until you configure your preferences.
+When you first open Coworker, a five-step guided setup helps you personalise it. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
 
 ### Step 1: Introduction
 
@@ -23,9 +23,14 @@ A **How it works** flow shows four cards: something fires, Coworker investigates
 
 ![!Screenshot](../../../../Coworker/onboarding-health.png)
 
-Coworker can watch the health of every service automatically: *"Once your services are catalogued, I watch each one's health signals every few minutes - no setup from you. When something drifts out of its normal range and stays there, I investigate and write it up, the same way I handle an alert."* This is [Heartbeat](heartbeat.md), Coworker's always-on health screen.
+Coworker can watch every service's health automatically - no setup from you. This is [Heartbeat](heartbeat.md), its always-on health screen:
 
-Click **Catalogue my services** to discover your services from your telemetry and begin health screening. Cataloguing runs in the background - you can carry on with setup, and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog.md) page. Once it starts, click **Continue**. To move on without cataloguing now, choose **Skip for now** or **Skip**.
+> *"Once your services are catalogued, I watch each one's health signals every few minutes. When something drifts out of its normal range and stays there, I investigate and write it up, the same way I handle an alert."*
+
+Choose how to proceed:
+
+- **Catalogue my services** - discover your services from your telemetry and start health screening. It runs in the background, so you can carry on with setup and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog.md) page. Once it starts, click **Continue**.
+- **Skip for now** or **Skip** - move on without cataloguing.
 
 ---
 
@@ -87,9 +92,16 @@ The final step. Select the domains you want Coworker to prioritise in your feed:
 | **Cost and capacity** | Spend anomalies, quota limits, overprovisioning |
 | **Security and auth** | Auth failures, suspicious traffic, IAM, secrets |
 
-Select as many as apply. These can be updated at any time from **Settings > Your preferences**.
+Select as many as apply. These can be updated at any time from **Settings > Preferences**.
 
-After you continue, Coworker offers to work out which services are yours - *"Want me to figure out which services are yours? The more I know what you own, the better I can filter the noise."* Click **Sure**, then describe in a sentence or two what you work on (a team, a product area, the services you own, anything you've been burned by lately) and click **Investigate**. Coworker uses this to map services to you and prioritise what you own. Choose **Skip** to finish onboarding without it.
+After you continue, Coworker offers to work out which services are yours:
+
+> *"The more I know what you own, the better I can filter the noise."*
+
+Choose how to proceed:
+
+- **Sure** - describe in a sentence or two what you work on (a team, a product area, the services you own, anything you've been burned by lately) and click **Investigate**. Coworker maps those services to you and prioritises them in your feed.
+- **Skip** - finish onboarding without it.
 
 ---
 
@@ -109,7 +121,7 @@ None of these change what Coworker investigates or raises across your organisati
 
 ## Settings
 
-Open **Settings** from the Coworker dashboard to access your preferences, check-in cadence, behaviour, and budget controls. You don't need to configure all of this up front — sensible defaults are in place, and you can ask Coworker directly in any chat to update your preferences conversationally.
+Open **Settings** from the Coworker dashboard for your preferences, check-in cadence, behaviour, and budget controls. You don't need to set all this up front - sensible defaults are in place, and you can ask Coworker to adjust your preferences in any chat.
 
 See [Settings](Settings/overview.md) for full details.
 
