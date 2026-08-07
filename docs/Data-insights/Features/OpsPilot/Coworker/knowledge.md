@@ -1,43 +1,51 @@
 # Knowledge
 
-Coworker builds a growing understanding of your systems, your team, and your preferences over time. Everything it does - investigating alerts, running tasks, talking to you - adds to this knowledge and carries forward into future investigations.
+Coworker builds a growing understanding of your systems, your services, and your preferences over time. Everything it does - investigating alerts, running tasks, talking to you - adds to this knowledge and carries forward into future investigations.
 
-Click the **Knowledge** button on the Coworker dashboard to explore what Coworker has learned.
+Click the **Knowledge** button on the Coworker dashboard to explore what Coworker has learned - its memories, areas, and observations.
 
-The header shows a live count of total memories, observations, nodes, and links across your organisation.
+The header shows live counts for your organisation: memories and observations throughout, plus the number of areas in the **Areas** view and the number of nodes and links in the **Graph** view.
 
-## Memory types
+Knowledge is available in three views, selectable from the tabs at the top: **Areas**, **Graph**, and **List**.
 
-| Memory type | What it holds |
+---
+
+## Areas
+
+**Areas** is where the page opens. It groups everything Coworker knows by the kind of memory it holds, so you can see what it has learned at a glance rather than scanning the whole graph. There are four kinds:
+
+| Area | What it holds |
 |---|---|
-| **System-wide** | How your services fit together, what's normal, and what tends to break. Shared across your whole organisation, so what Coworker learns helping one person makes it smarter for everyone |
-| **Task-specific** | What recurring checks have turned up before and the patterns that matter. Can reduce token costs by up to 50% on long-running tasks |
-| **Team** | Who owns what, where the runbook lives, what each channel is for |
-| **User** | Your personal preferences and the way you like to work, learned from your conversations |
+| **System** | Higher-level understanding that governs the whole system - how services interact and behave together, what's normal across the estate, and what tends to break. Shared across your organisation |
+| **Services** | Service-specific memories for an individual catalogued service (e.g. `cart`). A first-class memory type introduced with the service catalog, so system memory can focus on the bigger picture rather than single-service detail |
+| **Tasks** | What a recurring task or event source has turned up over its runs (e.g. OpsPilot Alerts, a daily error review, the heartbeat health screen). Reusing this context can cut token costs by up to 50% on long-running tasks |
+| **You** | Your personal preferences and the way you like to work, learned from your conversations. This builds up the more you talk to Coworker, so it may be sparse at first |
+
+Each area card shows how many memories it holds and when it last changed. Open an area to explore it as a graph on its own, or choose **View the whole graph** to see every area together as a single map.
 
 ---
 
 ## Graph view
 
-A visual map of everything Coworker knows. Nodes represent entities (services, databases, concepts) and links between them show relationships. Node size reflects how frequently an entity is referenced.
+A visual, interactive map of what Coworker knows. Nodes represent entities (services, databases, concepts) and the links between them show relationships. Node size reflects how frequently an entity is referenced.
 
-![!Screenshot](../../../../Coworker/knowledge.gif)
-
-The **Entities** panel on the right lists every entity ranked by reference count. Use the search box to find a specific one.
+- **Filter by area** - the **Areas** selector at the top scopes the graph to the areas you choose; a legend on the canvas shows which are in view. Clear it to see everything together.
+- **Navigate** - scroll to zoom, drag to rotate, and right-drag to pan around the map.
+- **Inspect** - click any node for its details.
+- **Entities panel** - the panel on the right lists every entity ranked by reference count. Use the search box to jump to a specific one.
 
 ---
 
 ## List view
 
-A searchable, filterable list of individual memories.
+A searchable list of individual memories, browsed one area at a time.
 
 | Control | Description |
 |---|---|
-| **Search memories** | Find specific facts by keyword |
-| **Filter by entity** | Scope the list to a particular service or concept |
-| **Sort** | Order by newest or oldest |
+| **Pick an area** | Choose which area's memories to browse - System knowledge, a service, a task, and so on |
+| **Search** | Filter within the selected area by keyword |
 
-Each memory shows the fact Coworker recorded, when it was added, and any entity tags attached to it.
+A count above the list shows how many memories are displayed out of the area's total (e.g. *Showing 100 of 603*). Each memory shows the fact Coworker recorded, when it was added, and any entity tag attached to it.
 
 ---
 

@@ -111,7 +111,7 @@ None of these change what Coworker investigates or raises across your organisati
 
 Open **Settings** from the Coworker dashboard to access your preferences, check-in cadence, behaviour, and budget controls. You don't need to configure all of this up front — sensible defaults are in place, and you can ask Coworker directly in any chat to update your preferences conversationally.
 
-See [Settings](settings.md) for full details.
+See [Settings](Settings/overview.md) for full details.
 
 ---
 
