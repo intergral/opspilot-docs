@@ -4,7 +4,7 @@
 
 ### How do I get started with Coworker?
 
-When you first open Coworker, a [guided setup conversation](overview.md#getting-started) walks you through setting your preferences and creating your first task. The quickest way to get value is to enable [OpsPilot Alerts](overview.md#opspilot-alerts), which connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
+When you first open Coworker, a [guided setup conversation](getting-started.md) walks you through setting your preferences and creating your first task. The quickest way to get value is to enable [OpsPilot Alerts](tasks.md#opspilot-alerts), which connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
 
 ### Can I have more than one Coworker?
 
@@ -16,7 +16,7 @@ Tasks and investigations are already shared across your organisation. Use the **
 
 ### Can I restart the setup?
 
-Yes. Click the settings icon on the Coworker dashboard, select **Reset onboarding**, and click **Open onboarding** to walk through the setup flow again. Re-running does not delete anything you already have.
+Yes. Open **Settings** from the Coworker menu, go to the [**Preferences**](Settings/preferences.md#re-run-onboarding) tab, and click **Open onboarding** under **Re-run onboarding** to walk through the setup flow again. Re-running does not delete anything you already have.
 
 ![!Screenshot](../../../../Coworker/rerun-onboarding.png)
 
@@ -26,7 +26,7 @@ Yes. Click the settings icon on the Coworker dashboard, select **Reset onboardin
 
 ### How many tasks should I create?
 
-Start with one or two [scheduled tasks](overview.md#scheduled-tasks) covering your most critical services, and enable [OpsPilot Alerts](overview.md#opspilot-alerts). Add more tasks over time as you identify gaps. Too many tasks running frequently can increase AI Token usage.
+Start with one or two [scheduled tasks](tasks.md#scheduled-tasks) covering your most critical services, and enable [OpsPilot Alerts](tasks.md#opspilot-alerts). Add more tasks over time as you identify gaps. Too many tasks running frequently can increase AI Token usage.
 
 ### How often should I run scheduled tasks?
 
@@ -35,7 +35,7 @@ Daily is the most common cadence and a good starting point. Every 6 hours works 
 If you find yourself wanting very frequent checks on a specific pattern, a [monitoring task](tasks.md#monitoring-tasks) is usually a better fit than a high-frequency scheduled task. If something needs near-real-time response, connecting an alert rule via OpsPilot Alerts will be more effective and much cheaper.
 
 !!! info "Learn more"
-    [Scheduled tasks](overview.md#scheduled-tasks)
+    [Scheduled tasks](tasks.md#scheduled-tasks)
 
 ### Why isn't my task finding anything?
 
@@ -43,7 +43,7 @@ It may take a few runs for Coworker to build enough context to surface meaningfu
 
 ### What is the difference between a scheduled task and a monitoring task?
 
-A [scheduled task](overview.md#scheduled-tasks) runs on a recurring interval and produces a general report of findings. A [monitoring task](overview.md#monitoring-tasks) is focused on a specific pattern or issue (created from an insight) and tracks whether that pattern is improving, worsening, or stable over time.
+A [scheduled task](tasks.md#scheduled-tasks) runs on a recurring interval and produces a general report of findings. A [monitoring task](tasks.md#monitoring-tasks) is focused on a specific pattern or issue (created from an insight) and tracks whether that pattern is improving, worsening, or stable over time.
 
 ---
 
@@ -54,18 +54,18 @@ A [scheduled task](overview.md#scheduled-tasks) runs on a recurring interval and
 **Resolve** marks an insight as handled and it will appear in your resolved insights history. **Ignore** dismisses it from your priority list without marking it as resolved. Use Resolve when you've taken action; use Ignore when the insight isn't relevant to you.
 
 !!! info "Learn more"
-    [Insights](overview.md#insights)
+    [Insights](situations.md#insights-and-situations)
 
 ### Why am I seeing the same insight repeatedly?
 
-If the underlying issue hasn't been fixed, Coworker will continue to surface it. The occurrence history on each insight shows whether it is a recurring pattern. Use **Watch** to create a [monitoring task](overview.md#monitoring-tasks) that tracks whether the issue improves.
+If the underlying issue hasn't been fixed, Coworker will continue to surface it. The occurrence history on each insight shows whether it is a recurring pattern. Use **Watch** to create a [monitoring task](tasks.md#monitoring-tasks) that tracks whether the issue improves.
 
 ### How do I change what types of insights I see?
 
 Click **Change what I show you** on the dashboard to adjust your severity and category preferences (Errors, Performance, Notable, Coverage), or use **Update via chat** to describe your preferences in plain language.
 
 !!! info "Learn more"
-    [Preferences](overview.md#preferences)
+    [Preferences](Settings/preferences.md)
 
 ---
 

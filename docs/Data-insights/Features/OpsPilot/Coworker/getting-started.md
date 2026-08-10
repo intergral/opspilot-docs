@@ -2,21 +2,43 @@
 
 ## Onboarding
 
-When you first access Coworker, a short guided setup walks you through personalising your experience. You can skip it at any time and still get a working Coworker, though you'll see a broader, less tailored view until you configure your preferences.
+When you first open Coworker, a five-step guided setup helps you personalise it. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
 
 ### Step 1: Introduction
 
-Step 1 introduces what Coworker does and how it works, with four cards showing the flow: something fires, Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
-
 ![!Screenshot](../../../../Coworker/onboarding1.png)
+
+Step 1 introduces what Coworker does - *"I handle the operational noise so you can focus on what matters"* - and how it helps:
+
+- Watches your alerts and digs into what's actually happening across your observability stack, so you get a clear story rather than a noise feed
+- Runs scheduled checks in the background and only raises something if it's worth your time
+- Answers questions in the chat and does the legwork, with no need to set the scene
+- Learns what you care about over time, so the noise tunes out and the signal stays
+
+A **How it works** flow shows four cards: something fires, Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
 
 ---
 
-### Step 2: Your role
+### Step 2: Health screen
+
+![!Screenshot](../../../../Coworker/onboarding-health.png)
+
+Coworker can watch every service's health automatically - no setup from you. This is [Heartbeat](heartbeat.md), its always-on health screen:
+
+> *"Once your services are catalogued, I watch each one's health signals every few minutes. When something drifts out of its normal range and stays there, I investigate and write it up, the same way I handle an alert."*
+
+Choose how to proceed:
+
+- **Catalogue my services** - discover your services from your telemetry and start health screening. It runs in the background, so you can carry on with setup and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog.md) page. Once it starts, click **Continue**.
+- **Skip for now** or **Skip** - move on without cataloguing.
+
+---
+
+### Step 3: Your role
 
 ![!Screenshot](../../../../Coworker/onboarding2.png)
 
-Coworker asks which role best describes you. This sets the defaults for which kinds of situations are surfaced to you first:
+Coworker asks which role best describes you. This drives a few defaults - which kinds of situations surface to you first, and how things are weighted:
 
 | Role | Description |
 |---|---|
@@ -30,7 +52,7 @@ Pick the closest fit. Select **Skip - I'll come back later** to proceed without 
 
 ---
 
-### Step 3: What do you want me to help with?
+### Step 4: What do you want me to help with?
 
 ![!Screenshot](../../../../Coworker/onboarding3.png)
 
@@ -51,7 +73,7 @@ Click **Continue** when done, or **Skip** to proceed without selecting any.
 
 ---
 
-### Step 4: Which of these matter most to you?
+### Step 5: Which of these matter most to you?
 
 ![!Screenshot](../../../../Coworker/onboarding4.png)
 
@@ -70,7 +92,16 @@ The final step. Select the domains you want Coworker to prioritise in your feed:
 | **Cost and capacity** | Spend anomalies, quota limits, overprovisioning |
 | **Security and auth** | Auth failures, suspicious traffic, IAM, secrets |
 
-Select as many as apply. These can be updated at any time from **Settings > Your preferences**.
+Select as many as apply. These can be updated at any time from **Settings > Preferences**.
+
+After you continue, Coworker offers to work out which services are yours:
+
+> *"The more I know what you own, the better I can filter the noise."*
+
+Choose how to proceed:
+
+- **Sure** - describe in a sentence or two what you work on (a team, a product area, the services you own, anything you've been burned by lately) and click **Investigate**. Coworker maps those services to you and prioritises them in your feed.
+- **Skip** - finish onboarding without it.
 
 ---
 
@@ -90,9 +121,9 @@ None of these change what Coworker investigates or raises across your organisati
 
 ## Settings
 
-Open **Settings** from the Coworker dashboard to access your preferences, check-in cadence, behaviour, and budget controls. You don't need to configure all of this up front — sensible defaults are in place, and you can ask Coworker directly in any chat to update your preferences conversationally.
+Open **Settings** from the Coworker dashboard for your preferences, check-in cadence, behaviour, and budget controls. You don't need to set all this up front - sensible defaults are in place, and you can ask Coworker to adjust your preferences in any chat.
 
-See [Settings](settings.md) for full details.
+See [Settings](Settings/overview.md) for full details.
 
 ---
 

@@ -3,6 +3,7 @@ test-go-otel-temp/
 
 # MkDocs build output
 site/
+_site/
 
 # Windows shortcuts
 *.lnk
