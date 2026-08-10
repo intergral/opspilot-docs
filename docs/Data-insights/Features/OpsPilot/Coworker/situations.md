@@ -17,9 +17,9 @@ Severity and status answer two different questions:
 | | Question | Values |
 |---|---|---|
 | **Severity** | How bad is this? | Critical, Warning, Info |
-| **Status** | Should you act on it right now? | Active, Watching, Resolved |
+| **Status** | Where is it in its lifecycle? | Open, In progress, Resolved, Dismissed |
 
-These don't always align the way you'd expect. A warning can be active if Coworker thinks you should look now. A critical is active by default, but once it's handled it moves to resolved. Splitting the two lets the page show "important but not urgent" items without either burying them or sounding false alarms.
+A situation starts **Open**, moves to **In progress** while it's being worked, and ends as **Resolved** (handled) or **Dismissed** (not a real problem). Severity and status are independent: a Critical can be In progress while someone works it, and a Warning can sit Open if it's worth a look but not urgent. Keeping them separate lets the feed show what matters without conflating how bad something is with whether it's being handled.
 
 ---
 
@@ -29,9 +29,9 @@ Coworker is never just a snapshot. Three things run continuously:
 
 **Investigating new signals.** When an alert fires or a task runs, Coworker pulls the relevant metrics, logs, and traces, writes insights, and decides what to do: raise a new situation, attach the finding to an existing one, or note that it looked and found nothing worth raising. Alerts that arrive close together are investigated as a group, so one underlying problem doesn't generate a wall of separate cards.
 
-**Tidying up.** Every few minutes Coworker sweeps your active situations and consolidates them, merging two that turn out to be the same problem, escalating severity when a new signal warrants it, and attaching stray findings to the situation they belong to.
+**Tidying up.** Every few minutes Coworker sweeps your open situations and consolidates them, merging two that turn out to be the same problem, escalating severity when a new signal warrants it, and attaching stray findings to the situation they belong to.
 
-**Re-checking what's open.** Every active situation is re-investigated on a cadence that depends on its severity. Criticals are checked roughly every 10–15 minutes at first; warnings and quieter items less frequently. When a situation recovers on its own, Coworker resolves it and tells you why. As a situation stays stable, checks become less frequent; if something shifts, the cadence tightens back up. Once resolved, a situation gets a couple of follow-up checks over the next few hours to confirm the fix held.
+**Re-checking what's open.** Every open situation is re-investigated on a cadence that depends on its severity. Criticals are checked roughly every 10–15 minutes at first; warnings and quieter items less frequently. When a situation recovers on its own, Coworker resolves it and tells you why. As a situation stays stable, checks become less frequent; if something shifts, the cadence tightens back up. Once resolved, a situation gets a couple of follow-up checks over the next few hours to confirm the fix held.
 
 ![!Screenshot](../../../../Coworker/overview1.png)
 
@@ -40,6 +40,8 @@ Coworker is never just a snapshot. Three things run continuously:
 ## The home page
 
 The home page is a feed of messages from your Coworker, more like a conversation with a colleague who has been working while you were away than a static dashboard. Everything arrives as a message in that feed: new situations, updates to existing ones, checks that came back clean, and pointers to coverage gaps.
+
+![!Screenshot](../../../../Coworker/situations-home.png)
 
 A **WATCHING** badge in the header confirms Coworker is actively monitoring your environment.
 
@@ -86,6 +88,8 @@ The right-hand sidebar gives a quick status view alongside the feed:
 
 Every situation opens into a thread: a dedicated conversation about that one problem, with all context already loaded. At the top sits the situation itself; below it runs the history of Coworker's checkups and state changes, interleaved with any messages between you and it.
 
+![!Screenshot](../../../../Coworker/situation-detail.png)
+
 From a situation thread you can:
 
 | Action | Description |
@@ -93,7 +97,8 @@ From a situation thread you can:
 | **Ask follow-ups** | Type any question. Coworker answers with the situation's full context already in hand |
 | **Verify now** | Triggers a fresh investigation immediately, rather than waiting for the next scheduled checkup. The result lands in the thread when done |
 | **Suggest a fix** | Prompts Coworker to propose concrete remediation steps based on what it has found |
-| **Resolve / Dismiss** | Closes the situation. Coworker asks for a quick reason, which also teaches it what not to raise next time |
+| **Assign** | Give the situation an owner. Click **I'll take this** to assign it to yourself, or search members and pick a teammate |
+| **Set status** | Move the situation through its lifecycle - **Open**, **In progress**, **Resolved**, or **Dismissed**. Choosing Resolved or Dismissed asks for a quick reason, which also teaches Coworker what not to raise next time |
 | **Share** | Copies a shareable link to the thread |
 | **Copy** | Copies the full situation as a markdown brief, ready to paste into another tool or hand off to a teammate |
 

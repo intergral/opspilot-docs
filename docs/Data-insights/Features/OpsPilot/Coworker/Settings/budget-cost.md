@@ -2,6 +2,8 @@
 
 The **Budget & cost** tab is a single **Coworker allowance** card that controls how much Coworker can spend each month and what happens as it approaches the limit. The allowance covers tasks, webhooks, heartbeat, and chat; catalog maintenance is budgeted separately.
 
+![!Screenshot](../../../../../Coworker/budget-cost.png)
+
 | Control | Description |
 |---|---|
 | **Your plan allowance** | Your organisation's total monthly AI Token allowance (read-only) |

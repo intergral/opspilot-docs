@@ -1,6 +1,8 @@
-# Behaviour
+# Behavior
 
 Adjust how Coworker investigates and communicates across your organisation.
+
+![!Screenshot](../../../../../Coworker/behaviour.png)
 
 ## Report detail
 

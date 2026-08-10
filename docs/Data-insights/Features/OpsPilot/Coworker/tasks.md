@@ -29,6 +29,8 @@ You get progressive updates as the task runs. Once its window is up, the task wi
 
 Event sources react to webhooks from external systems. Instead of running on a schedule, they wait for an event (a deploy notification, an incident raised in another tool, an alert from an external service) and immediately kick off an investigation each time.
 
+![!Screenshot](../../../../Coworker/event-sources.png)
+
 ---
 
 ## Creating tasks

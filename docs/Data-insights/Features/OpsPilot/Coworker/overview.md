@@ -39,7 +39,7 @@ Click the **Knowledge** button on the dashboard to explore what Coworker has lea
 
 ## Settings
 
-Click the settings icon on the Coworker dashboard to open the Settings modal. See [Settings](Settings/overview.md) for full details on your preferences, check-in cadence, behaviour, and budget controls.
+Click the settings icon on the Coworker dashboard to open the Settings modal. See [Settings](Settings/overview.md) for full details on your preferences, check-in cadence, behavior, and budget controls.
 
 ---
 

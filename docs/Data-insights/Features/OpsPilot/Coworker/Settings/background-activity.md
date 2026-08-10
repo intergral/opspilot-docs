@@ -2,6 +2,8 @@
 
 The **Background activity** tab controls the work Coworker does on its own - grouping new findings, re-checking open situations, and how often each runs. Turning this work down, or off, is the main lever for reducing ongoing AI Token spend without losing coverage of critical situations.
 
+![!Screenshot](../../../../../Coworker/background-activity.png)
+
 ## Background work
 
 The meter at the top projects how many AI Tokens your current background settings will use per month, broken down across **Follow-ups**, **Tidying up**, **Triage**, and **Summary**. Below it you can see your plan allowance and this period's usage - both the total used and the portion spent on background work - so you can gauge the impact of a change before you commit to it.

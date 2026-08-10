@@ -4,6 +4,8 @@ Heartbeat is Coworker's always-on health screen. It quietly watches each of your
 
 Once your services are [catalogued](../../../../Admin-and-data/Catalog/catalog.md), Coworker automatically learns what "normal" looks like for each one - request rate, latency, error rate, saturation, and more. Heartbeat re-checks those signals every few minutes in the background. When a signal moves outside its normal range and stays there, Coworker opens an investigation, gathers the relevant metrics, logs, and traces, works out whether it's a genuine issue or just noise, and records what it found. You can watch this happen on the Coworker page in real time. Over time, Heartbeat learns to suppress signals that repeatedly produce false alarms, so it becomes quieter and more reliable.
 
+![!Screenshot](../../../../Coworker/heartbeat.png)
+
 ---
 
 ## How it works

@@ -6,7 +6,7 @@ Open **Settings** from the Coworker menu to configure your Coworker. Settings ar
 |---|---|
 | [**Preferences**](preferences.md) | What Coworker weights when deciding what to surface in your feed, plus re-running onboarding |
 | [**Background activity**](background-activity.md) | Control the work Coworker does on its own - triage, follow-ups, and how often it runs |
-| [**Behaviour**](behaviour.md) | Adjust how Coworker investigates and communicates |
+| [**Behavior**](behavior.md) | Adjust how Coworker investigates and communicates |
 | [**Budget & cost**](budget-cost.md) | Manage your AI Token allowance, on-demand usage, and cost controls (same as the [AI Tokens tab in Usage](../usage.md#ai-token-allowance)) |
 
 ---
