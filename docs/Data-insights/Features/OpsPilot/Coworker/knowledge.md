@@ -12,7 +12,11 @@ Knowledge is available in three views, selectable from the tabs at the top: **Ar
 
 ## Areas
 
-**Areas** is where the page opens. It groups everything Coworker knows by the kind of memory it holds, so you can see what it has learned at a glance rather than scanning the whole graph. There are four kinds:
+**Areas** is where the page opens. It groups everything Coworker knows by the kind of memory it holds, so you can see what it has learned at a glance rather than scanning the whole graph.
+
+![!Screenshot](../../../../Coworker/knowledge-main.png)
+
+There are four kinds:
 
 | Area | What it holds |
 |---|---|
@@ -29,6 +33,8 @@ Each area card shows how many memories it holds and when it last changed. Open a
 
 A visual, interactive map of what Coworker knows. Nodes represent entities (services, databases, concepts) and the links between them show relationships. Node size reflects how frequently an entity is referenced.
 
+![!Screenshot](../../../../Coworker/knowledge-graph.png)
+
 - **Filter by area** - the **Areas** selector at the top scopes the graph to the areas you choose; a legend on the canvas shows which are in view. Clear it to see everything together.
 - **Navigate** - scroll to zoom, drag to rotate, and right-drag to pan around the map.
 - **Inspect** - click any node for its details.
@@ -39,6 +45,8 @@ A visual, interactive map of what Coworker knows. Nodes represent entities (serv
 ## List view
 
 A searchable list of individual memories, browsed one area at a time.
+
+![!Screenshot](../../../../Coworker/knowledge-list.png)
 
 | Control | Description |
 |---|---|

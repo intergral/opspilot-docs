@@ -6,6 +6,8 @@ The **Preferences** tab controls what reaches your personal feed. It has two car
 
 Feed relevance shapes what reaches your personal feed without changing what Coworker investigates. Coworker still investigates everything - this just controls what surfaces for you versus what stays in the team view. You can also ask Coworker to adjust these from any chat.
 
+![!Screenshot](../../../../../Coworker/preferences.png)
+
 | Setting | Description |
 |---|---|
 | **Your role** | Pick as many roles as fit: Developer, SRE / DevOps, Tech lead, or Manager / leadership. If every role you pick is a leadership one, Coworker keeps low-level observations out of your feed and surfaces only the things worth escalating |
