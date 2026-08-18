@@ -4,7 +4,7 @@
 
 ### How do I get started with Coworker?
 
-When you first open Coworker, a [guided setup conversation](getting-started.md) walks you through setting your preferences and creating your first task. The quickest way to get value is to enable [OpsPilot Alerts](event-sources.md#opspilot-alerts), which connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
+When you first open Coworker, a short [six-step setup](getting-started.md) tailors it to you - your role, the services you own, and what you want it to focus on. The quickest way to get value is to enable [OpsPilot Alerts](event-sources.md#opspilot-alerts), which connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
 
 ### Can I have more than one Coworker?
 
@@ -47,25 +47,56 @@ A [scheduled task](scheduled.md) runs on a recurring interval and produces a gen
 
 ---
 
-## Insights
+## Heartbeat
 
-### What is the difference between Resolve and Ignore?
+### What is Heartbeat and how is it different from alerts?
 
-**Resolve** marks an insight as handled and it will appear in your resolved insights history. **Ignore** dismisses it from your priority list without marking it as resolved. Use Resolve when you've taken action; use Ignore when the insight isn't relevant to you.
+Heartbeat is Coworker's always-on health screen. Once your services are cataloged, it learns what "normal" looks like for each one and re-checks those signals every few minutes - no alert rules to write. When a signal drifts out of its normal range and stays there, Coworker investigates on its own and writes up what it found.
+
+Unlike a traditional alert, Heartbeat doesn't just fire a notification - it investigates. It's also private to Coworker: it never creates Grafana or Alertmanager alerts, and won't page your on-call.
 
 !!! info "Learn more"
-    [Insights](situations.md#insights-and-situations)
+    [Heartbeat](heartbeat.md)
+
+---
+
+## Insights
+
+### What is the difference between Resolved and Dismissed?
+
+When you close a situation with **Set status**, **Resolved** means it's handled - you've taken action and the problem is dealt with. **Dismissed** closes it as not a real problem, or not relevant to you. Either way Coworker asks for a quick reason, which also teaches it what not to raise next time.
+
+!!! info "Learn more"
+    [Severity and status](situations.md#severity-and-status)
 
 ### Why am I seeing the same insight repeatedly?
 
-If the underlying issue hasn't been fixed, Coworker will continue to surface it. The occurrence history on each insight shows whether it is a recurring pattern. Use **Watch** to create a [monitoring task](tasks.md#monitoring-tasks) that tracks whether the issue improves.
+If the underlying issue hasn't been fixed, Coworker will continue to surface it. The occurrence history on each insight shows whether it is a recurring pattern. Use **Watch This** on the insight to create a [monitoring task](tasks.md#monitoring-tasks) that tracks whether the issue improves.
 
 ### How do I change what types of insights I see?
 
-Click **Change what I show you** on the dashboard to adjust your severity and category preferences (Errors, Performance, Notable, Coverage), or use **Update via chat** to describe your preferences in plain language.
+Open **Settings > Preferences** and adjust **Feed relevance** - your role, focus services, focus areas (the domains Coworker prioritises), and custom keywords. You can also just ask Coworker to adjust these from any chat. This changes what reaches your feed, not what Coworker investigates across your organisation.
 
 !!! info "Learn more"
     [Preferences](Settings/preferences.md)
+
+---
+
+## Situations
+
+### What do the situation statuses mean?
+
+A situation moves through four statuses: **Open** (newly raised, not yet actioned), **In progress** (someone is working it), **Resolved** (handled), and **Dismissed** (not a real problem). Status is separate from severity (Critical, Warning, or Info) - a Critical can be In progress, and a Warning can sit Open.
+
+!!! info "Learn more"
+    [Severity and status](situations.md#severity-and-status)
+
+### How do I hand a situation to a teammate?
+
+Open the situation and click **Assign**. Choose **I'll take this** to assign it to yourself, or search members and pick a teammate.
+
+!!! info "Learn more"
+    [Situations and threads](situations.md#situations-and-threads)
 
 ---
 
@@ -156,6 +187,13 @@ Open the **AI Tokens** tab in Usage and scroll to **Optimization Suggestions**. 
 ### Why use AI Tokens instead of unlimited AI?
 
 AI-powered investigations consume compute and reasoning resources. OpsPilot AI Tokens give your team a predictable, fixed allowance for Coworker's work, with full visibility into what was used and what it delivered. This keeps AI usage transparent and controllable for both teams and budgets.
+
+### Does creating my catalog use AI Tokens?
+
+No - creating your catalog for the first time is funded by OpsPilot as part of getting you set up, so it does not use your AI Token allowance. Catalog audits you run manually afterwards, to add new services or refresh entries, do use your allowance.
+
+!!! info "Learn more"
+    [Service Catalog](../../../../Admin-and-data/Catalog/catalog.md)
 
 ---
 

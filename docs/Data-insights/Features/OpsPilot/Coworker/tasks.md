@@ -27,7 +27,9 @@ Event sources react to webhooks from external systems, kicking off an investigat
 
 Monitoring tasks are temporary. They run repeatedly for a limited window to keep an eye on one specific thing and report back as they go. For example, "keep checking the checkout error rate through this rollout" or "watch database connections for the next few hours while we drain the node."
 
-You get progressive updates as the task runs. Once its window is up, the task winds down on its own. Use monitoring tasks when you want focused attention on something for a while rather than forever.
+Create a monitoring task with **Watch This** on any insight. You get progressive updates as the task runs, and once its window is up the task winds down on its own. Use monitoring tasks when you want focused attention on something for a while rather than forever.
+
+![!Screenshot](../../../../Coworker/monitoring-watch.png)
 
 ---
 
