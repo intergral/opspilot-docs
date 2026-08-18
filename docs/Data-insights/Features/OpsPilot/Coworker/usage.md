@@ -1,6 +1,6 @@
 # Usage
 
-Click **Usage** from the top right of the Coworker dashboard to open the Usage panel. It has two tabs: **Activity** and **AI Tokens**.
+Usage shows what Coworker has been doing and what it's costing, side by side - so you always see the operational work your AI Token spend funded, never spend in isolation. Open it from the top right of the Coworker dashboard; it has two tabs: **Activity** and **AI Tokens**.
 
 ---
 
@@ -64,7 +64,7 @@ The **AI Tokens** tab gives you full visibility into AI Token spend and the cont
 
 ### AI Token Allowance
 
-The **AI Token Allowance** bar at the top shows your current spend against your plan allowance (e.g. 94 / 20,000 AI Tokens used). The **Allocation** figure shows how much of your plan allowance is assigned to tasks (e.g. 16,000 — 80%). A **Projected within allowance** status confirms whether your current usage trajectory is on track.
+The **AI Token Allowance** bar at the top shows your current spend against your plan allowance (e.g. 94 / 20,000 AI Tokens used). The **Allocation** figure shows how much of your plan allowance is assigned to tasks (e.g. 16,000 - 80%). A **Projected within allowance** status confirms whether your current usage trajectory is on track.
 
 Below the bar, a legend breaks down usage by source:
 
@@ -91,7 +91,7 @@ A bar chart showing AI Token consumption per day across the selected period. Use
 
 The **AI Token Breakdown** table has two sub-tabs:
 
-**Tasks** — shows your named tasks. Each row shows:
+**Tasks** - shows your named tasks. Each row shows:
 
 | Column | Description |
 |---|---|
@@ -103,7 +103,7 @@ The **AI Token Breakdown** table has two sub-tabs:
 
 Tasks that have since been deleted still appear (shown as *Deleted task*) so their past spend stays counted for the period.
 
-**Background** — shows AI Token usage from Coworker's continuous monitoring work that runs outside of named tasks. Each row shows the activity type, period total, and projected monthly cost:
+**Background** - shows AI Token usage from Coworker's continuous monitoring work that runs outside of named tasks. Each row shows the activity type, period total, and projected monthly cost:
 
 | Activity | Description |
 |---|---|

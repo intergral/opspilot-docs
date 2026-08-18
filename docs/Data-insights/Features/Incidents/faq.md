@@ -104,7 +104,7 @@ Active entries are services currently in use. Deprecated entries are retired ser
 
 **Can I add catalog entries from outside Administration?**
 
-Yes. In the Services overview, any service appearing in your telemetry that is not yet catalogued shows a **Create** button in the Catalog column of the Service Table. Click it to register the service without leaving the Services page.
+Yes. In the Services overview, any service appearing in your telemetry that is not yet cataloged shows a **Create** button in the Catalog column of the Service Table. Click it to register the service without leaving the Services page.
 
 ---
 

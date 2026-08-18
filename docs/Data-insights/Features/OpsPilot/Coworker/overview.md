@@ -10,7 +10,7 @@ Each user gets their own personalised Coworker that learns what's relevant to th
 
 Think of Coworker as a single teammate rather than a monitoring tool. Behind that one voice it is doing several jobs at once: watching for signals, investigating them, writing down what it finds, and deciding what to tell you. You don't need to think about those internal jobs. You just get one Coworker who keeps you informed.
 
-Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unconnected alert rules, uncatalogued services - these surface in your feed so you know exactly what to fix to make Coworker more effective. The onboarding experience is not just setup; it is a diagnostic that tells you where your observability has blind spots.
+Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unconnected alert rules, uncataloged services - these surface in your feed so you know exactly what to fix to make Coworker more effective. The onboarding experience is not just setup; it is a diagnostic that tells you where your observability has blind spots.
 
 ## What Coworker does
 
@@ -19,11 +19,11 @@ Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unc
 | **Insights** | The core of Coworker - atomic findings written every time Coworker investigates something, forming the foundation for everything it surfaces |
 | **[Situations](situations.md)** | Insights grouped into coherent stories with severity, evidence, and recommended actions - the thing you triage |
 | **Continuous monitoring** | Watches your systems around the clock and re-investigates open situations on a regular cadence |
-| **[Heartbeat](heartbeat.md)** | An always-on health screen that watches each catalogued service against learned baselines and investigates sustained deviations on its own - no alert rules required |
+| **[Heartbeat](heartbeat.md)** | An always-on health screen that watches each cataloged service against learned baselines and investigates sustained deviations on its own - no alert rules required |
 | **Alert response** | Automatically investigates firing alerts and posts one clean situation instead of a stream of raw alert noise |
 | **[Tasks](tasks.md)** | Scheduled, monitoring, and webhook-driven jobs that run recurring analysis and report back proactively |
 | **[Memory](knowledge.md)** | Builds a growing understanding of your systems, your team, and your preferences over time |
-| **Cost management** | Allowance tracking and optimisation suggestions to keep AI Token spend under control |
+| **[Cost management](usage.md)** | Allowance tracking and optimisation suggestions to keep AI Token spend under control |
 
 New here? [Getting started](getting-started.md) walks through onboarding. See [Situations](situations.md) for how findings surface in your feed and how to triage them.
 

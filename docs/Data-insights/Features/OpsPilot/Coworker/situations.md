@@ -19,7 +19,10 @@ Severity and status answer two different questions:
 | **Severity** | How bad is this? | Critical, Warning, Info |
 | **Status** | Where is it in its lifecycle? | Open, In progress, Resolved, Dismissed |
 
-A situation starts **Open**, moves to **In progress** while it's being worked, and ends as **Resolved** (handled) or **Dismissed** (not a real problem). Severity and status are independent: a Critical can be In progress while someone works it, and a Warning can sit Open if it's worth a look but not urgent. Keeping them separate lets the feed show what matters without conflating how bad something is with whether it's being handled.
+A situation starts **Open**, moves to **In progress** while it's being worked, and ends as **Resolved** (handled) or **Dismissed** (not a real problem).
+
+!!! note "Severity and status are independent"
+    A Critical can be In progress while someone works it, and a Warning can sit Open if it's worth a look but not urgent. Keeping them separate lets the feed show what matters without conflating how bad something is with whether it's being handled.
 
 ---
 
@@ -31,7 +34,7 @@ Coworker is never just a snapshot. Three things run continuously:
 
 **Tidying up.** Every few minutes Coworker sweeps your open situations and consolidates them, merging two that turn out to be the same problem, escalating severity when a new signal warrants it, and attaching stray findings to the situation they belong to.
 
-**Re-checking what's open.** Every open situation is re-investigated on a cadence that depends on its severity. Criticals are checked roughly every 10–15 minutes at first; warnings and quieter items less frequently. When a situation recovers on its own, Coworker resolves it and tells you why. As a situation stays stable, checks become less frequent; if something shifts, the cadence tightens back up. Once resolved, a situation gets a couple of follow-up checks over the next few hours to confirm the fix held.
+**Re-checking what's open.** Every open situation is re-investigated on a cadence that depends on its severity. Criticals are checked roughly every 10-15 minutes at first; warnings and quieter items less frequently. When a situation recovers on its own, Coworker resolves it and tells you why. As a situation stays stable, checks become less frequent; if something shifts, the cadence tightens back up. Once resolved, a situation gets a couple of follow-up checks over the next few hours to confirm the fix held.
 
 ![!Screenshot](../../../../Coworker/overview1.png)
 
