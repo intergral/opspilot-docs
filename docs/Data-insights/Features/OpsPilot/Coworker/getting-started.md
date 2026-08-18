@@ -2,7 +2,7 @@
 
 ## Onboarding
 
-The more Coworker knows about you and your services, the better it filters the noise. A short five-step setup, shown the first time you open Coworker, tailors it to you. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
+The more Coworker knows about you and your services, the better it filters the noise. A short six-step setup, shown the first time you open Coworker, tailors it to you. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
 
 ### Step 1: Introduction
 
@@ -25,53 +25,55 @@ A **How it works** flow shows four cards: something fires, Coworker investigates
 
 ### Step 2: Health screen
 
-![!Screenshot](../../../../Coworker/onboarding-health.png)
+![!Screenshot](../../../../Coworker/onboarding2.png)
 
 Coworker can watch every service's health automatically - no setup from you. This is [Heartbeat](heartbeat.md), its always-on health screen:
 
-> *"Once your services are catalogued, I watch each one's health signals every few minutes. When something drifts out of its normal range and stays there, I investigate and write it up, the same way I handle an alert."*
+> *"Once your services are cataloged, I watch each one's health signals every few minutes. When something drifts out of its normal range and stays there, I investigate and write it up, the same way I handle an alert."*
 
-Choose how to proceed:
+If your services are already cataloged, this step shows what Heartbeat is already watching - for example *"Already watching 120 signals across 15 services"* - with the list of services covered. You can turn individual signals or services off at any time from the [Heartbeat panel](heartbeat.md#configuring-signals). Click **Continue**.
 
-- **Catalogue my services** - discover your services from your telemetry and start health screening. It runs in the background, so you can carry on with setup and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog.md) page. Once it starts, click **Continue**.
-- **Skip for now** or **Skip** - move on without cataloguing.
+If nothing is cataloged yet, choose how to proceed:
+
+- **Catalog my services** - discover your services from your telemetry and start health screening. It runs in the background, so you can carry on with setup and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog.md) page.
+- **Skip for now** or **Skip** - move on without cataloging.
 
 ---
 
 ### Step 3: Your role
 
-![!Screenshot](../../../../Coworker/onboarding2.png)
+![!Screenshot](../../../../Coworker/onboarding3.png)
 
-Coworker asks which role best describes you. This drives a few defaults - which kinds of situations surface to you first, and how things are weighted:
+Coworker asks what you do. Pick as many roles as fit - this drives a few defaults, such as which kinds of situations surface to you first and how things are weighted:
 
 | Role | Description |
 |---|---|
 | **Developer** | Building features, owning services |
 | **SRE / DevOps** | On-call, infra, reliability |
-| **Tech lead** | Leading a team, mostly hands-on |
+| **Tech lead** | Leading a team |
 | **Manager / leadership** | Team or org-level visibility |
 | **Something else…** | Tell me in your own words |
 
-Pick the closest fit. Select **Skip - I'll come back later** to proceed without setting a role.
+Select **Skip - I'll come back later** to proceed without setting a role.
 
 ---
 
 ### Step 4: What do you want me to help with?
 
-![!Screenshot](../../../../Coworker/onboarding3.png)
+![!Screenshot](../../../../Coworker/onboarding4.png)
 
 Select as many as apply:
 
 | Option | Description |
 |---|---|
-| **Surface critical issues** | Stay quiet most of the time; get loud when something's actually breaking |
-| **Filter alert noise** | I get a lot of alerts already - only show me the ones that matter |
-| **Catch cascading issues** | Spot when several small problems are really one big one across services |
-| **Run regular checks** | Watch specific services or metrics on a cadence and flag what looks off |
-| **Give me regular reports for the team** | Uptime, SLO burn, incident counts, deploy frequency - the kinds of numbers you have to share up |
-| **Verify deploys** | After each deploy, check things look healthy and tell me if anything regressed |
-| **Brief me on my shift** | Tell me what happened while I was away, what's still open, what's resolved |
-| **Take action on routine stuff** | Run scripts, kick off jobs, hit endpoints - automate the small stuff I'd otherwise context-switch for |
+| **Surface critical issues** | Quiet by default, loud when it matters |
+| **Filter alert noise** | Only the alerts worth your attention |
+| **Catch cascading issues** | Spot when small problems are one big one |
+| **Run regular checks** | Watch services on a cadence |
+| **Report to the team** | Uptime, SLO burn, incident counts |
+| **Verify deploys** | Check health after each release |
+| **Brief me on my shift** | What happened while you were away |
+| **Take action on routine stuff** | Run scripts and jobs on your behalf |
 
 Click **Continue** when done, or **Skip** to proceed without selecting any.
 
@@ -79,9 +81,9 @@ Click **Continue** when done, or **Skip** to proceed without selecting any.
 
 ### Step 5: Which of these matter most to you?
 
-![!Screenshot](../../../../Coworker/onboarding4.png)
+![!Screenshot](../../../../Coworker/onboarding5.png)
 
-The final step. Select the domains you want Coworker to prioritise in your feed:
+Select the domains you want Coworker to prioritise in your feed:
 
 | Area | What it covers |
 |---|---|
@@ -98,9 +100,15 @@ The final step. Select the domains you want Coworker to prioritise in your feed:
 
 Select as many as apply. These can be updated at any time from **Settings > Preferences**.
 
-After you continue, Coworker offers to work out which services are yours:
+---
 
-> *"The more I know what you own, the better I can filter the noise."*
+### Step 6: Which services are yours?
+
+![!Screenshot](../../../../Coworker/onboarding6.png)
+
+Coworker offers to work out which services you own, so it can filter the noise down to what's yours:
+
+> *"The more I know what you own, the better I can filter the noise. I'll ask a few questions."*
 
 Choose how to proceed:
 

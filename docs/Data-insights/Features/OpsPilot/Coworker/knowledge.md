@@ -21,7 +21,7 @@ There are four kinds:
 | Area | What it holds |
 |---|---|
 | **System** | Higher-level understanding that governs the whole system - how services interact and behave together, what's normal across the estate, and what tends to break. Shared across your organisation |
-| **Services** | Service-specific memories for an individual catalogued service (e.g. `cart`). A first-class memory type introduced with the service catalog, so system memory can focus on the bigger picture rather than single-service detail |
+| **Services** | Service-specific memories for an individual cataloged service (e.g. `cart`). A first-class memory type introduced with the service catalog, so system memory can focus on the bigger picture rather than single-service detail |
 | **Tasks** | What a recurring task or event source has turned up over its runs (e.g. OpsPilot Alerts, a daily error review, the heartbeat health screen). Reusing this context can cut token costs by up to 50% on long-running tasks |
 | **You** | Your personal preferences and the way you like to work, learned from your conversations. This builds up the more you talk to Coworker, so it may be sparse at first |
 

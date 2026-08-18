@@ -13,7 +13,7 @@ Coworker is not limited to your observability data. As an LLM, it can also searc
 
 ### Heartbeat
 
-Coworker's always-on health screen. Once your services are catalogued, it watches each one against learned baselines and investigates sustained deviations on its own - no alert rules required. See [Heartbeat](heartbeat.md) for details.
+Coworker's always-on health screen. Once your services are cataloged, it watches each one against learned baselines and investigates sustained deviations on its own - no alert rules required. See [Heartbeat](heartbeat.md) for details.
 
 ### Scheduled tasks
 

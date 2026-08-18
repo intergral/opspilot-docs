@@ -12,13 +12,22 @@ The catalog also powers incident response: affected services on an incident link
 
 You can populate the catalog three ways:
 
-**Run an audit** - click **Run audit** at the top of the catalog page. Coworker re-discovers services from your telemetry, **creating catalogue entries for services that aren't catalogued yet** and **refreshing existing entries you select**. A confirmation dialog (**Audit service catalogue**) notes that it runs in the background and shows the estimated **OpsPilot AI Token** usage per service. Click **Audit everything** to run it, or **Cancel**. When it finishes, a green banner reports the result, and **History** lets you review previous audits. This is the same discovery Coworker offers during [onboarding](../../Data-insights/Features/OpsPilot/Coworker/getting-started.md).
+1. **Run an audit** - click **Run audit** at the top of the catalog page to re-discover services from your telemetry. This is the same discovery Coworker offers during [onboarding](../../Data-insights/Features/OpsPilot/Coworker/getting-started.md).
 
-A service needs enough telemetry for Coworker to catalogue it - very quiet or barely-instrumented services may not be picked up.
+    - Coworker **creates catalog entries** for services that aren't cataloged yet, and **refreshes the existing entries you select**.
+    - A confirmation dialog (**Audit service catalog**) notes that it runs in the background and shows the estimated **OpsPilot AI Token** usage per service. Click **Audit everything** to run it, or **Cancel**.
+    - When it finishes, a green banner reports the result, and **History** lets you review previous audits.
 
-**From Administration > Catalog** - click **+ New catalog entry** to open the form.
+    !!! info "Your initial catalog creation is included"
+        Creating your catalog for the first time is part of getting you set up. OpsPilot covers the cost of the initial creation, so it does not use your AI Token allowance.
 
-**From the Services overview** - the Service Table includes a **Catalog** column. Any service appearing in your telemetry that does not yet have a catalog entry shows a **Create** button. Click it to register the service directly from where you spotted it.
+        Any catalog audits you manually trigger afterwards - for example, to discover new services or refresh existing entries - use your [AI Token allowance](../../Data-insights/Features/OpsPilot/Coworker/usage.md#ai-token-allowance). This is why the audit dialog shows an estimated AI Token cost per service.
+
+    A service needs enough telemetry for Coworker to catalog it - very quiet or barely-instrumented services may not be picked up.
+
+2. **From Administration > Catalog** - click **+ New catalog entry** to open the form.
+
+3. **From the Services overview** - the Service Table includes a **Catalog** column. Any service appearing in your telemetry that does not yet have a catalog entry shows a **Create** button. Click it to register the service directly from where you spotted it.
 
 Each entry shows how it is maintained:
 

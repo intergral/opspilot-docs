@@ -2,7 +2,7 @@
 
 Heartbeat is Coworker's always-on health screen. It quietly watches each of your services against a set of health signals, and when something looks off it investigates on its own and tells you what it found - with no alert rules to write and no dashboards to monitor.
 
-Once your services are [catalogued](../../../../Admin-and-data/Catalog/catalog.md), Coworker automatically learns what "normal" looks like for each one - request rate, latency, error rate, saturation, and more. Heartbeat re-checks those signals every few minutes in the background. When a signal moves outside its normal range and stays there, Coworker opens an investigation, gathers the relevant metrics, logs, and traces, works out whether it's a genuine issue or just noise, and records what it found. You can watch this happen on the Coworker page in real time. Over time, Heartbeat learns to suppress signals that repeatedly produce false alarms, so it becomes quieter and more reliable.
+Once your services are [cataloged](../../../../Admin-and-data/Catalog/catalog.md), Coworker automatically learns what "normal" looks like for each one - request rate, latency, error rate, saturation, and more. Heartbeat re-checks those signals every few minutes in the background. When a signal moves outside its normal range and stays there, Coworker opens an investigation, gathers the relevant metrics, logs, and traces, works out whether it's a genuine issue or just noise, and records what it found. You can watch this happen on the Coworker page in real time. Over time, Heartbeat learns to suppress signals that repeatedly produce false alarms, so it becomes quieter and more reliable.
 
 ![!Screenshot](../../../../Coworker/heartbeat.png)
 
@@ -27,8 +27,8 @@ Heartbeat lives on the **Coworker page** as its own task type. A subtle pulse an
 
 | Area | What it shows |
 |---|---|
-| **Onboarding** | If services are already catalogued, Heartbeat starts watching straight away and shows what's covered. If nothing is catalogued yet, you can run a one-time catalogue audit during onboarding, or skip for now. See [Getting started](getting-started.md) |
-| **Heartbeat panel** | An **On/Off** toggle, a **Configure** button (see [Configuring signals](#configuring-signals)), the signals watched per service (with links to the service catalog), investigation history, and snapshots captured when a check fires. Until services are catalogued it shows *"No services to watch yet"* with a **Catalogue my services** button |
+| **Onboarding** | If services are already cataloged, Heartbeat starts watching straight away and shows what's covered. If nothing is cataloged yet, you can run a one-time catalog audit during onboarding, or skip for now. See [Getting started](getting-started.md) |
+| **Heartbeat panel** | An **On/Off** toggle, a **Configure** button (see [Configuring signals](#configuring-signals)), the signals watched per service (with links to the service catalog), investigation history, and snapshots captured when a check fires. Until services are cataloged it shows *"No services to watch yet"* with a **Catalog my services** button |
 | **Individual investigations** | The triggering signal, the affected service, how far it deviated from the learned baseline, and Coworker's conclusion with supporting evidence |
 
 ---
@@ -56,7 +56,7 @@ Expand a service to see its individual **signals** - each shows the underlying m
 
 ## Requirements and scope
 
-- Requires at least one **catalogued service**.
+- Requires at least one **cataloged service**.
 - Monitoring runs **per service** using learned baselines.
 - Investigation history is **organisation-wide**.
 - Heartbeat activity is tracked so you have visibility into noise and cost.
@@ -66,7 +66,7 @@ Expand a service to see its individual **signals** - each shows the underlying m
 ## Frequently asked questions
 
 **Do I need to set up alert rules?**
-No. Once a service is catalogued, Coworker already knows what to watch. You can review the watched signals in the service catalog.
+No. Once a service is cataloged, Coworker already knows what to watch. You can review the watched signals in the service catalog.
 
 **Will this page my on-call or show up in my alerting tools?**
 No. Heartbeat's checks are private to Coworker and never create Grafana or Alertmanager alerts.
