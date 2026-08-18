@@ -6,6 +6,9 @@ Once your services are [catalogued](../../../../Admin-and-data/Catalog/catalog.m
 
 ![!Screenshot](../../../../Coworker/heartbeat.png)
 
+!!! info "Private to Coworker"
+    Heartbeat's checks stay inside Coworker - it never creates Grafana or Alertmanager alerts and won't page your on-call.
+
 ---
 
 ## How it works
@@ -25,8 +28,20 @@ Heartbeat lives on the **Coworker page** as its own task type. A subtle pulse an
 | Area | What it shows |
 |---|---|
 | **Onboarding** | If services are already catalogued, Heartbeat starts watching straight away and shows what's covered. If nothing is catalogued yet, you can run a one-time catalogue audit during onboarding, or skip for now. See [Getting started](getting-started.md) |
-| **Heartbeat panel** | An **On/Off** toggle, a **Configure signals** button, the signals watched per service (with links to the service catalog), investigation history, and snapshots captured when a check fires. Until services are catalogued it shows *"No services to watch yet"* with a **Catalogue my services** button |
+| **Heartbeat panel** | An **On/Off** toggle, a **Configure** button (see [Configuring signals](#configuring-signals)), the signals watched per service (with links to the service catalog), investigation history, and snapshots captured when a check fires. Until services are catalogued it shows *"No services to watch yet"* with a **Catalogue my services** button |
 | **Individual investigations** | The triggering signal, the affected service, how far it deviated from the learned baseline, and Coworker's conclusion with supporting evidence |
+
+---
+
+## Configuring signals
+
+Click **Configure** on the Heartbeat panel to choose exactly which services and signals Heartbeat watches. The header carries the global **On/Off** toggle and running totals (investigations run, services covered); click **Done** to close.
+
+![!Screenshot](../../../../Coworker/configure-heartbeat.png)
+
+Each **service** appears as a card showing how many of its signals are active (e.g. *6 of 6 signals on*), with a toggle to include or exclude the whole service, an expand chevron, and a link to the service in the catalog.
+
+Expand a service to see its individual **signals** - each shows the underlying metric (p95 latency, error ratio, request rate, CPU utilisation, and so on) and has its own toggle, so you can silence a specific noisy signal without turning off the whole service.
 
 ---
 

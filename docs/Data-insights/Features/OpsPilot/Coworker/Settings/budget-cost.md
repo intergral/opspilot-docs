@@ -12,6 +12,9 @@ The **Budget & cost** tab is a single **Coworker allowance** card that controls 
 | **Warning threshold** | Sends a notification when spend reaches this percentage of the allowance. Pick a preset (5%-100%) or drag the slider. Defaults to 80% |
 | **Halt threshold** | Coworker holds off on new work when spend reaches this percentage of the allowance. Pick a preset (5%-100%) or drag the slider. Defaults to 100% |
 
+!!! warning "On-demand usage can exceed your allowance"
+    With **On-demand usage** on, Coworker keeps spending past your allowance until the period renews. Set a **Stop after** cap to bound the extra cost.
+
 Click **Save** to apply your changes. See [AI Tokens](../usage.md#ai-token-allowance) for full usage details and optimisation suggestions.
 
 ---

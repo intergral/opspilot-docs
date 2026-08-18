@@ -2,13 +2,17 @@
 
 ## Onboarding
 
-When you first open Coworker, a five-step guided setup helps you personalise it. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
+The more Coworker knows about you and your services, the better it filters the noise. A short five-step setup, shown the first time you open Coworker, tailors it to you. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
 
 ### Step 1: Introduction
 
 ![!Screenshot](../../../../Coworker/onboarding1.png)
 
-Step 1 introduces what Coworker does - *"I handle the operational noise so you can focus on what matters"* - and how it helps:
+Step 1 introduces what Coworker does:
+
+> *"I handle the operational noise so you can focus on what matters."*
+
+And how it helps:
 
 - Watches your alerts and digs into what's actually happening across your observability stack, so you get a clear story rather than a noise feed
 - Runs scheduled checks in the background and only raises something if it's worth your time
@@ -115,7 +119,8 @@ Whether set during onboarding or later from Settings, three controls decide what
 | **Focus areas** | The domains you want prioritised: Errors and exceptions, Application performance, Infrastructure and runtime, Databases and data stores, Data pipelines and quality, Deploys and releases, Team and delivery health, Reliability and SLOs, Cost and capacity, Security and auth. |
 | **Custom keywords** | Any terms beyond the focus areas above - a library, technology, or feature name specific to your stack. A match nudges related situations into your feed. |
 
-None of these change what Coworker investigates or raises across your organisation. They only change what reaches your personal feed.
+!!! info "Feed filtering only"
+    None of these change what Coworker investigates or raises across your organisation - they only change what reaches your personal feed.
 
 ---
 

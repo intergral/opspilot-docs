@@ -1,6 +1,6 @@
 # Behavior
 
-Adjust how Coworker investigates and communicates across your organisation.
+Behavior controls how Coworker communicates and acts - how much detail it gives when it reports, and whether it applies its own optimisation suggestions automatically - so its output fits how your team works. These settings apply across your organisation.
 
 ![!Screenshot](../../../../../Coworker/behaviour.png)
 

@@ -59,7 +59,10 @@ A count above the list shows how many memories are displayed out of the area's t
 
 ## Correcting Coworker
 
-When Coworker raises something that isn't a problem, dismiss it with a quick reason, such as "this is expected" or "too noisy". Coworker turns your correction into a lasting fact: next time it sees the same pattern on the same service, it remembers and won't raise it again. A few early corrections go a long way towards tuning Coworker to your reality.
+When Coworker raises something that isn't a problem, dismiss it with a quick reason, such as "this is expected" or "too noisy". Coworker turns your correction into a lasting fact: next time it sees the same pattern on the same service, it remembers and won't raise it again.
+
+!!! tip "A little tuning goes a long way"
+    A few early corrections go a long way towards tuning Coworker to your reality.
 
 ---
 

@@ -4,7 +4,10 @@ The **Preferences** tab controls what reaches your personal feed. It has two car
 
 ## Feed relevance
 
-Feed relevance shapes what reaches your personal feed without changing what Coworker investigates. Coworker still investigates everything - this just controls what surfaces for you versus what stays in the team view. You can also ask Coworker to adjust these from any chat.
+Feed relevance shapes what reaches your personal feed. You can also ask Coworker to adjust these from any chat.
+
+!!! info "Feed filtering only"
+    Coworker still investigates everything across your organisation - Feed relevance only controls what surfaces for you versus what stays in the team view.
 
 ![!Screenshot](../../../../../Coworker/preferences.png)
 

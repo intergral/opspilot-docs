@@ -23,7 +23,7 @@ Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unc
 | **Alert response** | Automatically investigates firing alerts and posts one clean situation instead of a stream of raw alert noise |
 | **[Tasks](tasks.md)** | Scheduled, monitoring, and webhook-driven jobs that run recurring analysis and report back proactively |
 | **[Memory](knowledge.md)** | Builds a growing understanding of your systems, your team, and your preferences over time |
-| **Cost management** | Allowance tracking and optimisation suggestions to keep AI Token spend under control |
+| **[Cost management](usage.md)** | Allowance tracking and optimisation suggestions to keep AI Token spend under control |
 
 New here? [Getting started](getting-started.md) walks through onboarding. See [Situations](situations.md) for how findings surface in your feed and how to triage them.
 

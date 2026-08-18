@@ -4,11 +4,11 @@
 
 ### How do I get started with Coworker?
 
-When you first open Coworker, a [guided setup conversation](getting-started.md) walks you through setting your preferences and creating your first task. The quickest way to get value is to enable [OpsPilot Alerts](tasks.md#opspilot-alerts), which connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
+When you first open Coworker, a [guided setup conversation](getting-started.md) walks you through setting your preferences and creating your first task. The quickest way to get value is to enable [OpsPilot Alerts](event-sources.md#opspilot-alerts), which connects Coworker to your existing alert rules so it automatically investigates whenever one fires.
 
 ### Can I have more than one Coworker?
 
-No. Each user has one Coworker. Your feed and preferences are personal to you, but tasks and investigations are shared across your organisation — everyone on the team can see what Coworker has raised.
+No. Each user has one Coworker. Your feed and preferences are personal to you, but tasks and investigations are shared across your organisation - everyone on the team can see what Coworker has raised.
 
 ### Can my team share a Coworker?
 
@@ -26,7 +26,7 @@ Yes. Open **Settings** from the Coworker menu, go to the [**Preferences**](Setti
 
 ### How many tasks should I create?
 
-Start with one or two [scheduled tasks](tasks.md#scheduled-tasks) covering your most critical services, and enable [OpsPilot Alerts](tasks.md#opspilot-alerts). Add more tasks over time as you identify gaps. Too many tasks running frequently can increase AI Token usage.
+Start with one or two [scheduled tasks](scheduled.md) covering your most critical services, and enable [OpsPilot Alerts](event-sources.md#opspilot-alerts). Add more tasks over time as you identify gaps. Too many tasks running frequently can increase AI Token usage.
 
 ### How often should I run scheduled tasks?
 
@@ -35,7 +35,7 @@ Daily is the most common cadence and a good starting point. Every 6 hours works 
 If you find yourself wanting very frequent checks on a specific pattern, a [monitoring task](tasks.md#monitoring-tasks) is usually a better fit than a high-frequency scheduled task. If something needs near-real-time response, connecting an alert rule via OpsPilot Alerts will be more effective and much cheaper.
 
 !!! info "Learn more"
-    [Scheduled tasks](tasks.md#scheduled-tasks)
+    [Scheduled tasks](scheduled.md)
 
 ### Why isn't my task finding anything?
 
@@ -43,7 +43,7 @@ It may take a few runs for Coworker to build enough context to surface meaningfu
 
 ### What is the difference between a scheduled task and a monitoring task?
 
-A [scheduled task](tasks.md#scheduled-tasks) runs on a recurring interval and produces a general report of findings. A [monitoring task](tasks.md#monitoring-tasks) is focused on a specific pattern or issue (created from an insight) and tracks whether that pattern is improving, worsening, or stable over time.
+A [scheduled task](scheduled.md) runs on a recurring interval and produces a general report of findings. A [monitoring task](tasks.md#monitoring-tasks) is focused on a specific pattern or issue (created from an insight) and tracks whether that pattern is improving, worsening, or stable over time.
 
 ---
 
