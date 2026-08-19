@@ -99,11 +99,11 @@ From the Crash Protection page, click the **Ask OpsPilot** button on any report 
 
 ### What is the UI Tunnel?
 
-The UI Tunnel gives you secure remote access to the local FusionReactor UI of an on-premises agent directly through OpsPilot Cloud, without needing to expose your server to the public internet.
+The UI Tunnel gives you secure remote access to the local FusionReactor UI of an on-premises agent directly through OpsPilot, without needing to expose your server to the public internet.
 
 ### Can I switch to dark mode in the UI Tunnel?
 
-Yes. Use the theme toggle (sun or moon icon) in the header bar of the UI Tunnel to switch between light and dark mode.
+Yes. Use the theme control (sun or moon icon) in the header bar to choose **Light**, **Dark**, or **System**, and to pick an accent colour.
 
 ---
 
