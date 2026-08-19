@@ -70,7 +70,7 @@ When you click on a Server cube from the System Overview dashboard, you'll be ta
 
 This detailed view is organised into top-level tabs:
 
-- [**UI Tunnel**](ui-tunnel.md) - Access your on-premises application's user interface directly through FusionReactor Cloud.
+- [**UI Tunnel**](ui-tunnel.md) - Open the full FusionReactor Agent UI for a server directly through OpsPilot.
 - [**Metrics**](metrics.md) - Performance metrics and resource utilization data.
 - [**Traces**](traces.md) - Deep-dive request tracing for diagnostics.
 - [**Logs**](logs.md) - Application and system log analysis.
