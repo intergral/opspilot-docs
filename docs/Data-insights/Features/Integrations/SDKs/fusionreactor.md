@@ -17,7 +17,7 @@ Once installed, the FusionReactor agent sends data to OpsPilot across the follow
 | Feature | Description |
 |---|---|
 | [**Applications**](/Data-insights/Features/applications/) | Request rates, error rates, and latency for your CF/Java apps |
-| [**Servers**](/Data-insights/Features/Explore-servers/) | CPU, memory, JVM heap, and thread metrics |
+| [**Servers**](/Data-insights/Features/Servers/overview/) | CPU, memory, JVM heap, and thread metrics |
 | [**Database**](/Data-insights/Features/database/) | JDBC query activity, slow queries, and connection usage |
 | [**Traces**](/Data-insights/Features/explore-traces/) | Distributed traces across requests and services |
 | [**Logs**](/Data-insights/Features/explore-logs/) | Application log shipping to the Logs Drilldown |
