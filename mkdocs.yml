@@ -258,6 +258,7 @@ plugins:
    - search
    - redirects:
       redirect_maps:
+         'Data-insights/Features/Explore-servers.md': 'Data-insights/Features/Servers/overview.md'
          'test.md': 'Admin-and-data/Licensing/Licensing.md'
          'fr/help/Licensing.md': 'Admin-and-data/Licensing/Licensing.md'
          'fr/help/Using+a+License+stored+in+the+Instance+Configuration+File.md': 'Admin-and-data/Licensing/Licensing.md'

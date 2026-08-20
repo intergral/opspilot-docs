@@ -1,13 +1,13 @@
 ﻿# Servers Overview
 
-![Servers overview](../images/Servers/new-servers.png)
-
 View and manage your FusionReactor agent servers and instances.
 
 Navigate to **Servers** from the left-hand sidebar to see a visual overview of all monitored servers. The System Overview provides quick identification of performance issues and health states at a glance.
 
 
 ## Key features
+
+![!Screenshot](key-features.png)
 
 - **Quick status check**: Visually assess the health and performance of your server fleet without needing to drill down into individual metrics.
 
@@ -21,7 +21,7 @@ This table describes the key elements you'll see on the **Overview** dashboard.
 
 | **Component** | **Description** |
 |----------------|-----------------|
-| **Filter Bar (Group, All)** | Use this bar to filter the displayed server cubes based on server groups. |
+| **Group filter** | The **Select Group** dropdown filters the displayed server cubes by group. Servers appear under their FusionReactor group name, with anything ungrouped shown under **Ungrouped**. |
 | **System Overview** | The main area where all monitored servers or server groups are displayed as 3D cube icons. |
 | **Server Cube Icon** | Each cube represents an individual server or a cluster/group of servers (e.g., `group: canary`). |
 | **Cube Labeling** | Provides the FusionReactor group name (top line) and the **instance name** on the bottom line for clear identification. |
@@ -45,7 +45,7 @@ The main color of the server cube or an indicator light changes to signal overal
 
 ![Screenshot](colours.png)
 
-### Metric bars (M, C, R, D)
+### Metric bars (M, C, R, D, E)
 
 Small indicator bars displayed on the cube provide instantaneous utilization and performance data. The color intensity or fill level of each bar shows the current load or alert status for that specific metric.
 
@@ -55,6 +55,7 @@ Small indicator bars displayed on the cube provide instantaneous utilization and
 | **C** | **CPU** Load | Current processor utilization. |
 | **R** | Web **Request** count | The rate of incoming requests or the average time taken to process a request. |
 | **D** | App **Database** Throughput Count | Monitors the number of database operations/queries handled by the application per unit time. |
+| **E** | **Error** count | The number of errors the application is experiencing. |
 
 ## Thresholds
 
