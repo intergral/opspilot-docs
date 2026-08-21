@@ -2,11 +2,11 @@
 
 ## Onboarding
 
-The more Coworker knows about you and your services, the better it filters the noise. A short six-step setup, shown the first time you open Coworker, tailors it to you. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
+The more Coworker knows about you and your services, the better it filters the noise. A short eight-step setup, shown the first time you open Coworker, tailors it to you. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
 
 ### Step 1: Introduction
 
-![!Screenshot](../../../../Coworker/onboarding1.png)
+![!Screenshot](../../../../Coworker/start.png)
 
 Step 1 introduces what Coworker does:
 
@@ -40,7 +40,45 @@ If nothing is cataloged yet, choose how to proceed:
 
 ---
 
-### Step 3: Your role
+### Step 3: Alerts
+
+![!Screenshot](../../../../Coworker/3-alerts.png)
+
+Coworker can watch your alerts and investigate each one the moment it fires:
+
+> *"When one fires, I'll investigate it the way you would - check metrics, sample logs, work out what changed - and post the findings as a situation. You see one clean story, not a stream of alert noise."*
+
+Choose how much to hand over:
+
+- **Watch all** - Coworker investigates every alert that fires.
+- **Let me pick** - choose which alerts Coworker watches.
+
+If no alerts are connected yet, you'll see a note such as *"No Grafana alerts found yet"* - set some up in Grafana, then come back here or wire them in from alerts settings. Click **Continue**, or **Skip for now** to move on.
+
+---
+
+### Step 4: Scheduled tasks
+
+![!Screenshot](../../../../Coworker/4-scheduled.png)
+
+Pick a few background checks for Coworker to run on a cadence:
+
+> *"Scheduled tasks run quietly in the background on a cadence - daily or weekly - and only raise something if it's worth your time. Pick whichever sound useful; you can always adjust them later."*
+
+Select any of the ready-made reports:
+
+| Report | What it covers | Cadence |
+|---|---|---|
+| **Service Uptime Report** | Service availability and downtime incidents | Daily at 9:00 AM UTC |
+| **Error Rates Report** | Error rates and top errors across services | Daily at 9:00 AM UTC |
+| **Resource Usage Report** | CPU, memory, and storage utilization | Weekly on Mondays at 9:00 AM UTC |
+| **Performance Report** | Response times, throughput, and latency | Daily at 10:00 AM UTC |
+
+Click **Continue**, or **None for now** to skip. You can add, edit, or remove scheduled tasks at any time - see [Tasks](tasks.md).
+
+---
+
+### Step 5: Your role
 
 ![!Screenshot](../../../../Coworker/onboarding3.png)
 
@@ -58,7 +96,7 @@ Select **Skip - I'll come back later** to proceed without setting a role.
 
 ---
 
-### Step 4: What do you want me to help with?
+### Step 6: What do you want me to help with?
 
 ![!Screenshot](../../../../Coworker/onboarding4.png)
 
@@ -79,7 +117,7 @@ Click **Continue** when done, or **Skip** to proceed without selecting any.
 
 ---
 
-### Step 5: Which of these matter most to you?
+### Step 7: Which of these matter most to you?
 
 ![!Screenshot](../../../../Coworker/onboarding5.png)
 
@@ -102,7 +140,7 @@ Select as many as apply. These can be updated at any time from **Settings > Pref
 
 ---
 
-### Step 6: Which services are yours?
+### Step 8: Which services are yours?
 
 ![!Screenshot](../../../../Coworker/onboarding6.png)
 

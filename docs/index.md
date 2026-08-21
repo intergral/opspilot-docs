@@ -2,7 +2,7 @@
 
 ![Get Started with OpsPilot](images/get-started.png)
 
-OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and AI SRE platform. This guide walks you through creating your account, connecting your first data source, and exploring your initial views — from sign-up to your first insights in minutes.
+OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and SRE platform. This guide walks you through creating your account, connecting your first data source, and exploring your initial views - from sign-up to your first insights in minutes.
 
 !!! info "Already have an account?"
     [Sign in](https://app.opspilot.com/auth/login) and head to your dashboard to start exploring your data. If you have an invitation, follow the link in your invitation email to access your organization.
@@ -11,24 +11,31 @@ OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and AI SR
 
 ## Step 1 - Create your account
 
-Navigate to [app.opspilot.com/auth/register](https://app.opspilot.com/auth/register) and sign up. Once signed in, you will be prompted to set up your organization.
+Navigate to [app.opspilot.com/auth/register](https://app.opspilot.com/auth/register) and sign up. You're then guided through a short setup:
 
-!!! tip
-    Once signed in, you are prompted to define the name of your organization before proceeding to the dashboard.
+1. **Name your organization.**
+2. **Invite colleagues** (optional) - add their email addresses to bring your team in, or skip for now.
+3. OpsPilot sets up your account. While you wait, use the **See the instrumentation guide** link to get a head start on [instrumenting your application](#step-2-instrument-your-application).
 
 ### What you'll see first
 
-When you first log in with no data connected, the **Overview** page displays a **Get Started** prompt in each section to guide you through setup.
+When setup finishes, you land on the **Overview** - your observability dashboard. With no data connected yet, each section shows a **Get Started** prompt telling you exactly what to install or configure:
+
+- **[Coworker](/Data-insights/Features/OpsPilot/Coworker/getting-started/)** - set up your AI SRE teammate to investigate alerts and track ongoing situations across the services you care about.
+- **[Servers](/Data-insights/Features/Servers/overview/)** and **[Applications](/Data-insights/Features/applications/)** - install the FusionReactor agent to start monitoring. Your **license key** is shown here, ready to copy.
+- **[Services](/Data-insights/Features/Services/overview/)** - instrument with OpenTelemetry using an **API key**.
+- **[Alerts](/Data-insights/Features/Alerting/Alerts-overview/)** and **[Anomaly Detection](/Data-insights/Features/New-alerting/anomaly-detectors/)** - create alert rules or enable anomaly detection once data is flowing.
 
 ![No Data view](Data-insights/Features/images/New-account-overview.png)
-
-Each section tells you exactly what to install or configure to start seeing data.
 
 ---
 
 ## Step 2 - Instrument your application
 
 Send telemetry from your applications using OpenTelemetry or the [FusionReactor agent](/Data-insights/Features/Integrations/SDKs/fusionreactor/).
+
+!!! info "You'll need an API key"
+    OpenTelemetry data is authenticated with an OpsPilot **API key**. Create one from the [API Keys](/Admin-and-data/api-keys/) page - or click **Create** on the **Services** card on your Overview - then add it to your exporter configuration.
 
 Select your language:
 
@@ -111,7 +118,7 @@ Get metrics, logs, and traces flowing from your infrastructure using **Grafana A
 
 ---
 
-## Step 4 - Query with AI
+## Step 4 - Get answers with AI
 
 Once data is flowing, OpsPilot's AI works in two ways:
 
