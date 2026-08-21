@@ -2,6 +2,8 @@
 
 The **API Keys** page lets you manage access credentials used by services and agents to communicate with OpsPilot.
 
+![Screenshot](../images/get-started-services.png)
+
 ## Viewing & managing keys
 
 Each listed API key displays:
@@ -19,11 +21,14 @@ Each listed API key displays:
 
 ## Creating a new key
 
-Click **+ Generate** to create a new API key:
+Click **+ Create API Key** to open the create form:
 
-1. Enter a **Name** (required).
+![Screenshot](../images/create-api.png)
+
+1. Enter a **Name** (required, minimum 3 characters).
 2. Enter a **Description** (optional).
-3. Click **Generate** to create the key.
+3. Leave **Active Status** enabled to activate the key immediately, or toggle it off to create it disabled.
+4. Click **Create**.
 
 Copy the key immediately after creation - it will not be shown again in full.
 
