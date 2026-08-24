@@ -10,7 +10,7 @@ The **Overview** page is your observability dashboard at a glance. It gives you 
 
 Once your environment is sending data, the Overview page shows a full observability summary.
 
-![!Screenshot](../../Data-insights/Features/images/Active-account-overview.png)
+![!Screenshot](../../images/active-account.png)
 
 ## Customising your dashboard
 
