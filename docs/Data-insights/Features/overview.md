@@ -1,16 +1,12 @@
 # Overview
 
-<div class="video-wrapper">
-  <iframe src="https://player.vimeo.com/video/1175447059" width="100%" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 The **Overview** page is your observability dashboard at a glance. It gives you an immediate, high-level summary of your entire environment - services, servers, applications, alerts, anomaly detection, and usage - all in one place.
 
 ## Active account view
 
-Once your environment is sending data, the Overview page shows a full observability summary.
+![!Screenshot](../../images/active-account.png)
 
-![!Screenshot](../../Data-insights/Features/images/Active-account-overview.png)
+Once your environment is sending data, the Overview page shows a full observability summary.
 
 ## Customising your dashboard
 
@@ -28,88 +24,93 @@ Click the **My dashboard** icon in the top right of the Overview to choose which
 
 Click **Reset to org defaults** to restore the default layout.
 
+### Coworker
+
+![!Screenshot](../../Coworker/op-main-coworker.png)
+
+The **Coworker** panel gives you a live summary of your AI teammate's activity, directly from the Overview page. A **Right now** label shows it reflects the current state.
+
+Four cards summarise what Coworker is doing:
+
+| Card | Description |
+|---|---|
+| **Critical** | Number of critical situations currently needing attention |
+| **Services** | How many different services are currently affected |
+| **Checkups** | Checks Coworker has run recently while keeping watch (for example, in the last hour) |
+| **Watching** | Number of services and signals Coworker is actively tracking |
+
+Below the cards, Coworker surfaces its top **critical situations** - each showing the severity, the affected service, and a one-line summary (for example, *"otlp-fraud-detection-fr heap at 100% - OOM risk"*). Click a situation to open it in the full Coworker view.
+
+Click **Coworker →** to go to the full Coworker dashboard.
+
 ### Services
 
-The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour. Use the **Overview show as** dropdown to change the aggregate function applied to the stat values:
+![!Screenshot](../../images/services-overview.png)
 
-| Option | Description |
-|---|---|
-| **Last** | The most recent value recorded in the selected time range |
-| **First** | The first value recorded in the selected time range |
-| **Min** | The lowest value recorded |
-| **Max** | The highest value recorded |
-| **Mean** | The arithmetic average across the time range |
-| **Median** | The middle value when all data points are sorted |
-| **Mode** | The most frequently occurring value |
-| **Total** | The sum of all values across the time range |
+The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour, shown as a row of stat cards. Each card shows the current value plus its **MIN**, **AVG**, and **MAX** across the range; count-based cards (**Errors** and **Throughput**) show **SUM**, **AVG**, and **MAX** instead.
 
-| Metric | Description |
+| Card | Description |
 |---|---|
-| **Overview (All Service Avg)** | Average latency across all services |
+| **Service names** | The services included in the summary, with a count and a sample of names |
+| **Services** | Total number of monitored services |
+| **Latency** | Average request latency across all services |
 | **P95** | 95th percentile latency |
 | **P99** | 99th percentile latency |
-| **Error Rate** | Percentage of requests resulting in errors |
+| **Errors** | Number of errors per second across all services |
 | **Throughput** | Number of requests per second |
-| **Total Time** | Cumulative request time |
 
 #### Services by latency
 
 Below the summary metrics, **Services by latency** lists your top 10 services ranked by average latency over the last hour. Each service card shows:
 
-- **Avg Latency**
+- **Latency**
 - **P95 / P99**
-- **Alerts** count
+- **Errors**
 - **Throughput**
 
 Click any service card to drill into that service's detailed performance data.
 
-### Coworker
-
-The **Coworker** panel gives you a summary of your AI teammate's activity over the last 30 days, directly from the Overview page.
-
-| Element | Description |
-|---|---|
-| **Critical Insights** | Number of critical insights currently needing attention, with a percentage trend indicator and total insight count. Click to expand a list of the current critical insights. |
-| **Optimisation suggestions** | Shows the number of pending cost optimisation suggestions. Click it to open the Cost & Optimisation panel directly. |
-| **Recent Activity** | A feed of the latest task runs and alert checks, showing what Coworker has been investigating and when. Click **7 more** to expand the full list. |
-
-Click **Ask** to open a quick-action menu with chat shortcuts:
-
-- **Catch me up**
-- **What needs attention?**
-- **What keeps recurring?**
-
-Select one to send it directly to Coworker. Click **Coworker →** to go to the full Coworker dashboard.
-
 ### Servers
 
-The **Servers** section provides a summary of all servers running a FusionReactor agent, including:
+![!Screenshot](../../images/servers-overview.png)
 
-- **Total Servers**
-- **Avg Request Duration**
-- **Error Count**
+The **Servers** section provides a summary of all servers running a FusionReactor agent, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
+
+- **Server names** - the servers included, with a count and a sample of names
+- **Servers** - total number of servers
+- **Request Duration**
+- **Errors**
 - **Throughput**
 - **CPU Usage**
 - **Memory Usage**
 
-**Servers by latency** lists your top servers ranked by average latency, with CPU and memory breakdowns per server.
+#### Servers by latency
+
+Lists your servers ranked by average latency. Each card shows **Request Duration**, **Errors**, **Throughput**, **CPU**, and **Memory**.
 
 Click **Servers ->** to go to the full [Servers](/Data-insights/Features/Servers/overview/) view.
 
 ### Applications
 
-The **Applications** section summarises all monitored applications, showing:
+![!Screenshot](../../images/applications-overview.png)
 
-- **Total Applications**
-- **Avg Request Duration**
-- **Error Count**
+The **Applications** section summarises all monitored applications, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
+
+- **Application names** - the applications included, with a count and a sample of names
+- **Applications** - total number of applications
+- **Request Duration**
+- **Errors**
 - **Throughput**
 
-**Applications by latency** lists your top applications ranked by average latency.
+#### Applications by latency
+
+Lists your applications ranked by average latency. Each card shows **Request Duration**, **Errors**, and **Throughput**.
 
 Click **Applications ->** to go to the full [Applications](/Data-insights/Features/applications/) view.
 
 ### Alerts
+
+![!Screenshot](../../images/alerts-overview.png)
 
 The **Alerts** panel shows a live count of alerts grouped by state:
 
@@ -123,6 +124,8 @@ The **Alerts** panel shows a live count of alerts grouped by state:
 Click **Alerts ->** to go to the full [Alerts](/Data-insights/Features/Alerting/Active-alerts/) view.
 
 ### Anomaly Detection
+
+![!Screenshot](../../images/AD-overview.png)
 
 The **Anomaly Detection** panel shows a live count of anomaly alerts by state, mirroring the same Firing / Pending / Recovering / Normal breakdown.
 
@@ -142,17 +145,22 @@ The **Usage** panel shows your current consumption against your plan limits for 
 
 A progress bar indicates how much of your plan allowance has been used.
 
+### What's new
+
+The **What's new** panel surfaces the latest OpsPilot product announcements, each with a release date and a short summary of what changed.
+
 ## No Data view
 
-If your account has no data yet, each section of the Overview displays a **Get Started** prompt to guide you through setup:
-
 ![!Screenshot](../../Data-insights/Features/images/New-account-overview.png)
+
+If your account has no data yet, each section of the Overview displays a **Get Started** prompt to guide you through setup:
 
 | Section | Prompt |
 |---|---|
 | **Services** | You'll need an API key to instrument your application with OpenTelemetry. |
 | **Servers** | Install FusionReactor on your servers to start monitoring. You'll need a license key. |
 | **Applications** | Install FusionReactor to monitor your applications. You'll need a license key. |
+| **Coworker** | Set up your AI coworker to investigate alerts and track ongoing situations across the services you care about. |
 | **Alerts** | Configure alert rules to monitor your infrastructure. |
 | **Anomaly Detection** | Enable anomaly detection to automatically detect unusual behavior in your data. |
 
