@@ -16,7 +16,7 @@ Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unc
 
 | Capability | Description |
 |---|---|
-| **Insights** | The core of Coworker - atomic findings written every time Coworker investigates something, forming the foundation for everything it surfaces |
+| [**Insights**](insights.md) | The core of Coworker - atomic findings written every time Coworker investigates something, forming the foundation for everything it surfaces |
 | **[Situations](situations.md)** | Insights grouped into coherent stories with severity, evidence, and recommended actions - the thing you triage |
 | **Continuous monitoring** | Watches your systems around the clock and re-investigates open situations on a regular cadence |
 | **[Heartbeat](heartbeat.md)** | An always-on health screen that watches each cataloged service against learned baselines and investigates sustained deviations on its own - no alert rules required |

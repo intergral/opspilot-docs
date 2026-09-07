@@ -4,7 +4,7 @@ Situations are what Coworker hands you to triage: coherent stories built from it
 
 ## Insights and situations
 
-**Insights are the core of Coworker.** Everything Coworker does - investigating alerts, running scheduled checks, responding to webhooks - produces insights. An insight is one atomic finding: one observation, one anomaly, one error pattern. Each has a severity, a category, an affected service, and a short description with supporting evidence. Insights are how Coworker records what it has seen and reasoned about.
+**Insights are the core of Coworker.** Everything Coworker does - investigating alerts, running scheduled checks, responding to webhooks - produces insights. An insight is one atomic finding: one observation, one anomaly, one error pattern. Each has a severity, a category, an affected service, and a short description with supporting evidence. Insights are how Coworker records what it has seen and reasoned about. You can browse every insight directly on the [Insights](insights.md) page.
 
 **Situations** are the editorial layer built on top of insights. Coworker groups related insights into one coherent story: a title, a plain-language summary, the affected service, severity, and impact. Situations are what you triage. Insights are how Coworker writes them up; situations are what it hands you.
 
@@ -71,7 +71,7 @@ Below the critical items sits the quieter list: warnings and lower-severity item
 
 Alongside situations, the feed contains:
 
-- **Coverage gaps**: one of Coworker's most useful signals. When it would have investigated something but couldn't - or spotted telemetry it can't trust - it tells you explicitly, grouped under a line like *"Some places I'd like more visibility - pointers below if you can help."* Gaps range from the broad (a service has no telemetry, an alert rule isn't connected, a catalog entry is missing) to the specific (a JVM pool with no metrics, a p95 query using the wrong label and inflating readings, an instance reporting no heap metrics, a service with no span metrics). Each gap names exactly what's missing, with a **Help me set this up** button that opens a guided thread, a **link** icon to copy it, and a **dismiss** (✕) to clear it. Coverage gaps turn Coworker into a diagnostic for your observability, not just a consumer of it.
+- **Coverage gaps**: one of Coworker's most useful signals. When it can't investigate something, or spots telemetry it can't trust, it says so - from the broad (a service with no telemetry, an unconnected alert rule) to the specific (a JVM pool with no metrics, a p95 query using the wrong label). Each gap names what's missing, with a **Help me set this up** button, a **link** icon to copy it, and a **dismiss** (✕). This makes Coworker a diagnostic for your observability, not just a consumer of it.
 - **The digest**: a snapshot Coworker keeps current, summarising the checks it ran and things it handled quietly in the background.
 - **Debriefs**: short notes for when Coworker investigated something and concluded there was nothing worth raising, so the work is visible rather than silent.
 
