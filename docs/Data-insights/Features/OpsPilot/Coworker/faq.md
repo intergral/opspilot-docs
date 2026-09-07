@@ -62,6 +62,10 @@ Unlike a traditional alert, Heartbeat doesn't just fire a notification - it inve
 
 ## Insights
 
+### What is the difference between an insight and a situation?
+
+An [insight](insights.md) is one atomic finding - a single observation, anomaly, or error pattern Coworker recorded while investigating. A [situation](situations.md) groups related insights into one coherent story with a severity, summary, and recommended actions. Insights are the raw layer; situations are what you triage. You can browse every insight on the [Insights](insights.md) page, while situations surface in your home feed.
+
 ### What is the difference between Resolved and Dismissed?
 
 When you close a situation with **Set status**, **Resolved** means it's handled - you've taken action and the problem is dealt with. **Dismissed** closes it as not a real problem, or not relevant to you. Either way Coworker asks for a quick reason, which also teaches it what not to raise next time.
@@ -71,7 +75,10 @@ When you close a situation with **Set status**, **Resolved** means it's handled 
 
 ### Why am I seeing the same insight repeatedly?
 
-If the underlying issue hasn't been fixed, Coworker will continue to surface it. The occurrence history on each insight shows whether it is a recurring pattern. Use **Watch This** on the insight to create a [monitoring task](tasks.md#monitoring-tasks) that tracks whether the issue improves.
+If the underlying issue hasn't been fixed, Coworker will continue to surface it. The occurrence history on each insight shows whether it is a recurring pattern. Use **Watch** on the insight to create a [monitoring task](tasks.md#monitoring-tasks) that tracks whether the issue improves.
+
+!!! info "Learn more"
+    [Insights](insights.md)
 
 ### How do I change what types of insights I see?
 
