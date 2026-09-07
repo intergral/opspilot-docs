@@ -2,11 +2,11 @@
 
 ## Onboarding
 
-The more Coworker knows about you and your services, the better it filters the noise. A short eight-step setup, shown the first time you open Coworker, tailors it to you. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
+The more Coworker knows about you and your services, the better it filters the noise. A short six-step setup, shown the first time you open Coworker, tailors it to you. You can skip any step and still get a working Coworker - you'll just see a broader, less tailored view until you set your preferences.
 
 ### Step 1: Introduction
 
-![!Screenshot](../../../../Coworker/start.png)
+![!Screenshot](../../../../Coworker/onboarding1.png)
 
 Step 1 introduces what Coworker does:
 
@@ -15,11 +15,11 @@ Step 1 introduces what Coworker does:
 And how it helps:
 
 - Watches your alerts and digs into what's actually happening across your observability stack, so you get a clear story rather than a noise feed
-- Runs scheduled checks in the background and only raises something if it's worth your time
+- Watches every service's health on its own and runs your scheduled checks, raising something only if it's worth your time
 - Answers questions in the chat and does the legwork, with no need to set the scene
 - Learns what you care about over time, so the noise tunes out and the signal stays
 
-A **How it works** flow shows four cards: something fires, Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
+A **How it works** flow shows four cards: something fires (an alert lands, or Coworker spots a service's health drifting before anything fires), Coworker investigates, you get a clear story, and it keeps checking back. Click **Quick start** to begin, or **Skip** to go straight to the dashboard.
 
 ---
 
@@ -31,7 +31,7 @@ Coworker can watch every service's health automatically - no setup from you. Thi
 
 > *"Once your services are cataloged, I watch each one's health signals every few minutes. When something drifts out of its normal range and stays there, I investigate and write it up, the same way I handle an alert."*
 
-If your services are already cataloged, this step shows what Heartbeat is already watching - for example *"Already watching 120 signals across 15 services"* - with the list of services covered. You can turn individual signals or services off at any time from the [Heartbeat panel](heartbeat.md#configuring-signals). Click **Continue**.
+If your services are already cataloged, this step shows what Heartbeat is already watching - for example *"Already watching 127 signals across 16 services"* - with the list of services covered. You can turn individual signals or services off at any time from the [Heartbeat panel](heartbeat.md#configuring-signals). Click **Continue**.
 
 If nothing is cataloged yet, choose how to proceed:
 
@@ -40,45 +40,7 @@ If nothing is cataloged yet, choose how to proceed:
 
 ---
 
-### Step 3: Alerts
-
-![!Screenshot](../../../../Coworker/3-alerts.png)
-
-Coworker can watch your alerts and investigate each one the moment it fires:
-
-> *"When one fires, I'll investigate it the way you would - check metrics, sample logs, work out what changed - and post the findings as a situation. You see one clean story, not a stream of alert noise."*
-
-Choose how much to hand over:
-
-- **Watch all** - Coworker investigates every alert that fires.
-- **Let me pick** - choose which alerts Coworker watches.
-
-If no alerts are connected yet, you'll see a note such as *"No Grafana alerts found yet"* - set some up in Grafana, then come back here or wire them in from alerts settings. Click **Continue**, or **Skip for now** to move on.
-
----
-
-### Step 4: Scheduled tasks
-
-![!Screenshot](../../../../Coworker/4-scheduled.png)
-
-Pick a few background checks for Coworker to run on a cadence:
-
-> *"Scheduled tasks run quietly in the background on a cadence - daily or weekly - and only raise something if it's worth your time. Pick whichever sound useful; you can always adjust them later."*
-
-Select any of the ready-made reports:
-
-| Report | What it covers | Cadence |
-|---|---|---|
-| **Service Uptime Report** | Service availability and downtime incidents | Daily at 9:00 AM UTC |
-| **Error Rates Report** | Error rates and top errors across services | Daily at 9:00 AM UTC |
-| **Resource Usage Report** | CPU, memory, and storage utilization | Weekly on Mondays at 9:00 AM UTC |
-| **Performance Report** | Response times, throughput, and latency | Daily at 10:00 AM UTC |
-
-Click **Continue**, or **None for now** to skip. You can add, edit, or remove scheduled tasks at any time - see [Tasks](tasks.md).
-
----
-
-### Step 5: Your role
+### Step 3: Your role
 
 ![!Screenshot](../../../../Coworker/onboarding3.png)
 
@@ -96,7 +58,7 @@ Select **Skip - I'll come back later** to proceed without setting a role.
 
 ---
 
-### Step 6: What do you want me to help with?
+### Step 4: What do you want me to help with?
 
 ![!Screenshot](../../../../Coworker/onboarding4.png)
 
@@ -117,7 +79,7 @@ Click **Continue** when done, or **Skip** to proceed without selecting any.
 
 ---
 
-### Step 7: Which of these matter most to you?
+### Step 5: Which of these matter most to you?
 
 ![!Screenshot](../../../../Coworker/onboarding5.png)
 
@@ -140,18 +102,18 @@ Select as many as apply. These can be updated at any time from **Settings > Pref
 
 ---
 
-### Step 8: Which services are yours?
+### Step 6: Which services do you want front and centre?
 
 ![!Screenshot](../../../../Coworker/onboarding6.png)
 
-Coworker offers to work out which services you own, so it can filter the noise down to what's yours:
+Coworker asks which services to put front and centre, so it can prioritise what reaches you first:
 
-> *"The more I know what you own, the better I can filter the noise. I'll ask a few questions."*
+> *"Everything still gets monitored - this just decides what reaches you first, and what sits under the rest of the org. Skip if you'd rather not narrow by service. Either way, you can change it any time."*
 
 Choose how to proceed:
 
-- **Sure** - describe in a sentence or two what you work on (a team, a product area, the services you own, anything you've been burned by lately) and click **Investigate**. Coworker maps those services to you and prioritises them in your feed.
-- **Skip** - finish onboarding without it.
+- **Sure** - pick the services to put front and centre, so situations touching them are prioritised in your feed.
+- **Skip** - finish onboarding without narrowing by service.
 
 ---
 
