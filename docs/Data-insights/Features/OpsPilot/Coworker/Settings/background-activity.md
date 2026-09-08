@@ -18,7 +18,7 @@ Working style presets set your triage frequency and check-up cadence together, s
 | **Daily review** | Checks in daily and jumps on anything critical as it lands. One daily triage batch, lighter checkups | Daily | Light Touch |
 | **Background monitor** | Ambient watch with a weekly rhythm. Lowest ongoing spend; critical situations are still checked | Daily | Quiet |
 
-Selecting a preset fills in the **Triage** and **Follow-ups** controls below. You can still override either one individually afterwards.
+Each preset - and each individual **Triage** and **Follow-ups** option - shows its projected monthly cost and the saving or increase against your current setting (e.g. *1,408/mo - 674 (32%)*), so you can compare before choosing. Selecting a preset fills in the **Triage** and **Follow-ups** controls below. You can still override either one individually afterwards.
 
 ## Triage
 

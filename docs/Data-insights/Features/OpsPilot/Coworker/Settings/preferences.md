@@ -15,6 +15,7 @@ Feed relevance shapes what reaches your personal feed. You can also ask Coworker
 |---|---|
 | **Your role** | Pick as many roles as fit: Developer, SRE / DevOps, Tech lead, or Manager / leadership. If every role you pick is a leadership one, Coworker keeps low-level observations out of your feed and surfaces only the things worth escalating |
 | **Focus services** | Service names you own or primarily work on. Glob patterns like `opspilot-*` work too. Situations affecting these services are prioritised in your feed |
+| **Muted services** | Situations on these services stay out of your feed, DMs, and notifications. Muting wins over everything else, including a service you also focus on. Glob patterns like `legacy-*` work too |
 | **Focus areas** | The kinds of things Coworker should prioritise when filtering your feed: Errors and exceptions, Application performance, Infrastructure and runtime, Databases and data stores, Data pipelines and quality, Deploys and releases, Team and delivery health, Reliability and SLOs, Cost and capacity, Security and auth |
 | **Custom keywords** | Anything beyond the domains above. A match nudges related situations into your feed |
 | **Advanced - focus area label** | A free-form team or area label that boosts situations tagged with it (e.g. `payments`, `platform infra`). Usually filled in automatically when you mention it during onboarding; set directly here if needed |
