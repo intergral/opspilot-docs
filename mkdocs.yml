@@ -65,7 +65,6 @@ nav:
      - OpsPilot Assistant:
         - Overview: Data-insights/Features/OpsPilot/AIoverview.md
         - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
-     - Knowledge: Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md
      - MCP Interfaces:
         - OpsPilot MCP:
            - Overview: Monitor-your-data/MCP/mcp-overview.md
@@ -111,8 +110,8 @@ nav:
         - Logs: Data-insights/Features/Services/logs.md
         - Info: Data-insights/Features/Services/info.md
         - Incidents: Data-insights/Features/Services/incidents.md
-        - Catalog: Admin-and-data/Catalog/catalog.md
         - FAQ: Data-insights/Features/Services/faq.md
+     - Catalog: Admin-and-data/Catalog/catalog.md
      - Kubernetes:
         - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
         - Shipping data: Monitor-your-data/Kubernetes-monitoring/Shipping.md
@@ -303,7 +302,8 @@ plugins:
          'licensing.md': 'Admin-and-data/Licensing/Licensing.md'
          'Cloud/billing/overview.md': 'Admin-and-data/Billing/Cloud/overview.md'
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Jira.md': 'Data-insights/Features/Integrations/Ticketing/jira.md'
-         'Cloud/guides/OpsPilot/OpsPilot-Hub/Knowledge.md': 'Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md'
+         'Cloud/guides/OpsPilot/OpsPilot-Hub/Knowledge.md': 'Data-insights/Features/OpsPilot/Coworker/knowledge.md'
+         'Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md': 'Data-insights/Features/OpsPilot/Coworker/knowledge.md'
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Slack.md': 'Data-insights/Features/Integrations/Chat/slack.md'
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Teams.md': 'Data-insights/Features/integrations.md'
          'Cloud/OpenTelemetry/distributed-tracing.md': 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
