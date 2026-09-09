@@ -118,6 +118,7 @@ nav:
      - Alerting:
         - Status: Data-insights/Features/New-alerting/status.md
         - Rules: Data-insights/Features/New-alerting/rules.md
+        - Recording Rules: Data-insights/Features/New-alerting/recording-rules.md
         - Notifications:
            - Contact Points: Data-insights/Features/New-alerting/contact-points.md
            - Silences: Data-insights/Features/New-alerting/silences.md

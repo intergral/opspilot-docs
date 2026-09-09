@@ -1,68 +1,63 @@
 # Status
 
-When you have dozens of alert rules across multiple services, knowing what's healthy and what needs attention shouldn't require opening each rule individually. The Status page gives you that at-a-glance view - a live map of every rule and instance in your environment, colour-coded by state, so you can spot problems and act on them without scrolling through a list.
+The **Status** page gives you an at-a-glance view of every alert rule's current state - a live health overview across all your alert sources, including third-party integrations. Group it by **source** or by **namespace** to see what needs attention without opening each rule one by one.
 
 Navigate to **Alerting > Status** to open it.
 
 ![Screenshot](/Data-insights/Features/images/Alerting/status.png)
 
-## Rules tab
+## Needs attention
 
-The Rules tab shows all your alert rules as a hexagonal grid. Each hexagon represents one rule, colour-coded by its current state:
+A summary band at the top leads with what matters: how many rules **need attention** out of the total, and how many are currently **firing** and **pending** (for example, *7 of 44 rules - 1 firing, 6 pending*). A health bar shows the split across states, with a count for each:
 
-| State | Colour | Description |
-|---|---|---|
-| **Normal** | Green | The rule is evaluating and its condition is not currently met |
-| **Pending** | Amber | The condition has been met, but not yet for long enough to fire |
-| **Firing** | Red | The alert condition is met and the rule is actively firing |
-| **Paused** | Grey | The rule is paused and not being evaluated |
-
-Hover over any hexagon to see the rule name, its current state, and the group it belongs to. **Scroll to zoom**, **drag to pan**, and **click a hexagon to view that rule**. Use the zoom (**+** / **-**) and reset controls in the bottom-right corner.
-
-![Screenshot](/Data-insights/Features/images/Alerting/status-hover.png)
-
-Rules that need attention are surfaced at the top of the page, above the grid, so firing alerts are visible without scrolling.
-
-## Instances tab
-
-Where the Rules tab shows one hexagon per rule, the Instances tab shows one hexagon per alert instance. A single rule can produce multiple instances - one per server, service, or label combination it matches. This view is useful when you need to understand the blast radius of a firing rule: how many things are affected, and which specific ones.
-
-![Screenshot](/Data-insights/Features/images/Alerting/instance.png)
-
-Hover over any hexagon to see the instance name, its state, the group it belongs to, and all labels attached to it (such as `alert_type`, `contact_points`, and `opspilot_coworker`).
-
-Use the state filters to narrow the view - for example, selecting **Paused** shows only paused instances and hides the rest.
-
----
-
-## Filtering and grouping
-
-- Use **Search rules** to find a rule by name
-- Use the state filters (**Pending**, **Normal**, **Firing**, **Paused**) to scope the count and highlight rules in a specific state. Only the states currently present are shown
-- Use **Group by** to reorganise the grid by any label or property:
-
-| Group | Description |
+| State | Meaning |
 |---|---|
-| **No grouping** | All rules in a single grid (default) |
-| **Namespace** | Group by the folder or namespace the rule belongs to |
-| **Rule Group** | Group by the rule group within a namespace |
-| **severity** | Group by the severity label on the rule |
-| **alert_type** | Group by alert type label |
-| **contact_points** | Group by the contact point label |
-| **opspilot_coworker** | Group by whether the rule is connected to Coworker |
-| **opspilot_slack_post** | Group by Slack post label |
-| **created_by** | Group by the user who created the rule |
-| **agent_proposal_id** | Group by agent proposal ID |
+| **Firing** | The alert condition is met and the rule is actively firing |
+| **Pending** | The condition has been met, but not yet for long enough to fire |
+| **Normal** | The rule is evaluating and its condition is not currently met |
+| **Paused** | The rule is paused and not being evaluated |
+
+## Viewing and filtering
+
+Controls across the top shape how the page is laid out:
+
+| Control | Description |
+|---|---|
+| **List / Grid** | Switch between the list view and a compact grid view |
+| **Source / Namespace** | Group the cards by data source or by namespace |
+| **All sources** | Filter to a specific source |
+| **State filter** | A multi-select (for example, **4 selected**) to show only rules in the chosen states. Click **✕** to clear it |
+| **Expand all** | Expand every group to show all of its rules; it toggles to **Shrink all** to collapse them |
+| **Hide filtered-out cards** | Hide the groups and rules that don't match the current filters |
+| **Refresh interval** | How often the page auto-refreshes (for example, **30s**) |
+| **OpsPilot** | Alerting AI shortcuts - **Help me make a rule**, or **Recommend alerts to set up** |
+| **+ Wizard** | Create alerting resources - a rule, contact point, or custom detector (see [Creating from Status](#creating-from-status)) |
+
+## Groups and rules
+
+Rules are organised into cards - by **namespace** or by **source**, depending on the toggle. Each group card shows its name, a health bar, and a count for each state, with its rules laid out inside.
+
+Each rule shows:
+
+- Its **name** - for example, *frontend Duration Anomaly*
+- Its current **state** and how long it has been in it - for example, *Firing for 9m*
+- An **Active** toggle to enable or disable the rule - it reads **Paused** when the rule is off
+- A **mute** icon to silence its notifications
+- An **eye** icon (**View rule**) to open the rule's [detail view](rules.md#rule-detail-view)
+
+When a group has more rules than fit, click **Show all N rules** to expand it, and **Show less** to collapse it again.
+
+The **List** view stacks the groups and shows their rule cards inline, while the **Grid** view lays the groups out as compact cards in a multi-column grid - each summarising its state at a glance, and expandable to reveal the rules inside.
 
 ## Creating from Status
 
-Click **+ New** in the top right to create something new without leaving the Status view:
+The **+ Wizard** button in the top right lets you create alerting resources without leaving the Status page. Click it to start a new alert rule, or use its dropdown for more options:
 
 | Option | Description |
 |---|---|
-| **Alert rule** | Create a new alert rule. See [Rules](rules.md) for full details |
-| **Contact point** | Add a new contact point. See [Contact Points](contact-points.md) for full details |
-| **Custom detector** | Create a custom anomaly detector. See [Anomaly Detectors](anomaly-detectors.md) for full details |
+| **New rule** | Create a new alert rule. See [Rules](rules.md) |
+| **New contact point** | Add a new contact point. See [Contact Points](contact-points.md) |
+| **New custom detector** | Create a custom anomaly detector. See [Anomaly Detectors](anomaly-detectors.md) |
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.
