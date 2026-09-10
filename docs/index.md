@@ -24,7 +24,7 @@ When setup finishes, you land on the **Overview** - your observability dashboard
 - **[Coworker](/Data-insights/Features/OpsPilot/Coworker/getting-started/)** - set up your AI SRE teammate to investigate alerts and track ongoing situations across the services you care about.
 - **[Servers](/Data-insights/Features/Servers/overview/)** and **[Applications](/Data-insights/Features/applications/)** - install the FusionReactor agent to start monitoring. Your **license key** is shown here, ready to copy.
 - **[Services](/Data-insights/Features/Services/overview/)** - instrument with OpenTelemetry using an **API key**.
-- **[Alerts](/Data-insights/Features/Alerting/Alerts-overview/)** and **[Anomaly Detection](/Data-insights/Features/New-alerting/anomaly-detectors/)** - create alert rules or enable anomaly detection once data is flowing.
+- **[Alerts](/Data-insights/Features/Alerting/Alerts-overview/)** and **[Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/)** - create alert rules or enable anomaly detection once data is flowing.
 
 ![No Data view](Data-insights/Features/images/New-account-overview.png)
 

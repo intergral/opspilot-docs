@@ -57,7 +57,7 @@ The **+ Wizard** button in the top right lets you create alerting resources with
 |---|---|
 | **New rule** | Create a new alert rule. See [Rules](rules.md) |
 | **New contact point** | Add a new contact point. See [Contact Points](contact-points.md) |
-| **New custom detector** | Create a custom anomaly detector. See [Anomaly Detectors](anomaly-detectors.md) |
+| **New custom detector** | Create a custom anomaly detector. See [Custom Anomaly Detectors](custom-anomaly-detectors.md) |
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

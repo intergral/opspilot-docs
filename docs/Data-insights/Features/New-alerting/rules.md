@@ -5,7 +5,7 @@ A well-configured alert rule is the difference between knowing about a problem b
 Navigate to **Alerting > Rules** to open it.
 
 !!! info "Rules vs detectors"
-    **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](anomaly-detectors.md)** use AI to learn normal behaviour and flag anomalies automatically, so they adapt as your system changes.
+    **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](service-anomaly-detectors.md)** use AI to learn normal behaviour and flag anomalies automatically, so they adapt as your system changes.
 
 ## The rules list
 
@@ -132,7 +132,7 @@ Writing good alert rules is hard - thresholds that are too sensitive create nois
 
 A good alert rule has three things: a query that targets the right signal, a threshold that fires at the right level, and a routing label that gets the notification to the right person.
 
-Click **+ New rule** (top right) to open the rule editor. (To create an anomaly detector instead, use the [Anomaly Detectors](anomaly-detectors.md) page, or the **Wizard** on the [Status](status.md) page.)
+Click **+ New rule** (top right) to open the rule editor. (To create an anomaly detector instead, see [Service](service-anomaly-detectors.md) or [Custom Anomaly Detectors](custom-anomaly-detectors.md), or use the **Wizard** on the [Status](status.md) page.)
 
 The rule editor has two modes, toggled in the top right:
 
