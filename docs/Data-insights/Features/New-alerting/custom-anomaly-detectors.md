@@ -8,6 +8,8 @@ Navigate to **Alerting > Custom Anomaly Detectors** to open the page.
 
 Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Normal**, **No Data**, and **Paused**. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. The **OpsPilot** dropdown offers AI shortcuts. Until you add one, the page shows *"No custom detectors yet."*
 
+Each detector row shows its **State**, **Name**, **Threshold**, and **Last evaluation**, plus actions: a notification count, an **Active** toggle, **Open dashboard**, **Tune detector** (edit), and **Delete**.
+
 ## Creating a custom detector
 
 Click **+ New custom detector** (top right of the page), or use the **Wizard** (**New custom detector**) on the [Status](status.md) or [Rules](rules.md) page. Fill in the fields below, then click **Create detector** to save.

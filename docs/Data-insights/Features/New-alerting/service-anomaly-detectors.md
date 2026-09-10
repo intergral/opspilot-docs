@@ -14,7 +14,7 @@ Each instrumented service automatically gets three detectors, shown as **R**, **
 - **Error** (E) - error rate anomalies
 - **Latency** (D) - response time anomalies (also shown as *Duration* on the Status page)
 
-Each row in the service list shows the service name, its **Detectors** (R/E/D), the **Last evaluation** time, and actions: a notification count, an **Active** toggle to enable or pause the service's detectors, a button to open them, and a **delete** button. Expand a row to see the individual detectors.
+Each row in the service list shows the service name, its **Detectors** (R/E/D), the **Last evaluation** time, and actions: a notification count, an **Active** toggle to enable or pause the service's detectors, an **Open dashboard** button, and a **delete** button. Expand a row to see and tune the individual detectors.
 
 ## Scanning for services
 
