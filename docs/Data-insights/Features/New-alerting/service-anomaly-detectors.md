@@ -6,6 +6,8 @@ Picking the right threshold is hard - too tight and you drown in false alarms, t
 
 Navigate to **Alerting > Service Anomaly Detectors** to open the page.
 
+![Screenshot](/Data-insights/Features/images/Anomaly-detection/service-detectors.png)
+
 Service detectors are built from your instrumented services using templates. Alerts fire when the anomaly probability stays above the configured threshold for the pending duration.
 
 Each instrumented service automatically gets three detectors, shown as **R**, **E**, and **D** badges in the **Detectors** column:
