@@ -4,6 +4,8 @@ Custom detectors run anomaly detection on any PromQL series you define. The mode
 
 Navigate to **Alerting > Custom Anomaly Detectors** to open the page.
 
+![Screenshot](/Data-insights/Features/images/Anomaly-detection/custom-detector.png)
+
 ## The detectors list
 
 Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Normal**, **No Data**, and **Paused**. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. The **OpsPilot** dropdown offers AI shortcuts. Until you add one, the page shows *"No custom detectors yet."*
