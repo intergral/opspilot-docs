@@ -42,6 +42,8 @@ The **OpsPilot** dropdown offers AI shortcuts: **Explain my detectors**, **Help 
 
 ## Detector settings
 
+![Screenshot](/Data-insights/Features/images/Anomaly-detection/SD-expanded-view.png)
+
 Expand a service row to see and tune its individual detectors. Each detector card shows its current **anomaly score** and state, with a **Thr** and **Pending** summary, plus a **mute** icon, a **view** (eye) icon, and an **Active** toggle. Below that, each detector has these settings:
 
 | Setting | Description |
