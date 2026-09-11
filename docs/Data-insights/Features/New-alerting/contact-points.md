@@ -9,14 +9,16 @@ Navigate to **Alerting > Notifications** and open the **Contact Points** tab to 
 
 ## The contact points list
 
+![Screenshot](/Data-insights/Features/images/Alerting/notification-contact.png)
+
 The list shows all configured contact points with three columns:
 
 | Column | Description |
 |---|---|
 | **Name** | The contact point name |
 | **Type** | The integration type (Email, Slack, Webhook, etc.) |
-| **Usage** | Whether the contact point is in use by a notification policy or alert rule |
-| **Actions** | Edit (pencil) or delete (bin) the contact point |
+| **Usage** | How many alert rules use the contact point (for example, **2 rules**), or **Not used**. Click the count to see them |
+| **Actions** | Delete (bin) the contact point. To edit it, click its name in the list |
 
 Use **Search contact points** to find one by name. Use the **type filter** dropdown to show only contact points of a specific type.
 
@@ -67,7 +69,7 @@ A single contact point can send to multiple places at once (such as, Email and S
 
 To change an existing contact point:
 
-1. Find it in the contact points list and click the **edit** (pencil) icon
+1. Find it in the contact points list and click its **name** to open it
 2. Update any integration fields, rename the contact point, or add and remove destinations with **+ Add contact point integration**
 3. Click **Save contact point**
 
