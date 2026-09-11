@@ -4,6 +4,9 @@ A well-configured alert rule is the difference between knowing about a problem b
 
 Navigate to **Alerting > Rules** to open it.
 
+!!! info "Rules vs detectors"
+    **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](service-anomaly-detectors.md)** use AI to learn normal behaviour and flag anomalies automatically, so they adapt as your system changes.
+
 ## The rules list
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-table.png)
@@ -35,28 +38,28 @@ The table has the following columns:
 | **Name** | The alert rule name |
 | **Namespace** | The folder the rule belongs to |
 | **Group** | The evaluation group and its interval (such as, `auto-1m`) |
-| **Actions** | View, edit, and more options |
+| **Last evaluation** | When the rule was last evaluated |
+| **Actions** | A notification count, an **Active** toggle to enable or pause the rule, and buttons to view (eye), edit, and open more options |
 
 ### Expanding a rule
 
 Click a rule row in the list to expand it in place. The left side shows:
 
 - **Metric** - a live graph of the query with the threshold overlaid. Use the time range picker (with step arrows and zoom) to adjust the window
-- **State history** - a log of state transitions with Firing, Pending, and Normal counts. Click a row to zoom the graph to that moment
+- **State history** - a log of state transitions with counts for **Normal**, **Pending**, and **Error** (rows may show sub-reasons such as *Normal (MissingSeries)* or *Pending (Error)*). Click a row to zoom the graph to that moment
 
 The **Dashboard** and **Runbook** buttons (top right of the expanded view) open the dashboard and runbook links from the rule's annotations. The right side shows:
 
 | Field | Description |
 |---|---|
-| **Annotations** | The summary and description annotations from the rule |
-| **Query** | The query being evaluated (such as, `avg_over_time(system_cpu_usage[5m])`) |
-| **Condition** | The threshold condition (such as, `> 5`) |
+| **Annotations** | The annotations from the rule (such as its description) |
+| **Expression** | The query and threshold condition as chained steps - for example, `A` `max_over_time(up[5m])` feeding a `C` condition `< 1` |
 | **Evaluation** | How often the rule is checked and the pending duration (such as, `every 60s · pending 5m`) |
 | **Data source** | The data source the rule queries |
 | **On no data** | What state the rule enters when the query returns no data |
 | **On query error** | What state the rule enters when the query fails |
 | **Notifies** | The contact points configured to receive notifications |
-| **Instances** | A count of firing and pending instances, with a list of all current instances, their labels, and how long each has been firing |
+| **Instances** | The matched instances with a firing/pending breakdown and a **Firing only** toggle. Each row shows the instance's labels, its state and when it last fired, and a **Logs** button to jump to its logs |
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-expanded.png)
 
@@ -110,6 +113,7 @@ A row of summary cards sits below the header:
 - **Sort** - order rules by State, Name, or other fields. Toggle ascending/descending with the arrow button
 - **Search** - find rules by name
 - **Filters** - filter by folder, evaluation group, state, or label
+- **Hide anomaly detectors** - toggle on to show only static rules and hide anomaly detectors from the list
 
 ### OpsPilot
 
@@ -128,7 +132,7 @@ Writing good alert rules is hard - thresholds that are too sensitive create nois
 
 A good alert rule has three things: a query that targets the right signal, a threshold that fires at the right level, and a routing label that gets the notification to the right person.
 
-Click **+ New** (top right) to open a menu with two options: **Alert rule** and **Custom detector** (see [Anomaly Detectors](anomaly-detectors.md)). Select **Alert rule** to open the rule editor.
+Click **+ New rule** (top right) to open the rule editor. (To create an anomaly detector instead, see [Service](service-anomaly-detectors.md) or [Custom Anomaly Detectors](custom-anomaly-detectors.md), or use the **Wizard** on the [Status](status.md) page.)
 
 The rule editor has two modes, toggled in the top right:
 
@@ -146,58 +150,58 @@ Quick mode puts the essentials on one page:
 - **Rule name** - the alert's name (becomes the `alertname` label)
 - **Data source** - the data source to query (such as, Metrics)
 - **What should trigger this alert?** - build the condition in **Builder** mode (*Alert when [metric] is [above / below] [value] for [duration]*, with optional **aggregate** and **filter**), or switch to **Code** to write the query directly. A **Preview** graph shows the threshold against recent data, with 15m/1h/3h/6h/24h range buttons
-- **Notify** - click **Add** to choose where notifications are sent
-- **Labels** - click **+ label** to add routing labels
+- **Notify** - click **+ Add contact point** to choose where notifications are sent
+- **Labels** - click **+ Add label** to add routing labels
 - **Annotations** - describe what the alert means, set the **runbook** URL, and add extra custom fields
+- **When data is missing** - choose the state to use when no data is received (for example, **No Data**)
 
 ### Advanced mode
 
-Advanced mode exposes the full configuration, including chained **Queries & expressions** (each with a reference ID), a dedicated threshold expression, and full evaluation and notification settings. The steps below walk through each.
+Advanced mode is a single-page form that exposes the full configuration - chained queries and expressions, a dedicated alert condition, and complete evaluation, routing, and annotation settings. Its sections, top to bottom, are below.
 
 ![Screenshot](/Data-insights/Features/images/Alerting/new-adv-rule.png)
 
-Click **+ Add step** to chain a query or expression. The available step types are:
+#### What should trigger this alert?
+
+Build the alert from a chain of **Queries & expressions**. Click **Add query** (or use its dropdown) to add a step; each step has a **reference ID** (such as `$query`) that later steps can reference. The available step types are:
 
 | Step | Category | Description |
 |---|---|---|
-| **Query** | Data | Query metrics or logs |
+| **Query** | Data | Query metrics or logs - pick a **Data source** and **Type**, enter the query, and use the **Preview** graph |
 | **Math** | Expression | Compose a formula with `$referenceId` values |
-| **Reduce** | Expression | Reduce a series to a single scalar value |
+| **Reduce** | Expression | Reduce a series to a single scalar value - choose an **Input**, a **Function** (such as `mean`), and how to handle **non-numbers** |
 | **Resample** | Expression | Realign a series by a time window |
-| **Threshold** | Expression | Compare a value against a threshold |
+| **Threshold** | Expression | Compare an **Input** against a value using an **Operator** (such as *is above*) |
 | **Complex conditions** | Expression | Combine multiple conditions with AND/OR |
 
-The **Alert condition** dropdown selects which step's firing state determines whether the rule alerts.
+A new rule starts with a default **Query → Reduce → Threshold** chain. The **Alert condition** dropdown at the top selects which step's firing state determines whether the rule alerts.
 
-#### 1. Name the alert rule
+#### Evaluation
 
-Enter a descriptive and unique name in the **Name** field. This name appears in notifications (such as, `High CPU - Production Server`).
-
-!!! note
-    The rule name automatically becomes the `alertname` label on every alert instance the rule produces.
-
-#### 2. Define query and alert condition
-
-- Select your **Data source** from the dropdown
-- Enter your query to select the metric you want to monitor (such as, a PromQL expression for CPU usage)
-- Under **Alert condition**, define the threshold that triggers the alert (such as, `WHEN QUERY IS ABOVE 80`)
-- Click **Preview** to see a live visualisation of when the rule would fire
-
-#### 3. Set folder and evaluation group
-
-!!! warning "Required for all rules"
-    Every alert rule must be assigned to a **folder** and an **evaluation group**.
+The **Evaluation** section controls how the rule runs:
 
 | Setting | Description |
 |---|---|
-| **Folder** | Keeps rules organised and controls access permissions. Click **+ New folder** to create one |
-| **Evaluation group** | Sets the evaluation interval - how often rules in the group are checked (such as, `1m`) |
-| **Pending period** | How long the condition must be continuously met before the alert fires (such as, `5m`). Prevents notifications for temporary spikes |
-| **Keep firing for** | Optionally hold the alert in a firing state after the condition resolves, to avoid noisy recovered/re-fired cycles |
+| **Evaluate every** | How often the rule is checked (such as, `1m`) |
+| **Pending for** | How long the condition must be continuously met before the alert fires (such as, `5m`). Prevents notifications for temporary spikes |
+| **No data** | The state the rule enters when the query returns no data - **No Data**, **Alerting**, **Normal**, or **Keep last state** |
+| **On error** | The state the rule enters when the query fails - **Error**, **Alerting**, **Normal**, or **Keep last state** |
 
-#### 4. Add routing labels
+#### Namespace
 
-Labels control how alerts are routed to contact points via notification policies. Add at minimum a `channel` label:
+Expand **Namespace** and choose the **namespace** where the rule is stored. Namespaces keep rules organised and control access.
+
+#### Rule name
+
+Enter a descriptive, unique **Rule name**. It appears in notifications, and automatically becomes the `alertname` label on every alert instance the rule produces.
+
+#### Then notify
+
+Under **Then notify**, click **+ Add contact point** to choose where notifications are sent.
+
+#### Labels
+
+Expand **Labels** and click **+ Add label** to add routing labels. Labels control how alerts reach contact points via notification policies - for example, a `channel` label:
 
 | Label | Value | Routes to |
 |---|---|---|
@@ -205,44 +209,23 @@ Labels control how alerts are routed to contact points via notification policies
 | `channel` | `slack` | Slack contact point |
 | `channel` | `webhook` | Webhook contact point |
 
-Click **+ Add labels** and enter the key/value pair.
-
 !!! info "Learn more"
     [Notification Policy](notification-policy.md)
 
-#### 5. Configure no data and error handling
+#### Annotations
 
-| Scenario | Option | Behaviour |
-|---|---|---|
-| **No Data** | No Data | Alert enters the No Data state |
-| **No Data** | Alerting | Treat as if the condition was met - alert fires |
-| **No Data** | Normal | Treat as healthy - no notification sent |
-| **No Data** | Keep last state | Hold the previous result until data returns |
-| **Error** | Error | Alert enters the Error state |
-| **Error** | Alerting | Treat as if the condition was met - alert fires |
-| **Error** | Normal | Treat as healthy - no notification sent |
-| **Error** | Keep last state | Hold the previous result until the error clears |
-
-#### 6. Configure notifications
-
-- Confirm your routing labels are correct
-- Expand **Muting, grouping and timings** to apply [time intervals](time-intervals.md) or override grouping from the [notification policy](notification-policy.md)
-
-#### 7. Add a notification message
+Expand **Annotations** to describe the alert:
 
 | Field | Purpose |
 |---|---|
-| **Summary** | A brief description of what happened. Appears prominently in most notification integrations |
-| **Description** | More detail or troubleshooting context |
+| **Description** | What the alert means and when it fires |
 | **Runbook URL** | A link to your runbook or incident response guide |
-| **Dashboard URL** | A link to a relevant dashboard for deeper investigation |
-| **Panel URL** | A link to a specific panel on a dashboard |
 
-Dynamic values can be included using Go template syntax (such as, `{{ $values.A.Value }}`).
+Click **+ Add annotation** to add more annotation fields. Dynamic values can be included using Go template syntax (such as, `{{ $values.A.Value }}`).
 
-#### 8. Save and deploy
+#### Save
 
-Click **Save rule and exit** to activate the rule. It will begin evaluating on its next scheduled interval.
+Click **Save rule** to activate the rule. It begins evaluating on its next scheduled interval.
 
 ---
 
