@@ -15,7 +15,7 @@ Check the following:
 
 **Pending** means the alert condition is currently met, but the rule's pending period hasn't elapsed yet. This prevents short spikes from generating noise. Once the condition has been met continuously for the full pending period, the alert moves to **Firing** and notifications are sent.
 
-## Why does my rule show Normal (MissingSeries)?
+## Why does my rule show Normal (Missingseries)?
 
 This means the query returned no data - the metric series the rule is watching doesn't exist or isn't being reported. The rule stays Normal but flags that nothing was found. Check that your data source is shipping data and that the query targets the correct metric name.
 

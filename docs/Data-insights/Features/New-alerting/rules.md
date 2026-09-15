@@ -18,7 +18,7 @@ Rules are displayed with four state counters at the top:
 | **Firing** | The alert condition is currently met |
 | **Pending** | The condition is met but the pending period has not yet elapsed |
 | **Normal** | The rule is evaluating and its condition is not met |
-| **Normal (MissingSeries)** | The rule returned no data - the query matched no series. The rule remains Normal but flags that the data source returned nothing |
+| **Normal (Missingseries)** | The rule returned no data - the query matched no series. The rule remains Normal but flags that the data source returned nothing |
 | **Paused** | The rule is paused and not being evaluated |
 
 ### Views
@@ -46,9 +46,9 @@ The table has the following columns:
 Click a rule row in the list to expand it in place. The left side shows:
 
 - **Metric** - a live graph of the query with the threshold overlaid. Use the time range picker (with step arrows and zoom) to adjust the window
-- **State history** - a log of state transitions with counts for **Normal**, **Pending**, and **Error** (rows may show sub-reasons such as *Normal (MissingSeries)* or *Pending (Error)*). Click a row to zoom the graph to that moment
+- **State history** - a log of state transitions with counts for **Normal**, **Pending**, and **Error** (rows may show sub-reasons such as *Normal (Missingseries)* or *Pending (Error)*). Click a row to zoom the graph to that moment
 
-The **Dashboard** and **Runbook** buttons (top right of the expanded view) open the dashboard and runbook links from the rule's annotations. The right side shows:
+The **Dashboard** and **Runbook** buttons (top right of the expanded view) open the dashboard and runbook links from the rule's annotations. If the rule has no such annotation, the button reads **No dashboard URL** or **No runbook URL** and is inactive. The right side shows:
 
 | Field | Description |
 |---|---|
