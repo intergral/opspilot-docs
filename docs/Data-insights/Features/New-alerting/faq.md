@@ -63,7 +63,7 @@ A contact point cannot be deleted while anything still references it. Check the 
 
 ## Can I pause a rule without deleting it?
 
-Yes - click the pause icon on any rule in the list. While paused the rule stops evaluating and no new instances are created. Existing firing instances remain in their last state until evaluation resumes.
+Yes - switch the **Active** toggle in the **Actions** column of the rules list to **Paused**. While paused the rule stops evaluating and no new instances are created. Existing firing instances remain in their last state until evaluation resumes.
 
 ## What is the post-mortem gate in anomaly detectors?
 

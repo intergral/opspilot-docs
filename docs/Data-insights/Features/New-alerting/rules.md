@@ -245,7 +245,7 @@ Advanced mode:
 
 ## Pausing a rule
 
-Click the **pause** icon on any rule in the list to pause evaluation without deleting it. While paused, the rule stops evaluating and no new alert instances are created. Existing firing instances remain in their last state until evaluation resumes.
+Use the **Active** toggle in the **Actions** column of any rule in the list to pause evaluation without deleting it. The toggle switches to **Paused**, and the rule's **State** column shows **Paused** with no **Last evaluation** time. While paused, the rule stops evaluating and no new alert instances are created. Existing firing instances remain in their last state until evaluation resumes.
 
 ## Alert rule limits
 
