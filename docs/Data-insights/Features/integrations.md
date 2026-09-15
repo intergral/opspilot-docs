@@ -26,7 +26,7 @@ Integrations are grouped into categories, each showing how many it holds. Use th
 | **SDKs** | Language SDKs |
 | **Ticketing** | Issue tracking and project management tools |
 
-Use the **Search integrations** bar to find one by name, and the status dropdown beside it to filter by whether an integration is installed. The **Legacy** toggle in the top right switches to the previous catalog view.
+Use the **Search integrations** bar to find one by name, and the status dropdown beside it to filter by whether an integration is installed. The **Legacy** toggle in the top right switches to the legacy catalog, which holds earlier integrations that are still available and still work - including [Jira](Integrations/Ticketing/jira.md).
 
 Each card shows the integration's name, its category, a short description, and its current status - **Coming soon** for one not yet released, or **Installed** for one already connected.
 
@@ -183,6 +183,9 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
     Browser · C++ · Erlang · PHP · Ruby · Rust · Swift
 
 </div>
+
+!!! note "Jira"
+    Jira is listed as **Coming soon** because the new integration has not shipped yet. A [legacy Jira integration](Integrations/Ticketing/jira.md) is available today - switch on **Legacy** in the top right of the catalog to find it.
 
 ---
 
