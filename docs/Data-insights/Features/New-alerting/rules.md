@@ -67,14 +67,14 @@ The **Dashboard** and **Runbook** buttons (top right of the expanded view) open 
 
 ![Screenshot](/Data-insights/Features/images/Alerting/high-cpu-rule.png)
 
-From the [Status](status.md) page, click a rule to open the full rule detail view. The header shows the rule name and current state, with these actions in the top right:
+Open the full rule detail view by clicking the **eye** icon (**View rule**) in the rules list, or by clicking a rule on the [Status](status.md) page. The header shows the rule name and current state, with these actions in the top right:
 
 | Action | Description |
 |---|---|
 | **Dashboard** | Opens the dashboard linked in the rule's annotations |
 | **Runbook** | Opens the runbook URL linked in the rule's annotations |
 | **Silence** | Create a [silence](silences.md) for this rule |
-| **Pause** | Pause evaluation of the rule |
+| **Active** | A toggle to pause and resume evaluation of the rule |
 | **Edit rule** | Open the rule editor |
 | **⋯** | More options |
 
@@ -84,29 +84,27 @@ A row of summary cards sits below the header:
 |---|---|
 | **Current value** | The latest query value, with the threshold shown alongside |
 | **Threshold** | The condition and evaluation window (such as, `> 80 avg 5m`) |
-| **Firing instances** | How many instances are firing out of the total |
+| **Firing alert instances** | How many instances are firing out of the total (such as, `0 of 3`) |
 | **Duration** | How long the rule has been in its current state |
 | **Alerts this week** | Count of alerts over the last 7 days |
 
-**Metric graph** (left) - a live graph of the query with the threshold overlaid. Toggle **Threshold**, **State transitions**, and **Pending window** overlays on or off. Use the time range picker (with step arrows and zoom) to adjust the window, shift-drag to zoom, or click the timeline to center. Click **Open in dashboard** to view the metric in a dashboard.
+**Metric** (left) - a live graph of the query, with the query itself shown in the panel header and a copy button beside it. Tick **Threshold**, **State transitions**, and **Pending window** below the graph to toggle those overlays. Use the time range picker (with step arrows and zoom) to adjust the window, shift-drag to zoom, or click the timeline to center. Click **Open in Explore** to investigate the metric in Explore.
 
-**State history** (left, below the graph) - a log of state transitions showing the change (such as, Normal from Pending) and when it happened. Shows the count over the last 24h; click **See all** for the full history.
+**State history** (left, below the graph) - a log of state transitions showing the change (such as, *Normal (Missingseries) from Pending (Error)*), when it happened, and how long the previous state was held. The header shows the period and transition count (such as, *last 24h · 12 transitions*); click **See all** for the full history.
 
-**Investigate** (right) - quick links to explore the metric in related views.
-
-**Rule** (right) - the rule's configuration:
+**Rule** (right) - the rule's configuration, with the dashboard and runbook buttons repeated at the top:
 
 | Field | Description |
 |---|---|
-| **Condition** | The threshold condition (such as, `> 80`) |
+| **Annotations** | The annotations from the rule (such as its description) |
+| **Expression** | The query and threshold condition as chained steps - a **Query** step (with its data source) feeding a **Threshold** step |
 | **Evaluation** | How often the rule is checked and the pending duration (such as, `every 60s · pending 5m`) |
 | **Data source** | The data source the rule queries |
-| **Folder** | The folder the rule belongs to |
 | **On no data** | What state the rule enters when the query returns no data |
 | **On query error** | What state the rule enters when the query fails |
 | **Notifies** | The contact points configured to receive notifications |
 
-**Instances** (right, below Rule) - a count of matched, firing, and pending instances, with a list of all current instances and their labels. Toggle **Firing only** to hide healthy instances, and click **Logs** on any instance to view its logs.
+**Alert instances** (right, below Rule) - a count of matched, firing, and pending instances, with a list of all current instances and their labels. Toggle **Firing only** to hide healthy instances, and click **Logs** on any instance to view its logs.
 
 ### Sorting and filtering
 
