@@ -32,7 +32,11 @@ The table has the following columns:
 
 ## Creating a recording rule
 
-Click **+ New recording rule** (top right) to open the editor. Like alert rules, it has **Quick** and **Advanced** modes (toggled top right). Quick mode puts the essentials on one page:
+Click **+ New recording rule** (top right) to open the editor. Like alert rules, it has **Quick** and **Advanced** modes (toggled top right).
+
+### Quick mode
+
+Quick mode puts the essentials on one page:
 
 | Field | Description |
 |---|---|
@@ -44,7 +48,27 @@ Click **+ New recording rule** (top right) to open the editor. Like alert rules,
 | **Namespace** | The namespace where the recording rule is stored |
 | **Labels** | Optional labels to attach to the recorded metric - expand the **Labels** section to add them |
 
-Click **Save** (or **Save changes** when editing) to activate the rule; it begins recording its metric on the next interval.
+### Advanced mode
+
+Advanced mode is a single-page form that exposes the full configuration - a chain of queries and expressions, with one step nominated as the metric to record. **Rule name** and **Metric name** sit at the top, as in Quick mode.
+
+#### What should this rule compute?
+
+Build the rule from a chain of **Queries & expressions**. Click **+ Add query** (or use its dropdown) to add a step, and give each one a **Reference ID** (such as `$A`) that later steps can reference. The step types are the same as for [alert rules](rules.md#advanced-mode) - for example, a **Query** step reading `up{}` from **Metrics**, a second **Query** step running `count_over_time({level="ERROR"} [1m])` against **Logs**, a **Math** step combining them as `$B / $A`, and a **Reduce** step applying a **Function** such as `sum`.
+
+**Record source** (at the top of the section) selects which step's result is saved as the metric. That step is highlighted in the chain and marked with a **Recording** chip.
+
+Reorder steps with the arrows to the left of each one, and remove a step with the **✕** on its right. An **Evaluation preview** graph below the chain shows the resulting series.
+
+#### Evaluation interval, namespace, and labels
+
+| Setting | Description |
+|---|---|
+| **Evaluation interval** | How often the expression is evaluated and the metric recorded (such as, `1m`) |
+| **Namespace** | The namespace where the metric recorder is stored (such as, *OpsPilot Recording Rules*) |
+| **Labels** | Expand **Labels** to attach optional labels to the recorded metric |
+
+Click **Save** (or **Save changes** when editing) to activate the rule; it begins recording its metric on the next interval. Click **Cancel** to discard your changes.
 
 ---
 
