@@ -38,6 +38,8 @@ Click **Scan for services** to detect your instrumented services and auto-create
 - **All states** - filter by current state
 - **All contact points** - filter by the contact point the detector routes to
 
+To the right of the filters sit a refresh button and the auto-refresh interval (such as, **30s**).
+
 The **OpsPilot** dropdown offers AI shortcuts: **Explain my detectors**, **Help me create a detector**, and **Suggest detectors to add**.
 
 ## Detector settings
