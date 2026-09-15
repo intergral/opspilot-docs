@@ -128,6 +128,17 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
 
 </div>
 
+### FusionReactor
+
+The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed automatically** - it cannot be modified or removed. It provides:
+
+- Discovery of services
+- Application performance monitoring, to identify bottlenecks and optimize response times
+- Centralized log collection, search, and analysis across all your applications
+- Real-time code-level profiling to detect resource consumption patterns
+- Visibility into servers, Kubernetes, and system-level resource utilization
+- Intelligent anomaly detection and alerting for rapid incident response
+
 ---
 
 ## Coming soon
@@ -186,11 +197,6 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
 
 !!! note "Jira"
     Jira is listed as **Coming soon** because the new integration has not shipped yet. A [legacy Jira integration](Integrations/Ticketing/jira.md) is available today - switch on **Legacy** in the top right of the catalog to find it.
-
----
-
-!!! info "FusionReactor"
-    The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is installed separately rather than from this catalog. It gives deep visibility into ColdFusion, Java, and Lucee applications with no code changes.
 
 ---
 
