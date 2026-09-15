@@ -32,13 +32,17 @@ Each card shows the integration's name, its category, a short description, and i
 
 ## Installing an integration
 
-For most integrations, onboarding is a single click: find it in the catalog and click **Install**. Once connected, the card shows an **Installed** badge and the button changes to **Uninstall**.
+For most integrations, onboarding is a single click. Click **Install** on an integration's card or from its detail view, and a dialog opens confirming which account the install will serve. Choose a **Permission tier** - the dialog shows what that tier requires - then click **Install** to confirm, or **Cancel** to back out.
 
-Some integrations need more than a click - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. Slack, for example, has its own **Add to Slack** button, which starts the Slack authorisation flow.
+Once connected, the card shows an **Installed** badge and the button changes to **Uninstall**.
+
+Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. Slack, for example, has its own **Add to Slack** button, which starts the Slack authorisation flow.
 
 ### What you get
 
 Installing an integration does more than connect a data source. OpsPilot automatically loads a set of default **dashboards** and **alerts** onto your account for that integration, so you have useful monitoring in place from the start with nothing to build by hand.
+
+The **Capabilities** panel on an integration's detail view names what it provisions. AWS, for example, declares **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none.
 
 ### The integration detail view
 
@@ -49,10 +53,10 @@ Below the header, the detail view is made up of these panels:
 | Panel | Description |
 |---|---|
 | **Overview** | What the integration does and why you'd use it |
-| **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default** |
-| **Capabilities** | What the integration declares it can do. Some declare none |
-| **Versions** | Each released version, what upgrading from the previous version involves, and a summary of what changed. The current version is marked **latest** |
-| **Changelog** | The detail behind each version's changes |
+| **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default**. Tiers vary by integration - AWS offers **Read-only** and **Read + Write**, each needing different AWS IAM permissions, while OpsPilot MCP offers **Read-only** and **Read + Act** |
+| **Capabilities** | Badges naming what the integration provisions, such as **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none |
+| **Versions** | Each released version, what upgrading from the previous one involves (**Initial version**, or **Manual** where the upgrade takes action), and a summary of what changed. The current version is marked **latest** |
+| **Changelog** | The detail behind each version's changes, with its release date |
 
 ---
 

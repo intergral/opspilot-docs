@@ -34,9 +34,11 @@ Choose whether assistants may act, or only read.
 
 Click **Install** on the **OpsPilot MCP** card in the [Integrations](../../integrations.md) catalog, or from the integration's detail view.
 
-The detail view also carries the integration's current version, its capabilities, and a changelog for each release.
+The install dialog confirms which account the install will serve and lets you choose a **Permission tier**. **Read + Act** is selected by default and requires nothing - your plan grants it. Click **Install** to confirm, or **Cancel** to back out.
 
 Each person then connects their own AI client and signs in as themselves - there is no shared key to distribute.
+
+OpsPilot MCP declares no **capabilities**, so it does not provision dashboards or alerts of its own. It reads and acts on what is already in your account.
 
 ---
 
