@@ -15,7 +15,7 @@ Check the following:
 
 **Pending** means the alert condition is currently met, but the rule's pending period hasn't elapsed yet. This prevents short spikes from generating noise. Once the condition has been met continuously for the full pending period, the alert moves to **Firing** and notifications are sent.
 
-## Why does my rule show Normal (MissingSeries)?
+## Why does my rule show Normal (Missingseries)?
 
 This means the query returned no data - the metric series the rule is watching doesn't exist or isn't being reported. The rule stays Normal but flags that nothing was found. Check that your data source is shipping data and that the query targets the correct metric name.
 
@@ -46,6 +46,14 @@ Add a `channel` label to your alert rule (e.g. `channel=slack`) and set up a mat
 
 The alert will still fire and change state, but no notifications will be sent. The **Notifies** field in the expanded rule view will show "No contact points configured".
 
+## How do I find which alert rules use a contact point?
+
+Navigate to **Alerting > Notifications** and open the **Contact Points** tab. The **Usage** column shows how many alert rules reference each contact point (for example, **2 rules**), or **Not used**. Click the count to see the rules themselves.
+
+## Why can't I delete a contact point?
+
+A contact point cannot be deleted while anything still references it. Check the **Usage** column in the [Contact points](contact-points.md) list to see which alert rules use it, then remove the contact point from those rules and from any [notification policy](notification-policy.md) routes that reference it. Once the **Usage** column shows **Not used**, the delete (bin) action will succeed.
+
 ## How many alert rules can I have?
 
 | Plan | Maximum rules |
@@ -55,7 +63,7 @@ The alert will still fire and change state, but no notifications will be sent. T
 
 ## Can I pause a rule without deleting it?
 
-Yes - click the pause icon on any rule in the list. While paused the rule stops evaluating and no new instances are created. Existing firing instances remain in their last state until evaluation resumes.
+Yes - switch the **Active** toggle in the **Actions** column of the rules list to **Paused**. While paused the rule stops evaluating and no new instances are created. Existing firing instances remain in their last state until evaluation resumes.
 
 ## What is the post-mortem gate in anomaly detectors?
 

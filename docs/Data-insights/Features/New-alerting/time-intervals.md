@@ -28,7 +28,7 @@ Each block has the following fields:
 | **Days of month** | Comma-separated numbers or ranges from 1-31. Use negative values to count from the end of the month (such as, `-1` = last day, `20:25` = 20th to 25th) |
 | **Months** | Select specific months (Jan-Dec). Leave unset to match all months |
 | **Years** | A year or range (such as, `2025` or `2025:2030`). Leave unset to match all years |
-| **Location (timezone)** | The timezone to evaluate the interval in (such as, `Europe/London`) |
+| **Timezone** | The timezone to evaluate the interval in (such as, `Europe/London`) |
 
 Click **+ Add interval block** to add another block to the same interval.
 
