@@ -1,6 +1,6 @@
 # Slack Integration
 
-Connect OpsPilot to Slack to receive alert notifications and incident updates directly in your Slack channels.
+Connect OpsPilot to Slack to receive alert notifications and incident updates directly in your Slack channels. You can also talk to OpsPilot from Slack - mention it in a channel, or DM it directly.
 
 Navigate to **Integrations** from the left-hand sidebar, then select **Slack**.
 
@@ -9,9 +9,11 @@ Navigate to **Integrations** from the left-hand sidebar, then select **Slack**.
 ## Setup
 
 1. In OpsPilot, go to **Integrations** and click **Slack**.
-2. Click **Connect** and follow the OAuth flow to authorise OpsPilot in your Slack workspace.
-3. Select the default channel you want notifications sent to.
-4. Click **Save**.
+2. Click **Add to Slack**. A Slack window opens asking you to sign in to your workspace.
+3. Enter your workspace's Slack URL (for example, `your-workspace.slack.com`) and click **Continue**. If you don't know it, use **Find your workspaces**.
+4. Authorise OpsPilot in your Slack workspace.
+5. Select the default channel you want notifications sent to.
+6. Click **Save**.
 
 ---
 
