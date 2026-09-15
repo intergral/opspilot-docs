@@ -11,7 +11,7 @@ Navigate to **Alerting > Notifications** and open the **Contact Points** tab to 
 
 ![Screenshot](/Data-insights/Features/images/Alerting/notification-contact.png)
 
-The list shows all configured contact points with three columns:
+The list shows all configured contact points with four columns:
 
 | Column | Description |
 |---|---|

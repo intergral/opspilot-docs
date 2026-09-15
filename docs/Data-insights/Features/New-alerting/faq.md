@@ -46,6 +46,14 @@ Add a `channel` label to your alert rule (e.g. `channel=slack`) and set up a mat
 
 The alert will still fire and change state, but no notifications will be sent. The **Notifies** field in the expanded rule view will show "No contact points configured".
 
+## How do I find which alert rules use a contact point?
+
+Navigate to **Alerting > Notifications** and open the **Contact Points** tab. The **Usage** column shows how many alert rules reference each contact point (for example, **2 rules**), or **Not used**. Click the count to see the rules themselves.
+
+## Why can't I delete a contact point?
+
+A contact point cannot be deleted while anything still references it. Check the **Usage** column in the [Contact points](contact-points.md) list to see which alert rules use it, then remove the contact point from those rules and from any [notification policy](notification-policy.md) routes that reference it. Once the **Usage** column shows **Not used**, the delete (bin) action will succeed.
+
 ## How many alert rules can I have?
 
 | Plan | Maximum rules |
