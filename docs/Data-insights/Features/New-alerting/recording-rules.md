@@ -10,6 +10,8 @@ Navigate to **Alerting > Recording Rules** to open it.
 
 Switch between **Table** and **Tree** views using the toolbar buttons. In **Tree** view, rules are grouped by namespace and evaluation group; use **Expand all** and **Collapse all** to open or fold every group at once.
 
+The right of the toolbar shows how many rules are listed (such as, *2 of 2*), alongside a refresh button and the auto-refresh interval (such as, **30s**).
+
 The table has the following columns:
 
 | Column | Description |

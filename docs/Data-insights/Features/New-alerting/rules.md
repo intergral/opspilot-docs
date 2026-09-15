@@ -30,6 +30,8 @@ Switch between **Table** and **Tree** view using the buttons in the toolbar:
 
 Use **Collapse all** to fold all groups at once in Tree view.
 
+The right of the toolbar shows how many rules are listed (such as, *5 of 5*), alongside a refresh button and the auto-refresh interval (such as, **30s**).
+
 The table has the following columns:
 
 | Column | Description |
