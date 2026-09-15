@@ -60,7 +60,7 @@ Below the header, the detail view is made up of these panels:
 
 <div class="grid cards" markdown>
 
--   :material-robot-outline: **OpsPilot MCP** - Chat
+-   :material-robot-outline: **[OpsPilot MCP](Integrations/Chat/opspilot-mcp.md)** - Chat
 
     ---
 

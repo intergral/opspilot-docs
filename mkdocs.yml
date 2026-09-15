@@ -85,6 +85,7 @@ nav:
   - INTEGRATIONS:
      - Overview: Data-insights/Features/integrations.md
      - Chat:
+        - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
         - Slack: Data-insights/Features/Integrations/Chat/slack.md
      - SDKs:
         - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
