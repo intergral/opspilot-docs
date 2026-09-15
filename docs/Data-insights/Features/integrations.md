@@ -2,7 +2,7 @@
 
 ![Integrations hub](../../images/integrations.png)
 
-The **Integrations** page lets you connect external tools and services to your OpsPilot workspace.
+Browse the integration catalog and what you've installed. The **Integrations** page lets you connect external tools and services to your OpsPilot workspace.
 
 Navigate to **Integrations** from the left-hand sidebar to browse and manage all available integrations.
 
@@ -10,21 +10,27 @@ Navigate to **Integrations** from the left-hand sidebar to browse and manage all
 
 ## Browsing integrations
 
-Integrations are grouped into categories. Use the filter tabs at the top of the page to narrow the list:
+Integrations are grouped into categories, each showing how many it holds. Use the filter tabs at the top of the page to narrow the list:
 
 | Tab | Description |
 |---|---|
-| **All** | Shows every available integration |
+| **All** | Shows every integration |
 | **Chat** | Messaging and notification tools |
 | **Cloud** | Cloud platform providers |
 | **Data** | Databases and data streaming services |
 | **Infrastructure** | Infrastructure and orchestration tools |
 | **Networking** | Service mesh and proxy tools |
 | **Observability** | Third-party monitoring and observability platforms |
-| **SDKs** | Language SDKs and FusionReactor agent |
+| **SDKs** | Language SDKs |
 | **Ticketing** | Issue tracking and project management tools |
 
-You can also use the **Search integrations** bar to find a specific integration by name.
+Use the **Search integrations** bar to find one by name, and the status dropdown beside it to filter by whether an integration is installed. The **Legacy** toggle in the top right switches to the previous catalog view.
+
+Each card shows the integration's name, its category, a short description, and its current status - **Coming soon** for one not yet released, or **Installed** for one already connected.
+
+## Installing an integration
+
+Click **Install** on any available integration's card to connect it. Once connected, the card shows an **Installed** badge and the button changes to **Uninstall**. Slack has its own **Add to Slack** button, which starts the Slack authorisation flow.
 
 ---
 
@@ -32,23 +38,67 @@ You can also use the **Search integrations** bar to find a specific integration 
 
 <div class="grid cards" markdown>
 
--   :material-chat-outline: **[Slack](Integrations/Chat/slack.md)**
+-   :material-robot-outline: **OpsPilot MCP** - Chat
 
     ---
 
-    Receive alert notifications and incident updates directly in your Slack channels.
+    Let AI assistants query OpsPilot over the Model Context Protocol.
 
--   :material-ticket-outline: **[Jira](Integrations/Ticketing/jira.md)**
-
-    ---
-
-    Automatically create issues from alerts and incidents.
-
--   :material-code-braces: **[FusionReactor](Integrations/SDKs/fusionreactor.md)**
+-   :material-chat-outline: **[Slack](Integrations/Chat/slack.md)** - Chat
 
     ---
 
-    Deep visibility into ColdFusion, Java, and Lucee applications - metrics, traces, logs, and request data with no code changes. **Installed**
+    Talk to OpsPilot from Slack - mention it in a channel or DM it directly.
+
+-   :material-cloud-outline: **AWS** - Cloud
+
+    ---
+
+    Connect AWS for EC2, RDS, and other CloudWatch-held metrics.
+
+-   :material-code-tags: **OpenTrace** - Data
+
+    ---
+
+    Connect OpenTrace so OpsPilot can read your code alongside your telemetry.
+
+</div>
+
+### SDKs
+
+Each SDK instruments your applications with OpenTelemetry for metrics, traces, and logs.
+
+<div class="grid cards" markdown>
+
+-   :material-language-go: **Go**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Go/)
+
+-   :material-dot-net: **.NET**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/DotNet/)
+
+-   :material-language-java: **Java**
+
+    ---
+
+    Instruments Java and JVM applications. [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Java/)
+
+-   :material-nodejs: **Node.js**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/node/)
+
+-   :material-language-python: **Python**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/)
 
 </div>
 
@@ -68,13 +118,13 @@ You can also use the **Search integrations** bar to find a specific integration 
 
     ---
 
-    Linear · Notion
+    Jira · Linear · Notion
 
 -   :material-cloud-outline: **Cloud**
 
     ---
 
-    AWS · Azure · Google Cloud
+    Azure · Google Cloud
 
 -   :material-database-outline: **Data**
 
@@ -86,7 +136,7 @@ You can also use the **Search integrations** bar to find a specific integration 
 
     ---
 
-    ArgoCD · Host Metrics · KEDA · Kubernetes · Terraform
+    ArgoCD · Host Metrics · KEDA · Kubernetes · Terraform · Unix · Windows
 
 -   :material-lan: **Networking**
 
@@ -100,37 +150,18 @@ You can also use the **Search integrations** bar to find a specific integration 
 
     AppDynamics · Dash0 · Datadog · Grafana · Loki · Mimir · New Relic · Sentry · Tempo
 
-</div>
-
-### SDKs
-
-OpenTelemetry instrumentation for each language is documented today; the in-app integration is coming soon.
-
-<div class="grid cards" markdown>
-
--   :material-code-braces: **Languages**
+-   :material-code-braces: **SDKs**
 
     ---
 
-    [.NET](/Monitor-your-data/OpenTelemetry/Instrumentation/DotNet/) ·
-    [C++](/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/) ·
-    [Erlang](/Monitor-your-data/OpenTelemetry/Instrumentation/Erlang/) ·
-    [Go](/Monitor-your-data/OpenTelemetry/Instrumentation/Go/) ·
-    [Java](/Monitor-your-data/OpenTelemetry/Instrumentation/Java/) ·
-    [Node.js](/Monitor-your-data/OpenTelemetry/Instrumentation/node/) ·
-    [PHP](/Monitor-your-data/OpenTelemetry/Instrumentation/PHP/) ·
-    [Python](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) ·
-    [Ruby](/Monitor-your-data/OpenTelemetry/Instrumentation/Ruby/) ·
-    [Rust](/Monitor-your-data/OpenTelemetry/Instrumentation/Rust/) ·
-    [Swift](/Monitor-your-data/OpenTelemetry/Instrumentation/Swift/)
-
--   :material-web: **Browser**
-
-    ---
-
-    Browser instrumentation is coming soon.
+    Browser · C++ · Erlang · PHP · Ruby · Rust · Swift
 
 </div>
+
+---
+
+!!! info "FusionReactor"
+    The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is installed separately rather than from this catalog. It gives deep visibility into ColdFusion, Java, and Lucee applications with no code changes.
 
 ---
 
