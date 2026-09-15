@@ -128,7 +128,7 @@
 .md-typeset .grid.cards>ol>li,
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
-  border: 1px solid #8b8686; /* Darker border */
+  border: 1px solid var(--card-border);
   transition: border .75s,box-shadow .75s
 }
   
@@ -136,18 +136,24 @@
  /* Smaller grid cards custom colours */
  :root {
     --card-bg-light: white;
-    --card-bg-dark:  white;
+    --card-bg-dark:  rgba(255, 255, 255, .04);
+    --card-border-light: #d5d2d2;
+    --card-border-dark:  rgba(255, 255, 255, .14);
     --card-border-focus-light: black;
-    --card-border-focus-dark: #212441;
+    --card-border-focus-dark: #FF6600;
     
   }
   
   [data-md-color-scheme="default"] {
     --card-bg: var(--card-bg-light);
+    --card-border: var(--card-border-light);
+    --card-border-focus: var(--card-border-focus-light);
   }
   
   [data-md-color-scheme="slate"] {
     --card-bg: var(--card-bg-dark);
+    --card-border: var(--card-border-dark);
+    --card-border-focus: var(--card-border-focus-dark);
   }
 
   
