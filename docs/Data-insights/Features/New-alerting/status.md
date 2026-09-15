@@ -43,9 +43,11 @@ Each rule shows:
 - Its current **state** and how long it has been in it - for example, *Firing for 9m*
 - An **Active** toggle to enable or disable the rule - it reads **Paused** when the rule is off
 - A **mute** icon to silence its notifications
-- An **eye** icon (**View rule**) to open the rule's [detail view](rules.md#rule-detail-view)
+- An **eye** icon (**View rule**) to open the rule's [detail view](rules.md#rule-detail-view) - clicking the rule itself opens the same view
 
 When a group has more rules than fit, click **Show all N rules** to expand it, and **Show less** to collapse it again.
+
+Shift-click rules to select more than one at a time, then silence the whole selection in one go. See [Silences](silences.md).
 
 The **List** view stacks the groups and shows their rule cards inline, while the **Grid** view lays the groups out as compact cards in a multi-column grid - each summarising its state at a glance, and expandable to reveal the rules inside.
 

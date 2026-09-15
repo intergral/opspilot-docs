@@ -67,7 +67,7 @@ The **Dashboard** and **Runbook** buttons (top right of the expanded view) open 
 
 ![Screenshot](/Data-insights/Features/images/Alerting/high-cpu-rule.png)
 
-From the [Status](status.md) page, click the **eye** icon (**View rule**) on any rule to open the full rule detail view. The header shows the rule name and current state, with these actions in the top right:
+From the [Status](status.md) page, click a rule to open the full rule detail view. The header shows the rule name and current state, with these actions in the top right:
 
 | Action | Description |
 |---|---|
