@@ -82,7 +82,7 @@ Below the header, the detail view is made up of these panels:
 
     Connect AWS for EC2, RDS, and other CloudWatch-held metrics.
 
--   :material-code-tags: **OpenTrace** - Data
+-   :material-code-tags: **[OpenTrace](Integrations/Data/opentrace.md)** - Data
 
     ---
 
