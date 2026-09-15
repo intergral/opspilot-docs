@@ -11,9 +11,10 @@ Navigate to **Integrations** from the left-hand sidebar, then select **Slack**.
 1. In OpsPilot, go to **Integrations** and click **Slack**.
 2. Click **Add to Slack**. A Slack window opens asking you to sign in to your workspace.
 3. Enter your workspace's Slack URL (for example, `your-workspace.slack.com`) and click **Continue**. If you don't know it, use **Find your workspaces**.
-4. Authorise OpsPilot in your Slack workspace.
-5. Select the default channel you want notifications sent to.
-6. Click **Save**.
+4. Sign in to the workspace. The method depends on how your workspace is configured - many require a Google account or another single sign-on provider on your organisation's domain.
+5. Authorise OpsPilot in your Slack workspace.
+6. Select the default channel you want notifications sent to.
+7. Click **Save**.
 
 ---
 
