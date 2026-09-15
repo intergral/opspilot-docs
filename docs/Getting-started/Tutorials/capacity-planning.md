@@ -27,7 +27,7 @@
 
 3.  **Plan for future capacity needs:**
     * Use **historical data trends** from FusionReactor to forecast future resource requirements.
-    * Set up **[Anomaly Detection](/Data-insights/Features/Anomaly-Detection/ADuserguide/) alerts** (with the Pro AI plan) to get early warnings of potential resource strain.
+    * Set up **[Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/) alerts** (with the Pro AI plan) to get early warnings of potential resource strain.
     * Implement **scaling strategies** proactively to handle future growth.
     * Ensure your application can handle increased demand without performance degradation.
 

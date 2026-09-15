@@ -129,7 +129,7 @@ Click **Alerts ->** to go to the full [Alerts](/Data-insights/Features/Alerting/
 
 The **Anomaly Detection** panel shows a live count of anomaly alerts by state, mirroring the same Firing / Pending / Recovering / Normal breakdown.
 
-Click **Anomaly Detection ->** to go to the full [Anomaly Detection](/Data-insights/Features/Anomaly-Detection/ADoverview/) view.
+Click **Anomaly Detection ->** to go to the full [Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/) view.
 
 ### Usage
 
