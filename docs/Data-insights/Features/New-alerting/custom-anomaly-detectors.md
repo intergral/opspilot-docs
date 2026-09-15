@@ -8,7 +8,7 @@ Navigate to **Alerting > Custom Anomaly Detectors** to open the page.
 
 ## The detectors list
 
-Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Normal**, **No Data**, and **Paused**. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. The **OpsPilot** dropdown offers AI shortcuts. Until you add one, the page shows *"No custom detectors yet."*
+Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Normal**, **No Data**, and **Paused**. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. To the right sit a refresh button and the auto-refresh interval (such as, **30s**). The **OpsPilot** dropdown offers AI shortcuts. Until you add one, the page shows *"No custom detectors yet."*
 
 Each detector row shows its **State**, **Name**, **Threshold**, and **Last evaluation**, plus actions: a notification count, an **Active** toggle, **Open dashboard**, **Tune detector** (edit), and **Delete**.
 
@@ -44,4 +44,4 @@ Toggle **investigate on fire** to have Coworker automatically investigate when t
 ---
 
 !!! info "Learn more"
-    [Anomaly Detection overview](../Anomaly-Detection/ADoverview.md)
+    [Service Anomaly Detectors](service-anomaly-detectors.md) - the detectors created automatically for each instrumented service

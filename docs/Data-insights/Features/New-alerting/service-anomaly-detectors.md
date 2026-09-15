@@ -60,4 +60,4 @@ Click **Save** on a detector to apply its changes.
 ---
 
 !!! info "Learn more"
-    [Anomaly Detection overview](../Anomaly-Detection/ADoverview.md)
+    [Custom Anomaly Detectors](custom-anomaly-detectors.md) - define detectors against your own PromQL queries
