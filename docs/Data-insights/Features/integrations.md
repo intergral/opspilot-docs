@@ -40,9 +40,19 @@ Some integrations need more than a click - credentials, endpoints, or other conf
 
 Installing an integration does more than connect a data source. OpsPilot automatically loads a set of default **dashboards** and **alerts** onto your account for that integration, so you have useful monitoring in place from the start with nothing to build by hand.
 
-### Using an integration
+### The integration detail view
 
-Click into any integration to open its detail view. That's where you'll find how to use it - its configuration, the data it brings in, and what it sets up for you.
+Click any integration to open its detail view - this is where you'll find how to use it. The header shows the integration's name, its **category**, its **version**, and the **Install** button, with the same short description that appears on its catalog card.
+
+Below the header, the detail view is made up of these panels:
+
+| Panel | Description |
+|---|---|
+| **Overview** | What the integration does and why you'd use it |
+| **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default** |
+| **Capabilities** | What the integration declares it can do. Some declare none |
+| **Versions** | Each released version, what upgrading from the previous version involves, and a summary of what changed. The current version is marked **latest** |
+| **Changelog** | The detail behind each version's changes |
 
 ---
 
