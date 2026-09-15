@@ -4,6 +4,8 @@
 
 Browse the integration catalog and what you've installed. The **Integrations** page lets you connect external tools and services to your OpsPilot workspace.
 
+Integrations bring data into OpsPilot from wherever it lives - chat tools, cloud providers, language SDKs, Kubernetes, databases, and more - so you can work with all of it in one place.
+
 Navigate to **Integrations** from the left-hand sidebar to browse and manage all available integrations.
 
 ---
@@ -30,7 +32,17 @@ Each card shows the integration's name, its category, a short description, and i
 
 ## Installing an integration
 
-Click **Install** on any available integration's card to connect it. Once connected, the card shows an **Installed** badge and the button changes to **Uninstall**. Slack has its own **Add to Slack** button, which starts the Slack authorisation flow.
+For most integrations, onboarding is a single click: find it in the catalog and click **Install**. Once connected, the card shows an **Installed** badge and the button changes to **Uninstall**.
+
+Some integrations need more than a click - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. Slack, for example, has its own **Add to Slack** button, which starts the Slack authorisation flow.
+
+### What you get
+
+Installing an integration does more than connect a data source. OpsPilot automatically loads a set of default **dashboards** and **alerts** onto your account for that integration, so you have useful monitoring in place from the start with nothing to build by hand.
+
+### Using an integration
+
+Click into any integration to open its detail view. That's where you'll find how to use it - its configuration, the data it brings in, and what it sets up for you.
 
 ---
 
@@ -165,5 +177,5 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
 
 ---
 
-!!! question "Need more help?"
-    Contact support in the chat bubble and let us know how we can assist.
+!!! question "Don't see the integration you need?"
+    If the integration you're looking for isn't in the list, contact support in the chat bubble and let us know which one you need.
