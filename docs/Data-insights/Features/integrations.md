@@ -1,12 +1,44 @@
 # Integrations Hub
 
-![Integrations hub](../../images/integrations.png)
+=== "Integrations Hub"
 
-Browse the integration catalog and what you've installed. The **Integrations** page lets you connect external tools and services to your OpsPilot workspace.
+    ![Integrations hub](../../images/integrations.png)
 
-Integrations bring data into OpsPilot from wherever it lives - chat tools, cloud providers, language SDKs, Kubernetes, databases, and more - so you can work with all of it in one place.
+=== "Chat"
 
-Navigate to **Integrations** from the left-hand sidebar to browse and manage all available integrations.
+    ![Chat integrations](Integrations/chat-view.png)
+
+=== "Cloud"
+
+    ![Cloud integrations](Integrations/cloud-view.png)
+
+=== "Data"
+
+    ![Data integrations](Integrations/data-view.png)
+
+=== "Infrastructure"
+
+    ![Infrastructure integrations](Integrations/infrastructure-view.png)
+
+=== "Networking"
+
+    ![Networking integrations](Integrations/networking-view.png)
+
+=== "Observability"
+
+    ![Observability integrations](Integrations/observability-view.png)
+
+=== "SDKs"
+
+    ![SDK integrations](Integrations/SDKs-view.png)
+
+=== "Ticketing"
+
+    ![Ticketing integrations](Integrations/ticketing-view.png)
+
+Integrations bring your data into OpsPilot from wherever it lives - chat tools, cloud providers, language SDKs, Kubernetes, databases, and more - so you can work with all of it in one place. Most install in a single click and arrive with dashboards and alerts already set up for you.
+
+Navigate to **Integrations** from the left-hand sidebar to browse the integration catalog and manage what you've installed.
 
 ---
 
@@ -26,17 +58,23 @@ Integrations are grouped into categories, each showing how many it holds. Use th
 | **SDKs** | Language SDKs |
 | **Ticketing** | Issue tracking and project management tools |
 
-Use the **Search integrations** bar to find one by name, and the status dropdown beside it to filter by whether an integration is installed. The **Legacy** toggle in the top right switches to the legacy catalog, which holds earlier integrations that are still available and still work - including [Jira](Integrations/Ticketing/jira.md).
+Use the **Search integrations** bar to find one by name, and the status dropdown beside it to filter by whether an integration is installed. The **Legacy** toggle, at the right-hand end of the category tabs, switches to the legacy integrations - earlier ones that are still available and still work. The legacy view lists those integrations on their own, without the category tabs, search, or state counters.
 
 Each card shows the integration's name, its category, a short description, and its current status - **Coming soon** for one not yet released, or **Installed** for one already connected.
 
 ## Installing an integration
 
-For most integrations, onboarding is a single click. Click **Install** on an integration's card or from its detail view, and a dialog opens confirming which account the install will serve. Choose a **Permission tier** - the dialog shows what that tier requires - then click **Install** to confirm, or **Cancel** to back out.
+For most integrations, onboarding is a single click. Click **Install** on an integration's card or from its detail view to open the install dialog, which shows:
 
-Once connected, the card shows an **Installed** badge and the button changes to **Uninstall**.
+- The **Permission tier** to install with, and what that tier requires
+- Whether any configuration is needed - *This integration needs no configuration* means there is nothing else to set up
+- Which account the install will serve, where that applies
 
-Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. Slack, for example, has its own **Add to Slack** button, which starts the Slack authorisation flow.
+Click **Install** to confirm, or **Cancel** to back out. Confirming takes you straight to [Manage integration](#managing-an-installed-integration), where you can check the installation's health and change its permission tier.
+
+Once connected, the integration's card in the integration catalog shows an **Installed** badge and its button changes to **Uninstall**. On the integration's own detail view, the **Install** button becomes **Installed**.
+
+Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. [Slack](Integrations/Chat/slack.md) has its own **Add to Slack** button, which starts the Slack authorisation flow, and [AWS](Integrations/Cloud/aws.md) needs an IAM role or key with the right CloudWatch permissions.
 
 ### What you get
 
@@ -44,19 +82,55 @@ Installing an integration does more than connect a data source. OpsPilot automat
 
 The **Capabilities** panel on an integration's detail view names what it provisions. AWS, for example, declares **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none.
 
+What arrives, and whether it is active straight away, varies by integration. The SDK integrations provision a runtime dashboard for each upstream metric-set version, plus four runtime alert rules - Java installs 26 dashboards, .NET eight, and Go six. Those alert rules ship **paused**, so you opt in per rule rather than being alerted on everything from day one, and once you enable a rule that choice persists across upgrades. Every threshold is either scale-free or derived from the runtime itself, so the rules apply unchanged whatever the size of your service.
+
+Each SDK's rules sit in their own alert group, named after the language - `java_runtime_alerts`, for example. Check the **Versions** tab on an integration's detail view for what its current version installs.
+
+Provisioned dashboards are tagged `integration` along with a tag for the integration itself, so you can find everything one of them added. Where an integration needs a shared resource such as a metrics data source, it adopts the account's existing one rather than creating its own - uninstalling the integration leaves that source in place.
+
 ### The integration detail view
 
-Click any integration to open its detail view - this is where you'll find how to use it. The header shows the integration's name, its **category**, its **version**, and the **Install** button, with the same short description that appears on its catalog card.
+Click any integration to open its detail view - this is where you'll find how to use it. The header shows the integration's name, its **category**, its **version**, and the **Install** button, with the same short description that appears on its card.
 
-Below the header, the detail view is made up of these panels:
+Below the header, the detail view is made up of these panels. Not every integration shows all of them - some have no **Overview**, for example:
 
 | Panel | Description |
 |---|---|
 | **Overview** | What the integration does and why you'd use it |
 | **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default**. Tiers vary by integration - AWS offers **Read-only** and **Read + Write**, each needing different AWS IAM permissions, while OpsPilot MCP offers **Read-only** and **Read + Act** |
 | **Capabilities** | Badges naming what the integration provisions, such as **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none |
-| **Versions** | Each released version, what upgrading from the previous one involves (**Initial version**, or **Manual** where the upgrade takes action), and a summary of what changed. The current version is marked **latest** |
-| **Changelog** | The detail behind each version's changes, with its release date |
+
+Below those panels sit three tabs:
+
+| Tab | Description |
+|---|---|
+| **Installation guide** | Any setup needed beyond installing the integration. For the SDK integrations this is a full walkthrough of instrumenting your application - the Go guide covers adding the `opentelemetry-go-contrib` runtime instrumentation and registering it at startup, then points you to the dashboard to open. Where nothing further is needed, the tab reads *This integration needs no setup beyond installing it* |
+| **Versions** | Each released version, what upgrading from the previous one involves (**Initial version**, or **Manual** where the upgrade takes action), and what changed in each. The current version is marked **latest** |
+| **Licenses** | Licensing information for the integration and what it bundles |
+
+### Your installation
+
+Once you have installed an integration, a **Your installation** panel appears at the top of its detail view, above **Permission tiers**, listing what you have installed:
+
+| Column | Description |
+|---|---|
+| **Name** | The name of your installation (such as, `dotnet`) |
+| **Version** | The version you have installed |
+| **Tier** | The active permission tier (such as, `read`) |
+| **Health** | The installation's current health, such as **Healthy** |
+
+Click the row to open **Manage integration**, or use the **...** menu at its right-hand end to choose **Manage**, which opens the same view, or **Uninstall**.
+
+### Managing an installed integration
+
+**Manage integration** opens as soon as you confirm an install, and you can return to it later from the **Your installation** panel. It shows the installation's name and health, with the integration it was installed from, its category, and the installed version beneath, and an **Uninstall** button in the top right.
+
+The **Permission tier** panel shows the **Active tier**, which you can change after installing:
+
+- **Narrowing** the tier, granting the integration less access, applies straight away
+- **Widening** it needs fresh credentials, so it means reinstalling the integration
+
+The **Capabilities** panel shows what the integration provisions, the same as on its detail view.
 
 ---
 
@@ -76,7 +150,7 @@ Below the header, the detail view is made up of these panels:
 
     Talk to OpsPilot from Slack - mention it in a channel or DM it directly.
 
--   :material-cloud-outline: **AWS** - Cloud
+-   :material-cloud-outline: **[AWS](Integrations/Cloud/aws.md)** - Cloud
 
     ---
 
@@ -92,11 +166,11 @@ Below the header, the detail view is made up of these panels:
 
 ### SDKs
 
-Each SDK instruments your applications with OpenTelemetry for metrics, traces, and logs.
+Each SDK instruments your applications with OpenTelemetry for metrics, traces, and logs, and provisions runtime dashboards and alert rules for them. See [SDK Integrations](Integrations/SDKs/sdk-integrations.md) for what each one installs.
 
 <div class="grid cards" markdown>
 
--   :material-language-go: **Go**
+-   :material-code-braces: **Go**
 
     ---
 
@@ -108,7 +182,7 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
 
     [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/DotNet/)
 
--   :material-language-java: **Java**
+-   :material-code-braces: **Java**
 
     ---
 
@@ -143,60 +217,40 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
 ## Coming soon
 
-<div class="grid cards" markdown>
-
--   :material-chat-outline: **Chat**
-
-    ---
+=== "Chat"
 
     Discord · MS Teams
 
--   :material-ticket-outline: **Ticketing**
-
-    ---
-
-    Jira · Linear · Notion
-
--   :material-cloud-outline: **Cloud**
-
-    ---
+=== "Cloud"
 
     Azure · Google Cloud
 
--   :material-database-outline: **Data**
-
-    ---
+=== "Data"
 
     Altinity ClickHouse Operator · Kafka · MongoDB · MySQL · PostgreSQL · RabbitMQ · Redis · Strimzi Kafka · TigerData
 
--   :material-server-network: **Infrastructure**
-
-    ---
+=== "Infrastructure"
 
     ArgoCD · Host Metrics · KEDA · Kubernetes · Terraform · Unix · Windows
 
--   :material-lan: **Networking**
-
-    ---
+=== "Networking"
 
     Cilium · Istio · Linkerd · NGINX · Traefik
 
--   :material-chart-line: **Observability**
-
-    ---
+=== "Observability"
 
     AppDynamics · Dash0 · Datadog · Grafana · Loki · Mimir · New Relic · Sentry · Tempo
 
--   :material-code-braces: **SDKs**
-
-    ---
+=== "SDKs"
 
     Browser · C++ · Erlang · PHP · Ruby · Rust · Swift
 
-</div>
+=== "Ticketing"
+
+    Jira · Linear · Notion
 
 !!! note "Jira"
-    Jira is listed as **Coming soon** because the new integration has not shipped yet. A [legacy Jira integration](Integrations/Ticketing/jira.md) is available today - switch on **Legacy** in the top right of the catalog to find it.
+    Jira is listed as **Coming soon** because the new integration has not shipped yet. A [legacy Jira integration](Integrations/Ticketing/jira.md) is available today - switch on **Legacy**, at the right-hand end of the category tabs, to find it.
 
 ---
 
