@@ -40,6 +40,9 @@ Use **Search contact points** to find one by name. Use the **type filter** dropd
 
 ## Adding a contact point
 
+!!! tip "You can also add one while creating a rule"
+    Contact points are not only made here. In the rule editor, **Then notify** lets you search your existing contact points, or click **Create new contact point** to make one without leaving the rule. See [Rules](rules.md).
+
 1. Click **+ New contact point** to open the integration picker
 2. Select an integration type from the grid. Use the category tabs to filter:
 

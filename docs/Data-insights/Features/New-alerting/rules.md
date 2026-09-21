@@ -197,7 +197,7 @@ Enter a descriptive, unique **Rule name**. It appears in notifications, and auto
 
 #### Then notify
 
-Under **Then notify**, click **+ Add contact point** to choose where notifications are sent.
+Under **Then notify**, click **+ Add contact point** to choose where notifications are sent. Search your existing contact points by name, or click **Create new contact point** to make one without leaving the rule - see [Contact Points](contact-points.md) for the integration types and their fields.
 
 #### Labels
 
