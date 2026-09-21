@@ -4,7 +4,7 @@ Before following these examples, make sure you have:
 
 - At least one **folder** created for your alert rules.
 - At least one **evaluation group** configured (or create one as part of the steps below).
-- At least one **contact point** configured. See [Contact Points](Alerting/Contact-points.md).
+- At least one **contact point** configured. See [Contact Points](New-alerting/contact-points.md).
 
 ### Routing your notifications
 
@@ -13,7 +13,7 @@ There are two ways to route notifications when creating an alert rule:
 | Approach | When to use | Setup required |
 | --- | --- | --- |
 | **Direct contact point** | You want all notifications from this rule to go to one specific destination. | No extra setup - select the contact point in the rule editor. |
-| **Label-based routing** | You want flexible routing through notification policies (such as, routing by severity or team). | Requires **Advanced Alerting** to be enabled and notification policies configured. See [Notification Policies](Alerting/Notifications.md). |
+| **Label-based routing** | You want flexible routing through notification policies (such as, routing by severity or team). | Requires **Advanced Alerting** to be enabled and notification policies configured. See [Notification Policy](New-alerting/notification-policy.md). |
 
 Each example below covers both options in the notifications step.
 

@@ -197,7 +197,7 @@ Enter a descriptive, unique **Rule name**. It appears in notifications, and auto
 
 #### Then notify
 
-Under **Then notify**, click **+ Add contact point** to choose where notifications are sent.
+Under **Then notify**, click **+ Add contact point** to choose where notifications are sent. Search your existing contact points by name, or click **Create new contact point** to make one without leaving the rule - see [Contact Points](contact-points.md) for the integration types and their fields.
 
 #### Labels
 
@@ -221,7 +221,9 @@ Expand **Annotations** to describe the alert:
 | **Description** | What the alert means and when it fires |
 | **Runbook URL** | A link to your runbook or incident response guide |
 
-Click **+ Add annotation** to add more annotation fields. Dynamic values can be included using Go template syntax (such as, `{{ $values.A.Value }}`).
+Click **+ Add annotation** to add more annotation fields.
+
+Annotations and labels support Go template strings, so an alert can report the value that fired it, the labels on the series, and the threshold it crossed - and word itself differently depending on any of them. See [Annotation Templates](annotation-templates.md).
 
 #### Save
 

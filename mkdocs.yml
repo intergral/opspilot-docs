@@ -117,7 +117,9 @@ nav:
         - Shipping data: Monitor-your-data/Kubernetes-monitoring/Shipping.md
      - Alerting:
         - Status: Data-insights/Features/New-alerting/status.md
-        - Rules: Data-insights/Features/New-alerting/rules.md
+        - Rules:
+           - Overview: Data-insights/Features/New-alerting/rules.md
+           - Annotation Templates: Data-insights/Features/New-alerting/annotation-templates.md
         - Recording Rules: Data-insights/Features/New-alerting/recording-rules.md
         - Service Anomaly Detectors: Data-insights/Features/New-alerting/service-anomaly-detectors.md
         - Custom Anomaly Detectors: Data-insights/Features/New-alerting/custom-anomaly-detectors.md
