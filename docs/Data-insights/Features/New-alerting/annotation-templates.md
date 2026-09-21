@@ -101,7 +101,7 @@ Patterns worth adapting. Each assumes a query with the reference ID `query` - ch
 Disk on {{ $labels.instance }} is down to {{ humanize1024 $values.query.Value }}B free.
 ```
 
-*Disk on web-01 is down to 1.4Gi B free.*
+*Disk on web-01 is down to 1.4GiB free.*
 
 ### A ratio as a percentage
 
@@ -149,16 +149,24 @@ https://runbooks.internal/{{ $labels.service }}/high-latency
 
 ### Showing every value in the chain
 
-Useful while you are building a rule and want to see what each step produced.
+Useful while you are building a rule and want to see what each step produced. `$value` prints the labels and values of every instant query and expression in one go:
 
 ```go
-{{ range $ref, $v := $values }}{{ $ref }}={{ $v }} {{ end }}
+Debug: {{ $value }}
 ```
 
-*query=87.42 threshold=1*
+---
 
-!!! note
-    Each alert instance has its own `$labels` and `$values`, so a rule that produces several series sends a separate message per series. Ranging over `$values` lists the steps in the query chain, not the series.
+## Annotation templates and notification templates
+
+These are two different things, and they have different variables available:
+
+| | Written on | Variables |
+|---|---|---|
+| **Annotation templates** | An alert rule, in its annotations and labels | `$labels`, `$values`, `$value` - the labels and values of **this** alert instance |
+| **Notification templates** | A contact point, to shape the message it sends | `.Alerts`, `.CommonLabels`, and the fields of each alert - so one message can cover **several** alerts |
+
+A rule that produces several series creates a separate alert instance per series, each with its own `$labels` and `$values`. Iterating over a group of alerts belongs in a notification template, not here. See [Contact Points](contact-points.md#notification-templates) for those.
 
 ---
 
