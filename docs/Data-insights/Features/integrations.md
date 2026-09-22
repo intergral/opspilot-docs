@@ -72,7 +72,7 @@ For most integrations, onboarding is a single click. Click **Install** on an int
 
 Click **Install** to confirm, or **Cancel** to back out. Confirming takes you straight to [Manage integration](#managing-an-installed-integration), where you can check the installation's health and change its permission tier.
 
-Once connected, the integration's card in the integration catalog shows an **Installed** badge and its button changes to **Uninstall**. On the integration's own detail view, the **Install** button becomes **Installed**.
+Once connected, the integration's card in the integration catalog shows an **Installed** badge and its button changes to **Uninstall**. On the integration's own detail view, the **Install** button is replaced - by **Installed**, or by the actions that integration offers once it is in place, such as **Connect** and **Add instance**.
 
 Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. [Slack](Integrations/Chat/slack.md) has its own **Add to Slack** button, which starts the Slack authorisation flow, and [AWS](Integrations/Cloud/aws.md) needs an IAM role or key with the right CloudWatch permissions.
 
@@ -116,12 +116,14 @@ Once you have installed an integration, a **Your installation** panel appears at
 
 | Column | Description |
 |---|---|
-| **Name** | The name of your installation (such as, `dotnet`) |
+| **Name** | The name of your installation - the language for an SDK (such as, `dotnet`), or an identifier where the integration has no natural name |
 | **Version** | The version you have installed |
-| **Tier** | The active permission tier (such as, `read`) |
+| **Tier** | The active permission tier (such as, `read` or `act`) |
 | **Health** | The installation's current health, such as **Healthy** |
 
-Click the row to open **Manage integration**, or use the **...** menu at its right-hand end to choose **Manage**, which opens the same view, or **Uninstall**.
+Click the row to open **Manage integration**. Some installations also carry a **Manage** button, and the **...** menu at the right-hand end offers **Manage** and **Uninstall**.
+
+An integration that supports more than one installation shows **Add instance** in the header, so it can be installed again - [AWS](Integrations/Cloud/aws.md), for example, is installed once per region.
 
 ### Managing an installed integration
 
