@@ -29,10 +29,12 @@ prometheus.exporter.cadvisor "docker" {
 }
 
 prometheus.scrape "docker" {
-  targets         = prometheus.exporter.cadvisor.docker.targets
+  targets = prometheus.exporter.cadvisor.docker.targets
+
   job_name        = "docker"
   scrape_interval = "15s"
-  forward_to      = [prometheus.remote_write.opspilot.receiver]
+
+  forward_to = [prometheus.remote_write.opspilot.receiver]
 }
 
 prometheus.remote_write "opspilot" {
@@ -40,7 +42,7 @@ prometheus.remote_write "opspilot" {
     url = "https://api.fusionreactor.io/v1/metrics"
 
     headers = {
-      "Authorization" = sys.env("OPSPILOT_API_KEY"),
+      "authorization" = sys.env("OPSPILOT_API_KEY"),
     }
   }
 

@@ -28,7 +28,7 @@ The exporter needs read access to the cluster. In the Proxmox web UI:
 The token and permission can be created from a shell on any node once the user exists:
 
 ```bash
-pveum user token add prometheus@pve monitoring --privsep 0
+pveum user token add prometheus@pve monitoring -privsep 0
 pveum acl modify / --user prometheus@pve --role PVEAuditor
 ```
 
@@ -78,15 +78,15 @@ Add this to your `config.alloy`:
 ```river
 prometheus.scrape "proxmox_ve" {
   targets = [{
-    __address__      = "exporter-host:9221",
+    __address__      = "<exporter-host>:9221",
     __metrics_path__ = "/pve",
-    __param_module__ = "default",
-    __param_target__ = "<a-node-hostname>",
+    "__param_module" = "default",
+    "__param_target" = "<a-node-hostname>",
   }]
 
   job_name        = "proxmox-ve"
   scrape_interval = "30s"
-  scrape_timeout  = "20s"
+  scrape_timeout  = "10s"
 
   forward_to = [prometheus.remote_write.opspilot.receiver]
 }
@@ -96,7 +96,7 @@ prometheus.remote_write "opspilot" {
     url = "https://api.fusionreactor.io/v1/metrics"
 
     headers = {
-      "Authorization" = sys.env("OPSPILOT_API_KEY"),
+      "authorization" = sys.env("OPSPILOT_API_KEY"),
     }
   }
 
@@ -113,7 +113,7 @@ Two values matter more than they look:
 | `job_name = "proxmox-ve"` | Required. Every panel filters on it, because your metrics land in a store shared with everything else you send to OpsPilot. Alloy's default job label is the component's own id, which would change if you renamed the component, so it is set explicitly. Change it and the dashboards go blank |
 | `cluster` | Yours to choose, and it populates the dashboard's cluster selector. Give each cluster a distinct name if you run more than one - otherwise they produce identical series and the panels cannot tell them apart |
 
-`__param_target__` only needs one node. The exporter asks that node's API about the whole cluster, so you get every node, guest, and storage pool from a single scrape. If you run the exporter directly on a Proxmox node rather than a separate host, `__param_target__` can be dropped entirely - it defaults to localhost.
+`__param_target` only needs one node. The exporter asks that node's API about the whole cluster, so you get every node, guest, and storage pool from a single scrape. If you run the exporter directly on a Proxmox node rather than a separate host, `__param_target` can be dropped entirely - it defaults to localhost.
 
 Restart Alloy and check `http://<alloy-host>:12345` - the `prometheus.scrape` component should show the target as up.
 

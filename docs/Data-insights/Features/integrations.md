@@ -80,7 +80,7 @@ Some integrations need more than a permission tier - credentials, endpoints, or 
 
 Installing an integration does more than connect a data source. OpsPilot automatically loads a set of default **dashboards** and **alerts** onto your account for that integration, so you have useful monitoring in place with nothing to build by hand.
 
-How much you get for that click varies. Some integrations are self-contained - install one and it starts working. Others provision dashboards only, and depend on a collector you run and configure yourself, so their dashboards stay empty until you have set that up. [Docker](Integrations/Infrastructure/docker.md) and [Proxmox VE](Integrations/Infrastructure/proxmox-ve.md) are of the second kind: each needs Grafana Alloy collecting and forwarding the metrics before anything appears. Their **Installation guide** tab carries the steps.
+How much you get for that click varies. Some integrations are self-contained - install one and it starts working. Others provision dashboards only, and depend on a collector you run and configure yourself, so their dashboards stay empty until you have set that up. [Docker](Integrations/Infrastructure/docker.md), [Proxmox VE](Integrations/Infrastructure/proxmox-ve.md) and [Unix](Integrations/Infrastructure/unix.md) are of the second kind: each needs Grafana Alloy collecting and forwarding the metrics before anything appears. Their **Installation guide** tab carries the steps.
 
 The **Capabilities** panel on an integration's detail view names what it provisions. AWS, for example, declares **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none.
 
@@ -176,7 +176,7 @@ The **Capabilities** panel shows what the integration provisions, the same as on
 
     Monitor Proxmox VE clusters, nodes, guests, and storage pools.
 
--   :material-server-network: **Unix** - Infrastructure
+-   :material-server-network: **[Unix](Integrations/Infrastructure/unix.md)** - Infrastructure
 
     ---
 
