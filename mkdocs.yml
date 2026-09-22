@@ -91,6 +91,9 @@ nav:
         - AWS: Data-insights/Features/Integrations/Cloud/aws.md
      - Data:
         - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
+     - Infrastructure:
+        - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
+        - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
      - SDKs:
         - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
         - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
