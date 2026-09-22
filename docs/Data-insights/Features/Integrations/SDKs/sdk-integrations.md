@@ -8,15 +8,15 @@ Navigate to **Integrations** from the left-hand sidebar and open the **SDKs** ta
 
 ## What they provision
 
-Each SDK integration installs one runtime dashboard per upstream metric-set version, plus four runtime alert rules.
+Each SDK integration installs one runtime dashboard per upstream metric-set version, plus a handful of runtime alert rules.
 
 | SDK | Dashboards | Alert rules | Instrumentation |
 |---|---|---|---|
 | Java | 26 | 4 | [Java](/Monitor-your-data/OpenTelemetry/Instrumentation/Java/) |
 | .NET | 8 | 4 | [.NET](/Monitor-your-data/OpenTelemetry/Instrumentation/DotNet/) |
 | Go | 6 | 4 | [Go](/Monitor-your-data/OpenTelemetry/Instrumentation/Go/) |
-
-**Node.js** and **Python** are available too, each provisioning dashboards and alerts. Open the **Versions** tab on their detail view for what they install, and see [Node.js](/Monitor-your-data/OpenTelemetry/Instrumentation/node/) and [Python](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) for instrumentation.
+| Node.js | 9 | 3 | [Node.js](/Monitor-your-data/OpenTelemetry/Instrumentation/node/) |
+| Python | 5 | 5 | [Python](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) |
 
 The dashboard counts differ because each covers that language's full range of upstream metric-set versions. Java's 26 span thirteen Java-agent eras from v0.11.0 and thirteen semantic-convention sets from 1.9.0.
 
@@ -24,7 +24,7 @@ The dashboard counts differ because each covers that language's full range of up
 
 ## Alerts ship paused
 
-The four alert rules are installed **paused**. You opt in per rule rather than being alerted on everything from the moment you install, and once you enable a rule that choice persists across integration upgrades.
+The alert rules are installed **paused**. You opt in per rule rather than being alerted on everything from the moment you install, and once you enable a rule that choice persists across integration upgrades.
 
 Each SDK's rules sit in their own alert group, named after the language - `java_runtime_alerts` and `dotnet_runtime_alerts`, for example.
 

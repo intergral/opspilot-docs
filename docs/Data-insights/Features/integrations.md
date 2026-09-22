@@ -84,7 +84,7 @@ How much you get for that click varies. Some integrations are self-contained - i
 
 The **Capabilities** panel on an integration's detail view names what it provisions. AWS, for example, declares **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none.
 
-What arrives, and whether it is active straight away, varies by integration. The SDK integrations provision a runtime dashboard for each upstream metric-set version, plus four runtime alert rules - Java installs 26 dashboards, .NET eight, and Go six. Those alert rules ship **paused**, so you opt in per rule rather than being alerted on everything from day one, and once you enable a rule that choice persists across upgrades. Every threshold is either scale-free or derived from the runtime itself, so the rules apply unchanged whatever the size of your service.
+What arrives, and whether it is active straight away, varies by integration. The SDK integrations provision a runtime dashboard for each upstream metric-set version, plus a handful of runtime alert rules - Java installs 26 dashboards, Node.js nine, .NET eight, Go six, and Python five. Those alert rules ship **paused**, so you opt in per rule rather than being alerted on everything from day one, and once you enable a rule that choice persists across upgrades. Every threshold is either scale-free or derived from the runtime itself, so the rules apply unchanged whatever the size of your service.
 
 Each SDK's rules sit in their own alert group, named after the language - `java_runtime_alerts`, for example. Check the **Versions** tab on an integration's detail view for what its current version installs.
 
@@ -107,8 +107,8 @@ Below those panels sit three tabs:
 | Tab | Description |
 |---|---|
 | **Installation guide** | Any setup needed beyond installing the integration. For the SDK integrations this is a full walkthrough of instrumenting your application - the Go guide covers adding the `opentelemetry-go-contrib` runtime instrumentation and registering it at startup, then points you to the dashboard to open. Where nothing further is needed, the tab reads *This integration needs no setup beyond installing it* |
-| **Versions** | Each released version, what upgrading from the previous one involves (**Initial version**, or **Manual** where the upgrade takes action), and what changed in each. The current version is marked **latest** |
-| **Licenses** | Licensing information for the integration and what it bundles |
+| **Versions** | Each released version, what upgrading from the previous one involves (**Initial version**, **Automatic**, or **Manual** where the upgrade takes action), and what changed in each. The current version is marked **latest** |
+| **Licenses** | Any third-party work the integration includes, and the terms it carries. Where there is none, the tab reads *This integration includes no third-party work* |
 
 ### Your installation
 
