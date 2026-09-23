@@ -24,6 +24,8 @@ That means a question about a service that has started erroring can reach the ch
 
 You connect your own OpenTrace account, and OpsPilot uses it only in **your** conversations. Each person connects their own account - it isn't shared across the organisation.
 
+Connect yours from **Integrations** → **User MCPs**, where OpenTrace appears under **Data** with a **Connect** button. The agent uses that connection only in chat, never in scheduled work and never on anyone else's behalf.
+
 ---
 
 ## Permission tiers

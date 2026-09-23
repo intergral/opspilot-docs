@@ -62,6 +62,18 @@ Use the **Search integrations** bar to find one by name, and the status dropdown
 
 Each card shows the integration's name, its category, a short description, and its current status - **Coming soon** for one not yet released, or **Installed** for one already connected.
 
+## User MCPs
+
+**User MCPs**, in the toolbar beside the Legacy toggle, is a separate page: *connect your own accounts to MCP servers for chat*.
+
+These are personal rather than organisational. As the page itself puts it:
+
+> These connect your own account, not your organisation's. The agent uses them only in chat, never in scheduled work or on anyone else's behalf.
+
+So an integration can involve two steps - the organisation installs it from the catalog, and each person connects their own account here. [OpenTrace](Integrations/Data/opentrace.md) works that way.
+
+The page is laid out like the catalog: category tabs, a **Search MCP servers** bar, and a status filter. Each card carries a **Connect** button and a link to the provider.
+
 ## Installing an integration
 
 For most integrations, onboarding is a single click. Click **Install** on an integration's card or from its detail view to open the install dialog, which shows:
