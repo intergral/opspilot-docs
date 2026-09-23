@@ -64,15 +64,26 @@ Each card shows the integration's name, its category, a short description, and i
 
 ## User MCPs
 
-**User MCPs**, in the toolbar beside the Legacy toggle, is a separate page: *connect your own accounts to MCP servers for chat*.
-
-These are personal rather than organisational. As the page itself puts it:
+**User MCPs**, in the toolbar beside the Legacy toggle, is a separate page for MCP integrations. These work differently from the rest of the catalog. Rather than being set up once for the organisation, **each person connects their own account**, and OpsPilot uses that connection only when answering that person in chat:
 
 > These connect your own account, not your organisation's. The agent uses them only in chat, never in scheduled work or on anyone else's behalf.
 
-So an integration can involve two steps - the organisation installs it from the integration catalog, and each person connects their own account here. [OpenTrace](Integrations/Data/opentrace.md) works that way.
+That boundary is deliberate rather than a current limitation - MCP is not used for organisation-wide integrations.
 
-The page is laid out like the integration catalog: category tabs, a **Search MCP servers** bar, and a status filter. Each card carries a **Connect** button and a link to the provider.
+The page is laid out like the integration catalog, and lists every MCP integration whether you have connected it or not: category tabs, a **Search MCP servers** bar, and a status filter offering **connected**, **not connected**, and **needs attention** for a connection whose authorisation has gone stale and needs renewing. Each card carries a **Connect** button and a link to the provider.
+
+Disconnecting wipes that connection's data entirely.
+
+### User MCPs and OpsPilot MCP
+
+Both carry MCP in the name, and they point in opposite directions:
+
+| | Direction | Where it is set up |
+|---|---|---|
+| **[OpsPilot MCP](Integrations/Chat/opspilot-mcp.md)** | Your assistant connects **in** to OpsPilot | In your client - Claude, Claude Code, or VS Code |
+| **User MCPs** | OpsPilot connects **out** to your account | In OpsPilot, by connecting an external account |
+
+So OpsPilot MCP does not appear under User MCPs. It is not something OpsPilot consumes - it is what OpsPilot offers.
 
 ## Installing an integration
 
