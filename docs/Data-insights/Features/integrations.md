@@ -72,8 +72,6 @@ That boundary is deliberate rather than a current limitation - MCP is not used f
 
 The page is laid out like the integration catalog, and lists every MCP integration whether you have connected it or not: category tabs, a **Search MCP servers** bar, and a status filter offering **connected**, **not connected**, and **needs attention** for a connection whose authorisation has gone stale and needs renewing. Each card carries a **Connect** button and a link to the provider.
 
-Disconnecting wipes that connection's data entirely.
-
 ### User MCPs and OpsPilot MCP
 
 Both carry MCP in the name, and they point in opposite directions:
