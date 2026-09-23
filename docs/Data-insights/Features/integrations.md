@@ -70,9 +70,9 @@ These are personal rather than organisational. As the page itself puts it:
 
 > These connect your own account, not your organisation's. The agent uses them only in chat, never in scheduled work or on anyone else's behalf.
 
-So an integration can involve two steps - the organisation installs it from the catalog, and each person connects their own account here. [OpenTrace](Integrations/Data/opentrace.md) works that way.
+So an integration can involve two steps - the organisation installs it from the integration catalog, and each person connects their own account here. [OpenTrace](Integrations/Data/opentrace.md) works that way.
 
-The page is laid out like the catalog: category tabs, a **Search MCP servers** bar, and a status filter. Each card carries a **Connect** button and a link to the provider.
+The page is laid out like the integration catalog: category tabs, a **Search MCP servers** bar, and a status filter. Each card carries a **Connect** button and a link to the provider.
 
 ## Installing an integration
 

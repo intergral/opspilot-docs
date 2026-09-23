@@ -38,7 +38,7 @@ OpenTrace declares no **capabilities**, so it doesn't provision dashboards or al
 
 ## Installing
 
-Click **Install** on the **OpenTrace** card in the [Integrations](../../integrations.md) catalog, or from the integration's detail view. The install dialog confirms which account the install will serve and shows the permission tier. Click **Install** to confirm.
+Click **Install** on the **OpenTrace** card in the [integration catalog](../../integrations.md), or from the integration's detail view. The install dialog confirms which account the install will serve and shows the permission tier. Click **Install** to confirm.
 
 ---
 

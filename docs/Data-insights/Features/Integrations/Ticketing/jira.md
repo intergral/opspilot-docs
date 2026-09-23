@@ -3,9 +3,9 @@
 Connect OpsPilot to Jira to automatically create issues from alerts and incidents.
 
 !!! note "Legacy integration"
-    This page covers the **legacy** Jira integration, which is still available and still works. To find it, navigate to [Integrations](../../integrations.md) and switch on **Legacy** in the top right of the catalog.
+    This page covers the **legacy** Jira integration, which is still available and still works. To find it, navigate to [Integrations](../../integrations.md) and switch on **Legacy**, at the right-hand end of the category tabs.
 
-    A new Jira integration appears in the main catalog as **Coming soon**, and will replace this one.
+    A new Jira integration appears in the main integration catalog as **Coming soon**, and will replace this one.
 
 Navigate to **Integrations** from the left-hand sidebar, switch on **Legacy**, then select **Jira**.
 

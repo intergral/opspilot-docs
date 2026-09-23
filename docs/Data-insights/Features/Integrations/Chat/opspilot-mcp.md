@@ -31,7 +31,7 @@ The tier set on the install is the **ceiling for the whole organisation**, which
 
 ## Installing
 
-Click **Install** on the **OpsPilot MCP** card in the [Integrations](../../integrations.md) catalog, or from its detail view. The dialog confirms which account the install will serve. Click **Install** to confirm.
+Click **Install** on the **OpsPilot MCP** card in the [integration catalog](../../integrations.md), or from its detail view. The dialog confirms which account the install will serve. Click **Install** to confirm.
 
 Installing makes OpsPilot available. Each person still points their own assistant at it.
 
