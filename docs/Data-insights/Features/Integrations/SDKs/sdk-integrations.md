@@ -20,6 +20,9 @@ Each SDK integration installs one runtime dashboard per upstream metric-set vers
 
 The dashboard counts differ because each covers that language's full range of upstream metric-set versions. Java's 26 span thirteen Java-agent eras from v0.11.0 and thirteen semantic-convention sets from 1.9.0.
 
+!!! note "Ruby"
+    The Ruby OpenTelemetry SDK does not officially support metrics, so a Ruby integration cannot provide runtime dashboards. Ruby applications still send traces and span metrics, which Coworker can analyse.
+
 ---
 
 ## Alerts ship paused
