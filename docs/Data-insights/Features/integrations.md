@@ -283,9 +283,6 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
     Jira · Linear · Notion
 
-!!! note "Jira"
-    Jira is listed as **Coming soon** because the new integration has not shipped yet. A [legacy Jira integration](Integrations/Ticketing/jira.md) is available today - switch on **Legacy**, at the right-hand end of the category tabs, to find it.
-
 ---
 
 !!! question "Don't see the integration you need?"
