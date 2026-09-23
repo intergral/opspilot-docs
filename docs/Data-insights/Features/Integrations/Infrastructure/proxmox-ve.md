@@ -2,6 +2,8 @@
 
 Monitor Proxmox VE clusters, nodes, guests, and storage pools.
 
+Your whole cluster shows up alongside the rest of your telemetry - every node, guest and storage pool from a single scrape, on dashboards that are already built. You can see how the cluster is behaving without opening Proxmox to look, and next to the applications running on it.
+
 !!! info "What this integration does"
     It provisions **dashboards**. It does not collect anything itself and never talks to your Proxmox cluster - the metrics come from **pve-exporter** running somewhere you control, scraped by **Grafana Alloy** and forwarded to OpsPilot. Until both are running, the dashboards are empty.
 

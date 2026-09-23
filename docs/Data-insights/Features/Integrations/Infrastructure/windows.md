@@ -2,6 +2,8 @@
 
 Monitor Windows hosts - CPU, memory, disks, and network.
 
+Your Windows hosts show up alongside the rest of your telemetry on a dashboard that is already built, including which services set to start automatically are not running. When an application slows down or stops responding, you can see whether the machine or a service underneath it is the reason.
+
 !!! info "What this integration does"
     It provisions a **dashboard**. It does not collect anything itself and never connects to your hosts - the metrics come from **Grafana Alloy**, which has a windows_exporter collector built in. Until Alloy is collecting them, the dashboard is empty.
 

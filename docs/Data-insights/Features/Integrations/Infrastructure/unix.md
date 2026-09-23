@@ -2,6 +2,8 @@
 
 Monitor Unix and Linux hosts - CPU, memory, filesystems, and processes.
 
+Your hosts show up alongside the rest of your telemetry on a dashboard that is already built, with a selector to move between them. When an application slows down, you can see whether the machine underneath it is the reason.
+
 !!! info "What this integration does"
     It provisions a **dashboard**. It does not collect anything itself and never connects to your hosts - the metrics come from **Grafana Alloy**, which has a node_exporter collector built in. Until Alloy is collecting them, the dashboard is empty.
 

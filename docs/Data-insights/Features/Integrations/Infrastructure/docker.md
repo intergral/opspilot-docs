@@ -2,6 +2,8 @@
 
 Monitor Docker containers - CPU, memory against limit, network and disk IO.
 
+Your containers show up alongside the rest of your telemetry on a dashboard that is already built, so there are no panels to design. Memory is measured against the limit you set rather than as a raw number, which is what tells you a container is heading for a restart before it gets one.
+
 !!! info "What this integration does"
     It provisions a **dashboard**. It does not collect anything itself and never talks to your Docker daemon - the metrics come from **Grafana Alloy**, which has a cAdvisor collector built in. Until Alloy is collecting them, the dashboard is empty.
 
