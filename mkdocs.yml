@@ -85,8 +85,19 @@ nav:
   - INTEGRATIONS:
      - Overview: Data-insights/Features/integrations.md
      - Chat:
+        - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
         - Slack: Data-insights/Features/Integrations/Chat/slack.md
+     - Cloud:
+        - AWS: Data-insights/Features/Integrations/Cloud/aws.md
+     - Data:
+        - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
+     - Infrastructure:
+        - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
+        - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
+        - Unix: Data-insights/Features/Integrations/Infrastructure/unix.md
+        - Windows: Data-insights/Features/Integrations/Infrastructure/windows.md
      - SDKs:
+        - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
         - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
      - Ticketing:
         - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
@@ -337,6 +348,8 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 extra_css:
