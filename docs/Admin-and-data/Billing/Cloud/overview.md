@@ -106,7 +106,7 @@ Need a large number of seats or a tailored plan? Contact our Sales Team for cust
 **OpsPilot AI** is an advanced observability solution that leverages generative AI to provide powerful insights into the performance of your applications. Using OpsPilot AI tokens enables you to identify and resolve issues before they occur, optimize the performance of your applications, and reduce downtime.
 
 !!! info "Learn more"
-    [OpsPilot](/Data-insights/Features/OpsPilot/AIoverview/)
+    [OpsPilot Coworker](/Data-insights/Features/OpsPilot/Coworker/overview/)
 
 
 !!! warning 
