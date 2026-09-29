@@ -14,7 +14,7 @@ Each instrumented service automatically gets three detectors, shown as **R**, **
 
 - **Rate** (R) - request rate anomalies
 - **Error** (E) - error rate anomalies
-- **Latency** (D) - response time anomalies (also shown as *Duration* on the Status page)
+- **Duration** (D) - response time anomalies (also referred to as *latency*)
 
 The badges are filled while the service's detectors are running, and grayed out while they are paused. **Last evaluation** reads a timestamp (such as, *29 Sept, 13:01*) for a running service, and **—** for a paused one.
 
@@ -23,6 +23,10 @@ Each row in the service list shows the service name, its **Detectors** (R/E/D), 
 ## Scanning for services
 
 Click **Scan for services** to detect your instrumented services and auto-create detectors for them. If no service detectors exist yet, this is the first step.
+
+You can also reach it from the **Wizard** on the [Status](status.md) page, by choosing **Anomaly Detector** and then **Service Scan**. That route ends on a confirmation step explaining what the scan will do, with **Scan now** to run it and **Back** to return to the previous step.
+
+Either way, the scan creates rate, error, and duration detectors for every instrumented service it finds. Sensitivity and notifications are then tuned per detector afterwards, in [Detector settings](#detector-settings).
 
 ## State counters
 

@@ -32,7 +32,7 @@ Use **Search contact points** to find one by name. Use the **type filter** dropd
 | **Telegram** | Send notifications via Telegram |
 | **Google Chat** | Post notifications to Google Chat |
 | **PagerDuty** | Create incidents in PagerDuty |
-| **OpsGenie** | Create alerts in OpsGenie |
+| **Jira Service Management** | Raise issues in Jira Service Management |
 | **Pushover** | Send push notifications via Pushover |
 | **Webhook** | POST a JSON payload to any URL |
 | **Email** | Send notifications by email |
@@ -43,13 +43,15 @@ Use **Search contact points** to find one by name. Use the **type filter** dropd
 !!! tip "You can also add one while creating a rule"
     Contact points are not only made here. In the rule editor, **Then notify** lets you search your existing contact points, or click **Create new contact point** to make one without leaving the rule. See [Rules](rules.md).
 
+A third route is the **Wizard** on the [Status](status.md) page. Choosing **Contact Point** asks **How should notifications be delivered?** and offers the notification channels as a grid of cards. Picking one takes you into its configuration. As elsewhere in the wizard, **Skip to form** leaves for the full form, **Ask OpsPilot** suggests a channel, **←** goes back and **✕** closes without creating anything.
+
 1. Click **+ New contact point** to open the integration picker
-2. Select an integration type from the grid. Use the category tabs to filter:
+2. Select an integration type from the grid. Use the category tabs to filter - each shows how many types it holds:
 
 | Category | Integrations |
 |---|---|
 | **Chat** | Slack, Discord, Microsoft Teams, Telegram, Google Chat |
-| **On-call** | PagerDuty, OpsGenie, Pushover |
+| **On-call** | PagerDuty, Jira Service Management, Pushover |
 | **Webhook** | Webhook |
 | **Other** | Email, Kafka REST Proxy |
 

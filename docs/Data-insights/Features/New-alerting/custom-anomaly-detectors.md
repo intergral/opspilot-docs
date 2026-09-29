@@ -16,6 +16,26 @@ Each detector row shows its **State**, **Name**, **Threshold**, and **Last evalu
 
 Click **+ New custom detector** (top right of the page), or use the **Wizard** (**New custom detector**) on the [Status](status.md) or [Rules](rules.md) page. Fill in the fields below, then click **Create detector** to save.
 
+### The guided wizard
+
+Starting from the **Wizard** asks one question at a time instead of presenting the whole form. After choosing **Anomaly Detector** and then **Custom Detector** (see [Creating a detector from the wizard](status.md#creating-a-detector-from-the-wizard)), it asks which metric to watch, and then how sensitive detection should be.
+
+**How sensitive should detection be?** offers three presets. Higher sensitivity catches more anomalies but may alert more often:
+
+| Preset | Anomaly threshold | Description |
+|---|---|---|
+| **Low** | 95% | Fewer alerts, only strong anomalies |
+| **Medium** | 90% | Balanced sensitivity |
+| **High** | 80% | More alerts, catches subtle changes |
+
+The percentage is the **anomaly threshold** described under [When to fire](#when-to-fire) - the score at or above which the detector fires. The relationship is inverted, so a *lower* sensitivity sets a *higher* threshold: at **Low**, the model has to be 95% confident before anything fires.
+
+Whichever preset you pick, you can change the threshold afterwards on the detector itself, so this is a starting point rather than a commitment.
+
+**Who gets notified?** is the last step. Pick one or more [contact points](contact-points.md) with **+ Add contact point**, or click **Skip** to create the detector without notifications and add them later. Click **Done** to finish.
+
+As in the [alert rule wizard](rules.md#the-guided-wizard), each step offers **←** to go back, **Skip to form** to leave the wizard for the full form, **Ask OpsPilot** for a recommendation, and **✕** to close without creating anything. **Skip to form** is offered on every step but the last, where **Skip** and **Done** take its place.
+
 ### Signal
 
 Defines the PromQL series the detector watches. The query is validated against the Prometheus datasource on save.

@@ -69,11 +69,30 @@ The **Dashboard** and **Runbook** buttons (top right of the expanded view) open 
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-expanded.png)
 
+### The rule panel
+
+Clicking a rule on the [Status](status.md) page opens a panel beside the list - a quick look at that rule without leaving the page. Click the **✕** to close it.
+
+The header shows the rule name, its state and how long it has held it, and the namespace and data source it belongs to (such as, *FusionReactor Alerts / Metrics*), with four actions:
+
+| Action | Description |
+|---|---|
+| **Silence** | Create a [silence](silences.md) for this rule |
+| **View rule** | Open the full [rule detail view](#rule-detail-view) |
+| **Edit rule** | Open the rule editor |
+| **Active** | A toggle to pause and resume evaluation |
+
+Below the header sit two summary cards, **Duration** and **State**, then:
+
+**Metric** - a graph of the query with the threshold drawn on it. Use the time range picker, its step arrows and the zoom buttons to adjust the window, or click **Open in Explore** to investigate the metric in Explore. Three checkboxes below the graph toggle the **Threshold**, **State transitions** and **Pending window** overlays.
+
+**State history** - the rule's state changes, newest first. The header gives the period and transition count (such as, *last 24h · 20 transitions*), and **See all →** opens the full history. Each row reads as the new state *from* the previous one - for example, **Pending** from **Normal** - with when it happened, how long the previous state was held, and how long ago that was.
+
 ### Rule detail view
 
 ![Screenshot](/Data-insights/Features/images/Alerting/high-cpu-rule.png)
 
-Open the full rule detail view by clicking the **eye** icon (**View rule**) in the rules list, or by clicking a rule on the [Status](status.md) page. The header shows the rule name and current state, with these actions in the top right:
+Open the full rule detail view by clicking the **eye** icon (**View rule**) in the rules list, or **View rule** in the [rule panel](#the-rule-panel). The header shows the rule name and current state, with these actions in the top right:
 
 | Action | Description |
 |---|---|
@@ -138,6 +157,60 @@ A good alert rule has three things: a query that targets the right signal, a thr
 
 Click **+ New rule** (top right) to open the rule editor. (To create an anomaly detector instead, see [Service](service-anomaly-detectors.md) or [Custom Anomaly Detectors](custom-anomaly-detectors.md), or use the **Wizard** on the [Status](status.md) page.)
 
+### The guided wizard
+
+Starting a rule from the **Wizard** on the [Status](status.md) page walks you through the decisions one at a time, rather than presenting the whole form at once. A row of dots below the heading tracks your progress through the steps.
+
+You are never locked into the wizard. Each step offers:
+
+| Control | What it does |
+|---|---|
+| **←** | Go back to the previous step |
+| **Skip to form** | Leave the wizard and go straight to the main rule form |
+| **Not sure? Ask OpsPilot** | Get a recommendation for the step you're on |
+| **✕** | Close the wizard without creating anything |
+
+**Skip to form** is offered on every step but the last, where **Skip** and **Done** take its place.
+
+The steps are:
+
+**What are you monitoring?** - pick the data source the alert will query. The list holds every data source configured on your account, including those added by [integrations](../integrations.md), so an AWS installation appears here alongside your metrics and logs sources.
+
+**How do you want to build the query?** - choose how to express the condition:
+
+| Option | Description |
+|---|---|
+| **Guided builder** | Build your query step by step |
+| **Write PromQL** | Write the query expression directly |
+
+This choice is not binding - you can switch between the two later in the form.
+
+**What should we watch?** - pick the metric, or write the query, that the alert will evaluate. What this step shows depends on the choice you made at the previous one:
+
+- **Guided builder** gives you a **Metric** dropdown. Once you choose a metric, a preview graph appears below it showing that metric's recent behavior, so you can confirm you have the right signal before going further.
+- **Write PromQL** gives you a **PromQL expression** box to type the query into directly.
+
+Either way, click **Next** to continue. The wizard is the same length whichever you pick.
+
+**When should it fire?** - set the threshold that triggers notifications:
+
+| Field | Description |
+|---|---|
+| **Alert when value is** | **Above** or **Below** the threshold |
+| **Threshold** | The value to compare against (such as, `80`) |
+| **Wait before alerting** | How long the condition must hold before the alert fires - **1m**, **5m**, or **10m** |
+
+**Wait before alerting** is the pending period under a plainer name. Leaving it at anything above **1m** is what stops a brief spike from paging someone.
+
+**Who gets notified?** - pick one or more [contact points](contact-points.md) with **+ Add contact point**. This step is optional: click **Skip** to create the rule without notifications and add them later, or **Done** to finish.
+
+A rule with no contact point still evaluates and still shows its state on [Status](status.md) - it just won't notify anyone. Its expanded view reads *None configured* under **Notifies**.
+
+!!! note
+    The earlier steps advance as soon as you pick an option. From **What should we watch?** onward, you make a choice and then click **Next**.
+
+### Rule editor modes
+
 The rule editor has two modes, toggled in the top right:
 
 | Mode | Description |
@@ -180,16 +253,25 @@ Build the alert from a chain of **Queries & expressions**. Click **Add query** (
 
 A new rule starts with a default **Query → Reduce → Threshold** chain. The **Alert condition** dropdown at the top selects which step's firing state determines whether the rule alerts.
 
+Each step is labeled with a chip naming its reference ID and type, colored by category, and steps that take input from another show which one they follow (such as, *← $reduce*). The step serving as the alert condition is outlined and carries an **Alert condition** badge, so you can see at a glance which one decides the outcome.
+
+Reorder steps with the arrows to the left of each one, and remove a step with the **✕** on its right.
+
+Below the chain, **Evaluation preview** runs the pipeline through the alert condition step and shows the result as it would be evaluated. If a step cannot run, the preview reports the failure and names the step responsible - an empty or malformed query, for example, reads *Couldn't evaluate this rule*. Use it to catch mistakes before saving rather than after the rule goes live.
+
 #### Evaluation
 
 The **Evaluation** section controls how the rule runs:
 
 | Setting | Description |
 |---|---|
-| **Evaluate every** | How often the rule is checked (such as, `1m`) |
+| **Group** | The evaluation group the rule belongs to (such as, `default`) |
+| **Every** | How often the rule is checked (such as, `1m`). The schedule belongs to the group rather than to the individual rule |
 | **Pending for** | How long the condition must be continuously met before the alert fires (such as, `5m`). Prevents notifications for temporary spikes |
 | **No data** | The state the rule enters when the query returns no data - **No Data**, **Alerting**, **Normal**, or **Keep last state** |
 | **On error** | The state the rule enters when the query fails - **Error**, **Alerting**, **Normal**, or **Keep last state** |
+
+Tick **Choose the group and schedule myself** to set the group and its interval by hand. Rules in a group all evaluate together on one schedule, so changing it changes every rule in that group - not only the one you are editing.
 
 #### Namespace
 
