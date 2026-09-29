@@ -1,6 +1,6 @@
 # Service Anomaly Detectors
 
-Picking the right threshold is hard - too tight and you drown in false alarms, too loose and you miss the real problem. **Anomaly detectors** flag unusual behaviour in your services automatically, so you get meaningful alerts without hand-tuning numbers.
+Picking the right threshold is hard - too tight and you drown in false alarms, too loose and you miss the real problem. **Anomaly detectors** flag unusual behavior in your services automatically, so you get meaningful alerts without hand-tuning numbers.
 
 **Service detectors** are auto-created for each instrumented service. To define detectors against your own PromQL queries instead, see [Custom Anomaly Detectors](custom-anomaly-detectors.md).
 
@@ -15,6 +15,8 @@ Each instrumented service automatically gets three detectors, shown as **R**, **
 - **Rate** (R) - request rate anomalies
 - **Error** (E) - error rate anomalies
 - **Latency** (D) - response time anomalies (also shown as *Duration* on the Status page)
+
+The badges are filled while the service's detectors are running, and grayed out while they are paused. **Last evaluation** reads a timestamp (such as, *29 Sept, 13:01*) for a running service, and **—** for a paused one.
 
 Each row in the service list shows the service name, its **Detectors** (R/E/D), the **Last evaluation** time, and actions: a notification count, an **Active** toggle to enable or pause the service's detectors, an **Open dashboard** button, and a **delete** button. Expand a row to see and tune the individual detectors.
 

@@ -127,8 +127,9 @@ nav:
         - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
         - Shipping data: Monitor-your-data/Kubernetes-monitoring/Shipping.md
      - Alerting:
+        - Overview: Data-insights/Features/New-alerting/overview.md
         - Status: Data-insights/Features/New-alerting/status.md
-        - Rules:
+        - Alert Rules:
            - Overview: Data-insights/Features/New-alerting/rules.md
            - Annotation Templates: Data-insights/Features/New-alerting/annotation-templates.md
         - Recording Rules: Data-insights/Features/New-alerting/recording-rules.md

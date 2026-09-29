@@ -23,7 +23,7 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 
 **Fix:**
 
-- Navigate to the rule and check the **Pending period** value under **Set evaluation behaviour**.
+- Navigate to the rule and check the **Pending period** value under **Set evaluation behavior**.
 - If you want the alert to fire immediately, set the pending period to `0s`.
 - If the metric is intermittently crossing the threshold, consider whether the pending period is appropriate or whether the condition itself needs adjusting.
 
