@@ -8,7 +8,9 @@ Navigate to **Alerting > Status** to open it.
 
 ## Needs attention
 
-A summary band at the top leads with what matters: how many rules **need attention** out of the total, and how many are currently **firing** and **pending** (for example, *7 of 44 rules - 1 firing, 6 pending*). A health bar shows the split across states, with a count for each:
+A summary band at the top leads with what matters: how many rules **need attention** out of the total, and which states they are in - for example, **NEEDS ATTENTION**, *1 of 70 rules — 1 pending*. When everything is healthy the band reads *0 of 70 rules need attention*; when something needs attention, the band is highlighted.
+
+Below it, a health bar shows the split across states, with a chip and count for each. Only states that have rules in them appear - an account with nothing firing or pending shows just **Normal** and **Paused**.
 
 | State | Meaning |
 |---|---|
@@ -35,7 +37,9 @@ Controls across the top shape how the page is laid out:
 
 ## Groups and rules
 
-Rules are organised into cards - by **namespace** or by **source**, depending on the toggle. Each group card shows its name, a health bar, and a count for each state, with its rules laid out inside.
+Rules are organized into cards - by **namespace** or by **source**, depending on the toggle. Each group card shows its name, a health bar, and a chip with a count for each state present.
+
+A card holding rules that need attention is **highlighted** and moved to the front of the page, and those rules are listed on the card without you expanding it. Healthy rules stay folded away behind **Show all N rules**, so what needs looking at is what you see first.
 
 Each rule shows:
 
@@ -49,7 +53,7 @@ When a group has more rules than fit, click **Show all N rules** to expand it, a
 
 Shift-click rules to select more than one at a time, then silence the whole selection in one go. See [Silences](silences.md).
 
-The **List** view stacks the groups and shows their rule cards inline, while the **Grid** view lays the groups out as compact cards in a multi-column grid - each summarising its state at a glance, and expandable to reveal the rules inside.
+The **List** view stacks the groups and shows their rule cards inline, while the **Grid** view lays the groups out as compact cards in a multi-column grid - each summarizing its state at a glance, and expandable to reveal the rules inside.
 
 ## Creating from Status
 

@@ -1,32 +1,33 @@
-# Rules
+# Alert Rules
 
-A well-configured alert rule is the difference between knowing about a problem before your users do and finding out from a support ticket. The Rules page is where you build, manage, and investigate every alert rule in your environment - with a live view of what's firing, what's pending, and what's healthy, all in one place.
+A well-configured alert rule is the difference between knowing about a problem before your users do and finding out from a support ticket. The Alert Rules page is where you build, manage, and investigate every alert rule in your environment - with a live view of what's firing, what's pending, and what's healthy, all in one place.
 
-Navigate to **Alerting > Rules** to open it.
+Navigate to **Alerting > Alert Rules** to open it.
 
 !!! info "Rules vs detectors"
-    **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](service-anomaly-detectors.md)** use AI to learn normal behaviour and flag anomalies automatically, so they adapt as your system changes.
+    **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](service-anomaly-detectors.md)** use AI to learn normal behavior and flag anomalies automatically, so they adapt as your system changes.
 
 ## The rules list
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-table.png)
 
-Rules are displayed with four state counters at the top:
+Four state counters sit above the list:
 
 | State | Description |
 |---|---|
 | **Firing** | The alert condition is currently met |
 | **Pending** | The condition is met but the pending period has not yet elapsed |
 | **Normal** | The rule is evaluating and its condition is not met |
-| **Normal (Missingseries)** | The rule returned no data - the query matched no series. The rule remains Normal but flags that the data source returned nothing |
 | **Paused** | The rule is paused and not being evaluated |
+
+A state can carry a sub-reason, which appears in the rule's state history rather than in the counters - **Normal (Missingseries)**, for example, means the rule returned no data because the query matched no series. The rule remains Normal, but flags that the data source returned nothing.
 
 ### Views
 
 Switch between **Table** and **Tree** view using the buttons in the toolbar:
 
-- **Table** - a flat list of all rules with their state, folder, and group
-- **Tree** - rules grouped by folder and evaluation group, useful for seeing how rules are organised
+- **Table** - a flat list of all rules with their state, namespace, and group
+- **Tree** - rules grouped by namespace and evaluation group, useful for seeing how rules are organized
 
 Use **Collapse all** to fold all groups at once in Tree view.
 
@@ -38,10 +39,12 @@ The table has the following columns:
 |---|---|
 | **State** | Current state of the rule (Firing, Pending, Normal, Paused) |
 | **Name** | The alert rule name |
-| **Namespace** | The folder the rule belongs to |
+| **Namespace** | The namespace the rule belongs to |
 | **Group** | The evaluation group and its interval (such as, `auto-1m`) |
-| **Last evaluation** | When the rule was last evaluated |
+| **Last evaluation** | When the rule was last evaluated (such as, *29 Sept, 12:43*) |
 | **Actions** | A notification count, an **Active** toggle to enable or pause the rule, and buttons to view (eye), edit, and open more options |
+
+The **State**, **Name**, **Namespace**, and **Group** headers are sortable - click one to order the list by it.
 
 ### Expanding a rule
 
@@ -60,7 +63,8 @@ The **Dashboard** and **Runbook** buttons (top right of the expanded view) open 
 | **Data source** | The data source the rule queries |
 | **On no data** | What state the rule enters when the query returns no data |
 | **On query error** | What state the rule enters when the query fails |
-| **Notifies** | The contact points configured to receive notifications |
+| **Labels** | The rule's labels as name/value chips (such as, `severity = warning`) - these are what [notification policies](notification-policy.md) route on. Only shown when the rule has labels |
+| **Notifies** | The contact points configured to receive notifications, each shown as a card with its name and type. Reads *None configured* when the rule has none |
 | **Instances** | The matched instances with a firing/pending breakdown and a **Firing only** toggle. Each row shows the instance's labels, its state and when it last fired, and a **Logs** button to jump to its logs |
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-expanded.png)
@@ -112,7 +116,7 @@ A row of summary cards sits below the header:
 
 - **Sort** - order rules by State, Name, or other fields. Toggle ascending/descending with the arrow button
 - **Search** - find rules by name
-- **Filters** - filter by folder, evaluation group, state, or label
+- **Filters** - **All namespaces** and **All groups** dropdowns narrow the list to a single namespace or evaluation group
 - **Hide anomaly detectors** - toggle on to show only static rules and hide anomaly detectors from the list
 
 ### OpsPilot
@@ -189,7 +193,7 @@ The **Evaluation** section controls how the rule runs:
 
 #### Namespace
 
-Expand **Namespace** and choose the **namespace** where the rule is stored. Namespaces keep rules organised and control access.
+Expand **Namespace** and choose the **namespace** where the rule is stored. Namespaces keep rules organized and control access.
 
 #### Rule name
 
