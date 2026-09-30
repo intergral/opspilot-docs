@@ -19,7 +19,7 @@ The band always covers every rule on the account. Filtering the page to a single
 | **Firing** | The alert condition is met and the rule is actively firing |
 | **Error** | The rule's query failed to evaluate |
 | **Pending** | The condition has been met, but not yet for long enough to fire |
-| **Recovering** | The condition is no longer met, but the rule is still held by its **Keep firing for** period before it returns to Normal. See [Alert is flapping](troubleshooting.md#alert-is-flapping) |
+| **Recovering** | The condition is no longer met and the rule is on its way back to Normal |
 | **Normal** | The rule is evaluating and its condition is not currently met |
 | **No Data** | The query returned no data, so there was nothing to evaluate |
 | **Paused** | The rule is paused and not being evaluated |
@@ -35,7 +35,7 @@ Controls across the top shape how the page is laid out:
 | **List / Grid** | Switch between the list view and a compact grid view |
 | **Source / Namespace** | Group the cards by data source or by namespace |
 | **All sources** / **All namespaces** | Narrow the page to particular sources or namespaces - the label follows the grouping toggle. Open it for a searchable list, with **Select all** to take everything and **Clear all** to start again. Selected entries are ticked in the list, and the button itself becomes a chip naming your selection, with an **✕** to remove it |
-| **State filter** | A multi-select to show only rules in the chosen states, with a search box and **Select all**. It reads **All states** when nothing is excluded, and **N selected** once you narrow it. Click **✕** to clear it |
+| **State filter** | A multi-select controlling which rules are listed by name, with a search box and **Select all**. It starts on **Firing**, **Error**, **Pending** and **Recovering** - the states that need you - and reads **4 selected**. Widen it to **All states** to list healthy rules too. Click **✕** to clear it |
 | **Expand all** | Expand every group to show all of its rules; it toggles to **Shrink all** to collapse them |
 | **Hide filtered-out cards** | Hide the groups and rules that don't match the current filters |
 | **Refresh interval** | How often the page auto-refreshes (for example, **30s**) |
@@ -46,7 +46,9 @@ Controls across the top shape how the page is laid out:
 
 Rules are organized into cards - by **namespace** or by **source**, depending on the toggle. Each group card shows its name, a health bar, and a chip with a count for each state present.
 
-A card holding rules that need attention is **highlighted** and moved to the front of the page, and those rules are listed on the card without you expanding it. Healthy rules stay folded away behind **Show all N rules**, so what needs looking at is what you see first.
+**The chips count everything the card holds; the state filter decides what is listed by name.** Because that filter starts on Firing, Error, Pending and Recovering, a card shows only the rules wanting attention, while its chips still account for the healthy ones. A card reading *Normal 11* with a single Pending rule listed is working as intended - widen the filter to **All states** to see the rest by name.
+
+A card holding rules that need attention is also **highlighted** and moved to the front of the page, so what needs looking at is what you see first.
 
 Each rule shows:
 

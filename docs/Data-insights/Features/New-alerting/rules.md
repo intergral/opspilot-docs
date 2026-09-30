@@ -7,6 +7,9 @@ Navigate to **Alerting > Alert Rules** to open it.
 !!! info "Rules vs detectors"
     **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](service-anomaly-detectors.md)** use AI to learn normal behavior and flag anomalies automatically, so they adapt as your system changes.
 
+!!! note "Rules carried over from FusionReactor Alerts"
+    Rules you created in FusionReactor Alerts were imported in their original format and work differently from rules built here - their condition sits inside the query rather than in a Threshold step. See [Imported Rules](imported-rules.md) to recognize one and to update it if you want to.
+
 ## The rules list
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-table.png)
@@ -60,7 +63,7 @@ The **Dashboard** and **Runbook** buttons (top right of the expanded view) open 
 | **Annotations** | The annotations from the rule (such as its description) |
 | **Expression** | The query and threshold condition as chained steps - for example, `A` `max_over_time(up[5m])` feeding a `C` condition `< 1` |
 | **Evaluation** | How often the rule is checked and the pending duration (such as, `every 60s · pending 5m`) |
-| **Data source** | The data source the rule queries |
+| **Namespace** | The namespace the rule is stored in |
 | **On no data** | What state the rule enters when the query returns no data |
 | **On query error** | What state the rule enters when the query fails |
 | **Labels** | The rule's labels as name/value chips (such as, `severity = warning`) - these are what [notification policies](notification-policy.md) route on. Only shown when the rule has labels |
@@ -124,7 +127,7 @@ A row of summary cards sits below the header:
 | **Annotations** | The annotations from the rule (such as its description) |
 | **Expression** | The query and threshold condition as chained steps - a **Query** step (with its data source) feeding a **Threshold** step |
 | **Evaluation** | How often the rule is checked and the pending duration (such as, `every 60s · pending 5m`) |
-| **Data source** | The data source the rule queries |
+| **Namespace** | The namespace the rule is stored in |
 | **On no data** | What state the rule enters when the query returns no data |
 | **On query error** | What state the rule enters when the query fails |
 | **Notifies** | The contact points configured to receive notifications |

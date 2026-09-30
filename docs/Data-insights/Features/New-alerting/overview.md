@@ -11,6 +11,7 @@ Navigate to **Alerting** in the left-hand menu to open it.
 | [Status](status.md) | See every alert rule's state at a glance, and find what needs attention first |
 | [Alert Rules](rules.md) | Build, manage, and investigate static alert rules |
 | [Annotation Templates](annotation-templates.md) | Write alert messages that carry live values from the query that fired |
+| [Imported Rules](imported-rules.md) | Recognize rules carried over from FusionReactor Alerts, and update them if you want to |
 | [Recording Rules](recording-rules.md) | Pre-compute expensive queries and save the result as a new metric |
 | [Service Anomaly Detectors](service-anomaly-detectors.md) | Tune the detectors created automatically for each instrumented service |
 | [Custom Anomaly Detectors](custom-anomaly-detectors.md) | Run anomaly detection against your own PromQL series |
