@@ -38,6 +38,9 @@ Use **Search contact points** to find one by name. Use the **type filter** dropd
 | **Email** | Send notifications by email |
 | **Kafka REST Proxy** | Publish notifications to a Kafka topic |
 
+!!! note "Moving from OpsGenie"
+    OpsGenie is no longer offered as a contact point type, following Atlassian's decision to retire the product. If you previously sent notifications to OpsGenie, use **Jira Service Management** instead. Atlassian's [OpsGenie migration guide](https://www.atlassian.com/software/opsgenie/migration) covers moving your on-call setup across.
+
 ## Adding a contact point
 
 !!! tip "You can also add one while creating a rule"
