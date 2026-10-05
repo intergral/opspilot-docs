@@ -23,7 +23,7 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 
 **Fix:**
 
-- Navigate to the rule and check the **Pending period** value under **Set evaluation behaviour**.
+- Navigate to the rule and check the **Pending period** value under **Set evaluation behavior**.
 - If you want the alert to fire immediately, set the pending period to `0s`.
 - If the metric is intermittently crossing the threshold, consider whether the pending period is appropriate or whether the condition itself needs adjusting.
 
@@ -100,9 +100,8 @@ This page covers common issues when setting up and operating OpsPilot alerting, 
 **Fix:**
 
 1. **Increase the Pending period** - A pending period of `5m` or `10m` requires the condition to be continuously true before firing, smoothing out brief spikes.
-2. **Use "Keep firing for"** - This holds the alert in a firing state for a period after the condition resolves, preventing rapid recovered/re-fired cycles.
-3. **Adjust the threshold** - If the metric hovers just at the threshold, add a buffer (such as, changing `> 80` to `> 85`).
-4. **Increase the Repeat interval** on the [notification policy](notification-policy.md) - This reduces re-notification frequency without changing how the rule evaluates.
+2. **Adjust the threshold** - If the metric hovers just at the threshold, add a buffer (such as, changing `> 80` to `> 85`).
+3. **Increase the Repeat interval** on the [notification policy](notification-policy.md) - This reduces re-notification frequency without changing how the rule evaluates.
 
 ---
 

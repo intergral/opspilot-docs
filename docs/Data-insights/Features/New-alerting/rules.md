@@ -1,32 +1,36 @@
-# Rules
+# Alert Rules
 
-A well-configured alert rule is the difference between knowing about a problem before your users do and finding out from a support ticket. The Rules page is where you build, manage, and investigate every alert rule in your environment - with a live view of what's firing, what's pending, and what's healthy, all in one place.
+A well-configured alert rule is the difference between knowing about a problem before your users do and finding out from a support ticket. The Alert Rules page is where you build, manage, and investigate every alert rule in your environment - with a live view of what's firing, what's pending, and what's healthy, all in one place.
 
-Navigate to **Alerting > Rules** to open it.
+Navigate to **Alerting > Alert Rules** to open it.
 
 !!! info "Rules vs detectors"
-    **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](service-anomaly-detectors.md)** use AI to learn normal behaviour and flag anomalies automatically, so they adapt as your system changes.
+    **Rules** are static checks - they run on a fixed schedule against fixed thresholds, best for known conditions with clear boundaries (like system CPU or allocated memory). **[Detectors](service-anomaly-detectors.md)** use AI to learn normal behavior and flag anomalies automatically, so they adapt as your system changes.
+
+!!! note "Rules carried over from FusionReactor Alerts"
+    Rules you created in FusionReactor Alerts were imported in their original format and work differently from rules built here - their condition sits inside the query rather than in a Threshold step. See [Imported Rules](imported-rules.md) to recognize one and to update it if you want to.
 
 ## The rules list
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-table.png)
 
-Rules are displayed with four state counters at the top:
+Four state counters sit above the list:
 
 | State | Description |
 |---|---|
 | **Firing** | The alert condition is currently met |
 | **Pending** | The condition is met but the pending period has not yet elapsed |
 | **Normal** | The rule is evaluating and its condition is not met |
-| **Normal (Missingseries)** | The rule returned no data - the query matched no series. The rule remains Normal but flags that the data source returned nothing |
 | **Paused** | The rule is paused and not being evaluated |
+
+A state can carry a sub-reason, which appears in the rule's state history rather than in the counters - **Normal (Missingseries)**, for example, means the rule returned no data because the query matched no series. The rule remains Normal, but flags that the data source returned nothing.
 
 ### Views
 
 Switch between **Table** and **Tree** view using the buttons in the toolbar:
 
-- **Table** - a flat list of all rules with their state, folder, and group
-- **Tree** - rules grouped by folder and evaluation group, useful for seeing how rules are organised
+- **Table** - a flat list of all rules with their state, namespace, and group
+- **Tree** - rules grouped by namespace and evaluation group, useful for seeing how rules are organized
 
 Use **Collapse all** to fold all groups at once in Tree view.
 
@@ -38,10 +42,12 @@ The table has the following columns:
 |---|---|
 | **State** | Current state of the rule (Firing, Pending, Normal, Paused) |
 | **Name** | The alert rule name |
-| **Namespace** | The folder the rule belongs to |
+| **Namespace** | The namespace the rule belongs to |
 | **Group** | The evaluation group and its interval (such as, `auto-1m`) |
-| **Last evaluation** | When the rule was last evaluated |
+| **Last evaluation** | When the rule was last evaluated (such as, *29 Sept, 12:43*) |
 | **Actions** | A notification count, an **Active** toggle to enable or pause the rule, and buttons to view (eye), edit, and open more options |
+
+The **State**, **Name**, **Namespace**, and **Group** headers are sortable - click one to order the list by it.
 
 ### Expanding a rule
 
@@ -57,19 +63,39 @@ The **Dashboard** and **Runbook** buttons (top right of the expanded view) open 
 | **Annotations** | The annotations from the rule (such as its description) |
 | **Expression** | The query and threshold condition as chained steps - for example, `A` `max_over_time(up[5m])` feeding a `C` condition `< 1` |
 | **Evaluation** | How often the rule is checked and the pending duration (such as, `every 60s · pending 5m`) |
-| **Data source** | The data source the rule queries |
+| **Namespace** | The namespace the rule is stored in |
 | **On no data** | What state the rule enters when the query returns no data |
 | **On query error** | What state the rule enters when the query fails |
-| **Notifies** | The contact points configured to receive notifications |
+| **Labels** | The rule's labels as name/value chips (such as, `severity = warning`) - these are what [notification policies](notification-policy.md) route on. Only shown when the rule has labels |
+| **Notifies** | The contact points configured to receive notifications, each shown as a card with its name and type. Reads *None configured* when the rule has none |
 | **Instances** | The matched instances with a firing/pending breakdown and a **Firing only** toggle. Each row shows the instance's labels, its state and when it last fired, and a **Logs** button to jump to its logs |
 
 ![Screenshot](/Data-insights/Features/images/Alerting/rule-expanded.png)
+
+### The rule panel
+
+Clicking a rule on the [Status](status.md) page opens a panel beside the list - a quick look at that rule without leaving the page. Click the **✕** to close it.
+
+The header shows the rule name, its state and how long it has held it, and the namespace and data source it belongs to (such as, *FusionReactor Alerts / Metrics*), with four actions:
+
+| Action | Description |
+|---|---|
+| **Silence** | Create a [silence](silences.md) for this rule |
+| **View rule** | Open the full [rule detail view](#rule-detail-view) |
+| **Edit rule** | Open the rule editor |
+| **Active** | A toggle to pause and resume evaluation |
+
+Below the header sit two summary cards, **Duration** and **State**, then:
+
+**Metric** - a graph of the query with the threshold drawn on it. Use the time range picker, its step arrows and the zoom buttons to adjust the window, or click **Open in Explore** to investigate the metric in Explore. Three checkboxes below the graph toggle the **Threshold**, **State transitions** and **Pending window** overlays.
+
+**State history** - the rule's state changes, newest first. The header gives the period and transition count (such as, *last 24h · 20 transitions*), and **See all →** opens the full history. Each row reads as the new state *from* the previous one - for example, **Pending** from **Normal** - with when it happened, how long the previous state was held, and how long ago that was.
 
 ### Rule detail view
 
 ![Screenshot](/Data-insights/Features/images/Alerting/high-cpu-rule.png)
 
-Open the full rule detail view by clicking the **eye** icon (**View rule**) in the rules list, or by clicking a rule on the [Status](status.md) page. The header shows the rule name and current state, with these actions in the top right:
+Open the full rule detail view by clicking the **eye** icon (**View rule**) in the rules list, or **View rule** in the [rule panel](#the-rule-panel). The header shows the rule name and current state, with these actions in the top right:
 
 | Action | Description |
 |---|---|
@@ -101,7 +127,7 @@ A row of summary cards sits below the header:
 | **Annotations** | The annotations from the rule (such as its description) |
 | **Expression** | The query and threshold condition as chained steps - a **Query** step (with its data source) feeding a **Threshold** step |
 | **Evaluation** | How often the rule is checked and the pending duration (such as, `every 60s · pending 5m`) |
-| **Data source** | The data source the rule queries |
+| **Namespace** | The namespace the rule is stored in |
 | **On no data** | What state the rule enters when the query returns no data |
 | **On query error** | What state the rule enters when the query fails |
 | **Notifies** | The contact points configured to receive notifications |
@@ -112,7 +138,7 @@ A row of summary cards sits below the header:
 
 - **Sort** - order rules by State, Name, or other fields. Toggle ascending/descending with the arrow button
 - **Search** - find rules by name
-- **Filters** - filter by folder, evaluation group, state, or label
+- **Filters** - **All namespaces** and **All groups** dropdowns narrow the list to a single namespace or evaluation group
 - **Hide anomaly detectors** - toggle on to show only static rules and hide anomaly detectors from the list
 
 ### OpsPilot
@@ -133,6 +159,60 @@ Writing good alert rules is hard - thresholds that are too sensitive create nois
 A good alert rule has three things: a query that targets the right signal, a threshold that fires at the right level, and a routing label that gets the notification to the right person.
 
 Click **+ New rule** (top right) to open the rule editor. (To create an anomaly detector instead, see [Service](service-anomaly-detectors.md) or [Custom Anomaly Detectors](custom-anomaly-detectors.md), or use the **Wizard** on the [Status](status.md) page.)
+
+### The guided wizard
+
+Starting a rule from the **Wizard** on the [Status](status.md) page walks you through the decisions one at a time, rather than presenting the whole form at once. A row of dots below the heading tracks your progress through the steps.
+
+You are never locked into the wizard. Each step offers:
+
+| Control | What it does |
+|---|---|
+| **←** | Go back to the previous step |
+| **Skip to form** | Leave the wizard and go straight to the main rule form |
+| **Not sure? Ask OpsPilot** | Get a recommendation for the step you're on |
+| **✕** | Close the wizard without creating anything |
+
+**Skip to form** is offered on every step but the last, where **Skip** and **Done** take its place.
+
+The steps are:
+
+**What are you monitoring?** - pick the data source the alert will query. The list holds every data source configured on your account, including those added by [integrations](../integrations.md), so an AWS installation appears here alongside your metrics and logs sources.
+
+**How do you want to build the query?** - choose how to express the condition:
+
+| Option | Description |
+|---|---|
+| **Guided builder** | Build your query step by step |
+| **Write PromQL** | Write the query expression directly |
+
+This choice is not binding - you can switch between the two later in the form.
+
+**What should we watch?** - pick the metric, or write the query, that the alert will evaluate. What this step shows depends on the choice you made at the previous one:
+
+- **Guided builder** gives you a **Metric** dropdown. Once you choose a metric, a preview graph appears below it showing that metric's recent behavior, so you can confirm you have the right signal before going further.
+- **Write PromQL** gives you a **PromQL expression** box to type the query into directly.
+
+Either way, click **Next** to continue. The wizard is the same length whichever you pick.
+
+**When should it fire?** - set the threshold that triggers notifications:
+
+| Field | Description |
+|---|---|
+| **Alert when value is** | **Above** or **Below** the threshold |
+| **Threshold** | The value to compare against (such as, `80`) |
+| **Wait before alerting** | How long the condition must hold before the alert fires - **1m**, **5m**, or **10m** |
+
+**Wait before alerting** is the pending period under a plainer name. Leaving it at anything above **1m** is what stops a brief spike from paging someone.
+
+**Who gets notified?** - pick one or more [contact points](contact-points.md) with **+ Add contact point**. This step is optional: click **Skip** to create the rule without notifications and add them later, or **Done** to finish.
+
+A rule with no contact point still evaluates and still shows its state on [Status](status.md) - it just won't notify anyone. Its expanded view reads *None configured* under **Notifies**.
+
+!!! note
+    The earlier steps advance as soon as you pick an option. From **What should we watch?** onward, you make a choice and then click **Next**.
+
+### Rule editor modes
 
 The rule editor has two modes, toggled in the top right:
 
@@ -176,20 +256,29 @@ Build the alert from a chain of **Queries & expressions**. Click **Add query** (
 
 A new rule starts with a default **Query → Reduce → Threshold** chain. The **Alert condition** dropdown at the top selects which step's firing state determines whether the rule alerts.
 
+Each step is labeled with a chip naming its reference ID and type, colored by category, and steps that take input from another show which one they follow (such as, *← $reduce*). The step serving as the alert condition is outlined and carries an **Alert condition** badge, so you can see at a glance which one decides the outcome.
+
+Reorder steps with the arrows to the left of each one, and remove a step with the **✕** on its right.
+
+Below the chain, **Evaluation preview** runs the pipeline through the alert condition step and shows the result as it would be evaluated. If a step cannot run, the preview reports the failure and names the step responsible - an empty or malformed query, for example, reads *Couldn't evaluate this rule*. Use it to catch mistakes before saving rather than after the rule goes live.
+
 #### Evaluation
 
 The **Evaluation** section controls how the rule runs:
 
 | Setting | Description |
 |---|---|
-| **Evaluate every** | How often the rule is checked (such as, `1m`) |
+| **Group** | The evaluation group the rule belongs to (such as, `default`) |
+| **Every** | How often the rule is checked (such as, `1m`). The schedule belongs to the group rather than to the individual rule |
 | **Pending for** | How long the condition must be continuously met before the alert fires (such as, `5m`). Prevents notifications for temporary spikes |
 | **No data** | The state the rule enters when the query returns no data - **No Data**, **Alerting**, **Normal**, or **Keep last state** |
 | **On error** | The state the rule enters when the query fails - **Error**, **Alerting**, **Normal**, or **Keep last state** |
 
+Tick **Choose the group and schedule myself** to set the group and its interval by hand. Rules in a group all evaluate together on one schedule, so changing it changes every rule in that group - not only the one you are editing.
+
 #### Namespace
 
-Expand **Namespace** and choose the **namespace** where the rule is stored. Namespaces keep rules organised and control access.
+Expand **Namespace** and choose the **namespace** where the rule is stored. Namespaces keep rules organized and control access.
 
 #### Rule name
 
