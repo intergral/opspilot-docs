@@ -63,7 +63,7 @@ Click the `>` arrow on any row to expand it and see a summary and waterfall time
 
 Three buttons in the top right of the expanded view let you:
 
-- **Analyze Trace** - send the trace to OpsPilot AI for analysis
+- **Analyze Trace** - send the trace to [Coworker](../OpsPilot/Coworker/chat.md) for analysis
 - **Expand all** - expand all spans in the waterfall at once
 - **Collapse all** - collapse all spans in the waterfall at once
 

@@ -71,7 +71,7 @@ Stat cards update automatically if an auto-refresh interval is set. If auto-refr
 
 ### How do I investigate a spike I can see in a graph?
 
-Click and drag on the graph to zoom into the spike. Hover over data points to see exact values. You can also click **Ask AI** in the graph's top-right corner to send the metric to OpsPilot for an AI-guided explanation of the pattern.
+Click and drag on the graph to zoom into the spike. Hover over data points to see exact values. You can also click **Ask AI** in the graph's top-right corner to send the metric to [Coworker](../OpsPilot/Coworker/chat.md) for an explanation of the pattern.
 
 ---
 
@@ -88,10 +88,6 @@ Crash Protection is available from **FusionReactor version 2025.2** onwards.
 ### How long are Crash Protection reports retained?
 
 Reports are retained for historical analysis. There is no automatic expiry, so you can review past events to identify recurring patterns.
-
-### How do I send a Crash Protection report to OpsPilot for analysis?
-
-From the Crash Protection page, click the **Ask OpsPilot** button on any report to send the full snapshot to OpsPilot AI for automated analysis and guidance.
 
 ---
 

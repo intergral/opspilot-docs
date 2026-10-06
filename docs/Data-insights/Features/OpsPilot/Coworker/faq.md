@@ -107,6 +107,57 @@ Open the situation and click **Assign**. Choose **I'll take this** to assign it 
 
 ---
 
+## Notifications
+
+### Does Coworker notify me when it finds something?
+
+Not on its own. Coworker raises situations in your feed, but it does not contact you outside OpsPilot unless you connect Slack.
+
+### Can I get situations in Slack?
+
+Yes. Install the [Slack integration](../../Integrations/Chat/slack.md), invite the bot to the channel you want situations in, then enable situation notifications using the slash command in the setup message.
+
+You can also do the whole thing from the Slack integration page in OpsPilot, which walks you through the steps after you install it.
+
+### How will I know about a situation when OpsPilot isn't open?
+
+Slack is the way to be told. You can also ask [OpsPilot MCP](../../Integrations/Chat/opspilot-mcp.md) about currently active situations from your editor or AI assistant, without opening OpsPilot at all.
+
+### How quickly will I hear about a situation?
+
+That depends on severity:
+
+| Severity | Typical time from the triggering event |
+|---|---|
+| **Critical** | 3-5 minutes |
+| **Everything else** | Up to the triage cadence - one hour by default |
+
+Coworker starts investigating the moment an alert fires, and the investigation itself takes roughly 30 seconds to 2 minutes. Its findings are then picked up at the next **triage**, which runs on a cadence you set in account settings. Critical findings skip that wait: Coworker triggers triage immediately rather than holding them for the next cycle.
+
+Once a situation exists, Slack delivery is near-instant - OpsPilot checks for events to post every five seconds.
+
+### Can I be notified only about critical situations?
+
+Yes. Choose which severities are posted to Slack.
+
+A situation that is later raised to critical is posted at that point, even if its earlier severity was filtered out, so filtering to critical does not mean missing something that becomes critical. Escalations always notify.
+
+### Are browser or desktop notifications supported?
+
+No. Coworker uses the same notification system as the rest of OpsPilot, which has no browser or desktop notifications.
+
+### Why does Coworker raise so few situations?
+
+By design. Coworker investigates far more than it reports - alerts, anomalies and other signals that turn out not to indicate a real problem are recorded quietly as [insights](insights.md) rather than raised as situations.
+
+It raises a situation for recurring issues, customer-facing problems, clear faults, and anything you have explicitly asked it to watch through a [task](tasks.md). Critical is reserved for major faults and things affecting your customers.
+
+You can also teach it. If it raises something you don't consider important, tell it - Coworker can remember that and either stop raising it, or raise it at a lower severity.
+
+Expect more noise in the first few weeks. Coworker surfaces pre-existing issues in your environment, and is still learning what your team cares about from your conversations and from what you dismiss.
+
+---
+
 ## Costs
 
 ### What are OpsPilot AI Tokens?
@@ -221,6 +272,17 @@ Please contact support if you need to reset Coworker's [memory](overview.md#memo
 ### What data does Coworker have access to?
 
 Coworker has access to the observability data in your OpsPilot account: metrics, logs, traces, and alert rules. It does not have access to data outside your organisation's account.
+
+### Does Coworker read our Slack conversations?
+
+By default, almost nothing. Connecting the [Slack integration](../../Integrations/Chat/slack.md) does not put Coworker in your conversations:
+
+- **When you @-mention OpsPilot**, it reads the recent message history in that channel for context. It stores only your message - not the surrounding messages it used as context.
+- **When you reply in the thread of a situation it posted**, those replies become context for its next check-up on that situation. Coworker says so explicitly in the thread each time.
+
+It sees nothing else in your Slack.
+
+Turning on **passive** or **active listening** for a channel changes that deliberately: every message in that channel is sent to Coworker, both as context for investigations and to learn from. In active mode it will also investigate things it can help with and reply on its own.
 
 ---
 

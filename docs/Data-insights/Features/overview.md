@@ -160,7 +160,7 @@ If your account has no data yet, each section of the Overview displays a **Get S
 | **Services** | You'll need an API key to instrument your application with OpenTelemetry. |
 | **Servers** | Install FusionReactor on your servers to start monitoring. You'll need a license key. |
 | **Applications** | Install FusionReactor to monitor your applications. You'll need a license key. |
-| **Coworker** | Set up your AI coworker to investigate alerts and track ongoing situations across the services you care about. |
+| **Coworker** | Set up your AI Coworker to investigate alerts and track ongoing situations across the services you care about. |
 | **Alerts** | Configure alert rules to monitor your infrastructure. |
 | **Anomaly Detection** | Enable anomaly detection to automatically detect unusual behavior in your data. |
 

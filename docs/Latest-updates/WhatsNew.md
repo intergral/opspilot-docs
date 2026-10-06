@@ -237,8 +237,8 @@ Look for the **globe icon** next to the mic in the chat bar.
 * **<span style="color:gray">Gray</span> icon = OFF** (uses only internal knowledge)
 
 
-!!! info "Learn more"
-    [Web Search Toggle](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#web-search-toggle)
+!!! note
+    The web search toggle has since been removed from OpsPilot.
 
 
 
@@ -389,7 +389,7 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 ![!Screenshot](images/OPvision.png)
 
 !!! info "Learn more"
-    [OpsPilot Vision](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#opspilot-vision)
+    [Images](/Data-insights/Features/OpsPilot/Coworker/chat/#images)
     
 * **Updated FR knowledge base**: OpsPilot has undergone a significant upgrade in its FusionReactor knowledge base, resulting in enhanced proficiency in understanding and addressing issues. With this improvement, OpsPilot can now provide more informed and effective responses when dealing with FusionReactor-related tasks. This advancement promises smoother operations and quicker resolutions, ultimately optimizing system performance and minimizing downtime.
 

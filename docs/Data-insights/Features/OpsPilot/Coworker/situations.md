@@ -93,6 +93,41 @@ Every situation opens into a thread: a dedicated conversation about that one pro
 
 ![!Screenshot](../../../../Coworker/situation-detail.png)
 
+### What a situation shows you
+
+Above the thread, the situation opens with its severity, the service it affects, and its status, then Coworker's own summary of what is happening and how far it has spread. Alongside that summary sit three panels:
+
+| Panel | What it holds |
+|---|---|
+| **Right-now impact** | The numbers that make this matter at this moment - the latency, error rate, or throughput that moved, and the services it has reached |
+| **Timeline** | What happened and when, oldest to newest, including whether this same pattern has occurred before |
+| **Data** | The evidence behind the summary - trend charts over the recent window, and the log lines Coworker drew on |
+
+### Signals watched
+
+Coworker sets up its own watches on a situation so it hears about a change immediately, rather than waiting for its next scheduled checkup.
+
+Each watched signal shows what it is watching and why, the threshold that counts as a breach, and its current state - **breaching** or **clear** - over a recent window. A signal that was clear at the last checkup and is breaching now is how Coworker catches an escalation early.
+
+These are Coworker's own, set for this situation. They are not [alert rules](../../New-alerting/rules.md) and do not notify anyone on their own.
+
+### Showing its working
+
+A row of tabs at the foot of the situation opens up everything behind the summary, each with a count so you can see what is there before clicking:
+
+| Tab | What it holds |
+|---|---|
+| **Evidence** | What Coworker read before it concluded any of this |
+| **Raised from** | The insights the situation was built from |
+| **Fixes** | Fixes recorded against this situation. Reads *No fixes recorded yet* until one is |
+| **Repeat firings** | How many times this has recurred |
+| **Updates** | Each time Coworker revised its own account of the situation. An entry gives its reasoning for the change and badges which fields it rewrote - **Updated title**, **Updated summary**, and so on |
+| **History** | The full record of checkups and state changes |
+
+The counts are worth reading on their own. A situation **raised from** several hundred insights with a high **repeat firings** count is a long-running pattern rather than a one-off, and tells you something before you have opened a single tab.
+
+**Updates** is worth a look on anything long-running. A situation is not a fixed statement - as Coworker learns more it rewrites its own title and summary, and that tab is where it explains why. A situation that reads differently today than when you last saw it will say so there.
+
 From a situation thread you can:
 
 | Action | Description |

@@ -8,6 +8,11 @@ Run any scheduled task on-demand with the **Run now** button, and view the full 
 
 Each run produces the report you set the task up for and also surfaces anything else worth flagging - see [What every task run does](tasks.md#what-every-task-run-does).
 
+!!! warning "Schedules run in UTC"
+    Coworker works in UTC. Ask for a check at 9am and it runs at **9am UTC**, whatever your own time zone.
+
+    Say which time zone you mean and Coworker converts it - *run at 9am Pacific* becomes 2am UTC. If a task is running at a time you did not expect, this is usually why.
+
 ## Running and reviewing a task
 
 Open a scheduled task to see its details and history. Alongside the **On/Off** toggle you can:
