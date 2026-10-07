@@ -83,23 +83,18 @@ nav:
         - Add Variables: Data-insights/Features/Dashboards/add-variables.md
   - INTEGRATIONS:
      - Overview: Data-insights/Features/integrations.md
-     - Chat:
-        - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
-        - Slack: Data-insights/Features/Integrations/Chat/slack.md
-     - Cloud:
+     - All integrations:
         - AWS: Data-insights/Features/Integrations/Cloud/aws.md
-     - Data:
-        - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
-     - Infrastructure:
         - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
+        - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
+        - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
+        - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
+        - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
         - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
+        - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
+        - Slack: Data-insights/Features/Integrations/Chat/slack.md
         - Unix: Data-insights/Features/Integrations/Infrastructure/unix.md
         - Windows: Data-insights/Features/Integrations/Infrastructure/windows.md
-     - SDKs:
-        - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
-        - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
-     - Ticketing:
-        - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
   - MONITORING:
      - Servers:
         - Overview: Data-insights/Features/Servers/overview.md
