@@ -87,6 +87,7 @@ nav:
         - AWS: Data-insights/Features/Integrations/Cloud/aws.md
         - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
         - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
+        - iDRAC: Data-insights/Features/Integrations/Infrastructure/idrac.md
         - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
         - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
         - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
