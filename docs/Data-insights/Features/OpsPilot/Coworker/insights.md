@@ -82,7 +82,8 @@ Opening an insight shows the full write-up:
 
 | Action | Description |
 |---|---|
-| **Chat** | Open quick actions and a conversation about the insight, with its full context already loaded (see below) |
+| **Chat** | Open a free-form conversation about the insight, with its full context already loaded (see below) |
+| **Ask** | Put one of four preset questions to Coworker - **Is this still an issue?**, **Investigate root cause**, **Create a ticket**, or **Suggest a fix** |
 | **Watch** | Set up a recurring check on the insight - opens the **Watch This Insight** dialog (see below) |
 | **Resolve** | Mark the insight resolved |
 | **...** | More actions: **Hide similar** (stop surfacing insights like this one) and **Not right** (tell Coworker the insight is off the mark, so it learns) |
@@ -90,17 +91,18 @@ Opening an insight shows the full write-up:
 
 ### Chatting about an insight
 
-**Chat** opens a menu of quick actions, each sending the insight to Coworker with its full context already loaded:
+**Ask** opens a menu of preset questions, each sending the insight to Coworker with its full context already loaded:
 
 ![!Screenshot](../../../../Coworker/insight-chat.png)
 
-| Action | Description |
+| Question | What it does |
 |---|---|
 | **Is this still an issue?** | Checks the current state to see if the problem is ongoing or resolved |
 | **Investigate root cause** | Kicks off a root cause analysis |
 | **Create a ticket** | Creates a ticket for the issue |
 | **Suggest a fix** | Recommends remediation steps or best practices |
-| **Discuss this insight** | Opens a free-form conversation about the insight |
+
+**Chat** opens a free-form conversation about the insight instead, for anything those four don't cover.
 
 ### Watching an insight
 

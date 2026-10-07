@@ -113,7 +113,7 @@ From a situation thread you can:
 
 ### Insight shortcuts
 
-Click **Chat** on any insight for five quick actions:
+**Ask** offers four preset questions about an insight, so you don't have to phrase them yourself:
 
 | Action | Description |
 |---|---|
@@ -121,7 +121,8 @@ Click **Chat** on any insight for five quick actions:
 | **Investigate root cause** | Kicks off a root cause analysis |
 | **Create a ticket** | Creates a ticket for the issue |
 | **Suggest a fix** | Recommends remediation steps or best practices |
-| **Discuss this insight** | Opens a free-form conversation about the insight |
+
+**Chat** opens a free-form conversation about the insight instead, with its full context already loaded.
 
 These shortcuts are available everywhere insights appear: the priority queue, insight lists, and insight detail views. You can also click **Help me triage** to send your current priority insights and recent activity to Coworker for a prioritization recommendation.
 

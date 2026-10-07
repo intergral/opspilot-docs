@@ -127,7 +127,7 @@ The roadmap for 2026 is anchored around AI and OpenTelemetry - deeper AI-powered
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140102032?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FusionReactor 25.2 Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 !!! info "Learn more"
-    [Release notes](https://docs.fusionreactor.io/Latest-updates/release-notes/)
+    [Release notes](release-notes.md)
 
 ## Trace-powered investigations in OpsPilot
 
