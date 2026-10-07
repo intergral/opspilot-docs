@@ -1,12 +1,12 @@
 # Behavior
 
-Behavior controls how Coworker communicates and acts - how much detail it gives when it reports, and whether it applies its own optimisation suggestions automatically - so its output fits how your team works. These settings apply across your organisation.
+Behavior controls how Coworker communicates and acts - how much detail it gives when it reports, and whether it applies its own optimization suggestions automatically - so its output fits how your team works. These settings apply across your organization.
 
 ![!Screenshot](../../../../../Coworker/behaviour.png)
 
 ## Report detail
 
-Controls how much Coworker writes when it reports a finding. Applies to every task in your organisation.
+Controls how much Coworker writes when it reports a finding. Applies to every task in your organization.
 
 | Mode | Description |
 |---|---|
@@ -18,7 +18,7 @@ Controls how much Coworker writes when it reports a finding. Applies to every ta
 
 When Coworker spots a way to make a task cheaper or more reliable, it can either propose the change for your review or apply it automatically.
 
-**Auto-accept optimisation suggestions** - apply suggested changes immediately. Off by default; most teams prefer to review each one first.
+**Auto-accept optimization suggestions** - apply suggested changes immediately. Off by default; most teams prefer to review each one first.
 
 ---
 

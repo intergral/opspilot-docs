@@ -10,7 +10,9 @@ Coworker opens by default on login. It can also be reached at any time from the 
 
 Type your question in the message box and press **Enter** to send it. Press **Shift+Enter** for a new line instead, so you can write a longer question across several lines without sending it early.
 
-The panel header shows the current thread's name, with a **book** icon for the documentation, a **⋯** menu, and a button to close the panel. The **⋯** menu holds:
+The panel header shows the current thread's name, with a **New thread** button, a **book** icon for the documentation, a **⋯** menu, and a button to close the panel. When the thread is about a situation, an **Open the situation** button appears first, taking you to its [full detail](situations.md#what-a-situation-shows-you).
+
+The **⋯** menu holds:
 
 | Option | What it does |
 |---|---|
@@ -39,6 +41,16 @@ Both open a guided conversation rather than a form - see [the **⋯** menu](#acc
 Above the message box sit suggested questions drawn from what is happening right now. With a situation open they are about that situation - *What's the fastest fix?*, *Should we page someone?*, *Is anything else cascading?* Click one to send it.
 
 You can ignore all of it and type your own question instead.
+
+## Watching Coworker work
+
+While Coworker is answering, a **Thinking** section shows what it is doing rather than leaving you with a spinner. Each step names the work and its state - *Fetching trace data · Completed*, for example - and expands if you want the detail.
+
+This is worth a glance on a slow answer. It tells you whether Coworker is still gathering data or already reasoning about it, and which sources it went to.
+
+## Replying to part of an answer
+
+Coworker's answers can run long. Select any passage in one and a **Quote in reply** button appears - click it to quote just that part in your next message, so your follow-up is anchored to the sentence you are asking about rather than the whole answer.
 
 ## Web search
 
@@ -90,12 +102,17 @@ You don't have to arrive at the chat with a question already typed. Most places 
 
 **Metric panels carry an Ask AI button** in their top-right corner, throughout OpsPilot - on Servers, Services, and anywhere else your data is graphed. Click it to send that panel to Coworker for an explanation of the pattern or anomaly in it. See [Metric graph actions](../../Servers/metrics.md#metric-graph-actions) for the icons alongside it.
 
+!!! tip "Start a new thread for a separate investigation"
+    Sending context adds it to the thread that is currently open, so several of these in a row build up in one conversation. That is useful when you are working through a single problem, and confusing when you have moved on to something else.
+
+    If you are starting a fresh investigation, click **New thread** in the chat panel first, then send the context.
+
 A few views send richer context than a graph:
 
 | Where | What it sends |
 |---|---|
 | [Logs](../../Servers/logs.md) | A log entry, for an explanation and troubleshooting suggestions |
-| [Traces](../../Services/traces.md) | The whole trace, for analysis of where the time went |
+| [Traces](../../Services/traces.md) | **Analyze Trace** sends the whole trace, for analysis of where the time went |
 
 ---
 

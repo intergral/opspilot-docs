@@ -8,11 +8,11 @@ When you first open Coworker, a short [six-step setup](getting-started.md) tailo
 
 ### Can I have more than one Coworker?
 
-No. Each user has one Coworker. Your feed and preferences are personal to you, but tasks and investigations are shared across your organisation - everyone on the team can see what Coworker has raised.
+No. Each user has one Coworker. Your feed and preferences are personal to you, but tasks and investigations are shared across your organization - everyone on the team can see what Coworker has raised.
 
 ### Can my team share a Coworker?
 
-Tasks and investigations are already shared across your organisation. Use the **Just for me** dropdown at the top of the dashboard to toggle between your personalised feed and the full team view.
+Tasks and investigations are already shared across your organization. Use the **Just for me** dropdown at the top of the dashboard to toggle between your personalized feed and the full team view.
 
 ### Can I restart the setup?
 
@@ -82,7 +82,7 @@ If the underlying issue hasn't been fixed, Coworker will continue to surface it.
 
 ### How do I change what types of insights I see?
 
-Open **Settings > Preferences** and adjust **Feed relevance** - your role, focus services, focus areas (the domains Coworker prioritises), and custom keywords. You can also just ask Coworker to adjust these from any chat. This changes what reaches your feed, not what Coworker investigates across your organisation.
+Open **Settings > Preferences** and adjust **Feed relevance** - your role, focus services, focus areas (the domains Coworker prioritizes), and custom keywords. You can also just ask Coworker to adjust these from any chat. This changes what reaches your feed, not what Coworker investigates across your organization.
 
 !!! info "Learn more"
     [Preferences](Settings/preferences.md)
@@ -93,7 +93,7 @@ Open **Settings > Preferences** and adjust **Feed relevance** - your role, focus
 
 ### What do the situation statuses mean?
 
-A situation moves through four statuses: **Open** (newly raised, not yet actioned), **In progress** (someone is working it), **Resolved** (handled), and **Dismissed** (not a real problem). Status is separate from severity (Critical, Warning, or Info) - a Critical can be In progress, and a Warning can sit Open.
+A situation has three statuses: **Active** (a live problem), **Watching** (Coworker is keeping an eye on it rather than pressing you about it), and **Resolved** (handled). You can also dismiss one that was never a real problem. Status is separate from severity (Critical, Warning, or Info) - a Critical can sit in Watching, and a Warning can be Active.
 
 !!! info "Learn more"
     [Severity and status](situations.md#severity-and-status)
@@ -174,7 +174,7 @@ AI Tokens are used whenever Coworker performs AI-powered work:
 - Answering questions in chat
 - Investigating alerts and situations
 - Triaging and performing background checkups on open situations
-- Analysing telemetry and service behaviour
+- Analyzing telemetry and service behavior
 - Running scheduled checks
 - Generating recommendations, suggested fixes and debriefs
 - Updating situations and producing findings
@@ -207,8 +207,8 @@ You can set a monthly task allowance to control spend, with configurable warning
 ### How do I reduce AI Token usage?
 
 - Review **Optimization Suggestions** in the [AI Tokens tab](usage.md#optimization-suggestions); these appear automatically after a task has run a few times and Coworker detects ways it could be improved
-- **Apply** an optimisation suggestion to apply the recommended change immediately
-- Click **Analyse & Optimise** to trigger an on-demand optimisation review at any time
+- **Apply** an optimization suggestion to apply the recommended change immediately
+- Click **Analyse & Optimise** to trigger an on-demand optimization review at any time
 - Switch high-volume or routine tasks to the [Efficient model tier](tasks.md#model-tier)
 - Reduce the frequency of scheduled tasks that run often but find little
 - Review the **AI Token Breakdown** table to identify the most expensive tasks and consolidate or adjust them
@@ -228,7 +228,7 @@ Yes. The **Warning threshold** in Settings > Budget & cost triggers a notificati
 !!! info "Learn more"
     [Allowance](usage.md#ai-token-allowance)
 
-### How do I accept or dismiss an optimisation suggestion?
+### How do I accept or dismiss an optimization suggestion?
 
 Open the **AI Tokens** tab in Usage and scroll to **Optimization Suggestions**. Expand any suggestion to see the reasoning under **Why this suggestion** and the proposed change under **Instruction changes**. Click **Apply** to apply it immediately, or **Dismiss** to ignore it.
 
@@ -271,7 +271,7 @@ Please contact support if you need to reset Coworker's [memory](overview.md#memo
 
 ### What data does Coworker have access to?
 
-Coworker has access to the observability data in your OpsPilot account: metrics, logs, traces, and alert rules. It does not have access to data outside your organisation's account.
+Coworker has access to the observability data in your OpsPilot account: metrics, logs, traces, and alert rules. It does not have access to data outside your organization's account.
 
 ### Does Coworker read our Slack conversations?
 

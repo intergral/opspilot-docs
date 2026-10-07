@@ -15,7 +15,7 @@ Usage varies depending on the amount of context, telemetry and reasoning require
 | Source | Description |
 |---|---|
 | **Chat** | AI Tokens used by direct questions and conversations with Coworker |
-| **Coworker investigations** | AI Tokens used when Coworker investigates alerts, situations, telemetry patterns or service behaviour |
+| **Coworker investigations** | AI Tokens used when Coworker investigates alerts, situations, telemetry patterns or service behavior |
 | **Scheduled checks** | AI Tokens used by recurring Coworker tasks, such as daily error checks, performance reviews or resource usage analysis |
 | **Recommendations** | AI Tokens used to generate suggested fixes, explanations and next steps |
 
@@ -36,7 +36,7 @@ Four summary metrics are shown at the top:
 | **New findings** | Number of new findings generated across all investigations |
 | **Situations raised** | Number of situations Coworker raised in the selected period |
 
-A **Runs over time** chart stacks activity across the period, coloured by task alongside the held-off categories (allowance and paced). The legend below the chart identifies each task and the held-off types; when there are many tasks, the smaller ones are grouped together as **Other tasks (N)**.
+A **Runs over time** chart stacks activity across the period, colored by task alongside the held-off categories (allowance and paced). The legend below the chart identifies each task and the held-off types; when there are many tasks, the smaller ones are grouped together as **Other tasks (N)**.
 
 The **By task** table breaks down activity per task:
 
@@ -128,7 +128,7 @@ Toggle **Auto-apply optimization suggestions** to have Coworker automatically ap
 
 ### On-demand analysis
 
-Click **Analyse & Optimise** to trigger an on-demand optimisation review at any time. If no optimisations are needed, you'll see a **Looking good!** confirmation.
+Click **Analyse & Optimise** to trigger an on-demand optimization review at any time. If no optimizations are needed, you'll see a **Looking good!** confirmation.
 
 ---
 

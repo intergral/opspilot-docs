@@ -12,7 +12,7 @@ The meter at the top projects how many AI Tokens your current background setting
 
 Working style presets set your triage frequency and check-up cadence together, so you can pick a rhythm in one click rather than tuning each control by hand:
 
-| Preset | Behaviour | Triage | Check-ups |
+| Preset | Behavior | Triage | Check-ups |
 |---|---|---|---|
 | **Active ops team** | Investigates and actions situations of all severities promptly | Hourly | Balanced |
 | **Daily review** | Checks in daily and jumps on anything critical as it lands. One daily triage batch, lighter checkups | Daily | Light Touch |

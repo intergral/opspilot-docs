@@ -21,7 +21,7 @@ Use the toggle at the top to enable or disable OpsPilot Alerts entirely. The hea
 
 ![!Screenshot](../../../../Coworker/configure-event-source.png)
 
-If Coworker has optimisation suggestions for your alert setup, a banner appears at the top of the configure panel showing the estimated monthly saving. Click **View** to see the suggestion.
+If Coworker has optimization suggestions for your alert setup, a banner appears at the top of the configure panel showing the estimated monthly saving. Click **View** to see the suggestion.
 
 Under **Alert Rules**, you can:
 
@@ -44,7 +44,7 @@ To set up a new event source, open a new thread, select **Set up a task**, and d
 | **Type** | The webhook type, e.g. Generic Webhook |
 | **Name** | A name for the event source (e.g. Production Alerts) |
 | **Description** | What events this webhook will receive |
-| **Custom Instructions** (optional) | Guides how events are investigated, e.g. *"Focus on database-related issues and suggest query optimisations"* |
+| **Custom Instructions** (optional) | Guides how events are investigated, e.g. *"Focus on database-related issues and suggest query optimizations"* |
 | **Model Tier** | Controls how the event is investigated. **Thorough** for critical or complex events; **Efficient** for high-volume, routine events |
 | **Monthly Budget** (optional) | A token budget for this event source. If not set, the org budget is the only cap. |
 

@@ -54,6 +54,7 @@ nav:
           - Event Sources: Data-insights/Features/OpsPilot/Coworker/event-sources.md
           - Scheduled: Data-insights/Features/OpsPilot/Coworker/scheduled.md
           - Manage tasks: Data-insights/Features/OpsPilot/Coworker/manage-tasks.md
+        - Activity: Data-insights/Features/OpsPilot/Coworker/activity.md
         - Knowledge: Data-insights/Features/OpsPilot/Coworker/knowledge.md
         - Usage: Data-insights/Features/OpsPilot/Coworker/usage.md
         - Settings:

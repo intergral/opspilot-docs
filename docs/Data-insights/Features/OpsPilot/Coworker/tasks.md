@@ -5,7 +5,7 @@ Tasks are the standing jobs you give Coworker to run in the background. Rather t
 Coworker is not limited to your observability data. As an LLM, it can also search the web as part of an investigation, bringing in external context (documentation, known issues, best practices) alongside your metrics, logs, and traces.
 
 !!! info
-    Tasks are currently configured at the organisation level.
+    Tasks are currently configured at the organization level.
 
 ---
 
@@ -17,7 +17,7 @@ Coworker's always-on health screen. Once your services are cataloged, it watches
 
 ### Scheduled tasks
 
-Run on a recurring schedule you choose: hourly, daily, weekly, monthly, or a custom interval. Each run produces a report summarising what Coworker found - the core of Coworker's continuous analysis. See [Scheduled tasks](scheduled.md) for details.
+Run on a recurring schedule you choose: hourly, daily, weekly, monthly, or a custom interval. Each run produces a report summarizing what Coworker found - the core of Coworker's continuous analysis. See [Scheduled tasks](scheduled.md) for details.
 
 ### Event sources
 

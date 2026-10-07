@@ -1,8 +1,8 @@
 # Coworker
 
-Coworker is the connective layer that binds your observability data, alerting, service knowledge, and incident response into one place. Rather than switching between dashboards, alert feeds, and runbooks, you get a single AI SRE teammate that watches your systems, investigates what it finds, and hands you a clear, prioritised picture of what needs attention - so your team spends less time fighting tools and more time fixing problems.
+Coworker is the connective layer that binds your observability data, alerting, service knowledge, and incident response into one place. Rather than switching between dashboards, alert feeds, and runbooks, you get a single AI SRE teammate that watches your systems, investigates what it finds, and hands you a clear, prioritized picture of what needs attention - so your team spends less time fighting tools and more time fixing problems.
 
-Each user gets their own personalised Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
+Each user gets their own personalized Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1215757524?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OpsPilot Coworker"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -27,14 +27,14 @@ Coworker also shows you what it cannot see. Coverage gaps in your telemetry, unc
 
 Coworker opens on its dashboard, which is also where you land when you log in. The left side is what Coworker has been doing; the right is the [chat](chat.md).
 
-**Just for me** at the top filters what you see to your own slice of the organisation. Switch to the broader view when you are on call or covering someone else - see [How the feed adapts](situations.md#how-the-feed-adapts).
+**Just for me** at the top filters what you see to your own slice of the organization. Switch to the broader view when you are on call or covering someone else - see [Your view or the team's](situations.md#your-view-or-the-teams).
 
 | Panel | What it holds |
 |---|---|
 | **Your standup** | A short summary of what matters right now, written by Coworker in its own words. It names the situation it is most concerned about and offers follow-ups you can click - jumping straight to that situation, or asking what to change and why earlier episodes closed. The panel says when it was last written, and you can rewrite it on demand with the refresh icon |
 | **Situations** | The situations currently open, with their severity and the service they affect. See [Situations](situations.md) |
-| **Help me see more** | Gaps in what Coworker can see - a service that has stopped shipping traces, telemetry it expected and is not getting. These are worth fixing first, because everything else Coworker does depends on what reaches it |
-| **Recent activity** | What Coworker handled without involving you: checks it ran on its own, and findings it recorded without raising a situation. **Summarize** asks it to sum that up for you |
+| **Help me see more** | Gaps in what Coworker can see - a service that has stopped shipping traces, telemetry it expected and is not getting. These are worth fixing first, because everything else Coworker does depends on what reaches it. **All** opens [Insights](insights.md) filtered to coverage gaps |
+| **Recent activity** | What Coworker handled without involving you: checks it ran on its own, and findings it recorded without raising a situation. **Summarize** asks it to sum that up for you, and **All** opens the full [Activity](activity.md) record |
 | **Tasks** | Your [Heartbeat](heartbeat.md), [event sources](event-sources.md) and [scheduled tasks](scheduled.md), each showing when it next runs or how long it has been quiet |
 
 The standup is rewritten on a cadence you set in [Settings > Background activity](Settings/overview.md).
@@ -53,7 +53,7 @@ The standup is rewritten on a cadence you set in [Settings > Background activity
 | **Alert response** | Automatically investigates firing alerts and posts one clean situation instead of a stream of raw alert noise |
 | **[Tasks](tasks.md)** | Scheduled, monitoring, and webhook-driven jobs that run recurring analysis and report back proactively |
 | **[Memory](knowledge.md)** | Builds a growing understanding of your systems, your team, and your preferences over time |
-| **[Cost management](usage.md)** | Allowance tracking and optimisation suggestions to keep AI Token spend under control |
+| **[Cost management](usage.md)** | Allowance tracking and optimization suggestions to keep AI Token spend under control |
 
 New here? [Getting started](getting-started.md) walks through onboarding. See [Situations](situations.md) for how findings surface in your feed and how to triage them.
 
