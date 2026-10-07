@@ -83,7 +83,7 @@ Click **Continue** when done, or **Skip** to proceed without selecting any.
 
 ![!Screenshot](../../../../Coworker/onboarding5.png)
 
-Select the domains you want Coworker to prioritise in your feed:
+Select the domains you want Coworker to prioritize in your feed:
 
 | Area | What it covers |
 |---|---|
@@ -102,17 +102,17 @@ Select as many as apply. These can be updated at any time from **Settings > Pref
 
 ---
 
-### Step 6: Which services do you want front and centre?
+### Step 6: Which services do you want front and center?
 
 ![!Screenshot](../../../../Coworker/onboarding6.png)
 
-Coworker asks which services to put front and centre, so it can prioritise what reaches you first:
+Coworker asks which services to put front and center, so it can prioritize what reaches you first:
 
 > *"Everything still gets monitored - this just decides what reaches you first, and what sits under the rest of the org. Skip if you'd rather not narrow by service. Either way, you can change it any time."*
 
 Choose how to proceed:
 
-- **Sure** - pick the services to put front and centre, so situations touching them are prioritised in your feed.
+- **Sure** - pick the services to put front and center, so situations touching them are prioritized in your feed.
 - **Skip** - finish onboarding without narrowing by service.
 
 ---
@@ -123,12 +123,12 @@ Whether set during onboarding or later from Settings, three controls decide what
 
 | Setting | Description |
 |---|---|
-| **Focus services** | The specific services you own or care about, by name or glob pattern (e.g. `payments-*`). Situations touching these are prioritised in your feed. |
-| **Focus areas** | The domains you want prioritised: Errors and exceptions, Application performance, Infrastructure and runtime, Databases and data stores, Data pipelines and quality, Deploys and releases, Team and delivery health, Reliability and SLOs, Cost and capacity, Security and auth. |
+| **Focus services** | The specific services you own or care about, by name or glob pattern (e.g. `payments-*`). Situations touching these are prioritized in your feed. |
+| **Focus areas** | The domains you want prioritized: Errors and exceptions, Application performance, Infrastructure and runtime, Databases and data stores, Data pipelines and quality, Deploys and releases, Team and delivery health, Reliability and SLOs, Cost and capacity, Security and auth. |
 | **Custom keywords** | Any terms beyond the focus areas above - a library, technology, or feature name specific to your stack. A match nudges related situations into your feed. |
 
 !!! info "Feed filtering only"
-    None of these change what Coworker investigates or raises across your organisation - they only change what reaches your personal feed.
+    None of these change what Coworker investigates or raises across your organization - they only change what reaches your personal feed.
 
 ---
 

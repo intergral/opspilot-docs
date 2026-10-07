@@ -1,6 +1,6 @@
 # Shipping OpenTelemetry data to OpsPilot
 
-Shipping OpenTelemetry (OTel) data to OpsPilot centralizes your observability and enables OpsPilot AI analysis, faster troubleshooting, and cross-tier performance optimization. Using a vendor-agnostic OTLP pipeline ensures your monitoring remains flexible and future-proof.
+Shipping OpenTelemetry (OTel) data to OpsPilot centralizes your observability and lets Coworker analyze it, for faster troubleshooting and cross-tier performance optimization. Using a vendor-agnostic OTLP pipeline ensures your monitoring remains flexible and future-proof.
 
 To send your telemetry data to OpsPilot, you'll need a component that receives data from your instrumented applications and forwards it via OTLP. There are two recommended options:
 

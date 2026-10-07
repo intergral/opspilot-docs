@@ -8,11 +8,11 @@ When you first open Coworker, a short [six-step setup](getting-started.md) tailo
 
 ### Can I have more than one Coworker?
 
-No. Each user has one Coworker. Your feed and preferences are personal to you, but tasks and investigations are shared across your organisation - everyone on the team can see what Coworker has raised.
+No. Each user has one Coworker. Your feed and preferences are personal to you, but tasks and investigations are shared across your organization - everyone on the team can see what Coworker has raised.
 
 ### Can my team share a Coworker?
 
-Tasks and investigations are already shared across your organisation. Use the **Just for me** dropdown at the top of the dashboard to toggle between your personalised feed and the full team view.
+Tasks and investigations are already shared across your organization. Use the **Just for me** dropdown at the top of the dashboard to toggle between your personalized feed and the full team view.
 
 ### Can I restart the setup?
 
@@ -82,7 +82,7 @@ If the underlying issue hasn't been fixed, Coworker will continue to surface it.
 
 ### How do I change what types of insights I see?
 
-Open **Settings > Preferences** and adjust **Feed relevance** - your role, focus services, focus areas (the domains Coworker prioritises), and custom keywords. You can also just ask Coworker to adjust these from any chat. This changes what reaches your feed, not what Coworker investigates across your organisation.
+Open **Settings > Preferences** and adjust **Feed relevance** - your role, focus services, focus areas (the domains Coworker prioritizes), and custom keywords. You can also just ask Coworker to adjust these from any chat. This changes what reaches your feed, not what Coworker investigates across your organization.
 
 !!! info "Learn more"
     [Preferences](Settings/preferences.md)
@@ -93,7 +93,7 @@ Open **Settings > Preferences** and adjust **Feed relevance** - your role, focus
 
 ### What do the situation statuses mean?
 
-A situation moves through four statuses: **Open** (newly raised, not yet actioned), **In progress** (someone is working it), **Resolved** (handled), and **Dismissed** (not a real problem). Status is separate from severity (Critical, Warning, or Info) - a Critical can be In progress, and a Warning can sit Open.
+A situation has three statuses: **Active** (a live problem), **Watching** (Coworker is keeping an eye on it rather than pressing you about it), and **Resolved** (handled). You can also dismiss one that was never a real problem. Status is separate from severity (Critical, Warning, or Info) - a Critical can sit in Watching, and a Warning can be Active.
 
 !!! info "Learn more"
     [Severity and status](situations.md#severity-and-status)
@@ -104,6 +104,57 @@ Open the situation and click **Assign**. Choose **I'll take this** to assign it 
 
 !!! info "Learn more"
     [Situations and threads](situations.md#situations-and-threads)
+
+---
+
+## Notifications
+
+### Does Coworker notify me when it finds something?
+
+Not on its own. Coworker raises situations in your feed, but it does not contact you outside OpsPilot unless you connect Slack.
+
+### Can I get situations in Slack?
+
+Yes. Install the [Slack integration](../../Integrations/Chat/slack.md), invite the bot to the channel you want situations in, then enable situation notifications using the slash command in the setup message.
+
+You can also do the whole thing from the Slack integration page in OpsPilot, which walks you through the steps after you install it.
+
+### How will I know about a situation when OpsPilot isn't open?
+
+Slack is the way to be told. You can also ask [OpsPilot MCP](../../Integrations/Chat/opspilot-mcp.md) about currently active situations from your editor or AI assistant, without opening OpsPilot at all.
+
+### How quickly will I hear about a situation?
+
+That depends on severity:
+
+| Severity | Typical time from the triggering event |
+|---|---|
+| **Critical** | 3-5 minutes |
+| **Everything else** | Up to the triage cadence - one hour by default |
+
+Coworker starts investigating the moment an alert fires, and the investigation itself takes roughly 30 seconds to 2 minutes. Its findings are then picked up at the next **triage**, which runs on a cadence you set in account settings. Critical findings skip that wait: Coworker triggers triage immediately rather than holding them for the next cycle.
+
+Once a situation exists, Slack delivery is near-instant - OpsPilot checks for events to post every five seconds.
+
+### Can I be notified only about critical situations?
+
+Yes. Choose which severities are posted to Slack.
+
+A situation that is later raised to critical is posted at that point, even if its earlier severity was filtered out, so filtering to critical does not mean missing something that becomes critical. Escalations always notify.
+
+### Are browser or desktop notifications supported?
+
+No. Coworker uses the same notification system as the rest of OpsPilot, which has no browser or desktop notifications.
+
+### Why does Coworker raise so few situations?
+
+By design. Coworker investigates far more than it reports - alerts, anomalies and other signals that turn out not to indicate a real problem are recorded quietly as [insights](insights.md) rather than raised as situations.
+
+It raises a situation for recurring issues, customer-facing problems, clear faults, and anything you have explicitly asked it to watch through a [task](tasks.md). Critical is reserved for major faults and things affecting your customers.
+
+You can also teach it. If it raises something you don't consider important, tell it - Coworker can remember that and either stop raising it, or raise it at a lower severity.
+
+Expect more noise in the first few weeks. Coworker surfaces pre-existing issues in your environment, and is still learning what your team cares about from your conversations and from what you dismiss.
 
 ---
 
@@ -123,7 +174,7 @@ AI Tokens are used whenever Coworker performs AI-powered work:
 - Answering questions in chat
 - Investigating alerts and situations
 - Triaging and performing background checkups on open situations
-- Analysing telemetry and service behaviour
+- Analyzing telemetry and service behavior
 - Running scheduled checks
 - Generating recommendations, suggested fixes and debriefs
 - Updating situations and producing findings
@@ -156,8 +207,8 @@ You can set a monthly task allowance to control spend, with configurable warning
 ### How do I reduce AI Token usage?
 
 - Review **Optimization Suggestions** in the [AI Tokens tab](usage.md#optimization-suggestions); these appear automatically after a task has run a few times and Coworker detects ways it could be improved
-- **Apply** an optimisation suggestion to apply the recommended change immediately
-- Click **Analyse & Optimise** to trigger an on-demand optimisation review at any time
+- **Apply** an optimization suggestion to apply the recommended change immediately
+- Click **Analyse & Optimise** to trigger an on-demand optimization review at any time
 - Switch high-volume or routine tasks to the [Efficient model tier](tasks.md#model-tier)
 - Reduce the frequency of scheduled tasks that run often but find little
 - Review the **AI Token Breakdown** table to identify the most expensive tasks and consolidate or adjust them
@@ -177,7 +228,7 @@ Yes. The **Warning threshold** in Settings > Budget & cost triggers a notificati
 !!! info "Learn more"
     [Allowance](usage.md#ai-token-allowance)
 
-### How do I accept or dismiss an optimisation suggestion?
+### How do I accept or dismiss an optimization suggestion?
 
 Open the **AI Tokens** tab in Usage and scroll to **Optimization Suggestions**. Expand any suggestion to see the reasoning under **Why this suggestion** and the proposed change under **Instruction changes**. Click **Apply** to apply it immediately, or **Dismiss** to ignore it.
 
@@ -220,7 +271,18 @@ Please contact support if you need to reset Coworker's [memory](overview.md#memo
 
 ### What data does Coworker have access to?
 
-Coworker has access to the observability data in your OpsPilot account: metrics, logs, traces, and alert rules. It does not have access to data outside your organisation's account.
+Coworker has access to the observability data in your OpsPilot account: metrics, logs, traces, and alert rules. It does not have access to data outside your organization's account.
+
+### Does Coworker read our Slack conversations?
+
+By default, almost nothing. Connecting the [Slack integration](../../Integrations/Chat/slack.md) does not put Coworker in your conversations:
+
+- **When you @-mention OpsPilot**, it reads the recent message history in that channel for context. It stores only your message - not the surrounding messages it used as context.
+- **When you reply in the thread of a situation it posted**, those replies become context for its next check-up on that situation. Coworker says so explicitly in the thread each time.
+
+It sees nothing else in your Slack.
+
+Turning on **passive** or **active listening** for a channel changes that deliberately: every message in that channel is sent to Coworker, both as context for investigations and to learn from. In active mode it will also investigate things it can help with and reply on its own.
 
 ---
 

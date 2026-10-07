@@ -2,7 +2,7 @@
 
 Let AI assistants query OpsPilot over the Model Context Protocol (MCP).
 
-OpsPilot MCP brings OpsPilot to where your team already works. An AI assistant there can work with your telemetry and situations the way the OpsPilot coworker does, so you can ask without switching tools.
+OpsPilot MCP brings OpsPilot to where your team already works. An AI assistant there can work with your telemetry and situations the way OpsPilot Coworker does, so you can ask without switching tools.
 
 Navigate to **Integrations** from the left-hand sidebar, then select **OpsPilot MCP**.
 
@@ -10,7 +10,7 @@ Navigate to **Integrations** from the left-hand sidebar, then select **OpsPilot 
 
 ## What assistants can do
 
-Once connected, an assistant can read your **dashboards**, **metrics**, **logs**, **traces**, and the **situations** your coworker is tracking - and, depending on the permission tier, act on them.
+Once connected, an assistant can read your **dashboards**, **metrics**, **logs**, **traces**, and the **situations** your Coworker is tracking - and, depending on the permission tier, act on them.
 
 Each person connects their own assistant and signs in as themselves, so there is no key to paste and everyone sees what they can already see in OpsPilot.
 

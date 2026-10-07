@@ -99,11 +99,19 @@ Clicking a **Trace Name** link opens a detail panel showing the full trace water
 
 The waterfall view shows each span as a horizontal bar, positioned on a timeline from 0 to the total trace duration. Each row shows the **service name**, **operation**, and **duration**, and a **Logs** button to view logs related to that span.
 
-Use **Span Filters** to narrow the spans shown, and **Prev** / **Next** to step through them. The total span count is shown above the waterfall (e.g., *3 spans*).
+Above the waterfall, **Filter by attribute or text** narrows the spans shown, with three quick filters beside it:
+
+| Filter | Shows |
+|---|---|
+| **Critical path** | Only the spans on the trace's critical path - the chain that determined its total duration |
+| **Errors** | Only spans that errored |
+| **High latency** | Only the slowest spans |
+
+The matching span count is shown alongside (for example, *1 spans*), with arrows to step through the matches and a **Show all spans** toggle to drop the filter again.
 
 ### Analyze Trace
 
-Click **Analyze Trace** in the top right to open a deeper breakdown of the trace, including span-level metrics and structure.
+Click **Analyze Trace** in the top right to send the trace to [Coworker](OpsPilot/Coworker/chat.md), which analyzes where the time went and what is worth looking at.
 
 ---
 

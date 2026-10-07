@@ -107,10 +107,10 @@ Get metrics, logs, and traces flowing from your infrastructure using **Grafana A
 
 ## Step 4 - Get answers with AI
 
-Once data is flowing, OpsPilot's AI works in two ways:
+Once data is flowing, **Coworker** goes to work. It is your AI SRE teammate, and it works in two ways:
 
-- **Coworker** - your AI SRE teammate that runs automated investigations in the background, surfaces prioritised insights, and flags issues before they escalate. [Learn more](/Data-insights/Features/OpsPilot/Coworker/overview/)
-- **OpsPilot Chat** - ask questions in plain English to query your telemetry, investigate specific issues, or get on-demand AI analysis across metrics, logs, and traces.
+- **On its own** - running investigations in the background, surfacing prioritized insights, and flagging issues before they escalate. [Learn more](/Data-insights/Features/OpsPilot/Coworker/overview/)
+- **When you ask** - [chat](/Data-insights/Features/OpsPilot/Coworker/chat/) with it in plain English to query your telemetry, investigate a specific issue, or get analysis across metrics, logs, and traces.
 
 ---
 

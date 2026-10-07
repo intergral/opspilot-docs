@@ -12,6 +12,31 @@ The header shows the total insight count, and the **Search insights** box finds 
 
 ## Filtering
 
+A filter bar runs across the top of the list, with the number of matching insights shown beneath it. Alongside the filters described below, it offers:
+
+| Control | What it does |
+|---|---|
+| **Search insights** | Find an insight by its title |
+| **Status** | Narrow to a state such as **Unresolved** |
+| **Not in a situation** | Show only insights Coworker recorded without raising a [situation](situations.md) from them - the quiet majority of what it finds |
+| **Sort** | Order the list, **Newest first** by default |
+| **Clear all** | Drop every filter at once |
+
+Arriving from **Help me see more** on the Coworker dashboard lands you here with the filters already set, so you see that slice rather than everything.
+
+### Category
+
+Insights are sorted into broad categories. Pick one to show only its insights, or **Any category** for all of them:
+
+| Category | What it holds |
+|---|---|
+| **Errors** | Things failing |
+| **Performance** | Things degrading |
+| **Points of interest** | Things worth knowing about that are not faults |
+| **Coverage gaps** | Things Coworker cannot see - a service not shipping telemetry, a metric it expected and is not getting |
+
+**Coverage gaps** is what the dashboard's **Help me see more** panel is showing you. These are worth clearing first: everything else Coworker does depends on what reaches it.
+
 ### Severity
 
 Each insight is ranked by severity - **Critical**, **Notable**, or **Info**, from most to least important. Select a severity to show only insights at that level; the count beside each shows how many insights it contains.
@@ -46,18 +71,19 @@ Click any row to open the insight in full.
 
 Opening an insight shows the full write-up:
 
-- **Header** - the severity, category, and affected service, plus the title, occurrence count, and when it was last seen
+- **Header** - the severity, category, and affected service, plus the title, occurrence count, when it was last seen, and tags such as the service name or `observability-gap`
 - **Part of** - if the insight belongs to a situation, a banner links through to that [situation](situations.md)
 - **Description** - what Coworker found, with root-cause detail
-- **Recommended** - concrete next steps Coworker suggests
-- **Evidence** - the supporting signals: exceptions, transaction IDs, and log lines
+- **Recommended** - concrete next steps Coworker suggests, often linking to the documentation for whatever it is asking you to set up
+- **Evidence** - the supporting signals behind the finding. These can be log lines, exceptions and transaction IDs, or metric series shown as charts, each with **Open in Explore** to take it further
 - **History** - each occurrence of the insight over time. Click **View execution** to see the investigation run that produced it
 
 ### Acting on an insight
 
 | Action | Description |
 |---|---|
-| **Chat** | Open quick actions and a conversation about the insight, with its full context already loaded (see below) |
+| **Chat** | Open a free-form conversation about the insight, with its full context already loaded (see below) |
+| **Ask** | Put one of four preset questions to Coworker - **Is this still an issue?**, **Investigate root cause**, **Create a ticket**, or **Suggest a fix** |
 | **Watch** | Set up a recurring check on the insight - opens the **Watch This Insight** dialog (see below) |
 | **Resolve** | Mark the insight resolved |
 | **...** | More actions: **Hide similar** (stop surfacing insights like this one) and **Not right** (tell Coworker the insight is off the mark, so it learns) |
@@ -65,17 +91,18 @@ Opening an insight shows the full write-up:
 
 ### Chatting about an insight
 
-**Chat** opens a menu of quick actions, each sending the insight to Coworker with its full context already loaded:
+**Ask** opens a menu of preset questions, each sending the insight to Coworker with its full context already loaded:
 
 ![!Screenshot](../../../../Coworker/insight-chat.png)
 
-| Action | Description |
+| Question | What it does |
 |---|---|
 | **Is this still an issue?** | Checks the current state to see if the problem is ongoing or resolved |
 | **Investigate root cause** | Kicks off a root cause analysis |
 | **Create a ticket** | Creates a ticket for the issue |
 | **Suggest a fix** | Recommends remediation steps or best practices |
-| **Discuss this insight** | Opens a free-form conversation about the insight |
+
+**Chat** opens a free-form conversation about the insight instead, for anything those four don't cover.
 
 ### Watching an insight
 

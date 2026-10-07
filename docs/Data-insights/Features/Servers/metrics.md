@@ -56,7 +56,7 @@ This helps with **root-cause analysis** - understanding what led to a performanc
 
 The top-right corner of each metric graph contains three action icons:
 
-1. **Ask AI** - Send this metric to OpsPilot AI for natural language explanations and analysis of patterns or anomalies.
+1. **Ask AI** - Send this metric to [Coworker](../OpsPilot/Coworker/chat.md) for a plain-language explanation and analysis of patterns or anomalies.
 
 2. **Full screen** - Open the metric in full-screen view for detailed analysis and extended time ranges.
 

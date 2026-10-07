@@ -1,5 +1,5 @@
 site_name: OpsPilot Documentation
-site_url: https://docs.fusionreactor.io/
+site_url: https://docs.opspilot.com/
 repo_name: opspilot
 repo_url: https://github.com/intergral/opspilot-docs
 edit_uri: edit/main/docs/
@@ -45,6 +45,7 @@ nav:
      - Coworker:
         - Overview: Data-insights/Features/OpsPilot/Coworker/overview.md
         - Getting started: Data-insights/Features/OpsPilot/Coworker/getting-started.md
+        - Chat: Data-insights/Features/OpsPilot/Coworker/chat.md
         - Situations: Data-insights/Features/OpsPilot/Coworker/situations.md
         - Insights: Data-insights/Features/OpsPilot/Coworker/insights.md
         - Tasks:
@@ -53,6 +54,7 @@ nav:
           - Event Sources: Data-insights/Features/OpsPilot/Coworker/event-sources.md
           - Scheduled: Data-insights/Features/OpsPilot/Coworker/scheduled.md
           - Manage tasks: Data-insights/Features/OpsPilot/Coworker/manage-tasks.md
+        - Activity: Data-insights/Features/OpsPilot/Coworker/activity.md
         - Knowledge: Data-insights/Features/OpsPilot/Coworker/knowledge.md
         - Usage: Data-insights/Features/OpsPilot/Coworker/usage.md
         - Settings:
@@ -62,9 +64,6 @@ nav:
           - Behavior: Data-insights/Features/OpsPilot/Coworker/Settings/behavior.md
           - Budget & cost: Data-insights/Features/OpsPilot/Coworker/Settings/budget-cost.md
         - FAQ: Data-insights/Features/OpsPilot/Coworker/faq.md
-     - OpsPilot Assistant:
-        - Overview: Data-insights/Features/OpsPilot/AIoverview.md
-        - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
      - MCP Interfaces:
         - OpsPilot MCP:
            - Overview: Monitor-your-data/MCP/mcp-overview.md
@@ -276,6 +275,8 @@ plugins:
    - redirects:
       redirect_maps:
          'Data-insights/Features/New-alerting/anomaly-detectors.md': 'Data-insights/Features/New-alerting/service-anomaly-detectors.md'
+         'Data-insights/Features/OpsPilot/AIoverview.md': 'Data-insights/Features/OpsPilot/Coworker/overview.md'
+         'Data-insights/Features/OpsPilot/OpsPilot-user-guide.md': 'Data-insights/Features/OpsPilot/Coworker/chat.md'
          'Data-insights/Features/Explore-servers.md': 'Data-insights/Features/Servers/overview.md'
          'test.md': 'Admin-and-data/Licensing/Licensing.md'
          'fr/help/Licensing.md': 'Admin-and-data/Licensing/Licensing.md'
@@ -315,7 +316,7 @@ plugins:
          'Cloud/OpenTelemetry/Instrumenting-OTel.md': 'Monitor-your-data/OpenTelemetry/getting-started.md'
          'Cloud/guides/explore.md': 'Data-insights/Features/explore.md'
          'Cloud/guides/create-dashboard.md': 'Getting-started/Tutorials/create-dashboard.md'
-         'Cloud/guides/OpsPilot/OpsPilot-user-guide.md': 'Data-insights/Features/OpsPilot/OpsPilot-user-guide.md'
+         'Cloud/guides/OpsPilot/OpsPilot-user-guide.md': 'Data-insights/Features/OpsPilot/Coworker/chat.md'
          'Cloud/legal/licenses.md': 'Admin-and-data/Third-Party-Licenses/licenses.md'
          'licensing.md': 'Admin-and-data/Licensing/Licensing.md'
          'Cloud/billing/overview.md': 'Admin-and-data/Billing/Cloud/overview.md'

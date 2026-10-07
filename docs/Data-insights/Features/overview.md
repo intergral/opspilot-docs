@@ -8,7 +8,7 @@ The **Overview** page is your observability dashboard at a glance. It gives you 
 
 Once your environment is sending data, the Overview page shows a full observability summary.
 
-## Customising your dashboard
+## Customizing your dashboard
 
 Click the **My dashboard** icon in the top right of the Overview to choose which sections are visible. Tick or untick any section to show or hide it:
 
@@ -30,14 +30,14 @@ Click **Reset to org defaults** to restore the default layout.
 
 The **Coworker** panel gives you a live summary of your AI teammate's activity, directly from the Overview page. A **Right now** label shows it reflects the current state.
 
-Four cards summarise what Coworker is doing:
+Four cards summarize what Coworker is doing:
 
 | Card | Description |
 |---|---|
-| **Critical** | Number of critical situations currently needing attention |
-| **Services** | How many different services are currently affected |
-| **Checkups** | Checks Coworker has run recently while keeping watch (for example, in the last hour) |
-| **Watching** | Number of services and signals Coworker is actively tracking |
+| **Critical** | Critical situations needing attention |
+| **Services** | How far the problem reaches - its blast radius |
+| **Checkups** | Checks Coworker has run in the last hour |
+| **Watching** | Signals Coworker is tracking in the background |
 
 Below the cards, Coworker surfaces its top **critical situations** - each showing the severity, the affected service, and a one-line summary (for example, *"otlp-fraud-detection-fr heap at 100% - OOM risk"*). Click a situation to open it in the full Coworker view.
 
@@ -94,7 +94,7 @@ Click **Servers ->** to go to the full [Servers](/Data-insights/Features/Servers
 
 ![!Screenshot](../../images/applications-overview.png)
 
-The **Applications** section summarises all monitored applications, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
+The **Applications** section summarizes all monitored applications, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
 
 - **Application names** - the applications included, with a count and a sample of names
 - **Applications** - total number of applications
@@ -121,7 +121,7 @@ The **Alerts** panel shows a live count of alerts grouped by state:
 | **Recovering** | Alerts returning to a normal state |
 | **Normal** | Alert rules currently within threshold |
 
-Click **Alerts ->** to go to the full [Alerts](/Data-insights/Features/Alerting/Active-alerts/) view.
+Click **Alerts ->** to go to the full [Alerting Status](/Data-insights/Features/New-alerting/status/) view.
 
 ### Anomaly Detection
 
@@ -130,6 +130,12 @@ Click **Alerts ->** to go to the full [Alerts](/Data-insights/Features/Alerting/
 The **Anomaly Detection** panel shows a live count of anomaly alerts by state, mirroring the same Firing / Pending / Recovering / Normal breakdown.
 
 Click **Anomaly Detection ->** to go to the full [Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/) view.
+
+### Incidents
+
+The **Incidents** panel shows how many incidents are currently **Open**, followed by the most recent ones - each with its title, its severity (such as **SEV-2**), and how long ago it was raised.
+
+Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Incidents/overview/) view.
 
 ### Usage
 
@@ -160,7 +166,7 @@ If your account has no data yet, each section of the Overview displays a **Get S
 | **Services** | You'll need an API key to instrument your application with OpenTelemetry. |
 | **Servers** | Install FusionReactor on your servers to start monitoring. You'll need a license key. |
 | **Applications** | Install FusionReactor to monitor your applications. You'll need a license key. |
-| **Coworker** | Set up your AI coworker to investigate alerts and track ongoing situations across the services you care about. |
+| **Coworker** | Set up your AI Coworker to investigate alerts and track ongoing situations across the services you care about. |
 | **Alerts** | Configure alert rules to monitor your infrastructure. |
 | **Anomaly Detection** | Enable anomaly detection to automatically detect unusual behavior in your data. |
 

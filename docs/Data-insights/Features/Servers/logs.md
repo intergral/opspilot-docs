@@ -41,7 +41,6 @@ When you click the arrow next to a log entry, it expands to show three sections:
 
 - **Links** - Quick actions to explore related data:
     - **Trace** button - Opens the associated distributed trace to see the full request flow that generated this log
-    - **Ask OpsPilot AI** button - Sends the log to OpsPilot for AI-powered analysis, explanations, and troubleshooting recommendations
 
 ![Screenshot](links.png)
 

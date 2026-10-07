@@ -62,7 +62,7 @@ The total cost depends on the number of Ultimate and Developer seats selected. O
     The Developer edition is not licensed for production use.
 
 !!! info "Learn more"
-    [FusionReactor licensing](https://docs.fusionreactor.io/Admin-and-data/Licensing/Licensing/)
+    [FusionReactor licensing](../../Licensing/Licensing.md)
 
 ### Starter
 
@@ -106,7 +106,7 @@ Need a large number of seats or a tailored plan? Contact our Sales Team for cust
 **OpsPilot AI** is an advanced observability solution that leverages generative AI to provide powerful insights into the performance of your applications. Using OpsPilot AI tokens enables you to identify and resolve issues before they occur, optimize the performance of your applications, and reduce downtime.
 
 !!! info "Learn more"
-    [OpsPilot](/Data-insights/Features/OpsPilot/AIoverview/)
+    [OpsPilot Coworker](/Data-insights/Features/OpsPilot/Coworker/overview/)
 
 
 !!! warning 
@@ -128,7 +128,7 @@ A seat covers a single unique virtual or physical host with up to 4 instances of
     It is possible to be billed fully on-demand with no seat reservation required.
 
 !!! info "Learn more"
-    [FusionReactor Ultimate](https://docs.fusionreactor.io/Admin-and-data/Billing/Cloud/overview/#fusionreactor-ultimate)
+    [FusionReactor Ultimate](#fusionreactor-ultimate)
 
 
 

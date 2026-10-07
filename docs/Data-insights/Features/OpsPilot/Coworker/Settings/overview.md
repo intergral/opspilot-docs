@@ -1,6 +1,6 @@
 # Settings
 
-Settings is where you tune Coworker to your team - what it surfaces, how hard it works in the background, how it communicates, and what it can spend - with no config files involved. Open it from the Coworker menu; it's organised into four tabs:
+Settings is where you tune Coworker to your team - what it surfaces, how hard it works in the background, how it communicates, and what it can spend - with no config files involved. Open it from the Coworker menu; it's organized into four tabs:
 
 | Tab | Description |
 |---|---|

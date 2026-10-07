@@ -2,7 +2,7 @@
 
 Talk to OpsPilot from Slack - mention it in a channel or DM it directly.
 
-The Slack integration brings OpsPilot to where your team already talks. Invite the bot to a channel and switch posting on, and the alerts, situations, and digests the coworker surfaces land there as they happen. Mention it there or message it directly and you get the same coworker you use in the app, so you can ask about what it just posted without switching tools.
+The Slack integration brings OpsPilot to where your team already talks. Invite the bot to a channel and switch posting on, and the alerts, situations, and digests Coworker surfaces land there as they happen. Mention it there or message it directly and you get the same Coworker you use in the app, so you can ask about what it just posted without switching tools.
 
 DMs are personal: each person links their own account.
 
@@ -58,6 +58,9 @@ OpsPilot introduces itself and waits. Situation posting is off until someone tur
 
 Situations at **warning** severity or above then land in that channel.
 
+!!! tip "Filtering to critical won't hide an escalation"
+    If you narrow a channel to critical only, a situation that is *later* raised to critical is still posted at that point, even though its earlier severity was filtered out. Escalations always notify, so you won't miss something that becomes serious after it was first raised.
+
 ---
 
 ## Connecting your own account
@@ -70,11 +73,20 @@ Channel mentions need no linking - only DMs.
 
 ## What OpsPilot reads
 
-OpsPilot only reads messages that mention it. Background reading is off in every channel until someone turns it on:
+Background reading is off in every channel until someone turns it on, so by default OpsPilot is not watching your conversations. Two things reach it:
+
+- **When you @-mention OpsPilot**, it reads the recent message history in that channel so it understands what you are asking about. It stores only your message - not the surrounding messages it used as context.
+- **When you reply in the thread of a situation it posted**, those replies become context for its next check-up on that situation. OpsPilot says so explicitly in the thread each time.
+
+Nothing else in your Slack is read.
+
+Turning on listening changes that deliberately - every message in the channel is then sent to OpsPilot, both as context for investigations and to learn from:
 
 ```
 /opspilot listen passive
 ```
+
+In **active** mode it goes further, investigating things it can help with and replying on its own.
 
 `/opspilot status` shows where a channel stands, and `/opspilot listen off` stops it again.
 

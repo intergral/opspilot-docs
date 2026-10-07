@@ -127,7 +127,7 @@ The roadmap for 2026 is anchored around AI and OpenTelemetry - deeper AI-powered
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140102032?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FusionReactor 25.2 Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 !!! info "Learn more"
-    [Release notes](https://docs.fusionreactor.io/Latest-updates/release-notes/)
+    [Release notes](release-notes.md)
 
 ## Trace-powered investigations in OpsPilot
 
@@ -237,8 +237,8 @@ Look for the **globe icon** next to the mic in the chat bar.
 * **<span style="color:gray">Gray</span> icon = OFF** (uses only internal knowledge)
 
 
-!!! info "Learn more"
-    [Web Search Toggle](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#web-search-toggle)
+!!! note
+    The web search toggle has since been removed from OpsPilot.
 
 
 
@@ -389,7 +389,7 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 ![!Screenshot](images/OPvision.png)
 
 !!! info "Learn more"
-    [OpsPilot Vision](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#opspilot-vision)
+    [Images](/Data-insights/Features/OpsPilot/Coworker/chat/#images)
     
 * **Updated FR knowledge base**: OpsPilot has undergone a significant upgrade in its FusionReactor knowledge base, resulting in enhanced proficiency in understanding and addressing issues. With this improvement, OpsPilot can now provide more informed and effective responses when dealing with FusionReactor-related tasks. This advancement promises smoother operations and quicker resolutions, ultimately optimizing system performance and minimizing downtime.
 

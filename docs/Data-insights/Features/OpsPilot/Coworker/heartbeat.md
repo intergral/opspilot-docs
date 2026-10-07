@@ -58,7 +58,7 @@ Expand a service to see its individual **signals** - each shows the underlying m
 
 - Requires at least one **cataloged service**.
 - Monitoring runs **per service** using learned baselines.
-- Investigation history is **organisation-wide**.
+- Investigation history is **organization-wide**.
 - Heartbeat activity is tracked so you have visibility into noise and cost.
 
 ---
@@ -75,7 +75,7 @@ No. Heartbeat's checks are private to Coworker and never create Grafana or Alert
 Every five minutes.
 
 **Why didn't it react to a one-off spike?**
-Heartbeat waits for sustained abnormal behaviour across several consecutive checks before it investigates.
+Heartbeat waits for sustained abnormal behavior across several consecutive checks before it investigates.
 
 **It investigated something that turned out to be benign - is that a problem?**
 No. Those outcomes are exactly what Coworker uses to re-tune noisy signals over time.
