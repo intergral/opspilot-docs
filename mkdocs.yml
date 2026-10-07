@@ -90,6 +90,7 @@ nav:
         - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
         - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
         - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
+        - PostgreSQL: Data-insights/Features/Integrations/Data/postgres.md
         - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
         - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
         - Slack: Data-insights/Features/Integrations/Chat/slack.md
