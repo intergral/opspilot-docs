@@ -1,6 +1,6 @@
 # SDK Integrations
 
-The SDK integrations provision runtime dashboards and alert rules for applications instrumented with OpenTelemetry. Install one, instrument your application, and you have runtime monitoring in place without building it yourself.
+Most SDK integrations provision runtime dashboards and alert rules for applications instrumented with OpenTelemetry. Install one, instrument your application, and you have runtime monitoring in place without building it yourself.
 
 Navigate to **Integrations** from the left-hand sidebar and open the **SDKs** tab.
 
@@ -17,11 +17,15 @@ Each SDK integration installs one runtime dashboard per upstream metric-set vers
 | Go | 6 | 4 | `go_runtime_alerts` |
 | Node.js | 9 | 3 | `nodejs_runtime_alerts` |
 | Python | 5 | 5 | `python_runtime_alerts` |
+| PHP | 8 | 10 | `php_runtime_alerts` |
 
 The dashboard counts differ because each covers that language's full range of upstream metric-set versions. Java's 26 span thirteen Java-agent eras from v0.11.0 and thirteen semantic-convention sets from 1.9.0.
 
-!!! note "Ruby"
-    The Ruby OpenTelemetry SDK does not officially support metrics, so a Ruby integration cannot provide runtime dashboards. Ruby applications still send traces and span metrics, which Coworker can analyse.
+!!! note "PHP"
+    PHP's eight dashboards are four runtime and SDK-version dashboards plus four that cover third-party libraries, under the **Libraries** folder - these fill in once the matching library instrumentation is in place. Its ten alert rules split five for the runtime and five for the SDK's own export pipeline. Some runtime panels are conditional (OPcache, GC timing on PHP 8.3+, process CPU) and stay empty unless the service reports them; each rule stays silent where its metric is absent rather than firing on missing data. The **Installation guide** tab has the per-SDK-version detail.
+
+!!! note "SDKs without runtime dashboards"
+    **Ruby**, **Rust**, **C++**, **Swift**, and **Erlang** appear in the catalog but do not provision runtime dashboards or alert rules - their OpenTelemetry SDKs don't export the runtime metrics these dashboards are built on. The Ruby SDK, for example, does not officially support metrics. Applications in these languages still send traces and span metrics, which Coworker can analyze.
 
 ---
 
