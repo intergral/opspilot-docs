@@ -1,29 +1,23 @@
-# Jira Integration
+# Jira
 
-Connect OpsPilot to Jira to automatically create issues from alerts and incidents.
+Create, search, and link Jira issues from incidents and OpsPilot.
 
-!!! note "Legacy integration"
-    This page covers the **legacy** Jira integration, which is still available and still works. To find it, navigate to [Integrations](../../integrations.md) and switch on **Legacy**, at the right-hand end of the category tabs.
+!!! info "Coming soon"
+    Jira is listed in the integration catalog but is **not yet available to install**. This page describes what it will do once it ships - there is nothing to set up in the meantime.
 
-    A new Jira integration appears in the main integration catalog as **Coming soon**, and will replace this one.
-
-Navigate to **Integrations** from the left-hand sidebar, switch on **Legacy**, then select **Jira**.
+Navigate to **Integrations** from the left-hand sidebar, then select **Jira** to see its current status.
 
 ---
 
-## Setup
+## What it will do
 
-1. In OpsPilot, go to **Integrations**, switch on **Legacy**, and click **Jira**.
-2. Enter your Jira instance URL (e.g., `https://yourorg.atlassian.net`).
-3. Provide your Jira **email address** and an **API token**. You can generate an API token from your [Atlassian account settings](https://id.atlassian.com/manage-profile/security/api-tokens).
-4. Select the default **project** where issues should be created.
-5. Click **Save**.
+Once available, the Jira integration will let OpsPilot create, search, and link Jira issues from your incidents and from OpsPilot itself - so a situation or incident can become a tracked Jira ticket without leaving OpsPilot.
 
 ---
 
-## Using Jira with Incidents
+## Availability
 
-Once connected, OpsPilot can automatically open a Jira issue when an incident is created. Navigate to **Incidents** to configure this behaviour.
+Jira currently shows as **Coming soon** in the catalog, marked **Not yet available**. It declares no capabilities yet, and its permission tier is set when the integration is implemented. When it ships, this page will cover connecting your Jira instance and configuring issue creation.
 
 ---
 

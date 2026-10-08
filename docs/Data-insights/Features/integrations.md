@@ -58,13 +58,13 @@ Integrations are grouped into categories, each showing how many it holds. Use th
 | **SDKs** | Language SDKs |
 | **Ticketing** | Issue tracking and project management tools |
 
-Use the **Search integrations** bar to find one by name, and the status dropdown beside it to filter by whether an integration is installed. The **Legacy** toggle, at the right-hand end of the category tabs, switches to the legacy integrations - earlier ones that are still available and still work. The legacy view lists those integrations on their own, without the category tabs, search, or state counters.
+Use the **Search integrations** bar to find one by name, and the status dropdown beside it to filter by whether an integration is installed.
 
 Each card shows the integration's name, its category, a short description, and its current status - **Coming soon** for one not yet released, or **Installed** for one already connected.
 
 ## User MCPs
 
-**User MCPs**, in the toolbar beside the Legacy toggle, is a separate page for MCP integrations. These work differently from the rest of the integration catalog. Rather than being set up once for the organisation, **each person connects their own account**, and OpsPilot uses that connection only when answering that person in chat:
+**User MCPs**, in the toolbar at the top of the catalog, is a separate page for MCP integrations. These work differently from the rest of the integration catalog. Rather than being set up once for the organisation, **each person connects their own account**, and OpsPilot uses that connection only when answering that person in chat:
 
 > These connect your own account, not your organisation's. The agent uses them only in chat, never in scheduled work or on anyone else's behalf.
 
