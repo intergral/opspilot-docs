@@ -261,11 +261,11 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
 === "Data"
 
-    Altinity ClickHouse Operator · Kafka · MongoDB · MySQL · PostgreSQL · RabbitMQ · Redis · Strimzi Kafka · TigerData
+    Altinity ClickHouse Operator · Kafka · MongoDB · MySQL · RabbitMQ · Redis · Strimzi Kafka · TigerData
 
 === "Infrastructure"
 
-    ArgoCD · Host Metrics · iDRAC · KEDA · Kubernetes · Terraform · TrueNAS SCALE
+    ArgoCD · Host Metrics · KEDA · Kubernetes · Terraform · TrueNAS SCALE
 
 === "Networking"
 
@@ -277,7 +277,7 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
 === "SDKs"
 
-    Browser · C++ · Erlang · PHP · Ruby · Rust · Swift
+    Browser
 
 === "Ticketing"
 

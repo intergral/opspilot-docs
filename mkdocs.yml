@@ -84,19 +84,25 @@ nav:
   - INTEGRATIONS:
      - Overview: Data-insights/Features/integrations.md
      - All integrations:
-        - AWS: Data-insights/Features/Integrations/Cloud/aws.md
-        - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
-        - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
-        - iDRAC: Data-insights/Features/Integrations/Infrastructure/idrac.md
-        - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
-        - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
-        - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
-        - PostgreSQL: Data-insights/Features/Integrations/Data/postgres.md
-        - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
-        - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
-        - Slack: Data-insights/Features/Integrations/Chat/slack.md
-        - Unix: Data-insights/Features/Integrations/Infrastructure/unix.md
-        - Windows: Data-insights/Features/Integrations/Infrastructure/windows.md
+        - Chat:
+           - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
+           - Slack: Data-insights/Features/Integrations/Chat/slack.md
+        - Cloud:
+           - AWS: Data-insights/Features/Integrations/Cloud/aws.md
+        - Data:
+           - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
+           - PostgreSQL: Data-insights/Features/Integrations/Data/postgres.md
+        - Infrastructure:
+           - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
+           - iDRAC: Data-insights/Features/Integrations/Infrastructure/idrac.md
+           - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
+           - Unix: Data-insights/Features/Integrations/Infrastructure/unix.md
+           - Windows: Data-insights/Features/Integrations/Infrastructure/windows.md
+        - SDKs:
+           - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
+           - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
+        - Ticketing:
+           - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
   - MONITORING:
      - Servers:
         - Overview: Data-insights/Features/Servers/overview.md
