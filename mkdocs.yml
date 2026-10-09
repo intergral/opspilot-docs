@@ -117,6 +117,7 @@ nav:
         - Applications Overview: Data-insights/Features/Applications/overview.md
         - Application Map: Data-insights/Features/Applications/application-map.md
         - Application Details: Data-insights/Features/Applications/application-details.md
+        - Info: Data-insights/Features/Applications/info.md
      - Database: Data-insights/Features/database.md
      - Services:
         - Overview: Data-insights/Features/Services/overview.md
