@@ -33,7 +33,7 @@ Prior to beginning, ensure you have the following:
 -   A valid OpsPilot user in your account, with access to OpsPilot.
 
 !!! tip
-    API keys can be managed under **OpsPilot** \> **Data and Licenses** \> **API Keys**
+    [Manage your API keys](https://app.opspilot.com/organization/api-keys) in OpsPilot.
 
 
 ## Procedure

@@ -4,7 +4,7 @@ This guide demonstrates how to instrument a Ruby application with OpenTelemetry 
 
 ## Prerequisites
 
-* **OpsPilot API Key**: Obtain this from **Data and Licenses > API Keys** in OpsPilot.
+* **OpsPilot API Key**: [Generate one](https://app.opspilot.com/organization/api-keys) in OpsPilot.
 * **Ruby**: Ruby 3.0 or later installed on your system.
 * **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your Ruby application.
 

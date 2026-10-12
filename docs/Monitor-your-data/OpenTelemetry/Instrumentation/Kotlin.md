@@ -7,7 +7,7 @@ This guide demonstrates how to instrument a Kotlin application with OpenTelemetr
 
 ## Prerequisites
 
-* **OpsPilot API Key**: Obtain this from **Data and Licenses > API Keys** in OpsPilot.
+* **OpsPilot API Key**: [Generate one](https://app.opspilot.com/organization/api-keys) in OpsPilot.
 * **Kotlin**: Kotlin 1.8+ with JVM target installed on your system.
 * **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your Kotlin application.
 

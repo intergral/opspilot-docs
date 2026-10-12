@@ -4,7 +4,7 @@ This guide demonstrates how to instrument a PHP application with OpenTelemetry t
 
 ## Prerequisites
 
-* **OpsPilot API Key**: Obtain this from **Data and Licenses > API Keys** in OpsPilot.
+* **OpsPilot API Key**: [Generate one](https://app.opspilot.com/organization/api-keys) in OpsPilot.
 * **PHP**: PHP 8.0 or later with the following extensions:
   - `ext-json`
   - `ext-curl`

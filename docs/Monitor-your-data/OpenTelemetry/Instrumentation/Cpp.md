@@ -4,7 +4,7 @@ This guide demonstrates how to instrument a C++ application with OpenTelemetry t
 
 ## Prerequisites
 
-* **OpsPilot API Key**: Obtain this from **Data and Licenses > API Keys** in OpsPilot.
+* **OpsPilot API Key**: [Generate one](https://app.opspilot.com/organization/api-keys) in OpsPilot.
 * **C++ Compiler**: C++17 or later (GCC 9+, Clang 10+, or MSVC 2019+)
 * **CMake**: Version 3.20 or later
 * **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your C++ application.

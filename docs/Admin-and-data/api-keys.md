@@ -2,7 +2,7 @@
 
 The **API Keys** page lets you manage access credentials used by services and agents to communicate with OpsPilot.
 
-Navigate to **Data and Licenses > API Keys** in the left-hand sidebar.
+Open the [API Keys page](https://app.opspilot.com/organization/api-keys) in OpsPilot, under **Data and Licenses** in the left-hand sidebar.
 
 ## Viewing & managing keys
 

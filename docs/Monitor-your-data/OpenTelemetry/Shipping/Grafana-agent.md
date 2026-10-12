@@ -12,7 +12,7 @@ Alloy acts as a programmable intermediary. It receives OTLP data from your instr
 
 ### Prerequisites
 
-* **OpsPilot API Key**: Obtain this from **Data and Licenses > API Keys**.
+* **OpsPilot API Key**: [Generate one](https://app.opspilot.com/organization/api-keys) in OpsPilot.
 * **Docker Desktop**: Ensure Docker is installed and running.
 * **Port Availability**: Ensure ports **4317**, **4318**, and **12345** are not in use by other services (like a standard OTel Collector).
 
