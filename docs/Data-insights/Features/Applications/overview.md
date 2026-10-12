@@ -1,7 +1,5 @@
 # Applications Overview
 
-![Applications overview](../images/Applications/new-applications-overview.png)
-
 Monitor and analyze your application performance and behavior.
 
 Navigate to **Applications** > **Applications Overview** from the left-hand sidebar to view performance metrics across all your instrumented applications.
