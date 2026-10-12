@@ -70,7 +70,7 @@ nav:
            - Install: Monitor-your-data/MCP/MCP.md
         - Katie - Kubernetes tooling for AI:
            - Overview: Monitor-your-data/Katie/overview.md
-           - Install MCP: Monitor-your-data/Katie/install.md
+           - Install: Monitor-your-data/Katie/install.md
   - DASHBOARDS:
      - About Dashboards: Data-insights/Features/Dashboards/about-dashboards.md
      - Work with Dashboards:
