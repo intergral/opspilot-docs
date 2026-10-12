@@ -4,8 +4,6 @@ The **API Keys** page lets you manage access credentials used by services and ag
 
 Navigate to **Data and Licenses > API Keys** in the left-hand sidebar.
 
-![Screenshot](../images/get-started-services.png)
-
 ## Viewing & managing keys
 
 Each listed API key displays:
