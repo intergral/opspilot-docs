@@ -78,7 +78,7 @@ This quickstart provides the fastest path to see OpenTelemetry data flowing into
 
 ### Prerequisites
 
-* **OpsPilot API Key**: Get this from **Account Settings > API Keys** in OpsPilot
+* **OpsPilot API Key**: Get this from **Data and Licenses > API Keys** in OpsPilot
 * **Docker & Docker Compose**: For running the Collector ([Install Docker](https://docs.docker.com/get-docker/))
 * **Your language runtime**: Python, Java, Node.js, Go, .NET, etc.
 
