@@ -7,7 +7,7 @@ This guide demonstrates how to instrument a Node.js application with OpenTelemet
 
 ## Prerequisites
 
-* **OpsPilot API Key**: Obtain this from **Account Settings > API Keys** in OpsPilot.
+* **OpsPilot API Key**: Obtain this from **Data and Licenses > API Keys** in OpsPilot.
 * **Docker Desktop**: [Install Docker Desktop](https://www.docker.com/products/docker-desktop/) to build and run the application container.
 * **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your Node.js application.
 

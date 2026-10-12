@@ -7,7 +7,7 @@ This guide demonstrates how to instrument an Erlang or Elixir application with O
 
 ## Prerequisites
 
-* **OpsPilot API Key**: Obtain this from **Account Settings > API Keys** in OpsPilot.
+* **OpsPilot API Key**: Obtain this from **Data and Licenses > API Keys** in OpsPilot.
 * **Erlang/OTP**: 22+ or **Elixir**: 1.11+ installed on your system.
 * **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your application.
 

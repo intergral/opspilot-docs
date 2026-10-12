@@ -72,7 +72,7 @@ service:
 ### **Step 2:** Obtain your API Key
 
 1. Log in to **OpsPilot**.
-2. Navigate to **Account Settings > API Keys**.
+2. Navigate to **Data and Licenses > API Keys**.
 3. Generate a new key and save it securely.
 
 
