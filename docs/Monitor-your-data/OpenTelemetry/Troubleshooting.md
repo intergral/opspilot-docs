@@ -113,10 +113,7 @@ otelcol.exporter.otlphttp "fusionreactor" {
 }
 ```
 
-To get your API key:
-1. Log in to **OpsPilot**
-2. Navigate to **Data and Licenses > API Keys**
-3. Generate a new key or copy an existing one
+To get your API key, [generate or copy one](https://app.opspilot.com/organization/api-keys) in OpsPilot.
 
 #### Network Connectivity
 
@@ -729,7 +726,7 @@ failed to export: 401 Unauthorized
 **Cause**: Invalid or missing API key.
 
 **Solution**:
-1. Verify API key in OpsPilot: **Data and Licenses > API Keys**
+1. Verify your API key on the [API Keys page](https://app.opspilot.com/organization/api-keys) in OpsPilot
 2. Check API key is correctly set in your pipeline configuration
 3. Ensure no extra spaces or characters in the API key
 

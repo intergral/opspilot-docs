@@ -11,7 +11,7 @@ To connect your AI tooling to OpsPilot using MCP, follow the steps below.
 You’ll need an API key so your tooling can authenticate with the OpsPilot MCP.
 
 !!! info
-    [Generate an OpsPilot API key](/Admin-and-data/api-keys/#creating-a-new-key)
+    [Generate an OpsPilot API key](https://app.opspilot.com/organization/api-keys)
 
 ---
 
@@ -34,7 +34,7 @@ The simplest way to get started is by using the prebuilt Grafana MCP Docker imag
 3. **Claude Desktop, Claude Code, or another MCP host** must be installed.  
     - This example uses Claude Desktop.
 4. **An OpsPilot API Key** is required.  
-    - [Generate an OpsPilot API key](/Admin-and-data/api-keys/#creating-a-new-key)
+    - [Generate an OpsPilot API key](https://app.opspilot.com/organization/api-keys)
 
 ---
 
