@@ -6,6 +6,26 @@ Navigate to **Dashboards** from the left-hand menu in OpsPilot.
 
 ---
 
+## The dashboards list
+
+The **Dashboards** menu opens **All Dashboards**, where your dashboards are grouped into folders. Two panels sit at the top:
+
+- **Favorites** - the dashboards you have starred.
+- **Recently viewed** - dashboards you have opened recently.
+
+Below them, folders list every dashboard, each row showing a [status dot](#status-dots) and the number of dashboards it holds. The toolbar across the top helps you find one:
+
+| Control | What it does |
+|---|---|
+| **Search for dashboards and folders** | Find a dashboard or folder by name |
+| **Filter by tag** | Narrow the list to a tag |
+| **Sort** | Order the list, for example **Alphabetically (A–Z)** |
+| **Expand all / Collapse all** | Open or close every folder at once |
+| **Status filter** | Show only dashboards in the data states you pick - see [Status dots](#status-dots) |
+| **+ New dashboard** | Start a new dashboard - see [Creating your own](#creating-your-own) |
+
+---
+
 ## Using dashboards
 
 - Open any dashboard from the list to view it.
