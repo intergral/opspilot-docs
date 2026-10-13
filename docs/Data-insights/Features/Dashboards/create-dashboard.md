@@ -14,13 +14,17 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 
 ## Steps
 
-**Step 1** - Select **Dashboards** from the navigation menu.
+**Step 1** - On the [All Dashboards](about-dashboards.md) page, click **+ New dashboard**.
 
-**Step 2** - Click **New** in the top-right corner and select **New dashboard**.
+**Step 2** - The new dashboard opens empty, with three ways to start:
 
-**Step 3** - On the empty dashboard, click **+ Add visualization**.
+- **+ Add visualization** - add a panel: pick a data source, query your data, and choose a chart type.
+- **+ Add library panel** - reuse a visualization shared across other dashboards.
+- **Import dashboard** - import a dashboard from a file or grafana.com.
 
-![Screenshot](/Getting-started/Tutorials/step3.png)
+The dashboard header also carries **Add** (add panels and rows), **Settings**, **Save dashboard**, the time picker, and **Refresh**.
+
+**Step 3** - Click **+ Add visualization**.
 
 **Step 4** - In the dialog box that opens, do one of the following:
 
