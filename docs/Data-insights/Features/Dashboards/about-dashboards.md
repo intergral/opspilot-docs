@@ -68,7 +68,7 @@ The dots show whether a folder or dashboard has data behind it. Each folder show
 
 ## Organizing
 
-In Grafana, choose **New → New folder** to group dashboards by project, team, or service. Folders show up in the list here.
+From the **New dashboard** menu on the All Dashboards page, choose **New folder** to group dashboards by project, team, or service. Folders show up in the list here.
 
 To move a dashboard, open it, go to **Settings → General → Folder**, choose a folder, and save.
 

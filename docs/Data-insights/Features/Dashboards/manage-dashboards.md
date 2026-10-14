@@ -6,7 +6,7 @@ Once a dashboard exists, you organize it into folders, copy it to customize, and
 
 ## Organizing into folders
 
-In Grafana, choose **New → New folder** to group dashboards by project, team, or service. Folders then appear in the [All Dashboards](about-dashboards.md) list.
+From the **New dashboard** menu on the [All Dashboards](about-dashboards.md) page, choose **New folder** to group dashboards by project, team, or service. Folders then appear in the list.
 
 To move a dashboard into a folder, open it, go to **Settings → General → Folder**, choose a folder, and save.
 
