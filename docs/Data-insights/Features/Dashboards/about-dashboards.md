@@ -10,8 +10,8 @@ Navigate to **Dashboards** from the left-hand menu in OpsPilot.
 
 The **Dashboards** menu opens **All Dashboards**, where your dashboards are grouped into folders. Two panels sit at the top:
 
-- **Favorites** - the dashboards you have starred.
-- **Recently viewed** - dashboards you have opened recently.
+- **Favorites** - the dashboards you have starred, each showing its folder and tags.
+- **Recently viewed** - dashboards you have opened recently, with when you last opened each.
 
 Below them, folders list every dashboard, each row showing a [status dot](#status-dots) and the number of dashboards it holds. The toolbar across the top helps you find one:
 
