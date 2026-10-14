@@ -8,11 +8,10 @@ Dashboards in OpsPilot are stored as JSON. You can export any dashboard to a fil
 
 **Step 1** - Open the dashboard you want to export.
 
-**Step 2** - Click the **Dashboard settings** icon (cog) in the dashboard header.
+**Step 2** - Click **Export** in the dashboard header and choose one of:
 
-**Step 3** - Select **JSON Model** from the left-hand menu.
-
-**Step 4** - Copy the JSON, or click **Download** to save it as a `.json` file.
+- **Export as code** - the dashboard's JSON, which you can copy or save as a `.json` file. Use this to [copy](manage-dashboards.md#copying-a-dashboard) a dashboard or keep a backup.
+- **Export as image** - a static image of the dashboard.
 
 ---
 

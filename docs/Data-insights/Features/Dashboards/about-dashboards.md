@@ -33,6 +33,17 @@ Below them, folders list every dashboard, each row showing a [status dot](#statu
 - Use the **time picker** to change the time range for every panel on the dashboard at once.
 - Use the **variable dropdowns** along the top of a dashboard - service, environment, host, and the like - to filter every panel to the data you pick. Variables can hold more than one value, and your choices stay in the page address, so a link you share opens the same filtered view.
 
+An open dashboard's header carries these controls:
+
+| Control | What it does |
+|---|---|
+| **Star** | Add the dashboard to your Favorites |
+| **Make editable** | Unlock a read-only dashboard (such as an integration dashboard) for editing |
+| **Export** | **Export as code** (the dashboard JSON) or **Export as image** - see [Import and Export](import-export.md) |
+| **Share** | Share the dashboard |
+| **Time picker** | Set the time range for every panel |
+| **Refresh** | Refresh the data, or set an auto-refresh interval |
+
 ---
 
 ## Integration dashboards
