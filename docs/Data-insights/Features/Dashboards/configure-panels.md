@@ -5,11 +5,11 @@
 After adding a panel to a dashboard, you can open it at any time to update queries, change visualizations, add transformations, or adjust display settings.
 
 
-**Step 1** - Open the dashboard containing the panel you want to edit.
+**Step 1** - Open the dashboard containing the panel you want to edit. If it is a read-only dashboard (such as an [integration dashboard](about-dashboards.md#integration-dashboards)), click **Make editable** in the header first.
 
-**Step 2** - Hover over the panel to display the actions menu in the top-right corner.
+**Step 2** - Hover over the panel and open its menu from the top-right corner.
 
-**Step 3** - Click the menu and select **Edit**.
+**Step 3** - Select **Edit** to open the **Edit panel** view: the panel preview on top, its queries below, and the visualization options on the right. Use **Back to dashboard** to return, **Discard panel changes** to throw away your edits, or **Save dashboard** to keep them.
 
 !!! tip
     Keyboard shortcut: hover over the panel and press **E** to open it directly in edit mode.

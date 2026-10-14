@@ -12,15 +12,15 @@ Each panel in a dashboard is powered by one or more queries against a data sourc
 
 ## Write a query in the panel editor
 
-**Step 1** - Open a panel in edit mode (hover the panel and press **E**, or select **Edit** from the panel menu).
+**Step 1** - Open a panel in edit mode (hover the panel and press **E**, or select **Edit** from the panel menu). On a read-only dashboard, click **Make editable** first.
 
-**Step 2** - In the **Query** tab at the bottom of the editor, select your data source from the drop-down.
+**Step 2** - On the **Queries** tab, select your **Data source** from the drop-down.
 
-**Step 3** - Write your query in the query field. OpsPilot provides syntax hints and auto-complete for supported query languages.
+**Step 3** - Build your query with the **Builder**, or switch to **Code** to write it directly (PromQL, LogQL, or TraceQL). OpsPilot provides syntax hints and auto-complete.
 
-**Step 4** - Click **Refresh** (or the refresh icon) to run the query and preview results in the panel above.
+**Step 4** - Click **Run queries** to run it and preview the results in the panel above.
 
-**Step 5** - Click **Apply** to save the query to the panel, or **Save** to persist the entire dashboard.
+**Step 5** - Click **Save dashboard** to keep your changes. **Back to dashboard** returns without saving.
 
 ---
 
