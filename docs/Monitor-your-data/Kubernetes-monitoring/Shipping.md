@@ -6,8 +6,6 @@
 
 This guide explains how to deploy the Kubernetes-Prometheus-Stack to send metric data from your Kubernetes cluster(s) directly to OpsPilot.  This data can then be visualized in the **Kubernetes** dashboard set.
 
-![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8scluster.png)
-
 The [Kubernetes-Prometheus-Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) is a deployable Helm
 chart which enables monitoring of Kubernetes clusters in OpsPilot.
 
@@ -87,10 +85,6 @@ This data can be viewed in **OpsPilot** \>
 
 !!! tip
     The **Kubernetes Node Exporter for Clusters** dashboard allows you to troubleshoot cluster problems right down to the VM level.
-
-
-
-![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/k8clusters.png)
 
 ## Upgrading from a previous chart
 
