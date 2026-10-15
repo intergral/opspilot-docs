@@ -11,6 +11,3 @@ To visualize your logs, simply navigate to OpsPilot in a browser and access the 
 
 
 In the OpsPilot **Logging** window, open the **Job** dropdown and select `fib_by_iteration`. All the log messages emitted by the Python code will appear.
-
-
-![!Screenshot](/Monitor-your-data/OpenTelemetry/images/pythonlogs1.png)*Logs supplied by Python*

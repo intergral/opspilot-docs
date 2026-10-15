@@ -14,6 +14,3 @@ To visualize your OTel traces, simply navigate to OpsPilot and access the **Show
 In the OpsPilot **Explore** window, ensure the `Traces` datasource is selected. Using the `Search` query type, select `Resource Service Name = fib_by_iteration`. Click the **Run Query** button at the top left to execute the query.
 
 Several `fib-outer` spans will appear. Click on one to open the span split view, which displays the inner spans for that execution. Click any inner span on the right to view more information, including the `iteration` attribute set in the code.
-
-
-![!Screenshot](/Monitor-your-data/OpenTelemetry/images/pythontraces.png)*Traces supplied by Python*
