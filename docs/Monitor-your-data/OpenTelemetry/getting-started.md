@@ -20,43 +20,7 @@ OpsPilot has simplified the OTel integration process into three straightforward 
 
 OpenTelemetry data flows from your instrumented applications through a telemetry pipeline (Collector) to OpsPilot's observability backends:
 
-```
-┌─────────────────────┐
-│  Your Application   │
-│ (Instrumented with  │
-│   OpenTelemetry)    │
-└──────────┬──────────┘
-           │ OTLP
-           ▼
-┌─────────────────────┐
-│ Telemetry Pipeline  │
-│  ┌───────────────┐  │
-│  │ OTel Collector│  │
-│  │      OR       │  │
-│  │ Grafana Alloy │  │
-│  └───────────────┘  │
-└──────────┬──────────┘
-           │ Process & Forward
-           ▼
-┌─────────────────────┐
-│ OpsPilot │
-│                     │
-│  ┌─────────────┐    │
-│  │   Tempo     │    │  ← Traces
-│  │   (Traces)  │    │
-│  └─────────────┘    │
-│                     │
-│  ┌─────────────┐    │
-│  │   Mimir     │    │  ← Metrics
-│  │  (Metrics)  │    │
-│  └─────────────┘    │
-│                     │
-│  ┌─────────────┐    │
-│  │    Loki     │    │  ← Logs
-│  │   (Logs)    │    │
-│  └─────────────┘    │
-└─────────────────────┘
-```
+![OpsPilot architecture](images/OpsPilot-Architecture.png)
 
 **Key Components:**
 
