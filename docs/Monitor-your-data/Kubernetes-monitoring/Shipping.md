@@ -54,9 +54,9 @@ Download the following files from [our GitHub repo](https://github.com/intergral
 
 Change `CLUSTER_NAME` to your Kubernetes cluster name.
 
-- `fr-cloud-authentication-secret.yaml`
+- `fr-cloud-kps-authentication-secret.yaml`
 
-Change `PASSWORD` to your FR Cloud API key. 
+Change `PASSWORD` to your OpsPilot API key. 
 
 !!! tip
     Ensure you copy and paste the **entire** key.
