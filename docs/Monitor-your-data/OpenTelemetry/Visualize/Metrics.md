@@ -14,6 +14,3 @@ To visualize your OTel metrics, simply navigate to the **Explore** tab in OpsPil
     The following example relies on a user having first [instrumented a Python application](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) to ship data to OpsPilot. 
 
 In the OpsPilot **Explore** window, ensure the metrics datasource is selected. Then either use the **Builder** to find your metric (you can search for `job`: `fib_by_iteration`), or use the following in **Code** search mode: `fib_iteration_counter_total{job="fib_by_iteration"}`. You'll get a graph and table of the metric.
-
-
-![!Screenshot](/Monitor-your-data/OpenTelemetry/images/pythonmetrics.png)*Metrics supplied by Python*

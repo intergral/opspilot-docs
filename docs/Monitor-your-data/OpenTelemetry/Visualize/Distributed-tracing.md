@@ -1,7 +1,5 @@
 # Distributed tracing
 
-<iframe src="https://player.vimeo.com/video/838715935?h=8353e18541" width="640" height="363" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
 ## What is distributed tracing?
 
 
