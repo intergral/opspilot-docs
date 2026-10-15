@@ -1,8 +1,6 @@
 # Kubernetes Monitoring
 
-## Introduction to Kubernetes  
-
-<iframe src="https://player.vimeo.com/video/837618803?h=fb0aaaf252" width="640" height="363" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+## Introduction to Kubernetes
 
 Kubernetes (also known as K8s) is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation (CNCF).
 
@@ -14,9 +12,7 @@ Kubernetes is highly modular and extensible, with a large ecosystem of plugins a
 OpsPilot brings AI-powered Kubernetes monitoring giving SREs, application developers, and DevOps administrators deep visibility into cluster health, workload performance, and reliability - with autonomous detection of issues and AI-guided investigation to cut resolution time.
 
 !!! info "Learn more"
-    [Shipping K8s data to FR Cloud](/Monitor-your-data/Kubernetes-monitoring/Shipping/)
-
-![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8s.png)
+    [Shipping K8s data to OpsPilot](Shipping.md)
 
 ## Benefits
 
@@ -43,50 +39,11 @@ In summary, a Kubernetes cluster is a group of nodes that work together to run c
 
 ## Kubernetes dashboards
 
-Kubernetes monitoring with **OpsPilot** includes many dashboards out of the box to help you get started with observing and monitoring your Kubernetes clusters and their workloads. This set includes the following:
+Kubernetes monitoring with **OpsPilot** includes a full set of dashboards out of the box, so you can observe your clusters and workloads straight away - whether they run on-premises or in the cloud.
 
-* Kubernetes / API server
+The set covers **compute resources** and **networking** at multi-cluster, cluster, namespace, node, pod, and workload levels (with Windows variants), the control plane (**API server**, **Controller Manager**, **Kubelet**, **Scheduler**, **Proxy**), **Persistent Volumes**, and **USE Method** dashboards.
 
-* Kubernetes / Compute Resources / Multi-Cluster 
-
-* Kubernetes / Compute Resources / Cluster 
-
-* Kubernetes / Compute Resources / Namespace (Pods)
-
-* Kubernetes / Compute Resources / Namespace (Workloads) 
-
-* Kubernetes / Compute Resources / Node (Pods)
-
-* Kubernetes / Compute Resources / Pod 
-
-* Kubernetes / Compute Resources / Workload 
-
-* Kubernetes / Controller Manager
-
-* Kubernetes / Kubelet 
-
-* Kubernetes / Networking / Namespace (Pods)
-
-* Kubernetes / Networking / Namespace (Workload) 
-
-
-### K8s dashboard spotlight
-
-Our **FusionReactor** Kubernetes monitoring integration gives you visibility into your Kubernetes clusters and workloads within minutes, whether your clusters are hosted on-premises or in the cloud. Below are just two of our Kubernetes dashboards that will allow you to monitor your telemetry data by navigating through your nodes and pods to evaluate their health. 
-
-#### Kubernetes / Compute Resources / Cluster  
-
-An easy-to-scan overview of the performance and resource demands of the different tenants in a cluster.
-
-![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8scluster.png)
-
-
-
-#### Kubernetes / Compute Resources / Namespace (Pods)
-
-Displays the resource demand for each individual pod, broken down per namespace.
-
-![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8spod.png)
+Find them in **OpsPilot** > **Dashboards** > **Kubernetes**.
 
 ---
 !!! question "Need more help?"
