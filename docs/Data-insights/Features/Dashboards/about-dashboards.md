@@ -1,138 +1,87 @@
-﻿# About Dashboards
+# About Dashboards
 
-![Dashboards](/Data-insights/Features/images/dashboards.png)
+Dashboards combine metric, log, and trace data, along with data from your integrations' data sources, in one place - so you get the full picture of your system on a single screen.
 
-Dashboards combine metrics, logs, and trace data in one place to give you a complete picture of your environment. Use them to monitor infrastructure health, debug application issues, or track business metrics - all in a single view.
-
-Navigate to **Dashboards** from the left-hand menu in OpsPilot to land on the **Home** dashboard.
+Navigate to **Dashboards** from the left-hand menu in OpsPilot.
 
 ---
 
-## The Home dashboard
+## The dashboards list
 
-The Home dashboard is your central hub for navigating all pre-built and custom dashboards. It is organised into sections - **Metrics Dashboards**, **Logs Dashboards**, **Favorite Dashboards**, and **About Dashboards** - so you can quickly find what you need.
+The **Dashboards** menu opens **All Dashboards**, where your dashboards are grouped into folders. Two panels sit at the top:
 
-### Variable filters
+- **Favorites** - the dashboards you have starred, each showing its folder and tags.
+- **Recently viewed** - dashboards you have opened recently, with when you last opened each.
 
-At the top of the Home dashboard, dropdown filters let you scope all dashboards to a specific subset of your environment:
+Below them, folders list every dashboard, each row showing a [status dot](#status-dots) and the number of dashboards it holds. The toolbar across the top helps you find one:
 
-| Filter | Description |
+| Control | What it does |
 |---|---|
-| **Job** | Filter by job or service name |
-| **Application Name** | Filter by application |
-| **Instance** | Filter by individual instance |
-
-Selecting a value applies it across the dashboards in each section. Click **Clear Filters** to reset all selections.
-
-### Category quick-links
-
-A row of buttons lets you jump directly to dashboards by signal type or category:
-
-| Button | Takes you to |
-|---|---|
-| **Logs** | Logs dashboards |
-| **Metrics** | Metrics dashboards |
-| **Traces** | Traces dashboards |
-| **Integrations** | Integration dashboards |
-| **Kubernetes** | Kubernetes dashboards |
-| **Anomaly Detection** | Anomaly detection dashboards |
-| **Custom** | Your custom dashboards |
-
-### Other actions
-
-| Button | Description |
-|---|---|
-| **Search Dashboards** | Search across all dashboards by name |
-| **Create New Dashboard** | Open the dashboard builder to create a new custom dashboard |
+| **Search for dashboards and folders** | Find a dashboard or folder by name |
+| **Filter by tag** | Narrow the list to a tag |
+| **Sort** | Order the list, for example **Alphabetically (A–Z)** |
+| **Expand all / Collapse all** | Open or close every folder at once |
+| **Status filter** | Show only dashboards in the data states you pick - see [Status dots](#status-dots) |
+| **+ New dashboard** | Start a new dashboard - see [Creating your own](#creating-your-own) |
 
 ---
 
-## Dashboard sections
+## Using dashboards
 
-### Metrics Dashboards
+- Open any dashboard from the list to view it.
+- **Star** a dashboard to add it to your **Favorites**.
+- Use the **time picker** to change the time range for every panel on the dashboard at once.
+- Use the **variable dropdowns** along the top of a dashboard - service, environment, host, and the like - to filter every panel to the data you pick. Variables can hold more than one value, and your choices stay in the page address, so a link you share opens the same filtered view.
 
-Pre-built dashboards for monitoring application and infrastructure metrics from the FusionReactor agent and OpenTelemetry.
+An open dashboard's header carries these controls:
 
-| Dashboard | Description |
+| Control | What it does |
 |---|---|
-| Databases | Observe database activity including throughput, time, total queries and error rate, broken down by database, collection/table, and action. |
-| Instance Map | Observe instance health based on process CPU, system CPU, or JVM memory usage. |
-| Instances | Observe throughput, response time, and error count broken down per instance. |
-| Request Performance | Observe throughput, response time, and error count broken down by application, transaction route, and status code. |
-| Service Changes | Observe infrastructure-level service change events. |
-| Span Metrics | Observe span-level metrics from distributed traces. |
-| Status Codes | Observe HTTP status code breakdown across your applications. |
-
-### Logs Dashboards
-
-| Dashboard | Description |
-|---|---|
-| FusionReactor Logs | View and filter logs shipped from the FusionReactor agent. |
-| Log | General log browser for all ingested log data. |
-| Log Browser | Browse and search logs with advanced filtering. |
-| Log Errors | Focus view on error-level log entries. |
-| Log Events | Observe log event volume and patterns over time. |
-
-### Traces Dashboards
-
-| Dashboard | Description |
-|---|---|
-| Show Status Traces | View traces filtered by status code. |
-| Show Traces | Browse all ingested trace data. |
-| Trace Lookup | Look up a specific trace by ID or URL. |
-
-### Kubernetes Dashboards
-
-| Dashboard | Description |
-|---|---|
-| Kubernetes / Compute Resources / Cluster | Observe CPU and memory usage across the entire cluster. |
-| Kubernetes / Compute Resources / Pod | Observe CPU and memory usage broken down per pod. |
-
-### Integration Dashboards
-
-| Dashboard | Description |
-|---|---|
-| ElasticSearch | Observe metrics from your ElasticSearch cluster. |
-| IIS | Observe metrics from IIS web server. |
-| Kafka | Observe metrics from the Kafka exporter. |
-| MongoDB | Observe metrics from MongoDB. |
-| MSSQL | Observe metrics from the MSSQL exporter. |
-| MySQL | Observe metrics from the MySQL exporter. |
-| NGINX | Observe metrics from the NGINX community exporter. |
-| NGINX Pro | Observe metrics from the NGINX Pro exporter. |
-| Node Exporter | Observe host-level metrics from the Node exporter. |
-| OracleDB | Observe metrics from the OracleDB monitor. |
-| Postgres | Observe metrics from the Postgres exporter. |
-
-### Billing Dashboards
-
-| Dashboard | Description |
-|---|---|
-| Data Usage | Monitor your data ingestion usage against your plan limits. |
+| **Star** | Add the dashboard to your Favorites |
+| **Make editable** | Unlock a read-only dashboard (such as an integration dashboard) for editing |
+| **Export** | **Export as code** (the dashboard JSON) or **Export as image** - see [Import and Export](import-export.md) |
+| **Share** | Share the dashboard |
+| **Time picker** | Set the time range for every panel |
+| **Refresh** | Refresh the data, or set an auto-refresh interval |
 
 ---
 
-## Experimental dashboards
+## Integration dashboards
 
-Some dashboards are marked as experimental. This allows us to continually roll out new concepts before they are fully production-ready. These dashboards may contain issues as we continue to refine and develop them.
+Dashboards with **[OpsPilot - …]** at the end of their name are shipped by integrations. When you install an integration from the [Integrations](../integrations.md) page, its dashboards appear here automatically.
 
-!!! info
-    Dashboards will continue to evolve - over time we will add new sets of dashboards and improve existing dashboards provisioned to your account.
+These dashboards are **read-only**. To customize one, make a copy (see [Creating your own](#creating-your-own) below).
 
 ---
 
-## Dashboard header controls
+## Status dots
 
-When viewing any individual dashboard, the header provides the following controls:
+The dots show whether a folder or dashboard has data behind it. Each folder shows the strongest color of anything inside it, except that a folder holding dashboards made by you or your team is never **No data**.
 
-| Control | Description |
+| Dot | Meaning |
 |---|---|
-| **Star icon** | Add the dashboard to your Favourites |
-| **Make editable** | Enable edit mode to modify the dashboard layout and panels |
-| **Export** | Export the dashboard as a JSON file |
-| **Share** | Share the dashboard - choose **Share internally** (share with other users in your organisation), **Share externally** (generate a public link), or **Share snapshot** (capture a static point-in-time snapshot) |
-| **Time picker** | Set the time range for all panels (e.g. Last 1 hour) |
-| **Refresh** | Manually refresh panel data, or set an auto-refresh interval |
+| **Has data** | Has received data in the last two weeks. |
+| **No data** | From an integration, with no data in the last two weeks. Hidden until you pick it in the status filter. |
+| **Unknown** | Made by you or your team (including any dashboard not in a folder), not checked yet, or from an integration with no activity check. |
+
+---
+
+## Creating your own
+
+| Action | How |
+|---|---|
+| **Create** | Click **New dashboard** above, then **Add new panel** to pick a data source, metrics, and a chart type. |
+| **Import** | In Grafana, choose **New → Import**, then upload or paste a dashboard JSON file. |
+| **Copy** | To customize any dashboard, including an integration dashboard, export its JSON and import it again. For a copy of an integration dashboard, first take `integration` out of its tags and **[OpsPilot - …]** out of its title, then import it into a folder of your own - otherwise it is still read as the integration's. The copy is yours to edit. |
+| **Save** | Click the disk icon in the top right. Changes aren't saved automatically. |
+
+---
+
+## Organizing
+
+From the **New dashboard** menu on the All Dashboards page, choose **New folder** to group dashboards by project, team, or service. Folders show up in the list here.
+
+To move a dashboard, open it, go to **Settings → General → Folder**, choose a folder, and save.
 
 ---
 

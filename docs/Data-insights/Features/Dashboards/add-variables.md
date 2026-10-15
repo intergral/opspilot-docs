@@ -18,13 +18,11 @@ Variables make dashboards dynamic. Instead of hard-coding a value like a service
 
 ## Add a variable
 
-**Step 1** - Open **Dashboard settings** (cog icon in the header).
+**Step 1** - Open **Settings** from the dashboard header. On a read-only dashboard, click **Make editable** first.
 
-**Step 2** - Select **Variables** from the left-hand menu.
+**Step 2** - Open the **Variables** tab, then click **Add variable**.
 
-**Step 3** - Click **+ Add variable**.
-
-**Step 4** - Configure the variable:
+**Step 3** - Configure the variable:
 
 - **Name** - the identifier used in queries (e.g. `$service`)
 - **Type** - select from the types above
@@ -32,7 +30,7 @@ Variables make dashboards dynamic. Instead of hard-coding a value like a service
 - **Multi-value** - enable to allow selecting more than one value at once
 - **Include All option** - adds an "All" selection that applies no filter
 
-**Step 5** - Click **Apply** and then **Save dashboard**.
+**Step 4** - Once configured, return to the dashboard and click **Save dashboard**.
 
 The variable appears as a dropdown in the dashboard toolbar.
 

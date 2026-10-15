@@ -14,13 +14,17 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 
 ## Steps
 
-**Step 1** - Select **Dashboards** from the navigation menu.
+**Step 1** - On the [All Dashboards](about-dashboards.md) page, click **+ New dashboard**.
 
-**Step 2** - Click **New** in the top-right corner and select **New dashboard**.
+**Step 2** - The new dashboard opens empty, with three ways to start:
 
-**Step 3** - On the empty dashboard, click **+ Add visualization**.
+- **+ Add visualization** - add a panel: pick a data source, query your data, and choose a chart type.
+- **+ Add library panel** - reuse a visualization shared across other dashboards.
+- **Import dashboard** - import a dashboard from a file or grafana.com.
 
-![Screenshot](/Getting-started/Tutorials/step3.png)
+The dashboard header also carries **Add** (add panels and rows), **Settings**, **Save dashboard**, the time picker, and **Refresh**.
+
+**Step 3** - Click **+ Add visualization**.
 
 **Step 4** - In the dialog box that opens, do one of the following:
 
@@ -47,18 +51,13 @@ Custom dashboards allow you to curate specific datasets into a single, cohesive 
 - [Configure thresholds](/Data-insights/Features/Dashboards/configure-panels/#configure-thresholds)
 - [Configure standard options](https://grafana.com/docs/grafana/latest/panels-visualizations/configure-standard-options/)
 
-**Step 10** - Click **Save** to save the dashboard, or **Apply** to preview changes first, then save via the dashboard header.
+**Step 10** - Click **Save dashboard** in the header to open the **Save dashboard** dialog.
 
-**Step 11** - Enter a summary of your dashboard changes.
+**Step 11** - On the **Details** tab, enter a **Title** and an optional **Description**, and choose a **Folder**. The **Changes** tab shows what you have changed since the last save.
 
-**Step 12** - Enter a title and select a folder.
+**Step 12** - Click **Save**.
 
-!!! info
-    We recommend saving custom dashboards to the **General** folder.
-
-**Step 13** - Select **Save**.
-
-**Step 14** - To add more panels, click **Add** in the dashboard header and select **Visualization**.
+**Step 13** - To add more panels, click **Add** in the dashboard header and select **Visualization**.
 
 ---
 

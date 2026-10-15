@@ -1,58 +1,40 @@
-﻿# Manage Dashboards
+# Manage Dashboards
 
-## Navigating dashboards
-
-From the **Dashboards** menu you can browse all pre-built and custom dashboards organised into folders.
-
-- Use the **search bar** to find any dashboard or folder by name.
-- Use **Filter by tag** to narrow by category.
-- Tick **Starred** to show only dashboards you have favourited.
-- Click the **star icon** on any open dashboard to add it to your favourites.
-- Use the **time picker** inside a dashboard to adjust the time range. Highlighting a specific timeframe on a chart updates all panels on that dashboard.
-- Use **Sort** and the grid/list toggle to change how dashboards are displayed.
+Once a dashboard exists, you organize it into folders, copy it to customize, and adjust its settings. Browsing and filtering the dashboard list is covered in [About Dashboards](about-dashboards.md).
 
 ---
 
-## Copy an existing dashboard
+## Organizing into folders
 
-Copying an existing dashboard is the fastest way to build a customised view - start from a pre-built dashboard rather than from scratch.
+From the **New dashboard** menu on the [All Dashboards](about-dashboards.md) page, choose **New folder** to group dashboards by project, team, or service. Folders then appear in the list.
 
-**Step 1** - Navigate to the dashboard you want to copy.
-
-**Step 2** - Click the **Dashboard settings** icon (cog) in the header.
-
-**Step 3** - Select **Save as** to open the **Save dashboard copy** screen.
-
-**Step 4** - Update the name in the **Dashboard name** field if required, and select **General** from the **Folder** dropdown.
-
-**Step 5** - Click **Save**.
-
-The copy opens immediately and is fully editable.
+To move a dashboard into a folder, open it, go to **Settings → General → Folder**, choose a folder, and save.
 
 ---
 
-## Save a dashboard
+## Copying a dashboard
 
-Changes to a dashboard are not persisted until you explicitly save.
+To customize any dashboard - including a read-only [integration dashboard](about-dashboards.md#integration-dashboards) - export its JSON and import it again as your own:
 
-- Click the **save icon** in the dashboard header, or use the keyboard shortcut **Ctrl+S** / **Cmd+S**.
-- Enter a brief description of your changes in the **Save changes** dialog.
-- Click **Save**.
+**Step 1** - Open the dashboard and export its JSON (see [Export a dashboard](import-export.md#export-a-dashboard)).
 
-!!! tip
-    Use meaningful save messages - they appear in the dashboard version history and make it easier to roll back if needed.
+**Step 2** - For an integration dashboard, first remove `integration` from its **tags** and **[OpsPilot - …]** from its **title** - otherwise the copy is still read as the integration's.
+
+**Step 3** - [Import](import-export.md#import-a-dashboard) the JSON into a folder of your own.
+
+The copy is yours to edit.
 
 ---
 
 ## Dashboard settings
 
-Access **Dashboard settings** (cog icon in the header) to update:
+Open **Settings** from the dashboard header to update:
 
-- Dashboard name and description
-- Folder location
+- Name and description
+- Folder
 - Tags
 - Time range defaults and refresh intervals
-- Variable definitions (see [Add Variables](/Data-insights/Features/Dashboards/add-variables/))
+- Variable definitions (see [Add Variables](add-variables.md))
 
 ---
 

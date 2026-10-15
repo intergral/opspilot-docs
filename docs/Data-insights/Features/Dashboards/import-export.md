@@ -8,22 +8,22 @@ Dashboards in OpsPilot are stored as JSON. You can export any dashboard to a fil
 
 **Step 1** - Open the dashboard you want to export.
 
-**Step 2** - Click the **Dashboard settings** icon (cog) in the dashboard header.
+**Step 2** - Click **Export** in the dashboard header and choose one of:
 
-**Step 3** - Select **JSON Model** from the left-hand menu.
-
-**Step 4** - Copy the JSON, or click **Download** to save it as a `.json` file.
+- **Export as code** - the dashboard's JSON, which you can copy or save as a `.json` file. Use this to [copy](manage-dashboards.md#copying-a-dashboard) a dashboard or keep a backup.
+- **Export as image** - a static image of the dashboard.
 
 ---
 
 ## Import a dashboard
 
-**Step 1** - From the **Dashboards** library, click **New** in the top-right corner and select **Import**.
+**Step 1** - Click **+ New dashboard** on the [All Dashboards](about-dashboards.md) page, then **Import dashboard**.
 
-**Step 2** - Do one of the following:
+**Step 2** - Import the dashboard in one of three ways:
 
-- Paste the JSON directly into the text field.
-- Click **Upload JSON file** and select a `.json` file from your machine.
+- **Upload a JSON file** - drag and drop a `.json` or `.txt` file onto **Upload dashboard JSON file**, or click to browse.
+- **From grafana.com** - paste a **grafana.com dashboard URL or ID** and click **Load**.
+- **Paste JSON** - paste the dashboard's JSON into **Import via dashboard JSON model** and click **Load**.
 
 **Step 3** - Review the dashboard name and folder, update if needed, then click **Import**.
 
