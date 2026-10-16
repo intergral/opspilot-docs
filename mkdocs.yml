@@ -210,7 +210,6 @@ nav:
         - Downloads: Latest-updates/Downloads.md
      - Tutorials & Walkthroughs:
         - Overview: Getting-started/Tutorials/Overview.md
-        - New UI FAQ: Getting-started/Tutorials/new-ui-faq.md
         - Performance analysis:
            - Post-crash troubleshooting: Getting-started/Tutorials/crash-troubleshoot-cloud.md
            - Getting-started/Tutorials/resolve-slow-queries.md
@@ -338,6 +337,7 @@ plugins:
          'deep.md': 'Monitor-your-data/Deep/overview.md'
          'release-notes.md': 'Latest-updates/release-notes.md'
          'Getting-started/DVCloud.md' : 'index.md'
+         'Getting-started/Tutorials/new-ui-faq.md' : 'index.md'
          'OP-billing/licenses.md' : 'Admin-and-data/Billing/Cloud/overview.md'
          'Data-insights/Features/applications.md' : 'Data-insights/Features/Applications/overview.md'
          
