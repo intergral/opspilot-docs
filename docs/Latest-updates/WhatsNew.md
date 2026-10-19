@@ -1,5 +1,52 @@
 ﻿# What's new in OpsPilot 
 
+## Email notifications and eight new integrations
+
+**Published: October 19, 2026**
+
+New ways for Coworker to reach you, and a much bigger integrations catalog, headline this release.
+
+### Email notifications for situations
+
+Email joins chat and the in-app bell as a third way Coworker keeps you informed. It's opt-in and off until you enable it.
+
+- **Critical situations** email you at each key moment - raised, escalated, reopened, awaiting your input, and resolved
+- **Everything else** folds into a **weekly digest**, and you can lower the severity floor to get more immediate emails
+- **One-click unsubscribe** on every email
+
+Turn it on and tune it in your notification settings.
+
+### Eight new integrations
+
+The catalog gains eight observability integrations for databases and infrastructure:
+
+**TigerData (TimescaleDB)**, **Strimzi Kafka**, **Altinity ClickHouse**, **Redis**, **MongoDB**, **MySQL**, **Microsoft SQL Server**, and **Windows**, which adds a detail dashboard for diagnosing slow machines through memory, disk, and kernel metrics.
+
+Each ships with Grafana dashboards and alert rules (installed paused). Metrics are collected by Grafana Alloy in your own environment - the integrations never connect directly to your databases - and bind to your account's existing shared metrics and logs data sources rather than creating new ones.
+
+The .NET, Go, Java, Node.js, Python, and PHP SDK integrations were also updated to organize their runtime dashboards into folders by source and hide folders with no recent data.
+
+### Smarter coverage-gap insights
+
+When Coworker can't reach a conclusion because data is missing, its coverage-gap insights now spell out **what the missing data blocked** and **which integration would close the gap**, in a new "Why I need this" card. Coworker also raises these gaps more conservatively - only when the data is provably absent and actually blocked a conclusion.
+
+### Coworker on your phone
+
+Coworker pages are now usable on phones. The overview dashboard also gains an **Integrations** panel showing the health of every installed integration, color-coded by worst state.
+
+### More dashboards
+
+The per-organization dashboard limit doubled from **200 to 400**.
+
+### Coming soon: Jira ticket filing
+
+Coworker will soon be able to **propose and file Jira tickets** for you to review and confirm, with filing confined to your organization's allowed projects. The integration is built and on its way - for now it appears in the catalog as **Coming soon** and can't be installed yet.
+
+!!! info "Learn more"
+    [Integrations](/Data-insights/Features/integrations/) · [Coworker](/Data-insights/Features/OpsPilot/Coworker/overview/)
+
+---
+
 ## Service catalog, incident management, tasks, and notifications
 
 **Published: June 25, 2026**
