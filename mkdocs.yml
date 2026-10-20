@@ -97,6 +97,7 @@ nav:
            - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
            - PostgreSQL: Data-insights/Features/Integrations/Data/postgres.md
            - Redis: Data-insights/Features/Integrations/Data/redis.md
+           - Strimzi Kafka: Data-insights/Features/Integrations/Data/strimzi-kafka.md
            - TigerData: Data-insights/Features/Integrations/Data/tigerdata.md
         - Infrastructure:
            - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
