@@ -9,6 +9,9 @@ Your clusters show up alongside the rest of your telemetry, on dashboards that a
 
 Navigate to **Integrations** from the left-hand sidebar, then select **Kubernetes**.
 
+!!! note "Already running Kube-Prometheus-Stack?"
+    This integration ships metrics with the **Grafana Kubernetes Monitoring** chart and is the simplest way to get the OpsPilot Kubernetes dashboards, recording rules, and alerts. If you already run - or prefer - the **Kube-Prometheus-Stack** chart, you can ship cluster metrics that way instead: see [Kubernetes monitoring](../../../../Monitor-your-data/Kubernetes-monitoring/overview.md).
+
 ---
 
 ## Permission tiers
