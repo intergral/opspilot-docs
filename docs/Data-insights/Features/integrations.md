@@ -261,7 +261,7 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
 === "Data"
 
-    Altinity ClickHouse Operator · Kafka · MongoDB · MySQL · RabbitMQ · Redis · Strimzi Kafka · TigerData
+    Kafka · RabbitMQ
 
 === "Infrastructure"
 
