@@ -94,6 +94,7 @@ nav:
            - MongoDB: Data-insights/Features/Integrations/Data/mongodb.md
            - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
            - PostgreSQL: Data-insights/Features/Integrations/Data/postgres.md
+           - TigerData: Data-insights/Features/Integrations/Data/tigerdata.md
         - Infrastructure:
            - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
            - iDRAC: Data-insights/Features/Integrations/Infrastructure/idrac.md
