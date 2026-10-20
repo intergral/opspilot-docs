@@ -93,6 +93,7 @@ nav:
            - Altinity ClickHouse: Data-insights/Features/Integrations/Data/altinity-clickhouse.md
            - Microsoft SQL Server: Data-insights/Features/Integrations/Data/mssql.md
            - MongoDB: Data-insights/Features/Integrations/Data/mongodb.md
+           - MySQL: Data-insights/Features/Integrations/Data/mysql.md
            - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
            - PostgreSQL: Data-insights/Features/Integrations/Data/postgres.md
            - TigerData: Data-insights/Features/Integrations/Data/tigerdata.md
