@@ -265,7 +265,7 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
 === "Infrastructure"
 
-    ArgoCD · Host Metrics · KEDA · Kubernetes · Terraform · TrueNAS SCALE
+    ArgoCD · Host Metrics · KEDA · Terraform · TrueNAS SCALE
 
 === "Networking"
 

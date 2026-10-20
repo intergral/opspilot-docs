@@ -102,6 +102,7 @@ nav:
         - Infrastructure:
            - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
            - iDRAC: Data-insights/Features/Integrations/Infrastructure/idrac.md
+           - Kubernetes: Data-insights/Features/Integrations/Infrastructure/kubernetes.md
            - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
            - Unix: Data-insights/Features/Integrations/Infrastructure/unix.md
            - Windows: Data-insights/Features/Integrations/Infrastructure/windows.md
