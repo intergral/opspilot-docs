@@ -35,8 +35,6 @@ Click **Integrations →** to go to the full [Integrations](/Data-insights/Featu
 
 ### Coworker
 
-![!Screenshot](../../Coworker/op-main-coworker.png)
-
 The **Coworker** panel gives you a live summary of your AI teammate's activity, in the right-hand rail. A **Right now** label shows it reflects the current state.
 
 Situations are grouped by severity - for example a **Critical** heading with a count, listing those situations below it. Each shows its severity, the affected service, a one-line summary (for example, *"fr-next-ui 100% errors; external dependency (Clerk API) latency elevated"*), and how long ago it changed. **Also watching N** rolls up the rest that Coworker is keeping an eye on.
@@ -110,8 +108,6 @@ Click **Applications ->** to go to the full [Applications](/Data-insights/Featur
 
 ### Alerts
 
-![!Screenshot](../../images/alerts-overview.png)
-
 The **Alerts** panel, in the right-hand rail with a **Live** label, leads with the number **firing** and lists them - each showing the alert name, how long it has been firing, and its rule group (for example *OpsPilot Rules* or *FusionReactor Alerts*). A muted-bell icon marks a silenced alert.
 
 Below the list, **Open in Alerting** links to the full view, with a breakdown of every rule by state:
@@ -128,8 +124,6 @@ Below the list, **Open in Alerting** links to the full view, with a breakdown of
 Click **Alerts →** to go to the full [Alerting Status](/Data-insights/Features/New-alerting/status/) view.
 
 ### Anomaly Detection
-
-![!Screenshot](../../images/AD-overview.png)
 
 The **Anomaly Detection** panel, in the right-hand rail with a **Live** label, mirrors the Alerts panel for your anomaly detectors. It reads **All clear** when none are active, and otherwise lists the firing and **pending** anomalies - each with its detector, the affected service, and how long it has been pending - above a breakdown of every detector by state (**pending**, **normal**, **no data**, **paused**).
 
