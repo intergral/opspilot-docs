@@ -275,6 +275,7 @@ nav:
         - Contribute/how-to-contribute.md
         - Style Guide:
            - Overview: Contribute/style-guide/overview.md
+           - Describing OpsPilot: Contribute/style-guide/messaging.md
            - Images: Contribute/style-guide/images.md
            - Language & grammar:
               - Abbreviations: Contribute/style-guide/Language-and-grammar/Abbreviations.md
