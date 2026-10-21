@@ -1,6 +1,6 @@
 # Overview
 
-The **Overview** page is your observability dashboard at a glance. It gives you an immediate, high-level summary of your entire environment - integrations, services, servers, applications, alerts, anomaly detection, and usage - all in one place.
+The **Overview** page is your observability dashboard at a glance. It gives you an immediate, high-level summary of your entire environment - integrations, services, servers, applications, alerts, and anomaly detection - all in one place.
 
 ## Active account view
 
@@ -141,20 +141,6 @@ The **Incidents** panel, in the right-hand rail with a **Live** label, reads **N
 
 Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Incidents/overview/) view.
 
-### Usage
-
-The **Usage** panel shows your current consumption against your plan limits for the current pay period:
-
-| Signal | Description |
-|---|---|
-| **Logs** | Log volume ingested (MB / GB) |
-| **Traces** | Trace volume ingested (MB / GB) |
-| **Metrics** | Active metric series |
-| **Agents** | Number of connected FusionReactor agents |
-| **OpsPilot** | OpsPilot AI tokens consumed |
-
-A progress bar indicates how much of your plan allowance has been used.
-
 ### What's new
 
 The **What's new** panel, in the right-hand rail, surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the full update history.
@@ -175,8 +161,6 @@ If your account has no data yet, each section of the Overview displays a **Get S
 | **Anomaly Detection** | Enable anomaly detection to automatically detect unusual behavior in your data. |
 
 The **Servers** and **Applications** prompts also display your **OpsPilot license key** directly on the page so you can copy it for use during agent installation.
-
-The **Usage** panel shows your plan limits with all values at zero until data starts flowing (for example, `0 bytes / 27 GB` for Logs).
 
 Once data starts flowing in, the Overview automatically populates with your live metrics and telemetry.
 
