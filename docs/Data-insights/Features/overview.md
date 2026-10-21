@@ -1,17 +1,18 @@
 # Overview
 
-The **Overview** page is your observability dashboard at a glance. It gives you an immediate, high-level summary of your entire environment - services, servers, applications, alerts, anomaly detection, and usage - all in one place.
+The **Overview** page is your observability dashboard at a glance. It gives you an immediate, high-level summary of your entire environment - integrations, services, servers, applications, alerts, anomaly detection, and usage - all in one place.
 
 ## Active account view
 
 ![!Screenshot](../../images/active-account.png)
 
-Once your environment is sending data, the Overview page shows a full observability summary.
+Once your environment is sending data, the Overview page shows a full observability summary. Each panel has a header with a collapse control, its title, an arrow to the full view, and a status label (for example **Health**, **Last 1 hour**, **Right now**, or **Live**). **Coworker**, **Alerts**, and **Anomaly Detection** sit in a live right-hand rail, and a **time picker** in the top right sets the range for the time-based panels.
 
 ## Customizing your dashboard
 
 Click the **My dashboard** icon in the top right of the Overview to choose which sections are visible. Tick or untick any section to show or hide it:
 
+- Integrations
 - Coworker
 - Services
 - Services by latency
@@ -24,24 +25,23 @@ Click the **My dashboard** icon in the top right of the Overview to choose which
 
 Click **Reset to org defaults** to restore the default layout.
 
+### Integrations
+
+The **Integrations** panel shows the health of your installed integrations, color-coded by worst state, with a **Health** label. A banner at the top summarizes how many **need attention** and how many are **not sending data**.
+
+Below it, each integration shows its name and status. For one that is not sending data, **Check the install notes →** opens its setup guide. **Show more** expands the full list.
+
+Click **Integrations →** to go to the full [Integrations](/Data-insights/Features/integrations/) view.
+
 ### Coworker
 
 ![!Screenshot](../../Coworker/op-main-coworker.png)
 
-The **Coworker** panel gives you a live summary of your AI teammate's activity, directly from the Overview page. A **Right now** label shows it reflects the current state.
+The **Coworker** panel gives you a live summary of your AI teammate's activity, in the right-hand rail. A **Right now** label shows it reflects the current state.
 
-Four cards summarize what Coworker is doing:
+Situations are grouped by severity - for example a **Critical** heading with a count, listing those situations below it. Each shows its severity, the affected service, a one-line summary (for example, *"fr-next-ui 100% errors; external dependency (Clerk API) latency elevated"*), and how long ago it changed. **Also watching N** rolls up the rest that Coworker is keeping an eye on.
 
-| Card | Description |
-|---|---|
-| **Critical** | Critical situations needing attention |
-| **Services** | How far the problem reaches - its blast radius |
-| **Checkups** | Checks Coworker has run in the last hour |
-| **Watching** | Signals Coworker is tracking in the background |
-
-Below the cards, Coworker surfaces its top **critical situations** - each showing the severity, the affected service, and a one-line summary (for example, *"otlp-fraud-detection-fr heap at 100% - OOM risk"*). Click a situation to open it in the full Coworker view.
-
-Click **Coworker →** to go to the full Coworker dashboard.
+Click a situation to open it in the full Coworker view, or **Coworker →** to go to the full Coworker dashboard.
 
 ### Services
 
@@ -112,22 +112,25 @@ Click **Applications ->** to go to the full [Applications](/Data-insights/Featur
 
 ![!Screenshot](../../images/alerts-overview.png)
 
-The **Alerts** panel shows a live count of alerts grouped by state:
+The **Alerts** panel, in the right-hand rail with a **Live** label, leads with the number **firing** and lists them - each showing the alert name, how long it has been firing, and its rule group (for example *OpsPilot Rules* or *FusionReactor Alerts*). A muted-bell icon marks a silenced alert.
+
+Below the list, **Open in Alerting** links to the full view, with a breakdown of every rule by state:
 
 | State | Description |
 |---|---|
 | **Firing** | Alerts currently breaching their threshold |
-| **Pending** | Alerts that have triggered but not yet confirmed |
-| **Recovering** | Alerts returning to a normal state |
+| **Can't evaluate** | Rules that could not be evaluated |
 | **Normal** | Alert rules currently within threshold |
+| **No data** | Rules with no data to evaluate against |
+| **Paused** | Rules that are not currently evaluating |
 
-Click **Alerts ->** to go to the full [Alerting Status](/Data-insights/Features/New-alerting/status/) view.
+Click **Alerts →** to go to the full [Alerting Status](/Data-insights/Features/New-alerting/status/) view.
 
 ### Anomaly Detection
 
 ![!Screenshot](../../images/AD-overview.png)
 
-The **Anomaly Detection** panel shows a live count of anomaly alerts by state, mirroring the same Firing / Pending / Recovering / Normal breakdown.
+The **Anomaly Detection** panel, in the right-hand rail with a **Live** label, mirrors the Alerts panel for your anomaly detectors: it reads **All clear** when none are firing, and otherwise lists the firing anomalies with the same state breakdown.
 
 Click **Anomaly Detection ->** to go to the full [Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/) view.
 
