@@ -120,6 +120,7 @@ Below the list, **Open in Alerting** links to the full view, with a breakdown of
 |---|---|
 | **Firing** | Alerts currently breaching their threshold |
 | **Can't evaluate** | Rules that could not be evaluated |
+| **Pending** | Alerts that have triggered but are not yet confirmed |
 | **Normal** | Alert rules currently within threshold |
 | **No data** | Rules with no data to evaluate against |
 | **Paused** | Rules that are not currently evaluating |
@@ -130,13 +131,13 @@ Click **Alerts →** to go to the full [Alerting Status](/Data-insights/Features
 
 ![!Screenshot](../../images/AD-overview.png)
 
-The **Anomaly Detection** panel, in the right-hand rail with a **Live** label, mirrors the Alerts panel for your anomaly detectors: it reads **All clear** when none are firing, and otherwise lists the firing anomalies with the same state breakdown.
+The **Anomaly Detection** panel, in the right-hand rail with a **Live** label, mirrors the Alerts panel for your anomaly detectors. It reads **All clear** when none are active, and otherwise lists the firing and **pending** anomalies - each with its detector, the affected service, and how long it has been pending - above a breakdown of every detector by state (**pending**, **normal**, **no data**, **paused**).
 
 Click **Anomaly Detection ->** to go to the full [Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/) view.
 
 ### Incidents
 
-The **Incidents** panel shows how many incidents are currently **Open**, followed by the most recent ones - each with its title, its severity (such as **SEV-2**), and how long ago it was raised.
+The **Incidents** panel, in the right-hand rail with a **Live** label, reads **No open incidents** when there are none, and otherwise breaks your open incidents down by state - **Triage**, **Investigating**, and **Mitigated**. Open incidents are listed with their title, their severity (such as **SEV-2**), and how long ago they were raised.
 
 Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Incidents/overview/) view.
 
@@ -156,7 +157,7 @@ A progress bar indicates how much of your plan allowance has been used.
 
 ### What's new
 
-The **What's new** panel surfaces the latest OpsPilot product announcements, each with a release date and a short summary of what changed.
+The **What's new** panel, in the right-hand rail, surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the full update history.
 
 ## No Data view
 
