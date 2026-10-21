@@ -29,7 +29,7 @@ Click **Reset to org defaults** to restore the default layout.
 
 The **Integrations** panel shows the health of your installed integrations, color-coded by worst state, with a **Health** label. A banner at the top summarizes how many **need attention** and how many are **not sending data**.
 
-Below it, each integration shows its name and status. For one that is not sending data, **Check the install notes →** opens its setup guide. **Show more** expands the full list.
+Below it, each integration shows a status dot and its state - green for **Healthy**, or amber for **Not sending data**, which adds a **Check the install notes →** link to its setup guide. **Show more** and **Show less** expand and collapse the full list.
 
 Click **Integrations →** to go to the full [Integrations](/Data-insights/Features/integrations/) view.
 
