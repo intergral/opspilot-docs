@@ -10,20 +10,25 @@ Once your environment is sending data, the Overview page shows a full observabil
 
 ## Customizing your dashboard
 
-Click the **My dashboard** icon in the top right of the Overview to choose which sections are visible. Tick or untick any section to show or hide it:
+Click the **My dashboard** icon in the top right of the Overview to control which panels appear and in what order. Each panel in the list has two controls:
 
-- Integrations
-- Coworker
-- Services
-- Services by latency
-- Servers
-- Servers by latency
-- Applications
-- Applications by latency
-- Alerts
-- Anomaly Detection
+- A **visibility** toggle - tick or untick a panel to show or hide it.
+- A **pin** - pin a panel to keep it at the top of the Overview (see [Pinning panels](#pinning-panels)).
+
+The list covers the core panels - **Coworker**, **Integrations**, **Services**, **Servers**, **Applications**, **Alerts**, **Service Anomaly Detection**, **Custom Anomaly Detection**, and **Incidents** - followed by a panel for each installed integration, named after its dashboard folder (for example **AWS · Database** or **Java · Semantic conventions**).
 
 Click **Reset to org defaults** to restore the default layout.
+
+### Pinning panels
+
+Panels on the Overview are ordered automatically - anything **warning** or **erroring** floats to the top so it catches your eye first. **Pinning** overrides that: a pinned panel always sits above the rest, even when nothing is wrong.
+
+You can pin at two levels:
+
+- **Organization** - the default layout everyone in the org sees.
+- **User** - your own overrides on top of those org defaults.
+
+Pinning an **integration** panel does one more thing: it associates that panel's **dashboard folder** with your dashboard list, so the folder appears in the left-hand nav under [Dashboards](Dashboards/about-dashboards.md) - putting its dashboards one click away.
 
 ### Integrations
 
