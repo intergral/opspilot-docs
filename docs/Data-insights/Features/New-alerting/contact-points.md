@@ -88,7 +88,7 @@ Changes take effect immediately and apply everywhere the contact point is used -
 
 ## Notification templates
 
-Templates let you define reusable message formats instead of writing custom messages for every alert rule. See [Notification templates](../Alerting/Templates.md) for full details.
+Templates let you define reusable message formats instead of writing custom messages for every alert rule. They use the same Go templating as [annotation templates](annotation-templates.md#annotation-templates-and-notification-templates), with access to `.Alerts` and `.CommonLabels` so a single message can cover several alerts.
 
 !!! info "Learn more"
     [Configure Contact Points](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/manage-contact-points/)
