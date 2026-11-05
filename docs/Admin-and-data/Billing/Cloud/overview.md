@@ -200,38 +200,26 @@ To help keep things simple and transparent, **OpsPilot** has developed usage das
 
 ### Data usage
 
-
-
-![](../../Billing/Cloud/billingdash.png)
-
 The data usage dashboard calculates the approximate usage of the FusionReactor instance, metrics, logs and traces. It displays the raw values or unedited data you have sent to OpsPilot. 
 
 #### FusionReactor agent instance
 
-The first total in the graph relates to the FusionReactor agent instances and provides the number of hours the instance has been used. 
-
-For example, in the above graphic, the total number of hours in the FusionReactor instance is 3235 hours over 30 days which equates to running 5 seats. The figure of 306 hours shows the hours spent in the instance for the last 24 hours.
+The first total in the graph relates to the FusionReactor agent instances and provides the number of hours the instance has been used, over both the 30-day period and the last 24 hours.
 
 #### Metrics
 
-In the **Metrics** section of the dashboard you can view the maximum number of metric series over the 30 day period.  
-
-For example, the above graphic indicates that 70143 series of metrics have been received over the 30 day period. The figure below of 47539 series shows the number of metrics received in the last 24 hours.
+In the **Metrics** section of the dashboard you can view the maximum number of metric series over the 30 day period, with the figure for the last 24 hours below it.
 
 !!! note
     For billing purposes, your account will never be at zero. We will add some metrics to your account in order to measure account usage.
 
 #### Logs 
 
-In the **Logs** section of the dashboard you can view the  total number of logs that have been ingested over the 30 day period. 
-
-For example, the above graphic indicates that 26 GB of logs have been ingested over the 30 day period. The figure below of 948MB  shows the number of logs ingested in the last 24 hours.
+In the **Logs** section of the dashboard you can view the total number of logs that have been ingested over the 30 day period, with the figure for the last 24 hours below it.
 
 #### Traces
 
-In the **Traces** section of the dashboard you can view the  total number of traces that have been ingested over the 30 day period. 
-
-For example, the above graphic indicates that 733 GB of traces have been ingested over the 30 day period. The figure below that of 21.4GB shows the number of traces ingested in the last 24 hours.
+In the **Traces** section of the dashboard you can view the total number of traces that have been ingested over the 30 day period, with the figure for the last 24 hours below it.
 
 #### Data usage metrics
 
@@ -250,8 +238,6 @@ These are the current metrics OpsPilot supports for billing.
 ### Billing usage 
 
 At **OpsPilot** we have created the **Billing usage** dashboard to ensure cost transparency. This dashboard displays a breakdown of your billing usage into clearly defined sections to help you keep on top of your spending. 
-
-![](../../Billing/Cloud/billingdb.png)
 
 The dashboard provides the following:
 
