@@ -2,8 +2,6 @@
 
 The **Invoices** page lets you view your invoices and upcoming payments. Open it from **Billing > Invoices**.
 
-![!Screenshot](Images/invoices.png)
-
 The main panel lists your past invoices, or reads **No invoices found** when there are none. Each invoice shows:
 
 | Field | Description |
