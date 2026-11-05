@@ -1,10 +1,10 @@
 # Invoices
 
-The **Invoices** page lets you view and manage your invoices and upcoming payments.
+The **Invoices** page lets you view your invoices and upcoming payments. Open it from **Billing > Invoices**.
 
 ![!Screenshot](Images/invoices.png)
 
-Each invoice displays the following information:
+The main panel lists your past invoices, or reads **No invoices found** when there are none. Each invoice shows:
 
 | Field | Description |
 |---|---|
@@ -15,21 +15,13 @@ Each invoice displays the following information:
 
 Click the download icon on the right of any invoice to download it as a PDF.
 
-## Upcoming Bill
+## Upcoming invoice
 
-The **Upcoming Bill** panel on the right shows your next payment, including:
+The **upcoming invoice** panel on the right shows your next payment - the amount due, the next billing date, and a breakdown of **Subtotal**, **VAT**, **Total**, and **Credit**. It reads **No upcoming invoice** when none is due.
 
-- **Amount due**
-- **Next billing date**
-- A breakdown of **Subtotal**, **VAT**, **Total**, and **Credit**
+## Billing details
 
-## Updating Your Billing Details
-
-To update your credit card or other billing details:
-
-1. Go to **Administration > Invoices**.
-2. In the **Upcoming Bill** panel, click **Edit Details**.
-3. Update your card or billing information and save your changes.
+The **Billing details** card shows the **Address** and **Card** on file for your account. Click **Edit details** to update your card or billing information.
 
 ![!Screenshot](Images/edit-details.png)
 
