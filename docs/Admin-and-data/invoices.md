@@ -21,9 +21,10 @@ The **upcoming invoice** panel on the right shows your next payment - the amount
 
 ## Billing details
 
-The **Billing details** card shows the **Address** and **Card** on file for your account. Click **Edit details** to update your card or billing information.
+The **Billing details** card shows the **Address** and **Card** on file for your account. Click **Edit details** to open a secure **Stripe**-hosted billing portal, where you can:
 
-![!Screenshot](Images/edit-details.png)
+- **Payment method** - view the card on file, **Add payment method**, or update or remove one from the **...** menu.
+- **Billing information** - update the **Name**, **Email**, and **Billing address** from **Update information**.
 
 ---
 
