@@ -36,7 +36,7 @@ Two optional add-ons can be included with any plan. Each has an **Add** button a
 
 ## Subscription summary and checkout
 
-The **Subscription summary** on the right totals your selection - the plan, any add-ons, and the **Current total** per month or year. Set your **Billing country**, used to calculate tax, then click **Select a plan** to be redirected to checkout.
+The **Subscription summary** on the right itemizes your selection - the plan, any FusionReactor **Ultimate** and **Developer** seats, **Metric shipping**, and **OpenTrace** - each with its price, and totals them as the **Current total** per month or year. Set your **Billing country**, used to calculate tax, then click **Select a plan** to be redirected to checkout.
 
 ## Frequently asked questions
 
