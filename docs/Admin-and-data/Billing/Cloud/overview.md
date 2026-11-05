@@ -6,21 +6,45 @@ If you’re already running the FusionReactor agent on-premise, you can enable O
 
 To get started, sign up for a free, no-obligation [trial](https://app.opspilot.com/auth/register). All plan and subscription management is handled within the app.
 
-![!Screenshot](/images/Admin/billing-main.png)
+## Billing Overview
 
+The **Billing Overview** gives you your subscription, upcoming bill, and usage at a glance. Open it from **Billing > Overview** in the left-hand menu.
 
-## Purchasing a Subscription
+![!Screenshot](billing-overview.png)
 
-1. [Log in](https://app.opspilot.com) to the OpsPilot Portal.
-2. Navigate to **Administration** > **Billing** in the left-hand menu.
-3. At the top of the page, select **Monthly** or **Yearly** billing.
+If your subscription has lapsed, a **Your subscription has expired - Click to renew** banner sits across the top.
 
-    !!! note
-        The Yearly option saves approximately 20%.
-4. If you are running the FusionReactor agent on-premise, set the number of **FusionReactor Ultimate** and/or **FusionReactor Developer** seats required.
-5. Optionally enable **Metric Shipping** to ship FusionReactor agent data to third-party providers ($59/mo).
-6. Select your OpsPilot plan: **Onprem**, **Starter**, **Pro**, or **Advanced**.
-7. Review the **Plan Summary** on the right and click **Select a Plan** to proceed to checkout.
+### Subscription summary
+
+The subscription card is headed with your current plan name (for example **Trial**) and shows:
+
+| Field | Description |
+|---|---|
+| **Plan** | Your current plan |
+| **Interval** | Monthly or yearly billing |
+| **Status** | For example **Expired**, or active |
+| **Renews at** | When the subscription next renews, or **N/A** |
+| **Bills at** | When the next bill is raised, or **N/A** |
+| **Shipping** | Whether metric shipping is included |
+
+A **settings** icon and a **cancel subscription** icon sit in the card's top right. Below it, an **upcoming invoice** panel shows your next bill, or **No upcoming invoice** when there is none.
+
+### Usage
+
+The **Usage** card tracks your consumption against your plan allowance, each item with a progress bar and a **% used** figure:
+
+| Item | Measured in |
+|---|---|
+| **Agents - Ultimate** | FusionReactor Ultimate agent hours |
+| **Agents - Developer** | FusionReactor Developer agent hours |
+| **Metrics** | Active metric series, with a **Forecast** for the period |
+| **Logs** | Bytes ingested |
+| **Traces** | Bytes ingested |
+| **AI Tokens** | OpsPilot AI tokens used, against your plan's allowance |
+
+## Purchasing a subscription
+
+Choose and buy a plan from the **[Manage Subscription](../manage-subscription.md)** page - **Billing > Manage Subscription**. It covers the Starter, Pro, and Advanced plans, the optional add-ons, currency preview, and checkout.
 
 ---
 
@@ -29,7 +53,6 @@ To get started, sign up for a free, no-obligation [trial](https://app.opspilot.c
 |**Plan**| **Price** | **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**|
 |------------ | ------------- | ------------ | ----------- | ------ |-----|
 **Trial** | FREE | Unlimited |Unlimited| Unlimited| 1,000 |
-**Onprem** | $0/mo | - | - | - | - |
 **Starter** | $49 (A) <br> $59 (M) | 10,000 | 25 | 25 | 500 |
 **Pro** | $249 (A) <br> $299 (M) | 20,000 | 100 | 100 | 5,000 |
 **Advanced** | $899 (A) <br> $1,079 (M) | 50,000 | 250 | 250 | 20,000 |
@@ -46,23 +69,6 @@ To get started, sign up for a free, no-obligation [trial](https://app.opspilot.c
     Additional [on-demand](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs) usage outside of the plan is chargeable.
 
 ## Plans
-
-### Onprem
-
-The **Onprem** plan is for teams running the FusionReactor agent in their own infrastructure. It has no base cost - you pay only for the on-premise seats you need.
-
-| | **Price** |
-|---|---|
-| **FusionReactor Ultimate** | $79 (A) / $95 (M) per seat |
-| **FusionReactor Developer** | $25/mo per seat |
-
-The total cost depends on the number of Ultimate and Developer seats selected. Optionally add **Metric Shipping** ($59/mo) to ship agent data to third-party providers.
-
-!!! warning
-    The Developer edition is not licensed for production use.
-
-!!! info "Learn more"
-    [FusionReactor licensing](../../Licensing/Licensing.md)
 
 ### Starter
 
@@ -96,6 +102,23 @@ The **Advanced** plan unlocks the full potential of OpsPilot as a DevOps co-pilo
 
 !!! info "Learn more"
     [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
+
+### FusionReactor monitoring
+
+**FusionReactor** agent monitoring is purchased separately from the cloud plans - you only need it if you want FusionReactor monitoring, and you pay for the on-premise seats you use. Add it from the **FusionReactor APM** option on [Manage Subscription](../manage-subscription.md).
+
+| | **Price** |
+|---|---|
+| **FusionReactor Ultimate** | $79 (A) / $95 (M) per seat |
+| **FusionReactor Developer** | $25/mo per seat |
+
+The total cost depends on the number of Ultimate and Developer seats you use. Optionally add **Metric Shipping** ($59/mo) to ship agent data to third-party providers.
+
+!!! warning
+    The Developer edition is not licensed for production use.
+
+!!! info "Learn more"
+    [FusionReactor licensing](../../Licensing/Licensing.md)
 
 ### Custom pricing
 
