@@ -234,6 +234,42 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
 
     [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/)
 
+-   :material-language-php: **PHP**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/PHP/)
+
+-   :material-language-ruby: **Ruby**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Ruby/)
+
+-   :material-language-rust: **Rust**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Rust/)
+
+-   :material-language-cpp: **C++**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/)
+
+-   :material-language-swift: **Swift**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Swift/)
+
+-   :material-code-braces: **Erlang**
+
+    ---
+
+    [OpenTelemetry instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Erlang/)
+
 </div>
 
 ### FusionReactor
@@ -259,10 +295,6 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
     Azure · Google Cloud
 
-=== "Data"
-
-    Kafka · RabbitMQ
-
 === "Infrastructure"
 
     ArgoCD · Host Metrics · KEDA · Terraform · TrueNAS SCALE
@@ -274,10 +306,6 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 === "Observability"
 
     AppDynamics · Dash0 · Datadog · Grafana · Loki · Mimir · New Relic · Sentry · Tempo
-
-=== "SDKs"
-
-    Browser
 
 === "Ticketing"
 
