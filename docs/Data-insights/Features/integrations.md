@@ -100,21 +100,21 @@ Provisioned dashboards are tagged `integration` along with a tag for the integra
 
 Click any integration to open its detail view - this is where you'll find how to use it. The header shows the integration's name, its **category**, its **version**, and the **Install** button, with the same short description that appears on its card.
 
-Below the header, the detail view is made up of these panels. Not every integration shows all of them - some have no **Overview**, for example:
-
-| Panel | Description |
-|---|---|
-| **Overview** | What the integration does and why you'd use it |
-| **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default**. Tiers vary by integration - AWS offers **Read-only** and **Read + Write**, each needing different AWS IAM permissions, while OpsPilot MCP offers **Read-only** and **Read + Act** |
-| **Capabilities** | Badges naming what the integration provisions, such as **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none |
-
-Below those panels sit three tabs:
+Below the header sit four tabs:
 
 | Tab | Description |
 |---|---|
+| **Overview** | What the integration does and why you'd use it, with its **Permission tiers** and **Capabilities** panels beneath |
 | **Installation guide** | Any setup needed beyond installing the integration. For the SDK integrations this is a full walkthrough of instrumenting your application - the Go guide covers adding the `opentelemetry-go-contrib` runtime instrumentation and registering it at startup, then points you to the dashboard to open. Where nothing further is needed, the tab reads *This integration needs no setup beyond installing it* |
 | **Versions** | Each released version, what upgrading from the previous one involves (**Initial version**, **Automatic**, or **Manual** where the upgrade takes action), and what changed in each. The current version is marked **latest** |
 | **Licenses** | Any third-party work the integration includes, and the terms it carries. Where there is none, the tab reads *This integration includes no third-party work* |
+
+The **Overview** tab carries two panels beneath the description:
+
+| Panel | Description |
+|---|---|
+| **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default**. Tiers vary by integration - AWS offers **Read-only** and **Read + Write**, each needing different AWS IAM permissions, while OpsPilot MCP offers **Read-only** and **Read + Act** |
+| **Capabilities** | Badges naming what the integration provisions, such as **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none |
 
 ### Your installation
 
