@@ -50,6 +50,14 @@ jobs:
   deploy:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'  # Deploy only if a push to main
+    # Serialize Pages deploys so back-to-back merges queue instead of racing
+    # for the single Pages deployment slot. One in-flight deploy finishes
+    # before the next starts.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    # Fail fast if a deploy hangs, rather than burning 20+ minutes.
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
