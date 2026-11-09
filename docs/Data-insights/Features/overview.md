@@ -113,6 +113,14 @@ Click **Applications ->** to go to the full [Applications](/Data-insights/Featur
 
 Each installed integration can add its own panel to the Overview - for example a **.NET** panel of built-in runtime metrics, or a database integration's dashboard folder. These follow the time picker (**Uses time picker**) and surface the integration's key stat cards. Pin or hide them from [My dashboard](#customizing-your-dashboard).
 
+### Panel anomaly detectors
+
+The metric panels - **Services**, **Servers**, **Applications**, and the integration panels - can run an **anomaly detector** on each metric they show. Open a panel's **Anomaly detectors** control in its header to see the list: each metric (for example **Services**, **Latency**, **P95**, **P99**, **Errors/s**, **Throughput**) has a state - **Normal** or **Pending** - and a toggle to switch its detector on or off.
+
+A detector does nothing until it is switched on, and then needs a **warm-up period** to learn what is normal before it can alert. You enable detectors per metric (bulk enabling is coming).
+
+Once a detector is on, the panel's header reflects it - for example **2 pending**, naming which metrics are pending (*P99 pending · Errors/s pending*) - and a panel whose detector is breaching shows a **firing** count.
+
 ### Alerts
 
 The **Alerts** panel, with a **Live** label, reads **All clear** when nothing is firing (for example, *1 of 124 rules normal*). When alerts are firing it leads with the number **firing** and lists them - each showing the alert name, how long it has been firing, and its rule group (for example *OpsPilot Rules* or *FusionReactor Alerts*). A muted-bell icon marks a silenced alert.
