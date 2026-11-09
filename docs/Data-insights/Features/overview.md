@@ -6,7 +6,9 @@ The **Overview** page is your observability dashboard at a glance. It gives you 
 
 ![!Screenshot](../../images/active-account.png)
 
-Once your environment is sending data, the Overview page shows a full observability summary. Each panel has a header with a collapse control, its title, an arrow to the full view, and a status label (for example **Health**, **Last 1 hour**, **Right now**, or **Live**). **Coworker**, **Alerts**, and **Anomaly Detection** sit in a live right-hand rail, and a **time picker** in the top right sets the range for the time-based panels.
+Once your environment is sending data, the Overview page shows a full observability summary laid out across several columns. Each panel has a header with a collapse control, its title, an arrow to the full view, and a status label (for example **Health**, **Live**, or **Last 1 hour**). Where a panel sits depends on your layout - [pinning and visibility](#customizing-your-dashboard) decide what shows and in what order. A **time picker** in the top right sets the range for the time-based panels, which are marked **Uses time picker**.
+
+When maintenance is scheduled, a banner across the top names it, how many services are affected, and when, with a **View status page** link. A **Your coworker can email you now** prompt may also appear, introducing email notifications from Coworker.
 
 ## Customizing your dashboard
 
@@ -40,7 +42,7 @@ Click **Integrations →** to go to the full [Integrations](/Data-insights/Featu
 
 ### Coworker
 
-The **Coworker** panel gives you a live summary of your AI teammate's activity, in the right-hand rail. A **Right now** label shows it reflects the current state.
+The **Coworker** panel gives you a live summary of your AI teammate's activity, with a **Live** label.
 
 Situations are grouped by severity - for example a **Critical** heading with a count, listing those situations below it. Each shows its severity, the affected service, a one-line summary (for example, *"fr-next-ui 100% errors; external dependency (Clerk API) latency elevated"*), and how long ago it changed. **Also watching N** rolls up the rest that Coworker is keeping an eye on.
 
@@ -111,9 +113,13 @@ Lists your applications ranked by average latency. Each card shows **Request Dur
 
 Click **Applications ->** to go to the full [Applications](/Data-insights/Features/applications/) view.
 
+### Integration and runtime panels
+
+Each installed integration can add its own panel to the Overview - for example a **.NET** panel of built-in runtime metrics, or a database integration's dashboard folder. These follow the time picker (**Uses time picker**) and surface the integration's key stat cards. Pin or hide them from [My dashboard](#customizing-your-dashboard).
+
 ### Alerts
 
-The **Alerts** panel, in the right-hand rail with a **Live** label, leads with the number **firing** and lists them - each showing the alert name, how long it has been firing, and its rule group (for example *OpsPilot Rules* or *FusionReactor Alerts*). A muted-bell icon marks a silenced alert.
+The **Alerts** panel, with a **Live** label, leads with the number **firing** and lists them - each showing the alert name, how long it has been firing, and its rule group (for example *OpsPilot Rules* or *FusionReactor Alerts*). A muted-bell icon marks a silenced alert.
 
 Below the list, **Open in Alerting** links to the full view, with a breakdown of every rule by state:
 
@@ -128,21 +134,27 @@ Below the list, **Open in Alerting** links to the full view, with a breakdown of
 
 Click **Alerts →** to go to the full [Alerting Status](/Data-insights/Features/New-alerting/status/) view.
 
-### Anomaly Detection
+### Service Anomaly Detection
 
-The **Anomaly Detection** panel, in the right-hand rail with a **Live** label, mirrors the Alerts panel for your anomaly detectors. It reads **All clear** when none are active, and otherwise lists the firing and **pending** anomalies - each with its detector, the affected service, and how long it has been pending - above a breakdown of every detector by state (**pending**, **normal**, **no data**, **paused**).
+The **Service Anomaly Detection** panel, with a **Live** label, tracks the detectors OpsPilot maintains for your services. It reads **All clear** when none are active (for example, *30 of 36 detectors normal*), and otherwise lists the firing and **pending** anomalies - each with its detector, the affected service, and how long it has been pending - above a breakdown of every detector by state (**pending**, **normal**, **no data**, **paused**).
 
-Click **Anomaly Detection ->** to go to the full [Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/) view.
+Click **Service Anomaly Detection ->** to go to the full [Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/) view.
+
+### Custom Anomaly Detection
+
+The **Custom Anomaly Detection** panel, with a **Live** label, does the same for the custom detectors you have defined. It lists any firing or **pending** custom anomalies - each naming the detector and how long it has been pending (for example, *go_cpu · pending for 2m*) - above the same state breakdown.
+
+Click **Custom Anomaly Detection ->** to go to the full [Custom detectors](/Data-insights/Features/New-alerting/custom-anomaly-detectors/) view.
 
 ### Incidents
 
-The **Incidents** panel, in the right-hand rail with a **Live** label, reads **No open incidents** when there are none, and otherwise breaks your open incidents down by state - **Triage**, **Investigating**, and **Mitigated**. Open incidents are listed with their title, their severity (such as **SEV-2**), and how long ago they were raised.
+The **Incidents** panel tracks your open incidents. Before incidents are set up, it shows a **Declare an incident when something goes wrong** prompt with **Incident settings** and **Open incidents** buttons. Once configured, it reads **No open incidents** when there are none, and otherwise breaks your open incidents down by state - **Triage**, **Investigating**, and **Mitigated** - listing each with its title, severity (such as **SEV-2**), and how long ago it was raised.
 
 Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Incidents/overview/) view.
 
 ### What's new
 
-The **What's new** panel, in the right-hand rail, surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the full update history.
+The **What's new** panel surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the full update history.
 
 ## No Data view
 
