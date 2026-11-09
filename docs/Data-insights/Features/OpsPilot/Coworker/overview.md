@@ -64,8 +64,8 @@ Coworker is not confined to the OpsPilot UI:
 | Where | What you get |
 |---|---|
 | **The platform** | The Coworker dashboard, and the Coworker buttons throughout the UI |
-| **[Slack](../../Integrations/Chat/slack.md)** | The same Coworker you use in the app. Mention it in a channel or message it directly, and the alerts, situations, and digests it surfaces land there as they happen |
-| **[OpsPilot MCP](../../Integrations/Chat/opspilot-mcp.md)** | Your own AI assistant - in an editor or elsewhere - reading your dashboards, metrics, logs, traces, and the situations Coworker is tracking |
+| **[Slack](https://app.opspilot.com/integrations/slack)** | The same Coworker you use in the app. Mention it in a channel or message it directly, and the alerts, situations, and digests it surfaces land there as they happen |
+| **[OpsPilot MCP](https://app.opspilot.com/integrations/opspilot-mcp)** | Your own AI assistant - in an editor or elsewhere - reading your dashboards, metrics, logs, traces, and the situations Coworker is tracking |
 
 The third row is a different kind of thing from the first two. An assistant connected over MCP reads your OpsPilot data; it is not Coworker itself.
 

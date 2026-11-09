@@ -80,13 +80,13 @@ Click **Install** to confirm, or **Cancel** to back out. Confirming takes you st
 
 Once connected, the integration's card in the integration catalog shows an **Installed** badge and its button changes to **Uninstall**. On the integration's own detail view, the **Install** button is replaced - by **Installed**, or by the actions that integration offers once it is in place, such as **Connect** and **Add instance**.
 
-Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. [Slack](Integrations/Chat/slack.md) has its own **Add to Slack** button, which starts the Slack authorisation flow, and [AWS](Integrations/Cloud/aws.md) needs an IAM role or key with the right CloudWatch permissions.
+Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. [Slack](https://app.opspilot.com/integrations/slack) has its own **Add to Slack** button, which starts the Slack authorisation flow, and [AWS](https://app.opspilot.com/integrations/aws) needs an IAM role or key with the right CloudWatch permissions.
 
 ### What you get
 
 Installing an integration does more than connect a data source. OpsPilot automatically loads a set of default **dashboards** and **alerts** onto your account for that integration, so you have useful monitoring in place with nothing to build by hand.
 
-How much you get for that click varies. Some integrations are self-contained - install one and it starts working. Others provision dashboards only, and depend on a collector you run and configure yourself, so their dashboards stay empty until you have set that up. [Docker](Integrations/Infrastructure/docker.md), [Proxmox VE](Integrations/Infrastructure/proxmox-ve.md), [Unix](Integrations/Infrastructure/unix.md) and [Windows](Integrations/Infrastructure/windows.md) are of the second kind: each needs Grafana Alloy collecting and forwarding the metrics before anything appears. Their **Installation guide** tab carries the steps.
+How much you get for that click varies. Some integrations are self-contained - install one and it starts working. Others provision dashboards only, and depend on a collector you run and configure yourself, so their dashboards stay empty until you have set that up. [Docker](https://app.opspilot.com/integrations/docker), [Proxmox VE](https://app.opspilot.com/integrations/proxmox-ve), [Unix](https://app.opspilot.com/integrations/unix) and [Windows](https://app.opspilot.com/integrations/windows) are of the second kind: each needs Grafana Alloy collecting and forwarding the metrics before anything appears. Their **Installation guide** tab carries the steps.
 
 The **Capabilities** panel on an integration's detail view names what it provisions. AWS, for example, declares **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none.
 
@@ -100,21 +100,21 @@ Provisioned dashboards are tagged `integration` along with a tag for the integra
 
 Click any integration to open its detail view - this is where you'll find how to use it. The header shows the integration's name, its **category**, its **version**, and the **Install** button, with the same short description that appears on its card.
 
-Below the header, the detail view is made up of these panels. Not every integration shows all of them - some have no **Overview**, for example:
-
-| Panel | Description |
-|---|---|
-| **Overview** | What the integration does and why you'd use it |
-| **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default**. Tiers vary by integration - AWS offers **Read-only** and **Read + Write**, each needing different AWS IAM permissions, while OpsPilot MCP offers **Read-only** and **Read + Act** |
-| **Capabilities** | Badges naming what the integration provisions, such as **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none |
-
-Below those panels sit three tabs:
+Below the header sit four tabs:
 
 | Tab | Description |
 |---|---|
+| **Overview** | What the integration does and why you'd use it, with its **Permission tiers** and **Capabilities** panels beneath |
 | **Installation guide** | Any setup needed beyond installing the integration. For the SDK integrations this is a full walkthrough of instrumenting your application - the Go guide covers adding the `opentelemetry-go-contrib` runtime instrumentation and registering it at startup, then points you to the dashboard to open. Where nothing further is needed, the tab reads *This integration needs no setup beyond installing it* |
 | **Versions** | Each released version, what upgrading from the previous one involves (**Initial version**, **Automatic**, or **Manual** where the upgrade takes action), and what changed in each. The current version is marked **latest** |
 | **Licenses** | Any third-party work the integration includes, and the terms it carries. Where there is none, the tab reads *This integration includes no third-party work* |
+
+The **Overview** tab carries two panels beneath the description:
+
+| Panel | Description |
+|---|---|
+| **Permission tiers** | The access levels the integration can run with, what each one requires, and which is applied by **default**. Tiers vary by integration - AWS offers **Read-only** and **Read + Write**, each needing different AWS IAM permissions, while OpsPilot MCP offers **Read-only** and **Read + Act** |
+| **Capabilities** | Badges naming what the integration provisions, such as **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none |
 
 ### Your installation
 
@@ -129,7 +129,7 @@ Once you have installed an integration, a **Your installation** panel appears at
 
 Click the row to open **Manage integration**. Some installations also carry a **Manage** button, and the **...** menu at the right-hand end offers **Manage** and **Uninstall**.
 
-An integration that supports more than one installation shows **Add instance** in the header, so it can be installed again - [AWS](Integrations/Cloud/aws.md), for example, is installed once per region.
+An integration that supports more than one installation shows **Add instance** in the header, so it can be installed again - [AWS](https://app.opspilot.com/integrations/aws), for example, is installed once per region.
 
 ### Managing an installed integration
 
@@ -146,61 +146,129 @@ The **Capabilities** panel shows what the integration provisions, the same as on
 
 ## Available now
 
+Browse and install these from the **Integrations** catalog in OpsPilot. Each integration's **Installation guide**, permission tiers, and options live on its page in the app - the links below open it there.
+
 <div class="grid cards" markdown>
 
--   :material-robot-outline: **[OpsPilot MCP](Integrations/Chat/opspilot-mcp.md)** - Chat
+-   :material-robot-outline: **[OpsPilot MCP](https://app.opspilot.com/integrations/opspilot-mcp)** - Chat
 
     ---
 
     Let AI assistants query OpsPilot over the Model Context Protocol.
 
--   :material-chat-outline: **[Slack](Integrations/Chat/slack.md)** - Chat
+-   :material-chat-outline: **[Slack](https://app.opspilot.com/integrations/slack)** - Chat
 
     ---
 
     Talk to OpsPilot from Slack - mention it in a channel or DM it directly.
 
--   :material-cloud-outline: **[AWS](Integrations/Cloud/aws.md)** - Cloud
+-   :material-cloud-outline: **[AWS](https://app.opspilot.com/integrations/aws)** - Cloud
 
     ---
 
     Connect AWS for EC2, RDS, and other CloudWatch-held metrics.
 
--   :material-code-tags: **[OpenTrace](Integrations/Data/opentrace.md)** - Data
+-   :material-code-tags: **[OpenTrace](https://app.opspilot.com/integrations/opentrace)** - Data
 
     ---
 
     Connect OpenTrace so OpsPilot can read your code alongside your telemetry.
 
--   :material-server-network: **[Docker](Integrations/Infrastructure/docker.md)** - Infrastructure
+-   :material-database-outline: **[PostgreSQL](https://app.opspilot.com/integrations/postgres)** - Data
+
+    ---
+
+    Monitor PostgreSQL - connections, throughput, locks, and replication.
+
+-   :material-database-outline: **[Altinity ClickHouse](https://app.opspilot.com/integrations/altinity-clickhouse)** - Data
+
+    ---
+
+    Monitor ClickHouse - queries, merges, replication, and parts.
+
+-   :material-database-outline: **[MongoDB](https://app.opspilot.com/integrations/mongodb)** - Data
+
+    ---
+
+    Monitor MongoDB - operations, connections, replication, and cache.
+
+-   :material-database-outline: **[Microsoft SQL Server](https://app.opspilot.com/integrations/mssql)** - Data
+
+    ---
+
+    Monitor SQL Server - throughput, waits, and buffer cache.
+
+-   :material-database-outline: **[MySQL](https://app.opspilot.com/integrations/mysql)** - Data
+
+    ---
+
+    Monitor MySQL - queries, connections, InnoDB, and replication.
+
+-   :material-database-outline: **[Redis](https://app.opspilot.com/integrations/redis)** - Data
+
+    ---
+
+    Monitor Redis - throughput, memory, keyspace, and persistence.
+
+-   :material-database-outline: **[Strimzi Kafka](https://app.opspilot.com/integrations/strimzi-kafka)** - Data
+
+    ---
+
+    Monitor Strimzi-managed Kafka on Kubernetes - brokers, topics, and consumer lag.
+
+-   :material-database-outline: **[TigerData](https://app.opspilot.com/integrations/tigerdata)** - Data
+
+    ---
+
+    Monitor TigerData and TimescaleDB - queries, chunks, and compression.
+
+-   :material-server-network: **[Docker](https://app.opspilot.com/integrations/docker)** - Infrastructure
 
     ---
 
     Monitor Docker containers - CPU, memory against limit, network and disk IO.
 
--   :material-server-network: **[Proxmox VE](Integrations/Infrastructure/proxmox-ve.md)** - Infrastructure
+-   :material-server-network: **[iDRAC](https://app.opspilot.com/integrations/idrac)** - Infrastructure
+
+    ---
+
+    Monitor Dell PowerEdge hardware health through iDRAC.
+
+-   :material-kubernetes: **[Kubernetes](https://app.opspilot.com/integrations/kubernetes)** - Infrastructure
+
+    ---
+
+    Monitor Kubernetes clusters - nodes, workloads, and the control plane.
+
+-   :material-server-network: **[Proxmox VE](https://app.opspilot.com/integrations/proxmox-ve)** - Infrastructure
 
     ---
 
     Monitor Proxmox VE clusters, nodes, guests, and storage pools.
 
--   :material-server-network: **[Unix](Integrations/Infrastructure/unix.md)** - Infrastructure
+-   :material-server-network: **[Unix](https://app.opspilot.com/integrations/unix)** - Infrastructure
 
     ---
 
     Monitor Unix and Linux hosts - CPU, memory, filesystems, and processes.
 
--   :material-server-network: **[Windows](Integrations/Infrastructure/windows.md)** - Infrastructure
+-   :material-server-network: **[Windows](https://app.opspilot.com/integrations/windows)** - Infrastructure
 
     ---
 
     Monitor Windows hosts - CPU, memory, disks, and network.
 
+-   :material-ticket-outline: **[Jira](https://app.opspilot.com/integrations/jira)** - Ticketing
+
+    ---
+
+    Create, search, and link Jira issues from incidents and OpsPilot.
+
 </div>
 
 ### SDKs
 
-Each SDK instruments your applications with OpenTelemetry for metrics, traces, and logs, and provisions runtime dashboards and alert rules for them. See [SDK Integrations](Integrations/SDKs/sdk-integrations.md) for what each one installs.
+Each SDK instruments your applications with OpenTelemetry for metrics, traces, and logs, and provisions runtime dashboards and alert rules for them. Install one from the catalog in OpsPilot, then follow the OpenTelemetry instrumentation guide for your language below.
 
 <div class="grid cards" markdown>
 
@@ -274,7 +342,7 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
 
 ### FusionReactor
 
-The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed automatically** - it cannot be modified or removed. It provides:
+The [FusionReactor agent](https://app.opspilot.com/integrations/fusionreactor-agent) is **managed automatically** - it cannot be modified or removed. It provides:
 
 - Discovery of services
 - Application performance monitoring, to identify bottlenecks and optimize response times
@@ -309,7 +377,7 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
 === "Ticketing"
 
-    Jira · Linear · Notion
+    Linear · Notion
 
 ---
 
