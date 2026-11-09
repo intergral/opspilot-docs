@@ -156,10 +156,6 @@ The **Incidents** panel tracks your open incidents. Before incidents are set up,
 
 Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Incidents/overview/) view.
 
-### What's new
-
-The **What's new** panel surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the **News** page, the full feed of product announcements.
-
 ## No Data view
 
 If your account has no data yet, each section of the Overview displays a **Get Started** prompt to guide you through setup:
