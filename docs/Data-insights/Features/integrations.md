@@ -86,7 +86,7 @@ Some integrations need more than a permission tier - credentials, endpoints, or 
 
 Installing an integration does more than connect a data source. OpsPilot automatically loads a set of default **dashboards** and **alerts** onto your account for that integration, so you have useful monitoring in place with nothing to build by hand.
 
-How much you get for that click varies. Some integrations are self-contained - install one and it starts working. Others provision dashboards only, and depend on a collector you run and configure yourself, so their dashboards stay empty until you have set that up. [Docker](Integrations/Infrastructure/docker.md), [Proxmox VE](Integrations/Infrastructure/proxmox-ve.md), [Unix](Integrations/Infrastructure/unix.md) and [Windows](Integrations/Infrastructure/windows.md) are of the second kind: each needs Grafana Alloy collecting and forwarding the metrics before anything appears. Their **Installation guide** tab carries the steps.
+How much you get for that click varies. Some integrations are self-contained - install one and it starts working. Others provision dashboards only, and depend on a collector you run and configure yourself, so their dashboards stay empty until you have set that up. [Docker](https://app.opspilot.com/integrations/docker), [Proxmox VE](https://app.opspilot.com/integrations/proxmox-ve), [Unix](https://app.opspilot.com/integrations/unix) and [Windows](https://app.opspilot.com/integrations/windows) are of the second kind: each needs Grafana Alloy collecting and forwarding the metrics before anything appears. Their **Installation guide** tab carries the steps.
 
 The **Capabilities** panel on an integration's detail view names what it provisions. AWS, for example, declares **Data Sources**, **Dashboards**, **Recording Rules**, and **Alerts**. Some integrations declare none.
 
@@ -146,6 +146,8 @@ The **Capabilities** panel shows what the integration provisions, the same as on
 
 ## Available now
 
+Browse and install these from the **Integrations** catalog in OpsPilot. Each integration's **Installation guide**, permission tiers, and options live on its page in the app - the links below open it there.
+
 <div class="grid cards" markdown>
 
 -   :material-robot-outline: **[OpsPilot MCP](Integrations/Chat/opspilot-mcp.md)** - Chat
@@ -172,25 +174,85 @@ The **Capabilities** panel shows what the integration provisions, the same as on
 
     Connect OpenTrace so OpsPilot can read your code alongside your telemetry.
 
--   :material-server-network: **[Docker](Integrations/Infrastructure/docker.md)** - Infrastructure
+-   :material-database-outline: **[PostgreSQL](https://app.opspilot.com/integrations/postgres)** - Data
+
+    ---
+
+    Monitor PostgreSQL - connections, throughput, locks, and replication.
+
+-   :material-database-outline: **[Altinity ClickHouse](https://app.opspilot.com/integrations/altinity-clickhouse)** - Data
+
+    ---
+
+    Monitor ClickHouse - queries, merges, replication, and parts.
+
+-   :material-database-outline: **[MongoDB](https://app.opspilot.com/integrations/mongodb)** - Data
+
+    ---
+
+    Monitor MongoDB - operations, connections, replication, and cache.
+
+-   :material-database-outline: **[Microsoft SQL Server](https://app.opspilot.com/integrations/mssql)** - Data
+
+    ---
+
+    Monitor SQL Server - throughput, waits, and buffer cache.
+
+-   :material-database-outline: **[MySQL](https://app.opspilot.com/integrations/mysql)** - Data
+
+    ---
+
+    Monitor MySQL - queries, connections, InnoDB, and replication.
+
+-   :material-database-outline: **[Redis](https://app.opspilot.com/integrations/redis)** - Data
+
+    ---
+
+    Monitor Redis - throughput, memory, keyspace, and persistence.
+
+-   :material-database-outline: **[Strimzi Kafka](https://app.opspilot.com/integrations/strimzi-kafka)** - Data
+
+    ---
+
+    Monitor Strimzi-managed Kafka on Kubernetes - brokers, topics, and consumer lag.
+
+-   :material-database-outline: **[TigerData](https://app.opspilot.com/integrations/tigerdata)** - Data
+
+    ---
+
+    Monitor TigerData and TimescaleDB - queries, chunks, and compression.
+
+-   :material-server-network: **[Docker](https://app.opspilot.com/integrations/docker)** - Infrastructure
 
     ---
 
     Monitor Docker containers - CPU, memory against limit, network and disk IO.
 
--   :material-server-network: **[Proxmox VE](Integrations/Infrastructure/proxmox-ve.md)** - Infrastructure
+-   :material-server-network: **[iDRAC](https://app.opspilot.com/integrations/idrac)** - Infrastructure
+
+    ---
+
+    Monitor Dell PowerEdge hardware health through iDRAC.
+
+-   :material-kubernetes: **[Kubernetes](https://app.opspilot.com/integrations/kubernetes)** - Infrastructure
+
+    ---
+
+    Monitor Kubernetes clusters - nodes, workloads, and the control plane.
+
+-   :material-server-network: **[Proxmox VE](https://app.opspilot.com/integrations/proxmox-ve)** - Infrastructure
 
     ---
 
     Monitor Proxmox VE clusters, nodes, guests, and storage pools.
 
--   :material-server-network: **[Unix](Integrations/Infrastructure/unix.md)** - Infrastructure
+-   :material-server-network: **[Unix](https://app.opspilot.com/integrations/unix)** - Infrastructure
 
     ---
 
     Monitor Unix and Linux hosts - CPU, memory, filesystems, and processes.
 
--   :material-server-network: **[Windows](Integrations/Infrastructure/windows.md)** - Infrastructure
+-   :material-server-network: **[Windows](https://app.opspilot.com/integrations/windows)** - Infrastructure
 
     ---
 

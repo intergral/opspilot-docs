@@ -90,22 +90,7 @@ nav:
         - Cloud:
            - AWS: Data-insights/Features/Integrations/Cloud/aws.md
         - Data:
-           - Altinity ClickHouse: Data-insights/Features/Integrations/Data/altinity-clickhouse.md
-           - Microsoft SQL Server: Data-insights/Features/Integrations/Data/mssql.md
-           - MongoDB: Data-insights/Features/Integrations/Data/mongodb.md
-           - MySQL: Data-insights/Features/Integrations/Data/mysql.md
            - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
-           - PostgreSQL: Data-insights/Features/Integrations/Data/postgres.md
-           - Redis: Data-insights/Features/Integrations/Data/redis.md
-           - Strimzi Kafka: Data-insights/Features/Integrations/Data/strimzi-kafka.md
-           - TigerData: Data-insights/Features/Integrations/Data/tigerdata.md
-        - Infrastructure:
-           - Docker: Data-insights/Features/Integrations/Infrastructure/docker.md
-           - iDRAC: Data-insights/Features/Integrations/Infrastructure/idrac.md
-           - Kubernetes: Data-insights/Features/Integrations/Infrastructure/kubernetes.md
-           - Proxmox VE: Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md
-           - Unix: Data-insights/Features/Integrations/Infrastructure/unix.md
-           - Windows: Data-insights/Features/Integrations/Infrastructure/windows.md
         - SDKs:
            - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
            - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
@@ -349,6 +334,20 @@ plugins:
          'Getting-started/Tutorials/new-ui-faq.md' : 'index.md'
          'OP-billing/licenses.md' : 'Admin-and-data/Billing/Cloud/overview.md'
          'Data-insights/Features/applications.md' : 'Data-insights/Features/Applications/overview.md'
+         'Data-insights/Features/Integrations/Data/postgres.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/altinity-clickhouse.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/mongodb.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/mssql.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/mysql.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/redis.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/strimzi-kafka.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/tigerdata.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Infrastructure/docker.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Infrastructure/idrac.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Infrastructure/kubernetes.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Infrastructure/unix.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Infrastructure/windows.md': 'Data-insights/Features/integrations.md'
          
            
 markdown_extensions:

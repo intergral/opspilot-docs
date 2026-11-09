@@ -15,7 +15,7 @@ OpsPilot brings AI-powered Kubernetes monitoring giving SREs, application develo
     [Shipping K8s data to OpsPilot](Shipping.md)
 
 !!! note "Kubernetes integration"
-    These pages cover shipping cluster metrics with the **Kube-Prometheus-Stack** chart. OpsPilot also offers a **[Kubernetes integration](../../Data-insights/Features/Integrations/Infrastructure/kubernetes.md)** that installs the dashboards, recording rules, and alerts and collects metrics with the Grafana Kubernetes Monitoring chart - the simplest path for most clusters. Use whichever chart you already run or prefer.
+    These pages cover shipping cluster metrics with the **Kube-Prometheus-Stack** chart. OpsPilot also offers a **[Kubernetes integration](https://app.opspilot.com/integrations/kubernetes)** that installs the dashboards, recording rules, and alerts and collects metrics with the Grafana Kubernetes Monitoring chart - the simplest path for most clusters. Use whichever chart you already run or prefer.
 
 ## Benefits
 
