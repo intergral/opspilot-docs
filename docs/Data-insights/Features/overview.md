@@ -42,9 +42,11 @@ Click **Integrations →** to go to the full [Integrations](/Data-insights/Featu
 
 ### Coworker
 
-The **Coworker** panel gives you a live summary of your AI teammate's activity, with a **Live** label.
+The **Coworker** panel gives you a live summary of your AI teammate's activity, with a **Live** label. Its header counts what Coworker is **watching** and how many it is **investigating**.
 
-Situations are grouped by severity - for example a **Critical** heading with a count, listing those situations below it. Each shows its severity, the affected service, a one-line summary (for example, *"fr-next-ui 100% errors; external dependency (Clerk API) latency elevated"*), and how long ago it changed. **Also watching N** rolls up the rest that Coworker is keeping an eye on.
+Under **Situations**, situations are grouped by severity - for example a **Critical** heading with a count, listing those situations below it. Each shows its severity, the affected service, a one-line summary (for example, *"fr-next-ui 100% errors; external dependency (Clerk API) latency elevated"*), and how long ago it changed. **Also watching N** rolls up the rest that Coworker is keeping an eye on.
+
+An **Investigating** section lists what Coworker is actively looking into right now - each entry naming the service, what it is investigating (for example, *Frontend Call p95 Latency*), and the kind of check, such as a **Health screen**.
 
 Click a situation to open it in the full Coworker view, or **Coworker →** to go to the full Coworker dashboard.
 
@@ -119,7 +121,7 @@ Each installed integration can add its own panel to the Overview - for example a
 
 ### Alerts
 
-The **Alerts** panel, with a **Live** label, leads with the number **firing** and lists them - each showing the alert name, how long it has been firing, and its rule group (for example *OpsPilot Rules* or *FusionReactor Alerts*). A muted-bell icon marks a silenced alert.
+The **Alerts** panel, with a **Live** label, reads **All clear** when nothing is firing (for example, *1 of 124 rules normal*). When alerts are firing it leads with the number **firing** and lists them - each showing the alert name, how long it has been firing, and its rule group (for example *OpsPilot Rules* or *FusionReactor Alerts*). A muted-bell icon marks a silenced alert.
 
 Below the list, **Open in Alerting** links to the full view, with a breakdown of every rule by state:
 
@@ -142,7 +144,7 @@ Click **Service Anomaly Detection ->** to go to the full [Anomaly Detection](/Da
 
 ### Custom Anomaly Detection
 
-The **Custom Anomaly Detection** panel, with a **Live** label, does the same for the custom detectors you have defined. It lists any firing or **pending** custom anomalies - each naming the detector and how long it has been pending (for example, *go_cpu · pending for 2m*) - above the same state breakdown.
+The **Custom Anomaly Detection** panel, with a **Live** label, does the same for the custom detectors you have defined. It reads **All clear** when none are active, and otherwise lists any firing or **pending** custom anomalies - each naming the detector and how long it has been pending (for example, *go_cpu · pending for 2m*) - above the same state breakdown.
 
 Click **Custom Anomaly Detection ->** to go to the full [Custom detectors](/Data-insights/Features/New-alerting/custom-anomaly-detectors/) view.
 
