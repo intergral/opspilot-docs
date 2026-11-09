@@ -8,7 +8,7 @@ The **Overview** page is your observability dashboard at a glance. It gives you 
 
 Once your environment is sending data, the Overview page shows a full observability summary laid out across several columns. Each panel has a header with a collapse control, its title, an arrow to the full view, and a status label (for example **Health**, **Live**, or **Last 1 hour**). Where a panel sits depends on your layout - [pinning and visibility](#customizing-your-dashboard) decide what shows and in what order. A **time picker** in the top right sets the range for the time-based panels, which are marked **Uses time picker**.
 
-When maintenance is scheduled, a banner across the top names it, how many services are affected, and when, with a **View status page** link. A **Your coworker can email you now** prompt may also appear, introducing email notifications from Coworker.
+When maintenance is scheduled, a banner across the top names it, how many services are affected, and when, with a **View status page** link. A **Your coworker can email you now** prompt may also appear; clicking it opens the **News** page, where email notifications and other product announcements are listed.
 
 ## Customizing your dashboard
 
@@ -158,7 +158,7 @@ Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Inc
 
 ### What's new
 
-The **What's new** panel surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the full update history.
+The **What's new** panel surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the **News** page, the full feed of product announcements.
 
 ## No Data view
 
