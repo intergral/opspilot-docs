@@ -115,13 +115,13 @@ Not on its own. Coworker raises situations in your feed, but it does not contact
 
 ### Can I get situations in Slack?
 
-Yes. Install the [Slack integration](../../Integrations/Chat/slack.md), invite the bot to the channel you want situations in, then enable situation notifications using the slash command in the setup message.
+Yes. Install the [Slack integration](https://app.opspilot.com/integrations/slack), invite the bot to the channel you want situations in, then enable situation notifications using the slash command in the setup message.
 
 You can also do the whole thing from the Slack integration page in OpsPilot, which walks you through the steps after you install it.
 
 ### How will I know about a situation when OpsPilot isn't open?
 
-Slack is the way to be told. You can also ask [OpsPilot MCP](../../Integrations/Chat/opspilot-mcp.md) about currently active situations from your editor or AI assistant, without opening OpsPilot at all.
+Slack is the way to be told. You can also ask [OpsPilot MCP](https://app.opspilot.com/integrations/opspilot-mcp) about currently active situations from your editor or AI assistant, without opening OpsPilot at all.
 
 ### How quickly will I hear about a situation?
 
@@ -275,7 +275,7 @@ Coworker has access to the observability data in your OpsPilot account: metrics,
 
 ### Does Coworker read our Slack conversations?
 
-By default, almost nothing. Connecting the [Slack integration](../../Integrations/Chat/slack.md) does not put Coworker in your conversations:
+By default, almost nothing. Connecting the [Slack integration](https://app.opspilot.com/integrations/slack) does not put Coworker in your conversations:
 
 - **When you @-mention OpsPilot**, it reads the recent message history in that channel for context. It stores only your message - not the surrounding messages it used as context.
 - **When you reply in the thread of a situation it posted**, those replies become context for its next check-up on that situation. Coworker says so explicitly in the thread each time.

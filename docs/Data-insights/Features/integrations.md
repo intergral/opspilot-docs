@@ -80,7 +80,7 @@ Click **Install** to confirm, or **Cancel** to back out. Confirming takes you st
 
 Once connected, the integration's card in the integration catalog shows an **Installed** badge and its button changes to **Uninstall**. On the integration's own detail view, the **Install** button is replaced - by **Installed**, or by the actions that integration offers once it is in place, such as **Connect** and **Add instance**.
 
-Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. [Slack](Integrations/Chat/slack.md) has its own **Add to Slack** button, which starts the Slack authorisation flow, and [AWS](Integrations/Cloud/aws.md) needs an IAM role or key with the right CloudWatch permissions.
+Some integrations need more than a permission tier - credentials, endpoints, or other configuration. Where that applies, the steps are built into the UI, so you can work through them without leaving OpsPilot. [Slack](https://app.opspilot.com/integrations/slack) has its own **Add to Slack** button, which starts the Slack authorisation flow, and [AWS](https://app.opspilot.com/integrations/aws) needs an IAM role or key with the right CloudWatch permissions.
 
 ### What you get
 
@@ -129,7 +129,7 @@ Once you have installed an integration, a **Your installation** panel appears at
 
 Click the row to open **Manage integration**. Some installations also carry a **Manage** button, and the **...** menu at the right-hand end offers **Manage** and **Uninstall**.
 
-An integration that supports more than one installation shows **Add instance** in the header, so it can be installed again - [AWS](Integrations/Cloud/aws.md), for example, is installed once per region.
+An integration that supports more than one installation shows **Add instance** in the header, so it can be installed again - [AWS](https://app.opspilot.com/integrations/aws), for example, is installed once per region.
 
 ### Managing an installed integration
 
@@ -150,25 +150,25 @@ Browse and install these from the **Integrations** catalog in OpsPilot. Each int
 
 <div class="grid cards" markdown>
 
--   :material-robot-outline: **[OpsPilot MCP](Integrations/Chat/opspilot-mcp.md)** - Chat
+-   :material-robot-outline: **[OpsPilot MCP](https://app.opspilot.com/integrations/opspilot-mcp)** - Chat
 
     ---
 
     Let AI assistants query OpsPilot over the Model Context Protocol.
 
--   :material-chat-outline: **[Slack](Integrations/Chat/slack.md)** - Chat
+-   :material-chat-outline: **[Slack](https://app.opspilot.com/integrations/slack)** - Chat
 
     ---
 
     Talk to OpsPilot from Slack - mention it in a channel or DM it directly.
 
--   :material-cloud-outline: **[AWS](Integrations/Cloud/aws.md)** - Cloud
+-   :material-cloud-outline: **[AWS](https://app.opspilot.com/integrations/aws)** - Cloud
 
     ---
 
     Connect AWS for EC2, RDS, and other CloudWatch-held metrics.
 
--   :material-code-tags: **[OpenTrace](Integrations/Data/opentrace.md)** - Data
+-   :material-code-tags: **[OpenTrace](https://app.opspilot.com/integrations/opentrace)** - Data
 
     ---
 
@@ -258,11 +258,17 @@ Browse and install these from the **Integrations** catalog in OpsPilot. Each int
 
     Monitor Windows hosts - CPU, memory, disks, and network.
 
+-   :material-ticket-outline: **[Jira](https://app.opspilot.com/integrations/jira)** - Ticketing
+
+    ---
+
+    Create, search, and link Jira issues from incidents and OpsPilot.
+
 </div>
 
 ### SDKs
 
-Each SDK instruments your applications with OpenTelemetry for metrics, traces, and logs, and provisions runtime dashboards and alert rules for them. See [SDK Integrations](Integrations/SDKs/sdk-integrations.md) for what each one installs.
+Each SDK instruments your applications with OpenTelemetry for metrics, traces, and logs, and provisions runtime dashboards and alert rules for them. Install one from the catalog in OpsPilot, then follow the OpenTelemetry instrumentation guide for your language below.
 
 <div class="grid cards" markdown>
 
@@ -336,7 +342,7 @@ Each SDK instruments your applications with OpenTelemetry for metrics, traces, a
 
 ### FusionReactor
 
-The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed automatically** - it cannot be modified or removed. It provides:
+The [FusionReactor agent](https://app.opspilot.com/integrations/fusionreactor-agent) is **managed automatically** - it cannot be modified or removed. It provides:
 
 - Discovery of services
 - Application performance monitoring, to identify bottlenecks and optimize response times
@@ -371,7 +377,7 @@ The [FusionReactor agent](Integrations/SDKs/fusionreactor.md) is **managed autom
 
 === "Ticketing"
 
-    Jira · Linear · Notion
+    Linear · Notion
 
 ---
 

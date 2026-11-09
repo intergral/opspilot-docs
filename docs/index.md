@@ -32,7 +32,7 @@ When setup finishes, you land on the **Overview** - your observability dashboard
 
 ## Step 2 - Instrument your application
 
-Send telemetry from your applications using OpenTelemetry or the [FusionReactor agent](/Data-insights/Features/Integrations/SDKs/fusionreactor/).
+Send telemetry from your applications using OpenTelemetry or the [FusionReactor agent](https://app.opspilot.com/integrations/fusionreactor-agent).
 
 !!! info "You'll need an API key"
     OpenTelemetry data is authenticated with an OpsPilot **API key**. Create one from the [API Keys](https://app.opspilot.com/organization/api-keys) page - or click **Create** on the **Services** card on your Overview - then add it to your exporter configuration.

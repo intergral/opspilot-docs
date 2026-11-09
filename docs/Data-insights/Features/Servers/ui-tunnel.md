@@ -5,7 +5,7 @@ The **UI Tunnel** opens the full FusionReactor Agent UI for one of your servers 
 It brings the on-premise agent and the cloud together in one place: the complete power of the local FusionReactor tooling with the convenience of OpsPilot, so you can monitor and manage your ColdFusion and Java applications from a single, familiar interface. Because the environment stays the same as the on-premise agent, there's no learning curve as you move to the cloud.
 
 !!! note "Requires the FusionReactor Agent"
-    The UI Tunnel shows the interface of a running **FusionReactor Agent**, so it's available only for servers that have the agent installed, updated to the latest version, and reporting to OpsPilot. See [FusionReactor Agent](../Integrations/SDKs/fusionreactor.md) for download and installation steps.
+    The UI Tunnel shows the interface of a running **FusionReactor Agent**, so it's available only for servers that have the agent installed, updated to the latest version, and reporting to OpsPilot. See [FusionReactor Agent](https://app.opspilot.com/integrations/fusionreactor-agent) for download and installation steps.
 
 ## Opening the UI Tunnel
 

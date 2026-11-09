@@ -83,19 +83,6 @@ nav:
         - Add Variables: Data-insights/Features/Dashboards/add-variables.md
   - INTEGRATIONS:
      - Overview: Data-insights/Features/integrations.md
-     - All integrations:
-        - Chat:
-           - OpsPilot MCP: Data-insights/Features/Integrations/Chat/opspilot-mcp.md
-           - Slack: Data-insights/Features/Integrations/Chat/slack.md
-        - Cloud:
-           - AWS: Data-insights/Features/Integrations/Cloud/aws.md
-        - Data:
-           - OpenTrace: Data-insights/Features/Integrations/Data/opentrace.md
-        - SDKs:
-           - SDK Integrations: Data-insights/Features/Integrations/SDKs/sdk-integrations.md
-           - FusionReactor: Data-insights/Features/Integrations/SDKs/fusionreactor.md
-        - Ticketing:
-           - Jira: Data-insights/Features/Integrations/Ticketing/jira.md
   - MONITORING:
      - Servers:
         - Overview: Data-insights/Features/Servers/overview.md
@@ -320,10 +307,10 @@ plugins:
          'Cloud/legal/licenses.md': 'Admin-and-data/Third-Party-Licenses/licenses.md'
          'licensing.md': 'Admin-and-data/Licensing/Licensing.md'
          'Cloud/billing/overview.md': 'Admin-and-data/Billing/Cloud/overview.md'
-         'Cloud/guides/OpsPilot/OpsPilot-Hub/Jira.md': 'Data-insights/Features/Integrations/Ticketing/jira.md'
+         'Cloud/guides/OpsPilot/OpsPilot-Hub/Jira.md': 'Data-insights/Features/integrations.md'
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Knowledge.md': 'Data-insights/Features/OpsPilot/Coworker/knowledge.md'
          'Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md': 'Data-insights/Features/OpsPilot/Coworker/knowledge.md'
-         'Cloud/guides/OpsPilot/OpsPilot-Hub/Slack.md': 'Data-insights/Features/Integrations/Chat/slack.md'
+         'Cloud/guides/OpsPilot/OpsPilot-Hub/Slack.md': 'Data-insights/Features/integrations.md'
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Teams.md': 'Data-insights/Features/integrations.md'
          'Cloud/OpenTelemetry/distributed-tracing.md': 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
          'Getting-started/Releases.md': 'Latest-updates/Releases.md'
@@ -348,6 +335,13 @@ plugins:
          'Data-insights/Features/Integrations/Infrastructure/proxmox-ve.md': 'Data-insights/Features/integrations.md'
          'Data-insights/Features/Integrations/Infrastructure/unix.md': 'Data-insights/Features/integrations.md'
          'Data-insights/Features/Integrations/Infrastructure/windows.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Chat/opspilot-mcp.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Chat/slack.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Cloud/aws.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Data/opentrace.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/SDKs/sdk-integrations.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/SDKs/fusionreactor.md': 'Data-insights/Features/integrations.md'
+         'Data-insights/Features/Integrations/Ticketing/jira.md': 'Data-insights/Features/integrations.md'
          
            
 markdown_extensions:
