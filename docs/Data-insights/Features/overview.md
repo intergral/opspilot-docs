@@ -52,8 +52,6 @@ Click a situation to open it in the full Coworker view, or **Coworker →** to g
 
 ### Services
 
-![!Screenshot](../../images/services-overview.png)
-
 The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour, shown as a row of stat cards. Each card shows the current value plus its **MIN**, **AVG**, and **MAX** across the range; count-based cards (**Errors** and **Throughput**) show **SUM**, **AVG**, and **MAX** instead.
 
 | Card | Description |
@@ -79,8 +77,6 @@ Click any service card to drill into that service's detailed performance data.
 
 ### Servers
 
-![!Screenshot](../../images/servers-overview.png)
-
 The **Servers** section provides a summary of all servers running a FusionReactor agent, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
 
 - **Server names** - the servers included, with a count and a sample of names
@@ -98,8 +94,6 @@ Lists your servers ranked by average latency. Each card shows **Request Duration
 Click **Servers ->** to go to the full [Servers](/Data-insights/Features/Servers/overview/) view.
 
 ### Applications
-
-![!Screenshot](../../images/applications-overview.png)
 
 The **Applications** section summarizes all monitored applications, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
 
@@ -159,8 +153,6 @@ Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Inc
 The **What's new** panel surfaces the latest OpsPilot product announcement - its release date, title, and a short summary of what changed - with an arrow to the full update history.
 
 ## No Data view
-
-![!Screenshot](../../Data-insights/Features/images/New-account-overview.png)
 
 If your account has no data yet, each section of the Overview displays a **Get Started** prompt to guide you through setup:
 
