@@ -258,6 +258,30 @@ Browse and install these from the **Integrations** catalog in OpsPilot. Each int
 
     Monitor Windows hosts - CPU, memory, disks, and network.
 
+-   :material-database-outline: **[Kafka](https://app.opspilot.com/integrations/kafka)** - Data
+
+    ---
+
+    Monitor Apache Kafka - brokers, topics, partitions, and consumer lag.
+
+-   :material-database-outline: **[RabbitMQ](https://app.opspilot.com/integrations/rabbitmq)** - Data
+
+    ---
+
+    Monitor RabbitMQ - queues, messages, connections, and channels.
+
+-   :material-language-javascript: **[Browser](https://app.opspilot.com/integrations/browser)** - SDKs
+
+    ---
+
+    Instrument browser apps with OpenTelemetry JavaScript for real-user monitoring.
+
+-   :material-server-network: **[OpenTelemetry eBPF](https://app.opspilot.com/integrations/opentelemetry-ebpf)** - Infrastructure
+
+    ---
+
+    Zero-code eBPF auto-instrumentation for services running on the host.
+
 -   :material-ticket-outline: **[Jira](https://app.opspilot.com/integrations/jira)** - Ticketing
 
     ---
