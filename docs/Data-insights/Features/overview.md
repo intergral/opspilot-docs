@@ -52,7 +52,7 @@ Click a situation to open it in the full Coworker view, or **Coworker →** to g
 
 ### Services
 
-The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour, shown as a row of stat cards. Each card shows the current value plus its **MIN**, **AVG**, and **MAX** across the range; count-based cards (**Errors** and **Throughput**) show **SUM**, **AVG**, and **MAX** instead.
+The **Services** section displays key performance metrics aggregated across all your monitored services for the last hour, shown as a row of stat cards. Each card shows the metric's current value; the **Show min, avg and max** control in the panel header expands the cards to add each value's **MIN**, **AVG**, and **MAX** across the range, with count-based cards (**Errors** and **Throughput**) showing **SUM**, **AVG**, and **MAX** instead.
 
 | Card | Description |
 |---|---|
@@ -77,7 +77,7 @@ Click any service card to drill into that service's detailed performance data.
 
 ### Servers
 
-The **Servers** section provides a summary of all servers running a FusionReactor agent, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
+The **Servers** section provides a summary of all servers running a FusionReactor agent, shown as stat cards with the same **Show min, avg and max** toggle as Services (count-based cards show **SUM**, **AVG**, and **MAX**):
 
 - **Server names** - the servers included, with a count and a sample of names
 - **Servers** - total number of servers
@@ -95,7 +95,7 @@ Click **Servers ->** to go to the full [Servers](/Data-insights/Features/Servers
 
 ### Applications
 
-The **Applications** section summarizes all monitored applications, shown as stat cards with each value's **MIN**, **AVG**, and **MAX** (count-based cards show **SUM**, **AVG**, and **MAX**):
+The **Applications** section summarizes all monitored applications, shown as stat cards with the same **Show min, avg and max** toggle (count-based cards show **SUM**, **AVG**, and **MAX**):
 
 - **Application names** - the applications included, with a count and a sample of names
 - **Applications** - total number of applications
@@ -115,7 +115,7 @@ Each installed integration can add its own panel to the Overview - for example a
 
 ### Panel anomaly detectors
 
-The metric panels - **Services**, **Servers**, **Applications**, and the integration panels - can run an **anomaly detector** on each metric they show. Open a panel's **Anomaly detectors** control in its header to see the list: each metric (for example **Services**, **Latency**, **P95**, **P99**, **Errors/s**, **Throughput**) has a state - **Normal** or **Pending** - and a toggle to switch its detector on or off.
+The metric panels - **Services**, **Servers**, **Applications**, and the integration panels - can run an **anomaly detector** on each metric they show. A panel with none enabled reads **Anomaly detectors off** in its header, with a **Choose detectors to switch on** link. That opens the list: each metric (for example **Services**, **Latency**, **P95**, **P99**, **Errors/s**, **Throughput**) has a state - **Normal** or **Pending** - and a toggle to switch its detector on or off.
 
 A detector does nothing until it is switched on, and then needs a **warm-up period** to learn what is normal before it can alert. You enable detectors per metric (bulk enabling is coming).
 
