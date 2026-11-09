@@ -1,6 +1,6 @@
-# How to optimize data sent to the FusionReactor Cloud
+# How to optimize data sent to OpsPilot
 
-In certain scenarios, it might be advantageous to optimize the amount of trace data sent to the FusionReactor Cloud to achieve a balance between observability and resource efficiency. All tracing data is sampled, so you get examples of normal transactions as well as error or slow transactions, to compare as required. 
+In certain scenarios, it might be advantageous to optimize the amount of trace data sent to OpsPilot to achieve a balance between observability and resource efficiency. All tracing data is sampled, so you get examples of normal transactions as well as error or slow transactions, to compare as required. 
 
 !!! note
     The default sampling ratio for FusionReactor is set to 0.05  or 5% of **all** traces.
@@ -11,15 +11,15 @@ FusionReactor provides a flexible solution by allowing users to control the trac
 
 Property: -Dfr.observability.trace.sampling.ratio
 
-This property allows users to specify the sampling ratio for trace data sent to the FusionReactor Cloud. The sampling ratio represents the percentage of traces to be captured. Adjusting this ratio enables users to reduce the volume of trace data transmitted while still maintaining essential insights.
+This property allows users to specify the sampling ratio for trace data sent to OpsPilot. The sampling ratio represents the percentage of traces to be captured. Adjusting this ratio enables users to reduce the volume of trace data transmitted while still maintaining essential insights.
 
 ## Benefits of adjusting the sampling ratio
 
 * **Reduced data transmission**  
-Lowering the sampling ratio decreases the amount of trace data transmitted to the FusionReactor Cloud. This is particularly useful in scenarios where bandwidth or storage considerations are crucial.
+Lowering the sampling ratio decreases the amount of trace data transmitted to OpsPilot. This is particularly useful in scenarios where bandwidth or storage considerations are crucial.
 
 * **Resource optimization**  
-By capturing a fraction of traces, users can optimize resource utilization on both the application and FusionReactor Cloud sides, ensuring efficient performance monitoring without excessive data overhead.
+By capturing a fraction of traces, users can optimize resource utilization on both the application and OpsPilot sides, ensuring efficient performance monitoring without excessive data overhead.
 
 * **Cost-efficiency**   
 Reduced data transmission can lead to cost savings, especially in cloud environments where data transfer and storage costs are significant factors.

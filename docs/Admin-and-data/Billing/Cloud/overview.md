@@ -178,7 +178,7 @@ On-demand data will be charged at:
 
 
 !!! info 
-    [How to reduce costs in FR Cloud](/Troubleshooting/Optimize-data/)
+    [How to reduce costs in OpsPilot](/Troubleshooting/Optimize-data/)
     
 
 ## Usage calculations
