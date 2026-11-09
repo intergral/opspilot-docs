@@ -115,7 +115,7 @@ Each installed integration can add its own panel to the Overview - for example a
 
 ### Panel anomaly detectors
 
-The metric panels - **Services**, **Servers**, **Applications**, and the integration panels - can run an **anomaly detector** on each metric they show. A panel with none enabled reads **Anomaly detectors off** in its header, with a **Choose detectors to switch on** link. That opens the list: each metric (for example **Services**, **Latency**, **P95**, **P99**, **Errors/s**, **Throughput**) has a state - **Normal** or **Pending** - and a toggle to switch its detector on or off.
+The metric panels - **Services**, **Servers**, **Applications**, and the integration panels - can run an **anomaly detector** on each metric they show. A panel with none enabled reads **Anomaly detectors off** in its header, with a **Choose detectors to switch on** link. That opens the list: each metric (for example **Services**, **Latency**, **P95**, **P99**, **Errors/s**, **Throughput**) has a toggle to switch its detector on or off. A row reads **Off** until you enable it, and then shows the detector's state - **Normal** or **Pending**.
 
 A detector does nothing until it is switched on, and then needs a **warm-up period** to learn what is normal before it can alert. You enable detectors per metric (bulk enabling is coming).
 
