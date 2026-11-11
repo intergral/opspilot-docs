@@ -154,6 +154,12 @@ The **Incidents** panel tracks your open incidents. Before incidents are set up,
 
 Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Incidents/overview/) view.
 
+## News
+
+The **News** page is OpsPilot's feed of product announcements - what's new in the platform. Open it from the **Your coworker can email you now** prompt at the top of the Overview.
+
+Each announcement is shown as a card with its **date**, a **title**, and a short summary, and a **Read more** link to the full detail - for example *"Your coworker can email you now"* (situation emails, a weekly digest, and spend alerts, each opt-in) or *"Alerting, rebuilt around detectors that learn what normal looks like."*
+
 ## No Data view
 
 If your account has no data yet, each section of the Overview displays a **Get Started** prompt to guide you through setup:
