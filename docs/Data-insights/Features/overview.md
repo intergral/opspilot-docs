@@ -156,9 +156,9 @@ Click **Incidents ->** to go to the full [Incidents](/Data-insights/Features/Inc
 
 ## News
 
-The **News** page is OpsPilot's feed of product announcements - what's new in the platform. Open it from the **Your coworker can email you now** prompt at the top of the Overview.
+The **News** page is OpsPilot's feed of product announcements - what's new in the platform. The latest announcement is surfaced as a prompt at the top of the Overview that links through to the full feed; the prompt changes with each release.
 
-Each announcement is shown as a card with its **date**, a **title**, and a short summary, and a **Read more** link to the full detail - for example *"Your coworker can email you now"* (situation emails, a weekly digest, and spend alerts, each opt-in) or *"Alerting, rebuilt around detectors that learn what normal looks like."*
+Each announcement is shown as a card with its **date**, a **title**, and a short summary, with a **Read more** link to the full detail.
 
 ## No Data view
 
