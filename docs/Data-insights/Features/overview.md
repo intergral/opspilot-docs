@@ -8,8 +8,6 @@ The **Overview** page is your observability dashboard at a glance. It gives you 
 
 Once your environment is sending data, the Overview page shows a full observability summary laid out across several columns. Each panel has a header with a collapse control, its title, an arrow to the full view, and a status label (for example **Health**, **Live**, or **Last 1 hour**). Where a panel sits depends on your layout - [pinning and visibility](#customizing-your-dashboard) decide what shows and in what order. A **time picker** in the top right sets the range for the time-based panels, which are marked **Uses time picker**.
 
-When maintenance is scheduled, a banner across the top names it, how many services are affected, and when, with a **View status page** link. A **Your coworker can email you now** prompt may also appear; clicking it opens the **News** page, where email notifications and other product announcements are listed.
-
 ## Customizing your dashboard
 
 Click the **My dashboard** icon in the top right of the Overview to control which panels appear and in what order. Each panel in the list has two controls:
