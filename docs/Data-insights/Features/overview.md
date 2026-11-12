@@ -30,6 +30,10 @@ You can pin at two levels:
 
 Pinning an **integration** panel does one more thing: it associates that panel's **dashboard folder** with your dashboard list, so the folder appears in the left-hand nav under [Dashboards](Dashboards/about-dashboards.md) - putting its dashboards one click away.
 
+## Panels
+
+The Overview is made up of panels, each summarizing one part of your environment. Pin or hide any of them from [My dashboard](#customizing-your-dashboard).
+
 ### Integrations
 
 The **Integrations** panel shows the health of your installed integrations, color-coded by worst state, with a **Health** label. A banner at the top summarizes how many **need attention** and how many are **not sending data**.
