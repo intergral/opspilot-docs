@@ -52,17 +52,14 @@ Click a situation to open it, or **Coworker →** for the full dashboard.
 
 ### Services
 
-Key metrics across all monitored services for the last hour, as a row of stat cards showing each metric's current value. The **Show min, avg and max** control in the header expands the cards to add **MIN**, **AVG**, and **MAX** (count-based cards - **Errors**, **Throughput** - show **SUM**, **AVG**, **MAX**).
+Key metrics across all monitored services for the last hour, as stat cards showing each metric's current value. The **Show min, avg and max** control in the header expands the cards to add **MIN**, **AVG**, and **MAX** (count-based cards - **Errors**, **Throughput** - show **SUM**, **AVG**, **MAX**):
 
-| Card | Description |
-|---|---|
-| **Service names** | The services included, with a count and a sample of names |
-| **Services** | Total number of monitored services |
-| **Latency** | Average request latency across all services |
-| **P95** | 95th percentile latency |
-| **P99** | 99th percentile latency |
-| **Errors** | Errors per second across all services |
-| **Throughput** | Requests per second |
+- **Service names** - the services included, with a count and a sample of names
+- **Services** - total number of monitored services
+- **Latency** - average request latency
+- **P95** / **P99** - 95th / 99th percentile latency
+- **Errors**
+- **Throughput**
 
 #### Services by latency
 
