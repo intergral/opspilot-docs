@@ -1,16 +1,16 @@
 # Custom Anomaly Detectors
 
-Custom detectors run anomaly detection on any PromQL series you define. The model emits an anomaly probability (0-100%), and alerts fire when that probability stays above your configured threshold for the pending duration. Unlike the auto-created [Service Anomaly Detectors](service-anomaly-detectors.md), you define these against your own queries.
+Custom detectors run anomaly detection on any PromQL series you define. The model emits an anomaly probability (0-100%), and alerts fire when that probability stays above your configured threshold for the pending duration. Unlike the auto-created [Service Anomaly Detectors](service-anomaly-detectors.md), you define these against your own queries - or they are created for you when you switch on a metric's detector from an Overview [panel](../overview.md#panel-anomaly-detectors).
 
 Navigate to **Alerting > Custom Anomaly Detectors** to open the page.
 
-![Screenshot](/Data-insights/Features/images/Anomaly-detection/custom-detector.png)
-
 ## The detectors list
 
-Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Normal**, **No Data**, and **Paused**. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. To the right sit a refresh button and the auto-refresh interval (such as, **30s**). The **OpsPilot** dropdown offers AI shortcuts. Until you add one, the page shows *"No custom detectors yet."*
+Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Can't evaluate**, **Normal**, **No Data**, and **Paused**. A **Last 24 hours** histogram above the list shows the detectors that wanted attention, per half hour. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. To the right sit a refresh button and the auto-refresh interval (such as, **30s**). The **OpsPilot** dropdown offers AI shortcuts. Until you add one, the page shows *"No custom detectors yet."*
 
 Each detector row shows its **State**, **Name**, **Threshold**, and **Last evaluation**, plus actions: a notification count, an **Active** toggle, **Open dashboard**, **Tune detector** (edit), and **Delete**.
+
+The list also includes detectors enabled from an Overview [panel](../overview.md#panel-anomaly-detectors) - named after their integration and metric (for example *.NET · Built-in .NET runtime metrics · CPU utilization*, tagged *dotnet integration*). These ship **Paused** at a 95% threshold until you switch them on.
 
 ## Creating a custom detector
 
