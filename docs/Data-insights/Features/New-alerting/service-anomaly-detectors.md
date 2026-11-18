@@ -47,7 +47,7 @@ Either way, the scan creates rate, error, and duration detectors for every instr
 
 To the right of the filters sit a refresh button and the auto-refresh interval (such as, **30s**).
 
-The **OpsPilot** dropdown offers AI shortcuts: **Explain my detectors**, **Help me create a detector**, and **Suggest detectors to add**.
+The **OpsPilot** dropdown offers AI shortcuts. Under **New thread** it starts a fresh Coworker thread with **Explain my detectors**, **Help me create a detector**, or **Suggest detectors to add**; under **Add to current thread** it sends one to an open thread, or reads **No thread is open** when there isn't one.
 
 ## Detector settings
 
