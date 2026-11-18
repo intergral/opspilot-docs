@@ -51,9 +51,11 @@ The **OpsPilot** dropdown offers AI shortcuts: **Explain my detectors**, **Help 
 
 ## Detector settings
 
-![Screenshot](/Data-insights/Features/images/Anomaly-detection/SD-expanded-view.png)
+Expand a service row to see and tune its individual detectors. Each detector card shows its current **anomaly score** and state, with a **Thr** and **Pending** summary, plus a **mute** icon, a **view** (eye) icon, and an **Active** toggle.
 
-Expand a service row to see and tune its individual detectors. Each detector card shows its current **anomaly score** and state, with a **Thr** and **Pending** summary, plus a **mute** icon, a **view** (eye) icon, and an **Active** toggle. Below that, each detector has these settings:
+A chart plots the detector's metric (such as **Request rate**) against the **Anomaly score**, with the threshold drawn as a dashed line - the left axis is the metric, the right the 0-100% score. A **time picker** above the chart (such as **Last 6 hours**) sets its range, with arrows to step through it and buttons to zoom.
+
+Below the chart, each detector has these settings:
 
 | Setting | Description |
 |---|---|
