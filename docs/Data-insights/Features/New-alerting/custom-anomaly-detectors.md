@@ -6,7 +6,7 @@ Navigate to **Alerting > Custom Anomaly Detectors** to open the page.
 
 ## The detectors list
 
-Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Can't evaluate**, **Normal**, **No Data**, and **Paused**. A **Last 24 hours** histogram above the list shows the detectors that wanted attention, per half hour. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. To the right sit a refresh button and the auto-refresh interval (such as, **30s**). The **OpsPilot** dropdown offers AI shortcuts. Until you add one, the page shows *"No custom detectors yet."*
+Your custom detectors are listed with the same state counters as service detectors - **Firing**, **Pending**, **Can't evaluate**, **Normal**, **No Data**, and **Paused**. A **Last 24 hours** histogram above the list shows the detectors that wanted attention, per half hour. Use **Search detectors** to find one, and the **All states** and **All contact points** dropdowns to filter. To the right sit a refresh button and the auto-refresh interval (such as, **30s**). The **OpsPilot** dropdown offers AI shortcuts: under **New thread**, **Explain my detectors**, **Help me create a detector**, or **Suggest detectors to add**; under **Add to current thread**, it sends one to an open Coworker thread, or reads **No thread is open**. Until you add one, the page shows *"No custom detectors yet."*
 
 Each detector row shows its **State**, **Name**, **Threshold**, and **Last evaluation**, plus actions: a notification count, an **Active** toggle, **Open dashboard**, **Tune detector** (edit), and **Delete**.
 
