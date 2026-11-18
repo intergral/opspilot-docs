@@ -6,8 +6,6 @@ Picking the right threshold is hard - too tight and you drown in false alarms, t
 
 Navigate to **Alerting > Service Anomaly Detectors** to open the page.
 
-![Screenshot](/Data-insights/Features/images/Anomaly-detection/service-detectors.png)
-
 Service detectors are built from your instrumented services using templates. Alerts fire when the anomaly probability stays above the configured threshold for the pending duration.
 
 Each instrumented service automatically gets three detectors, shown as **R**, **E**, and **D** badges in the **Detectors** column:
@@ -19,6 +17,8 @@ Each instrumented service automatically gets three detectors, shown as **R**, **
 The badges are filled while the service's detectors are running, and grayed out while they are paused. **Last evaluation** reads a timestamp (such as, *29 Sept, 13:01*) for a running service, and **—** for a paused one.
 
 Each row in the service list shows the service name, its **Detectors** (R/E/D), the **Last evaluation** time, and actions: a notification count, an **Active** toggle to enable or pause the service's detectors, an **Open dashboard** button, and a **delete** button. Expand a row to see and tune the individual detectors.
+
+A **Last 24 hours** histogram above the list shows the detectors that wanted attention, per half hour.
 
 ## Scanning for services
 
@@ -34,6 +34,7 @@ Either way, the scan creates rate, error, and duration detectors for every instr
 |---|---|
 | **Firing** | The anomaly condition is currently met |
 | **Pending** | The condition is met but the pending duration has not elapsed |
+| **Can't evaluate** | The detector could not be evaluated |
 | **Normal** | The detector is evaluating and no anomaly is detected |
 | **No Data** | The detector has no data to evaluate |
 | **Paused** | The detector is paused and not evaluating |
@@ -46,13 +47,15 @@ Either way, the scan creates rate, error, and duration detectors for every instr
 
 To the right of the filters sit a refresh button and the auto-refresh interval (such as, **30s**).
 
-The **OpsPilot** dropdown offers AI shortcuts: **Explain my detectors**, **Help me create a detector**, and **Suggest detectors to add**.
+The **OpsPilot** dropdown offers AI shortcuts. Under **New thread** it starts a fresh Coworker thread with **Explain my detectors**, **Help me create a detector**, or **Suggest detectors to add**; under **Add to current thread** it sends one to an open thread, or reads **No thread is open** when there isn't one.
 
 ## Detector settings
 
-![Screenshot](/Data-insights/Features/images/Anomaly-detection/SD-expanded-view.png)
+Expand a service row to see and tune its individual detectors. Each detector card shows its current **anomaly score** and state, with a **Thr** and **Pending** summary, plus a **mute** icon, a **view** (eye) icon, and an **Active** toggle.
 
-Expand a service row to see and tune its individual detectors. Each detector card shows its current **anomaly score** and state, with a **Thr** and **Pending** summary, plus a **mute** icon, a **view** (eye) icon, and an **Active** toggle. Below that, each detector has these settings:
+A chart plots the detector's metric (such as **Request rate**) against the **Anomaly score**, with the threshold drawn as a dashed line - the left axis is the metric, the right the 0-100% score. A **time picker** above the chart (such as **Last 6 hours**) sets its range, with arrows to step through it and buttons to zoom.
+
+Below the chart, each detector has these settings:
 
 | Setting | Description |
 |---|---|
