@@ -19,8 +19,8 @@ A summary across the current billing period (with its date range) reports:
 | Tab | Shows |
 |---|---|
 | **Activity** | The audits run this period, newest first - what each one updated, when, and its **OpsPilot AI Token** cost |
-| **Proposals** | The field changes OpsPilot has suggested but you have not confirmed yet |
-| **Being watched** | The entries and aliases OpsPilot is still checking |
+| **Proposals** | Field changes OpsPilot suggests but has not applied, grouped by entry (a running total, such as *13 on 9 entries*). Each names the field - **Operations**, **Dependencies**, **Identity**, or **Language** - and what to confirm, alongside the entry's tier badge |
+| **Being watched** | Dependencies and operations OpsPilot thinks may have gone - **maybe removed** or **maybe shifted**. Each row carries the signal (for example *0 traffic observed over current window*), a seen count, and the date it was last seen |
 
 ---
 
