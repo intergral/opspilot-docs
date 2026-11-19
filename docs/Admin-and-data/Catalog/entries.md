@@ -2,6 +2,8 @@
 
 Catalog entries are the records of your services and the infrastructure they depend on. Create, edit, and manage them here; for the at-a-glance dashboard, see [Catalog Overview](catalog-overview.md).
 
+The **Entries** page lists every entry - filterable, and shown as a list or a dependency graph. Each is a card showing its name, slug, and badges - **status** (such as **Active**), **type** (such as **Service**), **tier**, and whether it is **Human-managed** or **OpsPilot-managed** - with its key fields (Owners, Language, Repository, Depends on, Used by, Aliases) editable inline.
+
 ## Adding a catalog entry
 
 You can populate the catalog three ways:
