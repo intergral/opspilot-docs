@@ -35,7 +35,7 @@ If your services are already cataloged, this step shows what Heartbeat is alread
 
 If nothing is cataloged yet, choose how to proceed:
 
-- **Catalog my services** - discover your services from your telemetry and start health screening. It runs in the background, so you can carry on with setup and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog.md) page.
+- **Catalog my services** - discover your services from your telemetry and start health screening. It runs in the background, so you can carry on with setup and review what Coworker found on the [Catalog](../../../../Admin-and-data/Catalog/catalog-overview.md) page.
 - **Skip for now** or **Skip** - move on without cataloging.
 
 ---

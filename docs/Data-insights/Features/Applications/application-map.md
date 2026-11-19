@@ -46,7 +46,7 @@ Below the map, the **Servers** table lists the servers behind it, one row each:
 | **Throughput** | Requests per second |
 | **CPU** | CPU usage |
 | **Memory** | Memory usage |
-| **Catalog** | The server's catalog status - **Create** if it is not yet in the [Catalog](../../../Admin-and-data/Catalog/catalog.md), or its badges (for example **FR Server**, **Java**) if it is |
+| **Catalog** | The server's catalog status - **Create** if it is not yet in the [Catalog](../../../Admin-and-data/Catalog/catalog-overview.md), or its badges (for example **FR Server**, **Java**) if it is |
 
 ---
 
