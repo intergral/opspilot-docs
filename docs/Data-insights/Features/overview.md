@@ -128,6 +128,12 @@ A **Live** panel that reads **All clear** when nothing is firing (for example *1
 
 Click **Alerts →** for the full [Alerting Status](/Data-insights/Features/New-alerting/status/) view.
 
+### Catalog quality
+
+A **Live** panel scoring how complete your catalog is - a **filled in** percentage across active entries, with a bar per key field (**Owner**, **Tier**, **Repository**, **Language**) showing how many entries have it (for example *Tier 21/21*). **Run audit** re-runs discovery to create and refresh entries, and **Catalog vs telemetry** (**Check telemetry**) compares what sent telemetry in the last 24 hours against what is cataloged. It also shows when the **last audit** ran, with an **Audit history** link.
+
+Click **Catalog quality →** for the full [Catalog Overview](../../Admin-and-data/Catalog/catalog-overview.md), or **Audit history** for the [Audit history](../../Admin-and-data/Catalog/audit-history.md) page.
+
 ### Service Anomaly Detection
 
 A **Live** panel for the detectors OpsPilot maintains for your services. It reads **All clear** when none are active (for example *30 of 36 detectors normal*), and otherwise lists the firing and **pending** anomalies - each with its detector, service, and how long it's been pending - above a breakdown by state (**pending**, **normal**, **no data**, **paused**).

@@ -251,7 +251,7 @@ AI-powered investigations consume compute and reasoning resources. OpsPilot AI T
 No - creating your catalog for the first time is funded by OpsPilot as part of getting you set up, so it does not use your AI Token allowance. Catalog audits you run manually afterwards, to add new services or refresh entries, do use your allowance.
 
 !!! info "Learn more"
-    [Service Catalog](../../../../Admin-and-data/Catalog/catalog.md)
+    [Service Catalog](../../../../Admin-and-data/Catalog/catalog-overview.md)
 
 ---
 

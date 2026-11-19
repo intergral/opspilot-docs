@@ -21,7 +21,7 @@ The metric columns show a sparkline alongside the current value:
 | **Max Response** | The slowest response time recorded in the period |
 | **Throughput** | Requests per minute (c/m) |
 | **Errors/s** | Errors per second |
-| **Catalog** | **Create** adds the application to your [Catalog](../../../Admin-and-data/Catalog/catalog.md) |
+| **Catalog** | **Create** adds the application to your [Catalog](../../../Admin-and-data/Catalog/catalog-overview.md) |
 
 ---
 

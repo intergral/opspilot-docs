@@ -1,12 +1,8 @@
-# Service Catalog
+# Entries
 
-The Service Catalog is a persistent record of everything you run - your services and the infrastructure they depend on. Unlike the Services overview, which only shows what is currently sending telemetry, the catalog tracks entries whether they are active or quiet. It gives every service an owner, a tier, and a home, so when something breaks at 2am, nobody has to guess who to contact or what is affected.
+Catalog entries are the records of your services and the infrastructure they depend on. Create, edit, and manage them here; for the at-a-glance dashboard, see [Catalog Overview](catalog-overview.md).
 
-The catalog is also the brain behind Coworker. When Coworker investigates an alert or runs a check, it draws on catalog entries to understand what a service does, who owns it, what it depends on, and what has happened to it before. That pre-loaded context means Coworker spends fewer AI Tokens rediscovering information it could already know - and produces better investigations as a result. The more complete your catalog, the more effective Coworker becomes.
-
-The catalog also powers incident response: affected services on an incident link directly to their catalog entries, runbooks surface based on catalog service matches, and Analytics surfaces which catalog entries appear most frequently in incidents.
-
-![!Screenshot](../../Coworker/catalog-overview.png)
+The **Entries** page lists every entry - filterable, and shown as a list or a dependency graph. Each is a card showing its name, slug, and badges - **status** (such as **Active**), **type** (such as **Service**), **tier**, and whether it is **Human-managed** or **OpsPilot-managed** - with its key fields (Owners, Language, Repository, Depends on, Used by, Aliases) editable inline.
 
 ## Adding a catalog entry
 
@@ -16,7 +12,7 @@ You can populate the catalog three ways:
 
     - Coworker **creates catalog entries** for services that aren't cataloged yet, and **refreshes the existing entries you select**.
     - A confirmation dialog (**Audit service catalog**) notes that it runs in the background and shows the estimated **OpsPilot AI Token** usage per service. Click **Audit everything** to run it, or **Cancel**.
-    - When it finishes, a green banner reports the result. Click **History** to open the audit history panel, which lists every audit this billing period - what each one audited or updated, when, and its **OpsPilot AI Token** cost - with each entry expandable for detail.
+    - When it finishes, a green banner reports the result. Click **History** to open the **[Audit history](audit-history.md)**.
 
     !!! info "Your initial catalog creation is included"
         Creating your catalog for the first time is part of getting you set up. OpsPilot covers the cost of the initial creation, so it does not use your AI Token allowance.
