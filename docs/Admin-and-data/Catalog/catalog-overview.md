@@ -1,10 +1,12 @@
 # Catalog Overview
 
-The Service Catalog is a persistent record of everything you run - your services and the infrastructure they depend on. Unlike the Services overview, which only shows what is currently sending telemetry, the catalog tracks entries whether they are active or quiet. It gives every service an owner, a tier, and a home, so when something breaks at 2am, nobody has to guess who to contact or what is affected.
+The Service Catalog is a persistent record of everything you run - your services and the infrastructure they depend on. Unlike the Services overview, which shows only what is currently sending telemetry, the catalog keeps every entry whether it is active or quiet.
 
-The catalog is also the brain behind Coworker. When Coworker investigates an alert or runs a check, it draws on catalog entries to understand what a service does, who owns it, what it depends on, and what has happened to it before. That pre-loaded context means Coworker spends fewer AI Tokens rediscovering information it could already know - and produces better investigations as a result. The more complete your catalog, the more effective Coworker becomes.
+It gives each service an owner, a tier, and a home, and that shared record does the heavy lifting across OpsPilot:
 
-The catalog also powers incident response: affected services on an incident link directly to their catalog entries, runbooks surface based on catalog service matches, and Analytics surfaces which catalog entries appear most frequently in incidents.
+- **It grounds Coworker.** Investigating an alert or running a check, Coworker draws on catalog entries to know what a service does, who owns it, what it depends on, and how it has behaved before - so it spends fewer AI Tokens rediscovering what it could already know, and investigates better. The more complete your catalog, the more effective Coworker becomes.
+- **It drives incident response.** Affected services on an incident link straight to their catalog entries, runbooks surface on catalog matches, and Analytics shows which entries appear in incidents most often.
+- **It settles ownership.** When something breaks at 2am, the owner and tier are already recorded - nobody has to guess who to contact or how critical it is.
 
 The Catalog landing page is a dashboard that summarizes your catalog at a glance, with **+ New catalog entry** in the top right. Create and manage entries on the [Entries](entries.md) page.
 
