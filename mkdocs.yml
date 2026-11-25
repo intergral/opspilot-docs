@@ -12,6 +12,8 @@ theme:
   features:
     - navigation.sections
     - navigation.footer
+    - navigation.top
+    - toc.follow
     # - toc.integrate
     - search.suggest
     - search.highlight
@@ -20,9 +22,9 @@ theme:
     - content.code.copy
     - content.action.edit  # This enables the edit button on each page
   language: en
-  font:  
-    text: 'Inter'
-    code: 'monospace'
+  font:
+    text: 'Lexend'
+    code: 'JetBrains Mono'
   palette:
     - scheme: slate
       primary: custom
