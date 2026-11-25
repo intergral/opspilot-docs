@@ -4,6 +4,8 @@ OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and opera
 
 Where traditional monitoring tools surface data and wait for humans to act, OpsPilot adds an agentic AI intelligence layer on top of your existing stack - reasoning across your telemetry, running autonomous investigations, and delivering prioritized, actionable findings around the clock.
 
+<div class="video-wrapper"><iframe src="https://www.youtube.com/embed/LMoPQX8fBp8" title="What is OpsPilot?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
 ---
 
 ## The platform at a glance
