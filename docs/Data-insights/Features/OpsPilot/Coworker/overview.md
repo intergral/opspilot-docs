@@ -1,6 +1,6 @@
 # Coworker
 
-Coworker is the connective layer that binds your observability data, alerting, service knowledge, and incident response into one place. Rather than switching between dashboards, alert feeds, and runbooks, you get a single AI SRE teammate that watches your systems, investigates what it finds, and hands you a clear, prioritized picture of what needs attention - so your team spends less time fighting tools and more time fixing problems.
+Coworker is the connective layer that binds your observability data, alerting, service knowledge, and incident response into one place. Rather than switching between dashboards, alert feeds, and runbooks, you get a single AI SRE that watches your systems, investigates what it finds, and hands you a clear, prioritized picture of what needs attention - so your team spends less time fighting tools and more time fixing problems.
 
 Each user gets their own personalized Coworker that learns what's relevant to them. It talks to you in the first person, remembers context, and keeps working between your visits.
 

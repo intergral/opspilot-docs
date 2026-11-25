@@ -1,135 +1,57 @@
-﻿# Get Started with OpsPilot
+﻿# Getting started with OpsPilot
 
-![Get Started with OpsPilot](images/get-started.png)
-
-OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and SRE platform. This guide walks you through creating your account, connecting your first data source, and exploring your initial views - from sign-up to your first insights in minutes.
+OpsPilot is an AI-powered observability and SRE platform. Sign up and it asks three quick questions about what you run, sets up the matching integrations for you, and shows exactly what's left to connect - so you're reading live telemetry in minutes instead of wiring up collectors by hand. The questions take under a minute, and you can change your answers any time.
 
 !!! info "Already have an account?"
     [Sign in](https://app.opspilot.com/auth/login) and head to your dashboard to start exploring your data. If you have an invitation, follow the link in your invitation email to access your organization.
 
----
-
-## Step 1 - Create your account
-
-Navigate to [app.opspilot.com/auth/register](https://app.opspilot.com/auth/register) and sign up. You're then guided through a short setup:
-
-1. **Name your organization.**
-2. **Invite colleagues** (optional) - add their email addresses to bring your team in, or skip for now.
-3. OpsPilot sets up your account. While you wait, use the **See the instrumentation guide** link to get a head start on [instrumenting your application](#step-2-instrument-your-application).
-
-### What you'll see first
-
-When setup finishes, you land on the **Overview** - your observability dashboard. With no data connected yet, each section shows a **Get Started** prompt telling you exactly what to install or configure:
-
-- **[Coworker](/Data-insights/Features/OpsPilot/Coworker/getting-started/)** - set up your AI SRE teammate to investigate alerts and track ongoing situations across the services you care about.
-- **[Servers](/Data-insights/Features/Servers/overview/)** and **[Applications](/Data-insights/Features/applications/)** - install the FusionReactor agent to start monitoring. Your **license key** is shown here, ready to copy.
-- **[Services](/Data-insights/Features/Services/overview/)** - instrument with OpenTelemetry using an **API key**.
-- **[Alerts](/Data-insights/Features/Alerting/Alerts-overview/)** and **[Anomaly Detection](/Data-insights/Features/New-alerting/service-anomaly-detectors/)** - create alert rules or enable anomaly detection once data is flowing.
-
-![No Data view](Data-insights/Features/images/New-account-overview.png)
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/HdiADeq6wlo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OpsPilot onboarding walkthrough" allowfullscreen></iframe></div>
 
 ---
 
-## Step 2 - Instrument your application
+## Step 1 - Tell us your stack
 
-Send telemetry from your applications using OpenTelemetry or the [FusionReactor agent](https://app.opspilot.com/integrations/fusionreactor-agent).
+On the welcome screen, choose **Get started**. Tick everything you use on each screen, or skip any question that doesn't apply:
 
-!!! info "You'll need an API key"
-    OpenTelemetry data is authenticated with an OpsPilot **API key**. Create one from the [API Keys](https://app.opspilot.com/organization/api-keys) page - or click **Create** on the **Services** card on your Overview - then add it to your exporter configuration.
+- **Where does your team talk?** Your chat tools.
+- **Which databases and data stores do you run?** For example Kafka, MySQL, or Redis.
+- **Which languages and runtimes do you use?** For example .NET, Go, Java, Node.js, or Python.
 
-Select your language:
+Choose **Finish** on the last question. If you're not ready, choose **Do this later** on the welcome screen.
 
-<div class="lang-grid">
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/" class="lang-btn">
-    <span>C++</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/DotNet/" class="lang-btn">
-    <span>.NET</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Erlang/" class="lang-btn">
-    <span>Erlang</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Go/" class="lang-btn">
-    <span>Go</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Java/" class="lang-btn">
-    <span>Java</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Kotlin/" class="lang-btn">
-    <span>Kotlin</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/node/" class="lang-btn">
-    <span>Node.js</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/PHP/" class="lang-btn">
-    <span>PHP</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Python/" class="lang-btn">
-    <span>Python</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Ruby/" class="lang-btn">
-    <span>Ruby</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Rust/" class="lang-btn">
-    <span>Rust</span>
-  </a>
-  <a href="/Monitor-your-data/OpenTelemetry/Instrumentation/Swift/" class="lang-btn">
-    <span>Swift</span>
-  </a>
-  <a href="https://docs.fusionreactor.io/Getting-started/install-fr/" class="lang-btn">
-    <span>CF</span>
-  </a>
-</div>
-
-
-Or deploy an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) to receive and forward telemetry from your services.
-
-
+<!-- SCREENSHOT NEEDED: the languages and runtimes question -> images/onboarding-languages.png -->
 
 ---
 
-## Step 3 - Connect your infrastructure
+## Step 2 - Open your Overview
 
-Get metrics, logs, and traces flowing from your infrastructure using **Grafana Alloy** or standalone **OpenTelemetry exporters**.
+OpsPilot sets up an integration for everything you picked. Choose **Go to Overview**. The [Integrations](/Data-insights/Features/integrations/) panel lists each one with its status:
 
-| Signal | How to ship it |
-|---|---|
-| **Metrics** | Run an OTel-compatible exporter (e.g. Node Exporter, cAdvisor) and forward via [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or the [OTel Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) |
-| **Logs** | Use the Alloy `loki.source` component or the OTel `filelog` receiver to tail and forward log files |
-| **Traces** | Configure your collector or Alloy pipeline to receive and forward spans to OpsPilot |
-
-[Grafana Alloy](https://grafana.com/docs/alloy/latest/) is a flexible, vendor-neutral collector that can scrape, transform, and forward all three signal types in a single agent.
-
-!!! info "Integration Hub - coming soon"
-    A full self-serve Integration Hub with one-click setup for cloud providers, databases, Kubernetes, and more is on the way. Watch this space.
-
----
-
-## Step 4 - Get answers with AI
-
-Once data is flowing, **Coworker** goes to work. It is your AI SRE teammate, and it works in two ways:
-
-- **On its own** - running investigations in the background, surfacing prioritized insights, and flagging issues before they escalate. [Learn more](/Data-insights/Features/OpsPilot/Coworker/overview/)
-- **When you ask** - [chat](/Data-insights/Features/OpsPilot/Coworker/chat/) with it in plain English to query your telemetry, investigate a specific issue, or get analysis across metrics, logs, and traces.
-
----
-
-## Step 5 - Explore your data
-
-Dive deeper into your data using the built-in drilldown tools.
-
-| Where to look | What you'll find | Required integration |
+| Status | Meaning | What to do |
 |---|---|---|
-| [UI Overview](/Data-insights/Features/overview/) | A tour of the OpsPilot interface | Any |
-| [Servers](/Data-insights/Features/Servers/overview/) | Live and historic server health | FusionReactor agent |
-| [Applications](/Data-insights/Features/applications/) | Request rates, errors, and latency | FusionReactor agent |
-| [Dashboards](/Data-insights/Features/Dashboards/about-dashboards/) | Pre-built and custom visualizations | Any |
-| [Metrics Drilldown](/Data-insights/Features/explore-metrics/) | Explore Prometheus metrics without PromQL | OpenTelemetry / Prometheus |
-| [Logs Drilldown](/Data-insights/Features/explore-logs/) | Filter and analyze logs without LogQL | OpenTelemetry / Loki |
-| [Traces Drilldown](/Data-insights/Features/explore-traces/) | Trace requests across services | OpenTelemetry |
-| [Alerts](/Data-insights/Features/Alerting/Alerts-overview/) | Set up rules and get notified | Any |
+| **Not sending data** | Set up, but OpsPilot isn't receiving data from it yet | Choose **Check the install notes** |
+| **Not installed** | Not installed yet | Choose **Install** |
+| **Healthy** | Connected and sending data | Nothing - you're done |
+
+<!-- SCREENSHOT NEEDED: the Integrations panel -> images/onboarding-integrations.png -->
 
 ---
 
-!!! question "Need more help?"
-    Contact support in the chat bubble and let us know how we can assist.
+## Step 3 - Connect your integrations
+
+Choose **Check the install notes** next to an integration. Its page opens on the **Installation guide** tab. Follow the steps for your service, then deploy or restart it. Once data arrives, the integration turns green and shows **Healthy**.
+
+Repeat this for each integration in the panel.
+
+<!-- SCREENSHOT NEEDED: an installation guide -> images/onboarding-install-guide.png -->
+
+---
+
+## Step 4 - Set up Coworker
+
+Once data is flowing, set up [Coworker](/Data-insights/Features/OpsPilot/Coworker/getting-started/), the AI SRE built into OpsPilot, to watch the services you care about. Choose **Set up** on the **Coworker** card on your Overview.
+
+---
+
+!!! question "Need help?"
+    [Book a demo](https://opspilot.com/book-a-demo/) and we'll walk you through it, or contact support in the chat bubble.

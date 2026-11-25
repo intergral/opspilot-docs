@@ -8,7 +8,7 @@ OpsPilot is an AI-powered observability platform built for modern engineering te
 
 Key capabilities include:
 
-- **AI-assisted operations** — the OpsPilot Assistant analyses your telemetry and surfaces actionable insights without requiring deep query expertise
+- **AI-assisted operations** — OpsPilot Coworker analyses your telemetry and surfaces actionable insights without requiring deep query expertise
 - **OpenTelemetry-native** — send data from any language or framework using the OTel Collector, Grafana Alloy, or the FusionReactor Agent
 - **Dashboards** — pre-built and custom dashboards combining metrics, logs, and trace data
 - **Alerting & Anomaly Detection** — rule-based and AI-driven alerts across your entire stack

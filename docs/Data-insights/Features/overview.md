@@ -42,7 +42,7 @@ Click **Integrations →** for the full [Integrations](/Data-insights/Features/i
 
 ### Coworker
 
-A **Live** summary of your AI teammate's activity. The header counts what Coworker is **watching** and **investigating**.
+A **Live** summary of your AI SRE's activity. The header counts what Coworker is **watching** and **investigating**.
 
 **Situations** are grouped by severity - a **Critical** heading with a count, listing each situation with its severity, affected service, a one-line summary, and how long ago it changed. **Also watching N** is the count of everything else Coworker is monitoring that doesn't need you right now.
 

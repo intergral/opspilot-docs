@@ -4,7 +4,7 @@ OpsPilot uses a unified billing model that covers both on-premise and cloud usag
 
 If you’re already running the FusionReactor agent on-premise, you can enable OpsPilot cloud features with a single click - no migration, no reconfiguration, and no change to your existing FusionReactor pricing. The FusionReactor agent costs the same whether it runs purely on-premise or connected to OpsPilot.
 
-To get started, sign up for a free, no-obligation [trial](https://app.opspilot.com/auth/register). All plan and subscription management is handled within the app.
+To get started, sign up for a free, no-obligation [trial](https://app.opspilot.com/sign-up). All plan and subscription management is handled within the app.
 
 ## Billing Overview
 
