@@ -1,6 +1,6 @@
 # What is OpsPilot?
 
-OpsPilot, formerly FusionReactor Cloud, is an AI-powered observability and operations platform - the AI SRE for teams using OpenTelemetry, Prometheus, Grafana, and existing observability stacks. It continuously monitors your systems, investigates incidents, and helps prevent, detect, and resolve disruptions before they impact customers.
+OpsPilot is an AI-powered observability and operations platform - the AI SRE for teams using OpenTelemetry, Prometheus, Grafana, and existing observability stacks. It continuously monitors your systems, investigates incidents, and helps prevent, detect, and resolve disruptions before they impact customers.
 
 Where traditional monitoring tools surface data and wait for humans to act, OpsPilot adds an agentic AI intelligence layer on top of your existing stack - reasoning across your telemetry, running autonomous investigations, and delivering prioritized, actionable findings around the clock.
 
@@ -58,9 +58,6 @@ An AI SRE is an autonomous agent that performs the investigative and analytical 
 
 ### Does OpsPilot replace my existing observability stack?
 No. OpsPilot adds an AI intelligence layer on top of your existing stack. It ingests data from OpenTelemetry, Prometheus, Grafana, and the FusionReactor agent, then applies agentic AI to deliver autonomous reliability capabilities your current tools do not provide.
-
-### What is OpsPilot formerly known as?
-OpsPilot was formerly known as FusionReactor Cloud. It has been rebranded to reflect its expanded AI SRE and autonomous operations capabilities.
 
 ---
 
