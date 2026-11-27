@@ -168,6 +168,12 @@ Browse and install these from the **Integrations** catalog in OpsPilot. Each int
 
     Connect AWS for EC2, RDS, and other CloudWatch-held metrics.
 
+-   :material-microsoft-azure: **[Azure](https://app.opspilot.com/integrations/azure)** - Cloud
+
+    ---
+
+    Connect Azure for VM, database, and other Azure Monitor metrics.
+
 -   :material-code-tags: **[OpenTrace](https://app.opspilot.com/integrations/opentrace)** - Data
 
     ---
@@ -276,7 +282,7 @@ Browse and install these from the **Integrations** catalog in OpsPilot. Each int
 
     Instrument browser apps with OpenTelemetry JavaScript for real-user monitoring.
 
--   :material-server-network: **[OpenTelemetry eBPF](https://app.opspilot.com/integrations/opentelemetry-ebpf)** - Infrastructure
+-   :material-server-network: **[OpenTelemetry eBPF](https://app.opspilot.com/integrations/opentelemetry-ebpf)** - SDKs
 
     ---
 
@@ -385,11 +391,27 @@ The [FusionReactor agent](https://app.opspilot.com/integrations/fusionreactor-ag
 
 === "Cloud"
 
-    Azure · Google Cloud
+    Google Cloud
+
+=== "Data"
+
+    MongoDB Atlas
+
+=== "Delivery"
+
+    LaunchDarkly
+
+=== "Incident response"
+
+    PagerDuty
 
 === "Infrastructure"
 
     ArgoCD · Host Metrics · KEDA · Terraform · TrueNAS SCALE
+
+=== "Monitoring"
+
+    BugSnag
 
 === "Networking"
 
@@ -397,7 +419,11 @@ The [FusionReactor agent](https://app.opspilot.com/integrations/fusionreactor-ag
 
 === "Observability"
 
-    AppDynamics · Dash0 · Datadog · Grafana · Loki · Mimir · New Relic · Sentry · Tempo
+    AppDynamics · Dash0 · Datadog · Grafana · Loki · Mimir · New Relic · Tempo
+
+=== "Source code"
+
+    GitHub · GitLab
 
 === "Ticketing"
 
